@@ -16,6 +16,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18p
 main{max-width:860px;margin:0 auto}
 h1,h2,h3{font-family:var(--sc);font-weight:700;line-height:1.15;text-wrap:balance;color:var(--accent-ink);margin:0}
 h1{font-size:2.6rem;letter-spacing:.01em;margin-bottom:1rem}
+h2 .tag{font-size:.8rem;vertical-align:middle}
 h2{font-size:1.75rem;margin-top:3.2rem;margin-bottom:.9rem;padding-top:1.2rem;border-top:2px solid var(--accent)}
 h4{font-family:var(--sans);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:1.6rem 0 .5rem}
 h3{font-size:1.25rem;font-family:var(--serif);font-weight:700;margin-top:2.2rem;margin-bottom:.6rem}
@@ -54,7 +55,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </style>
 </head>
 <body>
-<main><h1>INT Longbow Guide v32</h1>
+<main><h1>INT Longbow Guide v33</h1>
 <p class="cover"><img alt="Cover art: an Intelligence archer in a torchlit temple" src="img/cover.jpg"></p>
 <p class="caption"><em>INTiana Jones and the Temple of Pew. The cover is the feeling of playing this character: it is a lot of fun.</em></p>
 <h2 id="start-here">Start here: what this guide is</h2>
@@ -65,7 +66,7 @@ h2 + p:first-of-type{font-size:1.02em}
 <p><strong>How the guide is laid out.</strong> It is a set of building blocks, in the order you assemble them:</p>
 <ol>
 <li><strong>The build in one page</strong>: the whole plan in one table.</li>
-<li><strong>Class split and feats</strong>: what you pick as you level, with every prerequisite checked.</li>
+<li><strong>Class split, past-life priority and feats</strong>: the chassis, the order to run lives in, and what you pick as you level, with every prerequisite checked.</li>
 <li><strong>Enhancements and epic destinies</strong>: the three trees of each, with a picture of every tree.</li>
 <li><strong>Levelling roadmap</strong>: level by level, which feat, which points, which bow, and what switches on.</li>
 <li><strong>Gear</strong>: what to wear at each milestone, a bow for every stretch of levels, the two endgame kits, and the survivability swaps.</li>
@@ -93,6 +94,13 @@ h2 + p:first-of-type{font-size:1.02em}
 <li><a href="#start-here">Start here: what this guide is</a></li>
 <li><a href="#the-build-in-one-page">The build in one page</a></li>
 <li><a href="#class-split">Class split</a></li>
+<li><a href="#past-life-priority">Past-life priority</a>
+<ol type="a">
+<li><a href="#heroic-lives">Class lives, ranked</a></li>
+<li><a href="#the-sequence">The sequence</a></li>
+<li><a href="#racial-and-iconic-lives">Racial and iconic lives</a></li>
+<li><a href="#epic-lives">Epic lives</a></li>
+</ol></li>
 <li><a href="#dex-and-bab-check">DEX and BAB check</a></li>
 <li><a href="#heroic-feats">Heroic feats</a></li>
 <li><a href="#epic-and-legendary-feats">Epic and legendary feats</a></li>
@@ -157,6 +165,7 @@ h2 + p:first-of-type{font-size:1.02em}
 <tbody>
 <tr><td><a href="#dex-and-bab-check">Stats</a></td><td>Base DEX 14, INT 18, +8 tomes, every level-up into INT. Harper Strategic Combat I and II put INT on the bow’s attack and damage.</td></tr>
 <tr><td><a href="#class-split">Class split</a></td><td>Class lives: Rogue 1, Ranger 2-10, past-life class 11-20. Iconic lives: iconic class 1, Rogue 2, Ranger 3-10 (11 on the Scourge), iconic base class to 20. Racial lives: Rogue 1-2, Ranger 3-11, Rogue 12-20.</td></tr>
+<tr><td><a href="#past-life-priority">Past lives</a></td><td>Class lives: Ranger, Dark Hunter, Rogue, Fighter, Monk first, then the rest once for Completionist, then second and third stacks. Racial: Drow and Gnome first. Iconic: Shadar-kai, Purple Dragon Knight. Epic: Primal Doubleshot x3, then all twelve Divine for +36 PRR, then Arcane Enchant Weapon.</td></tr>
 <tr><td><a href="#heroic-feats">Heroic feats</a></td><td>Point Blank Shot 1, Precision 3, Insightful Reflexes 6, Improved Critical: Ranged 9, Improved Precise Shot 12, Weapon Focus: Ranged 15, Power Critical 18.</td></tr>
 <tr><td><a href="#epic-and-legendary-feats">Epic and legendary feats</a></td><td>Combat Archery 21, Pierce Adamantine 22, Overwhelming Critical 24, Doubleshot 25, Patience 27, Harbinger of Chaos 28, Scion of Arborea and Watchful Eye 30, Legendary Aim 31, Trick Shot 33, Pierce Cold Iron 34 (or Titan’s Blood; see the audit), Legendary Trick Shot 36.</td></tr>
 <tr><td><a href="#enhancements-80-ap">Enhancements (80 AP)</a></td><td>Horizon Walker 41 (capstone), Deepwood Stalker 25, Harper Agent 14. Every tier gate and the 40-AP capstone gate met.</td></tr>
@@ -187,6 +196,79 @@ h2 + p:first-of-type{font-size:1.02em}
 <p><strong>Iconic lives.</strong> Iconic True Reincarnation “rewards both the Iconic PL and full Class PL benefits.” Level 1 is the iconic’s class, so Rogue moves to 2 and the base class fills 12-20. The Aasimar Scourge’s forced class is Ranger (“Scourge first level is Ranger”), so that life reaches Ranger 11 and Improved Precise Shot is free at level 12.</p>
 <p><strong>Racial lives.</strong> Racial Reincarnation grants “a Racial Past Life feat, based on the character’s current race”; class is irrelevant, so the split is chosen for power: Ranger 9 for Manyshot and Evasion, Rogue 11 for Evasion at level 2, 6d6 sneak attack and the Rogue 10 special ability.</p>
 <p><strong>Class grants used.</strong> Ranger (prerequisites waived): Bow Strength 1, Rapid Shot 2, Precise Shot 4, Manyshot 6, Evasion 9; Favored Enemy at 1 and 5; Improved Precise Shot at 11. Rogue: Sneak Attack +1d6 and Trapfinding 1, Evasion 2, +1d6 at every odd level, Improved Uncanny Dodge 8, Special Ability 10, 6d6 at 11.</p>
+<h2 id="past-life-priority">Past-life priority<span class="tag">build decision</span></h2>
+<p>This is a platform build, so the order you run lives in is a build decision as real as the feat list. Every bonus below is quoted from the wiki page named in Sources (Past Life Feats, Racial Past Life Feats, Iconic Past Life Feats, Epic Past Life Feats, Completionist); the ranking is this guide’s, judged by one rule: what helps an Intelligence archer at Reaper 10 first, survivability second, trap and skill work third, and everything else only because Completionist needs it.</p>
+<p><strong>The rules that shape the order (wiki).</strong> Each class past life is a free passive feat that stacks up to three times; the named “purchased” version costs a feat slot from level 3. The past life goes to the dominant class, which is why every class life here is ten levels of that class. Archetype lives (Dark Hunter, Dragon Disciple and the rest) are separate feats with their own passives, and “count as” their base class for Completionist, so one of either is enough for the set. An Iconic True Reincarnation gives the iconic feat <em>and</em> a full class past life, so iconic lives are the fast way to collect classes. Racial lives give a different reward on the 1st, 2nd and 3rd life of a race (the 3rd is always +1 Racial Action Point) and their ability bonuses do not count for feat prerequisites. Epic past lives are chosen freely at any level-30 Epic Reincarnation; each has a passive that stacks three times and a stance, with one stance active per sphere. <strong>Completionist</strong> (one life of every class or its archetype) is +2 to all ability scores and +2 to all skills; <strong>Racial Completionist</strong> (three of every race) is the same again; <strong>Epic Completionist</strong> is +1 destiny point per twelve epic lives, up to 4.</p>
+
+<h3 id="heroic-lives">Class lives, ranked</h3>
+<p>What each passive does for this build, and how the life is run. Tier A are the lives whose passive feeds the bow directly; take their first stacks before anything else, then collect the rest once for Completionist, then come back for second and third stacks.</p>
+<div class="tw"><table>
+<thead><tr><th>Tier</th><th>Class life</th><th>Passive per stack (wiki)</th><th>Why it ranks here</th><th>How to run the life</th></tr></thead>
+<tbody>
+<tr><td>A</td><td><strong>Ranger</strong></td><td>+2 damage with ranged weapons, +2 elemental resistances</td><td>The only past life that is ranged damage by name. Flat, so near zero at R10, but full value for the whole climb and on every life</td><td>Rogue 1 / Ranger 19: the normal chassis with Ranger as the past-life class</td></tr>
+<tr><td>A</td><td><strong>Dark Hunter</strong> (Ranger archetype)</td><td>+1 to hit with sneak attacks, +1 sneak attack damage</td><td>Both lines land on every sneak-attack arrow this build fires. The life itself is a native longbow life: Bow Strength 1, Rapid Shot 2, Precise Shot 4, Manyshot 6, Evasion 9, Improved Precise Shot 11, Trapfinding 1 and sneak dice (Dark Hunter page)</td><td>Dark Hunter 20. An archetype cannot be multiclassed with its base class (Archetype page), so no Ranger levels; the Rogue level is not needed because Dark Hunter has Trapfinding</td></tr>
+<tr><td>A</td><td><strong>Rogue</strong></td><td>+1 sneak attack damage, +2 saves vs traps</td><td>Sneak damage again, and the trap save for the trapper</td><td>Rogue 11 / Ranger 9: the racial-life split</td></tr>
+<tr><td>A</td><td><strong>Fighter</strong></td><td>+1 to attack rolls (+1 tactical DCs)</td><td>To-hit on every arrow; full BAB also brings Improved Precise Shot to 12 on this life</td><td>Rogue 1 / Ranger 9 / Fighter 10</td></tr>
+<tr><td>A</td><td><strong>Monk</strong></td><td>+1 to damage rolls</td><td>The wiki does not limit it to melee; flat damage, same caveat as Ranger</td><td>Rogue 1 / Ranger 9 / Monk 10</td></tr>
+<tr><td>A</td><td>Dragon Disciple (Monk archetype)</td><td>+1 Attack (and -1 SP on Maximize)</td><td>A second +1 to hit line. Counts as Monk for Completionist, so it is a stack to add after the Monk life, not instead of it</td><td>Rogue 1 / Ranger 9 / Dragon Disciple 10</td></tr>
+<tr><td>B</td><td><strong>Barbarian</strong></td><td>+10 hit points</td><td>Survivability; 30 HP at three stacks against x11.1 damage taken</td><td>Rogue 1 / Ranger 9 / Barbarian 10</td></tr>
+<tr><td>B</td><td><strong>Paladin</strong></td><td>+10% healing received from positive energy</td><td>Party healing is the only healing at R10, and this multiplies it</td><td>Rogue 1 / Ranger 9 / Paladin 10</td></tr>
+<tr><td>B</td><td><strong>Warlock</strong></td><td>+3 Magical Resistance Rating</td><td>MRR is the gap in the kit (32-72); 9 MRR at three stacks</td><td>Rogue 1 / Ranger 9 / Warlock 10</td></tr>
+<tr><td>B</td><td>Bard</td><td>+2 saves vs enchantments and illusions</td><td>The Will-save holes Improved Evasion does not cover</td><td>Rogue 1 / Ranger 9 / Bard 10</td></tr>
+<tr><td>C</td><td><strong>Artificer</strong></td><td>+1 to all Intelligence-based skills and Use Magic Device</td><td>Search, Disable Device and Spellcraft are Intelligence skills; UMD for scrolls. The rogue-skills line</td><td>Rogue 1 / Ranger 9 / Artificer 10</td></tr>
+<tr><td>D</td><td>Cleric, Druid, Favored Soul, Sorcerer, Wizard, Alchemist</td><td>Caster lines (conjuration DC, hireling stats, spell penetration, evocation DC, wand DC, transmutation DC)</td><td>Nothing for a bow; taken once each because Completionist needs all fifteen</td><td>Rogue 1 / Ranger 9 / class 10, in whichever order the Reaper first-time bonus and your mood dictate</td></tr>
+</tbody></table></div>
+<p><strong>Purchased past-life feats.</strong> Only one is worth a feat slot on this build, and only where a slot is free: Sneak of Shadows (Rogue) is +1 to all skills and a 3-per-rest skulk with sneak-attack bonuses; the guide already names it for the Aasimar Scourge life’s spare level-12 slot. Student of the Sword (Fighter) is +1 Max Dex Bonus on armor, a +1 to the dodge cap, if a slot ever opens.</p>
+
+<h3 id="the-sequence">The sequence</h3>
+<p>Thirty-six class lives reach three stacks of Tiers A and B plus Completionist; the first sixteen are where the build changes most.</p>
+<div class="tw"><table>
+<thead><tr><th>Lives</th><th>Run</th><th>What the build has afterwards</th></tr></thead>
+<tbody>
+<tr><td>1-5</td><td>Ranger, Dark Hunter, Rogue, Fighter, Monk (first stack each)</td><td>+2 ranged damage, +2 sneak damage, +1 to hit, +1 sneak to hit, +1 damage, +2 trap saves</td></tr>
+<tr><td>6-8</td><td>Barbarian, Paladin, Warlock</td><td>+10 HP, +10% healing received, +3 MRR</td></tr>
+<tr><td>9</td><td>Artificer</td><td>+1 Intelligence skills and UMD</td></tr>
+<tr><td>10-16</td><td>Bard, Cleric, Druid, Favored Soul, Sorcerer, Wizard, Alchemist (one each; any of them as an iconic life to collect the iconic feat at the same time)</td><td><strong>Completionist: +2 all abilities, +2 all skills.</strong> +2 Intelligence is +1 to hit and +1.5 damage per arrow on top of every skill</td></tr>
+<tr><td>17-26</td><td>Second stacks of Ranger, Dark Hunter, Rogue, Fighter, Monk; then Dragon Disciple; then Barbarian, Paladin, Warlock, Bard</td><td>Tier A doubled, Dragon Disciple’s +1 attack added, Tier B doubled</td></tr>
+<tr><td>27-36</td><td>Third stacks of Tier A, then Dragon Disciple, then Tier B as wanted</td><td>+6 ranged damage, +6 sneak damage, +3 to hit from Fighter and +3 from Dragon Disciple, +3 sneak to hit, +3 damage, +30 HP, +9 MRR</td></tr>
+</tbody></table></div>
+
+<h3 id="racial-and-iconic-lives">Racial and iconic lives</h3>
+<p>Racial lives run on the Rogue 11 / Ranger 9 split, so every one of them is a good archer life; the question is only which race first. Iconic lives run on the iconic split and each one also banks a class life, so they slot into the class sequence above wherever a Tier D class is due.</p>
+<div class="tw"><table>
+<thead><tr><th>Order</th><th>Race (racial life)</th><th>1st / 2nd / 3rd life (wiki)</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Drow</strong></td><td>+1 Search / +1 Intelligence / +1 Racial AP</td><td>Intelligence is the build’s stat; Search is the trap skill</td></tr>
+<tr><td>2</td><td><strong>Gnome</strong></td><td>+1 Use Magic Device / +1 Intelligence / +1 Racial AP</td><td>The other Intelligence race; UMD for scrolls</td></tr>
+<tr><td>3</td><td>Dwarf, Duergar, Warforged</td><td>+1 Balance or Repair / +1 Constitution / +1 Racial AP</td><td>HP</td></tr>
+<tr><td>4</td><td>Elf or Wood Elf, Eladrin, Halfling, Shifter, Tabaxi</td><td>+1 Spot, Listen, Move Silently or Tumble / +1 Dexterity / +1 Racial AP</td><td>Listen sets Corner the Quarry’s DC; the Dexterity does not count for feat prerequisites (Racial Past Life Feats page), so it is worth little here</td></tr>
+<tr><td>5</td><td>Human, Aasimar, Half-Elf, Half-Orc, Dragonborn, Tiefling, Dhampir</td><td>+1 skill / +1 Wisdom, Charisma or Strength / +1 Racial AP</td><td>Only for Racial Completionist (+2 all abilities, +2 all skills) and the racial AP</td></tr>
+</tbody></table></div>
+<p>The three lives of a race are worth finishing together: the 3rd life’s Racial Action Point is “applied to your current racial Enhancement tree” (Racial Past Life Feats page), so a Human platform spends them in Human.</p>
+<div class="tw"><table>
+<thead><tr><th>Order</th><th>Iconic life</th><th>Passive per stack (wiki)</th><th>Stance (wiki)</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Shadar-kai</strong></td><td>+1% Dodge, up to 3%</td><td>Below 50% HP and hit: 25% incorporeality for 6/12/18 s, once per 2 minutes</td><td>Dodge is the avoidance Reaper 10 does not bypass; the only iconic passive that is a multiplier</td></tr>
+<tr><td>2</td><td><strong>Purple Dragon Knight</strong></td><td>+3 PRR, up to 9</td><td>Action boost: group movement speed and +1/+2/+3 saves for 20 s</td><td>PRR on top of the kit’s 133</td></tr>
+<tr><td>3</td><td>Deep Gnome</td><td>+3 MRR, up to 9</td><td>Illusion DC and Acid spell power</td><td>MRR is the kit’s gap</td></tr>
+<tr><td>4</td><td>Tiefling Scoundrel</td><td>+1 Reflex save, up to 3</td><td>Movement speed (does not stack with Speed items or Haste)</td><td>Reflex feeds Improved Evasion</td></tr>
+<tr><td>5</td><td>Aasimar Scourge</td><td>+1 Fortitude save, up to 3</td><td>+2% Doublestrike per stack (melee)</td><td>The cheapest life to run: the forced Ranger level means Improved Precise Shot is free at 12 (Class split). Fortitude is the save the kit does least for</td></tr>
+<tr><td>6</td><td>Bladeforged, Tabaxi Trailblazer, Razorclaw Shifter, Dhampir Dark Bargainer, Eladrin Chaosmancer, Sun Elf</td><td>Fortification 5%, trap saves, Will save, enchantment saves, spell power</td><td>Repair, Trip DCs, melee attack, Necromancy DC, Fey Step, Light spell power</td><td>Fortification is already 100% from one augment; the rest is melee or caster. Run them for the class life they carry</td></tr>
+</tbody></table></div>
+
+<h3 id="epic-lives">Epic lives</h3>
+<p>Every feat in a sphere shares that sphere’s passive, so the passive total depends only on how many lives you run in the sphere; the stance is the choice. One stance per sphere is active at a time.</p>
+<div class="tw"><table>
+<thead><tr><th>Order</th><th>Sphere and feat</th><th>Stance per stack (wiki)</th><th>Sphere passive per stack (wiki)</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Primal: Doubleshot</strong> (3 lives)</td><td>+3% Doubleshot, 9% at three</td><td>+3 max HP, +4 per ten character levels</td><td>Whole extra arrows, full value under the 200% soft cap; the one epic line that is a multiplier</td></tr>
+<tr><td>2</td><td><strong>Divine: Brace</strong> (3 lives), then the other three Divine feats</td><td>+1 to all saves per stack</td><td><strong>+3 PRR per stack: 36 PRR at all twelve</strong></td><td>The passive is the prize; twelve Divine lives are the largest survivability line any past life offers. Ancient Blessings (+5 healing amplification per stack) is the alternative stance when a healer is in the party</td></tr>
+<tr><td>3</td><td><strong>Arcane: Enchant Weapon</strong> (3 lives), then the other four</td><td>+1 enhancement bonus to the main-hand weapon per stack</td><td>+1% absorption of acid, cold, electric and fire; 15% at all fifteen</td><td>+3 to hit and damage on the bow from the stance; the absorption passive is the elemental line the gear could not carry</td></tr>
+<tr><td>4</td><td>Martial: Skill Mastery (3 lives), then Fortification, then the rest</td><td>+1 to all skills per stack; or +10% Fortification per stack</td><td>+1% AC, +1 MRR and +1 MRR cap per stack</td><td>Skills for the trapper; Doublestrike is melee-only and Trap Damage Absorption is small</td></tr>
+<tr><td>5</td><td>Primal: Colors of the Queen, Ancient Power, Fast Healing</td><td>Random effects; +2 attack per stack (the damage half is two-handed only); passive healing</td><td>as above</td><td>Fill the Primal sphere to twelve for the HP passive and the Epic Completionist count; Ancient Power’s +2 attack per stack is the best of the three stances after Doubleshot</td></tr>
+</tbody></table></div>
+<p>Twelve epic lives in any mix is one Epic Completionist point; the Past 76 table under Epic destinies is where those points go. At three stacks of Doubleshot, twelve Divine and three Enchant Weapon (eighteen epic lives) the build carries +9% Doubleshot, +36 PRR, +3 weapon enhancement, +3 saves, 3% absorption and 45 HP at level 30 (the wiki’s figure is 180 for twelve Primal lives), all before gear.</p>
+
 <h2 id="dex-and-bab-check">DEX and BAB check</h2>
 <p>Base stats are DEX 14 and INT 18, with +8 tomes and every level-up into INT. The one thing a low-DEX archer has to prove is that every feat prerequisite is still met; this table does that.</p>
 <p>Ability tome tiers (Ability tome page): +2 at level 1, +3 at 3, +4 at 7, +5 at 11, +6 at 15, +7 at 19, +8 at 22. Base DEX 14, no level-ups into DEX. Rogue BAB +0/+1/+2/+3 at Rogue 1-4.</p>
@@ -275,7 +357,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </tbody>
 </table></div>
 <p>Not taken: No Step Missed (a DEX trance; the wiki antirequisite blocks it alongside Know the Angles) and the two +1 DEX picks (DEX feeds nothing on this build). Their 6 AP are Two Places At Once, Planar Dodge 3 and Walker’s Guidance. Total 6 + 12 + 5 + 6 + 6 + 6 = 41.</p>
-<figure class="tree"><img alt="Horizon Walker, 41 AP." src="img/05-shadowdancer.jpg" width="374" height="582"><figcaption>Horizon Walker, 41 AP.</figcaption></figure>
+<figure class="tree"><img alt="Horizon Walker, 41 AP." src="img/01-horizon-walker.jpg" width="374" height="582"><figcaption>Horizon Walker, 41 AP.</figcaption></figure>
 <h3 id="deepwood-stalker-25-ap">Deepwood Stalker, 25 AP</h3>
 <p>Sneak dice, Sniper Shot, Improved Weapon Finesse and Killer. The tree stops at tier 4 because Horizon Walker holds the one tier 5.</p>
 <div class="tw"><table>
@@ -291,7 +373,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </tbody>
 </table></div>
 <p>Total 3 + 6 + 5 + 8 + 3 = 25. The +1 DEX pick is not taken; its 2 AP are Survivalist. Tier 5 (Heavy Draw, Strikes Like Lightning) is not reachable: tier 5 is allowed in one tree and Horizon Walker’s capstone needs 41.</p>
-<figure class="tree"><img alt="Deepwood Stalker, 25 AP. Cores 4-6 and tier 5 are red because they need Ranger 12+ or a second tier-5 tree." src="img/05-shadowdancer.jpg" width="374" height="582"><figcaption>Deepwood Stalker, 25 AP. Cores 4-6 and tier 5 are red because they need Ranger 12+ or a second tier-5 tree.</figcaption></figure>
+<figure class="tree"><img alt="Deepwood Stalker, 25 AP. Cores 4-6 and tier 5 are red because they need Ranger 12+ or a second tier-5 tree." src="img/02-deepwood-stalker.jpg" width="374" height="582"><figcaption>Deepwood Stalker, 25 AP. Cores 4-6 and tier 5 are red because they need Ranger 12+ or a second tier-5 tree.</figcaption></figure>
 <h3 id="harper-agent-14-ap">Harper Agent, 14 AP</h3>
 <p>Fourteen points that make the whole build work: Strategic Combat I and II put Intelligence on the bow’s attack and damage.</p>
 <div class="tw"><table>
@@ -309,7 +391,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </tbody>
 </table></div>
 <p>Favored Enemy feats: Ranger 1 and 5, Horizon Walker Evil Outsiders, Know Your Foe, Shiradi Enemy of My Own = 5, each “+2 Damage” against a Favored Enemy and against every Marked Target. Choose a Know Your Foe type other than Evil Outsider unless you want the doubled bonus against them.</p>
-<figure class="tree"><img alt="Harper Agent, 14 AP." src="img/05-shadowdancer.jpg" width="374" height="582"><figcaption>Harper Agent, 14 AP.</figcaption></figure>
+<figure class="tree"><img alt="Harper Agent, 14 AP." src="img/03-harper-agent.jpg" width="374" height="582"><figcaption>Harper Agent, 14 AP.</figcaption></figure>
 <h3 id="alternative-haste-boost-instead-of-killer-build-decision">Alternative: Haste Boost instead of Killer<span class="tag">build decision</span></h3>
 <p>A Vistani splash buys Haste Boost at the cost of Killer and Survivalist II. It is assessed and not taken.</p>
 <p>Horizon Walker 41, Deepwood Stalker 20 (no Killer, no Survivalist II), Harper 12 (no Know Your Foe), Vistani Knife Fighter 7 (Knife Expertise, Undead Hunter, Acrobatic 1, Mist Stalker I, Haste Boost). Every gate met; 80 AP.</p>
@@ -383,7 +465,7 @@ h2 + p:first-of-type{font-size:1.02em}
 <tr><td>5</td><td>Nerve Venom, Lore of the Hunt, Feywild Attunement, Epic Moment: Inexorable Advance</td><td>5</td><td>7% chance to paralyse living non-bosses (helpless); +1 multiplier on 19-20 with ranged weapons; BAB equal to character level and always in Point Blank range; +30 Ranged Power, no IPS penalty and Cold/Light procs for 30 seconds</td></tr>
 </tbody>
 </table></div>
-<figure class="tree"><img alt="Shiradi Champion, 35 points (the builder caption reads 38; see the note above)." src="img/05-shadowdancer.jpg" width="374" height="582"><figcaption>Shiradi Champion, 35 points (the builder caption reads 38; see the note above).</figcaption></figure>
+<figure class="tree"><img alt="Shiradi Champion, 35 points (the builder caption reads 38; see the note above)." src="img/04-shiradi-champion.jpg" width="374" height="582"><figcaption>Shiradi Champion, 35 points (the builder caption reads 38; see the note above).</figcaption></figure>
 <h3 id="shadowdancer-27">Shadowdancer, 27</h3>
 <p>Sneak dice, Improved Evasion, the Shadowstrike AoE and -30% threat.</p>
 <div class="tw"><table>
@@ -414,7 +496,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </tbody>
 </table></div>
 <p>Total 3 + 4 + 4 + 3 = 14. Master the Acoustics is “Progression: 5” on the wiki, so it opens with tier 2; Glitter of Fame needs 10 spent and level 26.</p>
-<figure class="tree"><img alt="Fatesinger, 14 points." src="img/05-shadowdancer.jpg" width="374" height="582"><figcaption>Fatesinger, 14 points.</figcaption></figure>
+<figure class="tree"><img alt="Fatesinger, 14 points." src="img/06-fatesinger.jpg" width="374" height="582"><figcaption>Fatesinger, 14 points.</figcaption></figure>
 <h3 id="third-tree-fatesinger-or-legendary-dreadnought-build-decision">Third tree: Fatesinger or Legendary Dreadnought<span class="tag">build decision</span></h3>
 <p>Dreadnought is the other martial tree a bow can use. It is not taken, and the reasons are two wiki rules the build’s own choices trigger.</p>
 <p>The two rules:</p>
@@ -1011,7 +1093,7 @@ h2 + p:first-of-type{font-size:1.02em}
 <h2 id="sources">Sources</h2>
 <ul>
 <li><a href="https://ddowiki.com/page/Update_81_Release_Notes">Update 81 Release Notes</a>, <a href="https://ddowiki.com/page/Update_81_Patch_4_Release_Notes">Update 81 Patch 4 Release Notes</a>, <a href="https://ddowiki.com/page/Update_82_Release_Notes">Update 82 Release Notes</a>, <a href="https://ddowiki.com/page/Update_82_Hotfix_Release_Notes">Update 82 Hotfix Release Notes</a>, <a href="https://www.ddo.com/update-notes/ddo-update-81-4-release-notes">Official Update 81.4 release notes</a></li>
-<li>Reincarnation: <a href="https://ddowiki.com/page/Past_Life_Feats">Past Life Feats</a>, <a href="https://ddowiki.com/page/Iconic_True_Reincarnation">Iconic True Reincarnation</a>, <a href="https://ddowiki.com/page/Racial_Reincarnation">Racial Reincarnation</a>, <a href="https://ddowiki.com/page/Aasimar_Scourge">Aasimar Scourge</a></li>
+<li>Reincarnation: <a href="https://ddowiki.com/page/Past_Life_Feats">Past Life Feats</a> (dominant class, free and purchased feats, every class passive), <a href="https://ddowiki.com/page/Racial_Past_Life_Feats">Racial Past Life Feats</a>, <a href="https://ddowiki.com/page/Iconic_Past_Life_Feats">Iconic Past Life Feats</a>, <a href="https://ddowiki.com/page/Epic_Past_Life_Feats">Epic Past Life Feats</a>, <a href="https://ddowiki.com/page/Completionist">Completionist</a>, <a href="https://ddowiki.com/page/Dark_Hunter">Dark Hunter</a> (archetype feat table), <a href="https://ddowiki.com/page/Archetype">Archetype</a> (multiclassing and Completionist rules), <a href="https://ddowiki.com/page/Iconic_True_Reincarnation">Iconic True Reincarnation</a>, <a href="https://ddowiki.com/page/Racial_Reincarnation">Racial Reincarnation</a>, <a href="https://ddowiki.com/page/Aasimar_Scourge">Aasimar Scourge</a></li>
 <li>Classes: <a href="https://ddowiki.com/page/Ranger">Ranger</a>, <a href="https://ddowiki.com/page/Rogue">Rogue</a>, <a href="https://ddowiki.com/page/Fighter">Fighter</a>, <a href="https://ddowiki.com/page/Fighter_bonus_feats">Fighter bonus feats</a>, <a href="https://ddowiki.com/page/Item:Ability_tome">Ability tome</a>, <a href="https://ddowiki.com/page/Epic_levels">Epic levels</a>, <a href="https://ddowiki.com/page/Ranged_Power">Ranged Power</a></li>
 <li>Enhancements: <a href="https://ddowiki.com/page/Enhancements">Enhancements</a> (action points, gates, limits, racial and universal AP), <a href="https://ddowiki.com/page/Horizon_Walker_enhancements">Horizon Walker</a>, <a href="https://ddowiki.com/page/Deepwood_Stalker_enhancements">Deepwood Stalker</a>, <a href="https://ddowiki.com/page/Harper_Agent_enhancements">Harper Agent</a>, <a href="https://ddowiki.com/page/Vistani_Knife_Fighter_enhancements">Vistani Knife Fighter</a>, <a href="https://ddowiki.com/page/Inquisitive_enhancements">Inquisitive</a>, <a href="https://ddowiki.com/page/Item:Tome_of_Universal_Enhancement">Tome of Universal Enhancement</a>, <a href="https://ddowiki.com/page/Favored_Enemy">Favored Enemy</a>, <a href="https://ddowiki.com/page/Action_Boost">Action Boost</a></li>
 <li>Epic destinies: <a href="https://ddowiki.com/page/Epic_Destinies">Epic Destinies</a> (points, gates, mantles, shared strike cooldown), <a href="https://ddowiki.com/page/Shiradi_Champion">Shiradi Champion</a>, <a href="https://ddowiki.com/page/Shadowdancer">Shadowdancer</a>, <a href="https://ddowiki.com/page/Fatesinger">Fatesinger</a>, <a href="https://ddowiki.com/page/Legendary_Dreadnought">Legendary Dreadnought</a></li>

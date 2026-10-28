@@ -1,5 +1,8 @@
 # Changelog
 
+## v33 — 2026-10-28
+- New section "Past-life priority" after Class split: class lives ranked and sequenced (Ranger, Dark Hunter, Rogue, Fighter, Monk first; Completionist; stacks), racial and iconic lives ranked, epic lives by sphere (Primal Doubleshot, then Divine for PRR, then Arcane Enchant Weapon). Every bonus from the wiki past-life pages.
+
 ## v32 — 2026-10-28
 - Levelling gear set (Bolt & Rebirth Ledger) cut at level 29; endgame gear from 30.
 
