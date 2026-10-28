@@ -1,5 +1,8 @@
 # Changelog
 
+## v34 — 2026-10-28
+- Past-life sequence rebuilt around iconic double-dipping: each iconic forces a class (Iconic Heroes page), so Aasimar Scourge carries Ranger, Shadar-kai Rogue, Purple Dragon Knight Fighter, Tabaxi Monk, and so on; eleven of fifteen classes are collected with an iconic feat attached. Dark Hunter and Dragon Disciple stay heroic lives (iconics cannot take an archetype of their forced class).
+
 ## v33 — 2026-10-28
 - New section "Past-life priority" after Class split: class lives ranked and sequenced (Ranger, Dark Hunter, Rogue, Fighter, Monk first; Completionist; stacks), racial and iconic lives ranked, epic lives by sphere (Primal Doubleshot, then Divine for PRR, then Arcane Enchant Weapon). Every bonus from the wiki past-life pages.
 
