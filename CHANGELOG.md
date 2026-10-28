@@ -1,5 +1,8 @@
 # Changelog
 
+## v37 — 2026-10-28
+- Journey re-ordered into blocks of three: each bonus finished to three stacks before the next starts, in order of value to the bow (Ranger, Doubleshot, Rogue/Dodge, Fighter/PRR, Monk, Enchant Weapon, then Completionist, then Tier B triples, then the Divine PRR with the Intelligence races).
+
 ## v36 — 2026-10-28
 - Journey table made readable: a definition of a trip (iconic 15-30 vs heroic-race 1-30 with an Epic Heart then a Heroic or Racial Heart), a worked example, a Type column, and every past life shown with its stack count (1 of 3, 2 of 3, 3 of 3).
 
