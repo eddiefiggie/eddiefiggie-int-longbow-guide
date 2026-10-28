@@ -1,5 +1,8 @@
 # Changelog
 
+## v35 — 2026-10-28
+- Past-life section deepened: a mechanics table (stacking, archetypes, iconic double-dip, epic-then-heroic in one trip, the iconic Epic Heart rule, completionist feats, XP and hearts), the journey rebuilt as 45 trips / 90 past lives where every trip to 30 pays two lives, and an end-state table of what the plan pays line by line.
+
 ## v34 — 2026-10-28
 - Past-life sequence rebuilt around iconic double-dipping: each iconic forces a class (Iconic Heroes page), so Aasimar Scourge carries Ranger, Shadar-kai Rogue, Purple Dragon Knight Fighter, Tabaxi Monk, and so on; eleven of fifteen classes are collected with an iconic feat attached. Dark Hunter and Dragon Disciple stay heroic lives (iconics cannot take an archetype of their forced class).
 
