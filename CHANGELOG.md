@@ -1,5 +1,8 @@
 # Changelog
 
+## v36 — 2026-10-28
+- Journey table made readable: a definition of a trip (iconic 15-30 vs heroic-race 1-30 with an Epic Heart then a Heroic or Racial Heart), a worked example, a Type column, and every past life shown with its stack count (1 of 3, 2 of 3, 3 of 3).
+
 ## v35 — 2026-10-28
 - Past-life section deepened: a mechanics table (stacking, archetypes, iconic double-dip, epic-then-heroic in one trip, the iconic Epic Heart rule, completionist feats, XP and hearts), the journey rebuilt as 45 trips / 90 past lives where every trip to 30 pays two lives, and an end-state table of what the plan pays line by line.
 
