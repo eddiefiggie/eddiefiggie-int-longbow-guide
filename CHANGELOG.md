@@ -1,5 +1,10 @@
 # Changelog
 
+Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
+
+## Build 10-29-26.8
+- Heading changed to "INT Longbow Guide" with the build number beneath it; versions/ files now named by build number.
+
 ## v44 — 2026-10-29
 - Theme drawn from the cover: parchment page with a faint torch glow, temple-stone table headers, amber rules and chips, a pulp-poster slab face for the title and section headings; dark mode is the night-temple version of the same palette. Tables no longer overflow on wide screens. No content changes.
 
