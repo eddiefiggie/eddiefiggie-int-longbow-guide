@@ -1,5 +1,8 @@
 # Changelog
 
+## v44 — 2026-10-29
+- Theme drawn from the cover: parchment page with a faint torch glow, temple-stone table headers, amber rules and chips, a pulp-poster slab face for the title and section headings; dark mode is the night-temple version of the same palette. Tables no longer overflow on wide screens. No content changes.
+
 ## v43 — 2026-10-29
 - Side navigation: a sticky section list on the left (wide screens) that tracks the section being read and expands its subsections, plus a reading-progress line at the top. No content changes.
 

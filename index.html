@@ -4,20 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>INT Longbow Guide</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&family=Alegreya+SC:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&family=Alegreya+SC:wght@500;700&family=Alfa+Slab+One&display=swap">
 <style>
 /* Layout: one reading column of book-width prose; tables and tree figures may run wider inside it. */
-:root{--bg:#f6f4ef;--panel:#ecf0e8;--fg:#24281f;--muted:#5f6657;--rule:#d5d8ce;--accent:#2e5e44;--accent-ink:#1f4330;--tag:#e3ead9;--stripe:#f0efe8;
- --serif:"Alegreya",Georgia,"Times New Roman",serif;--sans:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;--sc:"Alegreya SC","Alegreya",Georgia,serif}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15181a;--panel:#1c2320;--fg:#e4e2da;--muted:#a5aa9d;--rule:#33393a;--accent:#8ec2a2;--accent-ink:#b9dcc5;--tag:#243229;--stripe:#1a1e1f;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#15181a;--panel:#1c2320;--fg:#e4e2da;--muted:#a5aa9d;--rule:#33393a;--accent:#8ec2a2;--accent-ink:#b9dcc5;--tag:#243229;--stripe:#1a1e1f;color-scheme:dark}
+:root{--bg:#f3e8d0;--panel:#e8d9b8;--fg:#2a1f14;--muted:#6b5a44;--rule:#cdb892;--accent:#c2671c;--accent-ink:#8a3f10;--tag:#f1d9a8;--stripe:#ecdfc2;--stone:#20343c;--stone-ink:#f3e8d0;
+ --serif:"Alegreya",Georgia,"Times New Roman",serif;--sans:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;--sc:"Alegreya SC","Alegreya",Georgia,serif;--slab:"Alfa Slab One","Rockwell Extra Bold","Arial Black",serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#13232a;--panel:#1a2f37;--fg:#ecdfc4;--muted:#b3a386;--rule:#34505a;--accent:#f0a33c;--accent-ink:#f6c477;--tag:#3a3322;--stripe:#182b32;--stone:#0e1a1f;--stone-ink:#f0e3c8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#13232a;--panel:#1a2f37;--fg:#ecdfc4;--muted:#b3a386;--rule:#34505a;--accent:#f0a33c;--accent-ink:#f6c477;--tag:#3a3322;--stripe:#182b32;--stone:#0e1a1f;--stone-ink:#f0e3c8;color-scheme:dark}
 html{background:var(--bg)}
-body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.55;margin:0;padding-block:2rem 5rem;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body{background:var(--bg);background-image:radial-gradient(ellipse at 20% -10%, rgba(240,163,60,.18), transparent 55%);background-attachment:fixed;color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.55;margin:0;padding-block:2rem 5rem;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 main{max-width:860px;margin:0 auto}
 h1,h2,h3{font-family:var(--sc);font-weight:700;line-height:1.15;text-wrap:balance;color:var(--accent-ink);margin:0}
-h1{font-size:2.6rem;letter-spacing:.01em;margin-bottom:1rem}
+h1{font-family:var(--slab);font-weight:400;font-size:2.5rem;letter-spacing:.01em;margin-bottom:1rem;color:var(--accent-ink);text-shadow:0 2px 0 rgba(0,0,0,.08)}
 h2 .tag{font-size:.8rem;vertical-align:middle}
-h2{font-size:1.75rem;margin-top:3.2rem;margin-bottom:.9rem;padding-top:1.2rem;border-top:2px solid var(--accent)}
+h2{font-family:var(--slab);font-weight:400;font-size:1.55rem;margin-top:3.2rem;margin-bottom:.9rem;padding-top:1.1rem;border-top:3px double var(--accent);color:var(--accent-ink)}
 h4{font-family:var(--sans);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:1.6rem 0 .5rem}
 h3{font-size:1.25rem;font-family:var(--serif);font-weight:700;margin-top:2.2rem;margin-bottom:.6rem}
 p{margin:0 0 1rem;max-width:68ch}
@@ -27,10 +27,10 @@ a:hover{text-decoration-thickness:2px}
 ul,ol{max-width:68ch;padding-left:1.4rem;margin:0 0 1rem}
 li{margin:.3rem 0}
 .cover{max-width:none;margin:0 0 .4rem}
-.cover img{display:block;width:100%;max-width:620px;height:auto;border-radius:6px;border:1px solid var(--rule)}
+.cover img{display:block;width:100%;max-width:620px;height:auto;border-radius:4px;border:6px solid var(--stone);box-shadow:0 10px 30px rgba(0,0,0,.25)}
 .caption,figcaption{font-family:var(--sans);font-size:.9rem;color:var(--muted);margin:0 0 1.6rem}
 .toc{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:1rem 1.4rem 1.2rem;margin:1.5rem 0 1rem;font-family:var(--sans);font-size:.98rem;line-height:1.4}
-.toc h2{border:0;margin:0 0 .5rem;padding:0;font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase}
+.toc h2{border:0;margin:0 0 .5rem;padding:0;font-family:var(--sc);font-weight:700;font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase}
 .toc ol{margin:0;max-width:none;columns:2;column-gap:2.5rem}
 .toc ol ol{columns:1;margin-top:.15rem}
 .toc li{margin:.12rem 0;break-inside:avoid}
@@ -39,12 +39,12 @@ li{margin:.3rem 0}
 .tw{overflow-x:auto;margin:0 0 1.4rem;border:1px solid var(--rule);border-radius:6px}
 table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:.93rem;line-height:1.4}
 th,td{text-align:left;vertical-align:top;padding:.55rem .7rem;border-bottom:1px solid var(--rule)}
-th{background:var(--panel);color:var(--accent-ink);font-weight:700;letter-spacing:.02em;white-space:nowrap}
+th{background:var(--stone);color:var(--stone-ink);font-weight:700;letter-spacing:.03em}
 tbody tr:nth-child(even) td{background:var(--stripe)}
 tbody tr:last-child td{border-bottom:0}
 td strong{color:var(--accent-ink)}
 td,th{font-variant-numeric:tabular-nums}
-.tag{display:inline-block;vertical-align:middle;margin-left:.55rem;padding:.1rem .5rem;border-radius:999px;background:var(--tag);color:var(--accent-ink);font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-wrap:nowrap}
+.tag{display:inline-block;vertical-align:middle;margin-left:.55rem;padding:.1rem .5rem;border-radius:3px;background:var(--tag);color:var(--accent-ink);border:1px solid var(--accent);font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-wrap:nowrap}
 .tree{margin:0 0 1.8rem;max-width:400px}
 .tree img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:6px}
 .tree figcaption{margin-top:.4rem}
@@ -59,7 +59,7 @@ h2 + p:first-of-type{font-size:1.02em}
 @media (min-width:1180px){
   main{margin-left:300px}
   #sidenav{display:block;position:fixed;top:0;left:0;bottom:0;width:260px;overflow-y:auto;padding:2.2rem 1rem 2rem 1.2rem;border-right:1px solid var(--rule);background:var(--panel);font-family:var(--sans);font-size:.86rem;line-height:1.35;scrollbar-width:thin}
-  #sidenav .brand{font-family:var(--sc);font-weight:700;color:var(--accent-ink);font-size:1rem;margin:0 0 .9rem;letter-spacing:.02em}
+  #sidenav .brand{font-family:var(--slab);font-weight:400;color:var(--accent-ink);font-size:1rem;margin:0 0 .9rem;letter-spacing:.02em}
   #sidenav ol{list-style:none;margin:0;padding:0;max-width:none;columns:1}
   #sidenav li{margin:0}
   #sidenav a{display:block;padding:.22rem .5rem;border-radius:4px;color:var(--muted);text-decoration:none;border-left:2px solid transparent}
@@ -69,11 +69,12 @@ h2 + p:first-of-type{font-size:1.02em}
   #sidenav li.open > ol{display:block}
   #sidenav ol ol a{font-size:.8rem;padding:.14rem .5rem}
 }
-@media (min-width:1180px) and (max-width:1500px){main{max-width:780px}}
+@media (min-width:1180px){main{max-width:980px}}
+@media (min-width:1180px) and (max-width:1320px){main{max-width:800px}}
 </style>
 </head>
 <body>
-<main><h1>INT Longbow Guide v43</h1>
+<main><h1>INT Longbow Guide v44</h1>
 <p class="cover"><img alt="Cover art: an Intelligence archer in a torchlit temple" src="img/cover.jpg"></p>
 <p class="caption"><em>INTiana Jones and the Temple of Pew. The cover is the feeling of playing this character: it is a lot of fun.</em></p>
 <h2 id="start-here">Start here: what this guide is</h2>
