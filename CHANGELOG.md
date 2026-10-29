@@ -1,5 +1,8 @@
 # Changelog
 
+## v42 — 2026-10-29
+- The ML33-34 "first raid kit" section removed: from level 30 only the endgame kit matters, worn piece by piece as each item's minimum level arrives (the milestone table now gives that order at 31, 32, 33-34, 35 and 36). Filigree notes moved under the endgame kit. Every "ledger" term removed; the levelling set is cited as a wiki-sourced item dataset. Doubleshot, audit, crafted-bow and Sources lines that referred to the old kit rewritten.
+
 ## v41 — 2026-10-29
 - Sweep after the v39-v40 changes: every remaining reference to Killer, Favored Defense, Survivalist II and Empower Healing as part of the build removed or rewritten in the present tense; the Haste Boost alternative retitled; the Favored Enemy audit row corrected; the Start-here outline says four enhancement trees. Images and versions now referenced from this repository instead of the Drive folder.
 
