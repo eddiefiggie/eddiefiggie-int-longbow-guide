@@ -1,5 +1,9 @@
 # Changelog
 
+## v38 — 2026-10-29
+- Heroic feats: Weapon Finesse at 15 (+2 to hit, +10% fortification bypass since U76) and Weapon Focus: Ranged at 18; Power Critical moves to the Aasimar Scourge spare slot. Empower Healing removed. "Feats not taken, and why": Quicken (SLAs cannot be interrupted), Empower Healing, Shot on the Run, Power Critical.
+- New "Alternative: Arcane Archer 7" layout (core, Elemental Arrows, Awareness 2, Morphic Arrows, Elemental Inferno) funded from Deepwood Stalker; wakes the idle Imbue dice (4d6 per arrow) and ends the 25% DR penalty against bludgeoning/slashing DR. Audit and Rules updated.
+
 ## v37 — 2026-10-28
 - Journey re-ordered into blocks of three: each bonus finished to three stacks before the next starts, in order of value to the bow (Ranger, Doubleshot, Rogue/Dodge, Fighter/PRR, Monk, Enchant Weapon, then Completionist, then Tier B triples, then the Divine PRR with the Intelligence races).
 
