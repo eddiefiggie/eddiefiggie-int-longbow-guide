@@ -1183,7 +1183,7 @@ h2 + p:first-of-type{font-size:1.02em}
   h2s.forEach(function(h2){
     var li=document.createElement('li'); var a=document.createElement('a'); a.href='#'+h2.id; a.textContent=h2.textContent.replace(/build decision|wiki/g,'').trim(); li.appendChild(a); entries.push({el:h2,a:a,li:li});
     var sub=document.createElement('ol'); var n=h2.nextElementSibling;
-    while(n && n.tagName!=='H2'){ if(n.tagName==='H3' && n.id){ var li2=document.createElement('li'); var a2=document.createElement('a'); a2.href='#'+n.id; a2.textContent=n.textContent.replace(/build decision|wiki|optimizer runs/g,'').replace(/[(),]+\s*$/,'').trim(); li2.appendChild(a2); sub.appendChild(li2); entries.push({el:n,a:a2,li:li2,parent:li}); } n=n.nextElementSibling; }
+    while(n && n.tagName!=='H2'){ if(n.tagName==='H3' && n.id){ var li2=document.createElement('li'); var a2=document.createElement('a'); a2.href='#'+n.id; a2.textContent=n.textContent.replace(/\(.*$/,'').replace(/build decision|wiki|optimizer runs/g,'').replace(/[:,\s]+$/,'').trim(); li2.appendChild(a2); sub.appendChild(li2); entries.push({el:n,a:a2,li:li2,parent:li}); } n=n.nextElementSibling; }
     if(sub.children.length) li.appendChild(sub); ol.appendChild(li);
   });
   nav.appendChild(ol);
