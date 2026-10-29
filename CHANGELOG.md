@@ -1,5 +1,8 @@
 # Changelog
 
+## v41 — 2026-10-29
+- Sweep after the v39-v40 changes: every remaining reference to Killer, Favored Defense, Survivalist II and Empower Healing as part of the build removed or rewritten in the present tense; the Haste Boost alternative retitled; the Favored Enemy audit row corrected; the Start-here outline says four enhancement trees. Images and versions now referenced from this repository instead of the Drive folder.
+
 ## v40 — 2026-10-29
 - Heroic feats: Weapon Finesse at 15 (+2 to hit, +10% fortification bypass since U76), Weapon Focus: Ranged at 18. Power Critical moves to the eighth slot that Aasimar Scourge lives have (Improved Precise Shot free at 12); the seven-versus-eight-slot rule is explained. Empower Healing removed. "Feats not taken, and why": Quicken, Empower Healing, Shot on the Run (declined), Power Critical.
 
