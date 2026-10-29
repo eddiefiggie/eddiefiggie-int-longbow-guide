@@ -1,5 +1,8 @@
 # Changelog
 
+## v43 — 2026-10-29
+- Side navigation: a sticky section list on the left (wide screens) that tracks the section being read and expands its subsections, plus a reading-progress line at the top. No content changes.
+
 ## v42 — 2026-10-29
 - The ML33-34 "first raid kit" section removed: from level 30 only the endgame kit matters, worn piece by piece as each item's minimum level arrives (the milestone table now gives that order at 31, 32, 33-34, 35 and 36). Filigree notes moved under the endgame kit. Every "ledger" term removed; the levelling set is cited as a wiki-sourced item dataset. Doubleshot, audit, crafted-bow and Sources lines that referred to the old kit rewritten.
 
