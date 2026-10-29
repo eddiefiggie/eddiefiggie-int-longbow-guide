@@ -1,5 +1,8 @@
 # Changelog
 
+## v38 — 2026-10-29
+- Playing it: the standing-still rule spelled out (Archer’s Focus decay of one stack per 3 seconds moving, 6-second rebuild, the -4 moving penalty, range as position, when to spend Inexorable Advance, Misty Step and Trick Shot as the moving bursts); first-session checklist updated.
+
 ## v37 — 2026-10-28
 - Journey re-ordered into blocks of three: each bonus finished to three stacks before the next starts, in order of value to the bow (Ranger, Doubleshot, Rogue/Dodge, Fighter/PRR, Monk, Enchant Weapon, then Completionist, then Tier B triples, then the Divine PRR with the Intelligence races).
 
