@@ -1,5 +1,8 @@
 # Changelog
 
+## v40 — 2026-10-29
+- Heroic feats: Weapon Finesse at 15 (+2 to hit, +10% fortification bypass since U76), Weapon Focus: Ranged at 18. Power Critical moves to the eighth slot that Aasimar Scourge lives have (Improved Precise Shot free at 12); the seven-versus-eight-slot rule is explained. Empower Healing removed. "Feats not taken, and why": Quicken, Empower Healing, Shot on the Run (declined), Power Critical.
+
 ## v39 — 2026-10-29
 - Enhancement layout changed to Horizon Walker 41 / Deepwood Stalker 17 / Harper Agent 14 / Arcane Archer 8 (core, Elemental Arrows: Flaming, Awareness 3, Morphic Arrows, Elemental Inferno). Killer, Favored Defense and Survivalist II dropped. The imbue uses the Harbinger of Chaos and Scion of Arborea dice (4d6 per arrow at cap); Morphic Arrows ends the 25% DR penalty against bludgeoning and slashing DR. New Arcane Archer section and tree image; Deepwood tree image re-rendered; AP-by-level, roadmap, alternatives, survivability dial, audit, Reaper 10, Playing it and Sources updated.
 
