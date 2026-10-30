@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.7
+- Skills: Spot raised to maximum (it is the passive trap and secret-door warning, a threshold with no roll); per-life allocation rows and the one-page row updated. New "Spotting and Auto-Search" note: Spot versus Auto-Search, the sources of Auto-Search (Nothing Is Hidden, Mind Like Iron, Watchful Eye / Pierce Deception at 23, traps only since U81). Sources: Spot, Auto-Search.
+
 ## Build 10-30-26.6
 - Playing it, the escapes: Walker's Guidance explained against the Evasion the build already has (Improved Evasion on a failed save, +5 vs traps, Evasion for an ally, Evasion outright before Ranger 9 / Rogue 2), with when to press it.
 
