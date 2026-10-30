@@ -2,8 +2,8 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
-## Build 10-30-26.4
-- Shadowdancer tier 1: trapper swap noted, Technician 3 (+6 Search, Spot, Disable Device, Open Lock) in place of Cover of Darkness 3, same points and gates, at the cost of the -30% threat line; when to make it and when to swap back.
+## Build 10-30-26.5
+- Shadowdancer tier 1, Technician note revised: Cover of Darkness stays at 3 (rank 3 is the permanent Nightshield: missile protection and resistance to saves, wiki); the point that moves is Stealthy 1, which only fills the tier-2 gate; Technician ranks 2-3 are where spare destiny points go on a trapping life. Build 10-30-26.4's version of the note (which swapped Cover of Darkness) is withdrawn.
 
 ## Build 10-30-26.3
 - New optional subsection at the end of Enhancements: Mechanic 4 AP (Arbalester, Mechanics 3) for the trapper, with the wiki lines, what it buys, where the points come from and the Skill Boost step beyond it.
