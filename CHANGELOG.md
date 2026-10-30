@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.6
+- Playing it, the escapes: Walker's Guidance explained against the Evasion the build already has (Improved Evasion on a failed save, +5 vs traps, Evasion for an ally, Evasion outright before Ranger 9 / Rogue 2), with when to press it.
+
 ## Build 10-30-26.5
 - Shadowdancer tier 1, Technician note revised: Cover of Darkness stays at 3 (rank 3 is the permanent Nightshield: missile protection and resistance to saves, wiki); the point that moves is Stealthy 1, which only fills the tier-2 gate; Technician ranks 2-3 are where spare destiny points go on a trapping life. Build 10-30-26.4's version of the note (which swapped Cover of Darkness) is withdrawn.
 
