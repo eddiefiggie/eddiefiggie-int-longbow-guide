@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.10
+- Stamp under the title reads "Last updated <date>" with the build number beside it, no wider than the cover image.
+- Orphan audit after the 10-29/10-30 changes: Dreadnought comparison said Pianissimo at 22 (destiny order buys it at 25); roadmap level-29 row called Cover of Darkness the second threat reducer (it is the third, after Pianissimo 25 and Queen's Diplomacy 26); Horizon Walker core listed as "Haste (Greater Marking)" (wiki name is Haste); Shadowdancer "not taken" line contradicted the Technician note that follows it; three history remarks ("the short version used to be", "earlier builds listed", "the old target") removed; the levelling-survival section's promise of a "next build" reworded as the planned Gear rework.
+- Flow: Playing it's intro now lists its parts in order and points back to Reaper 10 for the cap numbers; Reaper 10 points forward to the per-skull table; Start here describes the new Playing it. Contents checked against every heading.
+
 ## Build 10-30-26.9
 - The build line under the title is now a stamp: guide name, the build number in a slab-face chip, and the date written out with the revision number, in an accent-bordered band. No content changes.
 
