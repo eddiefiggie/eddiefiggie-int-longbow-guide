@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.1
+- "Playing it" rewritten in full prose (about 6,600 words): what the character is; every ability explained by job (standing buffs, the Mark, the shots, the bursts, the escapes); the rotation with the standing-still rule and the Hunter's Focus stutter-step note; the seven defensive layers with their wiki numbers (threat, the three miss rolls, PRR/MRR, fortification, saves, HP, healing); what kills the character ranked (melee packs, Monster Champions by variety, every Reaper type, Will saves, knockdown, elemental damage, archers and casters, Dungeon Alert, traps) with the response to each; a five-situation survival routine; the per-skull Reaper table; and a levelling-survival section (why the levelling set dies, the skull count to run, hirelings, Walker's Guidance as Evasion, Grim Barricade first, Ghost Touch before 23, the order the defences arrive).
+- Sources: Reaper race, Monster Champion, MRR, Dodge bonus, Concealment, Incorporeal, Ghost Touch, Fortification, Evasion, Improved Evasion, Saving throw, Helpless, Knockdown, Balance, Threat, Dungeon Alert, Hireling, Potion added.
+
 ## Build 10-29-26.11
 - Wiki audit of every enhancement and destiny cost, rank, progression gate and prerequisite (Horizon Walker, Deepwood Stalker, Harper Agent, Arcane Archer, Shiradi Champion, Shadowdancer, Fatesinger pages). All costs and totals matched; one layout did not.
 - Deepwood Stalker fixed: the tree had 4 AP below its 5-AP gates (tier 2 and the Sneak Attack core), which the game enforces and the builder does not. Favored Defense 1 added in tier 1; Thrill of the Hunt reduced to rank 2. Still 17 AP.
