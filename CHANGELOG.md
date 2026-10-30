@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.4
+- Shadowdancer tier 1: trapper swap noted, Technician 3 (+6 Search, Spot, Disable Device, Open Lock) in place of Cover of Darkness 3, same points and gates, at the cost of the -30% threat line; when to make it and when to swap back.
+
 ## Build 10-30-26.3
 - New optional subsection at the end of Enhancements: Mechanic 4 AP (Arbalester, Mechanics 3) for the trapper, with the wiki lines, what it buys, where the points come from and the Skill Boost step beyond it.
 
