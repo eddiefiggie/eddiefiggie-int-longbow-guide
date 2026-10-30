@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.8
+- Skills: "Skill augments by level" note: the colourless Diamond of Spot / Search / Disable Device / Open Lock ladder by minimum level (wiki Augment table), the enhancement-bonus stacking rule, and the standing rule to carry the level-appropriate Diamond of Spot in every levelling band without a better worn Spot line (repeated in the levelling-gear intro). Augment page added to Sources.
+
 ## Build 10-30-26.7
 - Skills: Spot raised to maximum (it is the passive trap and secret-door warning, a threshold with no roll); per-life allocation rows and the one-page row updated. New "Spotting and Auto-Search" note: Spot versus Auto-Search, the sources of Auto-Search (Nothing Is Hidden, Mind Like Iron, Watchful Eye / Pierce Deception at 23, traps only since U81). Sources: Spot, Auto-Search.
 
