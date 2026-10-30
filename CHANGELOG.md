@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.9
+- The build line under the title is now a stamp: guide name, the build number in a slab-face chip, and the date written out with the revision number, in an accent-bordered band. No content changes.
+
 ## Build 10-30-26.8
 - Skills: "Skill augments by level" note: the colourless Diamond of Spot / Search / Disable Device / Open Lock ladder by minimum level (wiki Augment table), the enhancement-bonus stacking rule, and the standing rule to carry the level-appropriate Diamond of Spot in every levelling band without a better worn Spot line (repeated in the levelling-gear intro). Augment page added to Sources.
 

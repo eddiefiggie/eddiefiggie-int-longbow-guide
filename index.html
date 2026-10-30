@@ -15,7 +15,10 @@ html{background:var(--bg)}
 body{background:var(--bg);background-image:radial-gradient(ellipse at 20% -10%, rgba(240,163,60,.18), transparent 55%);background-attachment:fixed;color:var(--fg);font-family:var(--serif);font-size:18px;line-height:1.55;margin:0;padding-block:2rem 5rem;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 main{max-width:860px;margin:0 auto}
 h1,h2,h3{font-family:var(--sc);font-weight:700;line-height:1.15;text-wrap:balance;color:var(--accent-ink);margin:0}
-.build{font-family:var(--sans);font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:-.6rem 0 1.2rem}
+.build{font-family:var(--sans);display:flex;flex-wrap:wrap;align-items:center;gap:.6rem .8rem;margin:-.4rem 0 1.4rem;padding:.55rem .9rem;border:2px solid var(--accent);border-left-width:10px;border-radius:8px;background:var(--tag)}
+.build-name{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.build-stamp{font-family:var(--slab);font-size:1.35rem;letter-spacing:.02em;color:var(--accent-ink);background:var(--bg);padding:.1rem .6rem;border-radius:5px;border:1px solid var(--rule)}
+.build-date{font-size:1rem;font-weight:700;color:var(--accent-ink)}
 h1{font-family:var(--slab);font-weight:400;font-size:2.5rem;letter-spacing:.01em;margin-bottom:1rem;color:var(--accent-ink);text-shadow:0 2px 0 rgba(0,0,0,.08)}
 h2 .tag{font-size:.8rem;vertical-align:middle}
 h2{font-family:var(--slab);font-weight:400;font-size:1.55rem;margin-top:3.2rem;margin-bottom:.9rem;padding-top:1.1rem;border-top:3px double var(--accent);color:var(--accent-ink)}
@@ -76,7 +79,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </head>
 <body>
 <main><h1>A Levelling Chassis That Can Run R10</h1>
-<p class="build">INT Longbow Guide · Build 10-30-26.8</p>
+<p class="build"><span class="build-name">INT Longbow Guide</span><span class="build-stamp">Build 10-30-26.9</span><span class="build-date">30 October 2026 · revision 9</span></p>
 <p class="cover"><img alt="Cover art: an Intelligence archer in a torchlit temple" src="img/cover.jpg"></p>
 <p class="caption"><em>INTiana Jones and the Temple of Pew. The cover is the feeling of playing this character: it is a lot of fun.</em></p>
 <h2 id="start-here">Start here: what this guide is</h2>
