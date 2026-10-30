@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-29-26.10
+- New Skills section after the feats: the two wiki rules (one Rogue level unlocks full maximum ranks; cross-class ranks cost 2), the point budget, a priority table (Search, Disable Device, UMD to max; Tumble 10 for the third charge; Jump 10; Listen and Spot on Ranger levels; Open Lock and Balance with the remainder), the skills not trained and why, and a per-life allocation table (class, racial, Aasimar Scourge, other iconic). One-page row and Sources added.
+- Heroic feats: a dedicated Aasimar Scourge table (eight picks, which are chosen at creation, where Ranger 11 grants IPS at 12).
+
 ## Build 10-29-26.9
 - Title changed to "A Levelling Chassis That Can Run R10"; the guide name and build number sit beneath it.
 
