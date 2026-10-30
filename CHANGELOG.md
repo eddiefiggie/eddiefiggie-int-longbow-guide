@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.2
+- Harper Agent: on Aasimar Scourge lives, Know Your Foe: Undead is replaced by the second core, Harper Training I (+1 Intelligence, same 2 AP), because the Scourge tree already carries the undead damage (Scourge aura, Strike Down; wiki). Note under the Harper table, AP-by-level level-20 row, Sources.
+
 ## Build 10-30-26.1
 - "Playing it" rewritten in full prose (about 6,600 words): what the character is; every ability explained by job (standing buffs, the Mark, the shots, the bursts, the escapes); the rotation with the standing-still rule and the Hunter's Focus stutter-step note; the seven defensive layers with their wiki numbers (threat, the three miss rolls, PRR/MRR, fortification, saves, HP, healing); what kills the character ranked (melee packs, Monster Champions by variety, every Reaper type, Will saves, knockdown, elemental damage, archers and casters, Dungeon Alert, traps) with the response to each; a five-situation survival routine; the per-skull Reaper table; and a levelling-survival section (why the levelling set dies, the skull count to run, hirelings, Walker's Guidance as Evasion, Grim Barricade first, Ghost Touch before 23, the order the defences arrive).
 - Sources: Reaper race, Monster Champion, MRR, Dodge bonus, Concealment, Incorporeal, Ghost Touch, Fortification, Evasion, Improved Evasion, Saving throw, Helpless, Knockdown, Balance, Threat, Dungeon Alert, Hireling, Potion added.
