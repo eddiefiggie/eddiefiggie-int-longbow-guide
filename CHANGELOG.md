@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-30-26.3
+- New optional subsection at the end of Enhancements: Mechanic 4 AP (Arbalester, Mechanics 3) for the trapper, with the wiki lines, what it buys, where the points come from and the Skill Boost step beyond it.
+
 ## Build 10-30-26.2
 - Harper Agent: on Aasimar Scourge lives, Know Your Foe: Undead is replaced by the second core, Harper Training I (+1 Intelligence, same 2 AP), because the Scourge tree already carries the undead damage (Scourge aura, Strike Down; wiki). Note under the Harper table, AP-by-level level-20 row, Sources.
 
