@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-31-26.5
+- Reverted: the endgame kit is the R10 v3 solve again, with every dependent section as in Build 10-31-26.3. Build 10-31-26.4 (the INTiana Jones kit) is withdrawn; its version file stays in versions/ for reference.
+
 ## Build 10-31-26.4
 - Endgame kit replaced by the INTiana Jones optimizer solve (ranking: Intelligence, Constitution, Ranged Power, Doubleshot, Seeker, Armor-Piercing, Sneak Attack Dice, Physical Sheltering, Dodge, Distant Diversion, Deadly, then the survivability block; crafting and augments on). Same offence ceilings; Armor-Piercing 76, Constitution 36, Fortification 160, Dodge 23 (at the cap), Will 25, +2 sneak dice and Improved Deception on two items. Eight items change: Legendary Downcast Vest, The Skull of the Horned King, Doctor Gustav's Warped Lenses, Pendant of Subtle Pain, Belt of the Burrower, Coldlight Runners, Rocard's Cuffs, and the Legendary Calamitous Longbow's crafts. Every item checked on its wiki page; the Skull's Nearly Complete is Intelligence +16 on the wiki (the solver credits +15).
 - Rewritten to match: the milestone wear-in table, Survivability from gear, the crafted bow's Woeful row (Shadow with the Downcast Vest), the dodge arithmetic in the audit and Reaper 10, the Action Boost row, the optimizer check, the one-page rows, Sources and the audit log.
