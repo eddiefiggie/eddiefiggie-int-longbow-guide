@@ -23,3 +23,7 @@ Every number comes from the [DDO wiki](https://ddowiki.com) page named in the gu
 ## Updating
 
 Edit `index.html`, copy it to `versions/MM-DD-YY.x.html` (x = iteration that day), set the same build number in the line under the `<h1>`, commit. GitHub Pages serves `main` from the repo root.
+
+## Audits
+
+Every section is checked line by line against the DDO wiki; see [AUDITS.md](AUDITS.md) for dates, scope and corrections, and open an issue if a number does not match its page.

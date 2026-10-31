@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-31-26.2
+- Sourcing made visible: every "<Name> page" reference in the text is now a link to that wiki page (about 100 inline citations); every "(wiki)" table tag links to Sources; sections that have been audited carry a "Checked against the wiki" line with the date and scope (heroic feats, skills, enhancements, epic destinies, bow ladder, endgame kit, Playing it).
+- New "Audit log" section before Sources (and AUDITS.md in the repository): date, scope, what was checked and what was found and corrected, for every audit run so far, with a link for reporting a mismatch.
+
 ## Build 10-31-26.1
 - Item audit after forum feedback on the filigree note and bow stats. Every bow in the ladder (35 rows) was checked against its wiki item page: damage dice and multiplier, enhancement bonus, critical profile, every affix, binding, source and sentience. All 35 match. The four filigree set bonuses were checked against the Sentient Weapon/Filigrees page and match.
 - One real error corrected: the synergy audit called the Overfocus fix "the Sentience jewel"; the fix is the Sustaining Symbiont, an ML15 trinket (The Sane Asylum), which costs the trinket slot. The filigree paragraph now gives every set's bonuses at every piece count from the wiki, and a new Overfocus paragraph spells out the -10 Search and Spot on Bow of Sinew at 14-19 and the trapper's options.
