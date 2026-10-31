@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-31-26.6
+- Endgame kit replaced by the INTiana Jones Salt optimizer solve: ranking Intelligence, Ranged Power, Doubleshot, Seeker, Armor-Piercing, Physical Sheltering (max 132), Constitution, Sneak Attack Dice (required), Dodge (max 23), Will, Distant Diversion, Fortification, Reflex, Fortitude, False Life, Deadly, MRR, Healing Amplification, Accuracy, Legendary Salt (required), Immunity to Fear, True Seeing, Blindness Immunity, Dexterity; crafting and augments on; the Legendary Calamitous Longbow pinned so Salt is the eight-stack Woeful version. Four test solves recorded in the Appendix. Same offence ceilings; Armor-Piercing 76, +3 sneak dice, Fortification 283, Will 25, Immunity to Fear, Salt on the bow, Constitution 32 (36 with one gem swap). Six items change: Skull of the Horned King, Goggles of the Archer, Pendant of Subtle Pain, The Unbreakable Cord, Coldlight Runners, Bracers of the Battlerager. Every item checked on its wiki page.
+- Rewritten to match: milestone wear-in table, Survivability from gear (with the Reaper/Ghost Touch row pointing at Shiradi's Vision), the crafted bow's Woeful row (Salt), the dodge arithmetic in the audit and Reaper 10, the Action Boost row, the optimizer check, the Appendix ranking paragraph with the four tests, the one-page rows, Sources and the audit log.
+
 ## Build 10-31-26.5
 - Reverted: the endgame kit is the R10 v3 solve again, with every dependent section as in Build 10-31-26.3. Build 10-31-26.4 (the INTiana Jones kit) is withdrawn; its version file stays in versions/ for reference.
 
