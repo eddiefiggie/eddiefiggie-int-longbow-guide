@@ -2,6 +2,9 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-31-26.3
+- All seven tree images re-captured from the BuildHub build in one session at one resolution (748 px wide, builder point counters cropped), replacing the mixed-age set. The picks are unchanged. No content changes.
+
 ## Build 10-31-26.2
 - Sourcing made visible: every "<Name> page" reference in the text is now a link to that wiki page (about 100 inline citations); every "(wiki)" table tag links to Sources; sections that have been audited carry a "Checked against the wiki" line with the date and scope (heroic feats, skills, enhancements, epic destinies, bow ladder, endgame kit, Playing it).
 - New "Audit log" section before Sources (and AUDITS.md in the repository): date, scope, what was checked and what was found and corrected, for every audit run so far, with a link for reporting a mismatch.
