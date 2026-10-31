@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 10-31-26.1
+- Item audit after forum feedback on the filigree note and bow stats. Every bow in the ladder (35 rows) was checked against its wiki item page: damage dice and multiplier, enhancement bonus, critical profile, every affix, binding, source and sentience. All 35 match. The four filigree set bonuses were checked against the Sentient Weapon/Filigrees page and match.
+- One real error corrected: the synergy audit called the Overfocus fix "the Sentience jewel"; the fix is the Sustaining Symbiont, an ML15 trinket (The Sane Asylum), which costs the trinket slot. The filigree paragraph now gives every set's bonuses at every piece count from the wiki, and a new Overfocus paragraph spells out the -10 Search and Spot on Bow of Sinew at 14-19 and the trapper's options.
+- Bow ladder: Bow of Sinew row notes Overfocus's penalty and that the bow does not accept sentience. Levelling survival: the Spectral Longbow line's Ghostbane (Ghost Touch) named as the pre-23 Reaper swap bow. Sources: Sentient Weapon/Filigrees, Overfocus, Sustaining Symbiont, Stealth Strike.
+
 ## Build 10-30-26.10
 - Stamp under the title reads "Last updated <date>" with the build number beside it, no wider than the cover image.
 - Orphan audit after the 10-29/10-30 changes: Dreadnought comparison said Pianissimo at 22 (destiny order buys it at 25); roadmap level-29 row called Cover of Darkness the second threat reducer (it is the third, after Pianissimo 25 and Queen's Diplomacy 26); Horizon Walker core listed as "Haste (Greater Marking)" (wiki name is Haste); Shadowdancer "not taken" line contradicted the Technician note that follows it; three history remarks ("the short version used to be", "earlier builds listed", "the old target") removed; the levelling-survival section's promise of a "next build" reworded as the planned Gear rework.
