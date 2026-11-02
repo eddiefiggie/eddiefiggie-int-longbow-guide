@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-02-26.1
+- Focused bow correction: Spectral Longbow (level 4) is ML4, not a level-1 recommendation. Its own item sheet conflicts with the aggregate table; the guide follows the item sheet and states the discrepancy.
+- Sapphire Sting is ML7 with native 19-20/x3 and no Keen. Corrected related milestone, critical-profile and Keen explanations without inferring its post-Improved-Critical behavior.
+- The existing level-8 model comparison retains its numeric outputs; unsupported Sapphire/Improved Critical inputs now fail explicitly. Added focused regression tests and the matching version snapshot. Other builds, gear and broad model assumptions are unchanged.
+
 ## Build 10-31-26.7
 - Synergy and overlap audit re-run against the Build 10-31-26.6 kit. Six rows rewritten (fortification bypass itemised by type, threat, sneak attack dice with the +3 Artifact gem and Improved Deception, Displacement without the old bracers, fortification on you from the Bracers of the Battlerager, the optimizer blind-spot row) and four rows added: Greater Marksmanship on three kit items (counts once), ability bonus types (the Litany's Profane and the Globe's Exceptional lines under the Lunar Gems and the bow's Miserable slot), Salt, and Doubleshot on items (the goggles' 9% under the cloak's 10%). No kit pick changes; the "What the audit changed" paragraph, the crafted bow's Miserable row (Exceptional Intelligence +2 to match the kit), the Appendix bonus-types bullet, Sources (Marksmanship, Improved Deception) and the audit log updated.
 
