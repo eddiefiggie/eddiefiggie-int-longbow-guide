@@ -30,6 +30,10 @@ def dmg(bow, level):
     n, mult, hi, ic = layers(level)
     if prof == 'base19': n += 1
     if prof == 'keen' and not ic: n += 1
+    if prof == 'native19_unverified_ic':
+        if ic:
+            raise ValueError('Sapphire Sting: Improved Critical interaction is not source-verified')
+        n += 1
     if elas: hi += 1
     base = W*AVG[die] + enh + FLAT[level]
     # rolls: 20 and 19 get 'hi'; other threat rolls get mult
@@ -49,7 +53,7 @@ def dmg(bow, level):
 BANDS = {
  8: [('Silver Longbow (base 19-20)',(1,'1d10',3,'base19',0,0,0,0,0)),
      ('Cheap Shot L5 (Keen, DS 3%)',(1,'1d8',2,'keen',0,0,0,0,0.03)),
-     ('Sapphire Sting (Keen, RA 10%)',(1,'1d8',3,'keen',0,0,0,0.10,0)),
+     ('Sapphire Sting (native 19-20, RA 10%)',(1,'1d8',3,'native19_unverified_ic',0,0,0,0.10,0)),
      ('Calamitous Longbow + Melancholic 2d6',(1,'1d8',4,'none',0,7,0,0,0))],
  12:[('Thornlord (Piercing 3, DS 2%)',(1,'1d8+2',5,'none',0,10.5,0,0,0.02)),
      ('Silver Longbow (base 19-20)',(1,'1d10',3,'base19',0,0,0,0,0)),
