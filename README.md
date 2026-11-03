@@ -28,6 +28,8 @@ Edit `index.html`, copy it to `versions/MM-DD-YY.x.html` (x = iteration that day
 
 From the repository root, run `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v` (Python standard library only).
 
+The [Guide checks workflow](.github/workflows/guide-checks.yml) runs that same discovery command on pull requests, including drafts. It automates the existing internal regression and structural checks; passing them does not certify game mechanics. The workflow uses read-only repository access and does not persist checkout credentials. Pages deployment and branch-protection settings are unchanged.
+
 `tools/test_guide_integrity.py` checks that the current guide matches the snapshot named by its displayed build, IDs are unique, same-page anchors resolve, and guide-relative `href`/`src` files exist. It ignores external URLs and checks neither older snapshots nor game mechanics. Local URLs are resolved from the guide's directory; a `<base>` element needs an explicit resolver update. CSS URLs, `srcset`, and browser rendering are outside these checks. Run them locally before committing; the Pages workflow does not run tests.
 
 ## Audits
