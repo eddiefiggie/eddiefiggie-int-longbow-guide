@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-03-26.2
+- Corrected the alacrity paragraph’s ratio notation from 20/15 to 1.20/1.15, about +4.35% under the existing model’s Haste-always-up assumption. Explicitly retained the need for direct-source review of attack-speed stacking; this is arithmetic consistency, not mechanics certification.
+- Added focused model-arithmetic regression checks and the matching snapshot. Model code, outputs, build choices and historical snapshots are unchanged.
+
 ## Build 11-03-26.1
 - Aligned the delayed-IPS roadmap with the existing detailed selections: Weapon Finesse 12, Improved Precise Shot 15, Weapon Focus: Ranged 18. Scourge prose now follows its existing table, with Power Critical 18 and Sneak of Shadows as the optional alternative there; removed stale spare-level-12 and eighth-slot descriptions.
 - Repeated the existing Legendary Trick Shot slot-eligibility caveat in the one-page summary and roadmap, and the existing Harbinger of Chaos alignment condition in the imbue summaries. No feat, timing, gear, total or model change; this is internal consistency work, with no new wiki verification.
