@@ -1,0 +1,18 @@
+name: Guide checks
+
+on: pull_request
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Internal guide checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Run the full internal test suite
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v
