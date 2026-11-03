@@ -24,6 +24,12 @@ Every number comes from the [DDO wiki](https://ddowiki.com) page named in the gu
 
 Edit `index.html`, copy it to `versions/MM-DD-YY.x.html` (x = iteration that day), set the same build number in the line under the `<h1>`, commit. GitHub Pages serves `main` from the repo root.
 
+## Testing
+
+From the repository root, run `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v` (Python standard library only).
+
+`tools/test_guide_integrity.py` checks that the current guide matches the snapshot named by its displayed build, IDs are unique, same-page anchors resolve, and guide-relative `href`/`src` files exist. It ignores external URLs and checks neither older snapshots nor game mechanics. Local URLs are resolved from the guide's directory; a `<base>` element needs an explicit resolver update. CSS URLs, `srcset`, and browser rendering are outside these checks. Run them locally before committing; the Pages workflow does not run tests.
+
 ## Audits
 
 Every section is checked line by line against the DDO wiki; see [AUDITS.md](AUDITS.md) for dates, scope and corrections, and open an issue if a number does not match its page.
