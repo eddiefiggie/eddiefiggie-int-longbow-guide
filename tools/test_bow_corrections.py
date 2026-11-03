@@ -16,11 +16,6 @@ def row_containing(text):
 
 
 class BowCorrectionTests(unittest.TestCase):
-    def test_build_and_snapshot(self):
-        self.assertIn('build 11-02-26.1', HTML)
-        self.assertEqual((ROOT / 'index.html').read_bytes(),
-                         (ROOT / 'versions/11-02-26.1.html').read_bytes())
-
     def test_spectral_ladder_level(self):
         rows = row_containing('>Spectral Longbow (level 4)</a></td>')
         self.assertEqual(len(rows), 1)

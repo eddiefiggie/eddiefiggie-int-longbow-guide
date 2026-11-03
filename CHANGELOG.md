@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-03-26.1
+- Aligned the delayed-IPS roadmap with the existing detailed selections: Weapon Finesse 12, Improved Precise Shot 15, Weapon Focus: Ranged 18. Scourge prose now follows its existing table, with Power Critical 18 and Sneak of Shadows as the optional alternative there; removed stale spare-level-12 and eighth-slot descriptions.
+- Repeated the existing Legendary Trick Shot slot-eligibility caveat in the one-page summary and roadmap, and the existing Harbinger of Chaos alignment condition in the imbue summaries. No feat, timing, gear, total or model change; this is internal consistency work, with no new wiki verification.
+- Added focused editorial regression checks and the matching snapshot. The existing dynamic integrity test now solely owns the current-build snapshot check; removed the redundant test tied to the previous build. Historical snapshots are unchanged.
+
 ## Build 11-02-26.1
 - Focused bow correction: Spectral Longbow (level 4) is ML4, not a level-1 recommendation. Its own item sheet conflicts with the aggregate table; the guide follows the item sheet and states the discrepancy.
 - Sapphire Sting is ML7 with native 19-20/x3 and no Keen. Corrected related milestone, critical-profile and Keen explanations without inferring its post-Improved-Critical behavior.
