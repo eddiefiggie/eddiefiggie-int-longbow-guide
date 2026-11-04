@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.4 (draft)
+- Explained the bow-model score scale beside its table: normalization within each comparison, approximate whole-number table summaries versus one-decimal script percentages, and apparent ties from rounding. Scores are not DPS or cross-level comparisons.
+- Model code, all values/rankings, build choices, evidence qualifications, CSS and table structure are unchanged. Added focused regression checks and a fresh matching snapshot; exact-source browser QA is pending.
+
 ## Build 11-04-26.3 (local reconciliation; unpublished)
 - Reconciled Sapphire draft df2b581 onto merged Lamordia main 93747790b89e34e5722c2942bcb4402b7d9e7daa. Retains the reviewed listed-profile / “Keen is not listed” qualifications, exact revision 700645 evidence and guardrails; no new mechanics claims.
 - Fresh matching snapshot preserves published Lamordia handling and roadmap accessibility, all historical snapshots, model arithmetic and build choices. Recipe and extended alacrity candidates remain excluded. Exact-source browser QA is pending; reconcile main and build stamps before publication.
