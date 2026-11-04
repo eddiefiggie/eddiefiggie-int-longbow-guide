@@ -39,3 +39,13 @@ The exact capture hash, missing capture timestamp and logged-out cache limitatio
 are retained; a citation or agreement between repeated claims is not validation.
 Revisit the tests and evidence together if the source or Guide representation
 changes. This integration changes no player-facing content or runtime files.
+
+## Score explanation structure guard
+
+The score explanation check parses the actual paragraph in the bow-model section
+before its table. Commented-out text, script text and uninstantiated templates do
+not satisfy it. Negative cases cover those regressions, misplaced and duplicate
+paragraphs; positive cases allow harmless inline markup and an obsolete commented
+copy beside the real paragraph. The normalization and rounding checks still run
+against the actual model script. This checks document structure and wording, not
+CSS visibility, browser rendering or the validity of game assumptions.
