@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.10 (local candidate; unpublished)
+- Desktop sidebar subsection links now open when their section receives keyboard focus and remain visible while focus is within that group, independently of the scroll-selected section.
+- Automatic sidebar recentering pauses while focus is inside the sidebar. Existing links, focus styling, page content and narrow-screen layout are unchanged. Focused regression checks and matching snapshot added; exact-source browser and assistive-technology QA pending.
+
 ## Build 11-04-26.9 (local candidate; unpublished)
 - Clarified early equipment timing in the milestone summary, levelling introduction and first band, set-bonus summary, and the repeated Amethyst Loupe wording, using the minimum levels already printed in the Guide. A complete level 1–2 kit remains unresolved.
 - This is internal consistency, not fresh item eligibility verification. Item rows, bonuses, acquisition claims, weapons, quiver, selected kit, model, styles and scripts are unchanged. Added focused regression checks and a matching snapshot; browser QA pending.

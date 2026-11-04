@@ -73,7 +73,7 @@ h2 + p:first-of-type{font-size:1.02em}
   #sidenav a:hover{color:var(--fg);background:var(--stripe)}
   #sidenav a.on{color:var(--accent-ink);border-left-color:var(--accent);background:var(--tag);font-weight:700}
   #sidenav ol ol{margin:.1rem 0 .3rem .6rem;display:none}
-  #sidenav li.open > ol{display:block}
+  #sidenav li.open > ol, #sidenav li:focus-within > ol{display:block}
   #sidenav ol ol a{font-size:.8rem;padding:.14rem .5rem}
 }
 @media (min-width:1180px){main{max-width:980px}}
@@ -82,7 +82,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </head>
 <body>
 <main><h1>A Levelling Chassis That Can Run R10</h1>
-<p class="build"><span class="build-name">INT Longbow Guide</span><span class="build-stamp">Last updated 4 November 2026</span><span class="build-date">build 11-04-26.9</span></p>
+<p class="build"><span class="build-name">INT Longbow Guide</span><span class="build-stamp">Last updated 4 November 2026</span><span class="build-date">build 11-04-26.10</span></p>
 <p class="cover"><img alt="Cover art: an Intelligence archer in a torchlit temple" src="img/cover.jpg"></p>
 <p class="caption"><em>INTiana Jones and the Temple of Pew. The cover is the feeling of playing this character: it is a lot of fun.</em></p>
 <h2 id="start-here">Start here: what this guide is</h2>
@@ -1432,7 +1432,7 @@ h2 + p:first-of-type{font-size:1.02em}
     var y=window.scrollY+120, cur=null;
     for(var i=0;i<entries.length;i++){ if(entries[i].el.offsetTop<=y) cur=entries[i]; }
     entries.forEach(function(e){ e.a.classList.toggle('on', e===cur); e.li.classList.remove('open'); });
-    if(cur){ (cur.parent||cur.li).classList.add('open'); if(cur.parent) cur.parent.querySelector('a').classList.add('on'); var r=cur.a.getBoundingClientRect(); if(r.top<40||r.bottom>window.innerHeight-40) cur.a.scrollIntoView({block:'center'}); }
+    if(cur){ (cur.parent||cur.li).classList.add('open'); if(cur.parent) cur.parent.querySelector('a').classList.add('on'); var r=cur.a.getBoundingClientRect(); if(!nav.contains(document.activeElement) && (r.top<40||r.bottom>window.innerHeight-40)) cur.a.scrollIntoView({block:'center'}); }
     var d=document.documentElement; var p=(d.scrollHeight-d.clientHeight)>0 ? window.scrollY/(d.scrollHeight-d.clientHeight) : 0; bar.style.width=(p*100)+'%';
   }
   var t; window.addEventListener('scroll',function(){ if(!t){ t=requestAnimationFrame(function(){ update(); t=null; }); } },{passive:true});
