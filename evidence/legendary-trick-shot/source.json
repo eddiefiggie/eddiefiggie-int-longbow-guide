@@ -1,0 +1,44 @@
+{
+  "subject": "Legendary Trick Shot",
+  "kind": "wiki-stated prerequisite",
+  "canonical_url": "https://ddowiki.com/page/Legendary_Trick_Shot",
+  "revision": 714089,
+  "revision_url": "https://ddowiki.com/index.php?title=Legendary_Trick_Shot&oldid=714089",
+  "capture_file": "Legendary_Trick_Shot.browser.json",
+  "capture_bytes": 13743,
+  "capture_sha256": "3787c98e40d2be79e2efb6096c0db3362c2c95a5269f0d192ef071f0da9c84cf",
+  "capture_timestamp": null,
+  "context": "\t\t\t\t90 heading Legendary Trick Shot, Value: 2\n\t\t\t\t\t91 container Legendary_Trick_Shot\n\t\t\t\t\t\t92 text Legendary Trick Shot\n\t\t\t\t93 content list\n\t\t\t\t\t94 container\n\t\t\t\t\t\t95 text Usage:\n\t\t\t\t\t\t96 link Description: Passive, Help: Passive feat, Value: ddowiki.com/page/Passive_feat\n\t\t\t\t\t97 container\n\t\t\t\t\t\t98 text Prerequisite:  Level 30, \n\t\t\t\t\t\t99 link Description: Trick Shot, Value: ddowiki.com/page/Trick_Shot\n",
+  "facts": [
+    {
+      "field": "minimum_level",
+      "value": 30,
+      "type": "integer",
+      "qualifiers": [
+        "necessary prerequisite, not sufficient legality"
+      ]
+    },
+    {
+      "field": "required_feat",
+      "value": "Trick Shot",
+      "type": "feat reference",
+      "qualifiers": [
+        "must already be selected in this guide schedule",
+        "no same-level ordering adjudicated"
+      ]
+    }
+  ],
+  "guide_claim": {
+    "section": "epic-and-legendary-feats",
+    "column": "Prerequisite",
+    "text": "Level 30, Trick Shot"
+  },
+  "limits": [
+    "Retained capture only; freshness and authenticity not established by hash.",
+    "Capture timestamp absent; page modification date is not capture time.",
+    "No proof of eligible Epic, Legendary, or Epic Destiny feat slot.",
+    "No live-game validation, stacking validation, or complete legality check.",
+    "Selected levels are build choices; no damage calculation is validated here.",
+    "Improved Precise Shot error-flagged capture excluded."
+  ]
+}

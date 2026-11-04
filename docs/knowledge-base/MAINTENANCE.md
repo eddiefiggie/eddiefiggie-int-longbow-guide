@@ -23,3 +23,19 @@ Integrity tests check the current snapshot, unique IDs, internal anchors and Gui
 For Guide content, follow [README updating rules](../../README.md#updating): update the build stamp and generate a matching new snapshot without overwriting history. Documentation-only work leaves `index.html`, its stamp and snapshot unchanged.
 
 The [Pages workflow](../../.github/workflows/pages.yml) runs on main pushes and manual dispatch. A docs-only merge therefore still triggers deployment, although Guide runtime bytes should stay identical. Verify deployment separately; this workflow does not run the test suite. Before merging, check the exact head, current repository rules and unresolved reviews rather than assuming an earlier status still applies.
+
+## Legendary Trick Shot retained-source guards (4 November 2026)
+
+The [retained evidence and coverage notes](../../evidence/legendary-trick-shot/README.md)
+bind the existing prerequisite cell and three selected schedules to Wiki revision
+714089: character level at least 30 and an already-selected Trick Shot. The
+separate classification check binds “Listed as a Legendary feat on the wiki” to
+the actual page-category link. Both run under standard unittest discovery, with
+negative controls for missing/later prerequisites, incorrect levels, corrupted
+source/claim context and unsupported slot assertions. These predicates are
+necessary-condition and retained-category checks only: slot eligibility, full
+build legality, live-game behavior, bonuses and stacking remain unverified.
+The exact capture hash, missing capture timestamp and logged-out cache limitation
+are retained; a citation or agreement between repeated claims is not validation.
+Revisit the tests and evidence together if the source or Guide representation
+changes. This integration changes no player-facing content or runtime files.
