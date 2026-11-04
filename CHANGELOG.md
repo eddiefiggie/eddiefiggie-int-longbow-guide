@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.1 (isolated local candidate; unpublished)
+- Added a visible horizontal-scroll cue before the levelling roadmap and made its existing scroll area keyboard-focusable, named by its heading and described by the cue. Table contents and mechanics are unchanged.
+- Built directly from main 3f8aea54974d81da65919463ab92acd025ab431b. The same design passed private desktop/500px/400px and keyboard QA on separate candidate 4d7ae7a; that result does not validate this exact source. Exact-source browser QA remains pending.
+- Added standalone regression coverage and a freshly generated matching snapshot. Sapphire, recipe, alacrity and Lamordia candidates are excluded. This local stamp is not reserved; reconcile main and stamps before release.
+
 ## Build 11-03-26.2
 - Corrected the alacrity paragraph’s ratio notation from 20/15 to 1.20/1.15, about +4.35% under the existing model’s Haste-always-up assumption. Explicitly retained the need for direct-source review of attack-speed stacking; this is arithmetic consistency, not mechanics certification.
 - Added focused model-arithmetic regression checks and the matching snapshot. Model code, outputs, build choices and historical snapshots are unchanged.
