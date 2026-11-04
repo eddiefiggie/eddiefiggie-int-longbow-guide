@@ -35,3 +35,7 @@ The [Guide checks workflow](.github/workflows/guide-checks.yml) runs that same d
 ## Audits
 
 Every section is checked line by line against the DDO wiki; see [AUDITS.md](AUDITS.md) for dates, scope and corrections, and open an issue if a number does not match its page.
+
+## Project maintenance
+
+See the [knowledge base](docs/knowledge-base/README.md) for build principles, evidence limits, open decisions, maintenance checks and a dated release checkpoint.
