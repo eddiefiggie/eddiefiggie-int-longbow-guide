@@ -4,6 +4,7 @@ Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier 
 
 ## Build 11-04-26.7 (local candidate; unpublished)
 - Added a derived listed-ingredient subtotal for the four selected heroic Calamitous purchases: 25 of each named Bleak part plus 20 Bleak Wires. The subtotal explicitly excludes any claim about all possible costs or current availability.
+- Moved the subtotal into normal full-width prose immediately before the bow ladder after narrow-screen QA found cramped wrapping inside the acquisition cell. It explicitly names the heroic Calamitous context and links to the four purchases.
 - Separate purchases, source/naming caveats, selected crafts, model outputs and styles are unchanged. Regression ties the subtotal to the retained heroic purchase costs. Fresh matching snapshot; exact-source browser QA pending.
 
 ## Build 11-04-26.6 (local candidate; unpublished)
