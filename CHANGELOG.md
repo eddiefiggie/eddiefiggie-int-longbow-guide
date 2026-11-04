@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.11 (local candidate; unpublished)
+- Reconciled repeated Walker’s Guidance early-use advice with the existing character-level-14 purchase in both progression tables. The tier summary, abilities explanation and levelling survival checklist now reflect that selected timing; the survival timeline distinguishes it from a universal earliest unlock.
+- Purchase order, allocations, effect descriptions, build choices, model, styles and scripts are unchanged. This is internal consistency, not a new mechanics verification. Added focused regression controls and a matching snapshot; exact-source browser QA pending.
+
 ## Build 11-04-26.10 (local candidate; unpublished)
 - Desktop sidebar subsection links now open when their section receives keyboard focus and remain visible while focus is within that group, independently of the scroll-selected section.
 - Automatic sidebar recentering pauses while focus is inside the sidebar. Existing links, focus styling, page content and narrow-screen layout are unchanged. Focused regression checks and matching snapshot added; exact-source browser and assistive-technology QA pending.
