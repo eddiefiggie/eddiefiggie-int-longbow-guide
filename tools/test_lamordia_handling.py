@@ -99,10 +99,36 @@ def source_contract(source):
     require(any(n.attrs.get('href') == '/page/Item:Viktranium_Pick' for n in doc.nodes('a')), 'Pick identity link')
 
 
+def guide_excluded(node):
+    return (node.tag in {'script', 'style', 'template'} or 'hidden' in node.attrs
+            or 'tooltip' in node.attrs.get('class', '').split()
+            or 'display: none' in node.attrs.get('style', ''))
+
+
+def guide_content(node):
+    """Guide-only structural view: ignore hidden/inert subtrees, not arbitrary CSS.
+
+    Keep retained-source parsing separate; this does not establish browser visibility.
+    """
+    if guide_excluded(node):
+        return
+    yield node
+    for child in node.children:
+        if isinstance(child, Node):
+            yield from guide_content(child)
+
+
+def guide_text(node):
+    if guide_excluded(node):
+        return ''
+    return ''.join(guide_text(child) if isinstance(child, Node) else child
+                   for child in node.children)
+
+
 def guide_contract(html):
     doc = Document(html).root
-    block = one([n for n in doc.nodes('section') if n.attrs.get('id') == 'lamordia-augment-handling'], 'handling checklist')
-    text = norm(block.text())
+    block = one([n for n in guide_content(doc) if n.tag == 'section' and n.attrs.get('id') == 'lamordia-augment-handling'], 'handling checklist')
+    text = norm(guide_text(block))
     for claim in ('family and variant must match', 'not Melancholic Slot (Armor)',
                   'Legendary augment raises a heroic item’s minimum level to 34',
                   'choose the heroic versions', 'can destroy the slotted augment',
@@ -126,6 +152,33 @@ class LamordiaHandlingTests(unittest.TestCase):
         self.assertEqual(len(self.raw), 612486)
         self.assertEqual(hashlib.sha256(self.raw).hexdigest(), 'e40935cdc1a352a7fa3dde5af1fd7a852e0a4e50f9d9ed3c44dfdb3cbbf5458e')
         source_contract(self.source);guide_contract(self.guide)
+
+    def test_hidden_or_inert_reader_cautions_are_rejected(self):
+        start = '<section id="lamordia-augment-handling">'
+        begin = self.guide.index(start)
+        finish = self.guide.index('</section>', begin) + len('</section>')
+        checklist = self.guide[begin:finish]
+        cases = {
+            'hidden section': checklist.replace(start, '<section hidden id="lamordia-augment-handling">'),
+            'hidden ancestor': '<div hidden>' + checklist + '</div>',
+            'hidden false is still hidden': checklist.replace(start, '<section hidden="false" id="lamordia-augment-handling">'),
+            'tooltip copy': '<div class="tooltip">' + checklist + '</div>',
+            'inline hidden copy': '<div style="display: none">' + checklist + '</div>',
+            'template ancestor': '<template>' + checklist + '</template>',
+            'commented checklist': '<!--' + checklist + '-->',
+        }
+        for warning in ('Match the full slot type.', 'Keep a levelling bow usable.',
+                        'Recover before replacing if you want to keep the old augment.'):
+            old = '<li><strong>' + warning
+            self.assertIn(old, checklist)
+            cases[warning] = checklist.replace(old, '<li hidden><strong>' + warning)
+        for label, replacement in cases.items():
+            with self.subTest(case=label):
+                with self.assertRaises(ValueError):
+                    guide_contract(self.guide[:begin] + replacement + self.guide[finish:])
+        # Visible wrappers and inert obsolete copies do not change the real checklist.
+        guide_contract(self.guide[:begin] + '<div>' + checklist + '</div>' + self.guide[finish:])
+        guide_contract(self.guide[:begin] + '<template>' + checklist + '</template>' + checklist + self.guide[finish:])
 
     def test_source_context_faults(self):
         mutations = [('to 34.', 'to 8.'), ('can destroy a currently-slotted', 'can preserve a currently-slotted'),
