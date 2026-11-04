@@ -1,0 +1,30 @@
+{
+  "subject": "Legendary Trick Shot",
+  "canonical_url": "https://ddowiki.com/page/Legendary_Trick_Shot",
+  "revision": 714089,
+  "revision_url": "https://ddowiki.com/index.php?title=Legendary_Trick_Shot&oldid=714089",
+  "capture_file": "Legendary_Trick_Shot.browser.json",
+  "capture_bytes": 13743,
+  "capture_sha256": "3787c98e40d2be79e2efb6096c0db3362c2c95a5269f0d192ef071f0da9c84cf",
+  "capture_timestamp": null,
+  "category_context": "\t\t\t110 container mw-normal-catlinks\n\t\t\t\t111 link Description: Categories, Help: Special:Categories, Value: ddowiki.com/page/Special:Categories\n\t\t\t\t112 text : \n\t\t\t\t113 content list\n\t\t\t\t\t114 link Description: Passive feats, Help: Category:Passive feats, Value: ddowiki.com/page/Category:Passive_feats\n\t\t\t\t\t115 link Description: Feats, Help: Category:Feats, Value: ddowiki.com/page/Category:Feats\n\t\t\t\t\t116 link Description: Purchased feats, Help: Category:Purchased feats, Value: ddowiki.com/page/Category:Purchased_feats\n\t\t\t\t\t117 link Description: Legendary feats, Help: Category:Legendary feats, Value: ddowiki.com/page/Category:Legendary_feats\n",
+  "fact": {
+    "field": "wiki_category",
+    "value": "Legendary feats",
+    "type": "page category membership",
+    "url": "https://ddowiki.com/page/Category:Legendary_feats",
+    "qualifiers": [
+      "retained Wiki classification only; not feat-slot eligibility"
+    ]
+  },
+  "guide_claim": {
+    "section": "epic-and-legendary-feats",
+    "selected_feat": "Legendary Trick Shot",
+    "column": "What it does (wiki)",
+    "text": "Listed as a Legendary feat on the wiki; confirm the slot accepts it"
+  },
+  "limits": [
+    "Missing capture timestamp; hash proves retained-byte identity, not freshness or authenticity.",
+    "No slot compatibility, stacking, base Trick Shot values or complete legality established."
+  ]
+}
