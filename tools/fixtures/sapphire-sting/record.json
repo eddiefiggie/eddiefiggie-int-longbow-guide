@@ -1,0 +1,122 @@
+{
+  "library_file_id": "libfile_4aa3c973f8788191aa325383bbba2fff",
+  "file_id": "file_000000005d5c81f59bf2d8e0705e275f",
+  "original_filename": "sapphire-sting-ml7-ddowiki-700645-rendered-dom-20261103T172959Z.json",
+  "size_bytes": 189229,
+  "sha256": "d27f77cfce9e95d741b49590ff437b1ab1f5cf97bd7fc5f8047f0cdff500d21f",
+  "identity": {
+    "capture_format": "browser-rendered-dom-v1",
+    "captured_at_utc": "2026-11-03T17:29:59.097Z",
+    "url": "https://ddowiki.com/page/Item:Sapphire_Sting",
+    "title": "I:Sapphire Sting - DDO wiki",
+    "permanent_link": "https://ddowiki.com/index.php?title=Item:Sapphire_Sting&oldid=700645"
+  },
+  "cache_markers": [
+    "Cached time: 20261102150341",
+    "Cache expiry: 86400",
+    "Saved in parser cache with key ddowiki:pcache:idhash:51390-0!canonical and timestamp 20261102150341 and revision id 700645.",
+    "<!-- Cached 20261102150342 -->"
+  ],
+  "freshness_warning": "(this is up to 6 hours old)",
+  "fields": {
+    "Minimum Level": "7",
+    "Damage and Type": "[1d8] + 3 Pierce, Magic",
+    "Critical threat range": "19-20 / x3",
+    "Weapon Type": "Long Bow / Ranged weapons",
+    "Binding": "Bound to Account on Acquire",
+    "Location": "ToEE: Air Node, dragon's hoard chests"
+  },
+  "enchantments": [
+    "+3 Enhancement Bonus",
+    "Lesser Human Bane",
+    "Destruction",
+    "Maiming",
+    "Ranged Alacrity 10%",
+    "Purple Augment Slot",
+    "Mythic Weapon Boost +2 or +4"
+  ],
+  "mythic_qualifier": "This is a rare enchantment that does not show up on all drops of this item.",
+  "guide_claims": [
+    {
+      "name": "roadmap",
+      "starts_with": "4-5Arcane Archer:",
+      "required": [
+        "Sapphire Sting from 7 (not at 4-5)"
+      ],
+      "context_text": "4-5Arcane Archer: Arcane Archer, Elemental Arrows (Flaming). Deepwood: Far Shot, Stealthy 3, Favored Defense 1Cheap Shot from 5; Sapphire Sting from 7 (not at 4-5)The Flaming Arrows imbue (1d6 now, 4d6 from 30 while Chaotic); +1 bow enhancement; three sneak dice, the fourth at 6"
+    },
+    {
+      "name": "milestone",
+      "starts_with": "1-7Level-1-eligible bow;",
+      "required": [
+        "Sapphire Sting from 7 (listed 19-20/x3; Keen is not listed)"
+      ],
+      "context_text": "1-7Level-1-eligible bow; Nicked Longbow from 2; Spectral Longbow from 4; Cheap Shot from 5; Sapphire Sting from 7 (listed 19-20/x3; Keen is not listed)The levelling set, levels 1-4 (Saltmarsh Explorer pieces)"
+    },
+    {
+      "name": "levelling kit",
+      "starts_with": "WeaponCheap Shot (5),",
+      "required": [
+        "Sapphire Sting (7)",
+        "Bow ladder (build decision)"
+      ],
+      "context_text": "WeaponCheap Shot (5), Sapphire Sting (7), then Silver Longbow or a crafted Calamitous Longbow at 8Bow ladder (build decision): the dataset’s weapon rows are repeating crossbows and are not used"
+    },
+    {
+      "name": "critical explanation",
+      "starts_with": "Native expanded range is not Keen.",
+      "required": [
+        "Sapphire Sting’s item page lists 19-20/x3; Keen is not listed",
+        "its post-Improved-Critical interaction is not verified here",
+        "Do not extrapolate that item-specific explanation"
+      ],
+      "context_text": "Native expanded range is not Keen. Bow of Sinew’s item page specifically explains its printed 19-20 range as a base 5% plus a bonus 5%, with Improved Critical applying only to the base and yielding 18-20. Do not extrapolate that item-specific explanation to every printed 19-20 bow. Sapphire Sting’s item page lists 19-20/x3; Keen is not listed; its post-Improved-Critical interaction is not verified here."
+    },
+    {
+      "name": "Keen explanation",
+      "starts_with": "Keen does not stack.",
+      "required": [
+        "Keen is not listed among Sapphire Sting’s enchantments."
+      ],
+      "context_text": "Keen does not stack. Keen “does not stack with Improved Critical feat” (Keen page). Once the matching Improved Critical feat is active, Keen supplies no additional threat-range increase; the bow’s other properties can still matter. Keen is not listed among Sapphire Sting’s enchantments."
+    },
+    {
+      "name": "targeted correction",
+      "starts_with": "Targeted correction, 2 November 2026:",
+      "required": [
+        "Sapphire Sting has listed 19-20/x3; Keen is not listed.",
+        "This correction is not a fresh certification of the entire ladder."
+      ],
+      "context_text": "Targeted correction, 2 November 2026: Spectral Longbow (level 4) requires level 4; Sapphire Sting has listed 19-20/x3; Keen is not listed. These errors were missed by the 31 October check. This correction is not a fresh certification of the entire ladder."
+    },
+    {
+      "name": "model boundary",
+      "starts_with": "Sapphire scope:",
+      "required": [
+        "its comparison below is evaluated at level 8 only",
+        "Do not carry that result into Improved Critical at level 9 or later",
+        "the model rejects that unverified Sapphire interaction"
+      ],
+      "context_text": "Sapphire scope: its comparison below is evaluated at level 8 only. Do not carry that result into Improved Critical at level 9 or later; the model rejects that unverified Sapphire interaction rather than treating it as Keen."
+    },
+    {
+      "name": "appendix",
+      "starts_with": "Keen and Improved Critical:",
+      "required": [
+        "Sapphire Sting has listed 19-20/x3; Keen is not listed.",
+        "Its post-Improved-Critical interaction is not inferred from Bow of Sinew’s item-specific explanation."
+      ],
+      "context_text": "Keen and Improved Critical: Keen “does not stack with Improved Critical feat” (Keen page); this limits Keen’s contribution, not the useful life of the whole bow. Sapphire Sting has listed 19-20/x3; Keen is not listed. Its post-Improved-Critical interaction is not inferred from Bow of Sinew’s item-specific explanation."
+    },
+    {
+      "name": "audit history",
+      "starts_with": "2 Nov 2026Focused Spectral/Sapphire correction",
+      "required": [
+        "Sapphire Sting own item page (revision 700645)",
+        "Sapphire corrected to listed 19-20/x3; Keen is not listed.",
+        "No full-ladder recertification or unrelated build change."
+      ],
+      "context_text": "2 Nov 2026Focused Spectral/Sapphire correctionSpectral Longbow (level 4) own item page (revision 722933), Sapphire Sting own item page (revision 700645), aggregate Long Bow table discrepancy and related Keen wordingSpectral carry level and ML corrected to 4; Sapphire corrected to listed 19-20/x3; Keen is not listed. Level-band and Ghost Touch references reconciled. The 31 October “all 35 bows matched” conclusion missed these errors and is superseded for these two items. No full-ladder recertification or unrelated build change."
+    }
+  ]
+}

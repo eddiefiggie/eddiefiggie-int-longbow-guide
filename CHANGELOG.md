@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.3 (local reconciliation; unpublished)
+- Reconciled Sapphire draft df2b581 onto merged Lamordia main 93747790b89e34e5722c2942bcb4402b7d9e7daa. Retains the reviewed listed-profile / “Keen is not listed” qualifications, exact revision 700645 evidence and guardrails; no new mechanics claims.
+- Fresh matching snapshot preserves published Lamordia handling and roadmap accessibility, all historical snapshots, model arithmetic and build choices. Recipe and extended alacrity candidates remain excluded. Exact-source browser QA is pending; reconcile main and build stamps before publication.
+
 ## Build 11-04-26.2 (local candidate; unpublished)
 - Added a Lamordia handling checklist: match family and Weapon variant, avoid raising a heroic item to ML34, and recover a wanted augment with a Viktranium Pick before replacing it. Retained Wiki revision 720728 lists possible Pick sources, not guaranteed rewards.
 - Isolated on merged roadmap main d6d2732518bb9b8e13517b86b8574aaa4ff15442. Recipe costs, alacrity, selected build and model are unchanged. Added bounded source checks and a fresh snapshot; exact-source browser QA is pending. Reconcile current main and build stamps before publication.
