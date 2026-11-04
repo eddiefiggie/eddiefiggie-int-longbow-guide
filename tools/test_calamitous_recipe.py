@@ -144,11 +144,14 @@ def validate_recipe(html, crafting, item):
     headings = [n for n in siblings[:position] if n.tag in {'h2', 'h3'}]
     require(headings and headings[-1].attrs.get('id') == 'bow-ladder-levels-1-36',
             'subtotal must belong to bow ladder')
-    following = siblings[position + 1] if position + 1 < len(siblings) else None
+    cue = siblings[position + 1] if position + 1 < len(siblings) else None
+    require(cue is not None and cue.tag == 'p'
+            and cue.attrs.get('id') == 'bow-ladder-scroll-help', 'subtotal precedes ladder scroll cue')
+    following = siblings[position + 2] if position + 2 < len(siblings) else None
     require(following is not None and following.tag == 'div'
             and following.attrs.get('class') == 'tw'
             and any(n.tag == 'div' and n.attrs.get('id') == 'heroic-calamitous-recipe'
-                    for n in guide_content(following)), 'subtotal immediately precedes recipe table')
+                    for n in guide_content(following)), 'subtotal and scroll cue immediately precede recipe table')
     links = [n.attrs.get('href') for n in guide_content(note) if n.tag == 'a']
     require(links == ['#heroic-calamitous-recipe'], 'subtotal links to four purchases')
     context = ('Heroic Viktranium Experiment crafting — separate purchases; “parts” below means '

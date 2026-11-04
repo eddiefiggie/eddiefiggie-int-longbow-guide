@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.8 (local candidate; unpublished)
+- Added a visible horizontal-scroll instruction and explicitly keyboard-focusable, labelled bow-ladder region using the existing roadmap pattern. The cue points readers to the offscreen Where column on narrow screens.
+- Preserved all bow-table bytes, full-width derived subtotal and purchase link, styles, scripts, source qualifications and model results. Added structural/negative controls and a fresh matching snapshot; exact-source browser and accessibility QA pending.
+
 ## Build 11-04-26.7 (local candidate; unpublished)
 - Added a derived listed-ingredient subtotal for the four selected heroic Calamitous purchases: 25 of each named Bleak part plus 20 Bleak Wires. The subtotal explicitly excludes any claim about all possible costs or current availability.
 - Moved the subtotal into normal full-width prose immediately before the bow ladder after narrow-screen QA found cramped wrapping inside the acquisition cell. It explicitly names the heroic Calamitous context and links to the four purchases.
