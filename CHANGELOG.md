@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.13 (local candidate; unpublished)
+- Added a compact native disclosure near the opening: links to existing life-specific feat schedules, current-level roadmap/AP/DP guidance and gear bands. New gear-heading anchors preserve the original tables.
+- Routing retains the separate Scourge class grant, class-life timing exceptions, Harper substitution, item minimum levels and unresolved level 1–2 kit. No new mechanics, calculations, styles or scripts. Existing guidance and model values unchanged; exact-source browser QA pending.
+
 ## Build 11-04-26.12 (local candidate; unpublished)
 - The opening heroic-feat quick reference now directs levels 12–18 to the existing full-BAB/3/4-BAB schedules and a stable Aasimar Scourge schedule anchor, instead of presenting one unconditional order.
 - All detailed schedules, class grants, optional alternatives and game claims are unchanged. This is reader routing and internal consistency, not fresh prerequisite verification. Added focused regression controls and matching snapshot; browser QA pending.

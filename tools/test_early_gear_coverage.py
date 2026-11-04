@@ -34,7 +34,7 @@ def validate(html):
     skills = ' '.join(parsed.blocks['skills'])
     assert 'the Loupe’s +6 from its listed ML 3 through level 9' in skills, 'Loupe timing matches own row'
     assert 'the Loupe’s +6 at 1-9' not in skills, 'no contradictory repeated timing'
-    band = html[html.index('<h4>Levels 1-4</h4>'):html.index('<h4>Levels 5-9</h4>')]
+    band = html[html.index('<h4 id="gear-band-1-4">Levels 1-4</h4>'):html.index('<h4 id="gear-band-5-9">Levels 5-9</h4>')]
     assert 'id="early-gear-coverage"' in band and band.index('id="early-gear-coverage"') < band.index('<table>'), 'note beside early kit'
     table = re.search(r'<table>.*?</table>', band, re.S)[0]
     assert hashlib.sha256(table.encode()).hexdigest() == '82849b89490dc243c05eb239a9841586e3c7215b0598ca6316aad3ba6e7870e7', 'all original early item rows preserved'
