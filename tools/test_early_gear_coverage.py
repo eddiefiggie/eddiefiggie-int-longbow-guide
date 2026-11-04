@@ -27,6 +27,10 @@ def validate(html):
     rows = [r for t in parsed.tables['gear-milestones'] for r in t if r and r[0] == '1-7']
     assert len(rows) == 1 and rows[0][2] == SUMMARY, 'milestone timing matches printed ML labels'
     assert any(INTRO in p for p in parsed.blocks['levelling-gear']), 'band introduction'
+    sets = [p for p in parsed.blocks['levelling-gear'] if p.startswith('Sets inside the levelling set.')]
+    assert len(sets) == 1, 'one set summary'
+    assert 'Saltmarsh Explorer from 3 through 4, according to the selected pieces’ ML 3 labels above' in sets[0], 'set timing follows existing item labels'
+    assert 'Saltmarsh Explorer at 1-4' not in sets[0], 'no repeated level-1 set implication'
     skills = ' '.join(parsed.blocks['skills'])
     assert 'the Loupe’s +6 from its listed ML 3 through level 9' in skills, 'Loupe timing matches own row'
     assert 'the Loupe’s +6 at 1-9' not in skills, 'no contradictory repeated timing'
@@ -43,7 +47,8 @@ class EarlyGearCoverageTests(unittest.TestCase):
 
     def test_contradictions_and_overclaim_are_rejected(self):
         html = (ROOT / 'index.html').read_text()
-        changes = [(SUMMARY, 'The levelling set, levels 1-4 (Saltmarsh Explorer pieces)'),
+        changes = [('Saltmarsh Explorer from 3 through 4, according to the selected pieces’ ML 3 labels above', 'Saltmarsh Explorer at 1-4'),
+                   (SUMMARY, 'The levelling set, levels 1-4 (Saltmarsh Explorer pieces)'),
                    (INTRO, 'The bands are the levels at which the loadout changes.'),
                    ('the Loupe’s +6 from its listed ML 3 through level 9', 'the Loupe’s +6 at 1-9'),
                    ('does not yet establish a complete level 1–2 kit', 'establishes a complete level 1–2 kit'),
