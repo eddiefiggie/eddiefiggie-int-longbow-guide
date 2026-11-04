@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.5 (local candidate; unpublished)
+- Clarified four separate heroic Calamitous purchases and which selected augment lists Bleak Wires. Retained the heroic Dolorous/Dreadful naming caveat and limited claims to listed costs.
+- Reused the released crafting capture and retained heroic item capture with focused source/context guards. No stats, model values, selected crafts, CSS or other Guide instructions change. Fresh matching snapshot; exact-source browser QA pending.
+
 ## Build 11-04-26.4 (draft)
 - Explained the bow-model score scale beside its table: normalization within each comparison, approximate whole-number table summaries versus one-decimal script percentages, and apparent ties from rounding. Scores are not DPS or cross-level comparisons.
 - Model code, all values/rankings, build choices, evidence qualifications, CSS and table structure are unchanged. Added focused regression checks and a fresh matching snapshot; exact-source browser QA is pending.
