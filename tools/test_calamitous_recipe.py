@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import unittest
+from test_lamordia_handling import Document, Node, guide_content, guide_text
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURES = ROOT / 'tools/fixtures/calamitous-recipe'
@@ -124,6 +125,32 @@ def validate_recipe(html, crafting, item):
     require('separate purchases; “parts” below means Bleak Alternators, Conductors, Insulators and Resistors.' in text, 'ingredient key')
     require('some heroic Dolorous augments are named Dreadful in game and marks Flames “Heroic - Dreadful”' in text, 'guide naming qualifier')
     require('not all possible costs or current availability' in text, 'partial scope')
+    subtotal = (f'Heroic Calamitous listed-ingredient subtotal (derived): {sum(q for q, _ in costs)} each of '
+                'Bleak Alternators, Conductors, Insulators and Resistors '
+                f'({" + ".join(str(q) for q, _ in costs)}), plus {sum(w for _, w in costs)} Bleak Wires. '
+                'This adds only the listed ingredients for the four purchases in the heroic Calamitous row below, '
+                'not all possible costs or current availability.')
+    doc = Document(html).root
+    notes = [n for n in guide_content(doc) if n.tag == 'p'
+             and n.attrs.get('id') == 'heroic-calamitous-subtotal']
+    require(len(notes) == 1, 'one actual subtotal paragraph')
+    note = notes[0]
+    require(guide_text(note) == subtotal, 'derived subtotal must match listed costs and scope')
+    require(note.attrs == {'id': 'heroic-calamitous-subtotal'}, 'plain subtotal paragraph')
+    mains = [n for n in guide_content(doc) if n.tag == 'main' and note in n.children]
+    require(len(mains) == 1, 'subtotal must be normal full-width main prose')
+    siblings = [n for n in mains[0].children if isinstance(n, Node)]
+    position = siblings.index(note)
+    headings = [n for n in siblings[:position] if n.tag in {'h2', 'h3'}]
+    require(headings and headings[-1].attrs.get('id') == 'bow-ladder-levels-1-36',
+            'subtotal must belong to bow ladder')
+    following = siblings[position + 1] if position + 1 < len(siblings) else None
+    require(following is not None and following.tag == 'div'
+            and following.attrs.get('class') == 'tw'
+            and any(n.tag == 'div' and n.attrs.get('id') == 'heroic-calamitous-recipe'
+                    for n in guide_content(following)), 'subtotal immediately precedes recipe table')
+    links = [n.attrs.get('href') for n in guide_content(note) if n.tag == 'a']
+    require(links == ['#heroic-calamitous-recipe'], 'subtotal links to four purchases')
     context = ('Heroic Viktranium Experiment crafting — separate purchases; “parts” below means '
                'Bleak Alternators, Conductors, Insulators and Resistors.' + ''.join(expected) +
                'The captured crafting table warns that some heroic Dolorous augments are named '
@@ -179,6 +206,33 @@ class CalamitousRecipeTests(unittest.TestCase):
             validate_recipe(self.html.replace(block, '') + block, *self.sources)
         with self.assertRaises(AssertionError):
             validate_recipe(re.sub(r'<li>Blank Calamitous Longbow:.*?</li>', '', self.html), *self.sources)
+
+    def test_subtotal_arithmetic_scope_and_placement(self):
+        costs = source_costs(*self.sources)
+        self.assertEqual(sum(q for q, _ in costs), 25)
+        self.assertEqual(sum(w for _, w in costs), 20)
+        changes = [('25 each of Bleak', '20 each of Bleak'),
+                   ('(5 + 5 + 10 + 5)', '(5 + 5 + 5 + 5)'),
+                   (', plus 20 Bleak Wires.', ', plus 80 Bleak Wires.'),
+                   ('Heroic Calamitous listed-ingredient subtotal (derived):', 'Complete crafting cost:'),
+                   ('four purchases in the heroic Calamitous row below', 'every Legendary purchase'),
+                   ('This adds only the listed ingredients', 'This includes every required ingredient')]
+        for old, new in changes:
+            with self.subTest(old=old):
+                self.assertEqual(self.html.count(old), 1)
+                with self.assertRaises(AssertionError):
+                    validate_recipe(self.html.replace(old, new), *self.sources)
+        subtotal = re.search(r'<p id="heroic-calamitous-subtotal">.*?</p>', self.html)[0]
+        without = self.html.replace(subtotal, '')
+        for changed in (without.replace('<div id="heroic-calamitous-recipe">', '<div id="heroic-calamitous-recipe">' + subtotal),
+                        self.html.replace(subtotal, '<div>' + subtotal + '</div>'),
+                        self.html.replace('href="#heroic-calamitous-recipe"', 'href="#sources"'),
+                        self.html.replace(subtotal, ''),
+                        self.html.replace(subtotal, '<!--' + subtotal + '-->'),
+                        self.html.replace(subtotal, '') + subtotal,
+                        self.html.replace(subtotal, subtotal + subtotal)):
+            with self.assertRaises(AssertionError):
+                validate_recipe(changed, *self.sources)
 
     def test_source_semantic_negative_controls_even_without_hash_check(self):
         changes = [
