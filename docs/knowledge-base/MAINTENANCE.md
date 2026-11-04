@@ -49,3 +49,13 @@ paragraphs; positive cases allow harmless inline markup and an obsolete commente
 copy beside the real paragraph. The normalization and rounding checks still run
 against the actual model script. This checks document structure and wording, not
 CSS visibility, browser rendering or the validity of game assumptions.
+
+## Lamordia checklist content guard
+
+The Guide-side Lamordia check requires the reviewed checklist outside HTML
+`hidden` and inert subtrees, including hidden ancestors and templates. Hiding
+individual compatibility, ML34 or recovery list items cannot satisfy the exact
+reviewed context. Visible wrappers and an inert obsolete copy beside the real
+checklist remain acceptable. The retained crafting-source parser and its
+revision, identity and claim checks are unchanged. This is a structural check,
+not a browser/CSS visibility test or fresh verification of game mechanics.
