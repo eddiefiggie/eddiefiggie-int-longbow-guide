@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.12 (local candidate; unpublished)
+- The opening heroic-feat quick reference now directs levels 12–18 to the existing full-BAB/3/4-BAB schedules and a stable Aasimar Scourge schedule anchor, instead of presenting one unconditional order.
+- All detailed schedules, class grants, optional alternatives and game claims are unchanged. This is reader routing and internal consistency, not fresh prerequisite verification. Added focused regression controls and matching snapshot; browser QA pending.
+
 ## Build 11-04-26.11 (local candidate; unpublished)
 - Reconciled repeated Walker’s Guidance early-use advice with the existing character-level-14 purchase in both progression tables. The tier summary, abilities explanation and levelling survival checklist now reflect that selected timing; the survival timeline distinguishes it from a universal earliest unlock.
 - Purchase order, allocations, effect descriptions, build choices, model, styles and scripts are unchanged. This is internal consistency, not a new mechanics verification. Added focused regression controls and a matching snapshot; exact-source browser QA pending.
