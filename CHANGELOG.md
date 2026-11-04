@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-04-26.9 (local candidate; unpublished)
+- Clarified early equipment timing in the milestone summary, levelling introduction and first band, and the repeated Amethyst Loupe wording, using the minimum levels already printed in the Guide. A complete level 1–2 kit remains unresolved.
+- This is internal consistency, not fresh item eligibility verification. Item rows, bonuses, acquisition claims, weapons, quiver, selected kit, model, styles and scripts are unchanged. Added focused regression checks and a matching snapshot; browser QA pending.
+
 ## Build 11-04-26.8 (local candidate; unpublished)
 - Added a visible horizontal-scroll instruction and explicitly keyboard-focusable, labelled bow-ladder region using the existing roadmap pattern. The cue points readers to the offscreen Where column on narrow screens.
 - Preserved all bow-table bytes, full-width derived subtotal and purchase link, styles, scripts, source qualifications and model results. Added structural/negative controls and a fresh matching snapshot; exact-source browser and accessibility QA pending.
