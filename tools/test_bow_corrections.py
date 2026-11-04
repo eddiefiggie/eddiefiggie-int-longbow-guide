@@ -29,7 +29,7 @@ class BowCorrectionTests(unittest.TestCase):
     def test_sapphire_ladder_profile(self):
         rows = row_containing('>Sapphire Sting</a></td>')
         self.assertEqual(len(rows), 1)
-        self.assertIn('<td>7</td><td>native 19-20/x3 (not Keen)</td>', rows[0])
+        self.assertIn('<td>7</td><td>listed 19-20/x3 (Keen is not listed)</td>', rows[0])
 
     def test_level_one_roadmap(self):
         rows = row_containing('<td>Harper: Strategic Combat I</td>')
