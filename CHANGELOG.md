@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-05-26.4 (local candidate; unpublished)
+- Added a derived listed-ingredient comparison for one new Legendary bow blank and the four already selected Weapon fills, distinguishing Wicked Salt and the Cataclysmic blank surcharge.
+- Preserves all selections, individual costs, source caveats and model outputs; excludes unspecified costs and availability promises. Exact-source browser QA pending.
+
 ## Build 11-05-26.3 (local candidate; unpublished)
 - Named the already-selected Legendary +2 Exceptional Intelligence Weapon augment as Miserable Dimlight in the crafted-bow and kit tables, with a pinned citation to retained crafting revision 720728.
 - Added the retained City Hall/Wicked purchase route and Inventory Panel slotting instruction, linked to the existing handling warnings. Selected effect, costs, alternatives and all model outputs unchanged. No source refresh, current-availability or broader crafting certification; browser QA pending.
