@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-05-26.3 (local candidate; unpublished)
+- Named the already-selected Legendary +2 Exceptional Intelligence Weapon augment as Miserable Dimlight in the crafted-bow and kit tables, with a pinned citation to retained crafting revision 720728.
+- Added the retained City Hall/Wicked purchase route and Inventory Panel slotting instruction, linked to the existing handling warnings. Selected effect, costs, alternatives and all model outputs unchanged. No source refresh, current-availability or broader crafting certification; browser QA pending.
+
 ## Build 11-05-26.2 (local candidate; unpublished)
 - Added a generated heroic crafting print reference containing the existing subtotal, full recipe and complete augment-handling checklist verbatim, plus build identity and printed pinned-source URLs.
 - Excludes session-only ownership state. Existing game guidance/model unchanged; actual rendered print QA pending.
