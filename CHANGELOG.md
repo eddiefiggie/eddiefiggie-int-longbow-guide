@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-05-26.1 (local candidate; unpublished)
+- Added an optional, session-only checkoff beside the existing heroic Calamitous subtotal. Checking an already-owned/unneeded purchase removes its listed ingredients from the remaining calculation; reset restores all four.
+- Uses the existing four source-backed purchases only. No inventory storage/transmission, new recipe, availability claim or model change. Original recipe and naming caveats preserved; exact-source browser QA pending.
+
 ## Build 11-04-26.13 (local candidate; unpublished)
 - Added a compact native disclosure near the opening: links to existing life-specific feat schedules, current-level roadmap/AP/DP guidance and gear bands. New gear-heading anchors preserve the original tables.
 - Routing retains the separate Scourge class grant, class-life timing exceptions, Harper substitution, item minimum levels and unresolved level 1–2 kit. No new mechanics, calculations, styles or scripts. Existing guidance and model values unchanged; exact-source browser QA pending.

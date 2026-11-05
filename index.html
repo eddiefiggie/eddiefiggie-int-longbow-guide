@@ -82,7 +82,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </head>
 <body>
 <main><h1>A Levelling Chassis That Can Run R10</h1>
-<p class="build"><span class="build-name">INT Longbow Guide</span><span class="build-stamp">Last updated 4 November 2026</span><span class="build-date">build 11-04-26.13</span></p>
+<p class="build"><span class="build-name">INT Longbow Guide</span><span class="build-stamp">Last updated 5 November 2026</span><span class="build-date">build 11-05-26.1</span></p>
 <p class="cover"><img alt="Cover art: an Intelligence archer in a torchlit temple" src="img/cover.jpg"></p>
 <p class="caption"><em>INTiana Jones and the Temple of Pew. The cover is the feeling of playing this character: it is a lot of fun.</em></p>
 <details id="find-your-place">
@@ -959,6 +959,19 @@ h2 + p:first-of-type{font-size:1.02em}
 <p class="verified">Targeted correction, 2 November 2026: Spectral Longbow (level 4) requires level 4; Sapphire Sting has listed 19-20/x3; Keen is not listed. These errors were missed by the 31 October check. This correction is not a fresh certification of the entire ladder.</p>
 <p><strong>Spectral source discrepancy:</strong> the <a class="cite" href="https://ddowiki.com/page/Item:Spectral_Longbow_(level_4)">level-4 item page</a> states Minimum Level 4, while the <a class="cite" href="https://ddowiki.com/page/Longbow">aggregate Long Bow table</a> lists 1. This guide follows the item’s own minimum level; level-1 eligibility is not verified.</p>
 <p>Every longbow worth carrying, with its profile, lines and source as the wiki states them. Bold rows are the picks in the milestone table; the others are the fallbacks and the near-misses. Most of the ladder is Bound to Account, so it is collected once and reused on every later life.</p>
+<details id="heroic-purchase-checkoff" hidden>
+<summary>Already have some of the four Heroic Calamitous purchases?</summary>
+<p id="heroic-purchase-help">Check a purchase you already own or do not need to buy. The result adds only the listed ingredients for unchecked purchases in the <a href="#heroic-calamitous-recipe">heroic recipe and its retained sources</a>; it is not all possible costs or current availability. Entries are not saved and reset when this page reloads.</p>
+<fieldset aria-describedby="heroic-purchase-help">
+<legend>Already owned / do not need to buy this listed purchase</legend>
+<p><label><input type="checkbox" id="purchase-blank" autocomplete="off"> Blank heroic Calamitous Longbow</label></p>
+<p><label><input type="checkbox" id="purchase-melancholic" autocomplete="off"> Heroic Melancholic Flames (Weapon)</label></p>
+<p><label><input type="checkbox" id="purchase-dolorous" autocomplete="off"> Heroic Dolorous Flames (Weapon; the crafting table labels it Dreadful)</label></p>
+<p><label><input type="checkbox" id="purchase-miserable" autocomplete="off"> Heroic Miserable Armor-Piercing (Weapon)</label></p>
+</fieldset>
+<p id="heroic-purchase-result" role="status" aria-live="polite" aria-atomic="true"></p>
+<button type="button" id="heroic-purchase-reset">Reset: need all four purchases</button>
+</details>
 <p id="heroic-calamitous-subtotal"><strong>Heroic Calamitous listed-ingredient subtotal (derived):</strong> 25 each of Bleak Alternators, Conductors, Insulators and Resistors (5 + 5 + 10 + 5), plus 20 Bleak Wires. This adds only the listed ingredients for the <a href="#heroic-calamitous-recipe">four purchases in the heroic Calamitous row below</a>, not all possible costs or current availability.</p>
 <p id="bow-ladder-scroll-help"><strong>All six columns:</strong> on narrow screens, scroll this table horizontally to see “Where”. With a keyboard, focus the table area and use the Left and Right Arrow keys.</p>
 <div class="tw" tabindex="0" role="region" aria-labelledby="bow-ladder-levels-1-36" aria-describedby="bow-ladder-scroll-help"><table>
@@ -1446,6 +1459,25 @@ h2 + p:first-of-type{font-size:1.02em}
   }
   var t; window.addEventListener('scroll',function(){ if(!t){ t=requestAnimationFrame(function(){ update(); t=null; }); } },{passive:true});
   window.addEventListener('resize',update); update();
+})();
+</script>
+<script id="heroic-purchase-script">
+(function(){
+  'use strict';
+  var panel=document.getElementById('heroic-purchase-checkoff');
+  var result=document.getElementById('heroic-purchase-result');
+  var purchases=[['purchase-blank',5,0],['purchase-melancholic',5,0],['purchase-dolorous',10,0],['purchase-miserable',5,20]];
+  function update(){
+    var parts=0, wires=0;
+    purchases.forEach(function(p){ if(!document.getElementById(p[0]).checked){ parts+=p[1]; wires+=p[2]; } });
+    result.textContent='Remaining listed ingredients for unchecked purchases only: '+parts+' each of Bleak Alternators, Conductors, Insulators and Resistors; '+wires+' Bleak Wires. Other possible costs and current availability are not established.';
+  }
+  function reset(){ purchases.forEach(function(p){ document.getElementById(p[0]).checked=false; }); update(); }
+  purchases.forEach(function(p){ document.getElementById(p[0]).addEventListener('change',update); });
+  document.getElementById('heroic-purchase-reset').addEventListener('click',reset);
+  window.addEventListener('pageshow',reset);
+  reset();
+  panel.hidden=false;
 })();
 </script>
 </body>
