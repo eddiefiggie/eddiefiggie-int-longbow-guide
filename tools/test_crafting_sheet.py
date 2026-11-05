@@ -29,7 +29,7 @@ class CraftingSheetTests(unittest.TestCase):
         for old,new in [('10 of each part','5 of each part'),('not all possible costs','all costs'),
                         ('Heroic - Dreadful','Heroic'),('minimum level to 34','minimum level to 8'),
                         ('a Jeweler’s Tool Kit does not work.',''),('oldid=702384','oldid=1'),
-                        ('build 11-05-26.2','build stale')]:
+                        ('INT Longbow Guide · build','Stale Guide · build')]:
             with self.subTest(old=old):
                 assert old in sheet
                 with self.assertRaises(AssertionError):validate(source,sheet.replace(old,new))
