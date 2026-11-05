@@ -1,0 +1,2385 @@
+[
+  {
+    "source_id": "S006",
+    "canonical_url": "https://ddowiki.com/page/Item:Miserable_Dimlight_(legendary)",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+    "page": "Item:Miserable Dimlight (legendary)",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 10:08, July 31, 2026 (Update 81.0.1) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/File:Miserable_Dimlight_(Legendary).png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Account on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Legendary_Viktranium_Experiment_Crafting",
+          "text": "Legendary Viktranium Experiment Crafting"
+        },
+        {
+          "href": "https://ddowiki.com/page/Ludendorf_City_Hall",
+          "text": "Ludendorf City Hall"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": "Exceptional Intelligence +2"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": "Exceptional Intelligence +2"
+        },
+        {
+          "href": "https://ddowiki.com/page/Exceptional_bonus",
+          "text": "Exceptional bonus"
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+          "text": "https://ddowiki.com/index.php?title=I:Miserable_Dimlight_(legendary)&oldid=702294"
+        }
+      ],
+      "modified": "This page was last modified 10:08, July 31, 2026 (Update 81.0.1) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+      "text": "Miserable Dimlight\nMinimum Level\t34\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tLamordia: Miserable (Weapon)\nDescription\tSlotted Effect: +2 Exceptional bonus to Intelligence.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nLegendary Viktranium Experiment Crafting, Ludendorf City Hall\n\nEnhancements\t\nExceptional Intelligence +2",
+      "title": "I:Miserable Dimlight (legendary) - DDO wiki",
+      "tooltips": [
+        "Exceptional Intelligence +2: This item focuses the power of the wearer's mind, granting a +2 Exceptional bonus to Intelligence."
+      ],
+      "requested": "Item:Miserable_Dimlight_(legendary)"
+    },
+    "retained_file": "retained/fresh-crafts.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "8543026fdf44a0e578be956ad3be2429f0803b210c4cc5b41f58720080439c15",
+    "original_captured_file_sha256": "8543026fdf44a0e578be956ad3be2429f0803b210c4cc5b41f58720080439c15",
+    "public_file_sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05"
+  },
+  {
+    "source_id": "S012",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+    "page": "Item:Legendary Ring of Unnatural Accuracy",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 21:27, April 21, 2025 (Update 73.1) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/Category:Finger_items",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/File:QuestionOrb.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Slot",
+          "text": "Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/None",
+          "text": "None"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Account on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Gem_(material)",
+          "text": "Gem"
+        },
+        {
+          "href": "https://ddowiki.com/page/Gem_(material)",
+          "text": "Gem"
+        },
+        {
+          "href": "https://ddowiki.com/page/Hardness",
+          "text": "hardness"
+        },
+        {
+          "href": "https://ddowiki.com/page/Currency",
+          "text": "Platinum Piece"
+        },
+        {
+          "href": "https://ddowiki.com/page/Pilgrims%27_Peril",
+          "text": "Pilgrims' Peril"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": "Quality Dexterity +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": "Quality Dexterity +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doubleshot",
+          "text": "Quality Doubleshot 3%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doubleshot",
+          "text": "Quality Doubleshot 3%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Greater_Marksmanship",
+          "text": "Greater Marksmanship"
+        },
+        {
+          "href": "https://ddowiki.com/page/Greater_Marksmanship",
+          "text": "Greater Marksmanship"
+        },
+        {
+          "href": "https://ddowiki.com/page/Diversion",
+          "text": " Distant Diversion +22%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Diversion",
+          "text": " Distant Diversion +22%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Green Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Blue_augments",
+          "text": "Blue"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Green_augments",
+          "text": "Green"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Colorless Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/File:Legendary_Ring_of_Unnatural_Accuracy.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+          "text": "https://ddowiki.com/index.php?title=I:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763"
+        }
+      ],
+      "modified": "This page was last modified 21:27, April 21, 2025 (Update 73.1) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "text": "Legendary Ring of Unnatural Accuracy\nMinimum level\t32\t\nItem Type\tJewelry / Ring\nSlot\tFinger\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t420\nMaterial\tGem\nHardness\t52\nBase Value\t12,801pp \nWeight\t0.10 lbs\nLocation\tPilgrims' Peril, end chest\nEnchantments\t\nQuality Dexterity +3\nQuality Doubleshot 3%\nGreater Marksmanship\nDistant Diversion +22%\nGreen Augment Slot\nColorless Augment Slot\n\t\nUpgradeable?\t\nDescription\tSomehow, this band allows its bearer a level of precision and focus that would be impossible for the average mind.\nTips\t\n\n\n",
+      "title": "I:Legendary Ring of Unnatural Accuracy - DDO wiki",
+      "tooltips": [
+        "Gem: Items made of gem are generally extremely durable and have a very high hardness. Most commonly used to make trinkets and docents.",
+        "Platinum Piece",
+        "Quality Dexterity +3: This item makes the wearer more nimble and dexterous, granting a +3 Quality bonus to Dexterity.",
+        "Quality Doubleshot 3%: Passive: 3% Quality bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+        "Greater Marksmanship: This item is enchanted to enhance your skill with ranged weapons. You gain a +3 Competence Bonus to Ranged Attack and a +2 Competence Bonus to Ranged Damage.",
+        " Distant Diversion +22%: +22% Enhancement bonus to decreased threat generated from ranged damage.",
+        "Blue, Green, Yellow, and/or Colorless",
+        "Colorless"
+      ],
+      "requested": "Item:Legendary_Ring_of_Unnatural_Accuracy"
+    },
+    "retained_file": "retained/fresh-endgame-b.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "original_captured_file_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "public_file_sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84"
+  },
+  {
+    "source_id": "S013",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+    "page": "Item:Legendary Burrowing Claws",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 03:59, August 25, 2026 (Update 81.2) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/Category:Hand_items",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/File:QuestionOrb.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Slot",
+          "text": "Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/None",
+          "text": "None"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Account on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Leather",
+          "text": "Leather"
+        },
+        {
+          "href": "https://ddowiki.com/page/Leather",
+          "text": "Leather"
+        },
+        {
+          "href": "https://ddowiki.com/page/Currency",
+          "text": "Platinum Piece"
+        },
+        {
+          "href": "https://ddowiki.com/page/The_Darklake",
+          "text": "The Darklake"
+        },
+        {
+          "href": "https://ddowiki.com/page/Depthdigger",
+          "text": "Depthdigger"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": "Quality Armor-Piercing 5%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": "Quality Armor-Piercing 5%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Fortification"
+        },
+        {
+          "href": "https://ddowiki.com/page/Seeker",
+          "text": " Seeker +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Seeker",
+          "text": " Seeker +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Seeker",
+          "text": "Insightful Seeker +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Seeker",
+          "text": "Insightful Seeker +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Nearly_Complete",
+          "text": "Nearly Complete: Ability Score"
+        },
+        {
+          "href": "https://ddowiki.com/page/Nearly_Complete",
+          "text": "Nearly Complete: Ability Score"
+        },
+        {
+          "href": "https://ddowiki.com/page/Gravenhollow",
+          "text": "Gravenhollow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": " Charisma +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": " Charisma +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": " Constitution +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": " Constitution +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": " Dexterity +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": " Dexterity +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": " Intelligence +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": " Intelligence +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": " Strength +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": " Strength +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": " Wisdom +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": " Wisdom +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Green Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Blue_augments",
+          "text": "Blue"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Green_augments",
+          "text": "Green"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Colorless Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+          "text": "Moon Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Moon_augments",
+          "text": "Moon"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Hands Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Hands Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_bonus",
+          "text": "Mythic bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Melee_Power",
+          "text": "Melee"
+        },
+        {
+          "href": "https://ddowiki.com/page/Ranged_Power",
+          "text": "Ranged"
+        },
+        {
+          "href": "https://ddowiki.com/page/Universal_Spell_Power",
+          "text": "Universal Spell Power"
+        },
+        {
+          "href": "https://ddowiki.com/page/File:Legendary_Burrowing_Claws.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Nearly_Complete",
+          "text": "Nearly Complete"
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+          "text": "https://ddowiki.com/index.php?title=I:Legendary_Burrowing_Claws&oldid=707232"
+        }
+      ],
+      "modified": "This page was last modified 03:59, August 25, 2026 (Update 81.2) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "text": "Legendary Burrowing Claws\nMinimum level\t35\t\nItem Type\tClothing / Gloves\nSlot\tHand\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t450\nMaterial\tLeather\nHardness\t55\nBase Value\t14,001pp \nWeight\t0.10 lbs\nLocation\tThe Darklake, Depthdigger's chest\nEnchantments\t\nQuality Armor-Piercing 5%\nSeeker +15\nInsightful Seeker +7\nNearly Complete: Ability Score\nThis item can be upgraded with one of the following:\nCharisma +15\nConstitution +15\nDexterity +15\nIntelligence +15\nStrength +15\nWisdom +15\nGreen Augment Slot\nColorless Augment Slot\nMoon Augment Slot\nMythic Hands Boost +1 or +3\n\t\nUpgradeable?\tNearly Complete\nDescription\tFashioned after the claws of the Bulette, these would be especially good for digging.\nTips\t",
+      "title": "I:Legendary Burrowing Claws - DDO wiki",
+      "tooltips": [
+        "Leather: Leather armor is made of the hide of animals. It provides decent protection without excessively restricting the user's movements.",
+        "Platinum Piece",
+        "Quality Armor-Piercing 5%: Passive: +5% Quality bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)",
+        " Seeker +15: Provides a +15 Enhancement bonus to confirm critical hits, and a +15 Enhancement bonus to critical hit damage (before multipliers are applied).",
+        "Insightful Seeker +7: Provides a +7 Insight bonus to confirm critical hits, and a +7 Insight bonus to critical hit damage (before multipliers are applied).",
+        "Nearly Complete: Ability Score: This item isn't quite finished, but it's only a step away from completion. Bring it to the forges on the upper floor of Gravenhollow and combine it with melted materials to restore this item to its full potential.",
+        " Charisma +15: This item makes the wearer have more flair, granting a +15 Enhancement bonus to Charisma.",
+        " Constitution +15: This item gives the wearer improved health, granting a +15 Enhancement bonus to Constitution.",
+        " Dexterity +15: This item makes the wearer more nimble and dexterous, granting a +15 Enhancement bonus to Dexterity.",
+        " Intelligence +15: This item focuses the power of the wearer's mind, granting a +15 Enhancement bonus to Intelligence.",
+        " Strength +15: This item gives the wearer the power of Ogre Strength, granting a +15 Enhancement bonus to Strength.",
+        " Wisdom +15: This item makes the wearer more in tune with her surroundings, granting a +15 Enhancement bonus to Wisdom.",
+        "Blue, Green, Yellow, and/or Colorless",
+        "Colorless",
+        "Moon",
+        "Mythic Hands Boost +1 or +3: +1 or +3 Mythic bonus to Melee, Ranged, and Universal Spell Power.(This is a rare enchantment that does not show up on all drops of this item.)"
+      ],
+      "requested": "Item:Legendary_Burrowing_Claws"
+    },
+    "retained_file": "retained/fresh-endgame-b.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "original_captured_file_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "public_file_sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84"
+  },
+  {
+    "source_id": "S014",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+    "page": "Item:Legendary Coldlight Runners",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 09:12, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/Category:Feet_items",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/File:QuestionOrb.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Slot",
+          "text": "Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/None",
+          "text": "None"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Account on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Leather",
+          "text": "Leather"
+        },
+        {
+          "href": "https://ddowiki.com/page/Leather",
+          "text": "Leather"
+        },
+        {
+          "href": "https://ddowiki.com/page/Currency",
+          "text": "Platinum Piece"
+        },
+        {
+          "href": "https://ddowiki.com/page/A_Light_in_the_Attic",
+          "text": "A Light in the Attic"
+        },
+        {
+          "href": "https://ddowiki.com/page/Greater_Marksmanship",
+          "text": "Greater Marksmanship"
+        },
+        {
+          "href": "https://ddowiki.com/page/Greater_Marksmanship",
+          "text": "Greater Marksmanship"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doubleshot",
+          "text": "Insightful Doubleshot 5%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doubleshot",
+          "text": "Insightful Doubleshot 5%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+          "text": "Lamordia: Melancholic Slot (Accessory)"
+        },
+        {
+          "href": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+          "text": "Lamordia: Melancholic Slot (Accessory)"
+        },
+        {
+          "href": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+          "text": "Lamordia: Dolorous Slot (Accessory)"
+        },
+        {
+          "href": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+          "text": "Lamordia: Dolorous Slot (Accessory)"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Green Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Blue_augments",
+          "text": "Blue"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Green_augments",
+          "text": "Green"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Colorless Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+          "text": "Moon Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Moon_augments",
+          "text": "Moon"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Boot Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Boot Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_bonus",
+          "text": "Mythic bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Physical_Resistance_Rating",
+          "text": "Physical"
+        },
+        {
+          "href": "https://ddowiki.com/page/Magical_Resistance_Rating",
+          "text": "Magical"
+        },
+        {
+          "href": "https://ddowiki.com/page/File:Legendary_Coldlight_Runners.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+          "text": "Viktranium Experiment crafting"
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+          "text": "https://ddowiki.com/index.php?title=I:Legendary_Coldlight_Runners&oldid=685297"
+        }
+      ],
+      "modified": "This page was last modified 09:12, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "text": "Legendary Coldlight Runners\nMinimum level\t34\t\nItem Type\tClothing / Boots\nSlot\tFeet\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t440\nMaterial\tLeather\nHardness\t54\nBase Value\t13,601pp \nWeight\t0.10 lbs\nLocation\tA Light in the Attic, end chest\nEnchantments\t\nGreater Marksmanship\nInsightful Doubleshot 5%\nLamordia: Melancholic Slot (Accessory)\nLamordia: Dolorous Slot (Accessory)\nGreen Augment Slot\nColorless Augment Slot\nMoon Augment Slot\nMythic Boot Boost +1 or +3\n\t\nUpgradeable?\tViktranium Experiment crafting\nDescription\tYou don't need to be swift - you just need to be swifter than the Coldlight Walkers.\nTips\t",
+      "title": "I:Legendary Coldlight Runners - DDO wiki",
+      "tooltips": [
+        "Leather: Leather armor is made of the hide of animals. It provides decent protection without excessively restricting the user's movements.",
+        "Platinum Piece",
+        "Greater Marksmanship: This item is enchanted to enhance your skill with ranged weapons. You gain a +3 Competence Bonus to Ranged Attack and a +2 Competence Bonus to Ranged Damage.",
+        "Insightful Doubleshot 5%: Passive: 5% Insight bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+        "Lamordia: Melancholic Slot (Accessory):Apply a Lamordia augment to this item.",
+        "Lamordia: Dolorous Slot (Accessory):Apply a Lamordia augment to this item.",
+        "Blue, Green, Yellow, and/or Colorless",
+        "Colorless",
+        "Moon",
+        "Mythic Boot Boost +1 or +3: +1 or +3 Mythic bonus to Physical and Magical Resistance Ratings.(This is a rare enchantment that does not show up on all drops of this item.)"
+      ],
+      "requested": "Item:Legendary_Coldlight_Runners"
+    },
+    "retained_file": "retained/fresh-endgame-b.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "original_captured_file_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "public_file_sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84"
+  },
+  {
+    "source_id": "S017",
+    "canonical_url": "https://ddowiki.com/page/Item:Bracers_of_the_Battlerager",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Bracers_of_the_Battlerager&oldid=685047",
+    "page": "Item:Bracers of the Battlerager",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 09:03, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/Category:Wrist_items",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/File:QuestionOrb.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Slot",
+          "text": "Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/None",
+          "text": "None"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Character on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Steel",
+          "text": "Steel"
+        },
+        {
+          "href": "https://ddowiki.com/page/Steel",
+          "text": "Steel"
+        },
+        {
+          "href": "https://ddowiki.com/page/Currency",
+          "text": "Platinum Piece"
+        },
+        {
+          "href": "https://ddowiki.com/page/Threats_Old_and_New",
+          "text": "Threats Old and New"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Fortification  +162%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Fortification  +162%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Insightful Fortification  +81%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Insightful Fortification  +81%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Quality Fortification  +40%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Quality Fortification  +40%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Sealed_in_Undeath",
+          "text": "Sealed in Undeath"
+        },
+        {
+          "href": "https://ddowiki.com/page/Sealed_in_Undeath",
+          "text": "Sealed in Undeath"
+        },
+        {
+          "href": "https://ddowiki.com/page/Ritual_Table#Sealed_in_Undeath_clothing_/_jewelry_upgrades",
+          "text": "Ritual Table"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": " Strength +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": " Strength +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": " Constitution +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": " Constitution +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": " Dexterity +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": " Dexterity +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": " Intelligence +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": " Intelligence +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": " Wisdom +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": " Wisdom +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": " Charisma +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": " Charisma +15"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": "Insightful Strength +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": "Insightful Strength +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": "Insightful Constitution +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": "Insightful Constitution +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": "Insightful Dexterity +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": "Insightful Dexterity +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": "Insightful Intelligence +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": "Insightful Intelligence +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": "Insightful Wisdom +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": "Insightful Wisdom +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": "Insightful Charisma +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": "Insightful Charisma +7"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": "Quality Strength +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": "Quality Strength +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": "Quality Constitution +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": "Quality Constitution +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": "Quality Dexterity +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": "Quality Dexterity +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": "Quality Intelligence +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": "Quality Intelligence +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": "Quality Wisdom +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": "Quality Wisdom +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": "Quality Charisma +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": "Quality Charisma +3"
+        },
+        {
+          "href": "https://ddowiki.com/page/Quality_bonus",
+          "text": "Quality bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Green Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Blue_augments",
+          "text": "Blue"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Green_augments",
+          "text": "Green"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Yellow Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+          "text": "Moon Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Moon_augments",
+          "text": "Moon"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Wrist Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Wrist Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_bonus",
+          "text": "Mythic bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Physical_Resistance_Rating",
+          "text": "Physical"
+        },
+        {
+          "href": "https://ddowiki.com/page/Magical_Resistance_Rating",
+          "text": "Magical"
+        },
+        {
+          "href": "https://ddowiki.com/page/File:Bracers_of_the_Battlerager.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Ritual_Table",
+          "text": "Ritual Table"
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:Bracers_of_the_Battlerager&oldid=685047",
+          "text": "https://ddowiki.com/index.php?title=I:Bracers_of_the_Battlerager&oldid=685047"
+        }
+      ],
+      "modified": "This page was last modified 09:03, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Bracers_of_the_Battlerager&oldid=685047",
+      "text": "Bracers of the Battlerager\nMinimum level\t33\t\nItem Type\tJewelry / Bracers\nSlot\tWrist\nRace Absolutely Required\tNone\nBinding\tBound to Character on Acquire\nDurability\t430\nMaterial\tSteel\nHardness\t53\nBase Value\t13,201pp \nWeight\t0.10 lbs\nLocation\tThreats Old and New, Raid Warded chest\nEnchantments\t\nFortification +162%\nInsightful Fortification +81%\nQuality Fortification +40%\nSealed in Undeath\nGreen Augment Slot\nYellow Augment Slot\nMoon Augment Slot\nMythic Wrist Boost +1 or +3\n\t\nUpgradeable?\tRitual Table\nDescription\tBearing the mark of the Eternal Brigade, these bracers offer unparalleled protection.\nTips\t\n\n\n",
+      "title": "I:Bracers of the Battlerager - DDO wiki",
+      "tooltips": [
+        "Steel: Steel is the common metal used to make weapons and armor.",
+        "Platinum Piece",
+        "Fortification  +162%: +162% Enhancement bonus to reduced chance of taking critical damage on a critical hit.",
+        "Insightful Fortification  +81%: +81% Insight bonus to reduced chance of taking critical damage on a critical hit.",
+        "Quality Fortification  +40%: +40% Quality bonus to reduced chance of taking critical damage on a critical hit.",
+        "Sealed in Undeath: This item seethes with a sealed power. It can have its power unsealed at the Ritual Table, adding one effect. Attempting to add another will remove the original.Effect options:  Strength +15 Strength +15: This item gives the wearer the power of Ogre Strength, granting a +15 Enhancement bonus to Strength. •  Constitution +15 Constitution +15: This item gives the wearer improved health, granting a +15 Enhancement bonus to Constitution. •  Dexterity +15 Dexterity +15: This item makes the wearer more nimble and dexterous, granting a +15 Enhancement bonus to Dexterity. •  Intelligence +15 Intelligence +15: This item focuses the power of the wearer's mind, granting a +15 Enhancement bonus to Intelligence. •  Wisdom +15 Wisdom +15: This item makes the wearer more in tune with her surroundings, granting a +15 Enhancement bonus to Wisdom. •  Charisma +15 Charisma +15: This item makes the wearer have more flair, granting a +15 Enhancement bonus to Charisma. • Insightful Strength +7Insightful Strength +7: This item gives the wearer the power of Ogre Strength, granting a +7 Insight bonus to Strength. • Insightful Constitution +7Insightful Constitution +7: This item gives the wearer improved health, granting a +7 Insight bonus to Constitution. • Insightful Dexterity +7Insightful Dexterity +7: This item makes the wearer more nimble and dexterous, granting a +7 Insight bonus to Dexterity. • Insightful Intelligence +7Insightful Intelligence +7: This item focuses the power of the wearer's mind, granting a +7 Insight bonus to Intelligence. • Insightful Wisdom +7Insightful Wisdom +7: This item makes the wearer more in tune with her surroundings, granting a +7 Insight bonus to Wisdom. • Insightful Charisma +7Insightful Charisma +7: This item makes the wearer have more flair, granting a +7 Insight bonus to Charisma. • Quality Strength +3Quality Strength +3: This item gives the wearer the power of Ogre Strength, granting a +3 Quality bonus to Strength. • Quality Constitution +3Quality Constitution +3: This item gives the wearer improved health, granting a +3 Quality bonus to Constitution. • Quality Dexterity +3Quality Dexterity +3: This item makes the wearer more nimble and dexterous, granting a +3 Quality bonus to Dexterity. • Quality Intelligence +3Quality Intelligence +3: This item focuses the power of the wearer's mind, granting a +3 Quality bonus to Intelligence. • Quality Wisdom +3Quality Wisdom +3: This item makes the wearer more in tune with her surroundings, granting a +3 Quality bonus to Wisdom. • Quality Charisma +3Quality Charisma +3: This item makes the wearer have more flair, granting a +3 Quality bonus to Charisma.",
+        " Strength +15: This item gives the wearer the power of Ogre Strength, granting a +15 Enhancement bonus to Strength.",
+        " Constitution +15: This item gives the wearer improved health, granting a +15 Enhancement bonus to Constitution.",
+        " Dexterity +15: This item makes the wearer more nimble and dexterous, granting a +15 Enhancement bonus to Dexterity.",
+        " Intelligence +15: This item focuses the power of the wearer's mind, granting a +15 Enhancement bonus to Intelligence.",
+        " Wisdom +15: This item makes the wearer more in tune with her surroundings, granting a +15 Enhancement bonus to Wisdom.",
+        " Charisma +15: This item makes the wearer have more flair, granting a +15 Enhancement bonus to Charisma.",
+        "Insightful Strength +7: This item gives the wearer the power of Ogre Strength, granting a +7 Insight bonus to Strength.",
+        "Insightful Constitution +7: This item gives the wearer improved health, granting a +7 Insight bonus to Constitution.",
+        "Insightful Dexterity +7: This item makes the wearer more nimble and dexterous, granting a +7 Insight bonus to Dexterity.",
+        "Insightful Intelligence +7: This item focuses the power of the wearer's mind, granting a +7 Insight bonus to Intelligence.",
+        "Insightful Wisdom +7: This item makes the wearer more in tune with her surroundings, granting a +7 Insight bonus to Wisdom.",
+        "Insightful Charisma +7: This item makes the wearer have more flair, granting a +7 Insight bonus to Charisma.",
+        "Quality Strength +3: This item gives the wearer the power of Ogre Strength, granting a +3 Quality bonus to Strength.",
+        "Quality Constitution +3: This item gives the wearer improved health, granting a +3 Quality bonus to Constitution.",
+        "Quality Dexterity +3: This item makes the wearer more nimble and dexterous, granting a +3 Quality bonus to Dexterity.",
+        "Quality Intelligence +3: This item focuses the power of the wearer's mind, granting a +3 Quality bonus to Intelligence.",
+        "Quality Wisdom +3: This item makes the wearer more in tune with her surroundings, granting a +3 Quality bonus to Wisdom.",
+        "Quality Charisma +3: This item makes the wearer have more flair, granting a +3 Quality bonus to Charisma.",
+        "Blue, Green, Yellow, and/or Colorless",
+        "Yellow and/or Colorless",
+        "Moon",
+        "Mythic Wrist Boost +1 or +3: +1 or +3 Mythic bonus to Physical and Magical Resistance Ratings.(This is a rare enchantment that does not show up on all drops of this item.)"
+      ],
+      "requested": "Item:Bracers_of_the_Battlerager"
+    },
+    "retained_file": "retained/fresh-endgame-b.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "original_captured_file_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "public_file_sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84"
+  },
+  {
+    "source_id": "S019",
+    "canonical_url": "https://ddowiki.com/page/Stack",
+    "pinned_url": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+    "page": "Stack",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 17:01, December 12, 2025 (Update 77) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/Save",
+          "text": "Save"
+        },
+        {
+          "href": "https://ddowiki.com/edit/Stack?section=1",
+          "text": "edit"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "enhancement"
+        },
+        {
+          "href": "https://ddowiki.com/page/Resistance_bonus",
+          "text": "resistance"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Bonus_types",
+          "text": "type of bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor_Class",
+          "text": "Armor Class"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/AC",
+          "text": "AC"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor_bonus",
+          "text": "Armor bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Shield_bonus",
+          "text": "shield bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor_bonus",
+          "text": "armor bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Black_Widow_Bracers",
+          "text": "Black Widow Bracers"
+        },
+        {
+          "href": "https://ddowiki.com/page/Shield_bonus",
+          "text": "Shield bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Shield_(spell)",
+          "text": "Shield (spell)"
+        },
+        {
+          "href": "https://ddowiki.com/page/Feat_bonus",
+          "text": "Feat bonuses"
+        },
+        {
+          "href": "https://ddowiki.com/page/Lightning_Reflexes",
+          "text": "Lightning Reflexes"
+        },
+        {
+          "href": "https://ddowiki.com/page/Reflex_saving_throw",
+          "text": "Reflex saves"
+        },
+        {
+          "href": "https://ddowiki.com/page/Luck_of_Heroes",
+          "text": "Luck of Heroes"
+        },
+        {
+          "href": "https://ddowiki.com/page/Saving_throw",
+          "text": "saves"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancements",
+          "text": "Enhancements"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Fortification"
+        },
+        {
+          "href": "https://ddowiki.com/page/False_Life_(enhancement)",
+          "text": "False Life"
+        },
+        {
+          "href": "https://ddowiki.com/page/Damage_Reduction",
+          "text": "Damage Reduction"
+        },
+        {
+          "href": "https://ddowiki.com/page/Stoneskin",
+          "text": "Stoneskin"
+        },
+        {
+          "href": "https://ddowiki.com/page/Active_blocking",
+          "text": "active blocking"
+        },
+        {
+          "href": "https://ddowiki.com/page/Barkskin",
+          "text": "Barkskin"
+        },
+        {
+          "href": "https://ddowiki.com/page/AC",
+          "text": "AC"
+        },
+        {
+          "href": "https://ddowiki.com/edit/Stack?section=2",
+          "text": "edit"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bane_(weapon)",
+          "text": "bane"
+        },
+        {
+          "href": "https://ddowiki.com/page/Flaming",
+          "text": "flaming"
+        },
+        {
+          "href": "https://ddowiki.com/edit/Stack?section=3",
+          "text": "edit"
+        },
+        {
+          "href": "https://ddowiki.com/page/Spell#Spell_Damage",
+          "text": "Spell Damage"
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+          "text": "https://ddowiki.com/index.php?title=Stack&oldid=669682"
+        }
+      ],
+      "modified": "This page was last modified 17:01, December 12, 2025 (Update 77) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+      "text": "Abilities or skills that stack add their effects together. For example, modifiers of +1 Save all and +2 Save against fear stack to create a total +3 to Save versus fear (in addition to the +1 to Save against everything else). In most cases however, only the strongest effect applies. For example, having non-stacking +3 and +5 modifiers is only worth a +5 bonus, not +8.\n\nBonus Types & Stacking[edit]\n\nBonuses usually (but not always) have a keyword, such as enhancement or resistance, identifying what type of bonus it is. Players usually try to maximize the potential of their characters in a given area by giving them a collection of bonus with different keywords. Achieving a high Armor Class is a good example of this strategy.\n\nStacking follows a few predictable general rules:\n\nBonuses of the same type do not stack:\nAn enhancement bonus to AC from armor is an Armor bonus. The enhancement bonus to AC from a shield is a shield bonus. In this case, the two bonuses to AC do stack.\nWhen an armor bonus to AC is granted by something other than armor or a docent (such as Black Widow Bracers), it does not stack with an actual armor.\nWhen a Shield bonus to AC comes from something other than a shield (such as the Shield (spell)), it does not stack with an actual shield.\nUntyped bonuses stack. Note that a bonus without a keyword isn't necessarily an untyped bonus, the description might just be lacking.\nPenalties always stack.\nFeat bonuses stack. A character with Lightning Reflexes (+2 bonus to Reflex saves) and Luck of Heroes (+1 bonus to all saves) will have a +3 Reflex save.\nBonuses from character Enhancements that don't mention a specific bonus almost always stack. They are not automatically \"enhancement bonuses.\"\nNote: Character enhancements with exactly the same name do not stack, other than the T3 & T4 Ability score enhancements.\nBenefits from the same family, like Fortification or False Life, do not stack.\nDamage Reduction does not stack (e.g. Stoneskin), except for the added DR that comes from active blocking (therefore it's not a waste to use it together with Barkskin which grants an increase to AC, i.e. an unrelated modifier).\nExample[edit]\n\nIf you use a bow or crossbow, bonuses and properties on your weapon do not stack with ones from the same category on your ammunition. For example, using +3 bolts of lesser undead bane in a +1 flaming crossbow of lesser undead bane gives your shots +3 to attack and damage (not +4), flaming damage, and lesser undead bane effect once.\n\nSpell damage[edit]\n\nFor information about stacking of various spell damage effects, refer to Spell Damage.",
+      "title": "Stack - DDO wiki",
+      "tooltips": [],
+      "requested": "Stack"
+    },
+    "retained_file": "retained/fresh-endgame-b.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "original_captured_file_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+    "public_file_sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84"
+  },
+  {
+    "source_id": "S021",
+    "canonical_url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:The_Skull_of_the_Horned_King&oldid=714102",
+    "page": "Item:The Skull of the Horned King",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 14:48, September 16, 2026 (Update 81.3) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/Category:Head_items",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/File:The_Skull_of_the_Horned_King_shown.jpg",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Slot",
+          "text": "Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/None",
+          "text": "None"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Character on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Flesh",
+          "text": "Flesh"
+        },
+        {
+          "href": "https://ddowiki.com/page/Flesh",
+          "text": "Flesh"
+        },
+        {
+          "href": "https://ddowiki.com/page/Currency",
+          "text": "Platinum Piece"
+        },
+        {
+          "href": "https://ddowiki.com/page/Terror_of_the_Demon_Lords",
+          "text": "Terror of the Demon Lords"
+        },
+        {
+          "href": "https://ddowiki.com/page/Relentless_Fury",
+          "text": "Relentless Fury"
+        },
+        {
+          "href": "https://ddowiki.com/page/Relentless_Fury",
+          "text": "Relentless Fury"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": " Armor-Piercing 25%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": " Armor-Piercing 25%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Fortification"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doublestrike",
+          "text": " Doublestrike 18%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doublestrike",
+          "text": " Doublestrike 18%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhanced_Bloodrage",
+          "text": "Enhanced Bloodrage"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhanced_Bloodrage",
+          "text": "Enhanced Bloodrage"
+        },
+        {
+          "href": "https://ddowiki.com/page/Nearly_Complete",
+          "text": "Nearly Complete: Ability Score"
+        },
+        {
+          "href": "https://ddowiki.com/page/Nearly_Complete",
+          "text": "Nearly Complete: Ability Score"
+        },
+        {
+          "href": "https://ddowiki.com/page/Gravenhollow",
+          "text": "Gravenhollow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": " Charisma +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Charisma",
+          "text": " Charisma +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": " Constitution +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Constitution",
+          "text": " Constitution +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": " Dexterity +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dexterity",
+          "text": " Dexterity +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": " Intelligence +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Intelligence",
+          "text": " Intelligence +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": " Strength +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Strength",
+          "text": " Strength +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": " Wisdom +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Wisdom",
+          "text": " Wisdom +16"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Green Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Blue_augments",
+          "text": "Blue"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Green_augments",
+          "text": "Green"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Yellow Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+          "text": "Sun Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Sun_augments",
+          "text": "Sun"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Head Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Head Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_bonus",
+          "text": "Mythic bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Physical_Resistance_Rating",
+          "text": "Physical"
+        },
+        {
+          "href": "https://ddowiki.com/page/Magical_Resistance_Rating",
+          "text": "Magical"
+        },
+        {
+          "href": "https://ddowiki.com/page/File:The_Skull_of_the_Horned_King.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:The_Skull_of_the_Horned_King&oldid=714102",
+          "text": "https://ddowiki.com/index.php?title=I:The_Skull_of_the_Horned_King&oldid=714102"
+        }
+      ],
+      "modified": "This page was last modified 14:48, September 16, 2026 (Update 81.3) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:The_Skull_of_the_Horned_King&oldid=714102",
+      "text": "The Skull of the Horned King\nMinimum level\t35\t\nItem Type\tClothing / Helm\nSlot\tHead\nRace Absolutely Required\tNone\nBinding\tBound to Character on Acquire\nDurability\t450\nMaterial\tFlesh\nHardness\t55\nBase Value\t14,001pp \nWeight\t0.10 lbs\nLocation\tTerror of the Demon Lords, end chest\nEnchantments\t\nRelentless Fury\nArmor-Piercing 25%\nDoublestrike 18%\nEnhanced Bloodrage\nNearly Complete: Ability Score\nThis item can be upgraded with one of the following:\nCharisma +16\nConstitution +16\nDexterity +16\nIntelligence +16\nStrength +16\nWisdom +16\nGreen Augment Slot\nYellow Augment Slot\nSun Augment Slot\nMythic Head Boost +1 or +3\n\t\nUpgradeable?\t\nDescription\tThe skull of Baphomet, taken as his form faded away. He may regenerate in the Abyss, but this will be a lasting reminder of his defeat.\nTips\t",
+      "title": "I:The Skull of the Horned King - DDO wiki",
+      "tooltips": [
+        "Flesh: Items made from flesh are often alive, or at least used to be. Disturbingly, this includes the Festivult Cookies...",
+        "Platinum Piece",
+        "Relentless Fury: While this item is equipped, any killing blows you strike against enemies may drive you into a furious rage, providing a 5% Enhancement damage bonus to your melee, ranged and unarmed attacks for 30 seconds. Slaying weaker opponents has a reduced chance of producing this effect.",
+        " Armor-Piercing 25%: Passive: +25% Enhancement bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)",
+        " Doublestrike 18%: Passive: 18% Enhancement bonus to Doublestrike. (Doublestrike is a chance to score an additional hit with a melee attack.)",
+        "Enhanced Bloodrage: This weapon is enhanced by blood - your blood! Each time you take damage or kill an enemy, there is a small chance that you will fall into an unholy bloodrage, greatly increasing your Melee Power, Constitution, and Damage. However, this rage will leave you more vulnerable to Physical attacks, slightly reducing your Armor Class.",
+        "Nearly Complete: Ability Score: This item isn't quite finished, but it's only a step away from completion. Bring it to the forges on the upper floor of Gravenhollow and combine it with melted materials to restore this item to its full potential.",
+        " Charisma +16: This item makes the wearer have more flair, granting a +16 Enhancement bonus to Charisma.",
+        " Constitution +16: This item gives the wearer improved health, granting a +16 Enhancement bonus to Constitution.",
+        " Dexterity +16: This item makes the wearer more nimble and dexterous, granting a +16 Enhancement bonus to Dexterity.",
+        " Intelligence +16: This item focuses the power of the wearer's mind, granting a +16 Enhancement bonus to Intelligence.",
+        " Strength +16: This item gives the wearer the power of Ogre Strength, granting a +16 Enhancement bonus to Strength.",
+        " Wisdom +16: This item makes the wearer more in tune with her surroundings, granting a +16 Enhancement bonus to Wisdom.",
+        "Blue, Green, Yellow, and/or Colorless",
+        "Yellow and/or Colorless",
+        "Sun",
+        "Mythic Head Boost +1 or +3: +1 or +3 Mythic bonus to Physical and Magical Resistance Ratings.(This is a rare enchantment that does not show up on all drops of this item.)"
+      ],
+      "requested": "Item:The_Skull_of_the_Horned_King"
+    },
+    "retained_file": "retained/fresh-endgame-a.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "a033c6245015b16e928531d8f22798f286406935e39690b3590154de41235cac",
+    "original_captured_file_sha256": "a033c6245015b16e928531d8f22798f286406935e39690b3590154de41235cac",
+    "public_file_sha256": "f62eb783a75b323f47c0d6387a937c0035aed52476115be7e18004031b60bb64"
+  },
+  {
+    "source_id": "S022",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+    "page": "Item:Legendary Goggles of the Archer",
+    "provenance": "fresh canonical browser read; permanent link captured where present",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 09:13, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+    "data": {
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/Category:Eye_items",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/File:Goggles_of_the_Archer_shown.jpg",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Slot",
+          "text": "Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/None",
+          "text": "None"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Account on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Steel",
+          "text": "Steel"
+        },
+        {
+          "href": "https://ddowiki.com/page/Steel",
+          "text": "Steel"
+        },
+        {
+          "href": "https://ddowiki.com/page/Currency",
+          "text": "Platinum Piece"
+        },
+        {
+          "href": "https://ddowiki.com/page/Book_Burning",
+          "text": "Book Burning"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doubleshot",
+          "text": " Doubleshot 9%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doubleshot",
+          "text": " Doubleshot 9%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "Enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Sight_Beyond_Sight",
+          "text": "Sight Beyond Sight"
+        },
+        {
+          "href": "https://ddowiki.com/page/Sight_Beyond_Sight",
+          "text": "Sight Beyond Sight"
+        },
+        {
+          "href": "https://ddowiki.com/page/Dodge_bypass",
+          "text": "Dodge bypass"
+        },
+        {
+          "href": "https://ddowiki.com/page/Greater_Marksmanship",
+          "text": "Greater Marksmanship"
+        },
+        {
+          "href": "https://ddowiki.com/page/Greater_Marksmanship",
+          "text": "Greater Marksmanship"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": "Insightful Armor-Piercing 11%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": "Insightful Armor-Piercing 11%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Insight_bonus",
+          "text": "Insight bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Fortification"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Green Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Blue_augments",
+          "text": "Blue"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Green_augments",
+          "text": "Green"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Colorless Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+          "text": "Sun Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Sun_augments",
+          "text": "Sun"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Goggle Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_Boost",
+          "text": "Mythic Goggle Boost"
+        },
+        {
+          "href": "https://ddowiki.com/page/Mythic_bonus",
+          "text": "Mythic bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Melee_Power",
+          "text": "Melee"
+        },
+        {
+          "href": "https://ddowiki.com/page/Ranged_Power",
+          "text": "Ranged"
+        },
+        {
+          "href": "https://ddowiki.com/page/Universal_Spell_Power",
+          "text": "Universal Spell Power"
+        },
+        {
+          "href": "https://ddowiki.com/page/File:Legendary_Goggles_of_the_Archer.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+          "text": "https://ddowiki.com/index.php?title=I:Legendary_Goggles_of_the_Archer&oldid=685336"
+        }
+      ],
+      "modified": "This page was last modified 09:13, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "text": "Legendary Goggles of the Archer\nMinimum level\t33\t\nItem Type\tJewelry / Goggles\nSlot\tEye\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t430\nMaterial\tSteel\nHardness\t53\nBase Value\t13,201pp \nWeight\t0.10 lbs\nLocation\tBook Burning, end chest\nEnchantments\t\nDoubleshot 9%\nSight Beyond Sight\nGreater Marksmanship\nInsightful Armor-Piercing 11%\nGreen Augment Slot\nColorless Augment Slot\nSun Augment Slot\nMythic Goggle Boost +1 or +3\n\t\nUpgradeable?\t\nDescription\tTBD\nTips\t\n\n\n",
+      "title": "I:Legendary Goggles of the Archer - DDO wiki",
+      "tooltips": [
+        "Steel: Steel is the common metal used to make weapons and armor.",
+        "Platinum Piece",
+        " Doubleshot 9%: Passive: 9% Enhancement bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+        "Sight Beyond Sight: You can see through all veils, piercing magical and mundane defenses alike. +5% Enhancement bonus to Dodge bypass.",
+        "Greater Marksmanship: This item is enchanted to enhance your skill with ranged weapons. You gain a +3 Competence Bonus to Ranged Attack and a +2 Competence Bonus to Ranged Damage.",
+        "Insightful Armor-Piercing 11%: Passive: +11% Insight bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)",
+        "Blue, Green, Yellow, and/or Colorless",
+        "Colorless",
+        "Sun",
+        "Mythic Goggle Boost +1 or +3: +1 or +3 Mythic bonus to Melee, Ranged, and Universal Spell Power.(This is a rare enchantment that does not show up on all drops of this item.)"
+      ],
+      "requested": "Item:Legendary_Goggles_of_the_Archer"
+    },
+    "retained_file": "retained/fresh-endgame-a.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "a033c6245015b16e928531d8f22798f286406935e39690b3590154de41235cac",
+    "original_captured_file_sha256": "a033c6245015b16e928531d8f22798f286406935e39690b3590154de41235cac",
+    "public_file_sha256": "f62eb783a75b323f47c0d6387a937c0035aed52476115be7e18004031b60bb64"
+  },
+  {
+    "source_id": "S075",
+    "canonical_url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+    "pinned_url": null,
+    "page": "Item:Globe of True Imperial Blood",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+      "text": "Globe of True Imperial Blood\nMinimum Level\t25\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tColorless\nDescription\tDrag this augment into a slot to upgrade an item with a +1 Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. This augment can go in any color Augment Slot.\n\nA fist-sized globule of blood, suspended in a crystalline sphere. It is thought that such globes were used by the giants to prove imperial descent, but the secret of the test is now forgotten.\n\n\nBase Value\t2,100 pp\nWeight\t0.01 lbs\nLocations\t\nReturn to Gianthold Tor, Black Dragon (Epic Elite or higher) optional chest\n\nEnhancements\t\n+1 Exceptional Bonus to each Ability Score\n\nMaximum stack size\t100\nNotes\t\nSee Also:\nGlobe of Imperial Blood\nGlobe of Imperial Blood (historic)"
+    },
+    "retained_file": "retained/named-augments-2.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+    "original_captured_file_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+    "public_file_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c"
+  },
+  {
+    "source_id": "S076",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Sapphire_of_Riposte",
+    "pinned_url": null,
+    "page": "Item:Legendary Sapphire of Riposte",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Legendary_Sapphire_of_Riposte",
+      "text": "Legendary Sapphire of Riposte\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +6 Insight bonus to AC and to Saves. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nToEE: Depths of the Temple, Any rare encounter chest\nToEE: First Level and Earth Temple, Any rare encounter chest\nToEE: Lower Temple Complex, Any rare encounter chest\n\nEnhancements\t\nRiposte +6\n\nMaximum stack size\t5\nNotes\tMinor bug: This ability is actually Parrying, so the description is misleading."
+    },
+    "retained_file": "retained/named-augments-2.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+    "original_captured_file_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+    "public_file_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c"
+  },
+  {
+    "source_id": "S077",
+    "canonical_url": "https://ddowiki.com/page/Item:Sapphire_of_Greater_Heroism",
+    "pinned_url": null,
+    "page": "Item:Sapphire of Greater Heroism",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Greater_Heroism",
+      "text": "Sapphire of Greater Heroism\nMinimum Level\t28\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +4 Morale Bonus to Attack Rolls, Saving Throws, and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nImmortality Lessons, end chest and Sweet Granny's chest\n\nEnhancements\t\nGreater Heroism\n\nMaximum stack size\t5"
+    },
+    "retained_file": "retained/named-augments-2.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+    "original_captured_file_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+    "public_file_sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c"
+  },
+  {
+    "source_id": "S078",
+    "canonical_url": "https://ddowiki.com/page/Item:Solar_Gem_of_Critical_Confirmation_(Legendary)",
+    "pinned_url": null,
+    "page": "Item:Solar Gem of Critical Confirmation (Legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Critical_Confirmation_(Legendary)",
+      "text": "Solar Gem of Critical Confirmation (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tSun\nDescription\tSlotted Effect: +4 Artifact Bonus to Critical Confirmation and Damage.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nThe Body Snatchers, end chest (rare)\nThe Chill of Ravenloft (Legendary), any difficulty\nBody and Mind, end chest (rare)\nThe Darklake, red-named rare encounter chests (rare)\nTerror of Demogorgon (Legendary), any difficulty\n\nEnhancements\t\nArtifact Seeker +4"
+    },
+    "retained_file": "retained/final-compromise-named-gems.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "original_captured_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "public_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16"
+  },
+  {
+    "source_id": "S079",
+    "canonical_url": "https://ddowiki.com/page/Item:Solar_Gem_of_Fortification_Bypass_(Legendary)",
+    "pinned_url": null,
+    "page": "Item:Solar Gem of Fortification Bypass (Legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Fortification_Bypass_(Legendary)",
+      "text": "Solar Gem of Fortification Bypass (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tSun\nDescription\tSlotted Effect: +30% Artifact Bonus to Fortification Bypass.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nMagic of Myth Drannor (Legendary), Elite and True Elite\nRuins of Myth Drannor, Goranathanil's chest (rare)\nThe Knife's Edge, end chest (rare)\nZoo Creeper, end chest (rare)\nThe Chill of Ravenloft (Legendary), any difficulty\nThe Darklake, Zarazurthu's chest (rare)\nTerror of Demogorgon (Legendary), any difficulty\n\nEnhancements\t\nArtifact Armor-Piercing 30%"
+    },
+    "retained_file": "retained/final-compromise-named-gems.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "original_captured_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "public_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16"
+  },
+  {
+    "source_id": "S080",
+    "canonical_url": "https://ddowiki.com/page/Item:Solar_Gem_of_Intelligence_(Legendary)",
+    "pinned_url": null,
+    "page": "Item:Solar Gem of Intelligence (Legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Intelligence_(Legendary)",
+      "text": "Solar Gem of Intelligence (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tSun\nDescription\tSlotted Effect: +4 Artifact Bonus to Intelligence.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nOghma's Song, end chest\nSnowfall and Sunlight, end chest\nFlocked Together, end chest\n\nEnhancements\t\nArtifact Intelligence +4"
+    },
+    "retained_file": "retained/final-compromise-named-gems.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "original_captured_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "public_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16"
+  },
+  {
+    "source_id": "S081",
+    "canonical_url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Intelligence_(Legendary)",
+    "pinned_url": null,
+    "page": "Item:Lunar Gem of Intelligence (Legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Intelligence_(Legendary)",
+      "text": "Lunar Gem of Intelligence (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tMoon\nDescription\tSlotted Effect: +4 Profane Bonus to Intelligence.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nThe House of Gems, end chest\nRats in a Cage, end chest\nThe Wizard's Labyrinth, end chest\nLocked Away (Part Two), end chest\nTower of Vengeance, end chest\n\nEnhancements\t\nProfane Intelligence +4"
+    },
+    "retained_file": "retained/final-compromise-named-gems.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "original_captured_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "public_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16"
+  },
+  {
+    "source_id": "S082",
+    "canonical_url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Ranged_Power_(Legendary)",
+    "pinned_url": null,
+    "page": "Item:Lunar Gem of Ranged Power (Legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Ranged_Power_(Legendary)",
+      "text": "Lunar Gem of Ranged Power (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tMoon\nDescription\tSlotted Effect: +15 Profane Bonus to Ranged Power.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nTimes Long Past, end chest\nSleeping with the Fishes, end chest\nSnowfall and Sunlight, Potion Paw's chest\nBurning Down the House, end chest\nThe Darklake, Depthdigger's chest\n\nEnhancements\t\nProfane Ranged Power +15"
+    },
+    "retained_file": "retained/final-compromise-named-gems.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "original_captured_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+    "public_file_sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16"
+  },
+  {
+    "source_id": "S096",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Pendant_of_Subtle_Pain",
+    "pinned_url": null,
+    "page": "Item:Legendary Pendant of Subtle Pain",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Legendary_Pendant_of_Subtle_Pain",
+      "text": "Legendary Pendant of Subtle Pain\nMinimum level\t31\t\nItem Type\tJewelry / Necklace\nSlot\tNeck\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t410\nMaterial\tGem\nHardness\t51\nBase Value\t12,401pp \nWeight\t0.10 lbs\nLocation\tToEE: Lower Temple Complex, end chest\nEnchantments\t\nQuality Accuracy +5\nImproved Deception +21\nDiversion +21%\nDistant Diversion +21%\nMystic Diversion +21%\nArmor-Piercing 21%\nLegendary Temple's Monolith\nBlue Augment Slot\nMythic Neck Boost +1 or +3\n\t\nUpgradeable?\t\nDescription\tDeep in the halls of the Temple, in the corners forgotten, grows a quiet torment made manifest.\nTips\t\n\n\n"
+    },
+    "retained_file": "retained/baseline-items-1.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "3e06a5d15363d0eab153386b45cf83df66d8efd35b208b3b8e6b65d950fbb145",
+    "original_captured_file_sha256": "3e06a5d15363d0eab153386b45cf83df66d8efd35b208b3b8e6b65d950fbb145",
+    "public_file_sha256": "3e06a5d15363d0eab153386b45cf83df66d8efd35b208b3b8e6b65d950fbb145"
+  },
+  {
+    "source_id": "S099",
+    "canonical_url": "https://ddowiki.com/page/Item:Sapphire_of_Defense_%2B40",
+    "pinned_url": null,
+    "page": "Item:Sapphire of Defense +40",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Defense_%2B40",
+      "text": "Sapphire of Defense +40\nMinimum Level\t36\t\n\nRarity\tCommon\nBind status\tUnbound\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +40 Enhancement bonus to your Physical Resistance Rating and Magical Resistance Rating. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t2,400 pp\nWeight\t0.01 lbs\nLocations\t\n\n\n\n\n\nEnhancements\t\nSheltering +40\n\nMaximum stack size\t100"
+    },
+    "retained_file": "retained/final-compromise-common-augments-1.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "656d870c3c6953b33984a52784817bc8b6a8378a982004f39f16a2dda29e1464",
+    "original_captured_file_sha256": "656d870c3c6953b33984a52784817bc8b6a8378a982004f39f16a2dda29e1464",
+    "public_file_sha256": "656d870c3c6953b33984a52784817bc8b6a8378a982004f39f16a2dda29e1464"
+  },
+  {
+    "source_id": "S112",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+    "pinned_url": null,
+    "page": "Item:Legendary Abyssal Compass",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "text": "Legendary Abyssal Compass\nMinimum level\t35\t\nItem Type\tJewelry / Trinket\nSlot\tTrinket\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t450\nMaterial\tLeather\nHardness\t55\nBase Value\t14,001pp \nWeight\t0.10 lbs\nLocation\tCatalyst Crafting, Turn in Legendary Planar Compass, its Legendary Abyssal Catalyst and 5 Legendary Abyssal Gems at the Strange Catalyst Forge\nEnchantments\t\nInsightful Sheltering +21\nQuality Sheltering +11\nLegendary Demonic Shield\nInsightful Fortitude Save +7\nGreen Augment Slot\nColorless Augment Slot\nSun Augment Slot\n\t\nUpgradeable?\t\nDescription\tWherever your travels may take you, the Abyss lies below.\nTips\t\n\n\n"
+    },
+    "retained_file": "retained/baseline-items-2.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548",
+    "original_captured_file_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548",
+    "public_file_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548"
+  },
+  {
+    "source_id": "S113",
+    "canonical_url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
+    "pinned_url": null,
+    "page": "Item:Cloak of Summer's End (level 36)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
+      "text": "Cloak of Summer's End\nMinimum level\t36\t\nItem Type\tClothing / Cloak\nSlot\tBack\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t460\nMaterial\tCloth\nHardness\t56\nBase Value\t14,401pp \nWeight\t0.10 lbs\nLocation\tTimeline Fragment Exchange, Turn in 50 Timeline Fragments\nEnchantments\t\nLight Absorption +24%\nDoubleshot 10%\nConstitution +15\nInsightful Constitution +7\nGreen Augment Slot\nColorless Augment Slot\nSun Augment Slot\n\t\nUpgradeable?\t\nDescription\tTime-Twisted version of Cloak of Summer\n\nEven eternal summer must end someday. This cloak manifested on the day the Summer Court surrendered to eternal winter.\n\n\nTips\t"
+    },
+    "retained_file": "retained/baseline-items-2.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548",
+    "original_captured_file_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548",
+    "public_file_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548"
+  },
+  {
+    "source_id": "S114",
+    "canonical_url": "https://ddowiki.com/page/Item:The_Unbreakable_Cord",
+    "pinned_url": null,
+    "page": "Item:The Unbreakable Cord",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:The_Unbreakable_Cord",
+      "text": "The Unbreakable Cord\nMinimum level\t34\t\nItem Type\tClothing / Belt\nSlot\tWaist\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t440\nMaterial\tSteel\nHardness\t54\nBase Value\t13,601pp \nWeight\t0.10 lbs\nLocation\tRelentless, end chest\nEnchantments\t\nLamordia: Melancholic Slot (Accessory)\nLamordia: Dolorous Slot (Accessory)\nLamordia: Miserable Slot (Accessory)\nLamordia: Woeful Slot (Accessory)\nGreen Augment Slot\nBlue Augment Slot\nMoon Augment Slot\nMythic Belt Boost +1 or +3\n\t\nUpgradeable?\tViktranium Experiment crafting\nDescription\t\nTips\t"
+    },
+    "retained_file": "retained/baseline-items-2.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548",
+    "original_captured_file_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548",
+    "public_file_sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548"
+  },
+  {
+    "source_id": "S119",
+    "canonical_url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2",
+    "pinned_url": null,
+    "page": "Item:Diamond of Festive Intelligence +2",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2",
+      "text": "Diamond of Festive Intelligence +2\nMinimum Level\t22\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tColorless\nDescription\tDrag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Intelligence.\nBase Value\t2,100 pp\nWeight\t0.01 lbs\nLocations\t\nJoe Candymaker, Turn in 80 Pieces of Darkest Chocolate, 60 Spooky Almonds, 60 Black Apples, 60 Shadowy Caramels, 60 Pinches of Sinister Cinnamon\n\nEnhancements\t\nFestive Intelligence +2\n\nMaximum stack size\t100\nNotes\tThis was released as a Diamond of Spooky Intelligence +2 (providing a Spooky bonus) in 2015, but the type of enhancement changed and the augment was renamed in 2016, as the bonus may be applied to other event items. Diamonds in TR caches may still show as \"Spooky\"."
+    },
+    "retained_file": "retained/festive-augments.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+    "original_captured_file_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+    "public_file_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32"
+  },
+  {
+    "source_id": "S120",
+    "canonical_url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Constitution_%2B2",
+    "pinned_url": null,
+    "page": "Item:Diamond of Festive Constitution +2",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Constitution_%2B2",
+      "text": "Diamond of Festive Constitution +2\nMinimum Level\t22\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tColorless\nDescription\tDrag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Constitution.\nBase Value\t2,100 pp\nWeight\t0.01 lbs\nLocations\t\nJoe Candymaker, Turn in 80 Pieces of Darkest Chocolate, 60 Spooky Almonds, 60 Black Apples, 60 Shadowy Caramels, 60 Pinches of Sinister Cinnamon\n\nEnhancements\t\nFestive Constitution +2\n\nMaximum stack size\t100"
+    },
+    "retained_file": "retained/festive-augments.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+    "original_captured_file_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+    "public_file_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32"
+  },
+  {
+    "source_id": "S121",
+    "canonical_url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Dexterity_%2B2",
+    "pinned_url": null,
+    "page": "Item:Diamond of Festive Dexterity +2",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Dexterity_%2B2",
+      "text": "Diamond of Festive Dexterity +2\nMinimum Level\t22\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tColorless\nDescription\tDrag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Dexterity.\nBase Value\t2,100 pp\nWeight\t0.01 lbs\nLocations\t\nFlurry (NPC), Snowpeaks Festival event craftable augment\n(20) I:Gold Snowpeaks Coin\n(100) I:Silver Snowpeaks Coin\nSnowpeaks Festival,\n\nEnhancements\t\nFestive Dexterity +2\n\nMaximum stack size\t100"
+    },
+    "retained_file": "retained/festive-augments.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+    "original_captured_file_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+    "public_file_sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32"
+  },
+  {
+    "source_id": "S123",
+    "canonical_url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Physical_Protection_(Legendary)",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Lunar_Gem_of_Physical_Protection_(Legendary)&oldid=700929",
+    "page": "Item:Lunar Gem of Physical Protection (Legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Physical_Protection_(Legendary)",
+      "text": "Lunar Gem of Physical Protection (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tMoon\nDescription\tSlotted Effect: +30 Profane Bonus to Physical Resistance Rating.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nPortal to Below, end chest\nThe Covered Culvert, end chest\nA Miner Sacrifice, end chest\nTower of Vengeance, Cormoran Stoneboots' chest\n\nEnhancements\t\nProfane Physical Sheltering +30",
+      "permalink": "https://ddowiki.com/index.php?title=Item:Lunar_Gem_of_Physical_Protection_(Legendary)&oldid=700929"
+    },
+    "retained_file": "retained/attainable-survival-gems.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "8896afcb73318667c2f79c767bb769f7723a8cb38e2a9ba520c3376d90fc2625",
+    "original_captured_file_sha256": "8896afcb73318667c2f79c767bb769f7723a8cb38e2a9ba520c3376d90fc2625",
+    "public_file_sha256": "8896afcb73318667c2f79c767bb769f7723a8cb38e2a9ba520c3376d90fc2625"
+  },
+  {
+    "source_id": "S127",
+    "canonical_url": "https://ddowiki.com/page/Item:Ravil%27s_Book_of_Legendary_Recipes",
+    "pinned_url": null,
+    "page": "Item:Ravil's Book of Legendary Recipes",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Ravil%27s_Book_of_Legendary_Recipes",
+      "text": "Ravil's Book of Legendary Recipes\nMinimum Level\t32\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tColorless\nDescription\tSlotted Effect: +48 Vitality bonus to Maximum HP.\n\nThis cookbook contains hundreds of recipes, each requiring rare and exotic materials, that purport to raise your vitality and protect against the common cold.\n\n\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nVecna Unleashed, Any quest end chest\n\nEnhancements\t\nVitality +48\n\nMaximum stack size\t5"
+    },
+    "retained_file": "retained/named-augments-1.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+    "original_captured_file_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+    "public_file_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142"
+  },
+  {
+    "source_id": "S128",
+    "canonical_url": "https://ddowiki.com/page/Item:A_Treatise_on_Battle",
+    "pinned_url": null,
+    "page": "Item:A Treatise on Battle",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:A_Treatise_on_Battle",
+      "text": "A Treatise on Battle\nMinimum Level\t32\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tOrange\nDescription\tSlotted Effect: +11 Enhancement bonus to Tactics DCs. You are immune to Fear.\n\nAuthored by a Sir Kingsleigh Diallos, this well-worn book contains a fair few diagrams for troop formations.\n\n\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nFire Over Morgrave, end chest\n\nEnhancements\t\nCombat Mastery +11\nImmunity to Fear\n\nMaximum stack size\t5"
+    },
+    "retained_file": "retained/named-augments-1.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+    "original_captured_file_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+    "public_file_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142"
+  },
+  {
+    "source_id": "S129",
+    "canonical_url": "https://ddowiki.com/page/Item:Essence_of_the_Epic_Litany_of_the_Dead",
+    "pinned_url": null,
+    "page": "Item:Essence of the Epic Litany of the Dead",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Essence_of_the_Epic_Litany_of_the_Dead",
+      "text": "Essence of the Epic Litany of the Dead\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tColorless\nDescription\tThis diamond carries the soul of the Epic Litany of the Dead.\n\nSlotted Effect: Litany of the Dead Ability Bonus +2\n\n\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nSoulforge, Hall of Heroes\n(50) I:Thread of Fate\n(1) I:Empty Soul Vessel\n(1) I:Epic Litany of the Dead\n\nEnhancements\t\nLitany of the Dead II - Ability Bonus\n\nMaximum stack size\t5"
+    },
+    "retained_file": "retained/named-augments-1.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+    "original_captured_file_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+    "public_file_sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142"
+  },
+  {
+    "source_id": "S133",
+    "canonical_url": "https://ddowiki.com/page/Item:Dolorous_Quality_Constitution_(legendary)",
+    "pinned_url": null,
+    "page": "Item:Dolorous Quality Constitution (legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Dolorous_Quality_Constitution_(legendary)",
+      "text": "Dolorous Quality Constitution\nMinimum Level\t34\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tLamordia: Dolorous (Accessory)\nDescription\tSlotted Effect: +3 Quality bonus to Constitution.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nLegendary Viktranium Experiment Crafting, Ludendorf City Hall\n\nEnhancements\t\nQuality Constitution +3"
+    },
+    "retained_file": "retained/final-belt-crafts.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3",
+    "original_captured_file_sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3",
+    "public_file_sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3"
+  },
+  {
+    "source_id": "S134",
+    "canonical_url": "https://ddowiki.com/page/Item:Woeful:_Quality_Seeker",
+    "pinned_url": null,
+    "page": "Item:Woeful: Quality Seeker",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Woeful:_Quality_Seeker",
+      "text": "Woeful: Quality Seeker\nMinimum Level\t34\t\n\nRarity\tNamed\nBind status\tBound to Character on Acquire\nAugment Type\tLamordia: Woeful (Accessory)\nDescription\tSlotted Effect: +3 Quality bonus to confirm critical hits, and damage (before multiplier) on critical hits.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nWicked Viktranium Experiment Crafting, Ludendorf Wax Museum (or the opening room of Relentless)\n\nEnhancements\t\nQuality Seeker +3"
+    },
+    "retained_file": "retained/final-belt-crafts.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3",
+    "original_captured_file_sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3",
+    "public_file_sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3"
+  },
+  {
+    "source_id": "S166",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_The_Earth_and_the_Sky",
+    "pinned_url": null,
+    "page": "Item:Legendary The Earth and the Sky",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Legendary_The_Earth_and_the_Sky",
+      "text": "Legendary The Earth and the Sky\nMinimum level\t31\t\nItem Type\tJewelry / Ring\nSlot\tFinger\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t410\nMaterial\tGem\nHardness\t51\nBase Value\t12,401pp \nWeight\t0.10 lbs\nLocation\tToEE: Depths of the Temple, end chest\nEnchantments\t\nAcid Resistance +53\nElectric Resistance +53\nImproved Earthen Guard\nInsightful Physical Sheltering +17\nLegendary Temple's Monolith\nLegendary Temple's Tempest\nBlue Augment Slot\nMythic Ring Boost +1 or +3\n\t\nUpgradeable?\t\nDescription\tEven still, something locked away can surely be found.\nTips\t\n\n\n"
+    },
+    "retained_file": "retained/baseline-items-3.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "27d98e1fb21d227f3e0c30bb115b450f76f65af18832e469fe64566817ce02b9",
+    "original_captured_file_sha256": "27d98e1fb21d227f3e0c30bb115b450f76f65af18832e469fe64566817ce02b9",
+    "public_file_sha256": "27d98e1fb21d227f3e0c30bb115b450f76f65af18832e469fe64566817ce02b9"
+  },
+  {
+    "source_id": "S188",
+    "canonical_url": "https://ddowiki.com/page/Item:Epic_Purifying_Quiver",
+    "pinned_url": null,
+    "page": "Item:Epic Purifying Quiver",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "text": "Epic Purifying Quiver\n\nThis item cannot be fed to sentient jewels.\n\nMinimum level\t29\t\nItem Type\tQuiver / Thin Quiver\nBinding\tBound to Account on Acquire\nDurability\t\nMaterial\tNone\nHardness\t\nBase Value\t12,100pp\nWeight\t1.00 lbs\nLocation\tOath of Vengeance, end chest (legendary)\nUnique item capacity\t\n\n5\n\n\nMax stack size\t\n\n3,000\n\n\nEnchantments\t\nBurning Ammunition - 1d8\nBlunted Ammunition\n\t\nDescription\tWhile using this quiver, your ranged weapons will burn with enchanted flames.\nNotes\t",
+      "url": "https://ddowiki.com/page/Item:Epic_Purifying_Quiver"
+    },
+    "retained_file": "retained/baseline-quiver.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "1ce6858bfdd2ebd0ad2aecd0bd2cbdb0829913d38505661fda69a9d02655849a",
+    "original_captured_file_sha256": "1ce6858bfdd2ebd0ad2aecd0bd2cbdb0829913d38505661fda69a9d02655849a",
+    "public_file_sha256": "1ce6858bfdd2ebd0ad2aecd0bd2cbdb0829913d38505661fda69a9d02655849a"
+  },
+  {
+    "source_id": "S192",
+    "canonical_url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Constitution_(Legendary)",
+    "pinned_url": null,
+    "page": "Item:Lunar Gem of Constitution (Legendary)",
+    "provenance": "earlier-session saved direct browser capture, independently reread; not freshly reopened",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Constitution_(Legendary)",
+      "text": "Lunar Gem of Constitution (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tMoon\nDescription\tSlotted Effect: +4 Profane Bonus to Constitution.\nBase Value\t500pp\nWeight\t0.01 lbs\nLocations\t\nOghma's Song, end chest\nBeneath the City Streets, end chest\n\nEnhancements\t\nProfane Constitution +4"
+    },
+    "retained_file": "retained/final-compromise-augments.browser.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "aac7d2d2461032d8f6867c954c66c3daca860da0b4000cee46405b96b7e815ba",
+    "original_captured_file_sha256": "aac7d2d2461032d8f6867c954c66c3daca860da0b4000cee46405b96b7e815ba",
+    "public_file_sha256": "aac7d2d2461032d8f6867c954c66c3daca860da0b4000cee46405b96b7e815ba"
+  },
+  {
+    "source_id": "S231",
+    "canonical_url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+    "page": "Item:Light Armor of the Warblade's Reflection",
+    "provenance": "fresh canonical browser read; permanent link captured",
+    "read_date_utc": "2026-11-01",
+    "modified": "This page was last modified 09:17, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+    "data": {
+      "fulltext": "Light Armor of the Warblade's Reflection\n\n\n\nArmor Type\n\nLight Armor\n\n\n\n\nFeat Requirement\n\nLight Armor Proficiency\n\n\nRace Absolutely Excluded\n\nWarforged\n\n\nMinimum Level\n\n33\n\n\nBinding\n\nBound to Account on Acquire\n\n\nArmor Bonus\n\n+50\n\n\nMaximum Dexterity Bonus\n\n20\n\n\nArmor Check Penalty\n\n\n\n\nArcane Spell Failure\n\n10%\n\n\nDurability\n\n610\n\n\nMaterial\n\n.mw-parser-output span.popup.has_tooltip{cursor:pointer;position:relative}.mw-parser-output span.popup.has_tooltip.no-icon{border-bottom:1px dashed #999999}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip{background-color:#EEEEEE;background-color:var(--background-color-neutral,#EEEEEE);border:1px solid #333333;border-radius:3px;box-shadow:3px 5px 10px;color:#202122;color:var(--color-base,#202122);cursor:text;opacity:0;margin:0px;max-width:500px;padding:5px;position:absolute;transition:opacity 0.15s linear 0.3s,visibility 0s linear 0.35s;visibility:hidden;width:250px;z-index:10000}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.narrow{width:100px}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.fill{padding:5px 12px;width:max-content}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.wide{width:450px}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.custom{max-width:80vw}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.above{bottom:100%;margin-bottom:5px;top:auto}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.middle{bottom:auto;margin-top:-0.75em;top:50%}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.below{bottom:auto;margin-top:5px;top:100%}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.left{left:0px;right:auto}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.right{left:auto;right:0px}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.center{left:50%;margin-left:-125px;right:auto}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.center.narrow{margin-left:-50px}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.center.fill{left:-262px;margin-left:auto;margin-right:auto;right:-262px}.mw-parser-output span.popup.has_tooltip>span.popup.tooltip.center.wide{margin-left:-225px}.mw-parser-output span.popup.has_tooltip:hover>span.popup.tooltip{opacity:1;transition:opacity 0.15s linear 0s,visibility 0s linear 0s;visibility:visible}LeatherLeather: Leather armor is made of the hide of animals. It provides decent protection without excessively restricting the user's movements. \n\n\nHardness\n\n41\n\n\nBase Value\n\n001325000013,250ppPlatinum Piece \n\n\nWeight\n\n15 lbs\n\n\nLocation\n\nRitual Table, Turn in \nLegendary Light Armor of the Warblade\n120 Barrier Fragments\nSigil of the Warblade\n\n\nEnchantments\n\n\n+15 Enhancement Bonus+15 Enhancement Bonus: +15 enhancement bonus to Armor Class.\n Accuracy +24 Accuracy +24: Passive: +24 Competence bonus to attack rolls\n Deadly +12 Deadly +12: +12 Competence bonus to weapon damage.\nShadow StrikerShadow Striker: Passive: +3% Profane bonus to Doublestrike and Doubleshot. (Doublestrike/Doubleshot is a chance to score an additional hit with a melee/ranged attack.) +15% Enhancement Bonus to Melee Attack Speed. +20% Enhancement Bonus to Ranged Attack Speed.\nLegendary Armor-Piercing 5%Legendary Armor-Piercing 5%: Passive: +5% Legendary bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)\n.mw-parser-output span.popup.augment.orange>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Orange\"]{background-color:#F4A460;border-color:#0B5B9F}.mw-parser-output span.popup.augment.purple>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Purple\"]{background-color:#DDA0DD;border-color:#225F22}.mw-parser-output span.popup.augment.green>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Green\"]{background-color:#90EE90;border-color:#6F116F}.mw-parser-output span.popup.augment.yellow>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Yellow\"]{background-color:#EEE8AA;border-color:#111755}.mw-parser-output span.popup.augment.blue>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Blue\"]{background-color:#87CEFA;border-color:#783105}.mw-parser-output span.popup.augment.red>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Red\"]{background-color:#FA8072;border-color:#057F8D}.mw-parser-output span.popup.augment.colorless>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Colorless\"]{background-color:#F8F8FF;border-color:#070700}.mw-parser-output span.popup.augment.sun>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Sun\"]{background-color:#FFFFC0;border-color:#00003F}.mw-parser-output span.popup.augment.moon>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a[href*=\"Moon\"]{background-color:#C0FFFF;border-color:#3F0000}.mw-parser-output span.popup.augment>span.title,.mw-parser-output span.popup.augment>span.popup.tooltip>a{border:1px solid;border-radius:3px;padding:1px 3px}.mw-parser-output span.popup.augment>span.title>a{color:#003366}.mw-parser-output span.popup.augment>span.title>a:visited{color:#040050}.mw-parser-output span.popup.augment>span.tooltip::after{content:\" augments.\"}Green Augment SlotBlue, Green, Yellow, and/or Colorless\nColorless Augment SlotColorless\nSun Augment SlotSun\n\n\n\n\nUpgradeable?\n\n\n\n\nDescription\n\nThis armor took the power of the deathly ritual and turned it to the Warblade's purposes.\n\n\nNotes\n\n\n\n\nTips\n\n\n\n\n\n\n\n\nRetrieved from \"https://ddowiki.com/index.php?title=I:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449\"",
+      "links": [
+        {
+          "href": "https://ddowiki.com/page/File:Outfit_of_the_Warblade_shown.jpg",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/page/Warforged",
+          "text": "Warforged"
+        },
+        {
+          "href": "https://ddowiki.com/page/Bind",
+          "text": "Bound to Account on Acquire"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor_bonus",
+          "text": "Armor Bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor_check_penalty",
+          "text": "Armor Check Penalty"
+        },
+        {
+          "href": "https://ddowiki.com/page/Arcane_spell_failure",
+          "text": "Arcane Spell Failure"
+        },
+        {
+          "href": "https://ddowiki.com/page/Leather",
+          "text": "Leather"
+        },
+        {
+          "href": "https://ddowiki.com/page/Leather",
+          "text": "Leather"
+        },
+        {
+          "href": "https://ddowiki.com/page/Currency",
+          "text": "Platinum Piece"
+        },
+        {
+          "href": "https://ddowiki.com/page/Ritual_Table",
+          "text": "Ritual Table"
+        },
+        {
+          "href": "https://ddowiki.com/page/Item:Legendary_Light_Armor_of_the_Warblade",
+          "text": "Legendary Light Armor of the Warblade"
+        },
+        {
+          "href": "https://ddowiki.com/page/Item:Barrier_Fragment",
+          "text": "120 Barrier Fragments"
+        },
+        {
+          "href": "https://ddowiki.com/page/Item:Sigil_of_the_Warblade",
+          "text": "Sigil of the Warblade"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "+15 Enhancement Bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "+15 Enhancement Bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Enhancement_bonus",
+          "text": "enhancement bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor_Class",
+          "text": "Armor Class"
+        },
+        {
+          "href": "https://ddowiki.com/page/Accuracy",
+          "text": " Accuracy +24"
+        },
+        {
+          "href": "https://ddowiki.com/page/Accuracy",
+          "text": " Accuracy +24"
+        },
+        {
+          "href": "https://ddowiki.com/page/Competence_bonus",
+          "text": "Competence bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Attack_roll",
+          "text": "attack rolls"
+        },
+        {
+          "href": "https://ddowiki.com/page/Deadly",
+          "text": " Deadly +12"
+        },
+        {
+          "href": "https://ddowiki.com/page/Deadly",
+          "text": " Deadly +12"
+        },
+        {
+          "href": "https://ddowiki.com/page/Competence_bonus",
+          "text": "Competence bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Shadow_Striker",
+          "text": "Shadow Striker"
+        },
+        {
+          "href": "https://ddowiki.com/page/Shadow_Striker",
+          "text": "Shadow Striker"
+        },
+        {
+          "href": "https://ddowiki.com/page/Profane_bonus",
+          "text": "Profane bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doublestrike",
+          "text": "Doublestrike"
+        },
+        {
+          "href": "https://ddowiki.com/page/Doubleshot",
+          "text": "Doubleshot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Melee_Alacrity",
+          "text": "Melee Attack Speed"
+        },
+        {
+          "href": "https://ddowiki.com/page/Ranged_Alacrity",
+          "text": "Ranged Attack Speed"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": "Legendary Armor-Piercing 5%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Armor-Piercing",
+          "text": "Legendary Armor-Piercing 5%"
+        },
+        {
+          "href": "https://ddowiki.com/page/Legendary_bonus",
+          "text": "Legendary bonus"
+        },
+        {
+          "href": "https://ddowiki.com/page/Fortification",
+          "text": "Fortification"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Green Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Blue_augments",
+          "text": "Blue"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Green_augments",
+          "text": "Green"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Yellow_augments",
+          "text": "Yellow"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Augment_Slot",
+          "text": "Colorless Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Colorless_augments",
+          "text": "Colorless"
+        },
+        {
+          "href": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+          "text": "Sun Augment Slot"
+        },
+        {
+          "href": "https://ddowiki.com/page/Category:Sun_augments",
+          "text": "Sun"
+        },
+        {
+          "href": "https://ddowiki.com/page/File:Light_Armor_of_the_Warblade%27s_Reflection.png",
+          "text": ""
+        },
+        {
+          "href": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+          "text": "https://ddowiki.com/index.php?title=I:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449"
+        }
+      ],
+      "modified": "This page was last modified 09:17, May 6, 2026 (Update 79.0.1) [editor metadata omitted; see source history].",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "text": "Light Armor of the Warblade's Reflection\nArmor Type\tLight Armor\t\nFeat Requirement\tLight Armor Proficiency\nRace Absolutely Excluded\tWarforged\nMinimum Level\t33\nBinding\tBound to Account on Acquire\nArmor Bonus\t+50\nMaximum Dexterity Bonus\t20\nArmor Check Penalty\t\nArcane Spell Failure\t10%\nDurability\t610\nMaterial\tLeather\nHardness\t41\nBase Value\t13,250pp \nWeight\t15 lbs\nLocation\tRitual Table, Turn in\nLegendary Light Armor of the Warblade\n120 Barrier Fragments\nSigil of the Warblade\n\nEnchantments\t\n+15 Enhancement Bonus\nAccuracy +24\nDeadly +12\nShadow Striker\nLegendary Armor-Piercing 5%\nGreen Augment Slot\nColorless Augment Slot\nSun Augment Slot\n\t\nUpgradeable?\t\nDescription\tThis armor took the power of the deathly ritual and turned it to the Warblade's purposes.\nNotes\t\nTips\t",
+      "title": "I:Light Armor of the Warblade's Reflection - DDO wiki",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection"
+    },
+    "retained_file": "retained/initial-armor.raw.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "ec74d58941af3613e6191b4f1c841479bb189b78fcabf25629222429aae34be7",
+    "original_captured_file_sha256": "ec74d58941af3613e6191b4f1c841479bb189b78fcabf25629222429aae34be7",
+    "public_file_sha256": "e365bd8253e6dfb7c81212efd88c768146374b7c1364f5b3d26a34ecbe71e95e"
+  },
+  {
+    "source_id": "S232",
+    "canonical_url": "https://ddowiki.com/page/Item:Legendary_Calamitous_Longbow",
+    "pinned_url": "https://ddowiki.com/index.php?title=Item:Legendary_Calamitous_Longbow&oldid=666359",
+    "page": "Item:Legendary Calamitous Longbow",
+    "provenance": "fresh canonical browser read; permanent link captured",
+    "read_date_utc": "2026-11-01",
+    "modified": null,
+    "data": {
+      "url": "https://ddowiki.com/page/Item:Legendary_Calamitous_Longbow",
+      "permanent": "https://ddowiki.com/index.php?title=Item:Legendary_Calamitous_Longbow&oldid=666359",
+      "text": "{\n  links: [\n    {\n      href: 'https://ddowiki.com/page/File:Calamitous_Longbow_shown.jpg',\n      text: ''\n    },\n    {\n      href: 'https://ddowiki.com/page/Threat_range',\n      text: 'Critical threat range'\n    },\n    { href: 'https://ddowiki.com/page/Long_Bow', text: 'Long Bow' },\n    { href: 'https://ddowiki.com/page/None', text: 'None' },\n    {\n      href: 'https://ddowiki.com/page/Use_Magical_Device',\n      text: 'Use Magical Device'\n    },\n    { href: 'https://ddowiki.com/page/DC', text: 'DC' },\n    {\n      href: 'https://ddowiki.com/page/Bind',\n      text: 'Bound to Account on Acquire'\n    },\n    { href: 'https://ddowiki.com/page/Steel', text: 'Steel' },\n    { href: 'https://ddowiki.com/page/Steel', text: 'Steel' },\n    {\n      href: 'https://ddowiki.com/page/Currency',\n      text: 'Platinum Piece'\n    },\n    { href: 'https://ddowiki.com/page/Currency', text: 'Gold Piece' },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Viktranium Experiment crafting'\n    },\n    {\n      href: 'https://ddowiki.com/page/Legendary_Viktranium_Experiment_Crafting',\n      text: 'Legendary Viktranium Experiment Crafting'\n    },\n    {\n      href: 'https://ddowiki.com/page/Ludendorf_City_Hall',\n      text: 'Ludendorf City Hall'\n    },\n    {\n      href: 'https://ddowiki.com/page/Enhancement_bonus',\n      text: '+15 Enhancement Bonus'\n    },\n    {\n      href: 'https://ddowiki.com/page/Enhancement_bonus',\n      text: '+15 Enhancement Bonus'\n    },\n    {\n      href: 'https://ddowiki.com/page/Enhancement_bonus',\n      text: 'enhancement bonus'\n    },\n    { href: 'https://ddowiki.com/page/Attack_roll', text: 'attack' },\n    {\n      href: 'https://ddowiki.com/page/Damage_roll',\n      text: 'damage rolls'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Melancholic Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Melancholic Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Dolorous Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Dolorous Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Miserable Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Miserable Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Woeful Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Lamordia: Woeful Slot (Weapon)'\n    },\n    {\n      href: 'https://ddowiki.com/page/Augment_Slot',\n      text: 'Orange Augment Slot'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Orange_augments',\n      text: 'Orange'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Red_augments',\n      text: 'Red'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Yellow_augments',\n      text: 'Yellow'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Colorless_augments',\n      text: 'Colorless'\n    },\n    {\n      href: 'https://ddowiki.com/page/Augment_Slot',\n      text: 'Purple Augment Slot'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Blue_augments',\n      text: 'Blue'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Purple_augments',\n      text: 'Purple'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Red_augments',\n      text: 'Red'\n    },\n    {\n      href: 'https://ddowiki.com/page/Category:Colorless_augments',\n      text: 'Colorless'\n    },\n    {\n      href: 'https://ddowiki.com/page/File:Legendary_Calamitous_Longbow.png',\n      text: ''\n    },\n    {\n      href: 'https://ddowiki.com/page/Viktranium_Experiment_crafting',\n      text: 'Viktranium Experiment crafting'\n    },\n    {\n      href: 'https://ddowiki.com/index.php?title=Item:Legendary_Calamitous_Longbow&oldid=666359',\n      text: 'https://ddowiki.com/index.php?title=I:Legendary_Calamitous_Longbow&oldid=666359'\n    }\n  ],\n  modified: 'This page was last modified 12:17, November 19, 2025 (Update 76) [editor metadata omitted; see source history].',\n  permanent: 'https://ddowiki.com/index.php?title=Item:Legendary_Calamitous_Longbow&oldid=666359',\n  text: 'Legendary Calamitous Longbow\\n' +\n    'Proficiency Class\\tMartial Weapon Proficiency\\t\\n' +\n    'Accepts Sentience?\\tYes\\n' +\n    'Damage and Type\\t5.80[1d8+2] + 15 Pierce, Magic\\n' +\n    'Critical threat range\\t20 / x3\\n' +\n    'Weapon Type\\tLong Bow / Ranged weapons\\n' +\n    'Race Absolutely Required\\tNone\\n' +\n    'Minimum Level\\t34\\n' +\n    'Required Trait\\tNone\\n' +\n    'Use Magical Device DC\\tNo UMD needed\\n' +\n    'Handedness\\t\\n' +\n    'Attack Mod\\tDEX\\n' +\n    'Damage Mod\\tDEX\\n' +\n    'Binding\\tBound to Account on Acquire\\n' +\n    'Durability\\t400\\n' +\n    'Made from\\tSteel\\n' +\n    'Hardness\\t44\\n' +\n    'Base Value\\t13,607pp 5gp \\n' +\n    'Weight\\t3 lbs\\n' +\n    'Location\\tViktranium Experiment crafting, Turn in 25 Legendary Bleak Alternators, Conductors, Insulators and Resistors at Legendary Viktranium Experiment Crafting in Ludendorf City Hall\\n' +\n    'Enchantments\\t\\n' +\n    '+15 Enhancement Bonus\\n' +\n    'Lamordia: Melancholic Slot (Weapon)\\n' +\n    'Lamordia: Dolorous Slot (Weapon)\\n' +\n    'Lamordia: Miserable Slot (Weapon)\\n' +\n    'Lamordia: Woeful Slot (Weapon)\\n' +\n    'Orange Augment Slot\\n' +\n    'Purple Augment Slot\\n' +\n    '\\t\\n' +\n    'Upgradeable?\\t\\n' +\n    '\\n' +\n    'Viktranium Experiment crafting\\n' +\n    '\\n' +\n    '\\n' +\n    'Description\\tSmall slots in this weapon could easily fit small augmentation devices.\\n' +\n    'Tips\\t',\n  title: 'I:Legendary Calamitous Longbow - DDO wiki',\n  tooltips: [\n    { text: 'Critical threat range', title: 'Threat range' },\n    { text: 'Long Bow', title: 'Long Bow' },\n    { text: 'None', title: 'None' },\n    { text: 'Use Magical Device', title: 'Use Magical Device' },\n    { text: 'DC', title: 'DC' },\n    { text: 'Bound to Account on Acquire', title: 'Bind' },\n    { text: 'Steel', title: 'Steel' },\n    { text: 'Steel', title: 'Steel' },\n    { text: 'Platinum Piece', title: 'Currency' },\n    { text: 'Gold Piece', title: 'Currency' },\n    {\n      text: 'Viktranium Experiment crafting',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Legendary Viktranium Experiment Crafting',\n      title: 'Legendary Viktranium Experiment Crafting'\n    },\n    { text: 'Ludendorf City Hall', title: 'Ludendorf City Hall' },\n    { text: '+15 Enhancement Bonus', title: 'Enhancement bonus' },\n    { text: '+15 Enhancement Bonus', title: 'Enhancement bonus' },\n    { text: 'enhancement bonus', title: 'Enhancement bonus' },\n    { text: 'attack', title: 'Attack roll' },\n    { text: 'damage rolls', title: 'Damage roll' },\n    {\n      text: 'Lamordia: Melancholic Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Lamordia: Melancholic Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Lamordia: Dolorous Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Lamordia: Dolorous Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Lamordia: Miserable Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Lamordia: Miserable Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Lamordia: Woeful Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    {\n      text: 'Lamordia: Woeful Slot (Weapon)',\n      title: 'Viktranium Experiment crafting'\n    },\n    { text: 'Orange Augment Slot', title: 'Augment Slot' },\n    { text: 'Orange', title: 'Category:Orange augments' },\n    { text: 'Red', title: 'Category:Red augments' },\n    { text: 'Yellow', title: 'Category:Yellow augments' },\n    { text: 'Colorless', title: 'Category:Colorless augments' },\n    { text: 'Purple Augment Slot', title: 'Augment Slot' },\n    { text: 'Blue', title: 'Category:Blue augments' },\n    { text: 'Purple', title: 'Category:Purple augments' },\n    { text: 'Red', title: 'Category:Red augments' },\n    { text: 'Colorless', title: 'Category:Colorless augments' },\n    {\n      text: 'Viktranium Experiment crafting',\n      title: 'Viktranium Experiment crafting'\n    }\n  ]\n}"
+    },
+    "retained_file": "retained/source-calamitous.json",
+    "verification_scope": "Historical retained observation; not fresh Wiki access or live-game verification.",
+    "original_capture_sha256": "916d280ebf94bacd7db28a97f297d0bebca0a93c886d87a284be9c770d4db5cf",
+    "original_captured_file_sha256": "916d280ebf94bacd7db28a97f297d0bebca0a93c886d87a284be9c770d4db5cf",
+    "public_file_sha256": "2df7e1b512e2982edbfffb44bce6badad1662d288e32ca8f1770cbd3069e583e"
+  }
+]

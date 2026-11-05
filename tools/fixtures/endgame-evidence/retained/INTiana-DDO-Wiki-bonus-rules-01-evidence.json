@@ -1,0 +1,998 @@
+{
+  "artifact": "INTiana DDO Wiki source evidence",
+  "batch": "BONUS-RULES-01",
+  "created_at_utc": "2026-11-02T05:45:24.533124+00:00",
+  "filename": "INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+  "provenance": {
+    "capture": "Five normal public bonus-definition articles, read sequentially by the public-page observation.",
+    "timestamps": "Original body-read intervals retained, separately from later permalink observation marks where applicable. File creation time is not a source observation time.",
+    "permalinks": "Normal-page Permanent link metadata observed only. No historical endpoint was opened or independently verified.",
+    "scope": "No reread of already captured Stack, Quality, Insight, Enhancement, Fortification, Deadly or positive PRR/MRR/Vitality/HA rules.",
+    "privacy": "Only scoped public Wiki source evidence retained; no screenshots, unrelated browser or clipboard data, account data or transfer internals.",
+    "changes": "No guide, repository, character, gear, feat, AP, skill, stat, account, login, security or settings change; no publication or challenge bypass."
+  },
+  "fresh_source_index": [
+    {
+      "normal_url": "https://ddowiki.com/page/Artifact_bonus",
+      "body_started_at": "2026-11-02T05:38:21.810Z",
+      "body_finished_at": "2026-11-02T05:38:24.913Z",
+      "oldid": "636950",
+      "metadata_observation_interval_utc": [
+        "2026-11-02T05:38:21.810Z",
+        "2026-11-02T05:38:24.913Z"
+      ],
+      "timing": "Complete permalink exposed with original body.",
+      "chronology_pass": true,
+      "historical_endpoint_read": false
+    },
+    {
+      "normal_url": "https://ddowiki.com/page/Competence_bonus",
+      "body_started_at": "2026-11-02T05:38:42.604Z",
+      "body_finished_at": "2026-11-02T05:38:48.175Z",
+      "oldid": "682593",
+      "metadata_observation_mark_utc": "2026-11-02T05:39:08.191Z",
+      "mark_semantics": "Later timestamp immediately before copied-link accessibility observation; no completion instant invented.",
+      "chronology_pass": true,
+      "historical_endpoint_read": false
+    },
+    {
+      "normal_url": "https://ddowiki.com/page/Exceptional_bonus",
+      "body_started_at": "2026-11-02T05:39:18.510Z",
+      "body_finished_at": "2026-11-02T05:39:23.934Z",
+      "oldid": "528196",
+      "metadata_observation_mark_utc": "2026-11-02T05:39:44.488Z",
+      "mark_semantics": "Later timestamp immediately before copied-link accessibility observation; no completion instant invented.",
+      "chronology_pass": true,
+      "historical_endpoint_read": false
+    },
+    {
+      "normal_url": "https://ddowiki.com/page/Festive_bonus",
+      "body_started_at": "2026-11-02T05:40:18.103Z",
+      "body_finished_at": "2026-11-02T05:40:20.325Z",
+      "oldid": "291826",
+      "metadata_observation_interval_utc": [
+        "2026-11-02T05:40:18.103Z",
+        "2026-11-02T05:40:20.325Z"
+      ],
+      "timing": "Complete permalink exposed with original body.",
+      "chronology_pass": true,
+      "historical_endpoint_read": false
+    },
+    {
+      "normal_url": "https://ddowiki.com/page/Profane_bonus",
+      "body_started_at": "2026-11-02T05:40:29.322Z",
+      "body_finished_at": "2026-11-02T05:40:31.354Z",
+      "oldid": "613196",
+      "metadata_observation_interval_utc": [
+        "2026-11-02T05:40:29.322Z",
+        "2026-11-02T05:40:31.354Z"
+      ],
+      "timing": "Complete permalink exposed with original body.",
+      "chronology_pass": true,
+      "historical_endpoint_read": false
+    }
+  ],
+  "source_receipts": {
+    "artifact_competence_exceptional": {
+      "schema": "ddo-wiki-observed-source-receipt/1",
+      "batch": "BONUS-RULES-01",
+      "created_at_utc": "2026-11-02T05:43:06.574587+00:00",
+      "provenance": {
+        "method": "Transcription only from inherited exact supported native Chrome accessibility observations; no browser, UI or network use by this receipt public-page observation.",
+        "quotation_policy": "Adjacent visible accessibility text and inline link labels are joined in reading order with whitespace normalized. Original wording, qualifications and heading/list context are retained; advertisement snippets, decorative content and navigation are omitted.",
+        "normal_pages_only": true,
+        "historical_endpoints_opened": false,
+        "metadata_limit": "Observed Permanent link metadata on a normal article does not constitute a historical-endpoint read or independent verification of historical byte identity. Later metadata observation marks are kept separate from body intervals.",
+        "timestamp_policy": "Body intervals and metadata marks come from the actual capture observations. Receipt creation time is not substituted for a source read time.",
+        "guide_repository_character_or_account_changes": false,
+        "excluded": "Screenshots, unrelated browser or clipboard content, advertisements, unobserved text, external source research, build selections and source edits."
+      },
+      "sources": [
+        {
+          "title": "Artifact bonus",
+          "requested_normal_url": "https://ddowiki.com/page/Artifact_bonus",
+          "observed_normal_url": "https://ddowiki.com/page/Artifact_bonus",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:38:21.810Z",
+            "completed_at_utc": "2026-11-02T05:38:24.913Z",
+            "heading_verified": "Artifact bonus",
+            "article_content_verified": true,
+            "scope": "Complete substantive introduction and its current stacking sentence; complete surrounding History prose. Embedded historical forum quotation is partial because one exposed accessibility text node ends mid-word; the visible quotation is retained with that limit."
+          },
+          "revision_metadata": {
+            "permanent_link": "https://ddowiki.com/index.php?title=Artifact_bonus&oldid=636950",
+            "oldid": "636950",
+            "observation_interval_utc": [
+              "2026-11-02T05:38:21.810Z",
+              "2026-11-02T05:38:24.913Z"
+            ],
+            "method": "Complete Permanent link href exposed in the same normal-page capture as the body; no copy action or historical navigation.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 01:37, April 24, 2025 (Update 73.1) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "historical_byte_identity_independently_verified": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Introduction",
+              "paragraphs": [
+                "Having witnessed an ancient artifact, your mind soars and your body strengthens. Artifact bonus is a rare bonus type, primarily available on"
+              ],
+              "following_list": [
+                "Named item sets",
+                "Solar Gems"
+              ],
+              "following_paragraph": "This bonus stacks with all other bonuses.",
+              "complete_definition_and_rule": true,
+              "observed_links": [
+                {
+                  "label": "Named item sets",
+                  "normal_url": "https://ddowiki.com/page/Named_item_sets"
+                },
+                {
+                  "label": "Solar Gems",
+                  "normal_url": "https://ddowiki.com/page/Lunar_and_Solar_Gems#Solar_Gems"
+                },
+                {
+                  "label": "stacks",
+                  "normal_url": "https://ddowiki.com/page/Stack"
+                }
+              ]
+            },
+            {
+              "section": "History",
+              "paragraph": "With Update 17, many previously untyped bonuses have been typed as artifact bonus and thus they no longer stack with each other. This change was retroactive and affected existing items.",
+              "complete_paragraph": true,
+              "observed_link": {
+                "label": "Update 17",
+                "normal_url": "https://ddowiki.com/page/Update_17"
+              }
+            },
+            {
+              "section": "History / embedded Quote",
+              "attribution_visible": "Originally Posted by (Community Manager) Cordovan",
+              "observed_source_href": "https://forums-old.ddo.com/forums/showthread.php?p=4874667#post4874667",
+              "source_href_opened": false,
+              "paragraphs_visible": [
+                "Many set bonuses are being reclassified from untyped to artifact bonuses to better enable the development team to scale dungeons in a more consistent manner, since having multiple sources of untyped stacking set bonuses (particularly damage bonuses) can lead to outlier cases where some players face a less-than-intended challenge in some quest difficulties, including Epic Elite.",
+                "Having consistent classifications for set bonuses also makes it easier for new and existing players to understand what benefits are available to them. Players could upgrade to a higher-level set bonus that included a higher damage bonus, for example, or choose to use a completely different set bonus that is more in-line with their current character's level and goals.",
+                "The +4 damage bonus from Greater Vulkoor's Might and +4 damage bonus from the Planar Focus: Prowess (or +3 bonus from Knight's Loyalty), for example, should probably never have stacked together, but did due to their classification as an untyped bonus. While it's true that some characters who have used these sets together will lose +4 of their damage bonus, the intent is to offer a wider diversity of set bonuses in the future, and allow the development team to better scale dungeons with the power level of player characters. If we do find that some item sets become [disproportionally] underutilized as a result of this change, we may conside",
+                "I should also note that not all set bonuses are becoming Artifact bonuses. Set bonuses that already had a specific classification will keep that type."
+              ],
+              "completeness": "Partial embedded quotation; not represented as a complete quote.",
+              "truncation": {
+                "paragraph_index_zero_based": 2,
+                "last_visible_text": "we may conside",
+                "parent_accessibility_node": 155,
+                "handling": "Exact visible prefix retained. Missing ending was not guessed, reconstructed, read through another route or used for any conclusion."
+              },
+              "scope_note": "Historical statement reproduced by the Wiki. The original forum source was not opened or independently verified."
+            },
+            {
+              "section": "History / Guild Airship amenities",
+              "paragraph": "Certain Guild Airship amenities used to grant artifact bonus. With Update 22, most/all amenities were changed to grant guild bonus instead.",
+              "complete_paragraph": true,
+              "qualifier_preserved": "most/all",
+              "observed_links": [
+                {
+                  "label": "Guild Airship",
+                  "normal_url": "https://ddowiki.com/page/Guild_Airships"
+                },
+                {
+                  "label": "Update 22",
+                  "normal_url": "https://ddowiki.com/page/Update_22"
+                },
+                {
+                  "label": "guild bonus",
+                  "normal_url": "https://ddowiki.com/page/Guild_bonus"
+                }
+              ]
+            }
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "status": "positive_applicable_general_rule",
+              "claim": "The introduction explicitly says Artifact stacks with all other bonuses, with no statistic-specific limitation in that sentence. It therefore supports adding a confirmed Artifact component to confirmed other-type components on the same relevant statistic; pairwise item names are not required.",
+              "limits": "The rule is about Artifact in relation to other bonuses. It does not establish that every pair of non-Artifact bonus types stacks."
+            },
+            {
+              "status": "same_type_limit_in_context",
+              "claim": "The History paragraph explicitly says bonuses retyped as Artifact no longer stack with each other. Read together, the broad introductory sentence is not permission to add duplicate Artifact bonuses to the same statistic.",
+              "limits": "The precise historic set examples remain historic; no selected current set/item combination is independently tested."
+            },
+            {
+              "status": "scoped_relevance",
+              "claim": "This general Artifact rule can apply to confirmed Artifact INT, CON, RP, damage or attack components and their other-type counterparts. The relevant component definitions, statistic and activation conditions must still be established.",
+              "limits": "No final INT38, CON28, RP44, Deadly or Accuracy total is certified by this single definition page."
+            },
+            {
+              "status": "source_history_not_current_inventory",
+              "claim": "Set-source reclassification and most/all guild amenity retyping are preserved as historical statements; the article expressly says not every set bonus became Artifact.",
+              "limits": "An item-set source label alone is not used to infer Artifact typing for every set effect."
+            }
+          ],
+          "unknowns_and_limits": [
+            "One embedded historical forum paragraph is visibly clipped. The primary introduction, positive rule, surrounding negative-history rule and final guild-amenity paragraph are complete in the capture.",
+            "No general rule that all distinct bonus types stack with one another is supplied by the Artifact-only statement.",
+            "No new rule concerning the selected Resistance/Insight/Morale/Luck save combination is established where no Artifact component is involved.",
+            "No linked Stack, item-set, gem-system, guild or forum page was reread by this receipt writer."
+          ]
+        },
+        {
+          "title": "Competence bonus",
+          "requested_normal_url": "https://ddowiki.com/page/Competence_bonus",
+          "observed_normal_url": "https://ddowiki.com/page/Competence_bonus",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:38:42.604Z",
+            "completed_at_utc": "2026-11-02T05:38:48.175Z",
+            "heading_verified": "Competence bonus",
+            "article_content_verified": true,
+            "scope": "Complete substantive definition, three source-list sections and Special mention exceptions exposed in the normal article; ads and navigation omitted."
+          },
+          "revision_metadata": {
+            "initial_permanent_link_value": "ddowiki.com/index.php",
+            "permanent_link": "https://ddowiki.com/index.php?title=Competence_bonus&oldid=682593",
+            "oldid": "682593",
+            "footer_observation_interval_utc": [
+              "2026-11-02T05:38:42.604Z",
+              "2026-11-02T05:38:48.175Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:39:08.191Z",
+            "mark_semantics": "Timestamp sampled immediately before the accessibility read showing the copied full public URL in the address bar; no separate completion instant was recorded.",
+            "method": "capture right-clicked the freshly observed normal-page Permanent link, selected the freshly observed Copy Link Address menu entry, checked outcome, then observed the copied public URL in the address field without Return. Normal article address restored without navigating the historical URL.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 15:50, April 8, 2026 (Update 79) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "earlier_body_bytes_independently_pinned": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Introduction",
+              "paragraphs": [
+                "A competence bonus is a type of bonus. It can apply to most anything, but most frequently applies to skills.",
+                "A competence bonus (or penalty) affects a character's performance of a particular task, as in the case of the bardic ability to inspire competence. Such a bonus may apply on attack rolls, saving throws, skill checks, caster level checks, or any other checks to which a bonus relating to level or skill ranks would normally apply. Multiple competence bonuses don't stack, only the highest bonus applies. Other common types of bonuses to skills are enhancement bonuses and morale bonuses."
+              ],
+              "complete_definition_and_rule": true
+            },
+            {
+              "section": "Sources of competence bonus to attack",
+              "bullets": [
+                "Attack Bonus items",
+                "Bard song Inspire Greatness",
+                "Items with Accuracy enchantment",
+                "Items with Dream Vision enchantment"
+              ],
+              "observed_links": [
+                {
+                  "label": "Attack Bonus items",
+                  "normal_url": "https://ddowiki.com/page/Category:Attack_Bonus_items"
+                },
+                {
+                  "label": "Inspire Greatness",
+                  "normal_url": "https://ddowiki.com/page/Inspire_Greatness"
+                },
+                {
+                  "label": "Accuracy",
+                  "normal_url": "https://ddowiki.com/page/Accuracy"
+                },
+                {
+                  "label": "Dream Vision",
+                  "normal_url": "https://ddowiki.com/page/Dream_Vision"
+                }
+              ]
+            },
+            {
+              "section": "Sources of competence bonus to damage",
+              "bullets": [
+                "Bold Trinket (also Lesser and Greater variant)",
+                "Guild Airships buff Dhakaani Vigor from Darguun Hobgoblin Warrior Contract",
+                "Items with Deadly enchantment",
+                "Items with Dream Vision enchantment",
+                "Stand and Deliver, Shiradi Champion ability (?)"
+              ],
+              "observed_links": [
+                {
+                  "label": "Bold Trinket",
+                  "normal_url": "https://ddowiki.com/page/Item:Bold_Trinket"
+                },
+                {
+                  "label": "Guild Airships",
+                  "normal_url": "https://ddowiki.com/page/Guild_Airships"
+                },
+                {
+                  "label": "Deadly",
+                  "normal_url": "https://ddowiki.com/page/Deadly"
+                },
+                {
+                  "label": "Dream Vision",
+                  "normal_url": "https://ddowiki.com/page/Dream_Vision"
+                },
+                {
+                  "label": "Shiradi Champion",
+                  "normal_url": "https://ddowiki.com/page/Shiradi_Champion"
+                }
+              ],
+              "uncertainty_preserved": "The Stand and Deliver entry includes the printed (?) qualifier."
+            },
+            {
+              "section": "Special mention",
+              "bullets": [
+                "Tailwind (Fatesinger ability) says it grants competence bonus but in fact it stacks with other competence bonuses",
+                "Marksmanship and its Greater variant says that they grant a competence bonus to ranged damage, which is a separate bonus compared to all damage. The two stack."
+              ],
+              "observed_links": [
+                {
+                  "label": "Fatesinger",
+                  "normal_url": "https://ddowiki.com/page/Fatesinger"
+                },
+                {
+                  "label": "Marksmanship",
+                  "normal_url": "https://ddowiki.com/page/Marksmanship"
+                }
+              ],
+              "complete_exceptions_as_printed": true
+            },
+            {
+              "section": "Sources of competence bonus to skills",
+              "bullets": [
+                "Named or randomly generated items",
+                "Essence Crafting",
+                "Colorless Augments"
+              ],
+              "observed_links": [
+                {
+                  "label": "Essence Crafting",
+                  "normal_url": "https://ddowiki.com/page/Essence_Crafting"
+                },
+                {
+                  "label": "Colorless Augments",
+                  "normal_url": "https://ddowiki.com/page/Augment_Slot"
+                }
+              ]
+            }
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "status": "negative_general_rule",
+              "claim": "Multiple Competence bonuses do not stack; only the highest applies, subject to the named exceptions preserved by the same page.",
+              "limits": "The broad applicability list describes possible statistics/checks, not a rule allowing every other bonus type to stack."
+            },
+            {
+              "status": "explicit_source_exception",
+              "claim": "The page says Tailwind stacks with other Competence bonuses despite its stated Competence label.",
+              "limits": "This is a named source assertion, not a universal exception for every enhancement or a fresh verification of the current Fatesinger tree."
+            },
+            {
+              "status": "explicit_scoped_source_exception",
+              "claim": "The Marksmanship sentence distinguishes its competence ranged-damage bonus from a competence all-damage bonus and says the two stack.",
+              "limits": "The receipt does not reinterpret the two as Marksmanship plus its Greater variant, does not certify those variants stack with each other, and does not generalize this example to arbitrary ranged/all-damage effects without the stated relationship."
+            },
+            {
+              "status": "not_positive_stacking_evidence",
+              "claim": "The introductory mention that Enhancement and Morale are other common skill bonus types does not itself say they combine with Competence or with Luck.",
+              "limits": "The selected Spot22 Competence +4 Morale +3 Luck illustration remains unresolved by this page alone; no value or type from those component items was independently recaptured."
+            },
+            {
+              "status": "source_list_scope",
+              "claim": "Accuracy and Deadly are respectively listed under Competence attack and damage sources.",
+              "limits": "This listing does not type every named variant or replace a complete own-effect definition. It does not establish all other-type Accuracy/Deadly interactions by itself."
+            }
+          ],
+          "unknowns_and_limits": [
+            "No broadly applicable positive rule allowing Competence to combine with every other bonus type appears in the complete substantive page.",
+            "No positive general Morale-plus-Luck rule appears, so Spot22+4+3 is not certified here.",
+            "The page names saving throws as a possible Competence statistic but supplies no direct combination rule for a separate Resistance/Insight/Morale/Luck save set.",
+            "The displayed Tailwind and Marksmanship exceptions and Shiradi uncertainty are source claims, not independently tested game behavior.",
+            "No forbidden already-captured source page was reread."
+          ]
+        },
+        {
+          "title": "Exceptional bonus",
+          "requested_normal_url": "https://ddowiki.com/page/Exceptional_bonus",
+          "observed_normal_url": "https://ddowiki.com/page/Exceptional_bonus",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:39:18.510Z",
+            "completed_at_utc": "2026-11-02T05:39:23.934Z",
+            "heading_verified": "Exceptional bonus",
+            "article_content_verified": true,
+            "scope": "Complete substantive introduction, Exceptional ability, Exceptional (stat) skills +2 and Previous exceptional bonuses sections; ads and navigation omitted."
+          },
+          "revision_metadata": {
+            "initial_permanent_link_value": "ddowiki.com/index.php",
+            "permanent_link": "https://ddowiki.com/index.php?title=Exceptional_bonus&oldid=528196",
+            "oldid": "528196",
+            "footer_observation_interval_utc": [
+              "2026-11-02T05:39:18.510Z",
+              "2026-11-02T05:39:23.934Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:39:44.488Z",
+            "mark_semantics": "Timestamp sampled immediately before the accessibility read showing the copied full public URL in the address bar; no separate completion instant was recorded.",
+            "method": "capture copied the freshly observed normal-page Permanent link through its freshly observed Copy Link Address menu item, confirmed outcome, then observed the full copied public URL in the address field without Return. Normal article address restored without navigating the historical URL.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 02:25, November 8, 2022 (Update 56.3.1) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "earlier_body_bytes_independently_pinned": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Introduction",
+              "paragraph": "Exceptional bonuses are rare bonuses generally only found on high level loot. Exceptional bonuses stack with all other bonuses, but not with other exceptional bonuses.",
+              "complete_definition_and_rule": true
+            },
+            {
+              "section": "Exceptional ability",
+              "found_on": "Found on: Boots Goggles Necklaces as a Prefix",
+              "base_price_and_effect": "Base price modifier: +7 Effect: Grants +1 or +2 exceptional bonus to an ability score, such as Wisdom.",
+              "subsections": [
+                {
+                  "label": "Augments",
+                  "bullets": [
+                    "Globe of True Imperial Blood",
+                    "Colorless augment ML20"
+                  ]
+                },
+                {
+                  "label": "Named items",
+                  "bullets": [
+                    "Exceptional Strength items",
+                    "Exceptional Dexterity items",
+                    "Exceptional Constitution items",
+                    "Exceptional Intelligence items",
+                    "Exceptional Wisdom items",
+                    "Exceptional Charisma items"
+                  ]
+                },
+                {
+                  "label": "Crafting",
+                  "bullets": [
+                    "Greensteel items",
+                    "Legendary Greensteel items",
+                    "Dinosaur Bone crafting"
+                  ]
+                },
+                {
+                  "label": "Random loot",
+                  "bullets": [
+                    "Several years ago, items with +1 exceptional ability appeared as high-level random loot. Few such items may still exist in the inventories and banks of old characters."
+                  ]
+                }
+              ],
+              "observed_links": [
+                {
+                  "label": "Boots",
+                  "normal_url": "https://ddowiki.com/page/Boots"
+                },
+                {
+                  "label": "Goggles",
+                  "normal_url": "https://ddowiki.com/page/Goggles"
+                },
+                {
+                  "label": "Necklaces",
+                  "normal_url": "https://ddowiki.com/page/Necklace"
+                },
+                {
+                  "label": "Prefix",
+                  "normal_url": "https://ddowiki.com/page/Prefix"
+                },
+                {
+                  "label": "Base price modifier",
+                  "normal_url": "https://ddowiki.com/page/Base_price_modifier"
+                },
+                {
+                  "label": "Globe of True Imperial Blood",
+                  "normal_url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood"
+                },
+                {
+                  "label": "Exceptional Strength items",
+                  "normal_url": "https://ddowiki.com/page/Category:Exceptional_Strength_items"
+                },
+                {
+                  "label": "Exceptional Dexterity items",
+                  "normal_url": "https://ddowiki.com/page/Category:Exceptional_Dexterity_items"
+                },
+                {
+                  "label": "Exceptional Constitution items",
+                  "normal_url": "https://ddowiki.com/page/Category:Exceptional_Constitution_items"
+                },
+                {
+                  "label": "Exceptional Intelligence items",
+                  "normal_url": "https://ddowiki.com/page/Category:Exceptional_Intelligence_items"
+                },
+                {
+                  "label": "Exceptional Wisdom items",
+                  "normal_url": "https://ddowiki.com/page/Category:Exceptional_Wisdom_items"
+                },
+                {
+                  "label": "Exceptional Charisma items",
+                  "normal_url": "https://ddowiki.com/page/Category:Exceptional_Charisma_items"
+                }
+              ],
+              "scope_note": "Found-on/source examples and amounts are retained as the article states them, not treated as an exhaustive current equipment matrix."
+            },
+            {
+              "section": "Exceptional (stat) skills +2",
+              "paragraph": "These bonuses exist for each and every stat and effect all skills that use that stat as their modifier. They only appear on named loot and a few crafted items, most notably Green Steel accessories and Dinosaur Bone crafting.",
+              "observed_links": [
+                {
+                  "label": "Green Steel",
+                  "normal_url": "https://ddowiki.com/page/Green_Steel"
+                },
+                {
+                  "label": "Dinosaur Bone crafting",
+                  "normal_url": "https://ddowiki.com/page/Dinosaur_Bone_crafting"
+                }
+              ],
+              "wording_note": "The source uses effect, retained without grammatical correction."
+            },
+            {
+              "section": "Previous exceptional bonuses",
+              "introductory_paragraph": "In the past, exceptional bonuses stacked in a non-standard way. Between Update 14 and Update 19, all special stacking cases of exceptional bonuses were removed from the game or redesigned:",
+              "bullets": [
+                "Exceptional Ability +2 => Insightful ability, insight bonus (stacking with exceptional ability) (U14)",
+                "Exceptional Skills +1/+2/+3 => Effects doubled (+2/+4/+6), no longer stacking (U19)",
+                "Exceptional Fortification => insight bonus",
+                "Exceptional Sneak Attack => insight bonus",
+                "Exceptional elemental resistance +5 => competence bonus",
+                "Exceptional elemental resistance +10 => insight bonus"
+              ],
+              "concluding_paragraph": "The developers have stated that they prefer to offer non-stacking bonuses to create more gear options and so do not plan to add more items with exceptional bonuses in the future.",
+              "observed_links": [
+                {
+                  "label": "Update 14",
+                  "normal_url": "https://ddowiki.com/page/Update_14"
+                },
+                {
+                  "label": "Update 19",
+                  "normal_url": "https://ddowiki.com/page/Update_19"
+                }
+              ],
+              "temporal_scope_note": "Historical section and developer-intent statement are preserved as this page reports them. Footer is November 8, 2022; no independent current policy or future item-availability assertion is made."
+            }
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "status": "positive_applicable_general_rule",
+              "claim": "Exceptional bonuses explicitly stack with all other bonuses, excluding other Exceptional bonuses. This supplies a positive rule for an Exceptional ability bonus combining with an Enhancement bonus to the same ability when those components and conditions are established.",
+              "limits": "No pairwise item-name sentence is required. The rule does not independently establish how two non-Exceptional types combine."
+            },
+            {
+              "status": "explicit_ability_relation",
+              "claim": "The historical Ability +2 retyping bullet expressly says Insightful ability, Insight bonus, stacks with Exceptional ability.",
+              "limits": "Historical retyping is not treated as a rule that every present +2 Exceptional ability bonus must now be Insight. The separately displayed current ability definition is retained unchanged."
+            },
+            {
+              "status": "negative_same_type_rule",
+              "claim": "Multiple Exceptional bonuses do not stack under the introduction. Historical special cases were removed or redesigned, and the historical skill examples are now described as no longer stacking.",
+              "limits": "The source does not authorize combining two Exceptional ability items merely because they differ in amount or name."
+            },
+            {
+              "status": "stat_specific_scope",
+              "claim": "Exceptional (stat) skills bonuses affect skills using the named stat as their modifier. This is separate from an Exceptional ability-score bonus and does not assert a bonus to every skill regardless of governing stat.",
+              "limits": "A particular selected skill effect must still be shown to exist and apply; the page does not provide the requested Spot Competence/Morale/Luck combination rule."
+            },
+            {
+              "status": "dated_source_assertion",
+              "claim": "The final developer preference about future Exceptional items is recorded as the page historical assertion, not a newly verified current promise.",
+              "limits": "The receipt does not deny the existence of later item sources on that basis."
+            }
+          ],
+          "unknowns_and_limits": [
+            "The page directly resolves Exceptional-versus-other-type relationships, including Exceptional ability with Enhancement and the explicit historical Insight relation. It does not prove every distinct-type pair stacks.",
+            "This source adds no applicable rule for a Resistance/Insight/Morale/Luck save combination lacking an Exceptional component.",
+            "The listed amount range, example source categories and history remain source statements rather than a current exhaustive item catalog.",
+            "No full INT38, CON28, RP44, Spot29, save22/25 or final Accuracy/Deadly profile is certified.",
+            "No Globe, Stack, enhancement-type or other previously captured page was reread."
+          ]
+        }
+      ],
+      "cross_source_findings": [
+        {
+          "status": "supported_general_relations",
+          "finding": "Artifact and Exceptional provide explicit positive relations to other bonus types, with same-type restrictions retained. Applicable general rules are sufficient when component types, statistics and conditions are established; item-pair names need not appear."
+        },
+        {
+          "status": "scope_limit",
+          "finding": "These positive relations do not create a universal rule that every distinct bonus type stacks. For example, Artifact compatibility with Enhancement and Profane does not by itself establish Enhancement-versus-Profane compatibility."
+        },
+        {
+          "status": "unresolved_here",
+          "finding": "Competence does not positively authorize the requested Spot Competence/Morale/Luck combination; its mention of other skill bonus labels is not a combination rule. No selected save Resistance/Insight/Morale/Luck total is resolved by these three pages."
+        },
+        {
+          "status": "preserved_exceptions",
+          "finding": "Competence Tailwind and Marksmanship scoped exceptions, Artifact same-type reclassification history and Exceptional historical retypes remain distinct, not generalized to unrelated effects."
+        }
+      ],
+      "access_outcome": {
+        "normal_article_bodies_verified_readable": 3,
+        "actual_access_blocks_reported": []
+      },
+      "blockers": [],
+      "evidence_gaps": [
+        "Artifact embedded forum quotation contains one clipped paragraph ending we may conside; primary applicable rules are captured completely.",
+        "Final totals require the other relevant components and applicable relationships; this receipt does not certify them from distinct labels alone."
+      ]
+    },
+    "festive_profane": {
+      "schema": "ddo-wiki-observed-source-receipt/1",
+      "batch": "BONUS-RULES-01",
+      "created_at_utc": "2026-11-02T05:42:28.099735+00:00",
+      "receipt_scope": "Complete substantive definitions, source examples and warnings on Festive bonus and Profane bonus normal pages.",
+      "provenance": {
+        "method": "Transcription only from inherited exact supported native Chrome accessibility observations. No browser, UI or network use by receipt public-page observation.",
+        "quotation_method": "Adjacent rendered text and inline link labels are joined in reading order; whitespace normalized. Accessibility indices, navigation/category chrome and advertisements are omitted from quoted substantive prose. Source wording is retained.",
+        "source_timestamps": "Actual recorded body-read intervals. Both complete Permanent links and footer metadata were exposed in those same captures. Receipt creation time is separate.",
+        "permalink_limit": "Observed normal-page revision metadata only; no historical endpoint opened and no independent historical-byte comparison claimed.",
+        "historical_endpoints_opened": false,
+        "source_followups_opened": false,
+        "guide_repository_character_or_settings_changes": false,
+        "private_content_limit": "No screenshots, unrelated browser/clipboard content or account data included."
+      },
+      "sources": [
+        {
+          "source_id": "festive_bonus_291826_normal_observation",
+          "title": "Festive bonus",
+          "requested_normal_url": "https://ddowiki.com/page/Festive_bonus",
+          "observed_normal_url": "https://ddowiki.com/page/Festive_bonus",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:40:18.103Z",
+            "completed_at_utc": "2026-11-02T05:40:20.325Z",
+            "heading_verified": "Festive bonus",
+            "scope": "Complete substantive definition paragraph and complete displayed stub warning; no other substantive sections exposed before categories/navigation.",
+            "article_content_verified": true
+          },
+          "revision_metadata": {
+            "permanent_link": "https://ddowiki.com/index.php?title=Festive_bonus&oldid=291826",
+            "oldid": "291826",
+            "observation_interval_utc": [
+              "2026-11-02T05:40:18.103Z",
+              "2026-11-02T05:40:20.325Z"
+            ],
+            "method": "Complete Permanent link and footer were directly exposed in the same normal-page accessibility observation as the article body.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 21:35, February 29, 2016 (Update 30) [editor metadata omitted; see source history].",
+            "historical_endpoint_opened": false,
+            "historical_bytes_independently_verified": false
+          },
+          "exact_sections": [
+            {
+              "section": "Festive bonus / complete definition",
+              "text": "When the Festive bonus was originally introduced in Update 28 Patch 1 it was known as a Spooky bonus. It was renamed in Update 30 to support being used on non-scary things. Some of the reward items from The Night Revels special event grant this unique bonus. Multiple effects with the same bonus type don't stack, only the highest applies.",
+              "observed_relevant_links": [
+                {
+                  "label": "Update 28 Patch 1",
+                  "normal_url": "https://ddowiki.com/page/Update_28_Patch_1",
+                  "opened": false
+                },
+                {
+                  "label": "Update 30",
+                  "normal_url": "https://ddowiki.com/page/Update_30",
+                  "opened": false
+                },
+                {
+                  "label": "The Night Revels",
+                  "normal_url": "https://ddowiki.com/page/The_Night_Revels",
+                  "opened": false
+                },
+                {
+                  "label": "stack",
+                  "normal_url": "https://ddowiki.com/page/Stack",
+                  "opened": false
+                }
+              ]
+            },
+            {
+              "section": "Displayed stub warning",
+              "text": "This stub is related to Dungeons and Dragons Online and needs to be filled out. If you are considering filling it out, some good places to check would be both the google and ddo.com forum search pages. You can help expand it by clicking Edit at the top of the page.",
+              "source_warning": true,
+              "handling": "Recorded as source content only. No suggested search, editing or navigation action was performed."
+            }
+          ],
+          "relevant_category_labels": [
+            "Bonus types",
+            "Generic stubs"
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "claim": "The page states that multiple effects of the same bonus type do not stack and only the highest applies.",
+              "status": "explicit_negative_rule",
+              "exact_support": "Multiple effects with the same bonus type don't stack, only the highest applies.",
+              "scope_limit": "This negative rule does not itself state that different bonus types combine. It is not expanded into a positive cross-type rule."
+            },
+            {
+              "claim": "The source identifies Spooky as the former name of Festive, introduced in Update 28 Patch 1 and renamed in Update 30.",
+              "status": "explicit_historical_identity",
+              "scope_limit": "This is not evidence of two separate current stackable bonus types or a duplicate bonus from an old display name."
+            },
+            {
+              "claim": "The article is explicitly marked as a stub and has a displayed 2016 last-modified date.",
+              "status": "source_completeness_and_date_caveat",
+              "scope_limit": "The source warning is preserved. The date alone does not establish that the stated rule is false or that current event rewards were independently checked."
+            }
+          ],
+          "combination_evidence_status": {
+            "positive_cross_type_rule_present_in_this_body": false,
+            "festive_intelligence_with_other_ability_types": "Not affirmatively established by this page alone; existing applicable rules from other bonus-definition pages may still establish particular combinations.",
+            "universal_stat_rule": "No universal rule that all different types stack appears in the complete substantive paragraph.",
+            "negative_does_not_mean_false": "Missing positive evidence is not a finding that Festive cannot combine with other types."
+          },
+          "selection_boundary": "No Festive Constitution selection is made or implied. The capture states it is not selected in the default.",
+          "unknowns": [
+            "The page does not enumerate a current full reward catalog, numeric ability bonuses, or every affected statistic.",
+            "No positive Festive-plus-Enhancement, Festive-plus-Insight, or blanket all-types combination rule is printed here. Other applicable retained general rules must be assessed separately."
+          ]
+        },
+        {
+          "source_id": "profane_bonus_613196_normal_observation",
+          "title": "Profane bonus",
+          "requested_normal_url": "https://ddowiki.com/page/Profane_bonus",
+          "observed_normal_url": "https://ddowiki.com/page/Profane_bonus",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:40:29.322Z",
+            "completed_at_utc": "2026-11-02T05:40:31.354Z",
+            "heading_verified": "Profane bonus",
+            "scope": "Complete substantive definition paragraph and four source-example bullets; no other substantive sections exposed before categories/navigation.",
+            "article_content_verified": true
+          },
+          "revision_metadata": {
+            "permanent_link": "https://ddowiki.com/index.php?title=Profane_bonus&oldid=613196",
+            "oldid": "613196",
+            "observation_interval_utc": [
+              "2026-11-02T05:40:29.322Z",
+              "2026-11-02T05:40:31.354Z"
+            ],
+            "method": "Complete Permanent link and footer were directly exposed in the same normal-page accessibility observation as the article body.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 07:16, January 7, 2025 (Update 71.1) [editor metadata omitted; see source history].",
+            "historical_endpoint_opened": false,
+            "historical_bytes_independently_verified": false
+          },
+          "exact_sections": [
+            {
+              "section": "Profane bonus / complete definition",
+              "text": "A profane bonus (or penalty) stems from the power of evil. Multiple profane bonuses on the same character or object do not stack. Only the highest profane bonus applies. Some of the most common sources of profane bonuses include:",
+              "observed_relevant_links": [
+                {
+                  "label": "stack",
+                  "normal_url": "https://ddowiki.com/page/Stack",
+                  "opened": false
+                }
+              ]
+            },
+            {
+              "section": "Common sources / complete displayed list",
+              "bullets": [
+                "Several named item sets",
+                "Lunar Gems",
+                "Profane Well Rounded items",
+                "Profane Spell Focus Mastery items"
+              ],
+              "observed_relevant_links": [
+                {
+                  "label": "named item sets",
+                  "normal_url": "https://ddowiki.com/page/Named_item_sets",
+                  "opened": false
+                },
+                {
+                  "label": "Lunar Gems",
+                  "normal_url": "https://ddowiki.com/page/Lunar_and_Solar_Gems#Lunar_Gems",
+                  "opened": false
+                },
+                {
+                  "label": "Profane Well Rounded items",
+                  "normal_url": "https://ddowiki.com/page/Category:Profane_Well_Rounded_items",
+                  "opened": false
+                },
+                {
+                  "label": "Profane Spell Focus Mastery items",
+                  "normal_url": "https://ddowiki.com/page/Category:Profane_Spell_Focus_Mastery_items",
+                  "opened": false
+                }
+              ]
+            }
+          ],
+          "relevant_category_labels": [
+            "Bonus types"
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "claim": "The definition explicitly says multiple Profane bonuses do not stack and only the highest applies.",
+              "status": "explicit_negative_rule",
+              "scope_limit": "The literal same character or object wording is preserved. This receipt does not invent a rule that a Profane bonus to one statistic suppresses a Profane bonus to an unrelated statistic. Applications require identifying the actual overlapping effects under review."
+            },
+            {
+              "claim": "Lunar Gems and named sets are explicitly named as common Profane sources.",
+              "status": "explicit_source_examples",
+              "scope_limit": "A source category is not the exact effect value/type of every member, nor a complete list of all possible sources. No member pages were followed."
+            }
+          ],
+          "combination_evidence_status": {
+            "positive_cross_type_rule_present_in_this_body": false,
+            "profane_with_enhancement_artifact_or_other_types": "The Profane definition supplies no positive cross-type sentence. This does not negate an applicable positive rule stated by the other bonus type, such as Artifact or Exceptional.",
+            "selected_ranged_power_example": "The Profane source list and same-type nonstacking rule alone do not certify Enhancement14 plus Artifact15 plus Profane15 as an additive total.",
+            "negative_does_not_mean_false": "Absent positive interaction wording is not a finding of incompatibility."
+          },
+          "unknowns": [
+            "The paragraph does not give a new universal rule that different bonus types stack.",
+            "Exact selected effect magnitudes and the relations between non-Profane components remain dependent on their independently captured sources and applicable general rules."
+          ]
+        }
+      ],
+      "cross_source_findings": [
+        {
+          "status": "supported_negative_rules",
+          "finding": "Both complete substantive bodies state same-type nonstacking/highest-only behavior. Neither contains a positive universal rule for combining all different types."
+        },
+        {
+          "status": "scoped_unknowns",
+          "finding": "These two pages alone do not establish the requested mixed INT/CON/RP/Deadly/Spot/Accuracy totals or save Resistance/Insight/Morale/Luck addition. Applicable positive general rules captured elsewhere may support some relationships without pairwise item wording."
+        },
+        {
+          "status": "no_build_change",
+          "finding": "No gear, feat, skill, AP or character choice is made; Festive Constitution is not introduced into the default."
+        }
+      ],
+      "access_outcome": {
+        "normal_pages_verified_readable": 2,
+        "access_blocks_reported": [],
+        "source_followups_opened": 0
+      },
+      "blockers": []
+    }
+  },
+  "synthesis": {
+    "batch": "BONUS-RULES-01",
+    "created_at_utc": "2026-11-02T05:42:33.637176+00:00",
+    "scope": "Five bonus-type normal articles, not a new item or build solve. Already captured Stack, Quality, Insight, Enhancement, Fortification, Deadly and positive PRR/MRR/Vitality/HA pages were not reread.",
+    "fresh_rule_findings": [
+      {
+        "type": "Artifact",
+        "normal_url": "https://ddowiki.com/page/Artifact_bonus",
+        "oldid": "636950",
+        "exact_positive_rule": "This bonus stacks with all other bonuses.",
+        "exact_same_type_context": "With Update 17, many previously untyped bonuses have been typed as artifact bonus and thus they no longer stack with each other. This change was retroactive and affected existing items.",
+        "application": "Read together, the article positively supports an established Artifact bonus combining with other bonus types, while the History excludes same-type Artifact stacking. The rule is not restricted to ability scores or sets; source examples name named item sets and Solar Gems. It applies to an established Artifact component on the relevant statistic without requiring the specific item pair to be named.",
+        "limits": [
+          "This is a rule about Artifact participation, not a global rule that every pair of non-Artifact types stacks.",
+          "An embedded historical forum quotation contains an AX-clipped sentence ending we may conside; the complete primary definition and History nonstacking paragraph are available independently. Missing tail is not reconstructed.",
+          "History retains Update22 most/all guild amenities changing from Artifact to Guild. Source-specific bonus types must still be established."
+        ]
+      },
+      {
+        "type": "Competence",
+        "normal_url": "https://ddowiki.com/page/Competence_bonus",
+        "oldid": "682593",
+        "exact_negative_rule": "Multiple competence bonuses don't stack, only the highest bonus applies.",
+        "scope": "Article discusses performance of a particular task and names attack rolls, saving throws, skill checks, caster-level checks and other checks related to level or skill ranks; source sections also list attack and damage effects.",
+        "positive_exceptions": [
+          "Tailwind (Fatesinger ability) says it grants competence bonus but in fact it stacks with other competence bonuses",
+          "Marksmanship and its Greater variant says that they grant a competence bonus to ranged damage, which is a separate bonus compared to all damage. The two stack."
+        ],
+        "application": "Preserve named exceptions within their stated scope. The Marksmanship text supports the described ranged-damage versus all-damage distinction; it is not read as proof that Marksmanship and its Greater variant stack with each other.",
+        "limits": [
+          "The article names Enhancement and Morale as other common skill bonus types, but does not state that they combine with Competence. This list is not a positive mixed-type rule.",
+          "Accuracy appears as an attack source and Deadly as a damage source. No new blanket cross-type attack/damage combination rule is stated here.",
+          "Stand and Deliver/Shiradi source entry has an explicit (?) and is retained as uncertain source text.",
+          "Named exceptions were not independently tested or refreshed through their tree pages."
+        ]
+      },
+      {
+        "type": "Exceptional",
+        "normal_url": "https://ddowiki.com/page/Exceptional_bonus",
+        "oldid": "528196",
+        "exact_general_rule": "Exceptional bonuses are rare bonuses generally only found on high level loot. Exceptional bonuses stack with all other bonuses, but not with other exceptional bonuses.",
+        "application": "An established Exceptional ability bonus can combine with an established Enhancement ability bonus to the same score under this explicit general rule. The same rule allows Exceptional with other non-Exceptional types, without needing pairwise item names. It does not prove that those other types all combine among themselves.",
+        "exact_additional_ability_rule": "Exceptional Ability +2 => Insightful ability, insight bonus (stacking with exceptional ability) (U14)",
+        "stat_scope": "Article separately describes Exceptional ability bonuses (+1 or +2) and Exceptional (stat) skills +2 affecting skills that use that stat as modifier. Do not equate a skill bonus with an ability-score bonus.",
+        "history_limits": [
+          "The article says old special stacking cases were removed/redesigned between U14 and U19; do not import historical same-type stacking into current conclusions.",
+          "Historical retypes, doubled skill values/no-longer-stacking, and dated developer future-plans statement are preserved in the source receipt.",
+          "Footer is November8,2022; statements are source assertions, not newly verified release plans."
+        ]
+      },
+      {
+        "type": "Festive",
+        "normal_url": "https://ddowiki.com/page/Festive_bonus",
+        "oldid": "291826",
+        "exact_negative_rule": "Multiple effects with the same bonus type don't stack, only the highest applies.",
+        "application": "Supports same-type nonstacking, not a standalone positive cross-type rule. The original Spooky name and U30 rename do not create a separate simultaneously active type.",
+        "limits": [
+          "Page explicitly marked stub and footer is February29,2016.",
+          "Other pages may positively authorize a combination with Festive (for example Artifact or Exceptional general rules); absence of such wording here is not disproof.",
+          "Festive Constitution is not selected in the default and is neither added nor proposed."
+        ]
+      },
+      {
+        "type": "Profane",
+        "normal_url": "https://ddowiki.com/page/Profane_bonus",
+        "oldid": "613196",
+        "exact_rule": "A profane bonus (or penalty) stems from the power of evil. Multiple profane bonuses on the same character or object do not stack. Only the highest profane bonus applies.",
+        "sources_listed": [
+          "Several named item sets",
+          "Lunar Gems",
+          "Profane Well Rounded items",
+          "Profane Spell Focus Mastery items"
+        ],
+        "application": "The explicit rule addresses multiple Profane bonuses; it supplies no positive different-type combination rule. Apply it to competing bonuses to the relevant statistic without treating differently named statistics as a single score. Literal source wording is retained in the receipt.",
+        "limits": [
+          "The source list is not an explicit positive cross-type rule.",
+          "Artifact or Exceptional general rules can independently establish their respective combinations with Profane.",
+          "No new claim that Profane plus Enhancement combines follows from this definition alone."
+        ]
+      }
+    ],
+    "requested_relationship_assessment": [
+      {
+        "relationship": "RP14 Enhancement +15 Artifact +15 Profane",
+        "inputs_status": "Amounts and types are capture-provided retained component context; none of those item leaves was reread in this batch.",
+        "newly_supported": "Artifact RP combines with established Enhancement RP and with established Profane RP under Artifact636950.",
+        "remaining_gap": "These five pages do not themselves establish Enhancement-plus-Profane RP. Artifact combining with each does not prove that the other two combine with each other.",
+        "total_status": "44 is the arithmetic sum conditional on all applicable relationships and activation conditions; this batch alone does not certify the complete RP44 total."
+      },
+      {
+        "relationship": "Exceptional ability bonus plus Enhancement ability bonus",
+        "newly_supported": "Explicitly supported by Exceptional528196 general rule for different bonus types, applied to the same ability statistic. No pairwise item sentence needed.",
+        "additional_support": "The history also expressly names Insight ability stacking with Exceptional ability.",
+        "limits": "Component values, specific current types and conditions still come from their retained item descriptions."
+      },
+      {
+        "relationship": "Festive2 INT with other ability types",
+        "inputs_status": "Festive2 INT component was captured in preceding selected-augment batch; not reread.",
+        "newly_supported": "Artifact INT with Festive INT, and Exceptional INT with Festive INT, follow from the respective Artifact/Exceptional general rules.",
+        "remaining_gap": "The Festive page itself supplies no positive rule with Enhancement, Insight, Profane or every other type. This batch therefore does not certify the complete mixed INT38 calculation solely from distinct labels. Existing separately established applicable rules may close other relationships."
+      },
+      {
+        "relationship": "Selected INT/CON totals",
+        "newly_supported": "Established Artifact or Exceptional components may combine with other types under their broad rules.",
+        "remaining_gap": "These rules are not a transitive proof that every remaining non-Artifact/non-Exceptional pair combines, nor proof of final host, socket, equipment or activation legality. INT38/CON28 remain conditional on the rest of the retained evidence. No Festive CON is introduced."
+      },
+      {
+        "relationship": "Spot22 Competence +4 Morale +3 Luck",
+        "inputs_status": "Amounts and types supplied by capture as retained context, not reread.",
+        "newly_supported": "Competence682593 gives a same-type limit and confirms skills are a common scope.",
+        "remaining_gap": "No positive Competence/Morale/Luck combination rule appears in these five pages; naming common skill types is insufficient. Neither Artifact nor Exceptional participates in this example, so their rules do not resolve it.",
+        "total_status": "29 is arithmetic only until an applicable rule establishes the combination."
+      },
+      {
+        "relationship": "Deadly and Accuracy",
+        "newly_supported": "Artifact/Exceptional general rules can apply when such a component and the other current type affect the same relevant damage or attack statistic. Competence page explicitly lists Deadly under damage sources and Accuracy under attack sources.",
+        "limits": "This does not create absent Artifact/Exceptional components, establish every selected component type/value, or replace already retained Deadly682765 positive rules. Competence named exceptions are scoped, not a universal stacking rule."
+      },
+      {
+        "relationship": "Save Resistance/Insight/Morale/Luck",
+        "newly_supported": "None of the new positive rules resolves the full stated combination, because the applicable positive rules concern an Artifact or Exceptional participating bonus.",
+        "remaining_gap": "Competence mentioning saving throws does not create a positive rule for Resistance/Insight/Morale/Luck. These five pages do not certify saves22/25 from component sums."
+      }
+    ],
+    "evidence_quality": {
+      "complete_primary_definitions": true,
+      "artifact_historical_embedded_quote": "One AX text node clipped mid-sentence, expressly recorded as partial; no unknown tail used.",
+      "same_type_and_mixed_type_rules_distinguished": true,
+      "metadata": "Body-read intervals kept separate from later full-permalink observation marks for Competence and Exceptional. Other three full hrefs exposed with body.",
+      "historical_endpoints_opened": false,
+      "source_images_or_screenshots_used": false
+    },
+    "remaining_gaps": [
+      "Enhancement-plus-Profane RP is not positively established by these five pages, so RP44 remains conditional.",
+      "Spot Competence/Morale/Luck and save Resistance/Insight/Morale/Luck combinations are not resolved here.",
+      "Full INT/CON totals still need any remaining non-Artifact/non-Exceptional relationships and relevant component/activation/host evidence.",
+      "Artifact embedded historical forum quotation has a clipped tail, without affecting complete primary stacking rules."
+    ],
+    "access_blocks": [],
+    "guide_repo_character_or_settings_changes": false
+  },
+  "access_outcome": {
+    "five_normal_articles_verified_readable": true,
+    "access_blocks": [],
+    "pending_actions": [],
+    "uncertain_executions": [],
+    "historical_endpoints_opened": false
+  },
+  "capture_limit": "One embedded historical Artifact forum-quote paragraph is clipped in the accessibility source. Its exact visible prefix is retained and marked partial; complete primary stacking definitions and surrounding History rule were captured.",
+  "remaining_evidence_gaps": [
+    "Enhancement-plus-Profane RP is not positively established by these five pages, so RP44 remains conditional.",
+    "Spot Competence/Morale/Luck and save Resistance/Insight/Morale/Luck combinations are not resolved here.",
+    "Full INT/CON totals still need any remaining non-Artifact/non-Exceptional relationships and relevant component/activation/host evidence.",
+    "Artifact embedded historical forum quotation has a clipped tail, without affecting complete primary stacking rules."
+  ]
+}

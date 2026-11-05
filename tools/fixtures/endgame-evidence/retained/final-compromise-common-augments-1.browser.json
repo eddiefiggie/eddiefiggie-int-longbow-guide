@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"url\":\"https://ddowiki.com/page/Item:Sapphire_of_False_Life_%2B60\",\"text\":\"Sapphire of False Life +60\\nMinimum Level\\t36\\t\\n\\nRarity\\tCommon\\nBind status\\tUnbound\\nAugment Type\\tBlue\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +60 Enhancement bonus to your maximum Hit Points. This augment can go in a Blue, Green, or Purple Augment Slot.\\nBase Value\\t2,400 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nRandall Lyric (Gravenhollow),\\n(48) I:Astral Shard\\nRandall Lyric (Gravenhollow),\\n(6000) I:Mysterious Remnant\\n\\nEnhancements\\t\\nFalse Life +60\\n\\nMaximum stack size\\t100\"},{\"url\":\"https://ddowiki.com/page/Item:Sapphire_of_Defense_%2B40\",\"text\":\"Sapphire of Defense +40\\nMinimum Level\\t36\\t\\n\\nRarity\\tCommon\\nBind status\\tUnbound\\nAugment Type\\tBlue\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +40 Enhancement bonus to your Physical Resistance Rating and Magical Resistance Rating. This augment can go in a Blue, Green, or Purple Augment Slot.\\nBase Value\\t2,400 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\n\\n\\n\\n\\n\\nEnhancements\\t\\nSheltering +40\\n\\nMaximum stack size\\t100\"},{\"url\":\"https://ddowiki.com/page/Item:Diamond_of_Insightful_Constitution_%2B5\",\"text\":\"Diamond of Insightful Constitution +5\\nMinimum Level\\t24\\t\\n\\nRarity\\tCommon\\nBind status\\tUnbound\\nAugment Type\\tColorless\\nDescription\\tDrag this augment into a slot to upgrade an item with a +5 Insight Bonus to Constitution. This augment can go in any color Augment Slot.\\nBase Value\\t2,100 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nMonster Hunter, Hall of Heroes\\n(3000) I:Mysterious Remnant\\n\\nEnhancements\\t\\nInsightful Constitution +5\\n\\nMaximum stack size\\t100\"}]"
+    }
+  ],
+  "isError": false
+}

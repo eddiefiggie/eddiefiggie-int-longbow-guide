@@ -1,0 +1,598 @@
+{
+  "title": "INTiana DDO Wiki audit — source evidence batch 2",
+  "receipt_created_at": "2026-11-02T01:19:53.740104+00:00",
+  "provenance": "Sole native Chrome UI public-page observation on authorized Mac. Normal article pages only; relevant public article text, heading/table context, and footer metadata. No screenshots, unrelated browser data, login, settings/security changes, source edits or historical revision navigation. Exact excerpts normalize whitespace and rejoin inline link labels.",
+  "access_result": "All six normal articles were readable; no human-verification challenge appeared.",
+  "prior_metadata_recovery": {
+    "pages": [
+      "Base_Attack_Bonus",
+      "Monk",
+      "Epic_Destinies",
+      "Enhancements"
+    ],
+    "status": "Unresolved: prior native accessibility captures truncated permanent-link values. Current Chrome state was inspected at start and remained on readable Enhancements with Permanent link text selected. The uncertain Copy Link Address operation was not repeated. No historical URL was opened."
+  },
+  "pages": [
+    {
+      "source_receipt": "Feats.json",
+      "evidence": {
+        "title": "Feats",
+        "normal_url": "https://ddowiki.com/page/Feats",
+        "observation_started_at": "2026-11-02T01:16:03.534Z",
+        "observation_finished_at": "2026-11-02T01:16:11.213Z",
+        "method": "Normal article read through native Google Chrome accessibility  public-page observation. Exact excerpts below normalize whitespace and recombine inline link labels. No independent browser or network access by the receipt public-page observation.",
+        "access_status": "Article body readable; no challenge reported in this observation.",
+        "footer": {
+          "last_modified": "12:20, August 20, 2026",
+          "update": "81.2"
+        },
+        "permanent_link": {
+          "observed": true,
+          "href": null,
+          "oldid": null,
+          "historical_revision_read": false,
+          "limitation": "Permanent link was present, but its AX Value was truncated to an ellipsis. No historical URL was opened."
+        },
+        "exact_excerpts": [
+          {
+            "context": "Introduction, general feat schedule",
+            "text": "Every character gets a feat at the 1st level, the 3rd level, and every 3 Heroic levels after (for a total of 7 at Heroic level 20.)"
+          },
+          {
+            "context": "Introduction, general feat schedule",
+            "text": "Every character gets a feat at the 21st level - the first Epic level - and every 3 Epic levels after (for a total of 6 at Epic level 36.) Epic and standard feats can be selected for these."
+          },
+          {
+            "context": "Introduction, general feat schedule",
+            "text": "Every character gets an Epic Destiny feat at level 22, 25, 28, 31 and 34."
+          },
+          {
+            "context": "Introduction, general feat schedule",
+            "text": "Every character gets a Legendary feat at level 30."
+          },
+          {
+            "context": "Introduction, free class feats",
+            "text": "Some classes automatically gain free class feats based on class level; check each class' page for more details on those. Sometimes they allow the player to make a choice of which to take, as with rogue special abilities, ranger favored enemies, and monk philosophy paths. Those feats will not be listed on this page and are described within the appropriate class pages, even though they are treated as feats for some gameplay purposes such as swapping them by spending dragonshards."
+          },
+          {
+            "context": "Introduction, additional feats: Humans and Purple Dragon Knights",
+            "text": "Humans and Purple Dragon Knights get one additional generic feat at 1st level."
+          },
+          {
+            "context": "Introduction, additional feats: Monks",
+            "text": "A standard Monk gets a bonus feat at Monk levels 1, 2, and 6 taken from a list of martial arts feats."
+          },
+          {
+            "context": "Introduction, additional feats: Rogues",
+            "text": "A standard Rogue gets a bonus feat at Rogue levels 10, 13, 16, and 19 from the list of Rogue special abilities."
+          },
+          {
+            "context": "Introduction, general prerequisite discussion immediately before 'Active feats, free for all classes'",
+            "text": "Free Active Feats are provided to any character that meets the requirements, and represent things most people can try (maybe not with much success!) Some feats have prerequisites that your character must meet to qualify for. These requisites often take the form of minimum Ability or Skill scores, or other feats. Feats with Ability prerequisites only take into account the following bonuses:"
+          },
+          {
+            "context": "Introduction, ability prerequisites: allowed bonus list",
+            "list": [
+              "Base starting Ability value at Character Creation",
+              "Level-up Ability points",
+              "Inherent bonuses from Ability tomes"
+            ]
+          },
+          {
+            "context": "Introduction, ability prerequisites: excluded bonuses",
+            "text": "Any other bonuses, including Ability bonuses from Racial past lives, enhancements, gear, spell or potion effects, class abilities like Frenzy, guild ship buffs, other feats such as Completionist, etc. do not count."
+          }
+        ],
+        "observed_specific_repeat_selection_excerpts": [
+          {
+            "context": "General passive feats: critical threat-range entry. The captured nearby entry describes +3 for falchion/great crossbow/kukri/rapier/scimitar, +2 for the listed weapon types, and +1 for all other weapons. Its prerequisite is BAB 8 or higher.",
+            "text": "This feat can be taken multiple times, though each time must be for a different type.",
+            "limitation": "The exact row-title link was not included in the displayed filtered capture; this is retained as a specific entry, not generalized to all feats."
+          },
+          {
+            "context": "Skill bonus feats: Skill Focus entry",
+            "text": "can be taken multiple times, but only once for each skill.",
+            "excerpt_is_fragment": true,
+            "limitation": "The fragment is copied from the displayed repeat-selection search result; it does not establish a general feat rule."
+          }
+        ],
+        "findings": {
+          "directly_supported": [
+            "The introduction distinguishes generic feat slots, Epic Destiny feat slots, Legendary feat slots, and class-granted feats.",
+            "The general prerequisite discussion explicitly limits which ability-score bonuses count.",
+            "Individual feat entries contain specific repeat-selection allowances."
+          ],
+          "unresolved": [
+            "No explicit rule was observed in this page for whether temporary BAB or centered/Flurry BAB can satisfy feat-selection prerequisites.",
+            "No blanket rule was observed covering selection of an already-granted feat.",
+            "No blanket duplicate-selection rule was observed; individual repeat-selection exceptions do not resolve every feat or granted-copy interaction."
+          ],
+          "do_not_infer": [
+            "Do not apply the ability-score prerequisite exclusions to BAB without a source that explicitly states that rule.",
+            "Do not infer whether a feat granted by an Epic Destiny can or cannot also be selected from the absence of a general rule here."
+          ]
+        }
+      }
+    },
+    {
+      "source_receipt": "Watchful_Eye.json",
+      "evidence": {
+        "title": "Watchful Eye",
+        "normal_url": "https://ddowiki.com/page/Watchful_Eye",
+        "observation_started_at": "2026-11-02T01:16:28.207Z",
+        "observation_finished_at": "2026-11-02T01:16:33.703Z",
+        "method": "Normal article read through native Google Chrome accessibility  public-page observation. Exact excerpts below normalize whitespace and recombine inline link labels. No independent browser or network access by the receipt public-page observation.",
+        "access_status": "Article body readable; no challenge reported in this observation.",
+        "page_cache_notice": "this is up to 10 hours old",
+        "footer": {
+          "last_modified": "21:31, August 5, 2026",
+          "update": "81.1"
+        },
+        "permanent_link": {
+          "observed": true,
+          "href": "https://ddowiki.com/index.php?title=Watchful_Eye&oldid=703660",
+          "oldid": "703660",
+          "historical_revision_read": false,
+          "observation_note": "Href was directly exposed on the normal article's Permanent link. It was not opened."
+        },
+        "exact_excerpts": [
+          {
+            "context": "Watchful Eye, usage",
+            "text": "Usage: Passive"
+          },
+          {
+            "context": "Watchful Eye, prerequisite",
+            "text": "Prerequisite: Level 27"
+          },
+          {
+            "context": "Description",
+            "text": "If you pass within 5 feet of a trap, you make a search check to notice it as if actively searching. You must be able to Spot the trap to passively Search for it in this way. (You still need the Trapfinding feat to successfully Search for difficult traps.)"
+          },
+          {
+            "context": "Feat synergy",
+            "text": "Shiradi Champion: Pierce Deception automatically grants this feat. If you possess both this feat and the enhancement, then you gain an additional 5% Doubleshot."
+          },
+          {
+            "context": "Notes",
+            "text": "Provides Auto-Search without penalty. Still requires a successful Spot check followed by Search check."
+          },
+          {
+            "context": "Notes",
+            "text": "Watchful Eye cannot detect secret doors, only traps."
+          }
+        ],
+        "findings": {
+          "directly_supported": [
+            "The feat has a level-27 prerequisite.",
+            "Pierce Deception is explicitly identified as granting Watchful Eye.",
+            "Possession of both the feat and the enhancement is explicitly described as granting an additional 5% Doubleshot."
+          ],
+          "unresolved": [
+            "The article does not state selection order.",
+            "The article does not explicitly say whether the feat remains selectable while the enhancement's granted copy is already held.",
+            "The article does not describe repeatedly selecting Watchful Eye or duplicate selections of the feat itself."
+          ],
+          "do_not_infer": [
+            "The coexistence synergy is not by itself proof of a particular feat-selection UI behavior or selection order."
+          ]
+        }
+      }
+    },
+    {
+      "source_receipt": "Item_Tome_of_Universal_Enhancement.json",
+      "evidence": {
+        "title": "Item:Tome of Universal Enhancement",
+        "normal_url": "https://ddowiki.com/page/Item:Tome_of_Universal_Enhancement",
+        "observation_started_at": "2026-11-02T01:16:53.509Z",
+        "observation_finished_at": "2026-11-02T01:16:59.132Z",
+        "method": "Evidence retained from its normal-article native Google Chrome accessibility read. Exact quotations normalize whitespace and recombine inline link labels; structured acquisition rows preserve those same observed values. No UI/network access by receipt public-page observation.",
+        "access_status": "Article body readable according to supplied observation.",
+        "footer": {
+          "last_modified": "03:59, July 23, 2026",
+          "update": "81"
+        },
+        "permanent_link": {
+          "observed": true,
+          "href": null,
+          "oldid": null,
+          "historical_revision_read": false,
+          "limitation": "Permanent-link value was truncated in the supplied observation. No historical URL was opened."
+        },
+        "exact_excerpts": [
+          {
+            "context": "Introduction",
+            "text": "Tomes of Universal Enhancement grant extra Action Points that can be used in universal enhancements trees, such as Harper Agent enhancements."
+          },
+          {
+            "context": "Description",
+            "text": "Entwined with the words of this thick book is a powerful magical effect that grants a permanent +1 inherent bonus to Universal Enhancement Points. This effect will not stack with other Tomes of Universal Enhancement (of the same source) but will with Tomes of Universal Enhancement from other sources."
+          },
+          {
+            "context": "Sources: Sharn",
+            "text": "Tome of Universal Enhancement +1 (Sharn) was introduced with Masterminds of Sharn expansion. The ultimate bundle grants a tome to each character. In September 2019, the tome became available in the DDO Store for 3495 DP."
+          },
+          {
+            "context": "Sources: Morgrave",
+            "text": "Tome of Universal Enhancement +1 (Morgrave) was introduced with Vecna Unleashed expansion. The ultimate bundle grants a tome to each character. In March 2024, the tome became available in the DDO Store for 3495 DP."
+          },
+          {
+            "context": "Sources: Lamordia",
+            "text": "Tome of Universal Enhancement +1 (Lamordia) was introduced with The Chill of Ravenloft expansion. The ultimate bundle grants a tome to each character. In January 2026, the tome became available in the DDO Store for 2995 DP."
+          },
+          {
+            "context": "Sources: Demogorgon",
+            "text": "Tome of Universal Enhancement +1 (Demogorgon) was introduced with the Terror of Demogorgon expansion. The ultimate bundle grants a tome to each character. In January 2027, the tome became available in the DDO Store for 3495 DP."
+          },
+          {
+            "context": "Notes",
+            "text": "Unlike Tome of Enhancement (Racial), this tome is *NOT* displayed in the character sheet > feats > special feats. To check if the tome was applied, check the enhancement page.",
+            "formatting_note": "Asterisks around NOT reflect emphasis as supplied by the capture."
+          },
+          {
+            "context": "Notes",
+            "text": "This tome is Bound to Character on Acquire, so you must be sure you don’t have it already on the toon you buy it with (and it’s the toon you want to use it on)."
+          }
+        ],
+        "acquisition_rows": {
+          "representation": "Structured transcription of retained source values, also preserved in exact source excerpts above.",
+          "columns": [
+            "Tome source",
+            "Expansion",
+            "Ultimate-bundle grant",
+            "Claimed DDO Store availability",
+            "Claimed DDO Store price"
+          ],
+          "rows": [
+            [
+              "Sharn",
+              "Masterminds of Sharn",
+              "A tome to each character",
+              "September 2019",
+              "3495 DP"
+            ],
+            [
+              "Morgrave",
+              "Vecna Unleashed",
+              "A tome to each character",
+              "March 2024",
+              "3495 DP"
+            ],
+            [
+              "Lamordia",
+              "The Chill of Ravenloft",
+              "A tome to each character",
+              "January 2026",
+              "2995 DP"
+            ],
+            [
+              "Demogorgon",
+              "Terror of Demogorgon",
+              "A tome to each character",
+              "January 2027",
+              "3495 DP"
+            ]
+          ]
+        },
+        "source_inconsistencies": [
+          {
+            "subject": "Demogorgon store acquisition date",
+            "observed_claim": "January 2027 store availability is described in past tense.",
+            "observation_date": "2026-11-02",
+            "issue": "The claimed date is later than the observation date. The source claim is preserved; availability as of observation is not established by this sentence."
+          }
+        ],
+        "findings": {
+          "directly_supported": [
+            "Each tome grants a permanent +1 inherent bonus to Universal Enhancement Points.",
+            "Tomes from the same source do not stack; different sources stack.",
+            "The introduction explicitly names universal enhancement trees and Harper Agent enhancements as a permitted destination for the extra AP.",
+            "The page's supplied Notes say to check the enhancement page to determine whether the tome has been applied."
+          ],
+          "unresolved": [
+            "This source does not state level/access timing for spending its granted points.",
+            "This source does not establish whether Harper Agent has been unlocked on a particular character or account.",
+            "This source does not establish the prerequisites of any specific Harper enhancement."
+          ],
+          "cross_source_inference": {
+            "status": "Inference, not an explicit statement on this tome page",
+            "premise_from_this_page": "Tome points can be used in universal enhancement trees, explicitly including Harper Agent.",
+            "other_source_url": "https://ddowiki.com/page/Enhancements",
+            "other_source_receipt": "Batch 1, Enhancements.json",
+            "other_source_exact_text": "These bonus AP are not level-gated - a character can spend them all at level 1.",
+            "conclusion": "Taken together, the two pages support spending these bonus points at level 1 in eligible Harper nodes when Harper is already unlocked and the node's requirements are met.",
+            "excluded_claim": "The tome itself is not shown here to unlock Harper Agent, waive node prerequisites, or establish the character's existing access."
+          }
+        }
+      }
+    },
+    {
+      "source_receipt": "Mechanic_enhancements.json",
+      "evidence": {
+        "method": "retained native Google Chrome accessibility observation of the normal article. Exact quotations normalize whitespace and recombine inline link labels. Structured table values retain their source headings and column context. No UI/network access by receipt public-page observation.",
+        "access_status": "Article body readable; no challenge reported by the capture.",
+        "title": "Mechanic enhancements",
+        "normal_url": "https://ddowiki.com/page/Mechanic_enhancements",
+        "observation_started_at": "2026-11-02T01:17:11.512Z",
+        "observation_finished_at": "2026-11-02T01:17:17.430Z",
+        "footer": {
+          "last_modified": "15:04, October 15, 2026",
+          "update": "82"
+        },
+        "permanent_link": {
+          "observed": true,
+          "href": null,
+          "oldid": null,
+          "historical_revision_read": false,
+          "limitation": "Value was truncated in the normal-page observation; historical URL not opened."
+        },
+        "exact_table_rows": [
+          {
+            "heading": "Core abilities",
+            "name": "Arbalester",
+            "description": "Your ranged sneak attack and Point Blank Shot range increases by 5 meters per trained Mechanic Core enhancement. You also gain proficiency with great crossbows.",
+            "ap_cost": "1",
+            "ranks": "1",
+            "progression": "0",
+            "requires": "Level 1 Rogue"
+          },
+          {
+            "heading": "Tier One",
+            "heading_requirement": "Requires Arbalester, Rogue Level 1",
+            "name": "Mechanics",
+            "description": "+[1/2/3] Disable Device, Open Lock, and Repair. +[1/2/3] to Saving Throws you make against traps.",
+            "ap_cost": "1",
+            "ranks": "3",
+            "progression": "1"
+          },
+          {
+            "heading": "Tier One",
+            "heading_requirement": "Requires Arbalester, Rogue Level 1",
+            "name": "Awareness",
+            "description": "+[1/2/3] Listen, Search, and Spot",
+            "ap_cost": "1",
+            "ranks": "3",
+            "progression": "1"
+          },
+          {
+            "heading": "Tier Two",
+            "heading_requirement": "Requires Rogue Level 2, 5 APs spent in tree",
+            "name": "Skill Boost",
+            "description": "Activate to gain a +6 Action Boost bonus to all skills for 20 seconds. (Cooldown: 30 seconds.)",
+            "ap_cost": "2",
+            "ranks": "1",
+            "progression": "5"
+          }
+        ],
+        "additional_observed_heading_requirements": [
+          {
+            "heading": "Tier Three",
+            "text": "Requires Rogue Level 3, 10 APs spent in tree"
+          },
+          {
+            "heading": "Tier Four",
+            "text": "Requires Rogue Level 4, 20 APs spent in tree"
+          },
+          {
+            "heading": "Tier Five",
+            "text": "Requires Rogue Level 5, Character Level 12, 30 APs spent in tree"
+          }
+        ],
+        "findings": {
+          "directly_supported": [
+            "Arbalester is a core enhancement costing 1 AP, with one rank, progression 0, and Rogue level 1 required.",
+            "Tier One explicitly requires Arbalester and Rogue level 1.",
+            "Mechanics and Awareness each show AP Cost 1, Ranks 3, Progression 1.",
+            "Skill Boost is a Tier Two enhancement with Rogue level 2 and 5 APs spent in the tree required; its row shows AP Cost 2, Ranks 1, Progression 5."
+          ],
+          "limitations": [
+            "No extra Notes or row-specific prerequisites were exposed for these four rows beyond the recorded core/tier gates.",
+            "AP Cost, Ranks, Progression, and class-level gates are separate fields and must not be treated as interchangeable.",
+            "This receipt updates current source evidence; it does not change the selected build or authorize a build change."
+          ]
+        }
+      }
+    },
+    {
+      "source_receipt": "Favored_Enemy.json",
+      "evidence": {
+        "method": "retained native Google Chrome accessibility observation of the normal article. Exact quotations normalize whitespace and recombine inline link labels. Structured table values retain their source headings and column context. No UI/network access by receipt public-page observation.",
+        "access_status": "Article body readable; no challenge reported by the capture.",
+        "title": "Favored Enemy",
+        "normal_url": "https://ddowiki.com/page/Favored_Enemy",
+        "observation_started_at": "2026-11-02T01:17:25.027Z",
+        "observation_finished_at": "2026-11-02T01:17:30.608Z",
+        "footer": {
+          "last_modified": "11:19, November 17, 2025",
+          "update": "75.7"
+        },
+        "permanent_link": {
+          "observed": true,
+          "href": null,
+          "oldid": null,
+          "historical_revision_read": false,
+          "limitation": "Value was truncated in the normal-page observation; historical URL not opened."
+        },
+        "usage": "Passive",
+        "prerequisites": [
+          "Ranger 1",
+          "Dark Hunter 1"
+        ],
+        "exact_excerpts": [
+          {
+            "context": "Description",
+            "text": "At first level a Ranger selects a type of creature from the favored enemy list. At 5th level and every 5 levels thereafter (10th, 15th, and 20th) the Ranger selects an additional creature type from the favored enemy list. When fighting a Favored Enemy, you gain +2 Damage for each Favored Enemy feat you have. If you have more than one Favored Enemy feat that applies to a particular Enemy, the damage applies for each type that matches a favored Enemy feat you have."
+          },
+          {
+            "context": "Notes: overlapping types",
+            "text": "If a creature is affected by two Favored Enemy selections (such as a Chaotic Evil Outsider attacked by a character with both FE: Chaotic Outsider and FE: Evil Outsider) then both effects stack",
+            "source_note": "The supporting source link is marked UPDATE ME."
+          },
+          {
+            "context": "Examples: non-Ranger",
+            "text": "If a non-Ranger Gnome character has Undead as a Favored Enemy from the Vistani enhancement tree, and Reptilian from the Gnome Racial enhancement tree, they do +4 damage to both those Favored Enemies."
+          },
+          {
+            "context": "Examples: Ranger 20",
+            "text": "If that same Gnome character was a Level 20 Ranger, they would also have their 5 base Favored enemies from 20 Ranger Levels, for +14 to all 7 Favored Enemies."
+          },
+          {
+            "context": "Examples: additional enhancement/destiny sources",
+            "text": "That same Level 20(+) Gnome Ranger might also have 1 additional favored enemy from Deepwood Stalker enhancements, 1 from the Harper enhancement tree, 1 from the Falconry enhancement tree, 1 from Horizon Walker enhancement tree plus 1 from the Shiradi Champion Epic Destiny tree, as well as the 7 from the previous example (Vistani & Gnome & Ranger 20), for a total of 12 Favored Enemies; that character then does +24 extra damage to all favored enemies."
+          },
+          {
+            "context": "Additional sources: Horizon Walker capstone",
+            "text": "Horizon Walker capstone gives \"Favored Enemy: Marked Target\".",
+            "source_note": "The supporting forum link is marked UPDATE ME."
+          }
+        ],
+        "additional_sources": {
+          "representation": "Source labels and listed choices supplied by the browser reader; structured transcription rather than invented full sentences.",
+          "columns": [
+            "Source",
+            "Gate/position as observed",
+            "Favored Enemy choices or grant"
+          ],
+          "rows": [
+            [
+              "Deepwood Stalker",
+              "Tier V",
+              "Animal, Dragon, Dwarf, Elf, Giant, Gnoll, Goblinoid, Halfling, Human, Magical Beast, Monstrous Humanoid, Orc, Plant, Reptilian, or Vermin"
+            ],
+            [
+              "Falconry",
+              "Tier I",
+              "Animal"
+            ],
+            [
+              "Harper Agent",
+              "Tier III",
+              "Aberration / Construct / Dragon / Evil Outsider / Giant / Monstrous Humanoid / Undead"
+            ],
+            [
+              "Vistani Knife Fighter",
+              "Tier I",
+              "Undead"
+            ],
+            [
+              "Horizon Walker",
+              "Tier II",
+              "Evil Outsider"
+            ],
+            [
+              "Horizon Walker",
+              "Capstone",
+              "Marked Target"
+            ],
+            [
+              "Shiradi Champion",
+              "Not specified in supplied excerpt",
+              "Fey"
+            ]
+          ]
+        },
+        "findings": {
+          "directly_supported": [
+            "The description expresses damage as +2 per Favored Enemy feat held.",
+            "The examples explicitly count enhancement-sourced Favored Enemies alongside Ranger-granted selections.",
+            "The page describes damage stacking when two different matching enemy types overlap.",
+            "Marked Target is explicitly named as a Horizon Walker capstone Favored Enemy."
+          ],
+          "unresolved": [
+            "No explicit rule for selecting the identical Favored Enemy type twice was observed.",
+            "No explicit rule for whether identical-type copies from different sources count separately was observed.",
+            "The term Undead Hunter was not present in the supplied relevant capture.",
+            "No Marked Target-specific counting or damage formula was observed beyond the page's general formula and the named source."
+          ],
+          "do_not_infer": [
+            "Different matching creature types stacking is not evidence that taking the identical Favored Enemy type twice stacks or is selectable.",
+            "Do not silently treat the general formula as an explicit documented ruling on Marked Target or Undead Hunter."
+          ]
+        }
+      }
+    },
+    {
+      "source_receipt": "Manyshot.json",
+      "evidence": {
+        "method": "retained native Google Chrome accessibility observation of the normal article. Exact quotations normalize whitespace and recombine inline link labels. Structured table values retain their source headings and column context. No UI/network access by receipt public-page observation.",
+        "access_status": "Article body readable; no challenge reported by the capture.",
+        "title": "Manyshot",
+        "normal_url": "https://ddowiki.com/page/Manyshot",
+        "observation_started_at": "2026-11-02T01:17:37.173Z",
+        "observation_finished_at": "2026-11-02T01:17:42.618Z",
+        "footer": {
+          "last_modified": "15:24, October 14, 2026",
+          "update": "82"
+        },
+        "permanent_link": {
+          "observed": true,
+          "href": "https://ddowiki.com/index.php?title=Manyshot&oldid=721096",
+          "oldid": "721096",
+          "historical_revision_read": false,
+          "observation_note": "Exact href exposed on the normal article; not opened."
+        },
+        "exact_fields": {
+          "cooldown": "8 seconds",
+          "usage": "Passive/Active",
+          "prerequisites": [
+            "Dexterity 17",
+            "Point Blank Shot",
+            "Rapid Shot",
+            "Base attack bonus +6"
+          ]
+        },
+        "exact_excerpts": [
+          {
+            "context": "Description",
+            "text": "Bow attack: Fire three arrows in quick succession. You have +2 Critical Threat Range and Critical Multiplier with these shots. Passive: You gain Doubleshot equal to 1.5x your Base Attack Bonus with Longbows and Shortbows."
+          },
+          {
+            "context": "Notes",
+            "text": "This feat only works with a Longbow or Shortbow."
+          },
+          {
+            "context": "Notes",
+            "text": "Rangers and Dark Hunters receive this feat for free at level 6, even if the prerequisites are not met."
+          },
+          {
+            "context": "Notes",
+            "text": "Fighters may select this feat as one of their fighter bonus feats."
+          }
+        ],
+        "prior_source_conflicts": {
+          "provenance": "The following are coordinator-reported prior source captures, not pages independently observed in this batch.",
+          "prior_sources": [
+            {
+              "source": "Ranger class text",
+              "reported_wording_or_values": "+1 critical range/multiplier; 2-second cooldown; 3 charges"
+            },
+            {
+              "source": "Horizon Walker Scattershot text",
+              "reported_wording_or_values": "Shares an 8-second cooldown with Manyshot"
+            }
+          ],
+          "current_direct_observation": "+2 Critical Threat Range and Critical Multiplier; cooldown 8 seconds",
+          "assessment": "The prior Ranger wording conflicts with the current direct Manyshot capture. The previously reported Horizon Walker shared-cooldown duration agrees numerically with the current Manyshot cooldown, but this Manyshot article does not itself establish the Scattershot interaction.",
+          "status": "Unresolved cross-source conflict; no silent harmonization or replacement of the prior source values."
+        },
+        "findings": {
+          "directly_supported": [
+            "The current article states an 8-second cooldown.",
+            "The attack description states three arrows in quick succession and +2 Critical Threat Range and Critical Multiplier for those shots.",
+            "The passive Doubleshot bonus is 1.5 times BAB with Longbows and Shortbows.",
+            "Rangers and Dark Hunters are explicitly described as receiving the feat free at level 6 even without meeting its prerequisites."
+          ],
+          "unresolved": [
+            "No charges or recharge interval were stated in the full article capture.",
+            "No target-selection or area-of-effect rule was stated in the full article capture.",
+            "No Scattershot mention was present in the full article capture."
+          ],
+          "do_not_infer": [
+            "The absence of a charge count does not establish that the feat has no charges.",
+            "The description of three arrows does not establish the number of distinct targets or an AOE rule.",
+            "The prior Horizon Walker evidence must remain separately attributed; it is not a direct statement in this Manyshot capture."
+          ]
+        }
+      }
+    }
+  ]
+}

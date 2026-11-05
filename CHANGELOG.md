@@ -2,6 +2,12 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-05-26.5 (proposed local correction; unpublished)
+- Corrects endgame socket labels, nine-gem count, boots/belt effect attribution and the filled recipe’s derived CON33 while preserving all equipment, fills, crafting selections and enhancement/class choices.
+- Replaces inference from separate listings with retained-source rules and explicit gaps; flags Watchful Eye timing and Fatesinger conflicts, conditional RP/threat and Fortification limits. Adds a separately preserved 21-page browser evidence supplement, three newly pinned item receipts and the Blunted Ammunition damage-type definition; no live-game certification.
+- Adds retained evidence and focused mutation tests. Existing model code and outputs are unchanged; publication and visual QA are separate.
+- Fixes only the current snapshot’s relative image and print links using a deterministic builder; fragment navigation and historical snapshots remain unchanged.
+
 ## Build 11-05-26.4 (local candidate; unpublished)
 - Added a derived listed-ingredient comparison for one new Legendary bow blank and the four already selected Weapon fills, distinguishing Wicked Salt and the Cataclysmic blank surcharge.
 - Preserves all selections, individual costs, source caveats and model outputs; excludes unspecified costs and availability promises. Exact-source browser QA pending.

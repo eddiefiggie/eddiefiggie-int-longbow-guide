@@ -61,7 +61,9 @@ def validate(html):
     assert '.tw{overflow-x:auto;' in html, 'horizontal scrolling retained'
     start = html.index('<h2 id="levelling-roadmap">')
     table = re.search(r'<table>.*?</table>', html[start:], re.S).group()
-    assert hashlib.sha256(table.encode()).hexdigest() == '6e751c500195be5428cd52d55910964f5e70e27389051bd3b79073449b64c63d', 'main roadmap table unchanged'
+    # The only content delta is the retained-source timing cross-reference.
+    # test_endgame_evidence also proves purchase choices match the prior tree.
+    assert hashlib.sha256(table.encode()).hexdigest() == '2ac414502cccb1ce3ff12a147f33d64ee6bcd89d4e1f5522477764b851d93fc1', 'main roadmap table matches reviewed timing annotation'
 
 
 class RoadmapScrollCueTests(unittest.TestCase):

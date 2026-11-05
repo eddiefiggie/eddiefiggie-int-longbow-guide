@@ -1,0 +1,28 @@
+{
+  "path": "fresh/wiki-live-audit-2026-11-05.json",
+  "sha256": "e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6",
+  "bytes": 281940,
+  "page_count": 21,
+  "capture_date": "2026-11-05",
+  "new_primary_pins": {
+    "Ring 2": {
+      "evidence_key": "wikiEarthSky",
+      "oldid": 633073
+    },
+    "Belt": {
+      "evidence_key": "wikiCord",
+      "oldid": 702822
+    },
+    "Quiver": {
+      "evidence_key": "wikiQuiver",
+      "oldid": 630281
+    }
+  },
+  "effect_pin": {
+    "evidence_key": "wikiBlunted",
+    "oldid": 612646
+  },
+  "scope": "Observed Wiki source text and revision receipts, with editor metadata omitted; not in-game mechanics verification. Complete originals retained privately.",
+  "original_sha256": "a5b0f7b43e9b3aa647417b00fd6e5ccf0925936fc42bcb2711dc0f679c308611",
+  "original_bytes": 282066
+}

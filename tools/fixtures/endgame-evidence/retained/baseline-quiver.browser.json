@@ -1,0 +1,12 @@
+{
+  "observed_utc": "2026-11-01T13:38:00Z",
+  "tool_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"text\":\"Epic Purifying Quiver\\n\\nThis item cannot be fed to sentient jewels.\\n\\nMinimum level\\t29\\t\\nItem Type\\tQuiver / Thin Quiver\\nBinding\\tBound to Account on Acquire\\nDurability\\t\\nMaterial\\tNone\\nHardness\\t\\nBase Value\\t12,100pp\\nWeight\\t1.00 lbs\\nLocation\\tOath of Vengeance, end chest (legendary)\\nUnique item capacity\\t\\n\\n5\\n\\n\\nMax stack size\\t\\n\\n3,000\\n\\n\\nEnchantments\\t\\nBurning Ammunition - 1d8\\nBlunted Ammunition\\n\\t\\nDescription\\tWhile using this quiver, your ranged weapons will burn with enchanted flames.\\nNotes\\t\",\"url\":\"https://ddowiki.com/page/Item:Epic_Purifying_Quiver\"}"
+      }
+    ],
+    "isError": false
+  }
+}
