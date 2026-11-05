@@ -26,7 +26,7 @@ Edit `index.html`, copy it to `versions/MM-DD-YY.x.html` (x = iteration that day
 
 ## Testing
 
-From the repository root, run `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v` (Python standard library only).
+From the repository root, run `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v` (Python standard library; Node.js is also required for the purchase-checkoff JavaScript execution tests).
 
 The [Guide checks workflow](.github/workflows/guide-checks.yml) runs that same discovery command on pull requests, including drafts. It automates the existing internal regression and structural checks; passing them does not certify game mechanics. The workflow uses read-only repository access and does not persist checkout credentials. Pages deployment and branch-protection settings are unchanged.
 
