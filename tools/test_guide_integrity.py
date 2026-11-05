@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import unittest
 from urllib.parse import unquote, urlsplit
+from build_snapshot import snapshot_html
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,15 +65,15 @@ class GuideDocument(HTMLParser):
                 marker.append(data)
 
 
-def local_target(url):
+def local_target(url, document_path=GUIDE):
     """Return a guide-relative file and fragment; never fetch external URLs."""
     parts = urlsplit(url.strip())
     if parts.scheme or parts.netloc:
         return None
-    local_path = unquote(parts.path or "index.html")
+    local_path = unquote(parts.path)
     if local_path.startswith("/"):
         raise ValueError(f"Expected a guide-relative URL, got {url!r}")
-    target = (ROOT / local_path).resolve()
+    target = (document_path.parent / local_path).resolve() if local_path else document_path.resolve()
     # Traversal outside the repo is not a guide-relative asset.
     target.relative_to(ROOT)
     if target.is_dir():
@@ -94,8 +95,8 @@ class GuideIntegrityTests(unittest.TestCase):
         snapshot = ROOT / "versions" / f"{match.group(1)}.html"
         self.assertTrue(snapshot.is_file(), f"Missing current snapshot: {snapshot.relative_to(ROOT)}")
         self.assertTrue(
-            self.guide_bytes == snapshot.read_bytes(),
-            f"index.html differs from {snapshot.relative_to(ROOT)}",
+            snapshot_html(self.guide_bytes.decode("utf-8")).encode("utf-8") == snapshot.read_bytes(),
+            f"Snapshot differs beyond document-relative URL rebasing: {snapshot.relative_to(ROOT)}",
         )
 
     def test_ids_are_unique(self):

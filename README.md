@@ -22,7 +22,7 @@ Every number comes from the [DDO wiki](https://ddowiki.com) page named in the gu
 
 ## Updating
 
-Edit `index.html`, copy it to `versions/MM-DD-YY.x.html` (x = iteration that day), set the same build number in the line under the `<h1>`, commit. GitHub Pages serves `main` from the repo root.
+Edit `index.html` and set its displayed build to `MM-DD-YY.x` (x = iteration that day). Run `python3 tools/build_snapshot.py` to generate the matching file in `versions/`, with relative image and print links rebased for that directory. Do not byte-copy the index: that breaks snapshot asset paths. Regenerate the print reference with `python3 tools/build_crafting_sheet.py` when its source or build stamp changes. Run the checks before committing. GitHub Pages serves `main` from the repo root.
 
 ## Testing
 
@@ -30,7 +30,7 @@ From the repository root, run `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest dis
 
 The [Guide checks workflow](.github/workflows/guide-checks.yml) runs that same discovery command on pull requests, including drafts. It automates the existing internal regression and structural checks; passing them does not certify game mechanics. The workflow uses read-only repository access and does not persist checkout credentials. Pages deployment and branch-protection settings are unchanged.
 
-`tools/test_guide_integrity.py` checks that the current guide matches the snapshot named by its displayed build, IDs are unique, same-page anchors resolve, and guide-relative `href`/`src` files exist. It ignores external URLs and checks neither older snapshots nor game mechanics. Local URLs are resolved from the guide's directory; a `<base>` element needs an explicit resolver update. CSS URLs, `srcset`, and browser rendering are outside these checks. Run them locally before committing; the Pages workflow does not run tests.
+`tools/test_guide_integrity.py` checks that the current snapshot exactly matches the deterministic builder output, IDs are unique, same-page anchors resolve, and local `href`/`src` files exist. `tools/test_snapshot_paths.py` also resolves the current snapshot's assets and fragment links from its own directory and rejects path/content regressions. These checks ignore external URLs and validate neither older snapshots nor game mechanics. A `<base>` element needs an explicit resolver update. CSS URLs, `srcset`, and browser rendering are outside these checks. Run them locally before committing; the Pages deployment workflow does not run tests.
 
 ## Audits
 

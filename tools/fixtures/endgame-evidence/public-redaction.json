@@ -1,0 +1,131 @@
+{
+  "policy": "Omit editor identity and unnecessary review metadata from public evidence. Preserve mechanics, revision receipts and observation timestamps. Complete original captures remain private. Source attribution and history are available through the linked DDO Wiki pages.",
+  "files": [
+    {
+      "path": "sources.json",
+      "original_sha256": "2c7e5a9a819e8750b6264a617643841af151e4cf71b0ec807b1ea3182ee9248b",
+      "original_bytes": 132941,
+      "public_sha256": "b75820817ded5b9cb5e1c32d6c34abab6c21f84ad437417e17e835c0c871ba1f",
+      "public_bytes": 135685
+    },
+    {
+      "path": "inventory.json",
+      "original_sha256": "006c58977dff7bbf08ed108d1fe9b4d00ea091049bb766b4745a9b7f4beb776b",
+      "original_bytes": 29982,
+      "public_sha256": "b1b516c8932bae409e794371a1998fc004989931071dd506161e89c814767300",
+      "public_bytes": 29978
+    },
+    {
+      "path": "fresh/wiki-live-audit-2026-11-05.json",
+      "original_sha256": "a5b0f7b43e9b3aa647417b00fd6e5ccf0925936fc42bcb2711dc0f679c308611",
+      "original_bytes": 282066,
+      "public_sha256": "e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6",
+      "public_bytes": 281940
+    },
+    {
+      "path": "retained/Fortification.json",
+      "original_sha256": "8f3023230360778ea8f5ae5f6852f460d57cde95d0dce6649a11f55f2663d526",
+      "original_bytes": 8188,
+      "public_sha256": "644f9aa29e5453c66566e381d6f8bae95e3d9b05c9fa3c00176fdfbada2716b2",
+      "public_bytes": 8179
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-critical-power-rules-01-evidence.json",
+      "original_sha256": "a4623f2dad3b77f27da090e5c2b188f1b1a22d03d0c9bbad9cd9c072a5ec6b57",
+      "original_bytes": 52223,
+      "public_sha256": "b483b8d424216ad87fb19ab0cb8546e28c2b6b211b9a5305ff8b70a888a8e31c",
+      "public_bytes": 41483
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-defense-enemies-02-evidence.json",
+      "original_sha256": "17da4574a074b4bbcc81e9c530b5af9f1bb76ed508a0027a34505a910d4a670f",
+      "original_bytes": 167972,
+      "public_sha256": "7566478551c96a46ab96a0b8bc0f09d1c1e7cda242acea997be7eefc8cbaa394",
+      "public_bytes": 151445
+    },
+    {
+      "path": "retained/Threat_range.json",
+      "original_sha256": "5a7952ab6ca990ec3566b83eb944b544f3eb996ac1e5eb077337d9fae8ee6c80",
+      "original_bytes": 9006,
+      "public_sha256": "a4e836be9474093b6a3c116fc80e8b1a8f5df1083d74bead97eab3b3370204bd",
+      "public_bytes": 8985
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+      "original_sha256": "6c5bedabfeb5ce65e57e67d4a8c1c6f2e548a93e2560a06a5bb5ac52b93bbdd0",
+      "original_bytes": 77368,
+      "public_sha256": "dfd4c246e04ace0dcf5ddcfad983f4e94fbbdd6192465237fd8ab083c0a90b6b",
+      "public_bytes": 64245
+    },
+    {
+      "path": "retained/source-calamitous.json",
+      "original_sha256": "916d280ebf94bacd7db28a97f297d0bebca0a93c886d87a284be9c770d4db5cf",
+      "original_bytes": 8990,
+      "public_sha256": "2df7e1b512e2982edbfffb44bce6badad1662d288e32ca8f1770cbd3069e583e",
+      "public_bytes": 8986
+    },
+    {
+      "path": "retained/fresh-crafts.json",
+      "original_sha256": "8543026fdf44a0e578be956ad3be2429f0803b210c4cc5b41f58720080439c15",
+      "original_bytes": 177820,
+      "public_sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05",
+      "public_bytes": 177894
+    },
+    {
+      "path": "retained/Ranged_Power.json",
+      "original_sha256": "979c900a31ab514208db51235ea0ef41f51e66f3e09f985fda61fa0b56d67924",
+      "original_bytes": 6511,
+      "public_sha256": "8bf04593e315829f26032f36a89b5839d1888fb34b7421973a45ff58f745ed90",
+      "public_bytes": 6502
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-source-evidence-batch-2.json",
+      "original_sha256": "f7b460befcdef4944fac69a9317ae7276a30eeba22339e4f0894386ede1e63e9",
+      "original_bytes": 33103,
+      "public_sha256": "e46518ebdf26ee2340a65d9a5190a209a5dd21ea54e957e773e40455f7929a7d",
+      "public_bytes": 32625
+    },
+    {
+      "path": "retained/Doubleshot.json",
+      "original_sha256": "1bab986ceb33d50ddd26ced529d4f69bf9a0563696e00a82593325ca8d66472d",
+      "original_bytes": 8547,
+      "public_sha256": "20863a35f19021e4d23496d24170bab96947bc5ff2c11908425791d4dd7fc154",
+      "public_bytes": 8552
+    },
+    {
+      "path": "retained/Shadowdancer.live.json",
+      "original_sha256": "ab3c5298ae4058da84421ff0b900b6db4caacc66a39db197bc898335de1c84fe",
+      "original_bytes": 12425,
+      "public_sha256": "0eec83c3445c5f226511773a19e2d742abad87b6b066493f5fdd5d9367d44f7b",
+      "public_bytes": 12421
+    },
+    {
+      "path": "retained/fresh-endgame-a.json",
+      "original_sha256": "a033c6245015b16e928531d8f22798f286406935e39690b3590154de41235cac",
+      "original_bytes": 32754,
+      "public_sha256": "f62eb783a75b323f47c0d6387a937c0035aed52476115be7e18004031b60bb64",
+      "public_bytes": 32785
+    },
+    {
+      "path": "retained/initial-armor.raw.json",
+      "original_sha256": "ec74d58941af3613e6191b4f1c841479bb189b78fcabf25629222429aae34be7",
+      "original_bytes": 11415,
+      "public_sha256": "e365bd8253e6dfb7c81212efd88c768146374b7c1364f5b3d26a34ecbe71e95e",
+      "public_bytes": 11621
+    },
+    {
+      "path": "retained/Stack.json",
+      "original_sha256": "7b501ee90ba7e95ac720ee40d670947a4ba224451936589eb9fb0b61b14a60d8",
+      "original_bytes": 2910,
+      "public_sha256": "423d8bf52b18c4b9d51b5e12bf8a6df00eb2f50323606b81f7376c70fd7b214f",
+      "public_bytes": 2901
+    },
+    {
+      "path": "retained/fresh-endgame-b.json",
+      "original_sha256": "6e1caa872c94cde8dff6572753a8a080616b4998a388f6e18d6c295a7c24c48e",
+      "original_bytes": 127193,
+      "public_sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "public_bytes": 127172
+    }
+  ]
+}

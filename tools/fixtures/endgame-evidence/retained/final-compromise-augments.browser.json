@@ -1,0 +1,13 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Browser tab: 28, Title: \"ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3\", URL: \"https://ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3\".\n0 AXWebArea ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3\n\nThe focused UI element is 0 AXWebArea ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3"
+    },
+    {
+      "type": "text",
+      "text": "[{\"url\":\"https://ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3\",\"text\":\"Sapphire of Good Luck +3\\nMinimum Level\\t28\\t\\n\\nRarity\\tNamed\\nBind status\\tBound to Account on Acquire\\nAugment Type\\tBlue\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +3 Luck bonus to Saving Throws and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\\nBase Value\\t500 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nThe Haunting of Saltmarsh, end chest\\n\\nEnhancements\\t\\nGood Luck +3\\n\\nMaximum stack size\\t5\"},{\"url\":\"https://ddowiki.com/page/Item:Solar_Gem_of_Constitution_(Legendary)\",\"text\":\"Solar Gem of Constitution (Legendary)\\nMinimum Level\\t30\\t\\n\\nRarity\\tNamed\\nBind status\\tUnbound\\nAugment Type\\tSun\\nDescription\\tSlotted Effect: +4 Artifact Bonus to Constitution.\\nBase Value\\t500pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nSeeds of Decay, end chest\\nLocked Away (Part One), end chest\\nWish Upon a Card, end chest\\nThe Price of an Egg, end chest\\n\\nEnhancements\\t\\nArtifact Constitution +4\\n\\nMaximum stack size\\t5\"},{\"url\":\"https://ddowiki.com/page/Item:Lunar_Gem_of_Constitution_(Legendary)\",\"text\":\"Lunar Gem of Constitution (Legendary)\\nMinimum Level\\t30\\t\\n\\nRarity\\tNamed\\nBind status\\tUnbound\\nAugment Type\\tMoon\\nDescription\\tSlotted Effect: +4 Profane Bonus to Constitution.\\nBase Value\\t500pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nOghma's Song, end chest\\nBeneath the City Streets, end chest\\n\\nEnhancements\\t\\nProfane Constitution +4\"}]"
+    }
+  ],
+  "isError": false
+}

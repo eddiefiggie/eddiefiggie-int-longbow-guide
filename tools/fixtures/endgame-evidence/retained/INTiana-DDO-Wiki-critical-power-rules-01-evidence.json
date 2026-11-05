@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "batch": "CRITICAL-POWER-RULES-01",
+  "title": "INTiana DDO Wiki critical and power rules evidence",
+  "created_at": "2026-11-02T05:16:50.449999+00:00",
+  "task_scope": "Seeker, Melee Power and Overwhelming Critical normal-page reads; exact applicable rules, formulas, examples and limits. No linked source expansion or guide/character changes.",
+  "access_outcome": "All three public normal articles accessible; no redirect or source access block. Initial Seeker loading and Melee Power stale-body observations are excluded from article-body timestamps.",
+  "source_index": [
+    {
+      "title": "Seeker",
+      "normal_url": "https://ddowiki.com/page/Seeker",
+      "observed_oldid": 682718,
+      "observed_permalink": "https://ddowiki.com/index.php?title=Seeker&oldid=682718",
+      "historical_revision_read": false
+    },
+    {
+      "title": "Melee Power",
+      "normal_url": "https://ddowiki.com/page/Melee_Power",
+      "observed_oldid": 675694,
+      "observed_permalink": "https://ddowiki.com/index.php?title=Melee_Power&oldid=675694",
+      "historical_revision_read": false
+    },
+    {
+      "title": "Overwhelming Critical: explicit 19–20 critical-multiplier stacking rule",
+      "normal_url": "https://ddowiki.com/page/Overwhelming_Critical",
+      "observed_oldid": 598868,
+      "observed_permalink": "https://ddowiki.com/index.php?title=Overwhelming_Critical&oldid=598868",
+      "historical_revision_read": false
+    }
+  ],
+  "source_receipts": {
+    "seeker_melee_power": {
+      "title": "Seeker and Melee Power: confirmation, critical damage, scaling formulas and source limits",
+      "batch": "CRITICAL-POWER-RULES-01",
+      "provenance": {
+        "method": "Receipt-only transcription from the source observation's recorded normal-page Chrome accessibility observations. Inline link labels are recombined and whitespace is normalized. Exact excerpts are rendered-text reconstructions, not raw HTML.",
+        "historical_endpoint_reads": 0,
+        "screenshots_included": false,
+        "guide_build_account_or_source_edits": false,
+        "scope": "Seeker's complete Effect prose and short Notes source list; Melee Power's complete Overview prose, formulas and examples, and complete Special attacks affected by Melee Power list. Large item and enhancement catalogues are outside this focused transcription.",
+        "metadata_note": "Complete public permalink hrefs were observed separately through fresh controls on the normal pages. Historical endpoints were not opened. Original body times and later metadata observations remain separate; later metadata is not independent verification of earlier captured byte identity.",
+        "observation_timezone": "UTC"
+      },
+      "sources": [
+        {
+          "title": "Seeker",
+          "normal_url": "https://ddowiki.com/page/Seeker",
+          "actual_observed_normal_url": "https://ddowiki.com/page/Seeker",
+          "observed_redirect": null,
+          "observation_started_at": "2026-11-02T05:10:59.069Z",
+          "observation_finished_at": "2026-11-02T05:10:59.214Z",
+          "excluded_intermediate_observation": {
+            "started_at": "2026-11-02T05:10:53.152Z",
+            "finished_at": "2026-11-02T05:10:55.176Z",
+            "state": "The requested Seeker URL was present, but the article body was not exposed. This loading interval is not treated as a source-body read."
+          },
+          "access_status": "Normal public article text was available in the source observation's observation; no challenge or authorization block reported.",
+          "exact_excerpts": [
+            {
+              "section": "Seeker > Effect",
+              "text": "Effect: This property provides an enhancement bonus to confirm critical hits and critical hit damage. A +10 Seeker item adds +10 to your confirm critical roll and +10 damage to your critical damage (before multipliers). The additional damage only applies if you actually score critical damage. If your target negates the critical hit, for example by fortification, extra seeker damage does not apply. Seeker affects all your attacks (single weapon melee, dual weapon melee, and ranged). For example, if you are using two weapons, only one needs to have seeker but both benefit from it. Or you can place seeker on an accessory. The same is true of Backstabbing, Doublestrike, and Stunning. Seeker items can provide various types of bonus. Regular Seeker grants Enhancement bonus, then there's Insightful Seeker and much rarer Quality Seeker. The former Exceptional Seeker grants Insight bonus. See also Accuracy and Deadly",
+              "completeness": "Complete displayed Effect prose, including the final See also link labels. The original last link label had no exposed final punctuation, so none is added."
+            },
+            {
+              "section": "Seeker > Notes",
+              "text": "Notes: Also found on:",
+              "following_list": [
+                "Random loot",
+                "(Legacy) Randomly generated weapons (+2 to +10 possible)",
+                "Essence Crafting: prefix Seeker (up to +15) and extra Insightful Seeker (up to +7)",
+                "Slave Lords Crafting: +5 heroic / +17 epic"
+              ],
+              "completeness": "Complete four-entry Notes list. The large preceding Found on item-category catalogue is deliberately omitted. The listed crafting sources were not opened or newly verified."
+            }
+          ],
+          "relevant_observed_link_context": [
+            {
+              "label": "enhancement bonus",
+              "normal_url": "https://ddowiki.com/page/Enhancement_bonus",
+              "followed": false
+            },
+            {
+              "label": "critical hits",
+              "help": "Critical hit",
+              "normal_url": "https://ddowiki.com/page/Critical_hit",
+              "followed": false
+            },
+            {
+              "label": "fortification",
+              "help": "Fortification",
+              "normal_url": "https://ddowiki.com/page/Fortification",
+              "followed": false
+            },
+            {
+              "label": "Accuracy",
+              "normal_url": "https://ddowiki.com/page/Accuracy",
+              "followed": false
+            },
+            {
+              "label": "Deadly",
+              "normal_url": "https://ddowiki.com/page/Deadly",
+              "followed": false
+            }
+          ],
+          "interpretations_and_conditional_applications": [
+            {
+              "subject": "Critical confirmation and extra damage",
+              "status": "Direct separate effects",
+              "finding": "The +10 example grants +10 to the critical-confirmation roll and +10 critical damage before multipliers. Confirmation and damage are separate effects in the paragraph.",
+              "limits": "The source does not provide a full critical-confirmation hit formula, a natural-roll rule, a critical-threat-range increase or a numeric increase in critical multiplier. Seeker's pre-multiplier damage bonus is not itself an extra multiplier step."
+            },
+            {
+              "subject": "Interaction with the critical multiplier",
+              "status": "Explicit before-multipliers placement; conditional arithmetic",
+              "finding": "The article explicitly places Seeker damage before multipliers. If S is an applicable Seeker damage bonus and M is the applicable critical damage multiplier, its pre-other-modifier contribution under that multiplier is S × M; the source's +10 example would therefore contribute 10 × M.",
+              "limits": "This is algebraic application of the stated placement, not a verbatim worked multiplication example. The article does not determine a weapon's or build's final M, certify that every critical-multiplier source stacks, or supply a Ranged Power factor or full damage-processing order."
+            },
+            {
+              "subject": "Fortification and other critical negation",
+              "status": "Explicit exclusion",
+              "finding": "Extra Seeker damage applies only when actual critical damage is scored. If the target negates the critical, with fortification given as an example, extra Seeker damage does not apply.",
+              "limits": "The page does not establish the complete fortification check order, bypass calculation or a particular target's immunity. No amount of Seeker is treated as fortification bypass merely because it improves confirmation."
+            },
+            {
+              "subject": "Attack and equipment scope",
+              "status": "Explicit general applicability and equipment examples",
+              "finding": "Seeker affects single-weapon melee, dual-weapon melee and ranged attacks. With two weapons, only one needs Seeker for both to benefit; an accessory can also provide it.",
+              "limits": "This establishes attack coverage and the stated one-source applicability, not positive accumulation of multiple Seeker items or an interaction with Ranged Power. No item or weapon was selected."
+            },
+            {
+              "subject": "Bonus typing and stacking",
+              "status": "Explicit regular/legacy typing and variant distinctions; broad stacking rule absent",
+              "finding": "Regular Seeker explicitly grants Enhancement. The former Exceptional Seeker explicitly grants Insight. The same paragraph says Seeker items provide various bonus types and names Insightful Seeker and Quality Seeker variants.",
+              "limits": "The paragraph does not explicitly state a universal positive stacking rule for all these variants or all mixed bonus types. The variant names are retained as written rather than used to invent a new standalone type-definition sentence or a certified summed Seeker total. No duplicate-item stacking rule is inferred from the dual-weapon example."
+            },
+            {
+              "subject": "Ranged Power",
+              "status": "Ranged attack applicability explicit; Ranged Power scaling not explicitly established by this own-page text",
+              "finding": "The article explicitly includes ranged attacks, but does not name Ranged Power or state its coefficient for Seeker damage.",
+              "limits": "No scaling interaction is certified from the word ranged alone. This is a bounded evidence gap, not proof that Seeker is excluded from Ranged Power. The separate Melee Power article's broad straight-weapon-damage wording does not itself explicitly classify Seeker's conditional bonus for an RP calculation."
+            }
+          ],
+          "footer": {
+            "last_modified": "16:47, April 8, 2026",
+            "update": "79",
+            "observed_prefix_exact": "This page was last modified 16:47, April 8, 2026 (Update 79) by",
+            "metadata_observed_with_body": true,
+            "footer_display_timezone_not_established": true
+          },
+          "permanent_link": {
+            "status": "Complete public href observed separately through a fresh normal-page control",
+            "href": "https://ddowiki.com/index.php?title=Seeker&oldid=682718",
+            "oldid": 682718,
+            "metadata_observed_at": "2026-11-02T05:11:26.305Z",
+            "historical_revision_read": false
+          }
+        },
+        {
+          "title": "Melee Power",
+          "normal_url": "https://ddowiki.com/page/Melee_Power",
+          "actual_observed_normal_url": "https://ddowiki.com/page/Melee_Power",
+          "observed_redirect": null,
+          "observation_started_at": "2026-11-02T05:11:40.209Z",
+          "observation_finished_at": "2026-11-02T05:11:41.176Z",
+          "excluded_intermediate_observation": {
+            "started_at": "2026-11-02T05:11:33.103Z",
+            "finished_at": "2026-11-02T05:11:33.603Z",
+            "state": "The address bar showed Melee_Power while the body was still Seeker. This stale intermediate state is not treated as a Melee Power source read."
+          },
+          "access_status": "The normal public Melee Power article loaded and its text was available; no challenge or authorization block reported.",
+          "exact_excerpts": [
+            {
+              "section": "Overview",
+              "text": "Melee Power, introduced in Update 23, is similar in effect to Spell Power and increases straight weapon damage in addition to certain static effects from enhancements. It can be gained from certain feats, enhancements, melee epic destinies, items and spells.",
+              "following_list": [
+                "Melee Power is not applied to static damage riders like a sword's fire damage enchantment, but can apply to some Imbues.",
+                "Sneak Attack damage benefits even more from melee power, at 150% effectiveness."
+              ],
+              "completeness": "Complete opening Overview paragraph and both applicability bullets."
+            },
+            {
+              "section": "Overview",
+              "text": "The melee power rating provides a percentage adjustment to straight damage identical to that for ranged power (refer to following chart):",
+              "context": "This explicit general relation immediately precedes the positive and negative formula bullets. The ranged power phrase is a link label."
+            }
+          ],
+          "formula_and_example_blocks": {
+            "section": "Overview",
+            "source_structure": "Two top-level formula bullets, each with nested example or explanation bullets. This is not a source table.",
+            "blocks": [
+              {
+                "exact_formula_statement": "Positive ratings use the formula: Damage * (100 + Rating / 100)",
+                "exact_nested_entries": [
+                  "For example, a character with 20 melee power that rolls 50 damage with a melee weapon will actually deal a total of 50 * 1.2 = 60 damage"
+                ],
+                "formula_transcribed_without_repair": true
+              },
+              {
+                "exact_formula_statement": "Negative ratings use a different formula: Damage * 100 / (100 - Rating)",
+                "exact_nested_entries": [
+                  "This is more favorable than the positive rating formula would be for negative ratings",
+                  "-50 rating means a character deals 100 / (100 - -50) = 100 / (100+50) = 100/150, or 2/3, or 66% damage",
+                  "-100 rating = half damage (50%)",
+                  "etc."
+                ],
+                "formula_transcribed_without_repair": true
+              }
+            ],
+            "following_graph": {
+              "observed_caption": "Graph of Melee Power adjustment",
+              "graph_pixels_captured_or_inspected": false,
+              "note": "The adjacent graph was exposed as an image link without its numeric contents. No values or corrected formula are inferred from an unseen graph."
+            },
+            "completeness": "Complete positive/negative textual formula blocks and nested examples, preserving parentheses and the displayed 66% wording."
+          },
+          "special_attacks_list": {
+            "section": "Special attacks affected by Melee Power",
+            "exact_intro": "Some special attacks benefit from Melee Power.",
+            "source_structure": "Hierarchical unordered list; percentages appear only where shown below.",
+            "entries": [
+              {
+                "text": "Sneak attack 150%"
+              },
+              {
+                "text": "Assassin",
+                "children": [
+                  "Venomed Blades 200%",
+                  "Shadow Dagger 200%",
+                  "Execute 400%"
+                ]
+              },
+              {
+                "text": "Drow",
+                "children": [
+                  "Venomed Blades 200%"
+                ]
+              },
+              {
+                "text": "Knight of the Chalice",
+                "children": [
+                  "Slayer of Evil I",
+                  "Divine Sacrifice",
+                  "Improved Turning",
+                  "Holy Retribution Shot 200%"
+                ]
+              },
+              {
+                "text": "Vanguard",
+                "children": [
+                  "Shield Riposte"
+                ]
+              }
+            ],
+            "completeness": "Complete displayed list and hierarchy. No percentage is fabricated for entries lacking one, and no linked enhancement tree was opened."
+          },
+          "interpretations_and_conditional_applications": [
+            {
+              "subject": "Straight weapon damage and exclusions",
+              "status": "Direct applicability rules with qualifiers",
+              "finding": "Melee Power increases straight weapon damage and certain static enhancement effects. The page excludes static riders such as a sword's fire enchantment, allows some Imbues, and states 150% effectiveness for Sneak Attack.",
+              "limits": "Certain and some remain limiting terms. The page is not used to make every rider, spell, imbue or enhancement scale with Melee Power, or to infer an unlisted coefficient. The special-attack catalogue does not itself certify current tree access or every interaction."
+            },
+            {
+              "subject": "Explicit general relation to Ranged Power",
+              "status": "Direct equivalence for percentage adjustment to straight damage",
+              "finding": "The Overview explicitly states that the percentage adjustment to straight damage is identical for melee power and ranged power.",
+              "limits": "The sentence's scope is the percentage adjustment to straight damage. It does not automatically make every melee-specific rider, special-attack list, enhancement source or bonus-stacking relationship apply to ranged attacks. It also does not resolve the positive-formula inconsistency."
+            },
+            {
+              "subject": "Positive formula versus worked example",
+              "status": "Unresolved internal mathematical conflict",
+              "finding": "The printed expression is Damage * (100 + Rating / 100), while the worked example uses 50 * 1.2 = 60 at Rating 20. Under ordinary arithmetic precedence, the printed expression at those inputs gives 50 * (100 + 20 / 100) = 50 * 100.2 = 5010, not 60.",
+              "limits": "The literal formula and worked example are both preserved. No parentheses are silently relocated, no corrected general formula is supplied from memory, and no entire rating curve is certified solely from a single worked point. The worked example directly supports its own 20-power, 50-to-60 statement."
+            },
+            {
+              "subject": "Negative formula and examples",
+              "status": "Direct formula with consistent fractional examples and source rounding",
+              "finding": "The negative formula is Damage * 100 / (100 - Rating). At -50 it yields a factor of 100/150 = 2/3; at -100 it yields 1/2. The source displays 66% for the former and 50% for the latter.",
+              "limits": "The 66% label is preserved as the article's approximation; 2/3 is approximately 66.67%, not exactly 66%. No new negative-rating source, floor, cap or damage-order rule is inferred."
+            },
+            {
+              "subject": "Seeker and Ranged Power interaction",
+              "status": "Not resolved by these two articles alone",
+              "finding": "Seeker explicitly contributes before critical multipliers and applies to ranged attacks. Melee Power describes straight weapon damage and its general percentage equivalence to Ranged Power, but neither captured text explicitly classifies the conditional Seeker damage as a specific RP-scaled component or states its RP coefficient.",
+              "limits": "No S × M × RP-factor expression is certified here. Missing explicit classification or coefficient is treated as unverified, not as proof that Seeker does not scale. An applicable independently retained rule may resolve the relationship without requiring a pairwise sentence."
+            },
+            {
+              "subject": "Bonus sources versus positive mixed-type stacking",
+              "status": "No applicable general stacking rule captured",
+              "finding": "The Overview names sources of Melee Power, while this focused receipt excludes the long source catalogue. A source list is not a positive general rule that every type or effect stacks.",
+              "limits": "No mixed Melee/Ranged Power total, final critical profile or selected build damage is certified by component truth alone."
+            }
+          ],
+          "footer": {
+            "last_modified": "02:31, February 19, 2026",
+            "update": "77.2.1",
+            "observed_prefix_exact": "This page was last modified 02:31, February 19, 2026 (Update 77.2.1) [editor metadata omitted; see source history].",
+            "metadata_observed_with_body": true,
+            "footer_display_timezone_not_established": true
+          },
+          "permanent_link": {
+            "status": "Complete public href observed separately through a fresh normal-page control",
+            "href": "https://ddowiki.com/index.php?title=Melee_Power&oldid=675694",
+            "oldid": 675694,
+            "metadata_observed_at": "2026-11-02T05:12:22.936Z",
+            "historical_revision_read": false
+          }
+        }
+      ],
+      "retained_ranged_power_comparison": {
+        "provenance": "retained prior receipt context, not a fresh Ranged Power article or historical endpoint read in this batch.",
+        "reported_article": "Ranged Power",
+        "reported_revision_metadata": "675695",
+        "reported_positive_formula": "Damage * (100 + Rating / 100)",
+        "reported_example": "20 Ranged Power with 100 damage produces 120 damage.",
+        "comparison": "The newly observed Melee Power article repeats the same printed positive expression and also gives a 20-power worked example using a 1.2 factor. Its direct straight-damage equivalence statement therefore supplies a relevant cross-page relation, but does not cure the internal formula/example conflict.",
+        "limits": "No previous Ranged Power bytes are silently associated with the new Melee Power read time or revision. No oldid URL was opened and no general formula is repaired from memory."
+      },
+      "remaining_gaps_and_conflicts": [
+        "The printed positive-rating formula conflicts with its own worked example; the same conflict was reported in the retained Ranged Power receipt.",
+        "No positive general rule for stacking all Seeker bonus variants is stated in the captured Seeker prose.",
+        "The Seeker/Ranged Power coefficient or directly applicable component classification remains unverified by these two article bodies alone.",
+        "A final weapon critical multiplier/profile requires the separate applicable critical-source interaction rules; it is not derived here.",
+        "The adjacent Melee Power graph was not visually inspected; its contents are not used as evidence."
+      ],
+      "boundaries": {
+        "normal_articles_in_this_receipt": 2,
+        "historical_endpoint_reads": 0,
+        "additional_links_followed": 0,
+        "tree_or_item_own_page_expansion": false,
+        "feat_skill_item_or_build_choices": false,
+        "guide_or_repository_edits": false,
+        "publication": false,
+        "screenshots_included": false,
+        "unrelated_user_data_included": false,
+        "access_blocks_reported": []
+      }
+    },
+    "overwhelming_critical": {
+      "title": "Overwhelming Critical: explicit 19–20 critical-multiplier stacking rule",
+      "batch": "CRITICAL-POWER-RULES-01",
+      "normal_url": "https://ddowiki.com/page/Overwhelming_Critical",
+      "actual_observed_normal_url": "https://ddowiki.com/page/Overwhelming_Critical",
+      "observed_redirect": null,
+      "observation_started_at": "2026-11-02T05:12:51.725Z",
+      "observation_finished_at": "2026-11-02T05:12:56.333Z",
+      "access_status": "Normal public article text was available in the source observation's recorded accessibility observation; no source challenge or authorization block was reported.",
+      "provenance": {
+        "method": "Receipt-only transcription of the source observation's recorded normal-page Chrome accessibility text. Inline link labels are recombined and whitespace is normalized. Exact quotations reconstruct rendered text, not raw HTML.",
+        "historical_endpoint_reads": 0,
+        "screenshots_included": false,
+        "source_guide_build_or_account_edits": false,
+        "capture_scope": "The complete short substantive article body: Usage, Prerequisite, Description and both Notes bullets. Navigation, decorative image and category list are omitted. Source list and heading context are retained.",
+        "metadata_note": "The complete public permalink href was exposed in the same normal-page capture as the body. Its historical endpoint was not opened. This is observed normal-page revision metadata, not a historical-page read or independent raw historical-byte validation."
+      },
+      "exact_article_body": {
+        "page_heading": "Overwhelming Critical",
+        "article_heading": "Overwhelming Critical",
+        "source_structure": "Usage and Prerequisite are two list entries below the article heading. Description is a paragraph under its own heading. Notes contains two bullets; no source table is present.",
+        "introductory_list": [
+          {
+            "label": "Usage:",
+            "text": "Usage: Passive"
+          },
+          {
+            "label": "Prerequisite:",
+            "text": "Prerequisite: Level 21, Improved Critical: (Bludgeoning or Piercing or Slashing or Ranged or Thrown)"
+          }
+        ],
+        "description": {
+          "section": "Description",
+          "text": "When rolling a 19 or 20 on an attack with any weapons used by the character, your critical damage multiplier is increased by +1.",
+          "completeness": "Complete Description paragraph."
+        },
+        "notes": {
+          "section": "Notes",
+          "bullets": [
+            "All effects that increase critical damage multiplier on rolls of 19-20 stack.",
+            "Functions with handwraps and shields."
+          ],
+          "completeness": "Complete two-bullet Notes section. The source's hyphenated 19-20 wording is preserved."
+        }
+      },
+      "observed_relevant_links": [
+        {
+          "label": "All effects",
+          "help": "Critical hit multiplier",
+          "href": "https://ddowiki.com/page/Critical_hit_multiplier#Ways_to_increase_multiplier_on_19_and_20",
+          "context": "The link begins the first Notes bullet stating the positive general stacking rule.",
+          "followed": false
+        },
+        {
+          "label": "Improved Critical",
+          "href": "https://ddowiki.com/page/Improved_Critical",
+          "context": "Prerequisite list entry",
+          "followed": false
+        },
+        {
+          "label": "weapons",
+          "help": "Weapon",
+          "href": "https://ddowiki.com/page/Weapon",
+          "context": "Description paragraph",
+          "followed": false
+        }
+      ],
+      "source_based_findings": [
+        {
+          "subject": "Positive general stacking rule",
+          "status": "Explicit applicable general rule, not merely true component values",
+          "finding": "The first Notes bullet expressly states that all effects increasing critical damage multiplier on rolls of 19-20 stack. This supplies positive interaction evidence for effects whose documented scope meets that condition.",
+          "application": "A pairwise sentence naming each feat, destiny, enhancement or weapon source is not required where the documented effects fall under this general rule. The captured rule does not distinguish those source categories or state an exclusion for one of them.",
+          "limits": "Each component must actually apply to the attack, weapon, roll and current character state under its own documented conditions. This article alone does not establish access to another effect, its value, its prerequisites, its active stance or its weapon/roll restriction. Absence of a named source-category exception is not a substitute for checking each effect's applicable scope."
+        },
+        {
+          "subject": "Own feat value and scope",
+          "status": "Direct Description and prerequisite observations",
+          "finding": "The source lists a passive feat requiring level 21 and one of the listed Improved Critical variants. It grants +1 critical damage multiplier when rolling 19 or 20 on an attack with any weapons used by the character. Notes explicitly include handwraps and shields.",
+          "limits": "This receipt does not select the feat, change its timing, or reinterpret an unassigned prerequisite as acquired. The own-page values are retained as context for the stacking sentence; the capture's earlier Epic Feats receipt was not reread."
+        },
+        {
+          "subject": "Conditional multiplier arithmetic",
+          "status": "Application of the explicit rule, not a certified build profile",
+          "finding": "If separately documented applicable 19-20 multiplier increases are present on the same qualifying critical attack, the source authorizes those increases to stack; Overwhelming Critical contributes its stated +1 within that scope.",
+          "limits": "No final numerical mixed critical profile is computed here. The page does not independently establish the baseline weapon multiplier, threat range, confirmation result, fortification outcome, damage-power scaling, caps, or every other critical-modifier interaction. Its 19-20 rule is not expanded into a universal rule for all critical effects on all rolls."
+        }
+      ],
+      "retained_context_not_reread": {
+        "source": "Epic Feats, observed revision metadata 725538",
+        "provenance": "The capture reports that Overwhelming Critical's own value and prerequisites were already captured there.",
+        "scope": "This receipt's new interaction evidence is the Overwhelming Critical own-page Notes rule. It does not claim a fresh Epic Feats read or a historical-endpoint read."
+      },
+      "conflicts_and_unknowns": [
+        {
+          "subject": "Internal own-page conflict",
+          "status": "None observed in this short captured body",
+          "details": "The Description and Notes supply a compatible +1 component and positive stacking rule. No contradictory statement appears in the captured Usage, Prerequisite, Description or Notes text."
+        },
+        {
+          "subject": "Complete guide critical profile",
+          "status": "Not independently certified by this page",
+          "details": "The explicit general rule can resolve a qualifying multiplier-stacking relationship, but the full guide profile still requires the separately captured component values, activation/weapon conditions and other critical rules. No missing interaction is treated as false."
+        }
+      ],
+      "footer": {
+        "last_modified": "07:43, September 12, 2024",
+        "update": "69.1",
+        "observed_prefix_exact": "This page was last modified 07:43, September 12, 2024 (Update 69.1) by",
+        "metadata_observed_with_body": true,
+        "footer_display_timezone_not_established": true
+      },
+      "permanent_link": {
+        "status": "Complete public href exposed in the original normal-page body capture",
+        "href": "https://ddowiki.com/index.php?title=Overwhelming_Critical&oldid=598868",
+        "oldid": 598868,
+        "metadata_observation_started_at": "2026-11-02T05:12:51.725Z",
+        "metadata_observation_finished_at": "2026-11-02T05:12:56.333Z",
+        "historical_revision_read": false
+      },
+      "boundaries": {
+        "normal_articles_in_this_receipt": 1,
+        "additional_links_followed": 0,
+        "historical_endpoint_reads": 0,
+        "new_feat_or_build_choices": false,
+        "guide_repo_or_character_edits": false,
+        "publication": false,
+        "screenshots_included": false,
+        "unrelated_user_data_included": false,
+        "access_blocks_reported": []
+      }
+    }
+  },
+  "synthesis": {
+    "batch": "CRITICAL-POWER-RULES-01",
+    "scope": "Three normal articles only: Seeker, Melee Power, Overwhelming Critical. No linked critical-multiplier article, source tree, item or retained Ranged Power page was opened.",
+    "findings": [
+      {
+        "id": "seeker_confirmation_damage_and_scope",
+        "sources": [
+          "Seeker/Effect"
+        ],
+        "explicit_rules": "A +10 Seeker item adds +10 to the confirm-critical roll and +10 to critical damage before multipliers. Additional damage applies only when critical damage is actually scored. If the target negates the critical hit, for example through fortification, the extra Seeker damage does not apply. Seeker affects single-weapon melee, dual-weapon melee and ranged attacks; one weapon's Seeker can benefit both weapons and an accessory can supply it.",
+        "conditional_arithmetic": "For a confirmed, non-negated critical to which a critical multiplier M applies, an applicable Seeker damage component S included before that multiplier contributes S × M at that multiplication stage. Thus the stated +10 example would contribute 30 at a ×3 critical stage, before separately applicable other modifiers. This is arithmetic application of the premultiplier statement, not a worked example quoted from the article.",
+        "limits": "No critical-threat expansion, automatic confirmation or fortification bypass is conferred by this text. If the critical is negated, the extra Seeker damage is zero. The page does not establish that a specific target can be critically hit or certify the guide's final multiplier."
+      },
+      {
+        "id": "seeker_bonus_types_and_ranged_power",
+        "sources": [
+          "Seeker/Effect",
+          "Melee Power/Overview"
+        ],
+        "explicit_rules": "Seeker identifies regular Seeker as Enhancement, names Insightful and Quality Seeker variants, and explicitly says former Exceptional Seeker grants Insight. It expressly includes ranged attacks.",
+        "limits": "Naming multiple variants is not itself an explicit positive stacking rule for every combination. Seeker does not name Ranged Power or a specific RP scaling coefficient. Melee Power's straight-damage rule and its same-percentage-adjustment statement for RP are retained below, but do not explicitly classify Seeker's added critical damage for RP scaling. No Seeker × critical multiplier × RP formula is certified by this bounded set. Absence of such wording is not proof that RP does not scale Seeker."
+      },
+      {
+        "id": "power_formula_conflict",
+        "sources": [
+          "Melee Power/Overview"
+        ],
+        "exact_positive_formula": "Damage * (100 + Rating / 100)",
+        "exact_positive_example": "For example, a character with 20 melee power that rolls 50 damage with a melee weapon will actually deal a total of 50 * 1.2 = 60 damage",
+        "analysis": "With ordinary arithmetic precedence, the printed expression at Damage=50 and Rating=20 evaluates to 50 × (100 + 20/100) = 5010, while the explicit worked example gives 60. The discrepancy is in the observed source. The example directly supports the 1.2 factor at rating 20; a corrected general positive formula is not silently substituted or asserted as an exact quotation.",
+        "exact_negative_formula": "Damage * 100 / (100 - Rating)",
+        "exact_negative_examples": [
+          "-50 rating means a character deals 100 / (100 - -50) = 100 / (100+50) = 100/150, or 2/3, or 66% damage",
+          "-100 rating = half damage (50%)"
+        ],
+        "negative_example_note": "The 66% wording is the source's rounded/truncated expression of 2/3; its exact fraction is preserved. No silent replacement with 66.666...% is made inside the quotation.",
+        "retained_comparison": "The capture reports Ranged Power675695 has the same positive-expression problem and a 20 RP example taking 100 damage to 120. That retained article was not reread. The new Melee Power observation repeats the conflict rather than resolving it independently."
+      },
+      {
+        "id": "power_applicability_and_rp_relation",
+        "sources": [
+          "Melee Power/Overview",
+          "Special attacks affected by Melee Power"
+        ],
+        "explicit_rules": "Melee Power increases straight weapon damage plus certain static effects from enhancements. It does not apply to static damage riders such as a sword's fire-damage enchantment, but can apply to some imbues. Sneak Attack is listed at 150% effectiveness. The article explicitly says its percentage adjustment to straight damage is identical to that for ranged power.",
+        "limits": "The explicit general relationship covers the percentage adjustment, not an assertion that all MP grants, source lists, special-attack coefficients or melee-only effects also grant or use RP. The catalogue of some special attacks is retained as article observations without a tree revisit. No universal all-damage scaling or new mixed-type RP stacking rule is supplied. The positive formula conflict remains visible."
+      },
+      {
+        "id": "overwhelming_critical_stacking",
+        "sources": [
+          "Overwhelming Critical/Description",
+          "Overwhelming Critical/Notes"
+        ],
+        "exact_general_rule": "All effects that increase critical damage multiplier on rolls of 19-20 stack.",
+        "explicit_component_context": "Overwhelming Critical increases the critical damage multiplier by +1 when rolling 19 or 20 on an attack with any weapons used by the character. Notes also state that it functions with handwraps and shields.",
+        "applicable_general_rule": "This is positive general stacking evidence for effects whose documented scope meets the stated 19–20 multiplier condition. It can support combinations across feat, destiny, enhancement or weapon sources without requiring an exact pairwise sentence naming each source. The quoted rule contains no source-category exclusion.",
+        "conditional_arithmetic": "Given an established baseline critical multiplier and separately established simultaneously applicable +1 increases covered by this rule, those increases can be added on the qualifying 19/20 results. This arithmetic does not supply missing component values or activation conditions.",
+        "limits": "The rule is not a complete mixed critical-profile calculation. Each component still needs its documented value, weapon/stance/level/activation conditions and applicable roll scope. It does not by itself expand threat range, guarantee a critical hit, bypass confirmation or fortification, or establish every other multiplier/range interaction on other rolls. The linked Critical hit multiplier article was observed but not opened."
+      }
+    ],
+    "useful_resolution": "The formerly missing 19–20 multiplier stacking relationship has an explicit applicable general rule in Overwhelming Critical. The positive power-formula discrepancy remains unresolved by the new Melee Power source.",
+    "remaining_gaps": [
+      "A non-conflicting exact general positive power formula in the captured source text; the worked 20-power example is clear but the printed formula disagrees.",
+      "Explicit classification/scaling of Seeker's additional critical damage by Ranged Power.",
+      "A broad positive rule for every intended mixed-type Seeker combination, if not supplied by separate retained bonus-type rules.",
+      "Final selected-build critical profile, including all independently established component conditions, threat-range and non-19/20 interactions."
+    ],
+    "access_and_provenance": {
+      "normal_articles_read": 3,
+      "redirects_observed": [],
+      "access_blocks": [],
+      "excluded_intermediate_states": [
+        "Initial Seeker observation exposed no article body",
+        "Initial Melee Power observation still exposed the preceding Seeker body"
+      ],
+      "historical_endpoint_reads": 0,
+      "additional_links_followed": 0,
+      "guide_repo_character_or_settings_changes": false,
+      "feat_selections": false,
+      "screenshots": false,
+      "publication": false,
+      "metadata_note": "Observed public permalinks are normal-page metadata only. Body and later metadata times are kept separately; no historical endpoint or historical bytes were read."
+    }
+  },
+  "provenance_and_boundaries": {
+    "exact_text_method": "Rendered text reconstructed from inline labels and normalized whitespace, with source headings/list context retained",
+    "body_and_later_metadata_times_distinct": true,
+    "historical_endpoint_reads": 0,
+    "permalink_note": "Observed public normal-page metadata only. Historical endpoints and historical bytes were not read; later metadata does not independently validate earlier captured byte identity.",
+    "retained_Ranged_Power_article_reread": false,
+    "adjacent_Melee_Power_graph_visually_inspected": false,
+    "additional_links_followed": 0,
+    "guide_repo_character_or_settings_changes": false,
+    "new_feat_selection": false,
+    "publication": false,
+    "unrelated_user_data_included": false,
+    "screenshots_included": false
+  }
+}

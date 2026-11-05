@@ -1,0 +1,2469 @@
+{
+  "schema": "INTiana-DDO-Wiki-evidence-receipt-v1",
+  "batch": "DEFENSE-ENEMIES-02",
+  "created_at_utc": "2026-11-02T06:06:42.169474+00:00",
+  "scope": "Authorized read-only normal-page DDO Wiki capture: Reaper race, Monster Champion, Concealment, Incorporeal, Ghost Touch, and Threat observed redirect to Hate. Exact relevant text and complete relevant table context are separated from interpretation and unknowns.",
+  "provenance": {
+    "body_and_metadata_times": "Each source retains actual original body observation interval and later permalink observation mark. Packet creation time is not a source-read timestamp.",
+    "permalink_status": "Complete public permalink metadata observed from normal pages. Historical endpoints were not opened; historical bytes and identity with earlier body bytes were not independently verified.",
+    "scope_limits": "No source, guide, repository, character, gear, feat, account, security or settings changes; no login, challenge solving, bypass, alternate network research, unrelated browsing or screenshots."
+  },
+  "source_index": [
+    {
+      "title": "Reaper race",
+      "requested_normal_url": "https://ddowiki.com/page/Reaper_race",
+      "observed_normal_url": "https://ddowiki.com/page/Reaper_race",
+      "oldid_metadata": "717084",
+      "observed_permalink": "https://ddowiki.com/index.php?title=Reaper_race&oldid=717084",
+      "body_observation": {
+        "started_at_utc": "2026-11-02T05:48:40.331Z",
+        "completed_at_utc": "2026-11-02T05:48:40.558Z",
+        "heading_verified": "Reaper race",
+        "article_content_verified": true,
+        "scope": "Complete relevant introduction, Spawn mechanics, Racial traits, Regular Reapers, Boss Reapers, Creature entries (7) and relevant External links caveats. Initial tool output was presentation-truncated after Doom begins; a subsequent output from the same stored accessibility capture supplied the Doom and remaining tail, without claiming a new body-read interval.",
+        "tail_extraction": "Stored original accessibility lines with numeric indices 289 through 345 were emitted after the original body capture; they include the complete Doom rules and external-link UPDATE ME warning."
+      },
+      "historical_endpoint_read": false
+    },
+    {
+      "title": "Monster Champion",
+      "requested_normal_url": "https://ddowiki.com/page/Monster_Champion",
+      "observed_normal_url": "https://ddowiki.com/page/Monster_Champion",
+      "oldid_metadata": "723630",
+      "observed_permalink": "https://ddowiki.com/index.php?title=Monster_Champion&oldid=723630",
+      "body_observation": {
+        "started_at_utc": "2026-11-02T05:49:46.797Z",
+        "completed_at_utc": "2026-11-02T05:49:49.284Z",
+        "heading_verified": "Monster Champion",
+        "article_content_verified": true,
+        "scope": "Complete substantive Introduction, Tiers, Spawn rate, Rewards, Buffs including full 20-row table, event qualifications and Special appearance during special events. Stored observation was emitted in bounded chunks spanning AX indices 103–718. No fresh source time is assigned to later output of stored chunks."
+      },
+      "historical_endpoint_read": false
+    },
+    {
+      "title": "Concealment",
+      "requested_normal_url": "https://ddowiki.com/page/Concealment",
+      "observed_normal_url": "https://ddowiki.com/page/Concealment",
+      "oldid_metadata": "720325",
+      "observed_permalink": "https://ddowiki.com/index.php?title=Concealment&oldid=720325",
+      "body_observation": {
+        "started_at_utc": "2026-11-02T05:51:22.986Z",
+        "completed_at_utc": "2026-11-02T05:51:28.628Z",
+        "heading_verified": "Concealment",
+        "article_content_verified": true,
+        "scope": "Complete substantive introduction, percentage/source hierarchy, Stacking effects and Debuff Concealment sections. capture emitted stored capture in two index-bounded chunks; neither was a new source read. Ads, decorative images and category/navigation chrome omitted."
+      },
+      "historical_endpoint_read": false
+    },
+    {
+      "title": "Incorporeal",
+      "requested_normal_url": "https://ddowiki.com/page/Incorporeal",
+      "observed_normal_url": "https://ddowiki.com/page/Incorporeal",
+      "oldid_metadata": "677476",
+      "observed_permalink": "https://ddowiki.com/index.php?title=Incorporeal&oldid=677476",
+      "body_observation": {
+        "started_at_utc": "2026-11-02T05:52:26.359Z",
+        "completed_at_utc": "2026-11-02T05:52:31.935Z",
+        "heading_verified": "Incorporeal",
+        "article_content_verified": true,
+        "scope": "Complete relevant substantive introduction, Implementation, monster examples, all player percentage/source sections and bypass rules. Initial emitted body was output-truncated near node294; a second stored-capture excerpt through node442 supplied the remainder. No new browser read timestamp is assigned to that output."
+      },
+      "historical_endpoint_read": false
+    },
+    {
+      "title": "Ghost Touch",
+      "requested_normal_url": "https://ddowiki.com/page/Ghost_Touch",
+      "observed_normal_url": "https://ddowiki.com/page/Ghost_Touch",
+      "oldid_metadata": "650368",
+      "observed_permalink": "https://ddowiki.com/index.php?title=Ghost_Touch&oldid=650368",
+      "body_observation": {
+        "started_at_utc": "2026-11-02T05:53:57.567Z",
+        "completed_at_utc": "2026-11-02T05:54:03.315Z",
+        "heading_verified": "Ghost Touch",
+        "article_content_verified": true,
+        "scope": "Complete relevant effect definitions (two displayed Ghost Touch headings), prefix/base-price field, and See also labels. The long Found on item catalog is excluded; its observed count is not represented as a transcribed or independently counted catalog. Stored-tree heading/tail inspection exposed no additional rule section after the catalog."
+      },
+      "historical_endpoint_read": false
+    },
+    {
+      "title": "Hate",
+      "requested_normal_url": "https://ddowiki.com/page/Threat",
+      "observed_normal_url": "https://ddowiki.com/page/Hate",
+      "oldid_metadata": "713587",
+      "observed_permalink": "https://ddowiki.com/index.php?title=Hate&oldid=713587",
+      "body_observation": {
+        "started_at_utc": "2026-11-02T05:54:57.866Z",
+        "completed_at_utc": "2026-11-02T05:55:03.723Z",
+        "heading_verified": "Hate",
+        "article_content_verified": true,
+        "scope": "All relevant substantive sections captured in stored-tree slices: update warning, introduction, channels, Managing hate, enhancement/destiny/equipment modifiers, skills, special cases and 100%-reduction tests. One Managing hate accessibility node ends at character; its visible prefix is marked partial. No missing tail is reconstructed."
+      },
+      "historical_endpoint_read": false
+    }
+  ],
+  "source_receipts": [
+    {
+      "schema": "ddo-wiki-observed-source-receipt/1",
+      "batch": "DEFENSE-ENEMIES-02",
+      "created_at_utc": "2026-11-02T05:51:40.878427+00:00",
+      "receipt_scope": "Complete substantive Reaper race spawn, racial, regular-Reaper and boss-Reaper rules exposed in the capture normal-page capture, including all seven named types and qualifiers.",
+      "provenance": {
+        "method": "Transcription only from inherited exact supported native Chrome accessibility observations. No browser, UI or network use by receipt public-page observation.",
+        "quotation_method": "Adjacent rendered accessibility text and inline link labels joined in reading order, with whitespace normalized. Advertisements, decorative images and navigation omitted; wording, nested-list context and qualifiers retained.",
+        "source_observation_times": "Actual recorded body-read interval and later permalink observation mark; receipt creation time is separate.",
+        "normal_public_article_only": true,
+        "historical_endpoints_opened": false,
+        "no_unrelated_browser_or_clipboard_data": true,
+        "screenshots_used": false,
+        "guide_repository_character_or_settings_changes": false
+      },
+      "sources": [
+        {
+          "title": "Reaper race",
+          "requested_normal_url": "https://ddowiki.com/page/Reaper_race",
+          "observed_normal_url": "https://ddowiki.com/page/Reaper_race",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:48:40.331Z",
+            "completed_at_utc": "2026-11-02T05:48:40.558Z",
+            "heading_verified": "Reaper race",
+            "article_content_verified": true,
+            "scope": "Complete relevant introduction, Spawn mechanics, Racial traits, Regular Reapers, Boss Reapers, Creature entries (7) and relevant External links caveats. Initial tool output was presentation-truncated after Doom begins; a subsequent output from the same stored accessibility capture supplied the Doom and remaining tail, without claiming a new body-read interval.",
+            "tail_extraction": "Stored original accessibility lines with numeric indices 289 through 345 were emitted after the original body capture; they include the complete Doom rules and external-link UPDATE ME warning."
+          },
+          "excluded_initial_observation": {
+            "started_at_utc": "2026-11-02T05:48:35.292Z",
+            "completed_at_utc": "2026-11-02T05:48:36.273Z",
+            "state": "Requested address appeared, but no article headings/body were exposed. Excluded as a successful source-body read."
+          },
+          "revision_metadata": {
+            "initial_permanent_link_value": "ddowiki.com/index.php",
+            "permanent_link": "https://ddowiki.com/index.php?title=Reaper_race&oldid=717084",
+            "oldid": "717084",
+            "footer_observation_interval_utc": [
+              "2026-11-02T05:48:40.331Z",
+              "2026-11-02T05:48:40.558Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:49:07.978Z",
+            "mark_semantics": "Timestamp sampled immediately before the accessibility observation exposing the copied full public URL in the address field. No separate completion instant was recorded.",
+            "method": "capture right-clicked the freshly observed normal-page Permanent link, selected the freshly observed Copy Link Address item, checked outcome, and observed the copied public link in the address field without Return. Normal article address was restored without navigating the historical URL.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 11:56, September 22, 2026 (Update 81.3) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "earlier_body_bytes_independently_pinned": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Introduction / illustration caption",
+              "text": "Reapers look similar to wraiths, but their glowing eyes are distinctive. (Hover for larger version)",
+              "scope_note": "Caption text only; image was not inspected or uploaded.",
+              "observed_links": [
+                {
+                  "label": "wraiths",
+                  "normal_url": "https://ddowiki.com/page/Wraith"
+                }
+              ]
+            },
+            {
+              "section": "Introduction",
+              "text": "The most significant change that Reaper difficulty brings is the chance to encounter Reapers themselves.",
+              "observed_links": [
+                {
+                  "label": "Reaper difficulty",
+                  "normal_url": "https://ddowiki.com/page/Reaper_difficulty"
+                }
+              ]
+            },
+            {
+              "section": "Spawn mechanics",
+              "text": "Each time an enemy spawns there's a chance a Reaper spawns too, and this chance is higher the more Skulls you select. They spawn at the last location of the associated enemy (even if inaccessible) and there's a ~5 second delay before they appear. Reapers have their own logic and will not follow special scripted enemy pathing. (Since Update 81, monsters spawned by other monsters, such as Oozes that split from larger Oozes and Mephits summoned by other Mephits, cannot trigger a Reaper to spawn when they spawn or are slain.)",
+              "complete_section": true,
+              "observed_links": [
+                {
+                  "label": "Skulls",
+                  "normal_url": "https://ddowiki.com/page/Reaper_difficulty"
+                },
+                {
+                  "label": "Update 81",
+                  "normal_url": "https://ddowiki.com/page/Update_81"
+                }
+              ]
+            },
+            {
+              "section": "Racial traits / all Reapers",
+              "intro": "All Reapers possess the following traits:",
+              "bullets": [
+                {
+                  "text": "Lawful Evil Outsider",
+                  "observed_links": [
+                    {
+                      "label": "Lawful Evil",
+                      "normal_url": "https://ddowiki.com/page/Lawful_Evil"
+                    },
+                    {
+                      "label": "Outsider",
+                      "normal_url": "https://ddowiki.com/page/Outsider"
+                    }
+                  ]
+                },
+                {
+                  "text": "Incorporeal",
+                  "observed_links": [
+                    {
+                      "label": "Incorporeal",
+                      "normal_url": "https://ddowiki.com/page/Incorporeal"
+                    }
+                  ]
+                },
+                {
+                  "text": "Deathblock: Protects against death spells and magical death effects",
+                  "observed_links": [
+                    {
+                      "label": "Deathblock",
+                      "normal_url": "https://ddowiki.com/page/Deathblock"
+                    }
+                  ]
+                },
+                {
+                  "text": "Airborne: Cannot be affected by Trip, Grease, Earthquake or other ground effects",
+                  "nested_bullets": [
+                    "Other crowd control works normally"
+                  ],
+                  "observed_links": [
+                    {
+                      "label": "Airborne",
+                      "normal_url": "https://ddowiki.com/page/Airborne"
+                    },
+                    {
+                      "label": "Trip",
+                      "normal_url": "https://ddowiki.com/page/Trip"
+                    },
+                    {
+                      "label": "Grease",
+                      "normal_url": "https://ddowiki.com/page/Grease"
+                    },
+                    {
+                      "label": "Earthquake",
+                      "normal_url": "https://ddowiki.com/page/Earthquake"
+                    }
+                  ]
+                },
+                {
+                  "text": "Immune to Poison damage",
+                  "observed_links": [
+                    {
+                      "label": "Poison",
+                      "normal_url": "https://ddowiki.com/page/Poison"
+                    }
+                  ]
+                }
+              ],
+              "complete_section": true
+            },
+            {
+              "section": "Racial traits / regular Reapers",
+              "intro": "Regular Reapers possess the following:",
+              "bullets": [
+                {
+                  "text": "Tremor Sense: Automatically senses players and NPCs through doors, walls, and other obstacles at a range of 18 meters, and will move closer to investigate",
+                  "observed_links": [
+                    {
+                      "label": "Tremor Sense",
+                      "normal_url": "https://ddowiki.com/page/Tremor_Sense"
+                    }
+                  ]
+                },
+                {
+                  "text": "True Seeing: Automatically sees players and NPCs at a range of 18 meters, and shares their location with nearby allies",
+                  "observed_links": [
+                    {
+                      "label": "True Seeing",
+                      "normal_url": "https://ddowiki.com/page/True_Seeing"
+                    }
+                  ]
+                }
+              ],
+              "complete_section": true
+            },
+            {
+              "section": "Regular Reapers / Carnage Reaper",
+              "normal_url": "https://ddowiki.com/page/Carnage_Reaper",
+              "bullets": [
+                "Extremely strong melee attack",
+                "Prioritizes getting and staying within melee range",
+                "Inflicts a 20% Vulnerability debuff stacking 10 times (for a total of 200%)"
+              ],
+              "observed_effect_link": {
+                "label": "Vulnerability",
+                "help": "Vulnerable",
+                "normal_url": "https://ddowiki.com/page/Vulnerable"
+              },
+              "complete_type_entry": true
+            },
+            {
+              "section": "Regular Reapers / Famine Reaper",
+              "normal_url": "https://ddowiki.com/page/Famine_Reaper",
+              "bullets": [
+                {
+                  "text": "Casts various offensive spells, often damage-based"
+                },
+                {
+                  "text": "Every 10 seconds, gains a stack of Doom Caster: \"This caster's spells will hit harder and fail less.\""
+                },
+                {
+                  "text": "Affects nearby characters with Reaper: Slowing Touch: \"The Reaper's touch gnaws at your form, slowing your movement and preventing tumbling.\"",
+                  "nested_bullets": [
+                    "Slowing Touch is applied upon staying in melee range for 4 seconds"
+                  ]
+                },
+                {
+                  "text": "Teleports to its target if it loses line of sight for 8 seconds"
+                }
+              ],
+              "complete_type_entry": true
+            },
+            {
+              "section": "Regular Reapers / Fear Reaper",
+              "normal_url": "https://ddowiki.com/page/Fear_Reaper",
+              "bullets": [
+                {
+                  "text": "Applies a stacking Fear of Death debuff in an area every few seconds. The debuff deals increasing damage until the Reaper's killed",
+                  "nested_bullets": [
+                    "Activated by a combination of line of sight and proximity",
+                    "Isn't applied within a small radius around the Reaper"
+                  ]
+                },
+                {
+                  "text": "Somewhat strong melee attack"
+                },
+                {
+                  "text": "Tries to stay in its initial position, but will move to retain line of sight"
+                }
+              ],
+              "complete_type_entry": true
+            },
+            {
+              "section": "Regular Reapers / Plague Reaper",
+              "normal_url": "https://ddowiki.com/page/Plague_Reaper",
+              "bullets": [
+                "Inflicts a strong healing debuff for a time",
+                "Prioritizes getting and staying within melee range",
+                "Somewhat strong melee attack",
+                "Teleports to its target if it loses line of sight for 8 seconds"
+              ],
+              "complete_type_entry": true
+            },
+            {
+              "section": "Boss Reapers / introduction",
+              "text": "Update 42.4 introduced additional types of Reapers, some of which only appear on 5 Skulls or above:",
+              "observed_link": {
+                "label": "Update 42.4",
+                "help": "Update 42 Patch 4 Release Notes",
+                "normal_url": "https://ddowiki.com/page/Update_42_Patch_4_Release_Notes"
+              }
+            },
+            {
+              "section": "Boss Reapers / Despair Reaper",
+              "normal_url": "https://ddowiki.com/page/Despair_Reaper",
+              "bullets": [
+                {
+                  "text": "Orange name"
+                },
+                {
+                  "text": "Will engage in melee and apply despair debuffs at range."
+                },
+                {
+                  "text": "Has an aura that boosts allies' saving throws.",
+                  "nested_bullets": [
+                    "Periodically applies a stacking effect to everything within the aura that buffs damage of allies and debuffs damage of enemies. Both stack up to 5 times and have debuff text reading \"Your enemies grow stronger as you despair.\""
+                  ]
+                },
+                {
+                  "text": "Has a buff, Cloak of Despair: \"Cloaked in your despair, this Reaper has great advantage to their saving throws.\""
+                },
+                {
+                  "text": "Appears at 5 Skulls and above"
+                }
+              ],
+              "observed_effect_link": {
+                "label": "saving throws",
+                "normal_url": "https://ddowiki.com/page/Saving_throw"
+              },
+              "complete_type_entry": true
+            },
+            {
+              "section": "Boss Reapers / Vengeance Reaper",
+              "normal_url": "https://ddowiki.com/page/Vengeance_Reaper",
+              "bullets": [
+                "Orange name",
+                "Casts offensive Arcane spells such as Black Dragon Bolt, Cyclonic Blast, and Horrid Wilting",
+                "Spawns blue AoEs that explode after few seconds for heavy Evil damage",
+                "Applies a buff to nearby allies on death - They Carry My Vengeance: \"This creature's offense has been greatly increased by Vengeance.\"",
+                "Appears at 5 Skulls and above"
+              ],
+              "observed_links": [
+                {
+                  "label": "Black Dragon Bolt",
+                  "normal_url": "https://ddowiki.com/page/Black_Dragon_Bolt"
+                },
+                {
+                  "label": "Cyclonic Blast",
+                  "normal_url": "https://ddowiki.com/page/Cyclonic_Blast"
+                },
+                {
+                  "label": "Horrid Wilting",
+                  "normal_url": "https://ddowiki.com/page/Horrid_Wilting"
+                },
+                {
+                  "label": "Evil",
+                  "help": "Damage",
+                  "normal_url": "https://ddowiki.com/page/Damage"
+                },
+                {
+                  "label": "They Carry My Vengeance",
+                  "normal_url": "https://ddowiki.com/page/They_Carry_My_Vengeance"
+                }
+              ],
+              "complete_type_entry": true
+            },
+            {
+              "section": "Boss Reapers / Doom Reaper",
+              "normal_url": "https://ddowiki.com/page/Doom_Reaper",
+              "bullets": [
+                "Red name",
+                "Closes to melee range and deals high damage. Immune to all CC as a Red Named boss.",
+                "Uses Binding Chain",
+                "Applies Marks of Doom every few seconds to their target, with each stack greatly increasing damage taken. Upon reaching seven stacks, their next successful melee attack deals massive bonus damage [DDO Forums UPDATE ME!]",
+                "Appears at 7 Skulls and above"
+              ],
+              "observed_links": [
+                {
+                  "label": "Binding Chain",
+                  "normal_url": "https://ddowiki.com/page/Binding_Chain"
+                },
+                {
+                  "label": "DDO Forums",
+                  "observed_url": "https://forums-old.ddo.com/forums/showthread.php/508195",
+                  "opened": false
+                }
+              ],
+              "source_warning": "The Marks of Doom sentence carries a DDO Forums UPDATE ME! marker. It is preserved as attributed source mechanics, not independently current-tested behavior.",
+              "complete_type_entry": true
+            },
+            {
+              "section": "Creature entries (7)",
+              "displayed_heading_count": 7,
+              "entries": [
+                "Carnage Reaper",
+                "Despair Reaper",
+                "Doom Reaper",
+                "Famine Reaper",
+                "Fear Reaper",
+                "Plague Reaper",
+                "Vengeance Reaper"
+              ],
+              "count_basis": "The heading explicitly says Creature entries (7), and seven entry labels were exposed. No count inferred from unrelated lists."
+            },
+            {
+              "section": "External links",
+              "observed_entries": [
+                {
+                  "label": "U42.4 release notes",
+                  "displayed_url": "ddo.com/en/update-424-release-notes",
+                  "opened": false
+                },
+                {
+                  "label": "Review of Reaper post patch",
+                  "displayed_url": "forums-old.ddo.com/forums/showthread.php/508195",
+                  "adjacent_warning": "UPDATE ME!",
+                  "opened": false
+                },
+                {
+                  "label": "Despair Reaper by Planky",
+                  "displayed_url": "youtube.com/watch",
+                  "url_status": "Truncated/incomplete as exposed; no full URL reconstructed.",
+                  "opened": false
+                },
+                {
+                  "label": "Doom Reaper by Planky",
+                  "displayed_url": "youtube.com/watch",
+                  "url_status": "Truncated/incomplete as exposed; no full URL reconstructed.",
+                  "opened": false
+                }
+              ],
+              "handling": "Recorded as source references and update caveats only; no external page or video opened."
+            }
+          ],
+          "observed_reaper_normal_links_not_followed": [
+            {
+              "label": "Carnage Reaper",
+              "normal_url": "https://ddowiki.com/page/Carnage_Reaper"
+            },
+            {
+              "label": "Despair Reaper",
+              "normal_url": "https://ddowiki.com/page/Despair_Reaper"
+            },
+            {
+              "label": "Doom Reaper",
+              "normal_url": "https://ddowiki.com/page/Doom_Reaper"
+            },
+            {
+              "label": "Famine Reaper",
+              "normal_url": "https://ddowiki.com/page/Famine_Reaper"
+            },
+            {
+              "label": "Fear Reaper",
+              "normal_url": "https://ddowiki.com/page/Fear_Reaper"
+            },
+            {
+              "label": "Plague Reaper",
+              "normal_url": "https://ddowiki.com/page/Plague_Reaper"
+            },
+            {
+              "label": "Vengeance Reaper",
+              "normal_url": "https://ddowiki.com/page/Vengeance_Reaper"
+            }
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "status": "direct_spawn_rules",
+              "finding": "A Reaper may accompany an enemy spawn, with chance increasing with selected skulls. The stated location is the associated enemy's last location, even if inaccessible, and the delay is approximately five seconds. Separate logic and lack of scripted pathing are explicit.",
+              "limits": "No numeric spawn probability, exact guaranteed delay, universal safe location or all-enemy lifecycle algorithm is supplied."
+            },
+            {
+              "status": "explicit_update_exception",
+              "finding": "Since U81, monsters spawned by other monsters cannot trigger Reapers on spawning or being slain; splitting Oozes and summoned Mephits are examples.",
+              "limits": "The parenthetical exception is preserved; it is not removed by the preceding general enemy-spawn wording."
+            },
+            {
+              "status": "direct_traits_with_exception",
+              "finding": "The race traits identify Lawful Evil Outsider, Incorporeal, Deathblock, airborne ground-effect immunity and Poison damage immunity. Other crowd control is said to work normally, but Doom separately has explicit all-CC immunity as a red-named boss.",
+              "limits": "The general other-CC sentence is not applied over Doom's specific immunity. Wraith-like appearance is not converted into Undead typing. No numeric incorporeal chance is supplied here."
+            },
+            {
+              "status": "direct_regular_sensing_scope",
+              "finding": "The two 18-meter rules are expressly listed for regular Reapers. Tremor Sense penetrates doors/walls/other obstacles and prompts investigation; True Seeing locates players/NPCs and shares locations with nearby allies.",
+              "limits": "These distances are not substituted for Fear aura range, excluded radius, boss sensing range or universal line-of-sight rules."
+            },
+            {
+              "status": "direct_carnage_value",
+              "finding": "Carnage explicitly inflicts a 20% Vulnerability debuff stacking ten times for the stated total 200%.",
+              "limits": "This is the stated debuff total, not an independently derived final incoming-damage multiplier after other modifiers."
+            },
+            {
+              "status": "direct_famine_rules",
+              "finding": "Famine gains Doom Caster every ten seconds; Slowing Touch slows movement and prevents tumbling after remaining in melee range four seconds; losing line of sight for eight seconds triggers teleport to the target.",
+              "limits": "No numerical movement reduction, Doom Caster damage coefficient, stack cap or safe-position guarantee is supplied."
+            },
+            {
+              "status": "direct_fear_qualifiers",
+              "finding": "Fear of Death is described as an area stacking debuff applied every few seconds, activated by line of sight and proximity, excluded within a small radius, and dealing increasing damage until the Reaper is killed. Fear may move to retain line of sight and has a melee attack.",
+              "limits": "No numerical outer/inner radius or exact tick interval is stated. The excluded inner radius does not prove complete safety, and no proposed safe-place tactic is certified."
+            },
+            {
+              "status": "direct_plague_rules",
+              "finding": "Plague has a strong healing debuff for a time, prioritizes melee, and teleports after losing line of sight for eight seconds.",
+              "limits": "Healing-reduction percentage, application trigger, duration and stacking details remain unquantified here."
+            },
+            {
+              "status": "direct_despair_rules",
+              "finding": "Despair is orange-named, appears at five or more skulls, has an ally-save aura, periodically buffs ally damage and debuffs enemy damage up to five stacks, and has the named saving-throw buff Cloak of Despair.",
+              "limits": "Aura radius, cadence, numerical save bonus and damage changes are not stated. Great advantage is not converted into a numeric bonus or a D&D dice-roll mechanism."
+            },
+            {
+              "status": "direct_vengeance_rules",
+              "finding": "Vengeance is orange-named and appears at five or more skulls. Its blue AoEs explode after a few seconds for heavy Evil damage; on death it buffs nearby allies with They Carry My Vengeance.",
+              "limits": "The page supplies no exact AoE damage, save type/DC, circle radius or numerical death-buff size/duration. The normal spell examples do not establish the circle's save or damage formula."
+            },
+            {
+              "status": "source_rule_with_update_warning",
+              "finding": "Doom is red-named, immune to all CC, uses Binding Chain and appears at seven or more skulls. The marked source sentence says Marks of Doom stacks every few seconds and, at seven, the next successful melee attack deals massive bonus damage.",
+              "limits": "UPDATE ME! is retained. No exact damage coefficient, mark interval or independently verified current mechanic is claimed."
+            }
+          ],
+          "precise_remaining_gaps": [
+            "No numeric Reaper spawn chance per skull; delay is approximate (~5 seconds), not exact.",
+            "No explicit numerical minimum skull threshold for each regular Reaper entry; the boss thresholds are explicit: Despair/Vengeance 5+, Doom 7+.",
+            "The 18-meter sensing entries apply to regular Reapers and do not provide Fear aura radii.",
+            "Fear outer range, excluded inner radius and exact tick interval are not quantified.",
+            "Plague healing reduction amount, exact duration and detailed stacking are not given.",
+            "Vengeance circle exact damage, save type/DC, radius and exact delay are not given; death-buff magnitude, duration and range are not quantified.",
+            "Despair numerical save/damage effects, aura radius and exact periodic interval are not given.",
+            "Famine movement-reduction magnitude and Doom Caster magnitude/cap are not given.",
+            "Doom mark damage magnitude and exact timing are not given, and the source marks this passage UPDATE ME!.",
+            "No numeric incorporeal percentage, avoidance roll relationship, or safe-place tactical proof is established by this race page alone."
+          ],
+          "mechanics_vs_tactics": {
+            "mechanics": "Exact source statements retained above with scope and source-warning qualifiers.",
+            "tactics": "No safe-place, wall/door, small-inner-radius, spawn-location or melee-position tactic is presented as guaranteed safe. No tactical recommendation or character/build change is made."
+          }
+        }
+      ],
+      "access_outcome": {
+        "normal_article_body_verified_readable": true,
+        "access_blocks": [],
+        "own_reaper_pages_followed": 0,
+        "external_sources_followed": 0
+      },
+      "blockers": []
+    },
+    {
+      "schema": "ddo-wiki-observed-source-receipt/1",
+      "batch": "DEFENSE-ENEMIES-02",
+      "created_at_utc": "2026-11-02T05:53:08.385165+00:00",
+      "provenance": {
+        "method": "Transcription only from inherited exact supported native Chrome accessibility observations. No UI, browser or network access by receipt public-page observation.",
+        "quotation_policy": "Adjacent rendered text and inline link labels joined in reading order; whitespace normalized. Repeated printed table headers and cell order are preserved. Advertising snippets, decorative image cells and navigation omitted. No unobserved tooltips or truncated hrefs reconstructed.",
+        "source_observation_times": "Actual body interval from capture observation, distinct from later permalink observation mark and receipt creation time.",
+        "historical_endpoints_opened": false,
+        "metadata_limit": "Normal-page observed Permanent link only. No historical-endpoint access or independent historical-byte identity check.",
+        "changes": "No guide, repository, gear, feat, character, account or settings changes; no tactics selected."
+      },
+      "sources": [
+        {
+          "title": "Monster Champion",
+          "requested_normal_url": "https://ddowiki.com/page/Monster_Champion",
+          "observed_normal_url": "https://ddowiki.com/page/Monster_Champion",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:49:46.797Z",
+            "completed_at_utc": "2026-11-02T05:49:49.284Z",
+            "heading_verified": "Monster Champion",
+            "article_content_verified": true,
+            "scope": "Complete substantive Introduction, Tiers, Spawn rate, Rewards, Buffs including full 20-row table, event qualifications and Special appearance during special events. Stored observation was emitted in bounded chunks spanning AX indices 103–718. No fresh source time is assigned to later output of stored chunks."
+          },
+          "revision_metadata": {
+            "initial_permanent_link_value": "…",
+            "permanent_link": "https://ddowiki.com/index.php?title=Monster_Champion&oldid=723630",
+            "oldid": "723630",
+            "body_footer_observation_interval_utc": [
+              "2026-11-02T05:49:46.797Z",
+              "2026-11-02T05:49:49.284Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:50:50.305Z",
+            "mark_semantics": "Timestamp sampled immediately before the accessibility read showing the full copied public URL in the address field; exact read completion was not separately recorded.",
+            "method": "capture used fresh observed Permanent link and Copy Link Address controls, checked the copy outcome, read the copied public URL in the address bar without Return, then restored the normal article address.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 17:47, October 22, 2026 (Update 82.0.1) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "earlier_body_bytes_independently_pinned": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Introduction",
+              "paragraphs": [
+                "Introduced in Update 24 and reworked in Update 34, some enemies gain randomized buffs on Hard, Elite, and Reaper difficulties in quests with an effective level of 5 or higher (i.e. starting with level 4 quests on Hard difficulty, and level 3 quests on Elite or Reaper). These enemies are called Champions, and they have an always-visible, unless sneaking or invisible, burning crown above their heads to mark them.",
+                "Monster Champions do not spawn in any quest on Solo, Casual, or Normal difficulty; nearly all raids (except Killing Time and Legendary Shroud's Part 5, where enemies are granted champion buffs but cannot drop Remnants); nor any wilderness area (with the singular exception of Balthan Korl, who again cannot drop Remnants). Furthermore, Reapers and red-named and purple-named enemies cannot spawn as Champions."
+              ]
+            },
+            {
+              "section": "Tiers",
+              "paragraphs": [
+                "Not all champions are alike: some are tougher (Tier 2), some are a lot tougher (Tier 3). All champions have a set of buffs — basic abilities and/or resistances — and many (11/20 varieties) have an extra vulnerability to a certain type of magical damage. Tier 2 and 3 champions gain extra abilities on top of these. The more dangerous champions are only encountered at higher difficulty settings.",
+                "For a normal mob or yellow-named champion, the color and size of crown designates whether it is Tier 1, Tier 2 or Tier 3:",
+                "Orange-named (mini-boss) champions always wear the red crown, but may be either Tier 1, Tier 2 or Tier 3, subject to the difficulty setting."
+              ],
+              "difficulty_bullets": [
+                "Solo/Casual/Normal - no champions",
+                "Hard - Tier 1 only",
+                "Elite - Tier 1 and 2",
+                "Reaper - Tier 1, 2 or 3"
+              ],
+              "crown_definitions": [
+                "A single-pointed yellow crown indicates it is Tier 1",
+                "A tri-pointed orange crown indicates it is Tier 2",
+                "A tri-pointed red crown with a central gem indicates it is Tier 3"
+              ],
+              "qualifier": "The normal/yellow-name crown mapping and separate orange-name exception are retained together."
+            },
+            {
+              "section": "Spawn rate",
+              "displayed_subheadings_and_bullets": [
+                {
+                  "label": "Hard",
+                  "bullets": [
+                    "Normal monsters: 6%",
+                    "Orange-named monsters (mini-bosses): 33%"
+                  ]
+                },
+                {
+                  "label": "Elite & Reaper",
+                  "bullets": [
+                    "Normal monsters: 9%",
+                    "Orange-named monsters (mini-bosses): 66%"
+                  ]
+                }
+              ],
+              "source_attribution_visible": "DDO Forum Post archive link follows the 66% entry.",
+              "source_link_status": "Href truncated in capture observation; no original forum page read and no full href reconstructed."
+            },
+            {
+              "section": "Rewards",
+              "introductory_text": "When defeated, champions have a chance to drop Mysterious Remnants",
+              "bullets": [
+                {
+                  "text": "Regular (yellow) champions have a chance to drop Mysterious Remnants, which will appear at the feet* of the character that delivered the killing blow. Similar to treasure bags, any and all characters can \"use\" these remnants to collect them, even characters entering a quest after that champion is killed. These remnants only last in place for a minute or so, then disappear.",
+                  "footnote": "* This includes if the character is in mid-jump or mid-fall. In these situations, remnants will be suspended mid-air, occasionally making them challenging to collect."
+                },
+                {
+                  "text": "Mini-boss (orange) champions have a chance to drop a chest when defeated, which will always include Mysterious Remnants along with randomly generated treasure appropriate to the modified level of the quest.",
+                  "nested_bullets": [
+                    "These chests remain for 3 minutes, then turn red and disappear after one more minute.",
+                    "Just like standard chests, only characters that are in the quest when the chest is first opened may loot them.",
+                    "These chests are all considered unique, so are not subject to the chest ransack mechanic."
+                  ]
+                },
+                {
+                  "text": "Event-specific champions drop event consumables."
+                }
+              ],
+              "drop_rates": [
+                "33% chance to drop chest or remnants (and 66% during Double Remnant events)"
+              ],
+              "attribution": "Archived Vargouille link follows drop-rate statement; Player data (older) link also displayed. Hrefs truncated and not reconstructed."
+            },
+            {
+              "section": "Buffs / introduction",
+              "paragraphs": [
+                "Champions come in 20 different varieties, and it's random which will be applied to any one champion. Each variety has their own template of abilities based on a theme inspired by one of the Outer or Inner Planes of the Forgotten Realms, where they get these powers. Players can see the variety of Champion they are facing by looking at the creature's title, and additional detail can be found in the examination window. All champions receive the basic champion buff, Damage Boost - I deal extra damage.",
+                "Many have True Sight, making Invisibility ineffective against them:"
+              ],
+              "basic_buff_caveat": {
+                "text": "On occasion, this is the only buff applied; think of this as Tier 0 (this may be limited to orange-named enemies [ needs verification ])",
+                "verification_marker_help": "Requires verification in-game."
+              },
+              "true_sight_bullets": [
+                "7 of 20 Tier 1 champions, 10 of 20 Tier 2, and 15 of 20 Tier 3.",
+                "Note that Mark of Chaos champions can randomly receive True Sight, however this is not included in the above tallies."
+              ],
+              "all_hit_rule_limit": "The complete observed rule text says I deal extra damage. No assertion that this applies to every hit, every damage type, spells, DoTs or other specific damage channels was printed here. Those stronger applications are not reconstructed."
+            },
+            {
+              "section": "Buffs / complete variety table",
+              "printed_column_headers": [
+                "Type",
+                "Theme",
+                "Tier 1",
+                "Tier 1",
+                "Tier 2",
+                "Tier 3",
+                "Tier 3",
+                "Vulnerability"
+              ],
+              "unique_column_keys": [
+                "type",
+                "theme",
+                "tier1_a",
+                "tier1_b",
+                "tier2",
+                "tier3_a",
+                "tier3_b",
+                "vulnerability"
+              ],
+              "rows_exact_in_printed_column_order": [
+                [
+                  "Aboreian [ sic ]",
+                  "Arborea - land of righteous anger and passion",
+                  "True Sight",
+                  "Second Wind",
+                  "Mind Block",
+                  "Last Stand",
+                  "Great Sundering",
+                  "None"
+                ],
+                [
+                  "Archeron [ sic ]",
+                  "Acheron - land of endless battle - pro melee and missile",
+                  "Fortification Bonus",
+                  "Great Sundering",
+                  "Second Wind",
+                  "Dodge Bypass",
+                  "Fortification Bypass Bonus",
+                  "None"
+                ],
+                [
+                  "Beast Mark",
+                  "Beastlands - animal instincts make me stronger and faster",
+                  "Dodge Bonus",
+                  "Dodge Bypass",
+                  "True Sight",
+                  "Second Wind",
+                  "Fortification Bypass Bonus",
+                  "None"
+                ],
+                [
+                  "Demon Soul",
+                  "Abyss - chaotic demon",
+                  "Demonic Energy Absorption",
+                  "True Sight",
+                  "Poison Damage on Hit",
+                  "Poison DoT",
+                  "Unknown",
+                  "Good"
+                ],
+                [
+                  "Elemental Fury",
+                  "Elemental Chaos - hostile plane where all the elemental planes combine",
+                  "Random Elemental Absorption",
+                  "Elemental Damage on Hit",
+                  "Random Non-Elemental Trait",
+                  "True Sight",
+                  "Fire DoT [ needs verification ]",
+                  "None"
+                ],
+                [
+                  "Fey Touched",
+                  "Feywild - blurry, nimble and immune to enchantments and illusions",
+                  "Blur",
+                  "True Sight",
+                  "Enchantment Ward",
+                  "Dodge Bonus",
+                  "Save Reduction",
+                  "None"
+                ],
+                [
+                  "Flame Born",
+                  "Elemental Plane of Fire",
+                  "Fire Damage on Hit",
+                  "Absorb Fire",
+                  "Deathblock",
+                  "Fire DoT",
+                  "True Sight",
+                  "Cold"
+                ],
+                [
+                  "Hero's Soul",
+                  "Ysgard - undying hero; Valhalla-ish",
+                  "Dodge Bonus",
+                  "Fortification Bonus",
+                  "Deathblock",
+                  "Unyielding Sovereignty",
+                  "Knockdown Immunity",
+                  "None"
+                ],
+                [
+                  "Infernal Pact",
+                  "Nine Hells - devilish and evil",
+                  "Devilish Energy Absorption",
+                  "True Sight",
+                  "Fortification Bypass Bonus",
+                  "Fire DoT",
+                  "Vulnerable on Hit",
+                  "Good"
+                ],
+                [
+                  "Light Bearer",
+                  "Mount Celestia - heavenly and lawful",
+                  "True Sight",
+                  "Unyielding Sovereignty",
+                  "Deathblock",
+                  "Uncanny Aim",
+                  "Light Damage on Hit",
+                  "Negative"
+                ],
+                [
+                  "Mark of Chaos",
+                  "Limbo - chaos means random type and number of effects",
+                  "Random",
+                  "Random",
+                  "Random",
+                  "Random",
+                  "Random",
+                  "Lawful"
+                ],
+                [
+                  "Mark of Law",
+                  "Mechanus - lawful clockworks, machine-like thinking",
+                  "Force Damage on Hit",
+                  "True Sight",
+                  "Guarded Mind",
+                  "Dodge Bypass",
+                  "Deathblock",
+                  "Chaotic"
+                ],
+                [
+                  "Pandemonium",
+                  "Pandemonium - I'm crazy, and I make you crazy",
+                  "Mind Block",
+                  "Slow Debuff on Hit",
+                  "Vulnerable on Hit",
+                  "Healing Debuff on Hit",
+                  "Displacement",
+                  "Lawful"
+                ],
+                [
+                  "Shadow Marked",
+                  "Shadowfell - negative energy",
+                  "Incorporeal",
+                  "Absorb Negative",
+                  "Deathblock",
+                  "Healing Debuff on Hit",
+                  "True Sight",
+                  "Light"
+                ],
+                [
+                  "Skyborn",
+                  "Elemental Plane of Air",
+                  "Electricity Damage on Hit",
+                  "Absorb Electricity",
+                  "Freedom of Movement",
+                  "Electricity DoT",
+                  "Deflect Arrows",
+                  "Acid"
+                ],
+                [
+                  "Soul of Cruelty",
+                  "Gehenna - land of greed and ambition",
+                  "Acid DoT",
+                  "True Sight",
+                  "Guarded Mind",
+                  "Improved Acid DoT",
+                  "See Invisibility",
+                  "None"
+                ],
+                [
+                  "Soul of Ice",
+                  "Elemental Plane of Water",
+                  "Cold Damage on Hit",
+                  "Absorb Cold",
+                  "Slow Debuff on Hit",
+                  "Cold DoT",
+                  "True Sight",
+                  "Fire"
+                ],
+                [
+                  "Soulless",
+                  "Carceri - My soul is locked in the prison plane, won’t you join me?",
+                  "Slow Debuff on Hit",
+                  "Slowed",
+                  "True Sight",
+                  "Save Reduction",
+                  "Uncanny Aim",
+                  "None"
+                ],
+                [
+                  "Stone Guard",
+                  "Elemental Plane of Earth",
+                  "Absorb Acid",
+                  "Absorb Piercing and Slashing",
+                  "Uncanny Balance",
+                  "Vulnerable on Hit",
+                  "True Sight",
+                  "Electricity"
+                ],
+                [
+                  "Stygian",
+                  "Hades - death and despair; don’t look back",
+                  "Deathblock",
+                  "Absorb Negative",
+                  "Slow Debuff on Hit",
+                  "Save Reduction",
+                  "Healing Debuff on Hit",
+                  "None"
+                ]
+              ],
+              "table_completeness": "All 20 displayed variety rows retained. The article itself states the count 20; this receipt does not use an inferred subset count in place of that statement.",
+              "table_notes": [
+                {
+                  "row": "Elemental Fury",
+                  "column_index_zero_based": 6,
+                  "printed_column": "Tier 3",
+                  "text": "Fire DoT [ needs verification ]",
+                  "verification_marker_help": "Requires verification in-game."
+                },
+                {
+                  "row": "Demon Soul",
+                  "column_index_zero_based": 6,
+                  "printed_column": "Tier 3",
+                  "text": "Unknown"
+                },
+                {
+                  "row": "Archeron [ sic ]",
+                  "requested_name_mapping": "The requested Acheron variety corresponds to the displayed Archeron [ sic ] row; its Theme explicitly names Acheron. Displayed spelling is not silently corrected."
+                },
+                {
+                  "row": "Aboreian [ sic ]",
+                  "note": "Displayed spelling and sic marker retained."
+                }
+              ],
+              "tier_application_limit": "The article says higher tiers gain extra abilities on top of the basic set. Printed repeated Tier 1 and Tier 3 columns are retained as separate cells. No unseen buff magnitude, duration, DC, cooldown or proc rule is supplied by these names."
+            },
+            {
+              "section": "Buffs / event and special Champion qualification",
+              "introductory_text": "There are also four unique event champions (see the event pages for details):",
+              "bullets": [
+                {
+                  "text": "Ghost of Crystal Cove from Treasure of Crystal Cove"
+                },
+                {
+                  "text": "Scourge of the Snowpeaks from the Snowpeaks Festival"
+                },
+                {
+                  "text": "Shadow of Mabar from The Night Revels"
+                },
+                {
+                  "text": "Psionic Thrall from Illithid Invasion",
+                  "nested_bullet": "This champion is the only type that can appear in Illithid Invasion's four quests - see the page for more."
+                }
+              ],
+              "hardcore_paragraph": "For the details of Special Champions which appear in Hardcore Server, see Monster Champion/Hardcore. (Note that as part of some events, such as 2021's Spooky Summer, Hardcore champions can appear on the main servers.)",
+              "hardcore_bullet": "These champions work slightly differently - most have no elemental vulnerability, and have all of their possible buffs regardless of Tier. They are often significantly more dangerous than their main server counterparts.",
+              "scope_limit": "These statements are explicitly about the special/event/Hardcore context, not a replacement for ordinary Champion tier rules."
+            },
+            {
+              "section": "Special appearance during special events",
+              "bullets": [
+                "During the Night Revels, Champions' crowns show a little jack o'lantern under the usual crown of fire.",
+                "During the Snowpeaks Festival, champions of all three tiers have the large tri-pointed crown with a central gem, however it is frosty (blue flame) rather than fiery."
+              ]
+            }
+          ],
+          "requested_varieties_index": [
+            {
+              "displayed_type": "Archeron [ sic ]",
+              "row_index_zero_based": 1
+            },
+            {
+              "displayed_type": "Beast Mark",
+              "row_index_zero_based": 2
+            },
+            {
+              "displayed_type": "Flame Born",
+              "row_index_zero_based": 6
+            },
+            {
+              "displayed_type": "Infernal Pact",
+              "row_index_zero_based": 8
+            },
+            {
+              "displayed_type": "Mark of Law",
+              "row_index_zero_based": 11
+            },
+            {
+              "displayed_type": "Pandemonium",
+              "row_index_zero_based": 12
+            },
+            {
+              "displayed_type": "Shadow Marked",
+              "row_index_zero_based": 13
+            },
+            {
+              "displayed_type": "Skyborn",
+              "row_index_zero_based": 14
+            },
+            {
+              "displayed_type": "Soul of Cruelty",
+              "row_index_zero_based": 15
+            },
+            {
+              "displayed_type": "Soul of Ice",
+              "row_index_zero_based": 16
+            }
+          ],
+          "exact_requested_effect_cells": [
+            {
+              "effect": "Dodge Bypass",
+              "occurrences": [
+                {
+                  "type": "Archeron [ sic ]",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_a"
+                },
+                {
+                  "type": "Beast Mark",
+                  "printed_tier": "Tier 1",
+                  "unique_column_key": "tier1_b"
+                },
+                {
+                  "type": "Mark of Law",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_a"
+                }
+              ],
+              "definition_limit": "Effect names and placement only; no numeric bypass magnitude or exact hit-check formula printed."
+            },
+            {
+              "effect": "Fortification Bypass Bonus",
+              "occurrences": [
+                {
+                  "type": "Archeron [ sic ]",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_b"
+                },
+                {
+                  "type": "Beast Mark",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_b"
+                },
+                {
+                  "type": "Infernal Pact",
+                  "printed_tier": "Tier 2",
+                  "unique_column_key": "tier2"
+                }
+              ],
+              "definition_limit": "No percentage or scope beyond the effect name supplied."
+            },
+            {
+              "effect": "Vulnerable on Hit",
+              "occurrences": [
+                {
+                  "type": "Infernal Pact",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_b"
+                },
+                {
+                  "type": "Pandemonium",
+                  "printed_tier": "Tier 2",
+                  "unique_column_key": "tier2"
+                },
+                {
+                  "type": "Stone Guard",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_a"
+                }
+              ],
+              "definition_limit": "No amount, stack cap or duration printed here."
+            },
+            {
+              "effect": "Healing Debuff on Hit",
+              "occurrences": [
+                {
+                  "type": "Pandemonium",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_a"
+                },
+                {
+                  "type": "Shadow Marked",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_a"
+                },
+                {
+                  "type": "Stygian",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_b"
+                }
+              ],
+              "definition_limit": "No reduction percentage, duration or healing-channel scope printed here."
+            },
+            {
+              "effect": "Deflect Arrows",
+              "occurrences": [
+                {
+                  "type": "Skyborn",
+                  "printed_tier": "Tier 3",
+                  "unique_column_key": "tier3_b"
+                }
+              ],
+              "definition_limit": "The link label is present. Exact avoidance rate, cooldown, direction or projectile applicability is not printed and is not inferred from the name."
+            }
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "status": "explicit_spawn_and_tier_rules",
+              "finding": "Hard has only Tier1, Elite Tier1/2, Reaper Tier1/2/3, with stated normal/orange spawn rates 6%/33% versus 9%/66%. Effective-level and no-spawn exceptions are retained; orange-name red crowns do not alone prove Tier3."
+            },
+            {
+              "status": "explicit_counts",
+              "finding": "The page explicitly states 20 varieties, 11/20 with magical-damage vulnerability, and True Sight counts 7/20,10/20,15/20 by tiers. Mark of Chaos random True Sight is expressly excluded from those tallies; four unique event champions are separately stated."
+            },
+            {
+              "status": "explicit_effect_placement_only",
+              "finding": "The complete table establishes the listed effect names, corresponding tier cells and vulnerabilities for each variety. It does not provide exact magnitudes, durations or formulas for every effect."
+            },
+            {
+              "status": "qualified_true_sight_rule",
+              "finding": "The prose says True Sight makes Invisibility ineffective against the Champions that have it. This is not turned into universal True Sight for all Champions or a new detailed concealment-bypass rule."
+            },
+            {
+              "status": "source_warning",
+              "finding": "Tier0 restriction to orange-named enemies needs verification; Elemental Fury Tier3 Fire DoT also needs verification. Both markers remain attached to the corresponding claims."
+            },
+            {
+              "status": "scoped_special_event_rules",
+              "finding": "Special/Hardcore buff and appearance exceptions remain distinct from normal table behavior; no event availability or current account gameplay is checked."
+            },
+            {
+              "status": "unresolved_internal_source_tally_discrepancy",
+              "finding": "The source-stated True Sight counts 7/10/15 differ from a cumulative literal-table consistency check of 7/9/14 (new cells by tier 7/2/5). The latter is conditional derived arithmetic, not a replacement for source prose or a certified in-game count. No explanation is inferred."
+            }
+          ],
+          "unknowns_and_limits": [
+            "An explicit all-hit or all-damage-channel Damage Boost rule is absent from this complete visible article body; I deal extra damage is not expanded into one.",
+            "Dodge and Fortification bypass percentages/formulas, vulnerability amounts/stack caps, elemental DoT magnitudes/ticks/durations and healing-debuff amounts/durations are not stated by the table labels.",
+            "Skyborn lists Deflect Arrows but its full mechanics are not present; no own feat/page follow-up was performed.",
+            "No numerical True Sight range or detailed concealment/incorporeality check order is established by this Champion page.",
+            "No source links with truncated hrefs were reconstructed or followed; the original forum citations were not independently read.",
+            "No safe-place, kiting, immunity or avoidance tactic is certified from this table.",
+            "Source values/rates are Wiki assertions, not new in-game testing, measured spawn samples or guarantees for every encounter.",
+            "Unresolved internal True Sight tally: stated prose 7/10/15 versus conditional cumulative literal-table check 7/9/14; Mark of Chaos is expressly excluded by the prose, and no random-trait explanation or correction is inferred."
+          ],
+          "internal_consistency_checks_separate_from_source": [
+            {
+              "status": "unresolved_internal_source_tally_discrepancy",
+              "source_stated_prose_counts_by_tier": [
+                7,
+                10,
+                15
+              ],
+              "denominator": 20,
+              "audit_method": "Count literal True Sight cells in the complete recorded 20-row table; retain both printed Tier 1 columns and both printed Tier 3 columns. Under the article's cumulative higher-tier reading, add later-tier occurrences to prior-tier occurrences. This is a derived consistency check, not a source-stated replacement tally or measured game behavior.",
+              "literal_table_new_occurrences_by_tier": [
+                7,
+                2,
+                5
+              ],
+              "conditional_cumulative_literal_table_counts_by_tier": [
+                7,
+                9,
+                14
+              ],
+              "source_limits": [
+                "The prose expressly excludes Mark of Chaos random True Sight from its counts. Random traits are not inferred to explain the mismatch.",
+                "See Invisibility is not counted as True Sight.",
+                "Exact prose and table cells remain unchanged. The source does not resolve this discrepancy; no corrected game count is asserted."
+              ]
+            }
+          ]
+        }
+      ],
+      "access_outcome": {
+        "normal_article_body_verified_readable": true,
+        "access_blocks_reported": [],
+        "historical_endpoints_opened": false
+      },
+      "blockers": []
+    },
+    {
+      "schema": "ddo-wiki-observed-source-receipt/1",
+      "batch": "DEFENSE-ENEMIES-02",
+      "created_at_utc": "2026-11-02T05:56:20.102447+00:00",
+      "receipt_scope": "Concealment and Incorporeal substantive rules, full percentage/source hierarchies, limits and bypasses as observed by the sole browser reader.",
+      "provenance": {
+        "method": "Transcription from inherited exact native Chrome accessibility outputs only. No browser, UI or network use by this public-page observation.",
+        "quote_policy": "Adjacent visible text and inline link labels joined with whitespace normalized. Original wording, percent headings, source-list nesting and conditions retained. Some link-label colons/spacing are normalized where labels were separate AX nodes. Ads/navigation and decorative images omitted.",
+        "timestamps": "Original capture body-read intervals and later metadata marks, not inferred from receipt creation time.",
+        "permalink_limit": "Observed normal-page Permanent link metadata only; no historical endpoint access or independent historical-byte verification.",
+        "no_changes": "No guide, repository, character, item, feat, skill, AP, settings or account choices/changes.",
+        "privacy": "No screenshots, unrelated browser/clipboard content, anonymous-author identifier or account data retained."
+      },
+      "sources": [
+        {
+          "title": "Concealment",
+          "requested_normal_url": "https://ddowiki.com/page/Concealment",
+          "observed_normal_url": "https://ddowiki.com/page/Concealment",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:51:22.986Z",
+            "completed_at_utc": "2026-11-02T05:51:28.628Z",
+            "heading_verified": "Concealment",
+            "article_content_verified": true,
+            "scope": "Complete substantive introduction, percentage/source hierarchy, Stacking effects and Debuff Concealment sections. capture emitted stored capture in two index-bounded chunks; neither was a new source read. Ads, decorative images and category/navigation chrome omitted."
+          },
+          "revision_metadata": {
+            "permanent_link": "https://ddowiki.com/index.php?title=Concealment&oldid=720325",
+            "oldid": "720325",
+            "initial_permanent_link_value": "…",
+            "footer_observation_interval_utc": [
+              "2026-11-02T05:51:22.986Z",
+              "2026-11-02T05:51:28.628Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:52:04.951Z",
+            "mark_semantics": "Timestamp sampled immediately before accessibility read of the copied public URL; no separate completion instant recorded.",
+            "method": "Fresh observed normal-page Permanent link control and Copy Link Address menu entry were used, result checked, and the copied public URL observed in the address field without Return. Normal address restored without historical navigation.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 09:03, October 12, 2026 (Update 81.4) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "earlier_body_bytes_independently_pinned": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Introduction",
+              "paragraphs": [
+                "Concealment in DDO refers to Concealment Miss Chance",
+                "It is one of the three major Miss chance checks in game, along with Incorporeal and Dodge, that can occur during an attack if the conditions for its occurance is met. Concealment comes in two forms:"
+              ],
+              "bullets": [
+                "A beneficial (buff) form that is applied to players and allies, through equipped items or effects, that forces enemy attacks on the beneficiary to include a check for Concealment Miss Chance.",
+                "An negative (debuff) form, that is an effect which is applied to enemies via a negative condition, forcing their attacks to include a check for Concealment on all those they attack whilst the negative condition persists."
+              ],
+              "following_paragraph": "When the trigger for Concealment is activated, the attack must pass a roll that is greater than the total amount of Concealment that is protecting the target. Generally, multiple concealment bonuses of the same type do not stack, whether beneficial or offensive in nature, only the greatest concealment number applies. Currently almost all of them use the same bonus type - enhancement. (A couple of special exceptions are listed in the Stacking effects section below.)"
+            },
+            {
+              "section": "Sources > Buff Concealment",
+              "note": "Note: All of these sources can be negated by True Seeing (spell)",
+              "permanent_effects": [
+                {
+                  "heading": "5% enhancement bonus to concealment",
+                  "entries": [
+                    "Dark Apostate enhancements: Core 2, Shadow Shrouding. Transformation."
+                  ]
+                },
+                {
+                  "heading": "10% enhancement bonus to concealment",
+                  "entries": [
+                    "Item effect: Dusk",
+                    "Dark Apostate enhancements: Core 3, Enhanced Shadowform I. Shadow Shrouding upgrade."
+                  ]
+                },
+                {
+                  "heading": "15% enhancement bonus to concealment",
+                  "entries": [
+                    "Dark Apostate enhancements: Core 4, Enhanced Shadowform II. Shadow Shrouding upgrade."
+                  ]
+                },
+                {
+                  "heading": "20% enhancement bonus to concealment",
+                  "entries": [
+                    "Item effects: Blurry, Smoke Screen",
+                    "Dark Apostate enhancements: Core 5, Enhanced Shadowform III. Shadow Shrouding upgrade.",
+                    "Deep Gnome enhancements: Tier 2, Permanent Blur",
+                    "Gnome enhancements: Tier 2, Permanent Blur",
+                    "Feydark Illusionist enhancements: Tier 2, Bend Light",
+                    "Warpriest enhancements: Core 4, War Caster: Blur",
+                    "War Soul enhancements: Core 4, War Caster: Blur",
+                    "Vile Chemist enhancements: Tier 2, Stone of the Subliminal. Requires an equipped Orb."
+                  ]
+                },
+                {
+                  "heading": "21% enhancement bonus to concealment",
+                  "entries": [
+                    "Item effect: Smoke Screen +21%"
+                  ]
+                },
+                {
+                  "heading": "22% enhancement bonus to concealment",
+                  "entries": [
+                    "Item effect: Smoke Screen +22%"
+                  ]
+                },
+                {
+                  "heading": "25% enhancement bonus to concealment",
+                  "entries": [
+                    "Item effect: Lesser Displacement",
+                    "Blightcaster Wild Shape, Hive Keeper",
+                    "Dark Apostate enhancements: Capstone, Master of Shadows. Shadow Shrouding upgrade.",
+                    "Enlightened Spirit enhancements: Tier 5, Displace Summons. Pets, Summons or Charmed Monsters only.",
+                    "Shifter enhancements: Tier 4, Exceptional Shifting - Wild Magic. While raging only. Requires Wildhunt Shifter."
+                  ]
+                },
+                {
+                  "heading": "27% enhancement bonus to concealment",
+                  "entries": [
+                    "Legendary Greensteel: Smoke Tier 3"
+                  ]
+                },
+                {
+                  "heading": "39% enhancement bonus to concealment",
+                  "entries": [
+                    "Item effect: Smoke Screen +39%"
+                  ]
+                },
+                {
+                  "heading": "40% enhancement bonus to concealment",
+                  "entries": [
+                    "Item effect: Smoke Screen +40%"
+                  ]
+                },
+                {
+                  "heading": "50% enhancement bonus to concealment",
+                  "entries": [
+                    "Blightcaster Wild Shape, Hive Master",
+                    "Dragon Lord enhancements: Tier 4, Untouchable Soul",
+                    "Feydark Illusionist enhancements: Tier 5, Permanent Displacement",
+                    "Pale Master enhancements: Tier 2, Cloak of Night. Requires blocking in Undead Shroud",
+                    "Tiefling Scoundrel enhancements: Tier 4, Sonata of Darkness. Requires standing in Obscuring Darkness (Tier 1 SLA)"
+                  ]
+                }
+              ],
+              "temporary_effects": [
+                {
+                  "heading": "20% enhancement bonus to concealment",
+                  "entries": [
+                    {
+                      "text": "Spell: Blur. 1 min/CL duration.",
+                      "nested_sources": [
+                        "Archmage enhancements: Core 2, Illusion II: Blur"
+                      ]
+                    },
+                    {
+                      "text": "Henshin Mystic enhancements: Tier 3, Kata of Wind. 90 sec CD, 60 sec duration, requires Path of Harmonious Balance. Works on friendly NPCs."
+                    }
+                  ]
+                },
+                {
+                  "heading": "25% enhancement bonus to concealment",
+                  "entries": [
+                    {
+                      "text": "Tabaxi Trailblazer enhancements: Tier 4, Escape Artist. 1 min CD, 20 sec duration. Triggers on tumbling."
+                    }
+                  ]
+                },
+                {
+                  "heading": "50% enhancement bonus to concealment",
+                  "entries": [
+                    {
+                      "text": "Spell: Displacement. 6 sec/CL duration.",
+                      "nested_sources": [
+                        "Archmage enhancements: Core 3, Illusion III: Displacement",
+                        "Eladrin enhancements: Tier 4, Winter Spell - Displacement",
+                        "Elf enhancements: Tier 3, Greater Dragonmark of Shadow. Dragonmark bonus.",
+                        "Enlightened Spirit enhancements: Tier 5, Displacement",
+                        "Shadar-kai enhancements: Tier 3, Displacement"
+                      ]
+                    },
+                    {
+                      "text": "Spell: Displacement Draught. 6 sec/CL duration"
+                    },
+                    {
+                      "text": "Spell: Shadow Walk. Lost if you interact/fight. 1 min/CL duration."
+                    },
+                    {
+                      "text": "Spell: Smoke Bomb. Lost if you interact/fight. 6 sec CD, 12 sec duration.",
+                      "nested_sources": [
+                        "Dark Hunter enhancements: Tier 4, Smoke Bomb. 25 sec CD, 12 sec duration."
+                      ]
+                    },
+                    {
+                      "text": "Dark Apostate enhancements: Tier 4, 5 sec duration, 180 sec CD, involuntary proc."
+                    },
+                    {
+                      "text": "Horizon Walker enhancements: Tier 3, Two Places at Once: 12 sec duration, triggers whenever Manyshot or Scattershot are used."
+                    }
+                  ]
+                },
+                {
+                  "heading": "95% stacking concealment",
+                  "entries": [
+                    {
+                      "text": "Feydark Illusionist enhancements: Capstone, Master Illusionist. 180 sec CD, 15 sec duration, affects entire party, infinite range."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "section": "Stacking effects",
+              "bullets": [
+                "Shadowdancer's Tier 3 enhancement Depths of Darkness gives a +25% concealment bonus while in Shadowdancer's Destiny Mantle. This stacks with your highest enhancement bonus to concealment.",
+                "Twilight's Cloak sentient filigree set: With 5 or more Twilight's Cloak filigrees equipped, you gain an extra 5% concealment."
+              ]
+            },
+            {
+              "section": "Debuff Concealment",
+              "paragraph": "Unlike the other above sources, none of these are negated by the True Seeing (spell). As stated above, none of the effects below stack with each other or any of the aforementioned \"buff\" effects, except where stated otherwise. Only the greatest effect applies.",
+              "cloud_rule": "All \"Cloud\" effects grant a 20% enhancement bonus to concealment to those standing inside of the cloud.",
+              "cloud_sources": [
+                {
+                  "text": "Level 1 Spell: Obscuring Mist. 30 sec duration.",
+                  "nested_sources": [
+                    "Tiefling enhancements: Tier 1, Obscuring Darkness",
+                    "Tiefling Scoundrel enhancements: Tier 1, Obscuring Darkness"
+                  ]
+                },
+                {
+                  "text": "Level 2 Spell: Fog Cloud. 40 sec + 2/CL duration."
+                },
+                {
+                  "text": "Level 3 Spell: Stinking Cloud. 40 sec + 2/CL duration."
+                },
+                {
+                  "text": "Level 4 Spell: Solid Fog. 40 sec + 2/CL duration. (Blocked by Freedom of Movement and Red/Purple named are immune)"
+                },
+                {
+                  "text": "Level 5 Spell: Cloudkill. 40 sec + 2/CL duration."
+                },
+                {
+                  "text": "Level 6 Spell: Acid Fog. 40 sec + 2/CL duration. (Blocked by Freedom of Movement and Red/Purple named are immune)"
+                },
+                {
+                  "text": "Level 8 Spell: Incendiary Cloud. 30 sec duration."
+                }
+              ],
+              "other_source": "Condition: Blindness. Attacked enemies have 50% concealment."
+            }
+          ],
+          "observed_full_normal_links": [
+            {
+              "label": "Miss Chance",
+              "url": "https://ddowiki.com/page/Miss_chance"
+            },
+            {
+              "label": "Incorporeal",
+              "url": "https://ddowiki.com/page/Incorporeal"
+            },
+            {
+              "label": "Dodge",
+              "url": "https://ddowiki.com/page/Dodge_bonus"
+            },
+            {
+              "label": "True Seeing (spell)",
+              "url": "https://ddowiki.com/page/True_Seeing_(spell)"
+            },
+            {
+              "label": "Blur",
+              "url": "https://ddowiki.com/page/Blur"
+            },
+            {
+              "label": "Displacement",
+              "url": "https://ddowiki.com/page/Displacement"
+            },
+            {
+              "label": "Shadowdancer",
+              "url": "https://ddowiki.com/page/Shadowdancer"
+            },
+            {
+              "label": "Blindness",
+              "url": "https://ddowiki.com/page/Blinded"
+            }
+          ],
+          "link_capture_limit": "Many enhancement-tree and filigree hrefs were visibly abbreviated with an ellipsis. Their rendered labels and rule text are captured, but those truncated hrefs are not reconstructed or followed.",
+          "interpretation_separate_from_source": [
+            {
+              "status": "explicit_roll_condition",
+              "finding": "When triggered, the attack must pass the Concealment miss-chance roll greater than the protecting concealment amount. The page does not supply a probability distribution, comprehensive check order or statistical-independence statement among AC, Concealment and Incorporeality."
+            },
+            {
+              "status": "explicit_default_and_exceptions",
+              "finding": "The default is highest same-type concealment, with the printed stacking exceptions preserved. Debuff effects also do not stack with each other or listed buff effects except where stated. A generic sum of Blur, Displacement and cloud values is not authorized."
+            },
+            {
+              "status": "explicit_bypass_distinction",
+              "finding": "Buff Concealment sources are stated to be negated by True Seeing (spell); the Debuff Concealment section explicitly says its sources are not. The distinction should not be erased into a claim that True Seeing defeats every listed concealment source."
+            },
+            {
+              "status": "explicit_selected_component",
+              "finding": "Horizon Walker Tier3 Two Places at Once is listed under the 50% Enhancement temporary-effect heading, with 12-second duration triggered by Manyshot or Scattershot. This is a component-source statement, not a claim of guaranteed uptime or a new AP choice."
+            },
+            {
+              "status": "scope_preserved",
+              "finding": "Conditional entries such as blocking in Undead Shroud, standing in Obscuring Darkness, raging with Wildhunt Shifter, pets/summons-only effects, and effects lost on interaction/fighting retain their conditions."
+            }
+          ],
+          "source_tensions_and_limits": [
+            "The Elf Greater Dragonmark of Shadow entry explicitly says Dragonmark bonus while appearing nested under the 50% Enhancement heading. Both hierarchy and wording are retained; no silent type harmonization or new stacking arithmetic is performed.",
+            "The 95% stacking concealment heading and its source conditions are recorded. No undocumented final cap or formula for multiple stacking exceptions is inferred.",
+            "The page describes attacks and conditions for triggering checks; it does not establish a blanket effect on every spell, damage-over-time tick or nonphysical damage source.",
+            "Listing Concealment alongside other major miss-chance checks does not alone prove independent random rolls or a check order among all defenses.",
+            "No tree, spell, filigree, item, Miss chance or previously captured Dodge page was opened by this receipt writer."
+          ]
+        },
+        {
+          "title": "Incorporeal",
+          "requested_normal_url": "https://ddowiki.com/page/Incorporeal",
+          "observed_normal_url": "https://ddowiki.com/page/Incorporeal",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:52:26.359Z",
+            "completed_at_utc": "2026-11-02T05:52:31.935Z",
+            "heading_verified": "Incorporeal",
+            "article_content_verified": true,
+            "scope": "Complete relevant substantive introduction, Implementation, monster examples, all player percentage/source sections and bypass rules. Initial emitted body was output-truncated near node294; a second stored-capture excerpt through node442 supplied the remainder. No new browser read timestamp is assigned to that output."
+          },
+          "revision_metadata": {
+            "permanent_link": "https://ddowiki.com/index.php?title=Incorporeal&oldid=677476",
+            "oldid": "677476",
+            "initial_permanent_link_value": "ddowiki.com/index.p…",
+            "footer_observation_interval_utc": [
+              "2026-11-02T05:52:26.359Z",
+              "2026-11-02T05:52:31.935Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:53:11.926Z",
+            "mark_semantics": "Timestamp immediately before copied-link accessibility observation; no separate completion instant recorded.",
+            "method": "Fresh normal-page Permanent link and Copy Link Address controls were used; result checked and copied public URL observed in address field without Return. Normal address restored without historical navigation.",
+            "footer_exact_visible_prefix": "This page was last modified 18:18, March 3, 2026 (Update 78) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "earlier_body_bytes_independently_pinned": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Introduction",
+              "paragraphs": [
+                "Incorporeal creatures cannot be easily hit with normal weapons, which suffer a 50% chance of automatically missing the target.",
+                "Concealment and Dodge are different mechanics that provide a separate miss chance. See Miss chance."
+              ]
+            },
+            {
+              "section": "Implementation in DDO",
+              "paragraph": "There's no such thing as touch attacks in DDO, which is how incorporeal undead attack in D&D. To compensate for this, developers gives them very high to-hit bonuses to simulate it. They can miss, but it takes substantial Armor Class to get it to be reliable."
+            },
+            {
+              "section": "Incorporeal monsters",
+              "intro": "Incorporeal creatures include:",
+              "bullets": [
+                "Ghosts",
+                "Quells",
+                "Reapers",
+                "Shadows",
+                "Spectres",
+                "Wraiths",
+                "some Wheeps - only those found in Accursed Ascension",
+                "some Monster Champions"
+              ],
+              "following_paragraph": "There are also unique, named monsters who have the incorporeal trait (many of which are of the above races), and sub-types of usually corporeal monsters such as Doomspheres, Dream Scourges, Umbral Gargoyles and Umbral Worgs, some Liches, and so on. These monsters are affected by Incorporeal bane weapons. Note that, despite the name, the Ghostly Skeletons in Delera's Tomb are not incorporeal."
+            },
+            {
+              "section": "Player characters as incorporeal",
+              "introductory_paragraph": "Players can gain an Incorporeal miss chance from various sources. However, note that Incorporeality and Concealment have decreased effect in Reaper difficulty. This reduction begins with 10% Concealment and 5% Incorporeal bypass at Reaper 1, with a further 5% Concealment and Incorporeal bypass per Skull difficulty.",
+              "percentage_source_groups": [
+                {
+                  "heading": "5%",
+                  "entries": [
+                    "Ascendant Shroud (Pale Master enhancement) - 5%",
+                    "Shadow Shrouding (Dark Apostate enhancement) - 5%"
+                  ]
+                },
+                {
+                  "heading": "10%",
+                  "entries": [
+                    "Fey Energy Tap (Elf enhancement, temporary effect)",
+                    "Ghostly (item enchantment)",
+                    "Shroud of the Wraith (Pale Master enhancement)",
+                    "Enhanced Shadowform I (Dark Apostate enhancement) - 10%, requires Shadow Shrouding",
+                    "Ghost in the Wind (Pale Master enhancement) (Stacks to 20% if you are also using Shroud of the Wraith)"
+                  ]
+                },
+                {
+                  "heading": "15%",
+                  "entries": [
+                    "Enhanced Ghostly (item enchantment)",
+                    "Misty Escape (SLA, Warlock level 15 with Fey pact, temporary effect)",
+                    "Enhanced Shadowform II (Dark Apostate enhancement) - 15%, requires Shadow Shrouding"
+                  ]
+                },
+                {
+                  "heading": "20%",
+                  "entries": [
+                    "Enhanced Shadowform III (Dark Apostate enhancement) - 20%, requires Shadow Shrouding"
+                  ]
+                },
+                {
+                  "heading": "25%",
+                  "entries": [
+                    "Dark Discorporation (Warlock spell, temporary effect)",
+                    "Shadow Veil (Ninja Spy 3rd core enhancement, temporary effect)",
+                    "Ghostly Essence (Shadar-kai enhancement, temporary effect)",
+                    "Shadar-kai past life feat (temporary effect)",
+                    "Depths of Darkness (Shadowdancer mantle upgrade, does not stack with Wraith form bonuses)",
+                    "The Shroud of the Wraith can be upgraded up to 25% incorporeal through enhancements in the Pale Master tree. (Ascendant Shroud + Ghost in the Wind)",
+                    "Master of Shadows (Dark Apostate capstone) - 25%, requires Shadow Shrouding",
+                    "Split the Soul (Light) (Grandmaster of Flowers epic moment, temporary effect) Doubled if following Path of Harmonious Balance"
+                  ]
+                },
+                {
+                  "heading": "50%",
+                  "entries": [
+                    "Shadow Mastery (Shadowdancer epic moment, temporary effect)",
+                    "Greater Form (Sky or Thorn) (Primal Avatar epic moment, temporary effect)"
+                  ]
+                },
+                {
+                  "heading": "+5% stacking",
+                  "entries": [
+                    "Whirlwind (Ranger enhancement)",
+                    "Subtle Force II (Eldritch Knight enhancement)"
+                  ]
+                },
+                {
+                  "heading": "Up to +6% stacking",
+                  "entries": [
+                    "Fey Presence +2/4/6% Incorporeality"
+                  ],
+                  "link_context": "Fey Presence link Help identified Shiradi Champion."
+                }
+              ]
+            },
+            {
+              "section": "Bypassing the incorporeal miss chance",
+              "bullets": [
+                {
+                  "text": "Ghost Touch and Ghostbane weapons bypass the Incorporeal penalty."
+                },
+                {
+                  "text": "Varous enhancements grant Ghost Touch",
+                  "nested_entries": [
+                    "Paladins can take the Slayer of Evil II enhancement, which provides Ghost Touch for all weapons.",
+                    "Wizards can get Undead Augmentation, which includes Unhallowed Touch, providing Ghost Touch for all weapons.",
+                    "Rangers and Elves who take the Arcane Archer Force Imbue enhancement gain force damage AND makes your arrows Ghost Touch.",
+                    "Wizards and Sorcerers who take Eldritch Knight Spellsword gain Ghost Touch on their weapons (even ranged ones!)",
+                    "Aasimar Scourges gain Ghost Touch on all attacks; requires active Bond of the Scourge and a proper enhancement.",
+                    "Vistani can gain an attack that grants Ghost Touch for 10 seconds."
+                  ]
+                },
+                {
+                  "text": "Players can wear an Ethereal or Ghostly item to have any of their weapons defeat Incorporeal.",
+                  "nested_entries": [
+                    "Ethereal items - Note, although the tooltip says this affects melee attacks, it also affects ranged weapon attacks. Tested as of Update 74, but may no longer be true.",
+                    "Ghostly items"
+                  ]
+                },
+                {
+                  "text": "Named Augments:",
+                  "nested_entries": [
+                    "ML1 (Red) - Ruby of Ghostbane",
+                    "ML8 (Green) - Wraithborn Emerald",
+                    "ML30 (Green) - Legendary Wraithborn Emerald"
+                  ]
+                },
+                {
+                  "text": "Epic Destinies",
+                  "nested_entries": [
+                    "Legendary Dreadnought: Esoteric Touch",
+                    "Shadowdancer: Shadowform (Destiny Mantle)"
+                  ]
+                },
+                {
+                  "text": "Epic Destiny feat Holy Strike"
+                }
+              ],
+              "following_tip": "Tip: Incorporeal Bane items increase the damage dealt to incorporeal enemies, regardless of their race. However, in itself, this enchantment does not allow a weapon to bypass incorporeal miss chance. On some named weapons, this Bane effect is combined with Ghost Touch enchantment.",
+              "named_item_examples": [
+                "Named Item: Phase Hammer provides Greater Incorporeal Bane.",
+                "Named Item: Assassin's Kiss provides Lesser Incorporeal Bane.",
+                "Named Item: Epic Assassin's Kiss provides Greater Incorporeal Bane."
+              ]
+            }
+          ],
+          "normal_link_capture_limit": "The body capture exposes numerous link labels and Help targets, but their hrefs are truncated (for example ddowiki.com/page/Gh…). Those hrefs are not reconstructed from labels, guessed or followed. The requested/observed normal article URL and later full Permanent link are complete.",
+          "interpretation_separate_from_source": [
+            {
+              "status": "explicit_weapon_miss_chance",
+              "finding": "The introduction gives normal weapons a 50% automatic miss chance against incorporeal creatures. This is distinct from the varied player-source values below, such as Ghostly10% and Enhanced Ghostly15%; it is not an assertion that every player incorporeality source grants 50%."
+            },
+            {
+              "status": "separate_mechanics_not_probability_proof",
+              "finding": "The source explicitly calls Concealment and Dodge different mechanics providing a separate miss chance. It does not state a full ordering of AC, Concealment and Incorporeal checks or prove their random rolls statistically independent. No product-of-survival-chances formula is certified."
+            },
+            {
+              "status": "explicit_reaper_bypass",
+              "finding": "The player section states Reaper1 bypass of 10% Concealment and5% Incorporeal, with a further5% for each per Skull difficulty. Exact wording is retained; no negative effective miss chance, uncited floor, or reconciliation with prior update warnings is invented."
+            },
+            {
+              "status": "scoped_source_stacking",
+              "finding": "The source expressly names stacking groups (+5% and up to+6%), Wraith combinations and Depths of Darkness not stacking with Wraith-form bonuses. These statements do not authorize adding every listed percentage together."
+            },
+            {
+              "status": "explicit_weapon_bypass",
+              "finding": "Ghost Touch/Ghostbane weapons bypass Incorporeal; specific other sources and their conditions are enumerated. The source explicitly says Incorporeal Bane alone increases damage without bypassing the miss chance."
+            },
+            {
+              "status": "preserved_ranged_caveat",
+              "finding": "Ethereal ranged applicability is reported as tested at U74 but may no longer be true. That caveat is retained, rather than upgrading the statement to a current universal guarantee."
+            },
+            {
+              "status": "scope_boundary",
+              "finding": "Normal weapons, attack bonuses and named weapon bypass sources are discussed. The source does not establish that all nonphysical damage or all spells are either affected or immune, and no such blanket conclusion is made."
+            }
+          ],
+          "unknowns_and_limits": [
+            "No explicit independent-roll or full check-order rule among AC, Concealment and Incorporeality appears in the captured relevant text.",
+            "The intro uses normal weapons; no complete damage-type taxonomy or rule for every spell, imbue and damage-over-time effect is supplied here.",
+            "Player-source percentages and Reaper bypass are source statements, not in-game tests or a selected build calculation.",
+            "Separate branches of the source list can require class, form, mantle, active bond, temporary activation or tree investment. They are not assumed simultaneously selected or active.",
+            "The native reader did not open linked tree/item/feat or historical endpoints for this receipt, and this writer performed no UI/network activity."
+          ]
+        }
+      ],
+      "cross_source_findings": [
+        {
+          "status": "supported_distinction",
+          "finding": "Concealment and Incorporeality are separate named miss-chance mechanics with their own conditions and bypasses. That distinction is not converted into a complete independence/order rule or an effective-HP product."
+        },
+        {
+          "status": "supported_bypass_scope",
+          "finding": "Concealment buff/debuff distinction controls the source-stated True Seeing bypass. Incorporeal weapon bypass is separately supplied by Ghost Touch/Ghostbane and listed specific sources; True Seeing is not substituted for Ghost Touch from these pages."
+        },
+        {
+          "status": "unresolved_damage_scope",
+          "finding": "The captured texts do not supply a universal physical-versus-all-other-damage rule. No claim that every spell is protected against, or bypasses these defenses, is inferred."
+        },
+        {
+          "status": "prior_context_not_reread",
+          "finding": "capture reports a previously captured Dodge independence rule. This receipt does not reread it and does not extend Dodge independence into unproven independence among AC, Concealment and Incorporeality."
+        }
+      ],
+      "access_outcome": {
+        "normal_article_bodies_verified": 2,
+        "actual_access_blocks_reported": []
+      },
+      "blockers": []
+    },
+    {
+      "schema": "ddo-wiki-observed-source-receipt/1",
+      "batch": "DEFENSE-ENEMIES-02",
+      "created_at_utc": "2026-11-02T05:59:20.892827+00:00",
+      "provenance": {
+        "method": "Local transcription from inherited exact supported native Chrome accessibility observations only. No browser, UI, network or independent source research by receipt public-page observation.",
+        "quotation_method": "Adjacent visible text and link labels joined in reading order; whitespace normalized. Source wording, qualifiers, hierarchy and clipped-prefix boundaries are retained. Ads, navigation and unrelated catalog entries omitted.",
+        "source_times": "Original body-read intervals and later permalink observation marks are retained separately from file creation time.",
+        "historical_endpoints_opened": false,
+        "historical_byte_identity_independently_verified": false,
+        "guide_repository_character_or_settings_changes": false,
+        "privacy": "No screenshots, unrelated browser/clipboard data, account data or transfer internals."
+      },
+      "sources": [
+        {
+          "title": "Ghost Touch",
+          "requested_normal_url": "https://ddowiki.com/page/Ghost_Touch",
+          "observed_normal_url": "https://ddowiki.com/page/Ghost_Touch",
+          "redirect_observed": false,
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:53:57.567Z",
+            "completed_at_utc": "2026-11-02T05:54:03.315Z",
+            "heading_verified": "Ghost Touch",
+            "article_content_verified": true,
+            "scope": "Complete relevant effect definitions (two displayed Ghost Touch headings), prefix/base-price field, and See also labels. The long Found on item catalog is excluded; its observed count is not represented as a transcribed or independently counted catalog. Stored-tree heading/tail inspection exposed no additional rule section after the catalog."
+          },
+          "revision_metadata": {
+            "permanent_link": "https://ddowiki.com/index.php?title=Ghost_Touch&oldid=650368",
+            "oldid": "650368",
+            "initial_permanent_link_value": "…",
+            "footer_observation_interval_utc": [
+              "2026-11-02T05:53:57.567Z",
+              "2026-11-02T05:54:03.315Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:54:35.503Z",
+            "mark_semantics": "Timestamp immediately before the accessibility read exposing the freshly copied public link in the address bar; no separate completion instant recorded.",
+            "method": "capture used the freshly observed normal-page Permanent link control and its observed Copy Link Address menu entry, checked the outcome, then read the copied public URL in the address field without pressing Return. The normal article address was restored without historical navigation.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 20:34, July 27, 2025 (Update 74.1.1) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "historical_byte_identity_independently_verified": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "See also",
+              "labels": [
+                "Ethereal",
+                "Ghostbane",
+                "Ghostly",
+                "Bypassing incorporeal"
+              ],
+              "link_target_help_for_last": "Incorporeal",
+              "href_scope": "Observed hrefs were truncated; labels retained without reconstructing URLs or opening linked pages."
+            },
+            {
+              "section": "Ghost Touch — first displayed heading",
+              "fields": {
+                "Type": "Prefix",
+                "Base price modifier": "+1"
+              },
+              "effect_exact": "An incorporeal creature's 50% chance to avoid damage does not apply to attacks with ghost touch weapons or ammunition.",
+              "complete_effect": true
+            },
+            {
+              "section": "Ghost Touch — second displayed heading",
+              "effect_exact": "An incorporeal creature's 50% chance to avoid damage does not apply to attacks with ghost touch weapons or ammunition.",
+              "following_label": "Found on:",
+              "following_observed_catalog_label": "(228) Ghost Touch items:",
+              "catalog_transcribed": false,
+              "catalog_limit": "The displayed count is source text only. Unrelated item names are excluded, and no full item catalog or count verification is claimed."
+            }
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "status": "explicit_bypass_rule",
+              "finding": "The stated incorporeal 50% avoidance does not apply to attacks using Ghost Touch weapons or ammunition. The exact rule covers weapons and ammunition, rather than only melee weapons."
+            },
+            {
+              "status": "scope_limit",
+              "finding": "The wording removes the stated Incorporeal avoidance for those attacks. It does not say that Ghost Touch bypasses Concealment, Dodge, AC or every other defense."
+            },
+            {
+              "status": "no_expansion",
+              "finding": "The definition does not establish a new general rule for all spell damage, all nonphysical damage, or the physical-versus-other components of a mixed attack. No such broader applicability is inferred."
+            }
+          ],
+          "unknowns_and_limits": [
+            "No roll order or statistical-independence formula is stated in the captured Ghost Touch rule body.",
+            "No weapon or augment was selected, equipped, inserted or changed.",
+            "The long source catalog is outside this focused rule receipt; no unobserved item property is inferred from catalog membership."
+          ]
+        },
+        {
+          "title": "Hate",
+          "requested_normal_url": "https://ddowiki.com/page/Threat",
+          "observed_normal_url": "https://ddowiki.com/page/Hate",
+          "redirect_observed": true,
+          "redirect_evidence": "Address field displayed ddowiki.com/page/Hate; article heading Hate and visible (Redirected from Threat) were captured.",
+          "body_observation": {
+            "started_at_utc": "2026-11-02T05:54:57.866Z",
+            "completed_at_utc": "2026-11-02T05:55:03.723Z",
+            "heading_verified": "Hate",
+            "article_content_verified": true,
+            "scope": "All relevant substantive sections captured in stored-tree slices: update warning, introduction, channels, Managing hate, enhancement/destiny/equipment modifiers, skills, special cases and 100%-reduction tests. One Managing hate accessibility node ends at character; its visible prefix is marked partial. No missing tail is reconstructed."
+          },
+          "revision_metadata": {
+            "permanent_link": "https://ddowiki.com/index.php?title=Hate&oldid=713587",
+            "oldid": "713587",
+            "initial_permanent_link_value": "…",
+            "footer_observation_interval_utc": [
+              "2026-11-02T05:54:57.866Z",
+              "2026-11-02T05:55:03.723Z"
+            ],
+            "permanent_link_observation_mark_utc": "2026-11-02T05:56:15.957Z",
+            "mark_semantics": "Timestamp immediately before the accessibility read exposing the freshly copied public URL; no completion instant invented.",
+            "method": "Fresh normal-page Permanent link copied via observed menu; copied public URL read in address field without Return. Address restored to the observed normal Hate URL without navigating the historical endpoint.",
+            "footer_exact_visible_prefix_with_author": "This page was last modified 17:43, September 13, 2026 (Update 81.2) [editor metadata omitted; see source history].",
+            "historical_endpoint_read": false,
+            "earlier_body_bytes_independently_pinned": false
+          },
+          "exact_source_sections": [
+            {
+              "section": "Update warning",
+              "text": "Warning: The information on this page might be inaccurate due to a game update. If you know any information on this page to be in error, please fix it by clicking the edit link above. If you can verify that all the information on this page has been updated correctly, please edit this page and remove this template. Reason: #Enhancements References to calculations may be out of date",
+              "qualifier": "#Enhancements is a displayed link label; its truncated href was not reconstructed.",
+              "handling": "Warning retained as source content. No edit or other suggested action performed."
+            },
+            {
+              "section": "Introduction",
+              "paragraphs": [
+                "Hate is the calculation of how much damage you've dealt to an NPC. In more recent updates, this is often referred to as Threat. The player having dealt the most damage to that NPC will be the target of his attacks and spells. At first, the NPC attacks are directed to the first one he saw, but as soon as he has been dealt damage by a player, the NPC may redirect his attack to the one at the top of his hate list. Each NPC has its own hate list of each known enemy, paired with the degree to which it hates that character. The list is constantly sorted by hate, and whoever is at the top of the list is chased and attacked. Any character who drops below 1 HP is removed from the list.",
+                "The ability to generate and retain hate of an enemy (whether you want the attention or not) is often known as \"aggro\"."
+              ],
+              "complete_rule_text": true
+            },
+            {
+              "section": "Types of Hate",
+              "paragraphs": [
+                "There are three distinctly different channels of hate: Melee, Missile (aka \"Ranged\"), and Magic*.",
+                "(* Magic attacks that are made from a distance are still \"Magic\", not \"Ranged\")",
+                "If something that alters hate generation specifies one or two of those but not the third it should be assumed to specifically not affect all three. If something generically states that it \"Increases/Decreases Hate generation\", then it should be assumed to affect all three (unless there is a bug either with the text or the actual effect)."
+              ],
+              "following_source_marker": "(DDO Forums UPDATE ME!)",
+              "source_link_status": "The forum href was truncated and not opened.",
+              "scope": "The source itself frames the channel interpretation as an assumption and includes bug and update caveats."
+            },
+            {
+              "section": "Managing hate",
+              "visible_paragraph_prefix": "When two players are attacking the same NPC, with no other factors in play, the one dealing the most damage will be the target of its attacks. However, the character dealing the most damage is often not best equipped to withstand these attacks. For this reason, enhancements exist to allow characters with high health and low damage to draw more attention from monsters, and more fragile players to draw less. These factors stack additively - your exact bonus can be seen in the Melee Combat tab of the character",
+              "completeness": "Partial final accessibility node; the paragraph ends at character in the captured output.",
+              "complete_relevant_additive_clause": "These factors stack additively",
+              "truncation": {
+                "parent_ax_node": 185,
+                "last_visible_text": "the Melee Combat tab of the character",
+                "unobserved_tail_reconstructed": false
+              },
+              "rule_limit": "The explicit additive clause is intact, but remains subject to the page calculation-update warning. No missing final word or fuller formula is supplied."
+            },
+            {
+              "section": "Managing hate > Enhancements",
+              "paragraph": "A few enhancements have been introduced to either increase the hate you do per damage dealt or to reduce the hate per damage dealt. Characters that are better suited to withstand attacks and/or spells may be attracted to those which increase the hate. Characters less suited for it, mostly for low hit points or low Armor Class reasons, may be attracted to those which reduce hate."
+            },
+            {
+              "section": "Enhancements > Increases hate > Races",
+              "bullets": [
+                "Dragonborn enhancements: Brute Fighting - Increases hate by 25/50/75% per melee hit, when active.",
+                "Dragonborn enhancements: Brutal Spellcasting - Increases hate by 25/50/75% for damaging spells",
+                "Half-Orc enhancements: Brutal Fighting - Increases hate by 25/50/75% per melee hit, when active.",
+                "Half-Orc enhancements: Brutal Spellcasting - Increases hate by 25/50/75% for damaging spells",
+                "Warforged enhancements: Brute Fighting - Increases hate by 25/50/75% per melee hit, when active."
+              ]
+            },
+            {
+              "section": "Enhancements > Increases hate > Classes",
+              "ordered_entries": [
+                {
+                  "text": "Sacred Defense/Stalwart Defense: Provides 150% bonus to melee threat generation when active."
+                },
+                {
+                  "text": "Sacred Defender enhancements: Divine Righteousness - Increases hate by 200% per hit, temporarily. (1 minute duration per use)."
+                },
+                {
+                  "text": "Bug: Only provides +100% threat to ranged combat and spellcasting; offers no threat increase to melee combat.",
+                  "structure_note": "Displayed as a separate definition-list note immediately following Divine Righteousness; placement preserved without resolving the described bug against other sources."
+                },
+                {
+                  "text": "Sacred Defender enhancements: Commanding Presence gives 50/100/150% bonus to melee threat generation."
+                },
+                {
+                  "text": "Sacred Defender enhancements: Inciting Defense gives 150/300/450% bonus to melee threat generation."
+                },
+                {
+                  "text": "Stalwart Defender enhancements: Threatening Countenance Increases hate by 60/120/180% per melee hit."
+                },
+                {
+                  "text": "Stalwart Defender enhancements: Inciting Defense gives 150/300/450% bonus to melee threat generation."
+                },
+                {
+                  "text": "Monk stances: The four Mountain Stances increase threat by 25%, 40%, 55% and 70%, respectively."
+                },
+                {
+                  "text": "Ki Shout: This Henshin Mystic Monk ability uses the Concentration skill for an Intimidate effect."
+                },
+                {
+                  "text": "Nature's Protector enhancements: Fierce Defense (Improved Natural Defense Multi Selector) - While in Nature's Defense stance, you gain 150/300/450% competence bonus to melee threat."
+                },
+                {
+                  "text": "Nature's Protector enhancements: Beast Unleashed - While in under the effect of Barbarian rage and in Bear Form, you gain 50% increase to melee threat."
+                },
+                {
+                  "text": "Nature's Protector enhancements: Lightning Strikes the Mountain - If in bear form when using this attack, gain 100% increase to melee threat for 15 seconds. The bonus is doubled if you are in Nature's Defense Stance."
+                },
+                {
+                  "text": "Enlightened Spirit: +25%/50%/75% melee/spell hate"
+                }
+              ]
+            },
+            {
+              "section": "Enhancements > Reduces hate",
+              "bullets": [
+                "Thief Acrobat: Sly Flourish - Reduces the threat of all your attacks by 5/10/15%.",
+                "Thief Acrobat: Subtlety - Reduces the threat of all your melee attacks by 20%/30%/40%.",
+                "Ninja Spy: Subtlety: -20/30/40% threat generation with melee and ranged attacks.",
+                "Archmage: Subtle Spellcasting - Your damaging spells generate 10%/20%/30% less hate than they normally would.",
+                "Soul Eater: Subtle Spellcasting - Your attacks and spells generate 20/30/40% less hate, making enemies less likely to attack you.",
+                "Bombardier: Magical Subtlety: - 20/40/60% Threat with Spells.",
+                "Arcane Trickster: I Prefer Subtlety: - 10/20/30% Threat with Missiles and Spells."
+              ]
+            },
+            {
+              "section": "Epic Destinies > Increases hate",
+              "bullets": [
+                "Unyielding Sentinel: Commanding Presence - Increases all threat by 150/300/450%",
+                "Machrotechnic: Flash Drive - Increases all threat by 150/300/450%"
+              ]
+            },
+            {
+              "section": "Epic Destinies > Decreases hate",
+              "bullets": [
+                "Exalted Angel: Subtle Flame - Decreases spell threat by 10/20/30%",
+                "Magus of the Eclipse: Imperceptible Casting - Decreases spell threat by 10/20/30% (Doubled if you have Discipline feat).",
+                "Shadowdancer: Cover of Darkness -10/20/30% less threat from all sources.",
+                "Fatesinger: Pianissimo - You generate 15/25/35% less threat from all sources.",
+                "Shiradi: Queen's Diplomacy: 30% less threat from all sources."
+              ],
+              "missing_fields": "These list entries do not display AP/DP costs, full selection gates, duration/stance conditions beyond the printed Discipline condition, or named bonus types. None are invented."
+            },
+            {
+              "section": "Equipment > Increases hate",
+              "bullets": [
+                "Incite items",
+                "Vulkoor's Might and Greater Vulkoor's Might Set Bonus do 10% and 20% more Melee Threat, respectively.",
+                "Levik's Defender Set Bonus : 20% or 30%, depending on if the Set is Two-Piece, or Three-Piece.",
+                "Stalwart Defender Set Bonus does 15% extra melee threat.",
+                "Defender of Siberys Set Bonus does 15% extra melee threat.",
+                "Purple Dragon Knight Set Bonus does 10% extra threat.",
+                "Dragontouched Crafting has incite 10%, 15%, and 20% on Eldritch, Tempest, and Sovereign Runes, respectively.",
+                "Anathema has a hidden effect of 25% increased spell-based threat.",
+                "Ring of Lies has a similar hidden effect as Anathema, but only 15%"
+              ],
+              "source_link_warning": "Several distinct set labels in the captured source point to Vulkoor's Might according to Help text. Labels and source statements are retained without silently correcting targets or opening them."
+            },
+            {
+              "section": "Equipment > Reduces hate",
+              "bullets": [
+                "Diversion items for Melee Weapons",
+                "Mystic Diversion items for Spells",
+                "Distant Diversion items for Ranged Weapons",
+                "Stealth Strike Insight Bonus for both Spells and Ranged Weapons, 15% non-scaling",
+                "C:Occultation items for all threat - does not stack with any kind of Diversion item"
+              ],
+              "exact_type_scope": "Insight is explicitly written for Stealth Strike. No named bonus type is written for the three Diversion categories in these entries; their types are not inferred from category labels."
+            },
+            {
+              "section": "Skills",
+              "introductory_text": "In addition, skills can temporarily override the hate sorting:",
+              "bullets": [
+                {
+                  "text": "A successful Intimidate check on a monster will bring you to the top of the hate list."
+                },
+                {
+                  "text": "A successful Diplomacy check will bring you to the bottom of the hate list.",
+                  "nested_text": "A character with a Subtle Target item also gains -100% threat reduction for 60 seconds after a successful diplomacy roll."
+                },
+                {
+                  "text": "A successful Bluff check will reduce hate generated and opens the target for sneak damage."
+                }
+              ]
+            },
+            {
+              "section": "Special cases",
+              "introductory_text": "Although most monsters use the hate system as described, there are some exceptions:",
+              "bullets": [
+                {
+                  "text": "Several raid bosses have their own unique hate system.",
+                  "nested_bullets": [
+                    "The Warforged Titan randomly cycles between attacking each visible target. Notably, it is also completely immune to being intimidated.",
+                    "The Stormreaver clears his hate list each time he casts Reverse Gravity.",
+                    "The Forgewraith Titan will occasionally break from its hate target to fire Forgewraith Doom Skulls at any visible player not on the main platform.",
+                    "Aurgloroasa takes umbrage to anyone in her vision healing from negative damage, and will briefly break aggro to fire a negative healing debuff and a couple of blasts at them.",
+                    "Similarly, The Ghost Flame's unwarded form will ignore melee targets in favor of nearby spellcasters. Her warded form attacks randomly.",
+                    "The warded form of Death's Teeth doesn't have a hate list at all, picking the nearest target whenever it teleports and pursuing it relentlessly until it dies or Death's Teeth teleports again."
+                  ]
+                },
+                {
+                  "text": "Flesh Golems are chaotic and have randomized hate. They do not consider the damage dealt; they simply attack anyone in sight and change the target very often."
+                },
+                {
+                  "text": "Rust monsters prefer to attack Warforged."
+                },
+                {
+                  "text": "Maruts have special hate for level 20 Rogues with the old Cheat Death capstone (as the capstone was removed, this no longer has an in-game effect.)"
+                },
+                {
+                  "text": "Bearded Devils, Horned Devils, and Orthons seem to have random hate when there is a lack of Intimidate, especially Named monsters.",
+                  "qualifier_preserved": "seem"
+                },
+                {
+                  "text": "Monsters that can Teleport (e.g. Orthons), Burrow (e.g. Scorpions) or otherwise become briefly intangible (e.g. Ogre Magi) tend to reset aggro when they arrive. This can be especially problematic when said opponent is a raid boss or powerful enemy such as Suulomades, Zweilanar, or Zulkis Crowspire in Project Nemesis - be careful hitting these enemies with Damage over Time effects, as when they arrive back, they often take all of this damage at once, putting you straight at the top of the list.",
+                  "qualifiers_preserved": [
+                    "tend",
+                    "often"
+                  ],
+                  "source_tactical_advice": "The be careful sentence is source advice, not a proven universal reset rule or a tactic newly recommended by this receipt."
+                },
+                {
+                  "text": "Raid bosses have unique detection scripting to prevent indefinite hiding.",
+                  "following_source_marker": "[DDO Forums UPDATE ME!]"
+                }
+              ]
+            },
+            {
+              "section": "Tests with 100% threat reduction",
+              "quotation_attribution_visible": "Originally Posted by vryxnr",
+              "source_href_status": "The Source link was truncated in the accessibility output; not reconstructed or opened.",
+              "quotation_exact_visible_paragraphs": [
+                "it did completely reduce threat from spells like greater ruin it did completely reduce threat from initial damage of weapons (front numbers) it did completely reduce threat from sneak attacks it did completely reduce threat from special attacks such as Arrow of Discord, Leg Shot, Shoot Later, Hunts End, The Pluck of a String, etc)",
+                "it did NOT apply to Law on your Side Imbue damage it did NOT apply to Prism stance extra damage or effects it did NOT apply to the extra damage or procs from Inexorable Advance epic moment it did NOT apply to weapon extra damage such as Holy +6d6 good damage, etc."
+              ],
+              "quotation_completeness": "Both displayed text containers captured completely as shown; original external test protocol and context were not retrieved.",
+              "wiki_following_summary_heading": "In summary, Threat Reduction does not apply to the following",
+              "wiki_following_summary_bullets": [
+                "Imbues",
+                "Damaging Weapon Affixes and Procs",
+                "Spell Procs"
+              ],
+              "wiki_following_warning": "With this in mind, be aware that even -100% Threat Reduction will not protect you from being targeted by a boss, if your secondary effects deal too much damage!",
+              "evidence_distinction": "The quotation reports named tests; the Wiki then provides a broader summary. Both are retained as source assertions. Neither is independent in-game verification by the reader, nor a reconstructed universal formula."
+            },
+            {
+              "section": "See also",
+              "labels": [
+                "Intimidate",
+                "Diplomacy",
+                "Enhancements",
+                "Epic Destinies"
+              ],
+              "link_status": "Observed hrefs truncated; no links followed."
+            }
+          ],
+          "interpretation_separate_from_source": [
+            {
+              "status": "explicit_redirect",
+              "finding": "The requested Threat normal URL resolved to the normal Hate article. Metadata belongs to Hate713587, not an assumed separate Threat revision."
+            },
+            {
+              "status": "explicit_general_rule_with_warning",
+              "finding": "Managing hate explicitly says the described modifiers stack additively. This is affirmative combination evidence, not an absence-of-exclusion inference. The page also explicitly warns that references to calculations may be outdated; applicable channels, types and conditions must still be established."
+            },
+            {
+              "status": "scope_not_complete_formula",
+              "finding": "The article relates hate to damage and modifiers per damage, but supplies no complete numeric generation equation, base conversion coefficient, healing-threat coefficient, floor/clamp rule, or defined behavior below zero. No signed total, negative threat amount or multiplicative combination of unrelated modifiers is guessed."
+            },
+            {
+              "status": "explicit_channel_distinction_with_source_caveat",
+              "finding": "Melee, Missile/Ranged and Magic are distinct channels; a distant spell remains Magic. The article advises interpreting specific channel labels narrowly and generic hate wording as all three, while explicitly retaining possible bugs and an UPDATE ME! forum marker. This is not a new rule that healing is damage or has a known threat coefficient."
+            },
+            {
+              "status": "explicit_reducer_entries",
+              "finding": "The Destiny list gives spell-only Subtle Flame and Imperceptible Casting (the latter doubled with Discipline), and all-sources Cover of Darkness, Pianissimo and Queen's Diplomacy at their printed values. No hidden bonus type, cost, gate or full activation condition is inferred."
+            },
+            {
+              "status": "explicit_item_scope_and_limit",
+              "finding": "Diversion, Mystic Diversion and Distant Diversion are assigned melee, spell and ranged weapon scopes respectively. Stealth Strike is expressly Insight, 15%, non-scaling, for spells and ranged weapons. Occultation is explicitly nonstacking with any kind of Diversion item."
+            },
+            {
+              "status": "healing_unknown",
+              "finding": "The only captured healing-specific prose is the Aurgloroasa scripted negative-healing reaction. That special case does not establish general healing-threat generation, reduction, or the coverage of a specific all-sources reducer."
+            },
+            {
+              "status": "reported_tests_and_page_summary",
+              "finding": "The reported 100%-reduction tests distinguish primary spell/weapon/sneak/special-attack damage from named imbue/proc/extra-damage effects. The Wiki summary extends the warning to imbues, damaging weapon affixes/procs and spell procs. This source warns that 100% reduction does not ensure freedom from boss targeting; it is not proof that every possible effect has been tested."
+            },
+            {
+              "status": "special_case_boundary",
+              "finding": "Target sorting is not universal. Scripted bosses, randomized preferences, successful skill overrides and qualified reset behavior are retained, so a threat total alone is not converted into guaranteed aggro control or safety."
+            }
+          ],
+          "unknowns_and_limits": [
+            "No complete base-generation formula or general healing coefficient is printed in the captured substantive body.",
+            "No zero floor, negative-threat behavior, or final selected-build reduction total is established.",
+            "No current own-tree check was performed for the aggregate Destiny/enhancement entries; their exact values are retained even if another retained source differs.",
+            "No blanket numerical multiplication of reducers or conversion of every item/ability into the same channel is made.",
+            "One Managing hate paragraph is clipped after character. Its visible additive clause is intact and preserved, but the missing tail remains unknown.",
+            "External forum citations, current game state and the original test methodology were not read.",
+            "Ghost Touch bypass and Hate reduction are distinct rules; no cross-mechanic relationship is invented."
+          ]
+        }
+      ],
+      "cross_source_findings": [
+        {
+          "status": "supported_scoped_bypass",
+          "finding": "Ghost Touch explicitly removes the stated incorporeal 50% avoidance for attacks using Ghost Touch weapons or ammunition. It does not establish bypass of unrelated defenses."
+        },
+        {
+          "status": "supported_but_warned_additivity",
+          "finding": "Hate explicitly describes additive modifiers, with a calculation-update warning and specific channel/exception boundaries. A guessed final negative or multiplied total is not supplied."
+        },
+        {
+          "status": "unresolved_general_healing_and_formula",
+          "finding": "General healing threat, a full numeric generation equation and zero/negative handling remain unstated. Reported tests and special target-selection cases prevent interpreting 100% reduction as guaranteed safety."
+        }
+      ],
+      "access_outcome": {
+        "normal_article_bodies_verified_readable": 2,
+        "actual_access_blocks_reported": [],
+        "historical_endpoint_reads": 0
+      },
+      "blockers": []
+    }
+  ],
+  "synthesis": {
+    "batch": "DEFENSE-ENEMIES-02",
+    "created_at_utc": "2026-11-02T06:00:11.590078+00:00",
+    "scope": "Six requested public normal Wiki articles, sequential public-page observation. Threat visibly redirects to Hate. No extra monster, feat, tree or item articles opened.",
+    "findings": [
+      {
+        "id": "reaper-spawn-and-traits",
+        "source": "Reaper race717084",
+        "status": "source_rules_with_scope",
+        "mechanics": [
+          "Each enemy spawn may also produce a Reaper; chance rises with selected skulls. The Reaper appears at the associated enemy last location, even inaccessible, after about five seconds; it uses its own logic rather than special scripted enemy paths.",
+          "Since U81, monsters spawned by other monsters cannot trigger Reapers when they spawn or are slain. This exception does not establish a universal slain-enemy spawning algorithm.",
+          "All Reapers: Lawful Evil Outsider, Incorporeal, Deathblock, airborne immunity to Trip/Grease/Earthquake/other ground effects, Poison damage immunity. Other CC works normally in the general list, but Doom has an explicit all-CC immunity exception.",
+          "Regular Reapers: Tremor Sense through doors/walls/obstacles at18m, approaching to investigate; True Seeing locates players/NPCs at18m and shares locations with nearby allies. These are not Fear-aura radius numbers."
+        ],
+        "tactical_boundary": "Spawn location and sensing statements do not prove that a ledge, wall, doorway or other proposed safe place prevents attacks."
+      },
+      {
+        "id": "regular-reaper-effects",
+        "source": "Reaper race717084 Regular Reapers",
+        "status": "source_rules_and_numeric_gaps",
+        "mechanics": {
+          "Carnage": "Strong melee focus; 20% Vulnerability stacks10 times for stated200%. This is a debuff total, not a complete final damage formula.",
+          "Famine": "Offensive spells; Doom Caster gains a stack every10 seconds. Slowing Touch slows movement and prevents tumbling after staying in melee range4 seconds. Teleports to target after lost LOS8 seconds.",
+          "Fear": "Fear of Death stacking area debuff every few seconds, increasing damage until killed; activated by LOS and proximity, not applied within a small inner radius. Somewhat strong melee and may move to retain LOS.",
+          "Plague": "Strong healing debuff for a time, melee focus, lost-LOS8-second teleport."
+        },
+        "unknowns": [
+          "Regular-Reaper per-type minimum skull thresholds are not individually printed.",
+          "Fear numeric outer range/inner radius and exact tick interval are absent.",
+          "Plague healing-reduction percentage/duration/stacking and Famine slowing magnitude/Doom Caster coefficient/cap are absent."
+        ],
+        "tactical_boundary": "Fear inner-radius exclusion is a debuff exception, not proof of complete safety or freedom from melee."
+      },
+      {
+        "id": "boss-reapers",
+        "source": "Reaper race717084 Boss Reapers",
+        "status": "source_rules_with_warning",
+        "mechanics": {
+          "Despair": "Orange name,5+skulls, melee/ranged despair, aura increases ally saves; periodic ally damage buff and enemy damage debuff each stack to5; Cloak of Despair grants great saving-throw advantage as written, without a numeric or D&D dice interpretation.",
+          "Vengeance": "Orange name,5+skulls; offensive Arcane spells; blue AoEs explode after a few seconds for heavy Evil damage; death buffs nearby allies with They Carry My Vengeance.",
+          "Doom": "Red name,7+skulls, all-CC immune, Binding Chain; Marks of Doom every few seconds, each increasing damage taken; at7 stacks next successful melee attack deals massive bonus damage."
+        },
+        "unknowns": [
+          "Vengeance circle numeric damage, save type/DC, radius/exact delay and death-buff magnitude/duration/range are not printed. Named ordinary spells do not establish circle save mechanics.",
+          "Despair aura numerical bonuses/radius/cadence and Doom damage/timing remain unspecified."
+        ],
+        "warning": "Doom Marks sentence and external post reference carry UPDATE ME!; not independently current-game tested."
+      },
+      {
+        "id": "champion-rates-tiers-counts",
+        "source": "Monster Champion723630",
+        "status": "explicit_prose_counts_and_table",
+        "facts": {
+          "minimum_effective_quest_level": 5,
+          "difficulty_examples": "Base level4 Hard, base level3 Elite/Reaper.",
+          "normal_monster_chance": {
+            "Hard": "6%",
+            "Elite_and_Reaper": "9%"
+          },
+          "orange_named_chance": {
+            "Hard": "33%",
+            "Elite_and_Reaper": "66%"
+          },
+          "tiers": {
+            "Hard": [
+              1
+            ],
+            "Elite": [
+              1,
+              2
+            ],
+            "Reaper": [
+              1,
+              2,
+              3
+            ]
+          },
+          "normal_varieties_stated": 20,
+          "varieties_with_extra_magical_vulnerability_stated": "11/20",
+          "True_Sight_counts_stated": {
+            "Tier1": "7/20",
+            "Tier2": "10/20",
+            "Tier3": "15/20"
+          },
+          "True_Sight_count_exclusion": "Mark of Chaos may randomly receive True Sight and is excluded from those tallies."
+        },
+        "qualifiers": [
+          "No champions on Solo/Casual/Normal; exclusions and named raid/wilderness exceptions retained in receipt. Reapers and red-/purple-named enemies cannot be Champions.",
+          "Orange-named Champions always wear red crowns but can be Tier1/2/3 subject to difficulty. Normal/yellow champion crown distinctions differ.",
+          "Table explicitly has two Tier1 and two Tier3 columns; all20 rows and their themes/vulnerabilities are retained without flattening the tier alignment.",
+          "Occasional basic-buff-only Tier0 discussion is marked needs verification; Elemental Fury Fire DoT is also marked needs verification.",
+          "Four special event Champions and different Hardcore behavior are separate from normal20-variety rules."
+        ],
+        "table_scope": "All requested varieties are captured; Acheron is displayed as Archeron [sic] while its theme names Acheron. No unshown numerical buff values are supplied."
+      },
+      {
+        "id": "champion-buff-mechanics",
+        "source": "Monster Champion723630 Buffs table",
+        "status": "named_effects_supported_detailed_mechanics_missing",
+        "selected_cells": {
+          "Archeron_sic": "Tier1 Fortification Bonus/Great Sundering; Tier2 Second Wind; Tier3 Dodge Bypass/Fortification Bypass Bonus; Vulnerability None.",
+          "Beast_Mark": "Tier1 Dodge Bonus/Dodge Bypass; Tier2 True Sight; Tier3 Second Wind/Fortification Bypass Bonus; None.",
+          "Mark_of_Law": "Tier1 Force Damage on Hit/True Sight; Tier2 Guarded Mind; Tier3 Dodge Bypass/Deathblock; Chaotic vulnerability.",
+          "Infernal_Pact": "Tier1 Devilish Energy Absorption/True Sight; Tier2 Fortification Bypass Bonus; Tier3 Fire DoT/Vulnerable on Hit; Good vulnerability.",
+          "Pandemonium": "Tier1 Mind Block/Slow Debuff on Hit; Tier2 Vulnerable on Hit; Tier3 Healing Debuff on Hit/Displacement; Lawful vulnerability.",
+          "Flame_Born": "Tier1 Fire Damage on Hit/Absorb Fire; Tier2 Deathblock; Tier3 Fire DoT/True Sight; Cold vulnerability.",
+          "Soul_of_Ice": "Tier1 Cold Damage on Hit/Absorb Cold; Tier2 Slow Debuff on Hit; Tier3 Cold DoT/True Sight; Fire vulnerability.",
+          "Skyborn": "Tier1 Electricity Damage on Hit/Absorb Electricity; Tier2 Freedom of Movement; Tier3 Electricity DoT/Deflect Arrows; Acid vulnerability.",
+          "Soul_of_Cruelty": "Tier1 Acid DoT/True Sight; Tier2 Guarded Mind; Tier3 Improved Acid DoT/See Invisibility; None.",
+          "Shadow_Marked": "Tier1 Incorporeal/Absorb Negative; Tier2 Deathblock; Tier3 Healing Debuff on Hit/True Sight; Light vulnerability."
+        },
+        "limits": [
+          "Base champion Damage Boost is described only as I deal extra damage. No explicit all-hit/weapon-versus-spell rule or multiplier is exposed here.",
+          "Dodge/Fortification bypass amounts, vulnerability stacks/percentages, DoT amounts/ticks and healing debuff magnitude/duration are not provided by these table labels.",
+          "Deflect Arrows is named for Skyborn Tier3, without a numeric frequency or full attack-exclusion rule on this page.",
+          "The prose says True Sight makes Invisibility ineffective. Its named enchantment is not silently equated with every clause of the separately referenced True Seeing spell without applicable evidence."
+        ]
+      },
+      {
+        "id": "concealment",
+        "source": "Concealment720325",
+        "status": "explicit_rules_and_exceptions",
+        "rules": [
+          "Concealment is a triggered miss-chance check; the attack must roll greater than the protecting total. No die distribution or ordering formula is specified.",
+          "Buff form protects beneficiary; debuff form makes affected attackers check against targets. Same-type sources generally do not stack; highest applies, currently almost all Enhancement, with listed exceptions.",
+          "Buff Concealment sources can be negated by True Seeing (spell); listed Debuff Concealment sources cannot. Debuffs do not combine with each other or buff effects except as expressly stated; greatest applies.",
+          "Common examples: Blurry20%, Lesser Displacement25%, Displacement50% Enhancement. HW Two Places at Once is listed in50% group,12-second duration triggered by Manyshot or Scattershot.",
+          "Shadowdancer Depths of Darkness gives+25% while in its Destiny Mantle, explicitly stacking with highest Enhancement concealment. Twilight Cloak5+filigrees gives extra5%. Feydark capstone95% stacking is listed with15-second duration/180-second cooldown and party/infinite-range conditions.",
+          "Cloud effects are listed20% Enhancement for those inside; Blindness makes attacked enemies have50% concealment. Solid Fog/Acid Fog list Freedom of Movement blocking and red/purple-name immunity."
+        ],
+        "limits": [
+          "Exact source lists and conditions are retained in receipt; no new tree selection or aggregate build percentage is certified.",
+          "The50% temporary group contains an Elf Dragonmark bonus label despite the group Enhancement heading; both labels are preserved, not silently harmonized.",
+          "Physical-versus-all-spell damage taxonomy and an AC/concealment/incorporeal joint probability formula are not supplied."
+        ]
+      },
+      {
+        "id": "incorporeal-and-ghost-touch",
+        "sources": [
+          "Incorporeal677476",
+          "Ghost Touch650368"
+        ],
+        "status": "explicit_weapon_scope_bypass_and_source_limits",
+        "rules": [
+          "Incorporeal creatures cause normal weapons to automatically miss50%; creature list explicitly includes Reapers and some Champions. Player source percentages differ; Ghostly is10%, Enhanced Ghostly15%, several conditional25% and temporary50% entries are listed.",
+          "Concealment and Dodge are called different mechanics with separate miss chances. Separate does not itself specify statistical independence or roll order.",
+          "Incorporeal reports Reaper1 bypass10% Concealment/5% Incorporeal and further5% of each per Skull. Exact wording retained; no unprovided floor/cap treatment or full-skull result table invented.",
+          "Ghost Touch/Ghostbane weapons bypass Incorporeal; Ghost Touch own page expressly says the creature50% avoidance does not apply to attacks with Ghost Touch weapons or ammunition. This is a directly applicable weapon/ammunition rule.",
+          "Named enhancements/items/destinies/feat bypass sources and conditions are recorded. Ethereal ranged behavior carries tested-as-of-U74 but may-no-longer-be-true caveat. Incorporeal Bane alone does not bypass the miss chance.",
+          "Explicit player stacking and nonstacking exceptions are preserved, including Wraith combinations, Depths of Darkness not stacking with Wraith form bonuses, and separate+5/up-to+6 stacking headings."
+        ],
+        "limits": [
+          "No full rule classifying every nonphysical spell/effect is supplied. Do not claim these defenses prevent all spell damage or all physical damage simply from their names.",
+          "No inference that Ghost Touch bypasses Concealment, Dodge, AC or every defense.",
+          "capture-retained Dodge701065 independence rule is not reread and does not establish independence among the other checks. No combined avoidance multiplication is certified."
+        ]
+      },
+      {
+        "id": "threat-rules",
+        "source": "Hate713587, observed redirect from Threat",
+        "status": "explicit_rule_with_accuracy_warning",
+        "rules": [
+          "Separate channels: Melee, Missile/Ranged, Magic. Magic at a distance remains Magic, not Ranged. The page says named-channel modifiers affect only stated channels, generic modifiers assumed all3 unless text/implementation bug; this passage carries UPDATE ME!.",
+          "Each NPC has a hate list; first-seen targeting before damage, highest hate thereafter; below1HP removed. General descriptions relate hate to damage and modifiers to hate per damage. No complete numerical base conversion formula is printed.",
+          "Managing hate explicitly says These factors stack additively. This is a source combination rule, not an invented multiplicative model. The same page warns references to calculations may be out of date; the containing AX paragraph is clipped only after its later character-panel phrase, with the additive sentence intact.",
+          "Destiny reducers: Exalted Angel Subtle Flame10/20/30% spell; Magus Imperceptible Casting10/20/30% spell doubled with Discipline; Shadowdancer Cover10/20/30% all sources; Fatesinger Pianissimo15/25/35% all sources; Shiradi Queen Diplomacy30% all sources. These are this article values, not fresh own-tree verification.",
+          "Diversion is listed for melee weapons, Mystic Diversion for spells, Distant Diversion for ranged weapons. Stealth Strike explicitly Insight15% non-scaling for spells and ranged. Occultation is all threat and explicitly does not stack with any Diversion item.",
+          "Intimidate/Diplomacy/Bluff can override or alter hate sorting; special scripted enemies and aggro resets are explicitly described."
+        ],
+        "limits": [
+          "Destiny bonus-type labels and every activation prerequisite are not printed; do not invent them or silently harmonize values with retained tree sources.",
+          "No general healing-threat generation coefficient or explicit universal mapping of healing into the3attack channels is supplied. A boss-specific negative-healing reaction is not that rule.",
+          "No lower-bound/clamp behavior, permitted negative hate total, or complete chosen modifier set is established. Do not compute a negative total or treat general additive wording as immunity to targeting."
+        ]
+      },
+      {
+        "id": "threat-secondary-damage",
+        "source": "Hate713587 Tests with100%threat reduction",
+        "status": "reported_tests_and_wiki_summary",
+        "reported_test_scope": "Quoted vryxnr tests report full reduction for Greater Ruin, front weapon numbers, sneak attacks and several named special attacks; not for Law on your Side imbue, Prism extra damage/effects, Inexorable Advance extra damage/procs or Holy weapon extra damage.",
+        "wiki_own_summary": "The article summarizes exclusions as Imbues, Damaging Weapon Affixes and Procs, Spell Procs, and warns even -100% reduction can leave boss targeting from secondary damage.",
+        "limits": [
+          "Both the exact examples and broader Wiki summary are retained as source statements. They are not independent in-game testing by this audit or proof of every present effect implementation.",
+          "No multiplicative reduction model or healing coefficient is inferred from those tests."
+        ]
+      },
+      {
+        "id": "champion-true-sight-internal-tally",
+        "source": "Monster Champion723630",
+        "check_separate_from_source": {
+          "status": "unresolved_internal_source_tally_discrepancy",
+          "source_stated_prose_counts_by_tier": [
+            7,
+            10,
+            15
+          ],
+          "denominator": 20,
+          "audit_method": "Count literal True Sight cells in the complete recorded 20-row table; retain both printed Tier 1 columns and both printed Tier 3 columns. Under the article's cumulative higher-tier reading, add later-tier occurrences to prior-tier occurrences. This is a derived consistency check, not a source-stated replacement tally or measured game behavior.",
+          "literal_table_new_occurrences_by_tier": [
+            7,
+            2,
+            5
+          ],
+          "conditional_cumulative_literal_table_counts_by_tier": [
+            7,
+            9,
+            14
+          ],
+          "source_limits": [
+            "The prose expressly excludes Mark of Chaos random True Sight from its counts. Random traits are not inferred to explain the mismatch.",
+            "See Invisibility is not counted as True Sight.",
+            "Exact prose and table cells remain unchanged. The source does not resolve this discrepancy; no corrected game count is asserted."
+          ]
+        }
+      }
+    ],
+    "remaining_gaps": [
+      "Reaper exact Fear radii/ticks, Plague healing reduction/duration, Vengeance numeric circle damage/save and death-buff parameters, and several Despair/Doom magnitudes are absent from the race article.",
+      "Champion all-hit damage applicability/formula, numeric bypass/debuff/DoT mechanics and Deflect Arrows frequency are not supplied by the captured table.",
+      "No complete avoidance order/independence formula among AC, Concealment and Incorporeal, or universal physical/spell damage taxonomy.",
+      "Hate calculations are explicitly warned possibly outdated; healing formula, below-zero handling and full current selected reducer conditions/types remain unresolved.",
+      "Champion True Sight prose states 7/10/15 by tier; the recorded table yields 7/9/14 under a conditional cumulative literal-True-Sight check (7/2/5 new cells). Source prose and all table cells are retained unchanged. This unresolved tension is not explained by random traits or converted into a corrected game tally."
+    ],
+    "capture_limits": [
+      "Reaper initial loading observation excluded; original stored AX tail emitted to complete Doom section.",
+      "Ghost Touch228-item catalog is outside requested mechanic scope and not fully transcribed.",
+      "Hate Managing hate paragraph is AX-clipped after character; visible additive sentence is complete. No missing tail used.",
+      "Truncated public link targets remain truncated/unresolved unless recovered through the supported normal-page permalink copy method. No historical URL opened."
+    ],
+    "source_observation_policy": "Original body intervals and later permalink marks are retained separately; no new observation time fabricated from receipt creation.",
+    "access_blocks": [],
+    "guide_repo_character_or_settings_changes": false
+  },
+  "access_outcome": {
+    "normal_articles_read": 6,
+    "redirects_observed": {
+      "https://ddowiki.com/page/Threat": "https://ddowiki.com/page/Hate"
+    },
+    "blocks": [],
+    "denied_actions": [],
+    "pending_actions": [],
+    "uncertain_actions": [],
+    "historical_endpoints_opened": false
+  },
+  "remaining_evidence_gaps": [
+    "Reaper exact Fear radii/ticks, Plague healing reduction/duration, Vengeance numeric circle damage/save and death-buff parameters, and several Despair/Doom magnitudes are absent from the race article.",
+    "Champion all-hit damage applicability/formula, numeric bypass/debuff/DoT mechanics and Deflect Arrows frequency are not supplied by the captured table.",
+    "No complete avoidance order/independence formula among AC, Concealment and Incorporeal, or universal physical/spell damage taxonomy.",
+    "Hate calculations are explicitly warned possibly outdated; healing formula, below-zero handling and full current selected reducer conditions/types remain unresolved.",
+    "Champion True Sight prose states 7/10/15 by tier; the recorded table yields 7/9/14 under a conditional cumulative literal-True-Sight check (7/2/5 new cells). Source prose and all table cells are retained unchanged. This unresolved tension is not explained by random traits or converted into a corrected game tally."
+  ]
+}

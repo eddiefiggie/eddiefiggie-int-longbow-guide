@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"url\":\"https://ddowiki.com/page/Item:Dolorous_Quality_Constitution_(legendary)\",\"text\":\"Dolorous Quality Constitution\\nMinimum Level\\t34\\t\\n\\nRarity\\tNamed\\nBind status\\tBound to Account on Acquire\\nAugment Type\\tLamordia: Dolorous (Accessory)\\nDescription\\tSlotted Effect: +3 Quality bonus to Constitution.\\nBase Value\\t500pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nLegendary Viktranium Experiment Crafting, Ludendorf City Hall\\n\\nEnhancements\\t\\nQuality Constitution +3\"},{\"url\":\"https://ddowiki.com/page/Item:Woeful:_Quality_Seeker\",\"text\":\"Woeful: Quality Seeker\\nMinimum Level\\t34\\t\\n\\nRarity\\tNamed\\nBind status\\tBound to Character on Acquire\\nAugment Type\\tLamordia: Woeful (Accessory)\\nDescription\\tSlotted Effect: +3 Quality bonus to confirm critical hits, and damage (before multiplier) on critical hits.\\nBase Value\\t500pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nWicked Viktranium Experiment Crafting, Ludendorf Wax Museum (or the opening room of Relentless)\\n\\nEnhancements\\t\\nQuality Seeker +3\"}]"
+    }
+  ],
+  "isError": false
+}

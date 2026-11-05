@@ -1,0 +1,12 @@
+{
+  "observed_utc": "2026-11-01T13:44:00Z",
+  "tool_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"url\":\"https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2\",\"text\":\"Diamond of Festive Intelligence +2\\nMinimum Level\\t22\\t\\n\\nRarity\\tNamed\\nBind status\\tUnbound\\nAugment Type\\tColorless\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Intelligence.\\nBase Value\\t2,100 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nJoe Candymaker, Turn in 80 Pieces of Darkest Chocolate, 60 Spooky Almonds, 60 Black Apples, 60 Shadowy Caramels, 60 Pinches of Sinister Cinnamon\\n\\nEnhancements\\t\\nFestive Intelligence +2\\n\\nMaximum stack size\\t100\\nNotes\\tThis was released as a Diamond of Spooky Intelligence +2 (providing a Spooky bonus) in 2015, but the type of enhancement changed and the augment was renamed in 2016, as the bonus may be applied to other event items. Diamonds in TR caches may still show as \\\"Spooky\\\".\"},{\"url\":\"https://ddowiki.com/page/Item:Diamond_of_Festive_Constitution_%2B2\",\"text\":\"Diamond of Festive Constitution +2\\nMinimum Level\\t22\\t\\n\\nRarity\\tNamed\\nBind status\\tUnbound\\nAugment Type\\tColorless\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Constitution.\\nBase Value\\t2,100 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nJoe Candymaker, Turn in 80 Pieces of Darkest Chocolate, 60 Spooky Almonds, 60 Black Apples, 60 Shadowy Caramels, 60 Pinches of Sinister Cinnamon\\n\\nEnhancements\\t\\nFestive Constitution +2\\n\\nMaximum stack size\\t100\"},{\"url\":\"https://ddowiki.com/page/Item:Diamond_of_Festive_Dexterity_%2B2\",\"text\":\"Diamond of Festive Dexterity +2\\nMinimum Level\\t22\\t\\n\\nRarity\\tNamed\\nBind status\\tUnbound\\nAugment Type\\tColorless\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Dexterity.\\nBase Value\\t2,100 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nFlurry (NPC), Snowpeaks Festival event craftable augment\\n(20) I:Gold Snowpeaks Coin\\n(100) I:Silver Snowpeaks Coin\\nSnowpeaks Festival,\\n\\nEnhancements\\t\\nFestive Dexterity +2\\n\\nMaximum stack size\\t100\"}]"
+      }
+    ],
+    "isError": false
+  }
+}

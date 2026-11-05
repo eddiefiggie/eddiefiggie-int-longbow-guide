@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"url\":\"https://ddowiki.com/page/Item:Topaz_of_Ranged_Power_%2B14\",\"text\":\"Topaz of Ranged Power +14\\nMinimum Level\\t36\\t\\n\\nRarity\\tCommon\\nBind status\\tUnbound\\nAugment Type\\tYellow\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +14 Enhancement bonus to your Ranged Power. This augment can go in a Yellow, Green, or Orange Augment Slot.\\nBase Value\\t2,400 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\nRandall Lyric (Gravenhollow),\\n(48) I:Astral Shard\\nRandall Lyric (Gravenhollow),\\n(6000) I:Mysterious Remnant\\n\\nEnhancements\\t\\nRanged Power +14\\n\\nMaximum stack size\\t100\"},{\"url\":\"https://ddowiki.com/page/Item:Sapphire_of_Healing_Amplification_%2B63\",\"text\":\"Sapphire of Healing Amplification +63\\nMinimum Level\\t36\\t\\n\\nRarity\\tCommon\\nBind status\\tUnbound\\nAugment Type\\tBlue\\nDescription\\tDrag this augment into a slot to upgrade an item to provide a +63 Competence bonus to your Healing Amplification. This augment can go in a Blue, Green, or Purple Augment Slot.\\nBase Value\\t2,400 pp\\nWeight\\t0.01 lbs\\nLocations\\t\\n\\n\\n\\n\\n\\nEnhancements\\t\\nCompetence Healing Amplification +63\\n\\nMaximum stack size\\t100\"}]"
+    }
+  ],
+  "isError": false
+}

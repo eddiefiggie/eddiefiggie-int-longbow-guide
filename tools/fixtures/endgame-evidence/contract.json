@@ -1,0 +1,23 @@
+{
+  "base_commit": "4e94fb1274da0d4ffdbe105da382b8ddf9df43b7",
+  "base_tree": "e9520af57cab7b78c76711830dda1c3395e7f0d5",
+  "class_to_gear_sha256": "c69cad716788d954ad84f14f2de0d6be83a9bf3f0c2bc3785a2b881083255440",
+  "bow_model_section_sha256": "7cafe833c316fa45fa0c68ddfcc1caa1a7db7344d36ca4222ca804cfc7a18186",
+  "bow_model_file_sha256": "7d9e0843939310214d73b00e7e936ca4e842bf7bf0fc3f8da1b849e8c8faf236",
+  "source_ledger_sha256": "b75820817ded5b9cb5e1c32d6c34abab6c21f84ad437417e17e835c0c871ba1f",
+  "inventory_sha256": "b1b516c8932bae409e794371a1998fc004989931071dd506161e89c814767300",
+  "allowed_build_prose_corrections": [
+    {
+      "before": "Watchful Eye plus Shiradi’s Pierce Deception is +5% Doubleshot",
+      "after": "Watchful Eye plus Shiradi’s Pierce Deception is listed as +5% Doubleshot; the automatic grant and separate feat choice need the <a href=\"#pierce-deception-source-note\">source check below</a>"
+    },
+    {
+      "before": "with Watchful Eye (so from level 30 on this build)",
+      "after": "with Watchful Eye (<a href=\"#pierce-deception-source-note\">grant timing under review</a>)"
+    },
+    {
+      "before": "+20 Ranged Power; Pierce Deception’s 5% Doubleshot; paralyse;",
+      "after": "+20 Ranged Power; Pierce Deception’s listed 5% Doubleshot (<a href=\"#pierce-deception-source-note\">timing under review</a>); paralyse;"
+    }
+  ]
+}

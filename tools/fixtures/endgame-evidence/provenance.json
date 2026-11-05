@@ -1,0 +1,176 @@
+{
+  "guide_commit": "4e94fb1274da0d4ffdbe105da382b8ddf9df43b7",
+  "guide_blob": "3f6bdaec52853db8e094579eb34ffef694fe8d35",
+  "guide_sha256": "4ce848531237438cc660e2c1488742accbd3702e5cd335e140616f7f6775f0cb",
+  "fetched_utc_date": "2026-11-05",
+  "guide_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/4e94fb1274da0d4ffdbe105da382b8ddf9df43b7/index.html",
+  "fresh_wiki_requests": 0,
+  "scope": "Public source evidence with editor identity and internal review metadata omitted. Original captures retained privately; original and public identities are recorded in public-redaction.json. Source mechanics and revision links are preserved.",
+  "captures": [
+    {
+      "path": "retained/fresh-crafts.json",
+      "sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05",
+      "bytes": 177894
+    },
+    {
+      "path": "retained/fresh-endgame-b.json",
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "bytes": 127172
+    },
+    {
+      "path": "retained/fresh-endgame-a.json",
+      "sha256": "f62eb783a75b323f47c0d6387a937c0035aed52476115be7e18004031b60bb64",
+      "bytes": 32785
+    },
+    {
+      "path": "retained/named-augments-2.browser.json",
+      "sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+      "bytes": 2441
+    },
+    {
+      "path": "retained/final-compromise-named-gems.browser.json",
+      "sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+      "bytes": 3116
+    },
+    {
+      "path": "retained/baseline-items-1.browser.json",
+      "sha256": "3e06a5d15363d0eab153386b45cf83df66d8efd35b208b3b8e6b65d950fbb145",
+      "bytes": 3619
+    },
+    {
+      "path": "retained/final-compromise-common-augments-1.browser.json",
+      "sha256": "656d870c3c6953b33984a52784817bc8b6a8378a982004f39f16a2dda29e1464",
+      "bytes": 1883
+    },
+    {
+      "path": "retained/baseline-items-2.browser.json",
+      "sha256": "d85254d7b164e789c8ece57b56d9e3a3471367002c5a930cb8bd3a8065a9b548",
+      "bytes": 3310
+    },
+    {
+      "path": "retained/festive-augments.browser.json",
+      "sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+      "bytes": 2296
+    },
+    {
+      "path": "retained/attainable-survival-gems.browser.json",
+      "sha256": "8896afcb73318667c2f79c767bb769f7723a8cb38e2a9ba520c3376d90fc2625",
+      "bytes": 1559
+    },
+    {
+      "path": "retained/named-augments-1.browser.json",
+      "sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+      "bytes": 1986
+    },
+    {
+      "path": "retained/final-belt-crafts.browser.json",
+      "sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3",
+      "bytes": 1153
+    },
+    {
+      "path": "retained/baseline-items-3.browser.json",
+      "sha256": "27d98e1fb21d227f3e0c30bb115b450f76f65af18832e469fe64566817ce02b9",
+      "bytes": 4125
+    },
+    {
+      "path": "retained/baseline-quiver.browser.json",
+      "sha256": "1ce6858bfdd2ebd0ad2aecd0bd2cbdb0829913d38505661fda69a9d02655849a",
+      "bytes": 824
+    },
+    {
+      "path": "retained/final-compromise-augments.browser.json",
+      "sha256": "aac7d2d2461032d8f6867c954c66c3daca860da0b4000cee46405b96b7e815ba",
+      "bytes": 2016
+    },
+    {
+      "path": "retained/initial-armor.raw.json",
+      "sha256": "e365bd8253e6dfb7c81212efd88c768146374b7c1364f5b3d26a34ecbe71e95e",
+      "bytes": 11621
+    },
+    {
+      "path": "retained/source-calamitous.json",
+      "sha256": "2df7e1b512e2982edbfffb44bce6badad1662d288e32ca8f1770cbd3069e583e",
+      "bytes": 8986
+    },
+    {
+      "path": "retained/augment-colors.browser.json",
+      "sha256": "5687fbcc0b79c8d14820645a4000e9f96e9ed7edeb615416253e1056dec87f62",
+      "bytes": 2359
+    },
+    {
+      "path": "retained/final-compromise-common-augments-2.browser.json",
+      "sha256": "73ded9d2d7448a9ddb66704ed641270a4b5f06e7de504da74e09027c81f3354c",
+      "bytes": 1309
+    },
+    {
+      "path": "retained/heart-shard-solar-sneak.browser.json",
+      "sha256": "61065f64c72951630d42a34a0a4656dc2d4bede25de7554879990ca615f178b2",
+      "bytes": 1050
+    },
+    {
+      "path": "retained/armor-bow-crafting.browser.json",
+      "sha256": "8ddddc2ee9befaecba3893ffe06a5d0a619dd223ccf98210d09a93819badbe91",
+      "bytes": 52619
+    },
+    {
+      "path": "retained/greater-marksmanship.browser.json",
+      "sha256": "3550a8b4d6d81abaa8479eaea09090d0a422c88f2cbdcfc51bebd16176928eb6",
+      "bytes": 1222
+    },
+    {
+      "path": "retained/Stack.json",
+      "sha256": "423d8bf52b18c4b9d51b5e12bf8a6df00eb2f50323606b81f7376c70fd7b214f",
+      "bytes": 2901
+    },
+    {
+      "path": "retained/Doubleshot.json",
+      "sha256": "20863a35f19021e4d23496d24170bab96947bc5ff2c11908425791d4dd7fc154",
+      "bytes": 8552
+    },
+    {
+      "path": "retained/Ranged_Power.json",
+      "sha256": "8bf04593e315829f26032f36a89b5839d1888fb34b7421973a45ff58f745ed90",
+      "bytes": 6502
+    },
+    {
+      "path": "retained/Fortification.json",
+      "sha256": "644f9aa29e5453c66566e381d6f8bae95e3d9b05c9fa3c00176fdfbada2716b2",
+      "bytes": 8179
+    },
+    {
+      "path": "retained/Threat_range.json",
+      "sha256": "a4e836be9474093b6a3c116fc80e8b1a8f5df1083d74bead97eab3b3370204bd",
+      "bytes": 8985
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+      "sha256": "dfd4c246e04ace0dcf5ddcfad983f4e94fbbdd6192465237fd8ab083c0a90b6b",
+      "bytes": 64245
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-source-evidence-batch-2.json",
+      "sha256": "e46518ebdf26ee2340a65d9a5190a209a5dd21ea54e957e773e40455f7929a7d",
+      "bytes": 32625
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-defense-enemies-02-evidence.json",
+      "sha256": "7566478551c96a46ab96a0b8bc0f09d1c1e7cda242acea997be7eefc8cbaa394",
+      "bytes": 151445
+    },
+    {
+      "path": "retained/INTiana-DDO-Wiki-critical-power-rules-01-evidence.json",
+      "sha256": "b483b8d424216ad87fb19ab0cb8546e28c2b6b211b9a5305ff8b70a888a8e31c",
+      "bytes": 41483
+    },
+    {
+      "path": "retained/Fatesinger.saved.json",
+      "sha256": "3a29bd7c79c4688d03f18b4483d60d7c8bf0dfc9f2d177f5c0be210f3118bb09",
+      "bytes": 13245
+    },
+    {
+      "path": "retained/Shadowdancer.live.json",
+      "sha256": "0eec83c3445c5f226511773a19e2d742abad87b6b066493f5fdd5d9367d44f7b",
+      "bytes": 12421
+    }
+  ]
+}
