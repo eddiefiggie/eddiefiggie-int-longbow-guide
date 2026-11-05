@@ -39,3 +39,7 @@ Every section is checked line by line against the DDO wiki; see [AUDITS.md](AUDI
 ## Project maintenance
 
 See the [knowledge base](docs/knowledge-base/README.md) for build principles, evidence limits, open decisions, maintenance checks and a dated release checkpoint.
+
+## Crafting print reference
+
+`heroic-crafting-print.html` is generated from the three complete heroic crafting blocks in `index.html`, preserving their markup and pinned citations. After changing the Guide or its build stamp, run `python3 tools/build_crafting_sheet.py`; the full suite rejects a stale sheet. It excludes the session-only purchase checkoff. Actual print pagination must be reviewed separately from structural tests.

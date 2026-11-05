@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-05-26.2 (local candidate; unpublished)
+- Added a generated heroic crafting print reference containing the existing subtotal, full recipe and complete augment-handling checklist verbatim, plus build identity and printed pinned-source URLs.
+- Excludes session-only ownership state. Existing game guidance/model unchanged; actual rendered print QA pending.
+
 ## Build 11-05-26.1 (local candidate; unpublished)
 - Added an optional, session-only checkoff beside the existing heroic Calamitous subtotal. Checking an already-owned/unneeded purchase removes its listed ingredients from the remaining calculation; reset restores all four.
 - Uses the existing four source-backed purchases only. No inventory storage/transmission, new recipe, availability claim or model change. Original recipe and naming caveats preserved; exact-source browser QA pending.
