@@ -18,6 +18,14 @@
     {
       "before": "+20 Ranged Power; Pierce Deception’s 5% Doubleshot; paralyse;",
       "after": "+20 Ranged Power; Pierce Deception’s listed 5% Doubleshot (<a href=\"#pierce-deception-source-note\">timing under review</a>); paralyse;"
+    },
+    {
+      "before": "Pluck and Harmonic Resonance at 20-24, Pianissimo at 25; all 14 bought by 28",
+      "after": "In this Guide’s <a href=\"#levelling-roadmap\">roadmap</a>: Pluck at 22, Harmonic Resonance at 24, Pianissimo at 25; all 14 points bought by 28 (see <a href=\"#destiny-points-by-level\">DP order</a>)"
+    },
+    {
+      "before": ", and they are online at 20 where the build is weakest.",
+      "after": ". In this Guide’s <a href=\"#levelling-roadmap\">roadmap</a>, Fatesinger purchases start at 22 and all 14 points are bought by 28."
     }
   ]
 }
