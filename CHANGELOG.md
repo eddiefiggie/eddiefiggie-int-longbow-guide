@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-07-26.2 (local wording correction; unpublished)
+- Aligns the Fatesinger comparison timing cell and verdict with this Guide’s existing roadmap: purchases start at 22, Harmonic Resonance at 24, Pianissimo at 25, and all 14 points bought by 28. Links the roadmap and DP purchase order.
+- Adds source-plan consistency and negative regression checks; preserves the full selected build and purchase rows. This is an editorial correction, not a new Wiki audit or a claim about earliest live-game eligibility. Other comparison claims, equipment, crafting, augments and model outputs are unchanged.
+
 ## Build 11-05-26.5 (proposed local correction; unpublished)
 - Corrects endgame socket labels, nine-gem count, boots/belt effect attribution and the filled recipe’s derived CON33 while preserving all equipment, fills, crafting selections and enhancement/class choices.
 - Replaces inference from separate listings with retained-source rules and explicit gaps; flags Watchful Eye timing and Fatesinger conflicts, conditional RP/threat and Fortification limits. Adds a separately preserved 21-page browser evidence supplement, three newly pinned item receipts and the Blunted Ammunition damage-type definition; no live-game certification.
