@@ -1,0 +1,44 @@
+{
+  "finding": "A-019 / P3-GFE-001",
+  "source_id": "Q.E01-shadowstrike",
+  "canonical_url": "https://ddowiki.com/page/Shadowdancer",
+  "revision_url": "https://ddowiki.com/index.php?title=Shadowdancer&oldid=720964",
+  "revision": 720964,
+  "source_file": "tools/fixtures/endgame-evidence/retained/Shadowdancer.live.json",
+  "source_sha256": "0eec83c3445c5f226511773a19e2d742abad87b6b066493f5fdd5d9367d44f7b",
+  "original_relative_path": "intiana-audit-2026-11-01/trees/sources/Shadowdancer.live.json",
+  "original_sha256": "ab3c5298ae4058da84421ff0b900b6db4caacc66a39db197bc898335de1c84fe",
+  "text_sha256": "a282de27aa37629b337ccf0b1330b3eab933c258f37b7662f31b341c8c0ffb70",
+  "pointer": "/text",
+  "character_range": [
+    4245,
+    4592
+  ],
+  "excerpt": " Shadowstrike (AoE Ranged Attack): Epic Strike: Deals 30% Damage. +2 Critical Multiplier. +3 Critical Threat Range. Fire a single shot, hitting every enemy in an area around where the shot hits. On hit, opponent must make a Fortitude save vs (DC 20 + highest ability score + Assassinate Bonuses) or be cursed with Shadow Loss. Cooldown: 8 seconds.",
+  "operative_quote": "On hit, opponent must make a Fortitude save vs (DC 20 + highest ability score + Assassinate Bonuses) or be cursed with Shadow Loss.",
+  "body_observed_start": null,
+  "body_observed_end": null,
+  "current_game_observed": false,
+  "canonical_url_status": "canonical citation; original capture identifies title and revision, not a separate canonical-page observation",
+  "scope": "Shadowstrike on-hit Shadow Loss requires the struck opponent to fail the stated Fortitude save; no other effect adjudicated",
+  "guide_occurrences": [
+    {
+      "section": "shadowdancer-27",
+      "tag": "tr",
+      "baseline_line": 652,
+      "reviewed_text": "2Dance in the Dark 3, Lithe 2, Epic Strike: Shadowstrike (ranged)7+3 sneak dice; +4 Reflex, AC and light-armor Max Dex Bonus; AoE ranged strike with +30% damage, +2 multiplier, +3 threat range; Shadow Loss curse only if the struck opponent fails its Fortitude save"
+    },
+    {
+      "section": "abilities-explained",
+      "tag": "li",
+      "baseline_line": 1229,
+      "reviewed_text": "The epic strikes (from level 20) share one cooldown between them (Epic Destinies page: “all strikes share a cooldown”). The Pluck of a String (5 seconds) is the single-target one: +30% damage, +4 threat range, 2d10 Sonic per level, a stun on a critical, and it leaves a Chord of Fate on you, stacking to three. Arrow of Discord (15 seconds) is the cone that spends the Chords: +20% damage, +2 threat range, a stun of one second per Chord, and 10 spell points back at three. Shadowstrike (8 seconds) is the other cone: +30% damage, +2 multiplier, +3 threat range, Shadow Loss only if the struck opponent fails its Fortitude save (Shadowdancer page: “DC 20 + highest ability score + Assassinate Bonuses”), and with Dark Imbuement every hit you make for the next 10 seconds adds 1d6 per sneak die. Because they share a cooldown, the order matters: Pluck, Pluck, Pluck, then Discord on a boss; Shadowstrike first on a pack."
+    },
+    {
+      "section": "buttons-and-timers-wiki",
+      "tag": "tr",
+      "baseline_line": 1268,
+      "reviewed_text": "ShadowstrikeShadowdancer T28 s (shared epic-strike cooldown)AoE, +30% damage, +2 multiplier, +3 threat range; Shadow Loss curse only if the struck opponent fails its Fortitude save; Dark Imbuement then adds 1d6 per sneak die on every hit for 10 s"
+    }
+  ]
+}

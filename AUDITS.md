@@ -41,3 +41,15 @@ The frozen audit `7d6435e40acca22a8283fdca940f353f25006077` is reconciled onto p
 This is source reconciliation, not a new mechanics audit. The ledger, original source observations/hashes, classifications and evidence limits are unchanged. Its recorded original base remains audit provenance; it is not relabeled as the new reconciliation base. The Skull Constitution conflict remains excluded, and all selected build choices and complete model outputs remain preserved.
 
 A prior native-browser receipt sampled the integrated `a2eff256` candidate on desktop and an approximately 485-pixel-wide ordinary browser viewport. The reconciled current page differs from that source only in its displayed update date/build stamp, and the detailed audit is unchanged. That earlier receipt does not directly certify this new tree. Actual phone/touch rendering, print pagination and exhaustive visual review remain unverified; no new browser session was run for this reconciliation.
+
+## Shadowstrike save condition — 8 November 2026 (local A-019 candidate)
+
+The three curse descriptions now require the struck opponent's failed Fortitude
+save. The operative prose preserves the literal DC formula from retained
+[Shadowdancer revision 720964](https://ddowiki.com/index.php?title=Shadowdancer&oldid=720964).
+[Exact source and regression scope](evidence/shadowstrike-save/README.md) preserve
+the missing original observation time. This supersedes the unconditional curse
+wording and the 30 October no-errors conclusion only for this omission; it does
+not re-audit all Shadowstrike effects or certify current gameplay. Geometry,
+ranged damage, all selections and model outputs remain unchanged. Publication
+and rendered QA are separate from this local documentary correction.

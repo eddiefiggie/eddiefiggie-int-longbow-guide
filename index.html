@@ -82,7 +82,7 @@ h2 + p:first-of-type{font-size:1.02em}
 </head>
 <body>
 <main><h1>A Levelling Chassis That Can Run R10</h1>
-<p class="build"><span class="build-name">INT Longbow Guide</span><span class="build-stamp">Last updated 8 November 2026</span><span class="build-date">build 11-08-26.2</span></p>
+<p class="build"><span class="build-name">INT Longbow Guide</span><span class="build-stamp">Last updated 8 November 2026</span><span class="build-date">build 11-08-26.3</span></p>
 <p class="cover"><img alt="Cover art: an Intelligence archer in a torchlit temple" src="img/cover.jpg"></p>
 <p class="caption"><em>INTiana Jones and the Temple of Pew. The cover is the feeling of playing this character: it is a lot of fun.</em></p>
 <details id="find-your-place">
@@ -649,7 +649,7 @@ h2 + p:first-of-type{font-size:1.02em}
 <tbody>
 <tr><td>Cores</td><td>Shadow Training, Step Through Shadow, The Darkest Luck, Cut to the Soul</td><td>4</td><td>Each core +5 Ranged Power, +1 sneak die, +15 HP; Dimension Door SLA; Evasion upgraded to Improved Evasion; +3% dodge and fortification bypass</td></tr>
 <tr><td>1</td><td>Stealthy 1, Cover of Darkness 3</td><td>4</td><td>+1 Reflex; -30% threat and Nightshield. <strong>Trapper:</strong> Technician 1 in place of Stealthy 1 (note below)</td></tr>
-<tr><td>2</td><td>Dance in the Dark 3, Lithe 2, Epic Strike: Shadowstrike (ranged)</td><td>7</td><td>+3 sneak dice; +4 Reflex, AC and light-armor Max Dex Bonus; AoE ranged strike with +30% damage, +2 multiplier, +3 threat range, Shadow Loss curse</td></tr>
+<tr><td>2</td><td>Dance in the Dark 3, Lithe 2, Epic Strike: Shadowstrike (ranged)</td><td>7</td><td>+3 sneak dice; +4 Reflex, AC and light-armor Max Dex Bonus; AoE ranged strike with +30% damage, +2 multiplier, +3 threat range; Shadow Loss curse only if the struck opponent fails its Fortitude save</td></tr>
 <tr><td>3</td><td>Grim Precision 3, Shadowstriker, Dark Imbuement</td><td>7</td><td>15% fortification bypass; +5% Doubleshot and Doublestrike; 1d6 untyped per sneak die on hit for 10 seconds after the epic strike</td></tr>
 <tr><td>4</td><td>Pierce the Gloom 3, Bring Darkness</td><td>5</td><td>+3 to hit, immunity to Silence and Blindness; natural 20s apply Darkness (-3 PRR/MRR/SR per stack) and +1 sneak die</td></tr>
 </tbody>
@@ -1226,7 +1226,7 @@ h2 + p:first-of-type{font-size:1.02em}
 <li><strong>Sniper Shot</strong> (Deepwood Stalker core, 6 seconds). +20% damage, +4 to hit, +2 threat range and multiplier, and the target is “vulnerable to sneak attack” for 4 seconds, so the sneak dice land even on something that is looking straight at you. Use it on the Marked target between the other shots.</li>
 <li><strong>Elemental Inferno</strong> (Arcane Archer tier 2, 3 seconds). A cone shot that leaves a stacking fire burn on everything it touches. It is cheap and quick; fire it into any clump, then go back to the cycle.</li>
 <li><strong>Hunt’s End</strong> (Shiradi tier 3, 9 seconds, from level 23). +250% damage and an automatic critical. There is no save and nothing to line up: press it on cooldown at the Marked target.</li>
-<li><strong>The epic strikes</strong> (from level 20) share one cooldown between them (<a class="cite" href="https://ddowiki.com/page/Epic_Destinies">Epic Destinies page</a>: “all strikes share a cooldown”). <strong>The Pluck of a String</strong> (5 seconds) is the single-target one: +30% damage, +4 threat range, 2d10 Sonic per level, a stun on a critical, and it leaves a Chord of Fate on you, stacking to three. <strong>Arrow of Discord</strong> (15 seconds) is the cone that spends the Chords: +20% damage, +2 threat range, a stun of one second per Chord, and 10 spell points back at three. <strong>Shadowstrike</strong> (8 seconds) is the other cone: +30% damage, +2 multiplier, +3 threat range, a curse on everything it hits, and with Dark Imbuement every hit you make for the next 10 seconds adds 1d6 per sneak die. Because they share a cooldown, the order matters: Pluck, Pluck, Pluck, then Discord on a boss; Shadowstrike first on a pack.</li>
+<li><strong>The epic strikes</strong> (from level 20) share one cooldown between them (<a class="cite" href="https://ddowiki.com/page/Epic_Destinies">Epic Destinies page</a>: “all strikes share a cooldown”). <strong>The Pluck of a String</strong> (5 seconds) is the single-target one: +30% damage, +4 threat range, 2d10 Sonic per level, a stun on a critical, and it leaves a Chord of Fate on you, stacking to three. <strong>Arrow of Discord</strong> (15 seconds) is the cone that spends the Chords: +20% damage, +2 threat range, a stun of one second per Chord, and 10 spell points back at three. <strong>Shadowstrike</strong> (8 seconds) is the other cone: +30% damage, +2 multiplier, +3 threat range, Shadow Loss only if the struck opponent fails its Fortitude save (<a class="cite" href="https://ddowiki.com/page/Shadowdancer">Shadowdancer page</a>: “DC 20 + highest ability score + Assassinate Bonuses”), and with Dark Imbuement every hit you make for the next 10 seconds adds 1d6 per sneak die. Because they share a cooldown, the order matters: Pluck, Pluck, Pluck, then Discord on a boss; Shadowstrike first on a pack.</li>
 </ul>
 <p><strong>The bursts: windows you open on purpose.</strong></p>
 <ul>
@@ -1265,7 +1265,7 @@ h2 + p:first-of-type{font-size:1.02em}
 <tr><td>Hunt’s End</td><td>Shiradi T3</td><td>9 s</td><td>+250% damage, automatic critical</td></tr>
 <tr><td>The Pluck of a String</td><td>Fatesinger T1</td><td>5 s (shared epic-strike cooldown)</td><td>+30% damage, +4 threat range, 2d10 Sonic per level (doubled by Master the Acoustics), stun on critical; grants a Chord of Fate (stacks to 3)</td></tr>
 <tr><td>Arrow of Discord</td><td>Fatesinger T2</td><td>15 s (shared epic-strike cooldown)</td><td>AoE, +20% damage, +2 threat range; consumes Chords of Fate, stun 1 s per Chord, 10 SP back at 3</td></tr>
-<tr><td>Shadowstrike</td><td>Shadowdancer T2</td><td>8 s (shared epic-strike cooldown)</td><td>AoE, +30% damage, +2 multiplier, +3 threat range, Shadow Loss curse; Dark Imbuement then adds 1d6 per sneak die on every hit for 10 s</td></tr>
+<tr><td>Shadowstrike</td><td>Shadowdancer T2</td><td>8 s (shared epic-strike cooldown)</td><td>AoE, +30% damage, +2 multiplier, +3 threat range; Shadow Loss curse only if the struck opponent fails its Fortitude save; Dark Imbuement then adds 1d6 per sneak die on every hit for 10 s</td></tr>
 <tr><td>Inexorable Advance</td><td>Shiradi T5</td><td>5 min</td><td>30 s: +30 Ranged Power, no IPS damage penalty, Archer’s Focus builds while moving, Cold and Light procs</td></tr>
 <tr><td>Misty Step</td><td>Horizon Walker T5</td><td>12 s</td><td>Dash; +5 Reflex and 20% incorporeality while stepping; Ranged Power equal to level for 12 s on tumble or step</td></tr>
 <tr><td>Walker’s Guidance</td><td>Horizon Walker T4</td><td>60 s</td><td>You and one ally: Evasion, Improved Evasion, +5 saves vs traps for 12 s</td></tr>
