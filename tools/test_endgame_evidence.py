@@ -111,6 +111,9 @@ def validate_claims(html):
 
 def validate_preservation(html):
     chosen_build=span(html,'<h2 id="class-split">','<h2 id="gear">')
+    # A-016: allow only its exact optional prose, preserving the original hash.
+    from test_optional_mechanic import restore_mechanic_prose
+    chosen_build = restore_mechanic_prose(chosen_build)
     # Exact explanation-only cross-references qualify timing and kit-total claims.
     # After reversing exactly those edits, all choices and purchase rows must
     # still be byte-identical to the verified target tree.

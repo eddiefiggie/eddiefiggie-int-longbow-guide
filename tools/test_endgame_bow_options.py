@@ -86,6 +86,10 @@ def validate_choice(html):
 def validate_scope(html):
     """Reverse only the reviewed bow prose; every remaining byte equals main."""
     validate_choice(html)
+    # A-016 changes only its exact optional prose and the new build stamp.
+    # Keep every PR38 claim, mutation control and original baseline hash.
+    from test_optional_mechanic import restore_mechanic_release
+    html = restore_mechanic_release(html)
     for pattern in (r'<section id="endgame-bow-choice".*?</section>\n',
                     r'<p id="bow-ladder-endgame-choice">.*?</p>\n'):
         html, count = re.subn(pattern, '', html, flags=re.S)
