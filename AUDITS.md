@@ -53,3 +53,25 @@ wording and the 30 October no-errors conclusion only for this omission; it does
 not re-audit all Shadowstrike effects or certify current gameplay. Geometry,
 ranged damage, all selections and model outputs remain unchanged. Publication
 and rendered QA are separate from this local documentary correction.
+
+## Class-specific skill costs — 8 November 2026 (A-018)
+
+The [fresh transmitted source ledger](evidence/class-skill-costs/README.md)
+supports current-class 1-point class-skill / 2-point cross-class prices and
+named positive examples. Introductory prose, cost cells and life examples now
+follow that rule; Scourge's selected Ranger examples are non-exhaustive.
+Universal per-skill totals were removed without a new budget calculation.
+
+The normal-browser observations retain anonymous-cache limits and displayed
+revision metadata; historical revision pages and live gameplay were not tested.
+The implementing executor verified the transmitted ledger's byte identity,
+not the separate raw packet. Barbarian Balance and Dark Hunter Spot pricing
+remain unresolved; neither omission nor a category proves cross-class pricing.
+
+A-035's first-training and Scourge maximum-rank wording is deliberately outside
+this correction. The skill-budget paragraph, selected ranks/priorities and
+class progression are unchanged; A-014 and complete allocation feasibility
+remain uncertified. Exact reversal preserves the PR #39 page, optional Mechanic
+guidance, bow options, scripts/styles and all unrelated content. All earlier
+snapshots remain unchanged. Regression checks do not certify game mechanics;
+independent review and publication remain separate.

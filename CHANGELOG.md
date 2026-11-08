@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-08-26.6
+- Corrects skill-rank prices to follow the class currently being advanced, with named positive class examples and conditional cross-class costs. Reconciles introductory prose, cost cells, Bluff/Listen wording and life examples; qualifies Scourge's chosen Ranger examples as non-exhaustive.
+- Removes misleading universal per-skill cost totals without inventing new totals or changing targets, priorities, progression or the existing budget paragraph. A-035 first-training/maximum issues and whole-budget certification remain separate.
+- Retains the [transmitted source ledger and conflicts](evidence/class-skill-costs/README.md), adds focused negative and exact-preservation checks, and regenerates the snapshot and print stamp. The optional Mechanic guidance, Calamitous/Sinew options, all other build content and historical snapshots are preserved. Independent review and publication are separate.
+
 ## Build 11-08-26.5
 - Corrects only the optional Mechanic guidance: preserves Arbalester plus Mechanics 3 for 4 AP; gates the separate 7-AP extension on an already-qualified Rogue-2 life, Awareness 1 (1 AP, 5 spent) and then Skill Boost (2 AP).
 - Corrects Awareness 1 to its printed +1 skills, states the highest-Awareness-only overlap rule, preserves the separate +6 active boost for 20 seconds, and requires contemporaneous AP funding. No alternate levelling allocation or class change is established.

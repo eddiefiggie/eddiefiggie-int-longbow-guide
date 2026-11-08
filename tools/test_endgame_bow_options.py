@@ -86,6 +86,9 @@ def validate_choice(html):
 def validate_scope(html):
     """Reverse only the reviewed bow prose; every remaining byte equals main."""
     validate_choice(html)
+    # Preserve the original bow/Mechanic hashes after reversing only A-018.
+    from test_class_skill_costs import restore_cost_release
+    html = restore_cost_release(html)
     # A-016 changes only its exact optional prose and the new build stamp.
     # Keep every PR38 claim, mutation control and original baseline hash.
     from test_optional_mechanic import restore_mechanic_release

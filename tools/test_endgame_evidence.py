@@ -111,6 +111,9 @@ def validate_claims(html):
 
 def validate_preservation(html):
     chosen_build=span(html,'<h2 id="class-split">','<h2 id="gear">')
+    # A-018: reverse only the reviewed price prose; retain every prior hash.
+    from test_class_skill_costs import restore_cost_prose
+    chosen_build = restore_cost_prose(chosen_build)
     # A-016: allow only its exact optional prose, preserving the original hash.
     from test_optional_mechanic import restore_mechanic_prose
     chosen_build = restore_mechanic_prose(chosen_build)
