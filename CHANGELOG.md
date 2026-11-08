@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-08-26.4
+- Keeps Calamitous and adds Legendary Demogorgon’s Sinew as an endgame alternate across lives, with lawful/Paladin guidance, conditional effects, lost bow crafts and the existing ordinary augment configuration. Defense +40 makes either fully filled bow ML36.
+- Preserves the complete original equipment table, non-bow content, build choices and historical model outputs. Links the [transmitted 8 November source ledger and its limits](evidence/endgame-bow-options/README.md); no universal damage ranking, new optimizer result or live-game certification.
+- Adds bow-choice and exact-scope regression checks, regenerates the snapshot and print build stamp. Independent review, merge and live deployment verification remain separate.
+
 ## Build 11-08-26.3 (local A-019 candidate; unpublished)
 - Conditions Shadowstrike's Shadow Loss curse on the struck opponent failing its Fortitude save in the destiny table, active-ability prose and ability table. Preserves the literal Wiki DC formula once and links Shadowdancer directly.
 - Adds [retained-source provenance and focused regressions](evidence/shadowstrike-save/README.md) for revision 720964; the original observation time remains missing. No fresh Wiki or live-game certification.

@@ -128,7 +128,15 @@ def validate_preservation(html):
     assert chosen_build.count(shadow_after) == 1, 'A-019 exact reviewed correction'
     chosen_build = chosen_build.replace(shadow_after, shadow_before)
     assert sha(chosen_build.encode())==CONTRACT['class_to_gear_sha256']
-    assert sha(span(html,'<h3 id="bow-damage-model">','<h3 id="crafted-endgame-bow">').encode())==CONTRACT['bow_model_section_sha256']
+    model = span(html,'<h3 id="bow-damage-model">','<h3 id="crafted-endgame-bow">')
+    # The bow-only release changes only the concluding recommendation/link.
+    # Retain the historical hash for every assumption, table value and output.
+    scope = json.loads((ROOT/'tools/fixtures/endgame-bow-options/scope.json').read_text())
+    verdicts = [c for c in scope['reviewed_replacements']
+                if c['before'].startswith('<p><strong>Verdict by band:</strong>')]
+    assert len(verdicts) == 1 and model.count(verdicts[0]['after']) == 1
+    model = model.replace(verdicts[0]['after'], verdicts[0]['before'])
+    assert sha(model.encode())==CONTRACT['bow_model_section_sha256']
 
 class EndgameEvidenceTests(unittest.TestCase):
     def setUp(self): self.html=(ROOT/'index.html').read_text()

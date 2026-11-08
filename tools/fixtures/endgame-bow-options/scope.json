@@ -1,0 +1,27 @@
+{
+  "baseline_commit": "78feccf7567a86386b332a3d6ffed14e95bc7748",
+  "baseline_index_sha256": "e01b72ac3132c2235fdfcffe66cf7dd628583dc4367f434b67f04ffc41341a2d",
+  "baseline_endgame_table_sha256": "dae8395b121fb48bed8894e24ec83f1b083eb7ac75edab03e1264fe20cd88a54",
+  "reviewed_replacements": [
+    {
+      "before": "<p class=\"build\"><span class=\"build-name\">INT Longbow Guide</span><span class=\"build-stamp\">Last updated 8 November 2026</span><span class=\"build-date\">build 11-08-26.3</span></p>\n",
+      "after": "<p class=\"build\"><span class=\"build-name\">INT Longbow Guide</span><span class=\"build-stamp\">Last updated 8 November 2026</span><span class=\"build-date\">build 11-08-26.4</span></p>\n"
+    },
+    {
+      "before": "<tr><td><a href=\"#bow-ladder-levels-1-36\">Bows</a></td><td>By level band (damage model): heroic Calamitous Longbow or Silver Longbow 8, Thornlord 10, Alchemical Longbow 12, Bow of Sinew 14, Epic Thornlord 20, Pinion 23, Chaosbow or Aerania 28-29, a Dinosaur Bone or Attuned Bone Longbow with Meltscale 31, then at cap a Legendary Cataclysmic Longbow crafted with a Melancholic 16d6 slot; Legendary Demon’s Arc or The Faceless Lord’s Reach (ML35) and Aeon, the Blazing Reign (ML33) are the named-item steps.</td></tr>\n",
+      "after": "<tr><td><a href=\"#bow-ladder-levels-1-36\">Bows</a></td><td>By level band (damage model): heroic Calamitous Longbow or Silver Longbow 8, Thornlord 10, Alchemical Longbow 12, Bow of Sinew 14, Epic Thornlord 20, Pinion 23, Chaosbow or Aerania 28-29, a Dinosaur Bone or Attuned Bone Longbow with Meltscale 31, then <a href=\"#endgame-bow-choice\">Calamitous or Legendary Demogorgon’s Sinew with the existing endgame set</a>. Keep Calamitous for lawful/Paladin lives; Sinew is an alternate for neutral or chaotic lives. Both filled bow options require level 36 with the retained Defense +40 augment.</td></tr>\n"
+    },
+    {
+      "before": "<tr><td>34-35</td><td>The crafted Legendary Calamitous Longbow with Woeful Salt at 34 (Legendary Demon’s Arc at 35 if the crafting is not done)</td><td>The Skull of the Horned King, Abyssal Compass and Burrowing Claws at 35, the Cloak of Summer’s End at 36; swap the boots for elemental quests</td></tr>\n",
+      "after": "<tr><td>34-35</td><td>Calamitous from 34 or Legendary Demogorgon’s Sinew from 35 before the endgame augments; <a href=\"#endgame-bow-choice\">choose by the life’s alignment and the bow tradeoffs</a>. The retained Defense +40 makes either filled bow ML36</td><td>The Skull of the Horned King, Abyssal Compass and Burrowing Claws at 35, the Cloak of Summer’s End at 36; swap the boots for elemental quests</td></tr>\n"
+    },
+    {
+      "before": "<p><strong>Verdict by band:</strong> Silver Longbow at 8 (Calamitous if you have Ravenloft), Thornlord at 10, Alchemical Longbow at 12 if one drops, Bow of Sinew at 14, Epic Thornlord at 20, Pinion at 23, Chaosbow or Aerania at 28-29, an Attuned Bone or Dinosaur Bone Longbow with Meltscale at 31, Aeon at 33, Legendary Demon’s Arc at 35 (it is Bound to Account, so it is kept for every later life), and the crafted Cataclysmic Longbow when the Relentless Mementos are in hand.</p>\n",
+      "after": "<p><strong>Verdict by band:</strong> Silver Longbow at 8 (Calamitous if you have Ravenloft), Thornlord at 10, Alchemical Longbow at 12 if one drops, Bow of Sinew at 14, Epic Thornlord at 20, Pinion at 23, Chaosbow or Aerania at 28-29, an Attuned Bone or Dinosaur Bone Longbow with Meltscale at 31, Aeon at 33. For the current endgame set, use the <a href=\"#endgame-bow-choice\">Calamitous/Sinew choice by life</a>. The historical model above uses a different weapon/craft scenario; it does not settle this bow swap or establish a universal damage winner.</p>\n"
+    },
+    {
+      "before": "<p>The Lamordia bows are the endgame because of one slot: Melancholic Flames, 16d6 on every hit. The other three slots are chosen to avoid duplicating what the kit already carries.</p>\n",
+      "after": "<p>Calamitous remains the kit’s crafted endgame choice, with Melancholic Flames and the other three selected weapon crafts below. Keep those crafts on Calamitous when using <a href=\"#endgame-bow-choice\">Legendary Demogorgon’s Sinew as the alternate</a>.</p>\n"
+    }
+  ]
+}

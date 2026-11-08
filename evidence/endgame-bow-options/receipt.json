@@ -1,0 +1,15 @@
+{
+  "input_kind": "independent source reviewer ledger transmitted through parent task",
+  "received_date_utc": "2026-11-08",
+  "local_ledger_file": "source-ledger.md",
+  "local_ledger_sha256": "98df0bd8dc0a73a242eda20b88bc96e459d81d13dee501283d573b86c3da2ecd",
+  "reported_original_ledger_sha256": "cadc9a5d6f7117c2433617c513b9449c4093b4f0c72b59844ffdf2da7577abd6",
+  "original_ledger_byte_identity_verified": true,
+  "original_ledger_verification": "Retained 7290-byte file plus two LF bytes reproduces reported 7292-byte original SHA256; only trailing-newline normalization differs.",
+  "reported_raw_packet_name": "demogorgon-goldfinger-bow-options-publication-sources.json",
+  "reported_raw_packet_sha256": "3ab61c27d2bbb8b571a7e3e35fba5ced28fc2cd93186749a8820674730c3c57e",
+  "raw_packet_materialized_or_read": false,
+  "capture_method_reported_by_reviewer": "fresh current normal cloud-browser Wiki pages with body and hover text",
+  "historical_revisions_opened": false,
+  "live_game_test": false
+}
