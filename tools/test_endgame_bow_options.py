@@ -51,7 +51,7 @@ def validate_choice(html):
         'Elasticity adds +1 critical multiplier on confirmed natural 19/20 criticals',
         'does not widen threat range',
         'Paralyzing 117 allows a Will save and has immunities',
-        'does not make targets helpless',
+        'no helpless-damage benefit is assumed',
         'Anarchic excludes chaos-aligned creatures; Anarchic Burst lists damage against lawful enemies',
         'different target conditions; their joint damage is not established here',
         'Neither bow is a universal damage winner',
@@ -158,7 +158,8 @@ class EndgameBowOptionsTests(unittest.TestCase):
         receipt = json.loads((directory / 'receipt.json').read_text())
         self.assertEqual(receipt['local_ledger_sha256'], digest(source))
         self.assertFalse(receipt['raw_packet_materialized_or_read'])
-        self.assertFalse(receipt['original_ledger_byte_identity_verified'])
+        self.assertTrue(receipt['original_ledger_byte_identity_verified'])
+        self.assertEqual(digest(source + '\n\n'), receipt['reported_original_ledger_sha256'])
 
     def test_scope_rejects_gear_craft_augment_and_chassis_changes(self):
         for before, after in (

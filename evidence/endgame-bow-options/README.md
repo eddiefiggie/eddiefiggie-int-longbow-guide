@@ -20,9 +20,10 @@ The implementing task read the transmitted ledger. It did **not** materialize or
 read the separate raw-body/hover JSON packet named in that ledger. Its direct web
 tool attempts to open Wiki pages failed. The source reviewer supplied the original
 ledger and raw-packet hashes; [receipt.json](receipt.json) records those separately
-from the actual local transcription hash. The local transcription does not match
-the transmitted original checksum, so original ledger byte identity is unverified;
-the local hash protects this retained rendition, not the unseen original bytes.
+from the actual local transcription hash. The only difference is verified trailing
+newline normalization: this file has one final LF (7,290 bytes); adding two LF
+bytes reproduces the reported original hash (7,292 bytes). The local hash protects
+the retained rendition. This check does not verify the separate raw JSON packet.
 
 ## Claim map and derivations
 
@@ -35,7 +36,7 @@ the local hash protects this retained rendition, not the unseen original bytes.
 | Purple Defense40 and Orange Treatise work on either bow | 1–2, 9–11 | Defense is Blue and fits Purple; Treatise is Orange; no new augment choice |
 | Both filled bows are ML36 | 9–11 | Derived from Defense40 ML36 and host-level rule, distinct from raw item ML |
 | Ordinary augment reuse requires extraction and re-slotting | 11 | Jeweler's Tool Kit returns the ordinary augment; overwriting loses it. No free/automatic transfer or promise of owned duplicate copies |
-| Paralyzing117 is conditional and does not make targets helpless | 1, 14 | DC117 Will, subsequent saves and immunities; distinct from Legendary Paralysis |
+| Paralyzing117 is conditional; no helpless-damage benefit assumed | 1, 14 | DC117 Will, subsequent saves and immunities; the explicit non-helpless note is in the general Paralyzing section, not X-specific proof; distinct from Legendary Paralysis |
 | Elasticity adds a critical multiplier, not threat range | 1 | +1 on natural19/20 ranged criticals; conditional on a critical, not guaranteed critical damage |
 
 Anarchic 7's hover excludes chaos-aligned targets; Anarchic Burst's listed damage
