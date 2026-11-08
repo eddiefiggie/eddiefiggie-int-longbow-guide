@@ -2,7 +2,7 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
-## Build 11-08-26.5 (A-016 candidate; unpublished)
+## Build 11-08-26.5
 - Corrects only the optional Mechanic guidance: preserves Arbalester plus Mechanics 3 for 4 AP; gates the separate 7-AP extension on an already-qualified Rogue-2 life, Awareness 1 (1 AP, 5 spent) and then Skill Boost (2 AP).
 - Corrects Awareness 1 to its printed +1 skills, states the highest-Awareness-only overlap rule, preserves the separate +6 active boost for 20 seconds, and requires contemporaneous AP funding. No alternate levelling allocation or class change is established.
 - Retains the [fresh transmitted source ledger and provenance limits](evidence/optional-mechanic/README.md), adds focused regressions and regenerates snapshot/print stamps. All selected build, gear, Calamitous/Sinew options and model content remain unchanged. Independent review and publication are separate.

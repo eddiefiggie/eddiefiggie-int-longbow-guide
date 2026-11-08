@@ -40,7 +40,7 @@ def validate_note(html):
         'optional-mechanic-funding': (
             'AP actually available or reallocated at the time of each purchase',
             'preserving all affected prerequisites and gates',
-            'at level 4 or 5 therefore requires a contemporaneous reallocation of already-earned AP',
+            'at level 4 or 5 requires AP already earned by then, reallocating existing purchases only if needed and preserving all purchase gates',
             'Omitting future purchases at levels 17 or 20 does not supply earlier AP',
             'a later reset only returns points at that later time',
             'schedule remains unchanged',
@@ -120,7 +120,8 @@ class OptionalMechanicTests(unittest.TestCase):
         for before, after in (
             ('at the time of each purchase', 'at level 20'),
             ('while preserving all affected prerequisites and gates', ''),
-            ('requires a contemporaneous reallocation of already-earned AP', 'is funded by later refunds'),
+            ('requires AP already earned by then', 'is funded by later refunds'),
+            ('reallocating existing purchases only if needed', 'always resetting existing purchases'),
             ('does not supply earlier AP', 'supplies earlier AP'),
             ('a later reset only returns points at that later time', 'a later reset funds earlier purchases'),
             ('does not establish an alternate level-by-level allocation', 'establishes a tested alternate allocation'),
