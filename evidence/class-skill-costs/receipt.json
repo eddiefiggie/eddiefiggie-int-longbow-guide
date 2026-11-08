@@ -1,0 +1,20 @@
+{
+  "delivery": "Exact source ledger transmitted through the parent task; separate raw packet not materialized or read in this executor.",
+  "local_ledger_bytes": 12204,
+  "local_ledger_sha256": "40321e74f4fa57542cb41b529284a9ae1c326064f4d26f5dc40fd5cb654b8eac",
+  "reported_original_ledger_bytes": 12205,
+  "reported_original_ledger_sha256": "5d119d732c93a730ffd30f8ccebdbeb72bb579f083c6a7b9be43b96d50b86bf0",
+  "normalization": "Local rendition has one final LF; adding one final LF reproduces the reported original ledger exactly.",
+  "original_ledger_byte_identity_verified": true,
+  "reported_raw_packet": {
+    "filename": "a018-goldfinger-skill-source-receipt.json",
+    "bytes": 412046,
+    "sha256": "283c4470f9a69602e9f51ac57e23ef967a3df1e564a8befca35e4cd2456cbdbe",
+    "parent_reports_read_and_hash_checked": true
+  },
+  "raw_packet_materialized_or_read": false,
+  "historical_revisions_opened": false,
+  "live_game_test": false,
+  "a035_training_and_maximum_corrections_included": false,
+  "complete_skill_budget_certified": false
+}

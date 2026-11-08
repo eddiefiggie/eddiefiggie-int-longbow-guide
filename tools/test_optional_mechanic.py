@@ -30,6 +30,9 @@ def restore_mechanic_release(html):
 
 
 def validate_scope(html):
+    # A-018 reverses only its exact price corrections and build stamp first.
+    from test_class_skill_costs import restore_cost_release
+    html = restore_cost_release(html)
     assert sha(restore_mechanic_release(html).encode()) == SCOPE['baseline_index_sha256'], \
         'content outside A-016 changed'
 
