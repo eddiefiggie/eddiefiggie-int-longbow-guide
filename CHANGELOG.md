@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-08-26.2 (local A-003 candidate; unpublished)
+- Adds optional advice to save received Daily Dice XP gems and use available gems toward levels 1–3, plus separate already-owned/later-earned Master’s Gift guidance. No guaranteed skip, paid-roll requirement or assumed ownership.
+- Checks the narrow mechanics against retained Wiki revisions 727165 and 681893 observed on 5 November; links exact provenance, source excerpts and unresolved storage/acquisition limits. No source refresh or live-game certification.
+- Adds actual-content and source regressions, preserves all earlier snapshots and the selected build/audit/model, and regenerates the print stamp and new matching snapshot. Exact-candidate browser QA remains separate.
+
 ## Build 11-08-26.1 (local reconciliation candidate; unpublished)
 - Reconciles the frozen selected-loadout stacking audit onto published main `6d429003a5b22db841cdef23946df9f99b7dbfa7`, retaining the already-published A-004 summaries and purchase order exactly once.
 - Preserves every snapshot already on published main, including `11-07-26.2`; adds only the distinct `11-08-26.1` snapshot. Unpublished audit snapshots stay in their original frozen worktrees.
