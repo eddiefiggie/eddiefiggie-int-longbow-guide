@@ -1,0 +1,28 @@
+{
+  "input_kind": "independent source reviewer ledger transmitted through parent task",
+  "received_date_utc": "2026-11-08",
+  "local_ledger_file": "source-ledger.md",
+  "local_ledger_bytes": 5129,
+  "local_ledger_sha256": "b56ec211719b8940159ed7fc48e77564f2ee6f02af670c77b15e42e05d38bdd0",
+  "reported_original_ledger_bytes": 5130,
+  "reported_original_ledger_sha256": "e3a834db90b2b19823fedb72eb588b8f2ab91c02270241f38a78eee3132fea98",
+  "original_ledger_byte_identity_verified": true,
+  "original_ledger_verification": "Retained one-final-LF rendition plus one LF byte reproduces the reported two-final-LF original SHA256.",
+  "reported_raw_packet_name": "a016-goldfinger-mechanic-source-receipt.json",
+  "reported_raw_packet_bytes": 39442,
+  "reported_raw_packet_sha256": "7134bdc68365f86aeb817467e470b67403f7b1d4bc1c722725297ee8ad89f5f6",
+  "raw_packet_materialized_or_read": false,
+  "capture_method_reported_by_reviewer": "fresh current normal cloud-browser Wiki pages",
+  "historical_revisions_opened": false,
+  "live_game_test": false,
+  "arcane_archer_supplement": {
+    "local_ledger_file": "arcane-archer-supplement.md",
+    "local_ledger_bytes": 1386,
+    "local_ledger_sha256": "c4155aa15b2ab85fc14deccf90879d7fc034ecff2f0fd6c3ed56d090645a618f",
+    "reported_original_ledger_bytes": 1387,
+    "reported_original_ledger_sha256": "75faeb6b8d973cecd576390a3a269c49a2785a7bcb2d174e299ceb8a004e134a",
+    "original_ledger_byte_identity_verified": true,
+    "reported_raw_packet_sha256": "00232ac13ec821c612abf5d5138463485a0bd78979f2a6650bafc9d261553fba",
+    "raw_packet_materialized_or_read": false
+  }
+}

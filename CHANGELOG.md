@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-08-26.5
+- Corrects only the optional Mechanic guidance: preserves Arbalester plus Mechanics 3 for 4 AP; gates the separate 7-AP extension on an already-qualified Rogue-2 life, Awareness 1 (1 AP, 5 spent) and then Skill Boost (2 AP).
+- Corrects Awareness 1 to its printed +1 skills, states the highest-Awareness-only overlap rule, preserves the separate +6 active boost for 20 seconds, and requires contemporaneous AP funding. No alternate levelling allocation or class change is established.
+- Retains the [fresh transmitted source ledger and provenance limits](evidence/optional-mechanic/README.md), adds focused regressions and regenerates snapshot/print stamps. All selected build, gear, Calamitous/Sinew options and model content remain unchanged. Independent review and publication are separate.
+
 ## Build 11-08-26.4
 - Keeps Calamitous and adds Legendary Demogorgon’s Sinew as an endgame alternate across lives, with lawful/Paladin guidance, conditional effects, lost bow crafts and the existing ordinary augment configuration. Defense +40 makes either fully filled bow ML36.
 - Preserves the complete original equipment table, non-bow content, build choices and historical model outputs. Links the [transmitted 8 November source ledger and its limits](evidence/endgame-bow-options/README.md); no universal damage ranking, new optimizer result or live-game certification.
