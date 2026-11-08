@@ -1,0 +1,69 @@
+{
+  "scope": "Optional Daily Dice XP gems toward levels 1–3 and separate optional Master’s Gift advice. Retained documentary checks, not current live-game certification.",
+  "source_file": "tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json",
+  "public_file_sha256": "e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6",
+  "public_file_bytes": 281940,
+  "original_capture_sha256": "a5b0f7b43e9b3aa647417b00fd6e5ccf0925936fc42bcb2711dc0f679c308611",
+  "original_capture_bytes": 282066,
+  "provenance_file": "tools/fixtures/endgame-evidence/fresh-provenance.json",
+  "redaction_file": "tools/fixtures/endgame-evidence/public-redaction.json",
+  "sources": [
+    {
+      "pointer": "/pages/13",
+      "evidence_key": "wikiDailyDice",
+      "url": "https://ddowiki.com/page/Daily_Dice",
+      "revision_url": "https://ddowiki.com/index.php?title=Daily_Dice&oldid=727165",
+      "captured_at": "2026-11-05T12:53:21.155Z",
+      "text_sha256": "5db100e9dc28793dfaa8d189091f57d33b70689b7f13f73344ecd58e08136eae",
+      "excerpt_kind": "Exact selected text from the existing public derivative; not a new capture or byte-identical original file.",
+      "excerpts": [
+        "Each account gets a free roll on the Silver Chest loot table once per server every 16 hours (timer starts when you use the roll). VIP players get a free roll on the Gold Chest once a week per server. As a bonus event VIP players get a free roll on the Gold Chest once a day from September 8th 2023 through October 10th 2023.",
+        "Each roll grants a prize of experience points in addition to the other prizes. The amount of experience depends on how well you roll. Gold rolls bestow higher XP than Silver rolls. The experience is granted as a token (Bound to Account on Acquire). Doubleclick it to consume the token and gain the XP. These tokens are not affected by any bonus you may acquire elsewhere on XP gains.",
+        "Silver Daily Dice\nThe classic roll\nOne free roll per day (technically, every 16 hours).\nFree rolls can't be saved or accumulated; if you don't log in or don't roll for a day, that roll is \"lost\".\nRolls after the free one cost 3 Astral Shards.\n"
+      ]
+    },
+    {
+      "pointer": "/pages/14",
+      "evidence_key": "wikiMastersGift",
+      "url": "https://ddowiki.com/page/Item:The_Master%27s_Gift",
+      "revision_url": "https://ddowiki.com/index.php?title=Item:The_Master%27s_Gift&oldid=681893",
+      "captured_at": "2026-11-05T12:53:29.921Z",
+      "text_sha256": "dcec90da4728483cb944be925a5c0590d8f8c47fc7aeeed3272e959ef1284460",
+      "excerpt_kind": "Exact selected text from the existing public derivative; not a new capture or byte-identical original file.",
+      "excerpts": [
+        "The Master's Gift\nMinimum Level\t1\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tColorless\nDescription\tDrag this augment into a slot to upgrade an item with a +5% Enhancement bonus to all earned Experience Points. This augment can go in any color Augment Slot.\nBase Value\t1,000 pp\nWeight\t0.01 lbs\nLocations\t\nLegacy Altar of Epic Rituals, The Twelve\n(5) I:Greater Token of the Twelve\n(1) I:Mantle of the Worldshaper\n(1) I:Voice of the Master\n\nEnhancements\t\nHeroic Inspiration\n\nMaximum stack size\t100\nNotes\tThis item provides the same XP bonus as the Voice of the Master and the Mantle of the Worldshaper, with the advantage of not taking up an item slot. Unlike the source items, it is Bound to Account and can be shared among your characters."
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "guide_id": "daily-dice-early-xp",
+      "source_pointer": "/pages/13/text",
+      "direct": "Free Silver: per account, per server, every 16 hours; free Gold: weekly per server for VIPs. Free rolls cannot accumulate. XP amount depends on roll; awarded BTA token is consumed by double-click; XP bonuses acquired elsewhere do not affect it.",
+      "recommendation": "Consider saving received gems and using available gems toward levels 1–3. This is optional build advice, not Wiki-verified optimization, a storage guarantee, a required route or an assertion of owned gems. No paid rolls or VIP are required for this recommendation.",
+      "rule_application": "The explicit no-external-XP-bonus rule covers the separately listed Master’s Gift XP bonus; do not combine it with token payout."
+    },
+    {
+      "guide_id": "masters-gift-optional",
+      "source_pointer": "/pages/14/text",
+      "direct": "ML1; BTA on Acquire; Colorless; +5% Enhancement bonus to earned XP; any color Augment Slot. Listed recipe at Legacy Altar of Epic Rituals: 5 Greater Tokens of the Twelve, 1 Mantle of the Worldshaper, 1 Voice of the Master.",
+      "recommendation": "Optional for readers who already own or later earn it. Suitable equipped gear is a condition, not a validated early host item or a change to the selected kit."
+    }
+  ],
+  "gaps": [
+    "No new Wiki access, source refresh or in-game test. Observation timestamps and revision IDs identify retained captures, not current server behavior.",
+    "No evidence here of token expiry, indefinite storage, bank behavior, cross-life persistence or transfer procedure. The saving suggestion is a player preference about consumable tokens; no persistence guarantee is established.",
+    "No calculation of XP needed, roll count, expected yield or guaranteed level skip. No epic/reaper or maximum-XP rationale.",
+    "No direct ingredient or altar source bodies used to verify acquisition steps, access requirements, quest levels or ease for a new player. The listed recipe is a requirement, not proof of availability.",
+    "No new host-item eligibility, socket change, augment removal/reuse, stacking with other earned-XP bonuses, or full early kit certification. Existing ML10 Gift rows remain unchanged."
+  ],
+  "preservation": {
+    "baseline_commit": "fe6acae684982d38627a2c89080f77344911b037",
+    "baseline_tree": "951573a159c5ac325c9101f5ceae5d18a21a2d5a",
+    "baseline_index_sha256": "79f7ce13115bf07574e786f7c8eab016a99ed72d58b043aed5058f80e19f5f13",
+    "existing_snapshot_count": 56,
+    "existing_snapshot_manifest_sha256": "495fc9ab3d04aa70185f22a436aca6feefa04b185952d3fe35d298a5d8507c49",
+    "protected_audit_file_count": 59,
+    "protected_audit_manifest_sha256": "025ad5c0fd57fb70244ca7c268f2cf3e7de9e669aadde7beec6e49d8c164558b"
+  }
+}

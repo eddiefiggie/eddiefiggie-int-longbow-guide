@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optional early XP — retained Wiki checks</title>
+<style>
+body{font:18px/1.55 Georgia,serif;color:#17202a;background:#faf9f6;max-width:58rem;margin:2rem auto;padding:0 1rem}
+h1{font-size:1.9rem;line-height:1.2}h2{font-size:1.35rem;margin-top:2rem}a{color:#14548b;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #b35a10;outline-offset:3px}p,li{overflow-wrap:anywhere}li{margin:.5rem 0}code{font-size:.85em;overflow-wrap:anywhere}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{text-align:left;vertical-align:top;border:1px solid #b7bdc4;padding:.6rem}th{background:#e9edf1}main{display:block}@media(max-width:600px){body{font-size:16px;margin:1rem auto}th,td{padding:.4rem}}
+</style>
+</head>
+<body><main>
+<h1>Optional early XP: retained Wiki checks</h1>
+<p>The <a href="../../index.html#early-xp-options">Guide’s optional tips</a> suggest saving received Daily Dice XP gems and using available gems toward levels <strong>1–3</strong>, with The Master’s Gift as a separate optional goal. Saving and choosing when to spend tokens are build advice, not a Wiki finding about the optimal level range or guaranteed storage. Neither gems nor the Gift are assumed owned.</p>
+<h2>Direct source record</h2>
+<p>The <a href="claims.json">claim and excerpt record</a> identifies the exact retained text, original URLs, observed revisions, capture times, hashes and gaps. The existing <a href="../../tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json">public capture</a> is reused unchanged. It is a privacy-redacted derivative of a retained original, as recorded in <a href="../../tools/fixtures/endgame-evidence/fresh-provenance.json">provenance</a> and the <a href="../../tools/fixtures/endgame-evidence/public-redaction.json">redaction manifest</a>; the excerpt record is a further selected-text derivative, not a new capture. Editor identities are not reproduced.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Source</th><th scope="col">Observation</th><th scope="col">Narrow support</th></tr></thead><tbody>
+<tr><td><a href="https://ddowiki.com/index.php?title=Daily_Dice&amp;oldid=727165">Daily Dice, revision 727165</a>, <code>/pages/13</code></td><td>2026-11-05T12:53:21.155Z</td><td>Free Silver rolls per account/server every 16 hours; free Gold weekly per server for VIPs. Free rolls cannot be saved or accumulated. Awarded XP varies by roll, arrives as a BTA token and is gained by consuming it. Other XP bonuses do not affect token XP.</td></tr>
+<tr><td><a href="https://ddowiki.com/index.php?title=Item:The_Master%27s_Gift&amp;oldid=681893">The Master’s Gift, revision 681893</a>, <code>/pages/14</code></td><td>2026-11-05T12:53:29.921Z</td><td>Colorless augment, ML1, BTA on Acquire, +5% Enhancement bonus to earned XP, any color Augment Slot. Legacy Altar recipe lists five Greater Tokens of the Twelve, one Mantle of the Worldshaper and one Voice of the Master.</td></tr>
+</tbody></table></div>
+<p>The Daily Dice source explicitly excludes XP bonuses acquired elsewhere from its tokens. That rule applies to the separately described Gift bonus; the tips do not multiply token XP by 1.05. A bonus week instead changes the token actually awarded. The capture also includes historical promotional daily Gold rolls; those dated events are not a permanent entitlement. The optional tip requires no paid rolls or VIP subscription.</p>
+<p>Public capture SHA-256: <code>e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6</code> (281,940 bytes). Retained original SHA-256: <code>a5b0f7b43e9b3aa647417b00fd6e5ccf0925936fc42bcb2711dc0f679c308611</code> (282,066 bytes). Individual page-text hashes are in the claim record. The two identities are intentionally different.</p>
+<h2>Limits and gaps</h2>
+<ul>
+<li>These are observations from 5 November 2026. Revision IDs and capture times do not establish current live-game behavior. No new source retrieval or in-game test was performed for this change; known Wiki access restrictions were not retried or bypassed.</li>
+<li>The source explains awarded tokens and consumption. It does <strong>not</strong> establish expiry, indefinite storage, bank behavior, cross-life persistence or transfer procedure. The saving recommendation gives no guarantee about those things; available gems are the condition for use.</li>
+<li>The level range is a player recommendation. No XP threshold, roll count, expected yield, guaranteed skip, epic/reaper benefit or maximum-XP rationale is asserted.</li>
+<li>The Gift recipe is a list of required ingredients, not evidence of easy or immediate access. Direct ingredient/altar page bodies are not supplied here, so quest routes, quest levels, pack ownership, grind and new-player availability remain unverified. Readers can leave it as a later optional goal.</li>
+<li>The Gift’s ML1 does not establish a particular early host item. No named early slot, socket swap, removal method, reuse or stacking with other earned-XP bonuses is selected or certified. The existing ML10 belt selections and unresolved early kit remain unchanged.</li>
+</ul>
+<h2>Regression scope</h2>
+<p><code>tools/test_early_xp.py</code> reads the retained source itself and checks exact identity, timestamp and whole-page text hashes before binding the reviewed facts and qualifications to the actual Guide paragraphs. Negative controls cover eligibility, yield promises, roll banking, token-bonus interaction, missing or hidden cautions and an unsupported claim appended outside the scoped block. A scoped guard scans all active visible text for Daily Dice, XP gems/tokens, The Master’s Gift or “the Gift”, excluding only the reviewed tips and two exact existing Gift cells. Changing the surrounding HTML tag cannot bypass it. It is not a general detector for paraphrased claims or CSS visibility. The 56 named prior snapshots are protected while later snapshots remain allowed. Release review separately compares the entire baseline Guide and protected audit/evidence/model files. These are source and document checks, not browser visibility or game tests.</p>
+<p>Source text is from <a href="https://ddowiki.com/">DDO Wiki contributors</a> under <a href="https://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5</a>. Original article/revision links provide contributor history and attribution.</p>
+</main></body>
+</html>
