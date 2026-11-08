@@ -111,7 +111,7 @@ def validate_claims(html):
 
 def validate_preservation(html):
     chosen_build=span(html,'<h2 id="class-split">','<h2 id="gear">')
-    # Three explanation-only cross-references qualify the existing timing claim.
+    # Exact explanation-only cross-references qualify timing and kit-total claims.
     # After reversing exactly those edits, all choices and purchase rows must
     # still be byte-identical to the verified target tree.
     for correction in CONTRACT['allowed_build_prose_corrections']:

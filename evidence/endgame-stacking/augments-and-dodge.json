@@ -1,0 +1,53 @@
+{
+  "method": "Supported cloud-browser read-only article and tooltip DOM excerpts, directly transcribed returned text. No inferred mechanics.",
+  "freshness": "Observed 2026-11-07; anonymous Wiki notice permits up to 5 hours cache delay. Not in-game certification.",
+  "license": "https://creativecommons.org/licenses/by-sa/2.5/",
+  "receipts": [
+    {
+      "capturedAt": "2026-11-07T19:35:18.464Z",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Sneak_Attack_Dice_(Legendary)",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Sneak_Attack_Dice_(Legendary)&oldid=703404",
+      "excerpts": [
+        "Minimum Level\t30",
+        "Augment Type\tSun",
+        "Description\tSlotted Effect: +3 Artifact Bonus to Sneak Attack Dice."
+      ]
+    },
+    {
+      "capturedAt": "2026-11-07T19:35:18.998Z",
+      "url": "https://ddowiki.com/page/Item:Essence_of_the_Epic_Litany_of_the_Dead",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Essence_of_the_Epic_Litany_of_the_Dead&oldid=643116",
+      "excerpts": [
+        "Minimum Level\t30",
+        "Augment Type\tColorless",
+        "Slotted Effect: Litany of the Dead Ability Bonus +2"
+      ],
+      "tooltips": [
+        "Litany of the Dead II - Ability BonusLitany of the Dead II - Ability Bonus: The Litany of the Dead enhances the physical and mental abilities of its owner. Grants a +2 Profane bonus to all Abilities."
+      ]
+    },
+    {
+      "capturedAt": "2026-11-07T19:34:37.327Z",
+      "url": "https://ddowiki.com/page/Augment",
+      "permanentLink": "https://ddowiki.com/index.php?title=Augment_Slot&oldid=717357",
+      "scope": "Selected rows plus original header/context, values alone do not resolve type uncertainty in 'Most' rule.",
+      "excerpts": [
+        "Most augment bonuses, unless otherwise specified, are an Enhancement Bonus.\nSkill augments are a Competence Bonus.\nSpell Power augments are an Equipment Bonus.",
+        "Augment Color\tAugment Effect\tML01\tML04\tML08\tML12\tML16\tML20\tML24\tML28\tML32\tML36",
+        "Blue Augments\nSapphire of ...\tNatural Armor\t+1\t+3\t+5\t+6\t+8\t+9\t+11\t+12\t+14\t+15\nProtection\t+1\t+3\t+4\t+5\t+6\t+8\t+9\t+10\t+11\t+12\nResistance\t+1\t+3\t+4\t+5\t+6\t+8\t+9\t+10\t+11\t+12\nDefense (Shelter)\t+3\t+8\t+12\t+16\t+20\t+24\t+28\t+32\t+36\t+40\nFalse Life\t+4\t+12\t+18\t+24\t+30\t+36\t+42\t+48\t+54\t+60\nDodge\t+1\t+3\t+5\t+6\t+8\t+9\t+11\t+12\t+14\t+16",
+        "Every augment has an associated minimum level requirement to use it. Slotting any augment also increases the slotted item’s minimum level to the level of the slotted augment for as long as that augment is slotted, unless the item's minimum level is already equal or higher."
+      ]
+    },
+    {
+      "capturedAt": "2026-11-07T19:35:47.190Z",
+      "url": "https://ddowiki.com/page/Dodge_bonus",
+      "permanentLink": "/index.php?title=Dodge_bonus&oldid=701065",
+      "excerpts": [
+        "The Maximum Dodge Bonus begins at 25%. This Maximum Dodge Bonus amount can be increased through various means (see Increasing Maximum Dodge). If applicable, this Maximum Dodge Bonus may be subject to being capped (reduced) to functioning at a lower limit depending on the lower of Maximum Dexterity Bonus amount found on any armor and tower shields that has been equipped. i.e. your Dodge Chance Max % is equal to your Maximum Dex Bonus.",
+        "The passive dodge bonus obtained from items, enhancements, feats, epic destinies and other effects, are added together to form your total passive dodge bonus (As of Update 19, dodge bonuses on items no longer stack, only the best applies.). Note that this amount can be much higher than your Dodge cap under certain circumstances. Whilst subject to the Dodge Cap, Players may still be able to benefit from this excess passive dodge bonus, if they are able to increase their Maximum Dodge Bonus (and if required, Maximum Dexterity Bonus) in the middle of battle, where the new higher cap would permit more passive dodge bonus to be applied for defence against attacks.",
+        "Combat Archery passive: 2% if wielding a ranged weapon.",
+        "Feywild Attunement, passive: 1% per 4 Wilderness Lore (Shiradi Champion)"
+      ]
+    }
+  ]
+}

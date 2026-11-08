@@ -1,0 +1,68 @@
+{
+  "method": "Supported cloud-browser read-only DOM captures, excerpted from actual returned on-page tooltip text or article text. Not raw response bytes or an in-game test.",
+  "freshness": "Captured 2026-11-07; anonymous Wiki notice allows up to 5 hours cache lag.",
+  "license": "https://creativecommons.org/licenses/by-sa/2.5/",
+  "receipts": [
+    {
+      "capturedAt": "2026-11-07T19:32:22.881Z",
+      "url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Legendary_Abyssal_Compass&oldid=699719",
+      "scope": "On-page effect tooltip DOM text",
+      "tooltips": [
+        "Insightful Sheltering +21Insightful Sheltering +21: +21 Insight bonus to Physical and Magical Resistance Ratings",
+        "Quality Sheltering +11Quality Sheltering +11: +11 Quality bonus to Physical and Magical Resistance Ratings",
+        "Legendary Demonic ShieldLegendary Demonic Shield: Each time you are hit in melee combat there is a chance that a shield of demonic energy will grant you a +240 Profane bonus to temporary hit points.",
+        "Insightful Fortitude Save +7Insightful Fortitude Save +7: This item gives a +7 Insight bonus to your Fortitude saves."
+      ]
+    },
+    {
+      "capturedAt": "2026-11-07T19:33:00.197Z",
+      "url": "https://ddowiki.com/page/Item:Legendary_Pendant_of_Subtle_Pain",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Legendary_Pendant_of_Subtle_Pain&oldid=632671",
+      "scope": "On-page effect tooltip DOM text",
+      "tooltips": [
+        "Quality Accuracy +5Quality Accuracy +5: Passive: +5 Quality bonus to attack rolls",
+        "Improved Deception +21Improved Deception: This item makes your weapons hard to focus upon and thus provides a +21 enhancement bonus to Bluff checks. In addition, while using this item your weapons have a chance to envelop the target in darkness, making them vulnerable to sneak attacks for a short time.",
+        "  Diversion +21%  Diversion +21%: +21% Enhancement bonus to decreased threat generated from melee damage.",
+        " Distant Diversion +21% Distant Diversion +21%: +21% Enhancement bonus to decreased threat generated from ranged damage.",
+        " Mystic Diversion +21% Mystic Diversion +21%: +21% Enhancement bonus to decreased threat generated from spell damage.",
+        " Armor-Piercing 21% Armor-Piercing 21%: Passive: +21% Enhancement bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)",
+        "Legendary Temple's MonolithLegendary Temple's Monolith: 2 Pieces Equipped:+15 Artifact Bonus to Melee and Ranged Power+30 Artifact Bonus to Acid Spell Power+30 Artifact Bonus to Physical Resistance Rating",
+        "Mythic Neck Boost +1 or +3Mythic Neck Boost +1 or +3: +1 or +3 Mythic bonus to Physical and Magical Resistance Ratings.(This is a rare enchantment that does not show up on all drops of this item.)"
+      ]
+    },
+    {
+      "capturedAt": "2026-11-07T19:33:00.590Z",
+      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
+      "scope": "On-page effect tooltip DOM text",
+      "tooltips": [
+        " Light Absorption +24% Light Absorption +24%: Passive: 24% Enhancement Bonus to Light Absorption. (Absorption reduces damage from an element by a percentage, after resistance have been taken into account.)",
+        " Doubleshot 10% Doubleshot 10%: Passive: 10% Enhancement bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+        " Constitution +15 Constitution +15: This item gives the wearer improved health, granting a +15 Enhancement bonus to Constitution.",
+        "Insightful Constitution +7Insightful Constitution +7: This item gives the wearer improved health, granting a +7 Insight bonus to Constitution."
+      ]
+    },
+    {
+      "capturedAt": "2026-11-07T19:31:25.989Z",
+      "url": "https://ddowiki.com/page/Magical_Resistance_Rating",
+      "permanentLink": "/index.php?title=Magical_Resistance_Rating&oldid=708082",
+      "scope": "Article excerpts",
+      "excerpts": [
+        "MRR is granted through multiple sources (items, feats, enhancements) and stacks with itself. Multiple effects granting an Enhancement bonus to Magical Resistance do not stack. Character sheets show the Magical Resistance Rating of the player next to the elemental resistances.",
+        "Different armor types can apply a cap for Magical Resistance Rating (U23):\n\nRobes, Outfit, or empty armor slot: 50\nLight Armor: 100\nMedium Armor: No cap\nHeavy Armor: No cap"
+      ]
+    },
+    {
+      "capturedAt": "2026-11-07T19:31:18.503Z",
+      "url": "https://ddowiki.com/page/Doubleshot",
+      "permanentLink": "/index.php?title=Doubleshot&oldid=719351",
+      "scope": "Article excerpts",
+      "excerpts": [
+        "Doubleshot grants a character a chance to do double (or higher) damage with their ranged or thrown weapon any time they make an attack. Doubleshot applies only to ranged and thrown attacks. (The similar mechanic for melee is Doublestrike.)",
+        "All damage is multiplied, including base damage, sneak attack, imbue, or weapon enchantments.",
+        "Doubleshot values only scale at 50% past a soft cap of 200% (a Doubleshot value of 230%, for example, would only provide 215% chance to Doubleshot.)"
+      ]
+    }
+  ]
+}

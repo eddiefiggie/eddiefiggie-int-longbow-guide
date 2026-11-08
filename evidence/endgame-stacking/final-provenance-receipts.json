@@ -1,0 +1,141 @@
+{
+  "origin_capture": {
+    "path": "final-provenance-receipts.json",
+    "sha256": "6993c41f2ececd4e1afa793a9a7f365aca01e4f8bc43d4f067490f8b46df1d40",
+    "scope": "Exact selected DOM excerpt records copied from the original supported-browser receipt; no page-body reconstruction."
+  },
+  "method": "Direct permitted cloud browser reads of rendered #mw-content-text and item tooltip DOM. Permanent link observed on each page. Excerpts are exact contiguous substrings; no inferred mechanics. Full DOM hashes refer to the whole observed main-content innerText, not this excerpt receipt. Page caches and Wiki accuracy remain limits; this is source observation, not live-game validation.",
+  "attribution": "DDO Wiki contributors; source URLs and observed revision permalinks below; CC BY-SA 2.5.",
+  "records": [
+    {
+      "id": "defense",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Defense_%2B40",
+      "permanentLink": "/index.php?title=Item:Sapphire_of_Defense_%2B40&oldid=718384",
+      "capturedAt": "2026-11-07T20:05:56.840Z",
+      "domSha256": "11a6dab8622fad5ff003fae0af7bba87f05c272266d0d21df2ef1a6511af9086",
+      "excerpts": [
+        "Minimum Level\t36",
+        "Drag this augment into a slot to upgrade an item to provide a +40 Enhancement bonus to your Physical Resistance Rating and Magical Resistance Rating. This augment can go in a Blue, Green, or Purple Augment Slot."
+      ]
+    },
+    {
+      "id": "hp-false-life",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_False_Life_%2B60",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Sapphire_of_False_Life_%2B60&oldid=718406",
+      "capturedAt": "2026-11-07T20:05:58.726Z",
+      "domSha256": "cb6fb3f92bb8e3ead5a136471f7bad35d189f3abb8fe88488558420905bd28f9",
+      "excerpts": [
+        "Minimum Level\t36",
+        "Drag this augment into a slot to upgrade an item to provide a +60 Enhancement bonus to your maximum Hit Points. This augment can go in a Blue, Green, or Purple Augment Slot."
+      ]
+    },
+    {
+      "id": "hp-vitality",
+      "url": "https://ddowiki.com/page/Item:Ravil%27s_Book_of_Legendary_Recipes",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Ravil%27s_Book_of_Legendary_Recipes&oldid=643165",
+      "capturedAt": "2026-11-07T20:05:59.031Z",
+      "domSha256": "254f32d273b40f0133f899b75c1f259533a63de513df5717c3167484c4e0e123",
+      "excerpts": [
+        "Minimum Level\t32",
+        "Slotted Effect: +48 Vitality bonus to Maximum HP."
+      ]
+    },
+    {
+      "id": "ha",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Healing_Amplification_%2B63",
+      "permanentLink": "/index.php?title=Item:Sapphire_of_Healing_Amplification_%2B63&oldid=718422",
+      "capturedAt": "2026-11-07T20:05:59.729Z",
+      "domSha256": "9d2bf33c7d6dd98efff57dc3c5c2b52ac0802259116275e9be9b4b9482805fb4",
+      "excerpts": [
+        "Minimum Level\t36",
+        "Drag this augment into a slot to upgrade an item to provide a +63 Competence bonus to your Healing Amplification. This augment can go in a Blue, Green, or Purple Augment Slot."
+      ]
+    },
+    {
+      "id": "lunar-prr",
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Physical_Protection_(Legendary)",
+      "permanentLink": "/index.php?title=Item:Lunar_Gem_of_Physical_Protection_(Legendary)&oldid=700929",
+      "capturedAt": "2026-11-07T20:06:00.077Z",
+      "domSha256": "d65adaf64a106bb7e942d0c714f356f13bffaff1496d2f1884ba3d1a636ac85a",
+      "excerpts": [
+        "Minimum Level\t30",
+        "Slotted Effect: +30 Profane Bonus to Physical Resistance Rating."
+      ]
+    },
+    {
+      "id": "ring",
+      "url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "permanentLink": "/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "capturedAt": "2026-11-07T20:08:30.015Z",
+      "domSha256": "5d4f481e896e8daadc0469090945ff486e1594b9e0cb3ce0f5f9205b59bb2908",
+      "excerpts": [
+        "Minimum level\t32",
+        "Quality Dexterity +3\nQuality Doubleshot 3%\nGreater Marksmanship\nDistant Diversion +22%\nGreen Augment Slot\nColorless Augment Slot"
+      ],
+      "tooltips": [
+        "Quality Doubleshot 3%Quality Doubleshot 3%: Passive: 3% Quality bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+        "Greater MarksmanshipGreater Marksmanship: This item is enchanted to enhance your skill with ranged weapons. You gain a +3 Competence Bonus to Ranged Attack and a +2 Competence Bonus to Ranged Damage.",
+        " Distant Diversion +22% Distant Diversion +22%: +22% Enhancement bonus to decreased threat generated from ranged damage."
+      ]
+    },
+    {
+      "id": "goggles",
+      "url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "capturedAt": "2026-11-07T20:08:30.460Z",
+      "domSha256": "f665a4fc00ec126ede020c06434caec5ac9dceb7ffc66339112741c9623a31a0",
+      "excerpts": [
+        "Minimum level\t33"
+      ],
+      "tooltips": [
+        " Doubleshot 9% Doubleshot 9%: Passive: 9% Enhancement bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+        "Sight Beyond SightSight Beyond Sight: You can see through all veils, piercing magical and mundane defenses alike. +5% Enhancement bonus to Dodge bypass.",
+        "Greater MarksmanshipGreater Marksmanship: This item is enchanted to enhance your skill with ranged weapons. You gain a +3 Competence Bonus to Ranged Attack and a +2 Competence Bonus to Ranged Damage.",
+        "Insightful Armor-Piercing 11%Insightful Armor-Piercing 11%: Passive: +11% Insight bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)"
+      ]
+    },
+    {
+      "id": "boots",
+      "url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "permanentLink": "/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "capturedAt": "2026-11-07T20:08:30.889Z",
+      "domSha256": "f34fa7952a72a4e7e44eb42b38614a99051d990ac78bbbfe652dfcc59712069d",
+      "excerpts": [
+        "Minimum level\t34"
+      ],
+      "tooltips": [
+        "Greater MarksmanshipGreater Marksmanship: This item is enchanted to enhance your skill with ranged weapons. You gain a +3 Competence Bonus to Ranged Attack and a +2 Competence Bonus to Ranged Damage.",
+        "Insightful Doubleshot 5%Insightful Doubleshot 5%: Passive: 5% Insight bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)"
+      ]
+    },
+    {
+      "id": "armor",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "permanentLink": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "capturedAt": "2026-11-07T20:08:31.322Z",
+      "domSha256": "6c41c68847b49733550091bbe7b70d0d8cab6c1f05516d7054754868b0972db9",
+      "excerpts": [
+        "Armor Type\tLight Armor",
+        "Minimum Level\t33",
+        "Maximum Dexterity Bonus\t20"
+      ],
+      "tooltips": [
+        " Accuracy +24 Accuracy +24: Passive: +24 Competence bonus to attack rolls",
+        " Deadly +12 Deadly +12: +12 Competence bonus to weapon damage.",
+        "Shadow StrikerShadow Striker: Passive: +3% Profane bonus to Doublestrike and Doubleshot. (Doublestrike/Doubleshot is a chance to score an additional hit with a melee/ranged attack.) +15% Enhancement Bonus to Melee Attack Speed. +20% Enhancement Bonus to Ranged Attack Speed.",
+        "Legendary Armor-Piercing 5%Legendary Armor-Piercing 5%: Passive: +5% Legendary bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)"
+      ]
+    },
+    {
+      "id": "shadowdancer",
+      "url": "https://ddowiki.com/page/Shadowdancer",
+      "permanentLink": "/index.php?title=Shadowdancer&oldid=720964",
+      "capturedAt": "2026-11-07T20:08:44.375Z",
+      "domSha256": "a282de27aa37629b337ccf0b1330b3eab933c258f37b7662f31b341c8c0ffb70",
+      "excerpts": [
+        "Cut to the Soul: +3% Dodge Bypass, +3% Fortification Bypass, +3% Damage versus the helpless. When you cast the spell Trap the Soul, it automatically applies 3 stacks of the Darkness debuff even if the enemy survives the spell. Darkness debuff: You are vulnerable to Sneak Attacks. -3 Spell Resistance, -3 PRR and -3 MRR per stack. Lasts 12 seconds, stacks drop 1 at a time. Max 3 stacks.",
+        "EDP Cost: 1\tRanks: 1\tProgression: 20\tRequires: Third core, Level 32"
+      ]
+    }
+  ]
+}

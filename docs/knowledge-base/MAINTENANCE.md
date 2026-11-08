@@ -59,3 +59,11 @@ reviewed context. Visible wrappers and an inert obsolete copy beside the real
 checklist remain acceptable. The retained crafting-source parser and its
 revision, identity and claim checks are unchanged. This is a structural check,
 not a browser/CSS visibility test or fresh verification of game mechanics.
+
+## Selected endgame stacking ledger
+
+`tools/fixtures/endgame-stacking/ledger.json` separates exact component definitions from positive pairwise interaction rules. An unknown/conflicting component cannot be activated into a subtotal, and a missing edge withholds the combined result. Do not replace explicit evidence with a generic “different types stack” assumption. `kit_min_level` is the full filled-kit applicability floor, not each source item's own minimum level.
+
+After an evidence or classification change, run `PYTHONDONTWRITEBYTECODE=1 python3 tools/build_stacking_audit.py` to regenerate the selected-only source excerpt packet, detailed audit and current summary. For Guide edits, regenerate the print sheet and snapshot as usual, then run the full discovery command above. The new tests include arithmetic/provenance/context/qualification mutations and compare generated documents against their actual gated calculations. Existing tests still protect gear, purchases and historical model bytes. This repository currently configures no independent lint or static-type command; the documented Python/Node aggregate suite is required. Browser layout, disclosure navigation and small-viewport overflow remain separate checks.
+
+Counting requires an exact source revision and a genuine observation date/time bound to the hashed record. Missing metadata, body text and receipt-creation timestamps cannot satisfy that gate. Unqualified rules remain visible but cannot establish a pairwise edge. Public renderer entrypoints validate source identity and fixed factual prerequisites; numeric clauses are bound separately even when a tooltip contains multiple bonuses in one sentence.

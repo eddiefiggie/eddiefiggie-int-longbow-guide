@@ -1,0 +1,22 @@
+{
+  "capturedAt": "2026-11-07T19:50:34.361Z",
+  "url": "https://ddowiki.com/page/Nearly_Complete",
+  "permanentLink": "/index.php?title=Nearly_Complete&oldid=705751",
+  "method": "One bounded permitted supported-cloud-browser read of article DOM; exact relevant excerpts transcribed from the returned text.",
+  "scope": "Generic crafting definition and complete Ability Score row. Entire article DOM text was inspected; navigation and other menu rows omitted from this receipt.",
+  "full_observed_article": {
+    "utf8_bytes": 3758,
+    "sha256": "4413cd0f38a931b203cf4152b54b8577f2f4604b3dda0be740fcb53a127f03b9",
+    "skull_mentions": 0,
+    "raid_mentions": 0,
+    "qualification": "No Skull/raid qualification appeared in this observed article text. Absence is not a game rule and does not resolve the +15 generic / +16 item-specific discrepancy."
+  },
+  "excerpts": [
+    "Nearly Completed is a crafting mechanic that allows players to upgrade items from the Terror of Demogorgon expansion with an extra enchantment from a small list at the Duergar Completion Forge in Gravenhollow.",
+    "Which set of enchantments is available for an item depends on which version of the Nearly Complete enchantment the item has. For example, an item with Nearly Complete: Ability Score can be upgraded with an Enhancement bonus to one of the core stats. Upgrading an item with Nearly Completed requires 25 Abyssal Gems (or Legendary Abyssal Gems for Legendary items) from Terror of Demogorgon end chests. Note that you cannot replace a Nearly Completed upgrade after selecting one - you will need a new copy of the item to apply a different effect.",
+    "Effect set\tAvailable upgrades (Heroic)\tAvailable upgrades (Legendary)\nAbility Score\t\nCharisma +6\nConstitution +6\nDexterity +6\nIntelligence +6\nStrength +6\nWisdom +6\n\t\nCharisma +15\nConstitution +15\nDexterity +15\nIntelligence +15\nStrength +15\nWisdom +15"
+  ],
+  "freshness": "Observed 7 November 2026; anonymous Wiki notice permits up to 5 hours cache lag; no in-game verification.",
+  "license": "https://creativecommons.org/licenses/by-sa/2.5/",
+  "original_receipt_sha256": "701dfae3c48658a79b99c9a096cbfaa5dc62b990a23f34a81a732237693227fc"
+}

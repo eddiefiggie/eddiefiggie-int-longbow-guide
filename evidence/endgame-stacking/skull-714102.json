@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-11-07T19:40:00.140Z",
+  "permanentLink": "/index.php?title=Item:The_Skull_of_the_Horned_King&oldid=714102",
+  "url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King",
+  "scope": "Selected exact on-page article and tooltip DOM excerpts, transcribed from supported browser output. Not raw response bytes. No in-game or solver validation.",
+  "freshness": "Observed 7 November 2026; anonymous Wiki cache may be up to 5 hours old.",
+  "license": "https://creativecommons.org/licenses/by-sa/2.5/",
+  "excerpts": [
+    "The Skull of the Horned King",
+    "Minimum level\t35",
+    "Nearly Complete: Ability Score\nThis item can be upgraded with one of the following:\nCharisma +16\nConstitution +16\nDexterity +16\nIntelligence +16\nStrength +16\nWisdom +16"
+  ],
+  "tooltips": [
+    " Constitution +16 Constitution +16: This item gives the wearer improved health, granting a +16 Enhancement bonus to Constitution.",
+    "Nearly Complete: Ability ScoreNearly Complete: Ability Score: This item isn't quite finished, but it's only a step away from completion. Bring it to the forges on the upper floor of Gravenhollow and combine it with melted materials to restore this item to its full potential.",
+    "Relentless FuryRelentless Fury: While this item is equipped, any killing blows you strike against enemies may drive you into a furious rage, providing a 5% Enhancement damage bonus to your melee, ranged and unarmed attacks for 30 seconds. Slaying weaker opponents has a reduced chance of producing this effect.",
+    " Armor-Piercing 25% Armor-Piercing 25%: Passive: +25% Enhancement bonus to Fortification Bypass. (Fortification Bypass makes your attacks ignore a percentage of enemy Fortification.)",
+    " Doublestrike 18% Doublestrike 18%: Passive: 18% Enhancement bonus to Doublestrike. (Doublestrike is a chance to score an additional hit with a melee attack.)",
+    "Enhanced BloodrageEnhanced Bloodrage: This weapon is enhanced by blood - your blood! Each time you take damage or kill an enemy, there is a small chance that you will fall into an unholy bloodrage, greatly increasing your Melee Power, Constitution, and Damage. However, this rage will leave you more vulnerable to Physical attacks, slightly reducing your Armor Class."
+  ]
+}

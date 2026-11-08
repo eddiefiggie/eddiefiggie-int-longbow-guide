@@ -1,0 +1,11 @@
+# Selected endgame evidence
+
+This directory contains exact fresh visible-DOM excerpts and selected derivatives of original retained Wiki source records. Fresh receipts are not raw HTTP response bytes. The dated originals were read through supported browser controls; article permalink metadata is not independent historical-endpoint verification. No in-game test is claimed.
+
+`source-excerpts.json` is generated from the ledger and contains only the source contexts used by this audit. Every entry includes the original local capture hash and pointer, canonical identity, observed revision and timestamp (null when unavailable). The original mixed capture filenames are provenance, not a new payload of unrelated records. Retained tree and augment derivatives record their original package hashes and exact source pointers, omit editor/review metadata, and preserve the original text. Fresh records retain cache limitations and original observation timestamps. Source identities are checked before any derived subtotal is rendered.
+
+Source text is by [DDO Wiki contributors](https://ddowiki.com/) under [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/). Each source record links the article and, when retained, the revision that supplies contributor history. New audit interpretation and arithmetic are separate from the captured wording.
+
+No selected gear, craft, augment or purchase changes are proposed. Unsupported combinations are not declared false: they remain unverified and excluded from asserted totals. Current code and rendered evidence are local review artifacts; publication and browser QA are separate.
+
+The final provenance supplement retains ten exact selected source records and the original receipt hash. Two original rule observation intervals were recovered without relabeling them as fresh. Inputs without a revision or genuine source-bound observation remain unknown and excluded, even when retained wording is available. The source packet may therefore include unqualified evidence for the visible gap log; its presence alone does not authorize a calculation.

@@ -1,0 +1,42 @@
+[
+  {
+    "origin_file": "INTiana-DDO-Wiki-selected-augments-01-evidence.json",
+    "origin_sha256": "6deced914fb26bcf50467a9b6e1b417d38716586aa472becebe431080254f8ad",
+    "origin_pointer": [
+      "source_receipts",
+      "dodge_ranged_power",
+      "sources",
+      0,
+      "tooltip",
+      "rows",
+      4,
+      "value"
+    ],
+    "url": "https://ddowiki.com/page/Item:Sapphire_of_Dodge_%2B16%25",
+    "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Dodge_%2B16%25&oldid=718395",
+    "observed": "2026-11-02T05:03:28.754Z",
+    "text": "Drag this augment into a slot to upgrade an item to provide a +16% Enhancement bonus to your dodge bonus. This augment can go in a Blue, Green, or Purple Augment Slot.",
+    "minimum_level": 36,
+    "capture_limit": "Exact original own-item Description field. Locations blank: no acquisition guarantee. Original receipt normalized whitespace; no new Wiki observation."
+  },
+  {
+    "origin_file": "INTiana-DDO-Wiki-selected-augments-02-evidence.json",
+    "origin_sha256": "075fae28e4960638a0f737518d5afb1387e20ae4a8c1df8e0143fa7cf38a379d",
+    "origin_pointer": [
+      "source_receipts",
+      "riposte_resistance_festive",
+      "sources",
+      1,
+      "exact_tooltip",
+      "rows",
+      4,
+      "value"
+    ],
+    "url": "https://ddowiki.com/page/Item:Sapphire_of_Resistance_%2B12",
+    "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Resistance_%2B12&oldid=718477",
+    "observed": "2026-11-02T05:30:42.544Z",
+    "text": "Drag this augment into a slot to upgrade an item to provide a +12 Resistance bonus to your Saving Throws. This augment can go in a Blue, Green, or Purple Augment Slot.",
+    "minimum_level": 36,
+    "capture_limit": "Exact original own-item Description field. Locations blank: no acquisition guarantee. Original receipt normalized whitespace; no new Wiki observation."
+  }
+]
