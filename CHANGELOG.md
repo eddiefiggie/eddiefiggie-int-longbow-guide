@@ -2,9 +2,21 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-08-26.1 (local reconciliation candidate; unpublished)
+- Reconciles the frozen selected-loadout stacking audit onto published main `6d429003a5b22db841cdef23946df9f99b7dbfa7`, retaining the already-published A-004 summaries and purchase order exactly once.
+- Preserves every snapshot already on published main, including `11-07-26.2`; adds only the distinct `11-08-26.1` snapshot. Unpublished audit snapshots stay in their original frozen worktrees.
+- Carries the existing audit ledger, evidence dates/hashes, classifications and mechanics limits unchanged. No new Wiki capture, evidence upgrade, gear/craft/augment/build/model change or publication.
+
 ## Build 11-07-26.2 (local wording correction; unpublished)
 - Aligns the Fatesinger comparison timing cell and verdict with this Guide’s existing roadmap: purchases start at 22, Harmonic Resonance at 24, Pianissimo at 25, and all 14 points bought by 28. Links the roadmap and DP purchase order.
 - Adds source-plan consistency and negative regression checks; preserves the full selected build and purchase rows. This is an editorial correction, not a new Wiki audit or a claim about earliest live-game eligibility. Other comparison claims, equipment, crafting, augments and model outputs are unchanged.
+
+## Build 11-07-26.1 (local audit candidate; unpublished)
+- Requires exact revisions and genuine source-bound observations for components, procs, rules and factual summary claims. Fresh receipts repair the asserted subtotal chains; incomplete retained inputs are explicitly unknown and excluded. Current body PRR/MRR/Fortification references follow the scoped audit.
+- Adds a concise selected-loadout breakdown and linked source/interaction ledger. Supports derived gear PRR132, MRR72 and flat HP108 with explicit Wiki rules; withholds mixed totals whose positive interaction evidence is incomplete. Historical arithmetic remains visibly qualified.
+- Retains fresh 7 November item/tooltips and exact retained-source provenance. All 14 base-item revision gaps now have receipts across the dated audits; the old November5 eleven-of-fourteen statement remains explicitly historical.
+- Enforces the full filled kit's character-level36 scope and corrects Cut to the Soul's Dodge bypass classification. No gear, craft, augment, chassis, feat, AP/DP purchase or model-output changes; the historical model's weapon/craft/level mismatch is visible.
+- Adds source-gated arithmetic, pairwise rule coverage, provenance and qualification regressions. Browser presentation review and publication are separate.
 
 ## Build 11-05-26.5 (proposed local correction; unpublished)
 - Corrects endgame socket labels, nine-gem count, boots/belt effect attribution and the filled recipe’s derived CON33 while preserving all equipment, fills, crafting selections and enhancement/class choices.

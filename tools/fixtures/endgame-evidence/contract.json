@@ -20,6 +20,18 @@
       "after": "+20 Ranged Power; Pierce Deception’s listed 5% Doubleshot (<a href=\"#pierce-deception-source-note\">timing under review</a>); paralyse;"
     },
     {
+      "before": "Carries Fighter. PRR on top of the kit’s 133",
+      "after": "Carries Fighter. The selected level-36 kit contributes <a href=\"#selected-stacking-summary\" data-selected-stat=\"PRR\">132 gear PRR</a>; the combined character total remains unverified"
+    },
+    {
+      "before": "Fortification is already 100% from one augment and the rest is melee or caster, so each is run for the class life it carries, three times where that class is Tier A or B",
+      "after": "<span data-unverified-stat=\"Fortification\">Combined Fortification remains unverified</span>; the other benefits here are melee or caster, so each is run for the class life it carries, three times where that class is Tier A or B"
+    },
+    {
+      "before": "MRR is the gap in the kit (32-72); 9 MRR at three stacks",
+      "after": "The fully filled level-36 kit contributes <a href=\"#selected-stacking-summary\" data-selected-stat=\"MRR\">72 gear MRR</a>; the combined character total remains unverified"
+    },
+    {
       "before": "Pluck and Harmonic Resonance at 20-24, Pianissimo at 25; all 14 bought by 28",
       "after": "In this Guide’s <a href=\"#levelling-roadmap\">roadmap</a>: Pluck at 22, Harmonic Resonance at 24, Pianissimo at 25; all 14 points bought by 28 (see <a href=\"#destiny-points-by-level\">DP order</a>)"
     },

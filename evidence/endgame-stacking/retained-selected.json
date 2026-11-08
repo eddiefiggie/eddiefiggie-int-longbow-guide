@@ -1,0 +1,86 @@
+[
+  {
+    "origin_file": "INTiana-DDO-Wiki-source-evidence-batch-4.json",
+    "origin_sha256": "259e067cfd0a6bfb72111b44b177454ea060750a48ace2e2d8a4c9a58b7aa89a",
+    "origin_pointer": [
+      "pages",
+      2
+    ],
+    "url": "https://ddowiki.com/page/Quality_bonus",
+    "revision": "https://ddowiki.com/index.php?title=Quality_bonus&oldid=364683",
+    "observed_start": "2026-11-02T01:44:44.133Z",
+    "observed_end": "2026-11-02T01:44:45.777Z",
+    "capture_limit": "Exact source passages extracted from the original retained receipt. Original capture used normalized whitespace; source-reported permalink metadata was not a historical endpoint read. Not recaptured today or tested in game.",
+    "text": "A quality bonus makes a character better at an action through sheer good workmanship of the item in question. Like most bonus types, multiple quality bonuses do not stack, only the greatest bonus applies."
+  },
+  {
+    "origin_file": "INTiana-DDO-Wiki-source-evidence-batch-4.json",
+    "origin_sha256": "259e067cfd0a6bfb72111b44b177454ea060750a48ace2e2d8a4c9a58b7aa89a",
+    "origin_pointer": [
+      "pages",
+      3
+    ],
+    "url": "https://ddowiki.com/page/Insight_bonus",
+    "revision": "https://ddowiki.com/index.php?title=Insight_bonus&oldid=689072",
+    "observed_start": "2026-11-02T01:44:51.286Z",
+    "observed_end": "2026-11-02T01:44:56.761Z",
+    "capture_limit": "Exact source passages extracted from the original retained receipt. Original capture used normalized whitespace; source-reported permalink metadata was not a historical endpoint read. Not recaptured today or tested in game.",
+    "text": "An insight bonus improves performance of a given activity by granting the character an almost precognitive knowledge of what might occur. Multiple insight bonuses do not stack, only the highest applies. Generally, item enchantments that grant an Insight bonus to a particular stat have a value equal to half that of an equivalent level enchantment giving an Enhancement or Equipment bonus to the same stat, rounding down.\nParrying = insight bonus to AC and saves\nHeightened Awareness = insight bonus to AC\nJidz-Tet'ka grants insight bonuses depending on the active monk stance\nElemental & Primal armor enchantments grant insight bonus to elemental resistances\nEffect: Grants +1 to +4 Insight bonus to an ability score. Found on:\nGreen Steel weapons tier 3\nIncredible Potential\nExpending 40 Commendation of Valor for a Potion of Insightful Ability - +2 to all abilities\nInsightful Strength items\nInsightful Dexterity items\nInsightful Constitution items\nInsightful Intelligence items\nInsightful Wisdom items\nInsightful Charisma items\nSince Update 14, items that used to grant a +2 exceptional bonus to an ability score grant insight bonus. See Exceptional bonus for more information."
+  },
+  {
+    "origin_file": "INTiana-DDO-Wiki-source-evidence-batch-4.json",
+    "origin_sha256": "259e067cfd0a6bfb72111b44b177454ea060750a48ace2e2d8a4c9a58b7aa89a",
+    "origin_pointer": [
+      "pages",
+      4
+    ],
+    "url": "https://ddowiki.com/page/Enhancement_bonus",
+    "revision": "https://ddowiki.com/index.php?title=Enhancement_bonus&oldid=699462",
+    "observed_start": "2026-11-02T01:45:04.528Z",
+    "observed_end": "2026-11-02T01:45:09.911Z",
+    "capture_limit": "Exact source passages extracted from the original retained receipt. Original capture used normalized whitespace; source-reported permalink metadata was not a historical endpoint read. Not recaptured today or tested in game.",
+    "text": "An enhancement bonus represents a magical increase in the effectiveness of an item. Multiple enhancement bonuses of the same type do not stack. Also, enhancement bonuses that cover many areas do not stack with a specific type. For example, Speed which provides an enhancement bonus to move speed does not stack with Striding. Only the highest enhancement bonus applies for each type. Therefore, only an item or a spell is necessary to get the best bonus, so as you begin equipping items that provide bonuses like Acid Resistance, casting Resist Energy becomes unnecessary. Many types of Enhancement bonuses exist.\nAdds X to the Armor Class for an armor\nAdds X to the Attack and damage rolls for a weapon\nFor shields, an enhancement bonus increases attack, damage, shield bonus to armor class and damage reduction when actively blocking (stacks with other forms of DR)\nWhen actively blocking with an orb, an enhancement bonus increases your Saves as well as your 5 core Energy Resistances by the X.\nWhen wielding two weapons, each weapon uses its own X. When using a ranged weapon, only the ammo or the weapon's plus number is used, whichever is higher. Therefore, it's best to use +1 ranged weapons (minimum amount), with +5 ammo (which is easily obtained through crafting, vendors or conjuring with spells). In addition:\nWeapons that have any X enhancement bonus will bypass DR/Magic.\nArmor that has any X enhancement bonus is automatically considered Masterwork, and thus it isn't as cumbersome, reducing the Armor Check Penalty by 1.\nIn general, items have enhancement bonuses within the following ranges. Newer items obviously tend to scale to the higher end of the range than legacy items, though there are of course exceptions:\n+1-3: Levels 1-10\n+4-5: Levels 11-20\n+6: Level 20\n+7-14: Level 21-28\n+15: Level 29-34\n+16: Level 35\nMany other enhancement bonuses exist for many Character sheet scores. Enhancement bonuses do not stack (for instance the bonus given by Dexterous Boots would not stack with the bonus given by the Cat's Grace spell). Enhancement 'type' bonuses are also the most commonly used bonus type for some other things besides the standard plus bonuses such as:\nA specific skill for some spells (like Jump) and some magic items (another more common kind of skill bonus is a competence bonus)\nA specific ability for some spells (like Bull's strength) and some magic items\nAttack speed (e.g. from a Melee Alacrity item, a speed item, items or Haste spell)\nRun speed (e.g. from a striding item, a speed item or a Haste spell)\nNumerous others."
+  },
+  {
+    "origin_file": "INTiana-DDO-Wiki-source-evidence-batch-3.json",
+    "origin_sha256": "d193277f986138418a2df0dc81c0ebf329339e70065ccd7b243b39d2318cb2d4",
+    "origin_pointer": [
+      "pages",
+      2
+    ],
+    "url": "https://ddowiki.com/page/Physical_Resistance_Rating",
+    "revision": "https://ddowiki.com/index.php?title=Physical_Resistance_Rating&oldid=673201",
+    "observed_start": "2026-11-02T01:25:12.712Z",
+    "observed_end": "2026-11-02T01:25:15.254Z",
+    "capture_limit": "Exact source passages extracted from the original retained receipt. Original capture used normalized whitespace; source-reported permalink metadata was not a historical endpoint read. Not recaptured today or tested in game.",
+    "text": "Physical Resistance Rating (abbreviated PRR) is a form of damage mitigation that was introduced with Update 14. It provides a percentage reduction in physical damage (bludgeoning, slashing, and piercing), and is granted through multiple sources (items, feats, enhancements) and stacks with itself. Multiple effects granting an Enhancement bonus to Physical Resistance do not stack.\nCharacter sheets show the Physical Resistance Rating of the player next to the elemental resistances. PRR is applied after damage reduction. The PRR is applied to the damage that passes through the DR and is always rounded down. As such If a player would take 20 damage before DR or PRR and has 10 DR and 60 PRR (37.5% reduction), the result is:\n(20 - 10) * 37.5% = 3.75 rounded down to 3\n3 damage is resisted\nThe formula for calculating damage mitigation for physical damage was changed in Update 23. The new formula is: 100/(100+Rating). Incoming damage is multiplied by this number. Example: A character is hit for 100 points of damage.\n0 PRR takes full damage, 100 points.\n20 PRR takes 16.67% less damage, 83 points.\n100 PRR takes 50% less damage, 50 points.\nIn effect, this means that for every point of PRR that you gain, your effective hit points is increased by 1%. This is entirely off of the base, rather than cumulative, and thus beyond a certain point, hit points might be more valuable that PRR alone... (The formula for negative PRR via debuffs is different.)\nArmor proficiency provides a BAB-based bonus to Physical Resistance Rating when wearing armor. Without proficiency, base armor does not provide any PRR (although item affixes still apply). Note that the armor's level, AC bonus etc do not inherently affect this - only the type of armor, as documented in the table below.\nWarforged/Bladeforged Plating feats provide PRR whether you wear a docent or not.\nRegardless of proficiency, Shields always provide PRR (and MRR).\nPRR and MRR multiplier: Wearing a large or tower shield double your effective PRR and MRR vs effects that require a Reflex saving throw. Doubling your PRR or MRR reduces incoming damage by a higher percentage as your base PRR increases - e.g. doubling 100 PRR reduces incoming damage by 33%, but doubling 200 PRR reduces incoming damage by 40%.\nNote: Stacks with the Sheltering enhancement\nMonsters usually don't have PRR. Some enemies in the newer content have PRR, such as Abishai or Erinyes. The increase in player damage from negative PRR uses the formula\ndamage increase = (100 + debuff) / 100.\nFor example, against a target with -10 PRR you deal +10% damage. Player characters have a few options for reducing enemy PRR, for example:"
+  },
+  {
+    "origin_file": "INTiana-DDO-Wiki-source-evidence-batch-3.json",
+    "origin_sha256": "d193277f986138418a2df0dc81c0ebf329339e70065ccd7b243b39d2318cb2d4",
+    "origin_pointer": [
+      "pages",
+      3
+    ],
+    "url": "https://ddowiki.com/page/Magical_Resistance_Rating",
+    "revision": "https://ddowiki.com/index.php?title=Magical_Resistance_Rating&oldid=708082",
+    "observed_start": "2026-11-02T01:25:48.512Z",
+    "observed_end": "2026-11-02T01:25:50.238Z",
+    "capture_limit": "Exact source passages extracted from the original retained receipt. Original capture used normalized whitespace; source-reported permalink metadata was not a historical endpoint read. Not recaptured today or tested in game.",
+    "text": "Magical Resistance Rating (abbreviated MRR) is a form of damage mitigation that was introduced with Update 23. It provides a percentage reduction in damage from acid, sonic, fire, electric, cold, alignment, light, positive, negative, poison, rust, and force (since Update 78). MRR is granted through multiple sources (items, feats, enhancements) and stacks with itself. Multiple effects granting an Enhancement bonus to Magical Resistance do not stack.\nCharacter sheets show the Magical Resistance Rating of the player next to the elemental resistances. MRR is applied after Elemental Resistance. MRR is applied to the damage that passes through the resistance and this is always rounded down. As such if a player would take 20 damage before resists or MRR was applied and had 10 resistance and 60 MRR (37.5% reduction), the result is:\n(20 - 10) * (100 - 37.5)% = 6.25 round down to 6\n14 damage will be resisted.\n100/(100+Rating) Example: A character is hit for 100 points of damage.\n0 MRR takes full damage, 100 points.\n20 MRR takes 16.67% less damage, 83 points.\n100 MRR takes 50% less damage, 50 points.\nDifferent armor types can apply a cap for Magical Resistance Rating (U23):\nMedium Armor and Heavy Armor prevent you from using Evasion (and so do Large Shields and Tower Shields).\nFew rare effects exist that allow your character to increase the MRR cap restriction imposed by your armor.\nMagical Resistance Rating offered by armor: None! (except for randomly generated armor) (bonuses removed in Update 28 Patch 1)\nMagical Resistance Rating offered by shield type (proficiency not needed)(Stacks with the Sheltering enhancement):\nCharacters proficient with shields can also use the larger shields for defense against magical attacks that would normally require a Reflex saving throw. In addition to using your Reflex saving throw to mitigate the damage you can deflect the damage off your shield. This is represented by increasing your Physical and Magical Resist Ratings against those types of attacks when using a shield.\nYou gain this additional mitigation whether you make your Reflex saving throw or not.\nYou don't have to be actively blocking to gain this benefit.\nPhysical and Magical Resist Rating multiplier against magical attacks that normally allow a Reflex saving throw.\nMagical Resistance Rating (MRR) should work vs. traps and most other damage sources (not just spells). If you are wielding a heavy or tower shield, your MRR values are considered doubled against damage that can be halved with a Reflex save (whether traps or spells).\nSee Physical Resistance Rating#Monsters with PRR for information about reducing MRR of your enemies and how that affects the damage of your magical attacks.\nAll of the properties listed are able to go into the negatives. Going from 0 to -10 PRR provides the same difference in damage against the target as going from 10 PRR to 0 PRR. The same is true of MRR and Melee Power/Ranged Power.\nSo! Even though a large portion of monsters do not innately have positive values of those stats, effects that debuff still help to defeat them."
+  },
+  {
+    "origin_file": "INTiana-DDO-Wiki-source-evidence-batch-6.json",
+    "origin_sha256": "0a94037fab7cbe2a98cd617fdfb182bf18bb0371e0c9ef434f314452e84f6571",
+    "origin_pointer": [
+      "pages",
+      6
+    ],
+    "url": "https://ddowiki.com/page/Vitality",
+    "revision": "https://ddowiki.com/index.php?title=Vitality&oldid=595269",
+    "observed_start": "2026-11-02T02:14:38.359Z",
+    "observed_end": "2026-11-02T02:14:44.202Z",
+    "capture_limit": "Exact source passages extracted from the original retained receipt. Original capture used normalized whitespace; source-reported permalink metadata was not a historical endpoint read. Not recaptured today or tested in game.",
+    "text": "Effect: While equipped this item grants additional hit points. This stacks with all bonuses except for other items bearing the Vitality enchantment. Found on:\nVitality +48 items (5 items)\nFound on: Cloaks Rings as a Prefix Base price modifier: +6 or +7? Effect: Grants Vitality. Available on random loot since Update 18."
+  }
+]
