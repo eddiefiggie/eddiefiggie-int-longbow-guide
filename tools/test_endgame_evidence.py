@@ -117,6 +117,16 @@ def validate_preservation(html):
     for correction in CONTRACT['allowed_build_prose_corrections']:
         assert chosen_build.count(correction['after'])==1
         chosen_build=chosen_build.replace(correction['after'],correction['before'])
+    # A-019: reverse only the reviewed Shadowstrike save-condition sentence.
+    # Preserve the original contract hash; the dedicated source/Guide tests
+    # require the corrected condition and reject its removal or alteration.
+    shadow_before = ('AoE ranged strike with +30% damage, +2 multiplier, '
+                     '+3 threat range, Shadow Loss curse')
+    shadow_after = ('AoE ranged strike with +30% damage, +2 multiplier, '
+                    '+3 threat range; Shadow Loss curse only if the struck '
+                    'opponent fails its Fortitude save')
+    assert chosen_build.count(shadow_after) == 1, 'A-019 exact reviewed correction'
+    chosen_build = chosen_build.replace(shadow_after, shadow_before)
     assert sha(chosen_build.encode())==CONTRACT['class_to_gear_sha256']
     assert sha(span(html,'<h3 id="bow-damage-model">','<h3 id="crafted-endgame-bow">').encode())==CONTRACT['bow_model_section_sha256']
 

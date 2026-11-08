@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-08-26.3 (local A-019 candidate; unpublished)
+- Conditions Shadowstrike's Shadow Loss curse on the struck opponent failing its Fortitude save in the destiny table, active-ability prose and ability table. Preserves the literal Wiki DC formula once and links Shadowdancer directly.
+- Adds [retained-source provenance and focused regressions](evidence/shadowstrike-save/README.md) for revision 720964; the original observation time remains missing. No fresh Wiki or live-game certification.
+- Regenerates the current snapshot and crafting print stamp. No Prism, geometry, damage, selected build/gear, model or audit-suite changes; exact-candidate browser QA is separate.
+
 ## Build 11-08-26.2 (local A-003 candidate; unpublished)
 - Adds optional advice to save received Daily Dice XP gems and use available gems toward levels 1–3, plus separate already-owned/later-earned Master’s Gift guidance. No guaranteed skip, paid-roll requirement or assumed ownership.
 - Checks the narrow mechanics against retained Wiki revisions 727165 and 681893 observed on 5 November; links exact provenance, source excerpts and unresolved storage/acquisition limits. No source refresh or live-game certification.
