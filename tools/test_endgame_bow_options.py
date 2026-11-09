@@ -64,8 +64,8 @@ def validate_choice(html):
         'extract it with a Jeweler’s Tool Kit before re-slotting; overwriting destroys it',
         'not an automatic or free transfer',
         'does not transfer weapon crafts, sentient gems, XP or filigrees',
-        'Calamitous remains the reference loadout for its existing audit',
-        'historical model and stacking audit have not been recalculated for Sinew',
+        'Calamitous remains the reference loadout for the component audit',
+        'historical damage model has not been recalculated for Sinew',
     ):
         assert claim in text, claim
     for prohibited in ('Heart Shard', 'Bloody Boulder', 'Piwafwi', 'Burrower',
@@ -78,7 +78,9 @@ def validate_choice(html):
             'https://ddowiki.com/page/Viktranium_Experiment_crafting',
             'https://ddowiki.com/page/Augment_Slot',
             'evidence/endgame-bow-options/README.md'} <= links
-    start = html.index('<h3 id="endgame-kit-ml35-36">')
+    from test_queen_basic import restore_queen_kit
+    html = restore_queen_kit(html)
+    start = html.index('<p id="skull-craft-source-conflict">')
     table = re.search(r'<table>.*?</table>', html[start:], re.S)[0]
     assert digest(table) == CONTRACT['baseline_endgame_table_sha256'], 'all 14 kit rows and fills unchanged'
 
@@ -86,6 +88,8 @@ def validate_choice(html):
 def validate_scope(html):
     """Reverse only the reviewed bow prose; every remaining byte equals main."""
     validate_choice(html)
+    from test_queen_basic import restore_queen_release
+    html = restore_queen_release(html)
     # Preserve the original bow/Mechanic hashes after reversing only A-018.
     from test_class_skill_costs import restore_cost_release
     html = restore_cost_release(html)
@@ -171,11 +175,11 @@ class EndgameBowOptionsTests(unittest.TestCase):
     def test_scope_rejects_gear_craft_augment_and_chassis_changes(self):
         for before, after in (
             ('<td>Legendary Abyssal Compass</td>', '<td>Legendary The Bloody Boulder</td>'),
-            ('<td>Cloak of Summer’s End (level 36)</td>', '<td>Legendary Piwafwi</td>'),
+            ('>The Queen of Rot</a></td>', '>Legendary Piwafwi</a></td>'),
             ('<td>Legendary Burrowing Claws</td>', '<td>Legendary Burrower</td>'),
-            ('Quality Constitution +3, Quality Seeker +3', 'Quality Deadly +3, Quality Seeker +3'),
-            ('Sapphire of Resistance +12 (all saves)', 'Sapphire of Resistance +13 (all saves)'),
-            ('Miserable: Legendary Miserable Dimlight (Weapon), Exceptional Intelligence +2.', 'Miserable: none.'),
+            ('Dolorous Quality Constitution +3; Woeful Quality Seeker +3', 'Dolorous Quality Deadly +3; Woeful Quality Seeker +3'),
+            ('Sapphire of Resistance +12 (all saves; retained', 'Sapphire of Resistance +13 (all saves; retained'),
+            ('Miserable: Legendary Miserable Dimlight (Weapon), Exceptional Intelligence +2;', 'Miserable: none;'),
             ('<h2 id="class-split">', '<h2 id="changed-class-split">'),
             ('<strong>Calamitous Longbow</strong>, crafted (100)', '<strong>Calamitous Longbow</strong>, crafted (99)'),
         ):

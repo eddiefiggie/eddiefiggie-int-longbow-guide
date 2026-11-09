@@ -2,7 +2,7 @@
   "schema": 1,
   "base_commit": "86b096bfaf274b5050b384ece53b9c14e0ae476b",
   "base_index_sha256": "5b7b42d61e952939c67ca95259655370216ff6d5272078a10bd9d4d69068de92",
-  "scope": "Selected fully filled character-level36 Calamitous/Salt loadout. Arithmetic is a labeled derivation only when every counted component and every required interaction has direct Wiki support. Unknown/conflicting inputs are not counted. Listed totals remain a visible unverified log.",
+  "scope": "Current A-074 Queen of Rot BASIC, fully filled character-level36. Calamitous/Salt is the component-audit reference; Sinew changes only the bow and loses net1 modeled gear INT. Arithmetic is asserted only when every counted component and required interaction has direct Wiki support. Queen and Spot additions are relayed observations/model inputs without original source bytes; their components remain unknown. Historical Summer cloak evidence is preserved separately and does not apply to the current kit.",
   "sources": {
     "stack": {
       "path": "evidence/endgame-stacking/stack-live.json",
@@ -285,31 +285,6 @@
       "record_pointer": [
         "receipts",
         5
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
-    "cloak": {
-      "path": "evidence/endgame-stacking/fresh-2026-11-07.json",
-      "sha256": "9d8c768606cf6f71b2d1be0016bf66bfb80c3c335b4d02e22d49d9a23eb2b5c7",
-      "pointer": [
-        "receipts",
-        4,
-        "text"
-      ],
-      "quote": "Cloak of Summer's End\nMinimum level\t36\t\nItem Type\tClothing / Cloak\nSlot\tBack\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t460\nMaterial\tCloth\nHardness\t56\nBase Value\t14,401pp \nWeight\t0.10 lbs\nLocation\tTimeline Fragment Exchange, Turn in 50 Timeline Fragments\nEnchantments\t\nLight Absorption +24%\nDoubleshot 10%\nConstitution +15\nInsightful Constitution +7\nGreen Augment Slot\nColorless Augment Slot\nSun Augment Slot\n\t\nUpgradeable?\t\nDescription\tTime-Twisted version of Cloak of Summer\n\nEven eternal summer must end someday. This cloak manifested on the day the Summer Court surrendered to eternal winter.\n\n\nTips\t",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:29:37.049Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        4
       ],
       "url_key": "url",
       "observed_pointer": [
@@ -1538,84 +1513,6 @@
         "permanentLink"
       ]
     },
-    "cloak-doubleshot": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        1
-      ],
-      "quote": " Doubleshot 10% Doubleshot 10%: Passive: 10% Enhancement bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
-    "cloak-constitution": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        2
-      ],
-      "quote": " Constitution +15 Constitution +15: This item gives the wearer improved health, granting a +15 Enhancement bonus to Constitution.",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
-    "cloak-insight-constitution": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        3
-      ],
-      "quote": "Insightful Constitution +7Insightful Constitution +7: This item gives the wearer improved health, granting a +7 Insight bonus to Constitution.",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
     "solar-sneak": {
       "path": "evidence/endgame-stacking/augments-and-dodge.json",
       "sha256": "f3cbf3d6cfa8acabb54c2008f019c933d467a1a040c5a30c16e86bf73889f9a1",
@@ -2250,32 +2147,6 @@
       "observed_pointer": null,
       "revision_pointer": null
     },
-    "light-absorption": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        0
-      ],
-      "quote": " Light Absorption +24% Light Absorption +24%: Passive: 24% Enhancement Bonus to Light Absorption. (Absorption reduces damage from an element by a percentage, after resistance have been taken into account.)",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
     "demonic-shield": {
       "path": "evidence/endgame-stacking/tooltips-and-rules.json",
       "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
@@ -2770,21 +2641,6 @@
       "kit_min_level": 36
     },
     {
-      "id": "cloak-ds",
-      "stat": "Doubleshot",
-      "amount": 10,
-      "bonus_type": "Enhancement",
-      "host": "Cloak",
-      "source": "cloak-doubleshot",
-      "value_pattern": "(?P<value>10)% Enhancement bonus",
-      "type_evidence": "Enhancement bonus to Doubleshot",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
       "id": "goggles-ds",
       "stat": "Doubleshot",
       "amount": 9,
@@ -2795,7 +2651,7 @@
       "type_evidence": "Enhancement bonus to Doubleshot",
       "state": "verified",
       "requires": [],
-      "note": "Lower than the listed cloak10; suppression becomes established once the cloak Enhancement type is supported.",
+      "note": "Current selected Enhancement Doubleshot source after removing Summer’s End; no cloak10 component remains. Combined total still requires all positive interaction rules.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3253,36 +3109,6 @@
       ]
     },
     {
-      "id": "cloak-con",
-      "stat": "Constitution",
-      "amount": 15,
-      "bonus_type": "Enhancement",
-      "host": "Cloak",
-      "source": "cloak-constitution",
-      "value_pattern": "\\+(?P<value>15) Enhancement bonus",
-      "type_evidence": "Enhancement bonus to Constitution",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "cloak-insight-con",
-      "stat": "Constitution",
-      "amount": 7,
-      "bonus_type": "Insight",
-      "host": "Cloak",
-      "source": "cloak-insight-constitution",
-      "value_pattern": "\\+(?P<value>7) Insight bonus",
-      "type_evidence": "Insight bonus to Constitution",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
       "id": "belt-con",
       "stat": "Constitution",
       "amount": 3,
@@ -3323,7 +3149,7 @@
       "type_evidence": "Enhancement bonus to your Physical Resistance Rating and Magical Resistance Rating",
       "state": "verified",
       "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Selected filled item at cap; source and interaction evidence are separate checks. Retained BASIC fill; modeled Queen Sheltering41 would supersede40, but Queen type/provenance is unverified so the combined current subtotal is withheld.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3338,7 +3164,7 @@
       "type_evidence": "Enhancement bonus to your Physical Resistance Rating and Magical Resistance Rating",
       "state": "verified",
       "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Selected filled item at cap; source and interaction evidence are separate checks. Retained BASIC fill; modeled Queen Sheltering41 would supersede40, but Queen type/provenance is unverified so the combined current subtotal is withheld.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3443,7 +3269,7 @@
       "type_evidence": "Insight bonus",
       "state": "unknown",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks. Modeled Queen Insightful Fortification84 would supersede81; Queen provenance is missing.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3563,7 +3389,7 @@
       "type_evidence": "Resistance bonus to your Saving Throws",
       "state": "verified",
       "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
+      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule. Retained BASIC fill; modeled Queen Resistance13 would supersede12, but Queen type/provenance is unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3623,7 +3449,7 @@
       "type_evidence": "Resistance bonus to your Saving Throws",
       "state": "verified",
       "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
+      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule. Retained BASIC fill; modeled Queen Resistance13 would supersede12, but Queen type/provenance is unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3683,7 +3509,7 @@
       "type_evidence": "Resistance bonus to your Saving Throws",
       "state": "verified",
       "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
+      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule. Retained BASIC fill; modeled Queen Resistance13 would supersede12, but Queen type/provenance is unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -4061,14 +3887,134 @@
       "note": "Suppressed by selected Compass Insight21. Tempest is a separate two-piece set, not a second active Monolith bonus.",
       "channel": "gear",
       "kit_min_level": 36
+    },
+    {
+      "id": "queen-prr",
+      "stat": "PRR",
+      "amount": 41,
+      "bonus_type": "unknown",
+      "host": "Cloak",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Modeled Enhancement Sheltering41 supersedes Defense 40; exact own-tooltip type and original source identity are not retained.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "queen-mrr",
+      "stat": "MRR",
+      "amount": 41,
+      "bonus_type": "unknown",
+      "host": "Cloak",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Modeled Enhancement Sheltering41 supersedes Defense 40; exact own-tooltip type and original source identity are not retained. Apply armor cap to whole-character MRR.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "queen-insight-con",
+      "stat": "Constitution",
+      "amount": 7,
+      "bonus_type": "unknown",
+      "host": "Cloak Nearly Complete",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Explicit Insightful Constitution7 option relayed; selected craft replaces prior cloak Insight7. No captured exact tooltip/revision is available.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "queen-fortification",
+      "stat": "Fortification",
+      "amount": 84,
+      "bonus_type": "unknown",
+      "host": "Cloak",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Modeled Insight84 supersedes Battlerager Insight 81; exact source bytes/type evidence and Quality positive interactions remain missing.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "queen-fortitude",
+      "stat": "Fortitude",
+      "amount": 13,
+      "bonus_type": "unknown",
+      "host": "Cloak",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Modeled Resistance 13 supersedes the retained augment12; no additional13+12 sum.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "queen-reflex",
+      "stat": "Reflex",
+      "amount": 13,
+      "bonus_type": "unknown",
+      "host": "Cloak",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Modeled Resistance 13 supersedes the retained augment12; no additional13+12 sum.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "queen-will",
+      "stat": "Will",
+      "amount": 13,
+      "bonus_type": "unknown",
+      "host": "Cloak",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Modeled Resistance 13 supersedes the retained augment12; no additional13+12 sum.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "spot-diamond",
+      "stat": "Spot",
+      "amount": 22,
+      "bonus_type": "Enhancement",
+      "host": "Ring 1 Green (Colorless augment)",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "A-074 relayed model input, excluded from certified totals. Selected ML36 Diamond of Spot 22; relayed approved source amount/type. Original own-effect source not retained; acquisition unknown. Not a guaranteed final+22 skill change.",
+      "channel": "gear",
+      "kit_min_level": 36
     }
   ],
   "unresolved": [
     {
       "id": "whole-build-doubleshot",
       "state": "unknown",
-      "claim": "92 build / 128 with gear / 177 with optional buffs",
-      "detail": "Existing Guide claims under audit (not asserted totals): Arithmetic-only scenario: Manyshot54 conditional on BAB36; feat10; Harbinger2; Phase Double6; Pierce Deception5; Shadowstriker5; Improved Archer Focus10; listed gear36; optional Primal9, Reaper Strike30 for20s, two four-piece filigree sets10. Distinct applicable feats have a positive rule, but the entire acquisition/stance/tree/gear combination has not been established. Watchful Eye grant is conflicting; no whole-build total is asserted. Hidden Dark Imbuement2 is separately unresolved, not silently assumed absent.",
+      "claim": "Whole-build Doubleshot: current combination unverified",
+      "detail": "Existing Guide claims under audit (not asserted totals): Arithmetic-only scenario: Manyshot54 conditional on BAB36; feat10; Harbinger2; Phase Double6; Pierce Deception5; Shadowstriker5; Improved Archer Focus10; current modeled gear35 (old Summer cloak36 is historical); optional Primal9, Reaper Strike30 for20s, two four-piece filigree sets10. Distinct applicable feats have a positive rule, but the entire acquisition/stance/tree/gear combination has not been established. Watchful Eye grant is conflicting; no whole-build total is asserted. Hidden Dark Imbuement2 is separately unresolved, not silently assumed absent.",
       "sources": [
         "doubleshot-rule",
         "stack",
@@ -4118,7 +4064,7 @@
       "id": "selected-weapon-damage",
       "state": "conditional",
       "claim": "Weapon enhancement, ability, flat damage and riders",
-      "detail": "Existing Guide claims under audit (not asserted totals): Calamitous5.80[1d8+2]+15; selected AA two cores add2 to bow Enhancement under their explicit rule; Harper Enchantment adds1. INT replaces attack/damage ability via Strategic Combat; KTA is half INT modifier Insight damage while activated, not a second ability modifier; it excludes other trances. Agent of Good adds1 attack/damage and another1 attack versus Evil. Tenacious Hunter3 adds6 versus marked OR extraplanar, never twice merely for both. Fey Countenance adds flat2 ranged damage, not per Favored Enemy. All depend on their acquisition/activation and unclear cross-source edges; no complete damage sum.",
+      "detail": "Existing Guide claims under audit (not asserted totals): Calamitous5.80[1d8+2]+15; selected AA two cores add2 to bow Enhancement under their explicit rule; Harper Enchantment adds1. INT replaces attack/damage ability via Strategic Combat; KTA is half INT modifier Insight damage while activated, not a second ability modifier; it excludes other trances. KTA and Insightful Deadly use max of the applicable Insight damage amounts, not addition; neither a second INT modifier nor an automatic stacking benefit is assumed. Agent of Good adds1 attack/damage and another1 attack versus Evil. Tenacious Hunter3 adds6 versus marked OR extraplanar, never twice merely for both. Fey Countenance adds flat2 ranged damage, not per Favored Enemy. All depend on their acquisition/activation and unclear cross-source edges; no complete damage sum.",
       "sources": [
         "stack",
         "arcane-archer",
@@ -4185,7 +4131,7 @@
       "id": "minimum-level",
       "state": "verified",
       "claim": "Full selected fills require character level36",
-      "detail": "Direct Augment rule raises host minimum level to the slotted augment level. Defense40, False Life60, RP14 and Dodge16 have ML36. The full filled kit is not legal at35. Raised for Ed; no item/fill/purchase is changed. Historical model outputs stay frozen and are not asserted for this full selected loadout.",
+      "detail": "Direct Augment rule raises host minimum level to the slotted augment level. Defense40, False Life60, RP14 and Dodge16 have ML36. The full filled kit is not legal at35. A-074 additionally selects ML36 Spot22; both filled bow alternatives and the outfit remain ML36. Historical model outputs stay frozen and are not asserted for this full selected loadout.",
       "sources": [
         "augment-min-level",
         "augment-values",
@@ -4242,6 +4188,13 @@
         "treatise",
         "viktranium"
       ]
+    },
+    {
+      "id": "queen-basic-relay",
+      "state": "unknown",
+      "claim": "Queen BASIC source and model limits",
+      "detail": "The current selection replaces Summer’s End with Queen InsightfulCON7 and fills Ring1 Green with Spot 22. Model-only deltas: DS36→35, raw PRR 132→133, raw MRR 72→73, Fortification 283→286, Will/Reflex/Fortitude 25/25/26→26/26/27. CON32 generic/33 Skull-item case and flat HP 108 unchanged. Freedom of Movement gained; Light Absorption24 lost. Objective cap 132 is not rawPRR. Queen original source bytes/revision and complete bonus types are not retained. Unknown components cannot be promoted from relayed study metadata. Sun/Moon and other positive interaction gaps stay open.",
+      "sources": []
     }
   ],
   "non_total_effects": [
@@ -4270,16 +4223,6 @@
         "exceptional"
       ],
       "note": "Retained source definition is unverified because revision or genuine observation context is incomplete. It is excluded from supported effects pending provenance repair. Direct all-ability scope; Exceptional rule covers its cross-type edge. No whole-character ability score is calculated."
-    },
-    {
-      "id": "light-absorption",
-      "host": "Cloak",
-      "claim": "24% Enhancement Light Absorption",
-      "state": "verified",
-      "sources": [
-        "light-absorption"
-      ],
-      "note": "Applies to Light after resistance; not absorption against every element. No multiple-absorption combination is asserted."
     },
     {
       "id": "acid-electric-resistance",
@@ -4478,6 +4421,16 @@
       "state": "unknown",
       "sources": [],
       "note": "Exact own-feat source has not been joined here; this selected damage input stays logged and excluded from certified enhancement/attack/damage totals."
+    },
+    {
+      "id": "queen-freedom",
+      "host": "Cloak",
+      "claim": "Freedom of Movement",
+      "state": "unknown",
+      "sources": [],
+      "note": "Relayed Queen item observation; original exact effect text/revision not retained. Selected named utility, not a numerical defense total. The former Light Absorption24 effect is absent from BASIC."
     }
-  ]
+  ],
+  "selection_base_commit": "dbc4dc349173ce61ba2b6818e7cd270735dca0d7",
+  "selection_record": "docs/knowledge-base/A-074-QUEEN-BASIC.md"
 }

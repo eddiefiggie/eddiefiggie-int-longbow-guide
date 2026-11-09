@@ -75,3 +75,36 @@ remain uncertified. Exact reversal preserves the PR #39 page, optional Mechanic
 guidance, bow options, scripts/styles and all unrelated content. All earlier
 snapshots remain unchanged. Regression checks do not certify game mechanics;
 independent review and publication remain separate.
+
+## Queen of Rot BASIC — 9 November 2026 (A-074)
+
+Selection base is main `dbc4dc349173ce61ba2b6818e7cd270735dca0d7`
+(build 11-08-26.6). The approved change replaces only Summer’s End with Queen
+Nearly Complete Insightful Constitution7 and fills the empty Ring1 Green socket
+with Diamond of Spot 22. Complete selected crafts and acquisition guidance are
+reconciled in the current table. Calamitous/Sinew conditions, build choices and
+historical damage-model outputs stay fixed.
+
+The [A-074 record](docs/knowledge-base/A-074-QUEEN-BASIC.md) documents the relayed
+normal-page Queen observation, acquisition infobox harvest and reported study
+metadata. Original Queen tooltip bytes/revision and solver artifacts were not
+recovered; none was fabricated, and no local solve is claimed. Bonus types for
+Queen arithmetic remain model assumptions. The 22-solve report excludes two
+failed strict diagnostics from its 20 feasible accepted cases, despite their
+reported Optimal statuses.
+
+Current model-only deltas are Doubleshot 36→35, raw PRR 132→133, raw MRR 72→73,
+Fortification 283→286 and Will/Reflex/Fortitude 25/25/26→26/26/27. Constitution 32
+(generic craft) / 33 (Skull item case), flat HP 108 and other selected modeled
+statistics remain unchanged. Freedom of Movement replaces the lost Light
+Absorption 24. The model's PRR objective cap 132 does not hide raw 133; MRR uses
+whole-character caps. Spot 22 is a source rather than a guaranteed final gain.
+
+The earlier 7 November PRR 132/MRR 72 conclusions below their dated heading apply
+to the former kit. The current ledger removes Summer’s End and marks Queen and
+Spot inputs unknown. It therefore withholds current combined PRR/MRR as well as
+other unsupported combinations. Existing positive-rule and provenance gates,
+including Sun/Moon gaps and the Skull 15/16 conflict, remain intact. Original
+captures and snapshots are unchanged. A reversible exact A-074 delta allows
+older scope contracts to continue checking their original hashes. Regression
+results, independent review, browser QA and publication are separate receipts.

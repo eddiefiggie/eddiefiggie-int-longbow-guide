@@ -2,6 +2,12 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-09-26.1
+- Selects A-074 Queen of Rot BASIC: Queen replaces Summer’s End with Nearly Complete Insightful CON +7; Diamond of Spot +22 fills Unnatural Accuracy’s Green socket. Other equipment/crafts and Calamitous/Sinew alignment choices stay fixed.
+- Lists every socket and empty, all Legendary Sun/Moon fills, current acquisition/crafting routes and the full ML36 requirement. Separates model-only deltas (DS35, raw PRR133/MRR73, Fort286, saves26/26/27) from evidence-supported inputs; CON32/33 conflict, raw-versus-objective PRR and MRR caps remain explicit.
+- Preserves original captures, earlier snapshots and damage-model bytes. Queen/Spot provenance gaps keep current composite defenses unverified; historical Summer notes are clearly superseded. [A-074 study/source limits](docs/knowledge-base/A-074-QUEEN-BASIC.md) disclose relayed observations and solver metadata without reconstructing original artifacts.
+- Regenerates the selected audit, print stamp and snapshot, and adds exact reversible scope, recipe, socket and evidence-gate regressions. Independent review, browser QA and publication remain separate.
+
 ## Build 11-08-26.6
 - Corrects skill-rank prices to follow the class currently being advanced, with named positive class examples and conditional cross-class costs. Reconciles introductory prose, cost cells, Bluff/Listen wording and life examples; qualifies Scourge's chosen Ranger examples as non-exhaustive.
 - Removes misleading universal per-skill cost totals without inventing new totals or changing targets, priorities, progression or the existing budget paragraph. A-035 first-training/maximum issues and whole-budget certification remain separate.

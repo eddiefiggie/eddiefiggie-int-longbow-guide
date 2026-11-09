@@ -16,7 +16,7 @@ def sha(data): return hashlib.sha256(data).hexdigest()
 def span(html,start,end):
     return html[html.index(start):html.index(end)]
 def kit_rows(html):
-    block=html.split('<h3 id="endgame-kit-ml35-36">',1)[1].split('</tbody>',1)[0]
+    block=html.split('<p id="skull-craft-source-conflict">',1)[1].split('</tbody>',1)[0]
     out={}
     for row in Document(block).root.nodes('tr'):
         cells=[norm(c.text()) for c in row.nodes('td')]
@@ -37,6 +37,8 @@ FILL_CORRECTIONS={
 SOCKET_TEXT={'Armor':'Green, Colorless and Sun slots.','Helmet':'Green, Yellow and Sun slots.','Belt':'Green, Blue and Moon slots.','Ring 1':'Green and Colorless slots.','Ring 2':'Blue slot.','Boots':'Green, Colorless and Moon slots.','Bracers':'Green, Yellow and Moon slots.'}
 
 def validate_kit(html):
+    from test_queen_basic import restore_queen_kit
+    html = restore_queen_kit(html)
     rows=kit_rows(html)
     assert set(rows)=={b['slot'] for b in BASE}
     for b in BASE:
@@ -58,6 +60,8 @@ def validate_kit(html):
     assert fills.count('Solar Gem of ')==5 and fills.count('Lunar Gem of ')==4
 
 def validate_claims(html):
+    from test_queen_basic import restore_queen_release
+    html = restore_queen_release(html)
     area=span(html,'<h3 id="endgame-kit-ml35-36">','<h2 id="reaper-10">')
     visible=norm(Document(area).root.text())
     for text in [
@@ -110,6 +114,8 @@ def validate_claims(html):
         assert f'https://ddowiki.com/index.php?title={title}&oldid={rev}' in links
 
 def validate_preservation(html):
+    from test_queen_basic import restore_queen_release
+    html = restore_queen_release(html)
     chosen_build=span(html,'<h2 id="class-split">','<h2 id="gear">')
     # A-018: reverse only the reviewed price prose; retain every prior hash.
     from test_class_skill_costs import restore_cost_prose
@@ -191,11 +197,11 @@ class EndgameEvidenceTests(unittest.TestCase):
         for old,new in [('Green (Blue augment): Legendary Sapphire','Blue: Legendary Sapphire'),('Green and Colorless slots.','Two Colorless slots.'),('Green (Yellow augment): Topaz','Yellow: Topaz'),('Green, Yellow and Moon slots.','Moon and two Yellow slots.'),('Yellow (Colorless augment): Ravil','Colorless: Ravil')]:
             with self.subTest(old=old),self.assertRaises(AssertionError): validate_kit(self.html.replace(old,new))
     def test_changed_or_removed_gear_and_fills_are_rejected(self):
-        for old,new in [('Lunar Gem of Constitution (+4 Profane)',''),('Legendary Calamitous Longbow</td><td>34','Legendary Cataclysmic Longbow</td><td>34'),('Quality Constitution +3, Quality Seeker +3','Quality Constitution +3'),('Nearly Complete: Constitution +16','Nearly Complete: Intelligence +16')]:
+        for old,new in [('Lunar Gem of Constitution (+4 Profane)',''),('Legendary Calamitous Longbow <em>or</em> Legendary Demogorgon’s Sinew','Legendary Cataclysmic Longbow'),('Dolorous Quality Constitution +3; Woeful Quality Seeker +3','Dolorous Quality Constitution +3'),('Nearly Complete: Constitution +16','Nearly Complete: Intelligence +16')]:
             assert old in self.html
             with self.subTest(old=old),self.assertRaises(AssertionError): validate_kit(self.html.replace(old,new))
     def test_overclaim_and_wrong_arithmetic_mutations_are_rejected(self):
-        for old,new in [('does not establish stacking','establishes stacking'),('Timing unresolved:','Timing verified:'),('automatically grants the feat','requires a separate feat'),('not guaranteed immunity','guaranteed immunity'),('5 Insight (boots)','5 Insight (belt)'),('the nine Solar and Lunar','the eight Solar and Lunar'),('Constitution contribution is <strong>33</strong>','Constitution contribution is <strong>32</strong>'),('not an in-game check','an in-game verification'),('equal totals do not prove zero DPS opportunity cost','Salt has zero DPS opportunity cost')]:
+        for old,new in [('does not establish stacking','establishes stacking'),('Timing unresolved:','Timing verified:'),('automatically grants the feat','requires a separate feat'),('not guaranteed immunity','guaranteed immunity'),('5 Insight (boots)','5 Insight (belt)'),('The nine Solar and Lunar','The eight Solar and Lunar'),('Constitution contribution is <strong>33</strong>','Constitution contribution is <strong>32</strong>'),('not an in-game check','an in-game verification'),('equal totals do not prove zero DPS opportunity cost','Salt has zero DPS opportunity cost')]:
             assert old in self.html
             with self.subTest(old=old),self.assertRaises(AssertionError): validate_claims(self.html.replace(old,new))
 

@@ -28,9 +28,9 @@ def validate(source,html):
     assert norm(cells[1].text()).startswith('Legendary Miserable Dimlight (Weapon) — Exceptional Intelligence +2 (the kit’s solve), or Miserable Improved Destruction')
     assert norm(cells[3].text())=='25 each of the four Legendary Bleak parts and 100 Legendary Bleak Wires'
     assert [a.attrs['href'] for a in cells[1].nodes('a')]==[URL+'#Miserable_(Weapons)']
-    kit=[r for r in rows if len(r.nodes('td'))==6 and norm(r.nodes('td')[1].text())=='Legendary Calamitous Longbow']
+    kit=[r for r in rows if len(r.nodes('td'))==6 and norm(r.nodes('td')[1].text())=='Legendary Calamitous Longbow or Legendary Demogorgon’s Sinew']
     assert len(kit)==1
-    assert 'Miserable: Legendary Miserable Dimlight (Weapon), Exceptional Intelligence +2.' in norm(kit[0].nodes('td')[4].text())
+    assert 'Miserable: Legendary Miserable Dimlight (Weapon), Exceptional Intelligence +2;' in norm(kit[0].nodes('td')[4].text())
     assert 'Miserable Exceptional Intelligence +2</strong>' not in html
 
 class DimlightNameTests(unittest.TestCase):
@@ -43,7 +43,7 @@ class DimlightNameTests(unittest.TestCase):
         for old,new in [('Legendary Miserable Dimlight (Weapon)','Heroic Miserable Dimlight (Weapon)'),
                         ('Legendary Miserable Dimlight (Weapon)','Legendary Miserable Dimlight (Accessory)'),
                         ('Legendary Miserable Dimlight (Weapon)','Legendary Miserable Shadows (Weapon)'),
-                        ('Weapon), Exceptional Intelligence +2.','Weapon), Exceptional Intelligence +1.'),
+                        ('Weapon), Exceptional Intelligence +2;','Weapon), Exceptional Intelligence +1;'),
                         ('25 each of the four Legendary Bleak parts and 100 Legendary Bleak Wires','25 each of the four Legendary Bleak parts and 20 Legendary Bleak Wires')]:
             with self.subTest(old=old,new=new):
                 assert old in html

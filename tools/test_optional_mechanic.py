@@ -30,6 +30,8 @@ def restore_mechanic_release(html):
 
 
 def validate_scope(html):
+    from test_queen_basic import restore_queen_release
+    html = restore_queen_release(html)
     # A-018 reverses only its exact price corrections and build stamp first.
     from test_class_skill_costs import restore_cost_release
     html = restore_cost_release(html)
