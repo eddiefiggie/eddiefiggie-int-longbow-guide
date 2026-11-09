@@ -27,6 +27,8 @@ def restore_fixed_selection_release(html):
 
 
 def validate_selection(html):
+    from test_skill_training_timing import restore_training_release
+    html = restore_training_release(html)
     assert SCOPE['baseline_commit'] == '1a74f38a204123c9d63532071838979522230ba2'
     assert SCOPE['baseline_index_sha256'] == BASELINE_SHA
     assert hashlib.sha256(restore_fixed_selection_release(html).encode()).hexdigest() == BASELINE_SHA

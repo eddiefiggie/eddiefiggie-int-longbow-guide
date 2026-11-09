@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-09-26.3
+- Separates skill-training eligibility, heroic rank ceilings and current-class prices. Scourge’s ordinary Ranger-1 step cannot train Disable Device or Open Lock; UMD and Tumble are trainable cross-class, capped at 2 ranks each. Rogue 1 at character level 2 permits the trap skills and gives its class skills a ceiling of 5, then character level + 3 through heroic training.
+- Qualifies other iconic starts by their actual forced class, retains Shadar-kai’s Rogue-first exception, and marks the existing allocation examples as partial. Class order, skill priorities/targets, point estimates, other selections and the full-budget uncertainty remain unchanged.
+- Uses the exact dated [A-018 transmitted ledger with explicit A-035 limits](evidence/skill-training-timing/README.md); original browser bytes were not recovered or freshly read. Adds focused source/current-content and exact-scope checks, updates the print stamp and creates a new snapshot while preserving all earlier snapshots.
+
 ## Build 11-09-26.2
 - Removes obsolete solver-empty wording from the current Skull craft and Epic Purifying Quiver rows. Labels the unchanged Claws and Calamitous Dimlight crafts as selected choices.
 - Identifies the bow augments as selected fills requiring level 36 and labels the Appendix’s optimizer runs as earlier records. Preserves the Skull +16 item-page / +15 generic craft conflict, all equipment and fills, modeled values, source limits and historical notes. No original study report was recovered or newly verified.

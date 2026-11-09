@@ -126,3 +126,30 @@ Nearly Complete +15 conflict remains explicit. Historical notes and every
 published snapshot, including 11-09-26.1, remain unchanged. The new exact reversal
 contract reconstructs the prior published index before existing A-074 and older
 scope checks apply; it does not replace their hashes or widen their permissions.
+
+## Skill-training eligibility and heroic ceilings — 9 November 2026 (A-035)
+
+The current Scourge example combined training eligibility with rank price and
+claimed no level-1 maximum, then a permanent maximum of 5 after Rogue. The
+correction separates those questions: ordinary Ranger 1 cannot train Disable
+Device or Open Lock, whereas UMD and Tumble are eligible cross-class with a
+level-1 maximum of 2 ranks. Rogue 1 at character level 2 permits the trap skills;
+Rogue class-skill ceilings are 5 at that level and character level + 3 through
+heroic training. Prices still follow the class being advanced. Other iconic
+starts use their actual first-class eligibility; Shadar-kai’s Rogue-first
+exception and all class orders remain unchanged.
+
+The [A-035 evidence map](evidence/skill-training-timing/README.md) binds the
+correction to the exact committed A-018 transmitted ledger. The local A-018
+receipt is a metadata manifest; the original raw browser packet was not
+recovered or read here. The cross-class maximum application is identified as a
+ledger statement and derived arithmetic, not a locally inspected raw-page
+quotation. There is no fresh Wiki or in-game verification. Original ledger,
+receipt, dated exclusion history and earlier snapshots remain immutable.
+
+Existing skill priorities, targets, point estimates and other build selections
+are preserved. The displayed examples remain partial allocations; all points
+must be spent at the current level-up, with no new allocation of remaining
+points or complete budget certification. The exact A-035 reversal preserves all
+older release hashes, and focused regressions reject stale eligibility/ceiling
+claims, incorrect pricing, source upgrades and unrelated changes.

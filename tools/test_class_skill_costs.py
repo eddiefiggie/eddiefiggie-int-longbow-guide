@@ -78,6 +78,10 @@ def table_rows(table):
 
 
 def validate_costs(html, examples):
+    # A-035 has its own current-content/source checks. Reconstruct only its
+    # exact changes so this older price contract keeps its original scope.
+    from test_skill_training_timing import restore_training_prose
+    html = restore_training_prose(html)
     nodes = skill_nodes(html)
     for ident, clauses in {
         'skill-cost-rule': (
@@ -189,8 +193,8 @@ class ClassSkillCostTests(unittest.TestCase):
             ('<td>Maximum (23)</td>', '<td>Maximum (22)</td>'),
             ('4-5 ranks', '10 ranks'),
             ('A Fighter life has about 266 points', 'A Fighter life has 300 verified points'),
-            ('have no maximum yet', 'have a maximum of 2'),
-            ('maximum to 5 for good', 'maximum to character level + 3'),
+            ('have a maximum of 2 ranks each at character level 1', 'have no maximum yet'),
+            ('a maximum of 5 ranks at character level 2 and character level + 3 thereafter', 'a maximum of 5 for good'),
             ('<td>Elemental Arrows (Flaming), Awareness 3</td>', '<td>Awareness 2</td>'),
             ('<td>Legendary Abyssal Compass</td>', '<td>Different gear</td>'),
             ('recommended for lawful lives', 'optional for lawful lives'),
