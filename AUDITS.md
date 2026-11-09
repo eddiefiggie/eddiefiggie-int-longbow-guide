@@ -108,3 +108,21 @@ including Sun/Moon gaps and the Skull 15/16 conflict, remain intact. Original
 captures and snapshots are unchanged. A reversible exact A-074 delta allows
 older scope contracts to continue checking their original hashes. Regression
 results, independent review, browser QA and publication are separate receipts.
+
+## Fixed BASIC selection wording — 9 November 2026 (build 11-09-26.2)
+
+The current recipe called the selected Skull Constitution craft and Epic Purifying
+Quiver empty solver slots. Those obsolete assertions are removed. Claws Dexterity
+and Calamitous Dimlight now use selected-craft wording instead of attributing
+current choices to a solver. The approved BASIC recipe and the existing relayed
+study record are the consistency reference; no original study artifact was
+recovered or newly verified.
+
+The bow augment row now describes its selected fills and ML36 requirement; the
+Gear introduction identifies the Appendix’s optimizer runs as earlier records.
+This changes six current explanations, not the equipment, crafts, socket fills,
+modeled values or source qualifications. The Skull item-page +16 versus generic
+Nearly Complete +15 conflict remains explicit. Historical notes and every
+published snapshot, including 11-09-26.1, remain unchanged. The new exact reversal
+contract reconstructs the prior published index before existing A-074 and older
+scope checks apply; it does not replace their hashes or widen their permissions.

@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-09-26.2
+- Removes obsolete solver-empty wording from the current Skull craft and Epic Purifying Quiver rows. Labels the unchanged Claws and Calamitous Dimlight crafts as selected choices.
+- Identifies the bow augments as selected fills requiring level 36 and labels the Appendix’s optimizer runs as earlier records. Preserves the Skull +16 item-page / +15 generic craft conflict, all equipment and fills, modeled values, source limits and historical notes. No original study report was recovered or newly verified.
+- Adds focused current-selection and exact-scope regressions, regenerates the print stamp and creates a new snapshot. Build 11-09-26.1 and all earlier snapshots remain unchanged.
+
 ## Build 11-09-26.1
 - Selects A-074 Queen of Rot BASIC: Queen replaces Summer’s End with Nearly Complete Insightful CON +7; Diamond of Spot +22 fills Unnatural Accuracy’s Green socket. Other equipment/crafts and Calamitous/Sinew alignment choices stay fixed.
 - Lists every socket and empty, all Legendary Sun/Moon fills, current acquisition/crafting routes and the full ML36 requirement. Separates model-only deltas (DS35, raw PRR133/MRR73, Fort286, saves26/26/27) from evidence-supported inputs; CON32/33 conflict, raw-versus-objective PRR and MRR caps remain explicit.

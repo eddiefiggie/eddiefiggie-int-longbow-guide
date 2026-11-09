@@ -25,7 +25,7 @@ def validate(source,html):
     craft=[r for r in rows if r.nodes('td') and norm(r.nodes('td')[0].text())=='Miserable']
     assert len(craft)==1
     cells=craft[0].nodes('td')
-    assert norm(cells[1].text()).startswith('Legendary Miserable Dimlight (Weapon) — Exceptional Intelligence +2 (the kit’s solve), or Miserable Improved Destruction')
+    assert norm(cells[1].text()).startswith('Legendary Miserable Dimlight (Weapon) — Exceptional Intelligence +2 (selected Calamitous craft), or Miserable Improved Destruction')
     assert norm(cells[3].text())=='25 each of the four Legendary Bleak parts and 100 Legendary Bleak Wires'
     assert [a.attrs['href'] for a in cells[1].nodes('a')]==[URL+'#Miserable_(Weapons)']
     kit=[r for r in rows if len(r.nodes('td'))==6 and norm(r.nodes('td')[1].text())=='Legendary Calamitous Longbow or Legendary Demogorgon’s Sinew']
