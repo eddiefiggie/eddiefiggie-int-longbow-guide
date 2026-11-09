@@ -153,3 +153,24 @@ must be spent at the current level-up, with no new allocation of remaining
 points or complete budget certification. The exact A-035 reversal preserves all
 older release hashes, and focused regressions reject stale eligibility/ceiling
 claims, incorrect pricing, source upgrades and unrelated changes.
+
+## Diamond of Spot +22 bonus type — 9 November 2026
+
+The current ML36 Diamond of Spot +22 explanations and ledger now say Competence
+instead of Enhancement. The general Skills paragraph and source label no longer
+extend one bonus-type claim to all skill diamonds and levels. The same-type
+Competence rule is applied only to competing Spot bonuses; no mixed-type total
+or guaranteed final skill gain is inferred.
+
+The [source note](evidence/spot-diamond-type/README.md) distinguishes the exact
+transmitted own-item excerpt and reported original-file identity from the locally
+read, unchanged normalized Competence-rule receipt. The original item bytes were
+not materialized or read here, and its missing observation time, method and footer
+remain missing. There was no fresh Wiki or in-game verification. The ledger stays
+unknown with empty source/value/type evidence fields and no subtotal eligibility.
+
+Amount +22, ML36, socket, gear/crafts, skills and all modeled numbers remain fixed.
+Only the current A-074 explanations are reconciled; historical study records,
+source bodies and snapshots remain unchanged. Exact reversal contracts preserve
+the prior Guide and ledger, alongside positive and negative regressions for type,
+variant, scope, source qualifications and withheld results.

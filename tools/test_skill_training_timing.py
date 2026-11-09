@@ -15,6 +15,8 @@ LEDGER_SHA = '40321e74f4fa57542cb41b529284a9ae1c326064f4d26f5dc40fd5cb654b8eac'
 
 
 def restore_training_prose(html):
+    from test_spot_diamond_type import restore_spot_prose
+    html = restore_spot_prose(html)
     assert len(SCOPE['reviewed_replacements']) == 5
     for change in reversed(SCOPE['reviewed_replacements'][1:]):
         assert html.count(change['after']) == 1, 'exact A-035 training correction'
@@ -23,6 +25,8 @@ def restore_training_prose(html):
 
 
 def restore_training_release(html):
+    from test_spot_diamond_type import restore_spot_stamp
+    html = restore_spot_stamp(html)
     html = restore_training_prose(html)
     stamp = SCOPE['reviewed_replacements'][0]
     assert html.count(stamp['after']) == 1, 'one current build stamp'

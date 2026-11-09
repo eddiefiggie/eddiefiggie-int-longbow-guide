@@ -3997,14 +3997,14 @@
       "id": "spot-diamond",
       "stat": "Spot",
       "amount": 22,
-      "bonus_type": "Enhancement",
+      "bonus_type": "Competence",
       "host": "Ring 1 Green (Colorless augment)",
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Selected ML36 Diamond of Spot 22; relayed approved source amount/type. Original own-effect source not retained; acquisition unknown. Not a guaranteed final+22 skill change.",
+      "note": "Selected ML36 Diamond of Spot +22: Competence per transmitted own-item excerpt (recorded oldid 703902); original bytes and observation context unavailable here. State remains unknown and excluded from certified totals; acquisition unknown. Not a guaranteed final +22 skill change.",
       "channel": "gear",
       "kit_min_level": 36
     }
