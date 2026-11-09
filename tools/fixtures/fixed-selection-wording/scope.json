@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "1a74f38a204123c9d63532071838979522230ba2",
+  "baseline_index_sha256": "12ebc937d98181346300150df3f98d275d801db77e227996bf368c464b5552f1",
+  "scope": "Six exact current-selection wording corrections and the build stamp. No changed selection, source certification, historical notes or earlier snapshot.",
+  "reviewed_replacements": [
+    {
+      "before": "build 11-09-26.1</span>",
+      "after": "build 11-09-26.2</span>"
+    },
+    {
+      "before": "Exceptional Intelligence +2 (the kit’s solve), or",
+      "after": "Exceptional Intelligence +2 (selected Calamitous craft), or"
+    },
+    {
+      "before": "Nearly Complete: Constitution +16 (build decision; the solver leaves it empty)",
+      "after": "Nearly Complete: Constitution +16 (selected craft; item-page value, with the generic +15 conflict still unresolved)"
+    },
+    {
+      "before": "Nearly Complete: Dexterity +15 (the solver’s pick; Intelligence Enhancement is already carried by the boots’ craft)",
+      "after": "Nearly Complete: Dexterity +15 (selected craft; Intelligence Enhancement is already carried by the boots’ craft)"
+    },
+    {
+      "before": "; the solver leaves this slot empty because nothing in it moves the ranked stats",
+      "after": "; selected quiver in BASIC"
+    },
+    {
+      "before": "Not scored by the optimizer; a build decision by the kit’s gaps",
+      "after": "Use the BASIC kit’s Defense +40 and A Treatise on Battle; either selected filled bow requires level 36"
+    },
+    {
+      "before": "The optimizer runs that produced the kit are in the Appendix.",
+      "after": "Earlier optimizer runs are in the Appendix."
+    }
+  ]
+}

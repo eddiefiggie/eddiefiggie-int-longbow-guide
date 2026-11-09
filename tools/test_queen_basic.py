@@ -16,6 +16,8 @@ BASELINE = 'dbc4dc349173ce61ba2b6818e7cd270735dca0d7'
 
 def restore_queen_release(html):
     """Reverse only exact A-074 replacements before previous release hashes."""
+    from test_fixed_selection_wording import restore_fixed_selection_release
+    html = restore_fixed_selection_release(html)
     for change in reversed(SCOPE['reviewed_replacements']):
         assert html.count(change['after']) == 1, 'exact approved A-074 replacement'
         html = html.replace(change['after'], change['before'])
@@ -23,6 +25,8 @@ def restore_queen_release(html):
 
 
 def restore_queen_kit(html):
+    from test_fixed_selection_wording import restore_fixed_selection_prose
+    html = restore_fixed_selection_prose(html)
     change = SCOPE['kit_table']
     assert html.count(change['after']) == 1, 'exact approved A-074 kit table'
     return html.replace(change['after'], change['before'])
