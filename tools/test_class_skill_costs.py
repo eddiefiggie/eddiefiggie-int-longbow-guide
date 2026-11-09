@@ -39,6 +39,8 @@ def restore_cost_release(html):
 
 
 def validate_scope(html):
+    from test_queen_basic import restore_queen_release
+    html = restore_queen_release(html)
     assert SCOPE['baseline_commit'] == '594090c930222ea688e80ca8aec487fb0746cf45'
     assert SCOPE['baseline_index_sha256'] == BASELINE_SHA
     assert sha(restore_cost_release(html).encode()) == BASELINE_SHA, 'content outside A-018 changed'

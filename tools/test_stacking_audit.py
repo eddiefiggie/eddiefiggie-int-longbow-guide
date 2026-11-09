@@ -21,7 +21,7 @@ class StackingAuditTests(unittest.TestCase):
         self.assertTrue(audit.validate(self.data))
 
     def test_supported_gear_arithmetic_is_not_a_character_total(self):
-        for stat,expected in [('PRR',132),('MRR',72),('HP',108),('Healing Amplification',63),
+        for stat,expected in [('HP',108),('Healing Amplification',63),
                               ('Greater Marksmanship damage',2),('Greater Marksmanship attack',3),
                               ('Ranged threat reduction',22),('Sneak dice',3)]:
             with self.subTest(stat=stat):
@@ -30,7 +30,7 @@ class StackingAuditTests(unittest.TestCase):
                 self.assertEqual(result['total'],expected)
 
     def test_same_type_duplicates_choose_maximum_once(self):
-        expected={'PRR':{'earth-sky-prr'},'Doubleshot':{'goggles-ds'},
+        expected={'PRR':{'earth-sky-prr'},'Doubleshot':set(),
                   'Armor-Piercing':{'pendant-ap'},'Intelligence':set(),
                   'Constitution':set(), 'Fortitude':set()}
         for stat,suppressed in expected.items():
@@ -47,15 +47,20 @@ class StackingAuditTests(unittest.TestCase):
         self.assertIn('topaz-rp',result['excluded']);self.assertIn('lunar-rp',result['excluded'])
 
     def test_unproven_mixed_type_totals_are_withheld(self):
-        for stat in ['Doubleshot','Seeker','Intelligence','Armor-Piercing','Constitution','Fortification','Accuracy','Fortitude','Reflex','Will']:
+        for stat in ['PRR','MRR','Doubleshot','Seeker','Intelligence','Armor-Piercing','Constitution','Fortification','Accuracy','Fortitude','Reflex','Will']:
             with self.subTest(stat=stat):
                 result=audit.subtotal(self.data,stat)
                 self.assertIsNone(result['total']);self.assertFalse(result['complete'])
                 self.assertTrue(result['missing_interactions'] or result['excluded'])
 
     def test_removing_positive_rules_withholds_previously_supported_results(self):
-        for rid,stat in [('prr-combination','PRR'),('mrr-combination','MRR'),('vitality-combination','HP')]:
+        for rid,stat,expected in [('prr-combination','PRR',132),('mrr-combination','MRR',72),('vitality-combination','HP',108)]:
             data=copy.deepcopy(self.data)
+            # Exercise the existing supported subset without the new unknown
+            # Queen component, so rule removal is not a vacuous pass merely
+            # because the complete current-kit total was already withheld.
+            data['components']=[c for c in data['components'] if c['id'] not in {'queen-prr','queen-mrr'}]
+            self.assertEqual(audit.subtotal(data,stat)['total'],expected)
             data['rules']=[r for r in data['rules'] if r['id']!=rid]
             with self.subTest(rule=rid):
                 self.assertIsNone(audit.subtotal(data,stat)['total'])
@@ -144,7 +149,7 @@ class StackingAuditTests(unittest.TestCase):
                     with self.assertRaises(AssertionError):render(data)
 
     def test_verified_and_conditional_other_effects_require_provenance(self):
-        for eid in ['light-absorption','demonic-shield']:
+        for eid in ['acid-electric-resistance','demonic-shield']:
             data=copy.deepcopy(self.data)
             effect=next(e for e in data['non_total_effects'] if e['id']==eid)
             source=data['sources'][effect['sources'][0]]
@@ -155,7 +160,7 @@ class StackingAuditTests(unittest.TestCase):
 
     def test_live_body_contributions_match_derived_totals_and_do_not_restore_fortification(self):
         html=(audit.ROOT/'index.html').read_text()
-        for old,new in [('132 gear PRR','133 gear PRR'),('72 gear MRR','32 gear MRR'),('Combined Fortification remains unverified','Fortification is 100% from one augment'),('Your own comes from items.','Item fortification is an enhancement bonus that stacks with Insightful Fortification. Your own comes from items.')]:
+        for old,new in [('unverified gear PRR (modeled raw 133)','133 gear PRR'),('unverified gear MRR (modeled raw 73, before caps)','73 gear MRR'),('Combined Fortification remains unverified','Fortification is 100% from one augment'),('Your own comes from items.','Item fortification is an enhancement bonus that stacks with Insightful Fortification. Your own comes from items.')]:
             with self.subTest(claim=old),self.assertRaises(AssertionError):
                 validate_guide(html.replace(old,new),self.data)
 
@@ -178,7 +183,7 @@ class StackingAuditTests(unittest.TestCase):
 
     def test_summary_changes_when_component_qualification_is_downgraded(self):
         html=(audit.ROOT/'index.html').read_text()
-        for cid in ['cloak-ds','solar-sneak','ring-threat','healing-amp']:
+        for cid in ['goggles-ds','solar-sneak','ring-threat','healing-amp']:
             data=copy.deepcopy(self.data);self.component(data,cid)['state']='unknown'
             audit.validate(data)
             with self.subTest(component=cid),self.assertRaises(AssertionError):validate_guide(html,data)
@@ -207,7 +212,11 @@ class StackingAuditTests(unittest.TestCase):
         audit.validate(data)
         self.assertIn(c['id'],audit.subtotal(data,'PRR')['excluded'])
         self.assertIn(c['id'],audit.subtotal(data,'PRR',active=['equipped'])['excluded'])
-        self.assertEqual(audit.subtotal(data,'PRR',active=['equipped','condition-met'])['total'],132)
+        # Queen remains unknown, so satisfying Defense conditions cannot certify
+        # the combined current total. The supported component becomes counted.
+        result=audit.subtotal(data,'PRR',active=['equipped','condition-met'])
+        self.assertIn('defense-prr',result['counted'])
+        self.assertIsNone(result['total'])
 
     def test_full_kit_cannot_be_certified_at_level35(self):
         for stat in ['PRR','MRR','Doubleshot','HP']:
@@ -220,7 +229,7 @@ class StackingAuditTests(unittest.TestCase):
 
     def test_fortification_quality_needs_its_own_positive_edges(self):
         result=audit.subtotal(self.data,'Fortification')
-        self.assertEqual(set(result['excluded']),{'fort-enh','fort-insight','fort-quality'})
+        self.assertEqual(set(result['excluded']),{'fort-enh','fort-insight','fort-quality','queen-fortification'})
         self.assertFalse(audit.source_provenance(self.data['sources']['fortification-rule']))
         self.assertIsNone(audit.proof(self.data,'Fortification',self.component(self.data,'fort-enh'),self.component(self.data,'fort-insight')))
         self.assertIsNone(result['total'])
@@ -258,7 +267,7 @@ class StackingAuditTests(unittest.TestCase):
         html=(audit.ROOT/'index.html').read_text();block=summary(self.data)
         mutants=[html.replace(block,''),html.replace(block,block+block),
                  html.replace('id="selected-stacking-summary"','hidden id="selected-stacking-summary"'),
-                 html.replace('<td>132</td>','<td>133</td>')]
+                 html.replace('<td>108</td>','<td>109</td>')]
         for mutated in mutants:
             with self.assertRaises(AssertionError):validate_guide(mutated,self.data)
 

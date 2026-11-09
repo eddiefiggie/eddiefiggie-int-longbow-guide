@@ -291,31 +291,6 @@
         "permanentLink"
       ]
     },
-    "cloak": {
-      "path": "evidence/endgame-stacking/fresh-2026-11-07.json",
-      "sha256": "9d8c768606cf6f71b2d1be0016bf66bfb80c3c335b4d02e22d49d9a23eb2b5c7",
-      "pointer": [
-        "receipts",
-        4,
-        "text"
-      ],
-      "quote": "Cloak of Summer's End\nMinimum level\t36\t\nItem Type\tClothing / Cloak\nSlot\tBack\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t460\nMaterial\tCloth\nHardness\t56\nBase Value\t14,401pp \nWeight\t0.10 lbs\nLocation\tTimeline Fragment Exchange, Turn in 50 Timeline Fragments\nEnchantments\t\nLight Absorption +24%\nDoubleshot 10%\nConstitution +15\nInsightful Constitution +7\nGreen Augment Slot\nColorless Augment Slot\nSun Augment Slot\n\t\nUpgradeable?\t\nDescription\tTime-Twisted version of Cloak of Summer\n\nEven eternal summer must end someday. This cloak manifested on the day the Summer Court surrendered to eternal winter.\n\n\nTips\t",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:29:37.049Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        4
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
     "goggles-ds": {
       "path": "evidence/endgame-stacking/final-provenance-receipts.json",
       "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
@@ -1535,84 +1510,6 @@
         "permanentLink"
       ]
     },
-    "cloak-doubleshot": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        1
-      ],
-      "quote": " Doubleshot 10% Doubleshot 10%: Passive: 10% Enhancement bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
-    "cloak-constitution": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        2
-      ],
-      "quote": " Constitution +15 Constitution +15: This item gives the wearer improved health, granting a +15 Enhancement bonus to Constitution.",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
-    "cloak-insight-constitution": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        3
-      ],
-      "quote": "Insightful Constitution +7Insightful Constitution +7: This item gives the wearer improved health, granting a +7 Insight bonus to Constitution.",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
-    },
     "solar-sneak": {
       "path": "evidence/endgame-stacking/augments-and-dodge.json",
       "sha256": "f3cbf3d6cfa8acabb54c2008f019c933d467a1a040c5a30c16e86bf73889f9a1",
@@ -2246,32 +2143,6 @@
       "url_key": "url",
       "observed_pointer": null,
       "revision_pointer": null
-    },
-    "light-absorption": {
-      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
-      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
-      "pointer": [
-        "receipts",
-        2,
-        "tooltips",
-        0
-      ],
-      "quote": " Light Absorption +24% Light Absorption +24%: Passive: 24% Enhancement Bonus to Light Absorption. (Absorption reduces damage from an element by a percentage, after resistance have been taken into account.)",
-      "url": "https://ddowiki.com/page/Item:Cloak_of_Summer%27s_End_(level_36)",
-      "revision": "https://ddowiki.com/index.php?title=Item:Cloak_of_Summer%27s_End_(level_36)&oldid=685073",
-      "observed": "2026-11-07T19:33:00.590Z",
-      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
-      "record_pointer": [
-        "receipts",
-        2
-      ],
-      "url_key": "url",
-      "observed_pointer": [
-        "capturedAt"
-      ],
-      "revision_pointer": [
-        "permanentLink"
-      ]
     },
     "demonic-shield": {
       "path": "evidence/endgame-stacking/tooltips-and-rules.json",

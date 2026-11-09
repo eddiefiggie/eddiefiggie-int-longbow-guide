@@ -4,7 +4,7 @@ A complete plan for one Dungeons & Dragons Online character: an Intelligence-bas
 
 **Read it:** https://eddiefiggie.github.io/eddiefiggie-int-longbow-guide/
 
-Every number comes from the [DDO wiki](https://ddowiki.com) page named in the guide's Sources; judgment calls are labelled *build decision*. Written for Update 82.0.1.
+Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-only arithmetic, relayed observations and missing evidence are distinguished in the Guide and audit. Judgment calls are labelled *build decision*. Written for Update 82.0.1.
 
 ## Layout
 

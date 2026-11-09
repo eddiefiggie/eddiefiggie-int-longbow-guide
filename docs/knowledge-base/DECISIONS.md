@@ -1,6 +1,6 @@
 # Selected choices and open questions
 
-The [Guide](../../index.html) is the reference for selected feats, class routes, past-life sequence and equipment. This documentation refresh does not adopt a replacement kit, alternate ability score, class split or control mechanic. Compare proposals against that published baseline rather than against an unmerged candidate.
+The [Guide](../../index.html) is the reference for selected feats, class routes, past-life sequence and equipment. A-074 selects the [Queen of Rot BASIC recipe](A-074-QUEEN-BASIC.md), with only the approved cloak/Spot changes. It does not adopt an alternate ability score, class split or control mechanic. Compare proposals against that published baseline rather than against an unmerged candidate.
 
 ## Issue register
 

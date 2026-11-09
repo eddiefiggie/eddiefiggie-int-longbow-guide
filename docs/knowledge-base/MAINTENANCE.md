@@ -67,3 +67,14 @@ not a browser/CSS visibility test or fresh verification of game mechanics.
 After an evidence or classification change, run `PYTHONDONTWRITEBYTECODE=1 python3 tools/build_stacking_audit.py` to regenerate the selected-only source excerpt packet, detailed audit and current summary. For Guide edits, regenerate the print sheet and snapshot as usual, then run the full discovery command above. The new tests include arithmetic/provenance/context/qualification mutations and compare generated documents against their actual gated calculations. Existing tests still protect gear, purchases and historical model bytes. This repository currently configures no independent lint or static-type command; the documented Python/Node aggregate suite is required. Browser layout, disclosure navigation and small-viewport overflow remain separate checks.
 
 Counting requires an exact source revision and a genuine observation date/time bound to the hashed record. Missing metadata, body text and receipt-creation timestamps cannot satisfy that gate. Unqualified rules remain visible but cannot establish a pairwise edge. Public renderer entrypoints validate source identity and fixed factual prerequisites; numeric clauses are bound separately even when a tooltip contains multiple bonuses in one sentence.
+
+## A-074 selected-kit change
+
+`tools/test_queen_basic.py` checks the complete current recipe, explicit empties,
+33 sockets / 28 occupied, model-only deltas, evidence exclusions and exact scope.
+Its reversible change contract restores the exact prior index before older
+release contracts apply their unchanged hashes. Do not widen that contract to
+allow unrelated choices. Queen relay/model inputs are not original captures and
+cannot qualify for counting without the existing provenance and type gates.
+Run `tools/build_stacking_audit.py`, `tools/build_crafting_sheet.py` and
+`tools/build_snapshot.py` after current Guide/audit edits, then run full discovery.
