@@ -1,0 +1,78 @@
+{
+  "baseline_commit": "d426d2d9b2bbc63a255e5695faa0663df0f929b7",
+  "baseline_index_sha256": "2aef272d53307beab05f63a557397be744b360f3fcb91ca5261274a0037f5aa3",
+  "baseline_generator_sha256": "10cf1d93b8f635fb08e858eec93b82edc554482bd75ed2b06495a37ebd766153",
+  "unchanged_inputs": {
+    "tools/fixtures/endgame-stacking/ledger.json": "e59f05eb7ca3b5f23c8f5c68a3b1e32cdd877589c5d7cf82fd025f7fb76a286e",
+    "tools/bowmodel.py": "7d9e0843939310214d73b00e7e936ca4e842bf7bf0fc3f8da1b849e8c8faf236",
+    "evidence/endgame-stacking/source-excerpts.json": "ccbcd4b80992f9469820b639c2543e75c58aafed8a9ea2b2146e249e39902bc5"
+  },
+  "reviewed_replacements": [
+    {
+      "before": "class=\"build-date\">build 11-09-26.4<",
+      "after": "class=\"build-date\">build 11-09-26.5<",
+      "reason": "Required next local candidate build stamp.",
+      "preserved": "All previously released snapshots remain byte-identical.",
+      "baseline_line": 85
+    },
+    {
+      "before": "Replace Cloak of Summer’s End (level 36) with <a href=\"https://ddowiki.com/page/Item:The_Queen_of_Rot\">The Queen of Rot</a>, choose its <strong>Nearly Complete: Insightful Constitution +7</strong>, and fill the previously empty Green socket on Legendary Ring of Unnatural Accuracy with <strong>Diamond of Spot +22</strong> (Colorless augment, ML36). All other selected equipment and crafts stay the same.",
+      "after": "Use <a href=\"https://ddowiki.com/page/Item:The_Queen_of_Rot\">The Queen of Rot</a> with the selected <strong>Nearly Complete: Insightful Constitution +7</strong>, and put <strong>Diamond of Spot +22</strong> (Colorless augment, ML36) in the Green socket on Legendary Ring of Unnatural Accuracy.",
+      "reason": "The current recipe reads as a migration from a former cloak and empty socket; state the selected recipe directly.",
+      "preserved": "Queen/craft/Spot/socket selection, Resistance caveat, Calamitous/Sinew choices, empty offhand, source limits and labeled same-bow historical comparison.",
+      "baseline_line": 1101
+    },
+    {
+      "before": "Goggles provide the selected 9% Enhancement Doubleshot; the former cloak 10% is absent.",
+      "after": "Goggles provide the selected 9% Enhancement Doubleshot.",
+      "reason": "The current generated summary still compares the selected source with a removed cloak.",
+      "preserved": "Existing evidence gate and 9% component claim; no replacement total. Historical 36-to-35 comparison remains.",
+      "baseline_line": 1147
+    },
+    {
+      "before": "The selected Queen gains Freedom of Movement and removes the former Light Absorption 24%; these are relayed item effects.",
+      "after": "The selected Queen’s Freedom of Movement is a relayed item effect.",
+      "reason": "The current utility summary repeats a removed-cloak comparison.",
+      "preserved": "Existing relayed-effect qualification and all adjacent provenance/unknown limits; historical gain/loss table remains.",
+      "baseline_line": 1150
+    },
+    {
+      "before": "Greater Marksmanship (Competence) on three kit items, the Litany’s Profane and the Globe’s Exceptional ability lines under the Lunar Gems and the Miserable slot, and the Goggles of the Archer’s Doubleshot (Enhancement) under the cloak’s.",
+      "after": "Greater Marksmanship (Competence) on three kit items, and the Litany’s Profane and the Globe’s Exceptional ability lines under the Lunar Gems and the Miserable slot.",
+      "reason": "The active rule list still says the goggles are suppressed by the former cloak, which the current kit no longer wears.",
+      "preserved": "Other documented overlap examples and the explicitly labeled historical cloak/goggles audit; no new stacking assertion.",
+      "baseline_line": 1466
+    },
+    {
+      "before": "<li>ML35-36 kit:",
+      "after": "<li>Current and historical ML35-36 kit sources:",
+      "reason": "This source list mixes current and former kit items under an unqualified current-kit label.",
+      "preserved": "Every item citation and its existing source qualification.",
+      "baseline_line": 1506
+    },
+    {
+      "before": "Items the offence-first ranking chose and the PRR-third ranking displaces:",
+      "after": "Historical optimizer comparison sources:",
+      "reason": "Present-tense displacement wording contradicts the current selected items and refers to an earlier ranking.",
+      "preserved": "All comparison citations and the labeled historical optimizer tables.",
+      "baseline_line": 1506
+    }
+  ],
+  "generator_replacements": [
+    {
+      "before": "Goggles provide the selected 9% Enhancement Doubleshot; the former cloak 10% is absent.",
+      "after": "Goggles provide the selected 9% Enhancement Doubleshot.",
+      "baseline_line": 49
+    },
+    {
+      "before": "The goggles Doubleshot input remains unverified; the former cloak is absent.",
+      "after": "The goggles Doubleshot input remains unverified.",
+      "baseline_line": 51
+    },
+    {
+      "before": "The selected Queen gains Freedom of Movement and removes the former Light Absorption 24%; these are relayed item effects.",
+      "after": "The selected Queen’s Freedom of Movement is a relayed item effect.",
+      "baseline_line": 64
+    }
+  ]
+}

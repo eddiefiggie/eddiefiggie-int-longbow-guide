@@ -21,6 +21,8 @@ SPOT_NOTE = 'Selected ML36 Diamond of Spot +22: Competence per transmitted own-i
 
 
 def restore_spot_prose(html):
+    from test_editorial_comparison_cleanup import restore_editorial_prose
+    html = restore_editorial_prose(html)
     assert len(SCOPE['reviewed_replacements']) == 7
     for change in reversed(SCOPE['reviewed_replacements'][1:]):
         assert html.count(change['after']) == 1, 'exact scoped Spot correction'
@@ -29,6 +31,8 @@ def restore_spot_prose(html):
 
 
 def restore_spot_stamp(html):
+    from test_editorial_comparison_cleanup import restore_editorial_stamp
+    html = restore_editorial_stamp(html)
     change = SCOPE['reviewed_replacements'][0]
     assert html.count(change['after']) == 1, 'one current build stamp'
     return html.replace(change['after'], change['before'])
