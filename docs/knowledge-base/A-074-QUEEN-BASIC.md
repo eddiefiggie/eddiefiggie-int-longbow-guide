@@ -4,7 +4,7 @@ The selected endgame recipe replaces Cloak of Summer’s End (level 36) with
 [The Queen of Rot](https://ddowiki.com/page/Item:The_Queen_of_Rot), selecting
 Nearly Complete: Insightful Constitution +7, and puts Diamond of Spot +22 in
 Legendary Ring of Unnatural Accuracy’s formerly empty Green socket. The diamond
-is Colorless, ML36, with a +22 Enhancement Spot source; its acquisition route is
+is Colorless, ML36, with a +22 Competence Spot source; its acquisition route is
 unknown. No vendor, final skill increase or trap success is inferred.
 
 Every other selected item and craft remains fixed. Calamitous and Legendary
@@ -20,6 +20,12 @@ Heart Shard, Bloody Boulder, a Quality CON-to-damage swap, or any class, feat,
 enhancement or destiny change.
 
 ## Evidence and provenance
+
+The current Spot type is corrected from Enhancement to Competence using the
+[transmitted exact own-item excerpt and retained Competence rule](../../evidence/spot-diamond-type/README.md).
+This corrects the explanatory label only; the reported study and modeled values
+are unchanged. Missing original item bytes and observation context keep the
+ledger component unknown and excluded from subtotals.
 
 This document is an implementation record of relayed study results and approved
 choices. It is **not an original browser capture, exact source transcript, solver
@@ -77,7 +83,7 @@ For either bow against the same bow with the old cloak:
 | Will / Reflex / Fortitude | 25/25/26 → 26/26/27: modeled Resistance 13 replaces 12 |
 | Flat HP | 108 → 108: False Life 60 + Vitality 48; no CON-derived or temporary HP included |
 | Other modeled values | INT 37 Calamitous / 36 Sinew, RP 44, Seeker 29, Armor-Piercing 76, Deadly 12, Accuracy 33, Dodge 16, Healing Amplification 63, DEX 28 unchanged |
-| Utility | Gain Freedom of Movement; lose Light Absorption 24; add Spot 22 Enhancement source |
+| Utility | Gain Freedom of Movement; lose Light Absorption 24; add Spot 22 Competence source |
 
 The optimizer’s PRR objective cap 132 does not cap raw PRR 133. Light armor has a
 base MRR cap 100; independently established cap increases and other character

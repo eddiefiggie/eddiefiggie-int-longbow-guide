@@ -1,0 +1,77 @@
+{
+  "baseline_commit": "6d98996cd7bab6e2e3e775b56527e1a6e393e0e3",
+  "baseline_index_sha256": "69baa7faf353d8e3164efb36689b269d8b015ca3065edf1528313080376dedc0",
+  "baseline_ledger_sha256": "ec1a1eab6301f39b1ed22c3051d6dc5defff95ed50722d1cbef449510ada99da",
+  "scope": "Only exact ML36 Diamond of Spot +22 type correction and necessary source/provenance explanations. No gear, modeled value, skill-rank, source-gate or historical-record change.",
+  "reviewed_replacements": [
+    {
+      "before": "build 11-09-26.3</span>",
+      "after": "build 11-09-26.4</span>"
+    },
+    {
+      "before": "The wiki notes the bonus “is an enhancement bonus, not the regular equipment bonus”, so a diamond does not stack with a worn Spot item of the same type: it replaces it.",
+      "after": "For the exact <a class=\"cite\" href=\"https://ddowiki.com/index.php?title=Item:Diamond_of_Spot_%2B22&amp;oldid=703902\">Diamond of Spot +22 (ML36)</a>, the retained own-item excerpt specifies a <strong>+22 Competence bonus</strong>. <a class=\"cite\" href=\"https://ddowiki.com/index.php?title=Competence_bonus&amp;oldid=682593\">Multiple Competence bonuses to Spot do not add; only the highest applies.</a> This correction does not classify other skill diamonds or levels, establish mixed-type stacking or promise a final +22 skill gain. <a href=\"evidence/spot-diamond-type/README.md\">Exact excerpts and provenance limits</a>."
+    },
+    {
+      "before": "Spot +22 is an Enhancement source; it does not promise",
+      "after": "Spot +22 is a Competence source; it does not promise"
+    },
+    {
+      "before": "Diamond of Spot +22 adds an Enhancement source.",
+      "after": "Diamond of Spot +22 adds a Competence source."
+    },
+    {
+      "before": "Diamond of Spot +22 (Enhancement, ML36; acquisition unknown)",
+      "after": "Diamond of Spot +22 (Competence, ML36; acquisition unknown)"
+    },
+    {
+      "before": "Spot +22 is an Enhancement source, not a guaranteed final skill gain.",
+      "after": "Spot +22 is a Competence source, not a guaranteed final skill gain. Its <a href=\"evidence/spot-diamond-type/README.md\">transmitted own-item excerpt</a> does not supply local original bytes or an observation timestamp; the component remains unknown and excluded from subtotals."
+    },
+    {
+      "before": "Augment</a> (the skill-diamond ladder by minimum level; enhancement bonus)",
+      "after": "Augment</a> (the skill-diamond ladder by minimum level); <a href=\"https://ddowiki.com/index.php?title=Item:Diamond_of_Spot_%2B22&amp;oldid=703902\">Diamond of Spot +22</a> (this exact ML36 variant: Competence; <a href=\"evidence/spot-diamond-type/README.md\">retained excerpt and limits</a>)"
+    }
+  ],
+  "prior_spot_component": {
+    "id": "spot-diamond",
+    "stat": "Spot",
+    "amount": 22,
+    "bonus_type": "Enhancement",
+    "host": "Ring 1 Green (Colorless augment)",
+    "source": "",
+    "value_pattern": "",
+    "type_evidence": "",
+    "state": "unknown",
+    "requires": [],
+    "note": "A-074 relayed model input, excluded from certified totals. Selected ML36 Diamond of Spot 22; relayed approved source amount/type. Original own-effect source not retained; acquisition unknown. Not a guaranteed final+22 skill change.",
+    "channel": "gear",
+    "kit_min_level": 36
+  },
+  "item_relay": {
+    "evidence_kind": "transmitted exact excerpt and reported original-file identity; not original bytes",
+    "url": "https://ddowiki.com/page/Item:Diamond_of_Spot_%2B22",
+    "recorded_permalink": "https://ddowiki.com/index.php?title=Item:Diamond_of_Spot_%2B22&oldid=703902",
+    "reported_original_basename": "wisdom-spot-diamond.browser.json",
+    "reported_original_bytes": 674,
+    "reported_original_sha256": "50945611f39c1a9008ab2804fb9ddcb42b677516d0eacc2d25d8d1f9fb3c1a1b",
+    "reported_original_pointer": [
+      "content",
+      0,
+      "text",
+      "$json",
+      "text"
+    ],
+    "original_bytes_materialized_or_read_here": false,
+    "fresh_wiki_verification": false,
+    "observed_at": null,
+    "observation_method": null,
+    "footer": null,
+    "exact_excerpts": [
+      "Diamond of Spot +22",
+      "Minimum Level 36",
+      "Augment Type Colorless",
+      "Drag this augment into a slot to upgrade an item with a +22 Competence Bonus to the Spot skill. This augment can go in any color Augment Slot."
+    ]
+  }
+}

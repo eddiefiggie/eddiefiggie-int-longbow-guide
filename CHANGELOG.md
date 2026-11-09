@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-09-26.4
+- Corrects the exact ML36 Diamond of Spot +22 bonus type from Enhancement to Competence in current Guide explanations, the selected ledger and generated audit. Narrows the broad skill-diamond type claim without classifying other variants.
+- Records the [transmitted own-item excerpt and existing normalized Competence rule](evidence/spot-diamond-type/README.md), including missing original item bytes and observation context. Same-type Competence bonuses use the highest; no mixed-type Spot total or final skill gain is asserted. The component remains unknown and excluded from subtotals.
+- Preserves amount, minimum level, socket, gear/craft choices, skill ranks, all modeled numbers and historical evidence/snapshots. Adds focused positive/negative scope and provenance checks, regenerates the audit and print stamp, and creates a new snapshot.
+
 ## Build 11-09-26.3
 - Separates skill-training eligibility, heroic rank ceilings and current-class prices. Scourge’s ordinary Ranger-1 step cannot train Disable Device or Open Lock; UMD and Tumble are trainable cross-class, capped at 2 ranks each. Rogue 1 at character level 2 permits the trap skills and gives its class skills a ceiling of 5, then character level + 3 through heroic training.
 - Qualifies other iconic starts by their actual forced class, retains Shadar-kai’s Rogue-first exception, and marks the existing allocation examples as partial. Class order, skill priorities/targets, point estimates, other selections and the full-budget uncertainty remain unchanged.
