@@ -5,6 +5,7 @@ import re
 import unittest
 import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
+import wisdom_recipe_proof_preservation as recipe_proofs
 
 ROOT = Path(__file__).resolve().parents[1]
 DETAIL_SHA = '47cccc7724c1ea271cf83f02a26d38822987a88d4159020b02afb51bb7b55321'
@@ -25,7 +26,8 @@ def validate(html):
     # Routing above is checked on actual current content. Only the historical
     # detailed-section hash uses the exact outer-restored PR47 view; current
     # Quicken semantics are tested separately in test_wisdom_corrections.
-    checkpoint = crafting.restore_file('index.html', current_html)
+    predecessor = recipe_proofs.restore_file('index.html', current_html)
+    checkpoint = crafting.restore_file('index.html', predecessor)
     original = corrections.restore_file('index.html', checkpoint)
     original = re.sub(r'<!--.*?-->', '', original, flags=re.S)
     detail = original.split('<h2 id="heroic-feats">',1)[1].split('<h2 ',1)[0]

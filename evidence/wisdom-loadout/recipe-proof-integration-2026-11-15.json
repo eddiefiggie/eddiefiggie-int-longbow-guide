@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "record_type": "bounded-multi-source-recipe-proof-integration",
+  "review_date": "2026-11-15",
+  "build": "11-15-26.4",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "remote_head": "6d978f48fc3eeb807f4560e75ac27e6639af35f4",
+    "remote_and_initial_staged_tree": "b636b6463a2978410ed4dca75ee5c8fc18c763a1",
+    "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "local_branch": "feat/wisdom-loadout-priorities",
+    "initial_staged_paths": 63,
+    "initial_unstaged_changes": false,
+    "initial_untracked_paths": false,
+    "inspection": "Before edits, local Git identity, branch, HEAD, status and write-tree were checked against the read-only GitHub PR and head-commit records. PR47 was open, draft and unmerged; its exact head tree matched the pre-existing staged tree. No reset, ref switch, fetch, historical snapshot rewrite or advance of the approved base occurred.",
+    "baseline_suite": {
+      "tests": 315,
+      "seconds": 43.528,
+      "exit_code": 0,
+      "method": "Fresh aggregate suite in an isolated archive of the exact initial staged Git tree; not a reused previous test receipt."
+    }
+  },
+  "scope": {
+    "purpose": "Owner-selected option 1: implement the reviewed bounded multi-source proof route for four fixed Legendary Chains IDs, check targeted remaining source gaps, and integrate only complete proofs in draft PR47.",
+    "qualified_component_ids": [
+      "chains-combustion",
+      "chains-quality-int"
+    ],
+    "unqualified_component_ids": [
+      "chains-fortification",
+      "chains-spot"
+    ],
+    "bounded_proof_engine_added": true,
+    "selection_changed": false,
+    "priorities_changed": false,
+    "positive_interaction_rules_changed": false,
+    "historical_claim_inventory_regraded": false,
+    "old_capture_metadata_repaired": false,
+    "new_optimizer_run": false,
+    "live_game_test": false,
+    "new_acquisition_or_event_exception": false,
+    "merge_or_publication": false,
+    "limit": "Exactly the selected 14 items, one Minor Artifact, 34 sockets, 32 priorities, full-kit level36 floor and all numeric/core component tuples remain unchanged. Festive ability diamonds and the separately accepted HA63 acquisition-evidence exception are not broadened. No crafting, purchases or ownership claims are made."
+  },
+  "source_packets": [
+    {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "role": "Unchanged existing Legendary host, recipe, header, channel and Spell Power definition contexts with their original observation windows."
+    },
+    {
+      "path": "evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json",
+      "sha256": "32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830",
+      "role": "New Attributes-to-Ability route and Intelligence membership/synonym source; bounded Fortification and Spot checks remain inconclusive."
+    }
+  ],
+  "proof_contract": {
+    "name": "slave-lords-selected-v1",
+    "implementation": "tools/recipe_proofs.py",
+    "component_shape": {
+      "recipe_proof": {
+        "contract": "slave-lords-selected-v1",
+        "sources": {
+          "host": "source-id",
+          "recipe": "source-id",
+          "membership": "source-id"
+        }
+      }
+    },
+    "leaves": "Real retained full fields, with fixed packet hashes and record/context pointers; page identity, revision, observation and exact selection are checked at every qualification. Relevant companion headers and category definitions are read from the same hashed records.",
+    "no_fake_tooltip": "Direct source/value_pattern/type_evidence fields stay empty for composed components. A proof is a labeled source-supported recipe derivation, not a joined quotation or captured finished-item effect.",
+    "failure_policy": "Missing, falsey, unknown-version, assertion-only, hybrid, duplicate, detached or unapproved proofs fail closed. All four fixed Chains IDs must use this route whenever counting is attempted; deleting a proof cannot fall back to an unrelated provenance-complete direct source. Source files and the manifest are reread, with no mutable already-validated flag.",
+    "preserved_behavior": "Unrelated direct typed-numeric-clause checks and all seven positive-interaction contracts, suppression and arithmetic remain unchanged. Successful component qualification never creates an interaction edge."
+  },
+  "findings": [
+    {
+      "id": "chains-combustion",
+      "status": "source-supported-recipe-derivation",
+      "amount": 142,
+      "bonus_type": "Equipment",
+      "reason": "Selected Legendary host offers Suffix; Legendary recipe offers single-type Equipment Spell Power +142; continuous Combustion is sourced as Fire Spell Power.",
+      "limit": "142 selected-gear Fire Spell Power only, not weapon damage, established selected-imbue scaling, full-character Spell Power, a changed critical profile or measured DPS."
+    },
+    {
+      "id": "chains-quality-int",
+      "status": "source-supported-recipe-derivation",
+      "amount": 3,
+      "bonus_type": "Quality",
+      "reason": "Selected Legendary host offers Bonus; Legendary recipe offers Quality Attributes +3; the fresh Ability source explicitly includes Intelligence and identifies abilities as attributes.",
+      "limit": "One qualified input only. Its positive interaction with Glabrezu Insight Intelligence is not proved; the complete Intelligence result remains withheld."
+    },
+    {
+      "id": "chains-fortification",
+      "status": "unknown-excluded",
+      "reason": "The recipe magnitude is supported, but no reviewed premise places this particular Slavers Prefix in the general rule's standard-Fortification class. Enhancement cannot be adopted by an unstated classification step."
+    },
+    {
+      "id": "chains-spot",
+      "status": "unknown-excluded",
+      "reason": "The skill-category magnitude is supported, but selected-craft Competence type remains unproved. Another item's generic tooltip and bounded search snippets are not transferable proof. The checks do not establish that relevant evidence is absent everywhere."
+    }
+  ],
+  "result_delta": {
+    "comparison": "All fields of every result object: stat, channel, total, counted, suppressed, excluded, missing_interactions, proofs and complete; 38 families times standing/force activation states.",
+    "new_engine_unchanged_old_input_records": 76,
+    "changed_level36_records": 4,
+    "unchanged_level36_records": 72,
+    "unchanged_level35_records": 76,
+    "combustion": {
+      "counted": [
+        "chains-combustion"
+      ],
+      "excluded": [],
+      "total": 142,
+      "complete": true,
+      "scope": "Selected-gear contribution only; same standing/force result."
+    },
+    "intelligence": {
+      "counted": [
+        "glabrezu-insight-int",
+        "chains-quality-int"
+      ],
+      "excluded": [
+        "boots-int",
+        "solar-int",
+        "lunar-int",
+        "festive-int",
+        "dimlight-int",
+        "globe-intelligence",
+        "celestial-profane-intelligence"
+      ],
+      "missing_interactions": [
+        [
+          "glabrezu-insight-int",
+          "chains-quality-int"
+        ]
+      ],
+      "total": null,
+      "complete": false
+    },
+    "observed_before_integration": "The real new engine was run on the still byte-identical old ledger before state changes. All76 full outputs matched the pinned previous engine; this is also retained as a regression test."
+  },
+  "preservation": {
+    "implementation": "tools/wisdom_recipe_proof_preservation.py",
+    "scope": "tools/fixtures/wisdom-recipe-proofs/scope.json",
+    "method": "Eight exact current-to-.3 reversals with independently pinned predecessor hashes; previous scopes and source packets remain literal. Frozen historical renderers do not replace actual-current engine and renderer tests.",
+    "protected_record_count": 55,
+    "protected_inventory_sha256": "c76d5575f605ee5754494b59d9afc75b1643b2b15e2438f652f6065629f6ac54",
+    "history": "Builds .1, .2, .3 and older snapshots remain unchanged; .4 is a new path-rebased snapshot."
+  },
+  "verification": {
+    "engine_focused": {
+      "tests": 17,
+      "seconds": 3.501,
+      "exit_code": 0
+    },
+    "aggregate": {
+      "status": "passed",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -q",
+      "tests": 359,
+      "seconds": 56.41,
+      "exit_code": 0,
+      "limit": "Software regression, exact preservation and static document checks; not a live-game or rendered-layout certificate."
+    },
+    "browser_layout": {
+      "status": "not run for .4; earlier preview permission limitation not retried",
+      "limit": "The earlier Chromium singleton socket Operation not permitted failure remains a separate recorded limitation. Successful public Wiki source inspection is not local-guide desktop/mobile layout, keyboard navigation or print pagination verification."
+    },
+    "remote_ci": {
+      "status": "not evaluated in this pre-commit local receipt",
+      "next_gate": "Verify Guide checks against the exact resulting draft head, and retain its run URL in PR47 and the user handoff. This local record makes no remote-CI success claim."
+    },
+    "release": "Draft only; no merge, Pages deployment or live-site claim.",
+    "current_integration": {
+      "tests": 11,
+      "seconds": 0.739,
+      "exit_code": 0
+    },
+    "preservation_focused": {
+      "tests": 156,
+      "seconds": 17.848,
+      "exit_code": 0,
+      "correction": "The first focused run found one old calculator-byte assertion reading current code. Its approved strict historical-view bridge preserves the original hash; the full focused rerun passed. Real-new-engine legacy negatives remain active."
+    },
+    "independent_adversarial_review": {
+      "verdict": "No blocking finding within the approved bounded proof scope.",
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python3 -m unittest -q test_recipe_proofs test_wisdom_recipe_proof_preservation test_wisdom_recipe_integration test_wisdom_crafting_integration test_stacking_audit",
+      "tests": 97,
+      "seconds": 20.046,
+      "exit_code": 0,
+      "limit": "Independent read-only software/source-contract review, not an independent in-game test."
+    },
+    "tested_production_and_contract_sha256": {
+      "tools/stacking_audit.py": "cd87217a2a49435f2caf2e84c9fa785a6d5462f43d829dca0212103861279d98",
+      "tools/recipe_proofs.py": "b4c2b4fd95a0a9de4b5f8155245ba8934a8f1ae89c3e2f1d7e8eac545bb627ec",
+      "tools/wisdom_loadout.py": "efd8dc5e3c1da287c27f212ecc2fdf4f33159576510ae0c05b9485c3f9217394",
+      "tools/build_stacking_audit.py": "77cdeb37b969f0bceeea0e3cb4debe3d7c7dce1eafb6bbdc3a62c8a977b19956",
+      "tools/fixtures/endgame-stacking/ledger.json": "f0f22a13abdec97d1faa571f37b9016d5d3da571f6759714f570baac7e051318",
+      "index.html": "c38907cefa72151a10b30795860d9ef80c1dcb03dfb60435ff4a27987e1d5c70",
+      "endgame-stacking-audit.html": "0421053e5a8fbb0e732302ffdcd41bee5f18acaf9e32aaad7f96e2252ea2a746",
+      "evidence/endgame-stacking/source-excerpts.json": "d57c27ef815eccd2876a13f73ca3ebb27c027c86e699d9b58adb6170b3c18b05",
+      "heroic-crafting-print.html": "77b7310277058efc5d655a49f46b0191e6c02cf5a11209d9fc929184d1a9c6e8",
+      "versions/11-15-26.4.html": "4f0e5d589bac7ae7c2ff71cffe3bcd8b364a3dfd1ab54aa0e4b82c8e192e317e",
+      "tools/wisdom_recipe_proof_preservation.py": "320ea4e9d7252ef2bd66c4f8768b6fd35f78e599fbd2a61eb74b73bcf99a684b",
+      "tools/fixtures/wisdom-recipe-proofs/scope.json": "fb1f4ee96fae391975585a52e63476a97523d9be57c98f94261c1805e9cae5a7",
+      "tools/test_recipe_proofs.py": "a689a24c72c0dd5620666b76f48adf2bcfa6e645a05c48d4f1ac6d2f86768970",
+      "tools/test_wisdom_recipe_integration.py": "9a603e9118c7d26c9daba52f3dee16f0e50662ef6c75e72500aa1a65b3946e20",
+      "tools/test_wisdom_recipe_proof_preservation.py": "c3bf336434ad032a62befa51846cb7953ff4257d2031d7a27c45af80fba25c43"
+    }
+  }
+}

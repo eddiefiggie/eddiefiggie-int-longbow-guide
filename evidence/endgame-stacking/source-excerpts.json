@@ -103,7 +103,11 @@
     "armor-alacrity": "current component, rule, effect or unresolved context",
     "armor-ap": "current component, rule, effect or unresolved context",
     "cut-to-soul-fresh": "current component, rule, effect or unresolved context",
-    "claws-wisdom": "current component, rule, effect or unresolved context"
+    "claws-wisdom": "current component, rule, effect or unresolved context",
+    "chains-host-recipe-20261115": "recipe proof: selected Legendary host, Waist placement and distinct crafting channels",
+    "chains-legendary-recipe-20261115": "recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule",
+    "chains-combustion-membership-20261115": "recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage",
+    "chains-intelligence-membership-20261115": "recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement"
   },
   "sources": {
     "glabrezu-insight-int-live-20261115": {
@@ -2639,6 +2643,110 @@
       ],
       "observed_pointer": [
         "capturedAt"
+      ]
+    },
+    "chains-host-recipe-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "chains",
+        "item_table_visible_text"
+      ],
+      "quote": "Minimum level\t28\t\nItem Type\tJewelry / Necklace\nSlot\tNeck\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t290\nMaterial\tGold\nHardness\t38\nBase Value\t11,220pp \nWeight\t0.1 lbs\nLocation\tSlave Pits of the Undercity, Small chest\nEnchantments\t\nLegendary Slaver's Prefix Slot\nLegendary Slaver's Suffix Slot\nLegendary Slaver's Extra Slot\nLegendary Slaver's Bonus Slot\nAgainst the Slave Lords Set Bonus\nLegendary Slaver's Augment Slot\nMythic Neck Boost +1 or +3\n\t\nUpgradeable?\tSlave Lords Crafting\nDescription\tOppression will always fail, just as chains will always be broken.\nTips\t\n\nThis unusual item can be worn in the Neck slot or the Waist slot - it will default to the Neck if both slots are empty when you equip it. The item is always damaged when found.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "observed": "2026-11-15T20:44:23Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T20:44:23Z through 2026-11-15T20:44:30Z; logged-out cache notice: up to 5 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "chains"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "chains-legendary-recipe-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "slave_lords",
+        "recipe_table_visible_text"
+      ],
+      "quote": "Group\tEnchantment name\tEnchantment value\tIngredient cost\nHeroic\nML 8\tLegendary\nML 28\tHeroic\tLegendary\nPrefix\n\tAttributes\t+5\t+13\t\n50   Broken Shackles\n\t\n100   Legendary Broken Shackles\n\nFalse Life\t+18\t+50\nFortification\t+70%\t+142%\nSheltering\t+12\t+33\nWizardry\t+96\t+269\nSuffix\n\tAccuracy\t+8\t+20\t\n50   Chain Links\n\t\n100   Legendary Chain Links\n\nArmor Piercing\t+8\t+20\nDamage Guards (don't stack with each other)\t+2d8\t+8d8\nDeadly\t+4\t+10\nDeception (no bluff effect)\t+3\t+10\nResistance\t+4\t+10\nSeeker\t+5\t+13\nSpell Lore (single type) (Equipment Bonus)\t+10\t+21\nSpell Power (single type) (Equipment Bonus)\t+70\t+142\nExtra\n\tSkills (except UMD)\t+10\t+20\t\n50   Broken Collars\n\t\n100   Legendary Broken Collars\n\nUMD (note: barter displays incorrect values.)\t+1\t+5\nShatter\t+6\t+15\nSpell Focus Mastery\t+2\t+6\nSpell Penetration\t+3\t+8\nStunning\t+6\t+15\nTendon Slice\t+4\t+10\nVertigo\t+6\t+15\nBonus\n\n\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\n\n\tQuality Attributes\t+1\t+3\t\n20   Frayed Leathers\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Frayed Leathers\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nQuality False Life\t+4\t+12\nQuality Fortification\t+17%\t+35%\nQuality MRR\t+2\t+8\nQuality PRR\t+2\t+8\nQuality Skills\t+2\t+5\nAugment Slot addition\n\tColorless Augment Slot\n\nTIP: Don't make a Colorless slot; make a Blue or Yellow slot instead. All three can accept Colorless augments, and the cost is the same. If you slot a Colorless augment in a Blue or Yellow slot, you have the option later to replace it with a Blue or Yellow augment.\t\n20   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nBlue Augment Slot\nYellow Augment Slot\nGreen Augment Slot\t\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSet bonus addition\n\tSlave Lord's Might\t\n20   Shattered Symbols of the Slave Lords\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Shattered Symbols of Slave Lords\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSlave Lord's Sorcery\nSlaver's Endurance\nMythic upgrades\tMythic Boost\t+1\t+1\t*1   Statuette of the Gods\t*1   Legendary Statuette of the Gods\nMythic Boost\t+3\t+3\t*1   Slave Master's Bust\t*1   Legendary Slave Master's Bust",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "observed": "2026-11-15T20:44:30Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T20:44:30Z through 2026-11-15T20:45:26Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "slave_lords"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "chains-combustion-membership-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "spell_power",
+        "selected_row_html"
+      ],
+      "quote": "<tr>\n<td><a href=\"/page/Combustion\" title=\"Combustion\">Combustion</a></td>\n<td><a href=\"/page/Inferno\" title=\"Inferno\">Inferno</a></td>\n<td><a href=\"/page/Category:Fire_spells\" title=\"Category:Fire spells\">Fire Spells</a>\n</td></tr>",
+      "url": "https://ddowiki.com/page/Spell_Power",
+      "revision": "https://ddowiki.com/index.php?title=Spell_Power&oldid=695517",
+      "observed": "2026-11-15T20:49:00Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T20:49:00Z through 2026-11-15T20:49:05Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "spell_power"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "chains-intelligence-membership-20261115": {
+      "path": "evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json",
+      "sha256": "32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830",
+      "pointer": [
+        "captures",
+        "ability",
+        "ability_members_visible_text"
+      ],
+      "quote": "Almost everything a Player Character does is affected by his abilities: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). Play Tabletop RPGs",
+      "url": "https://ddowiki.com/page/Ability",
+      "revision": "https://ddowiki.com/index.php?title=Ability&oldid=524405",
+      "observed": "2026-11-15T21:48:41Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T21:48:41Z through 2026-11-15T21:49:12Z; logged-out cache notice: up to 12 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "ability"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
       ]
     }
   }

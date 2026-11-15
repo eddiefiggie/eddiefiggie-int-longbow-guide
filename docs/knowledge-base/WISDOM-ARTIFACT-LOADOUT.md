@@ -108,11 +108,12 @@ is a general-rule inference; Combustion is Equipment Fire Spell Power, not
 weapon damage; Quality INT uses the Quality Attributes category; and Spot's
 Competence type is still unverified for the selected Chains craft.
 
-Build **11-15-26.3** integrates only Glabrezu's exact Insight INT +7 binding,
-using the unchanged source/value/type validator. The component moves from
-excluded to counted, but the complete Intelligence result remains withheld.
-The other eight INT inputs remain excluded; no new interaction rule or complete
-stat total is established. All four Chains components stay unknown and excluded.
+Build **11-15-26.3** integrated only Glabrezu's exact Insight INT +7 binding,
+using the then-unchanged source/value/type validator. The component moved from
+excluded to counted, but the complete Intelligence result remained withheld.
+At that checkpoint, the other eight INT inputs remained excluded; no new
+interaction rule or complete stat total was established. All four Chains
+components stayed unknown and excluded.
 The [integration record](../../evidence/wisdom-loadout/crafting-integration-2026-11-15.json)
 distinguishes their recipe support from the remaining exact typed-effect and
 applicability requirements. The targeted Spot check found a generic +20
@@ -120,10 +121,28 @@ Competence tooltip on Legendary Keylock Ring, not a finished Chains effect;
 it cannot qualify this selected craft. A bounded Wiki search also did not
 establish that binding, which is not proof that no source exists.
 
-Original claim grades and the first addendum's build-11-15-26.2 checkpoint
-remain byte-identical historical records. Current generated labels now show
-the later qualification explicitly. The selected recipe, priorities, modeled
-amounts, calculator code and positive-interaction rules are unchanged.
+That is the preserved .3 checkpoint, not the latest qualification state.
+Build **11-15-26.4** adds the separately approved bounded multi-source proof
+route. It qualifies Chains **Equipment Combustion +142** and **Quality INT +3**
+as source-supported recipe derivations, not finished-item tooltips. Separate
+host/channel, Legendary recipe and category-definition records are bound with
+their actual provenance. The [fresh Ability source](../../evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json)
+explicitly supplies Intelligence membership and attributes/abilities terminology.
+
+The 142 is a complete selected-gear Fire Spell Power contribution only. The INT
+result now counts Glabrezu and Chains Quality, but still has seven excluded inputs
+and a newly exposed missing Insight/Quality interaction; the complete total
+remains null. Fortification is still missing the premise that this Slavers Prefix
+is in the general rule's standard-item class. Spot's exact selected-craft type
+remains unsupported. Neither incomplete proof is promoted.
+
+Original claim grades and previous source packets remain byte-identical historical
+records. Current generated labels identify direct versus recipe-derived support.
+Only four of 76 complete level36 result objects change; 72 remain identical, and
+all 76 level35 results are unchanged. Before integration, the real new engine
+also reproduced all 76 results on unchanged .3 data. The selected recipe,
+priorities, numeric/core tuples and seven positive-interaction rules are unchanged;
+the calculator changes only by the reviewed bounded qualification dispatcher.
 
 Optional ring DEX +13 remains an additional unselected gap. Skull CON +15 versus
 +16, Queen's incomplete/relayed provenance and exact normal procurement of
@@ -137,12 +156,13 @@ also does not establish local-guide rendering QA. Source-qualified item
 definitions still require the current ledger's exact provenance and positive
 interaction gates before counting.
 
-Next validation should obtain exact selected Chains effect evidence and resolve
-the other source/applicability and positive-interaction gaps. The current
-single-source typed-numeric-clause contract is deliberately unchanged; cross-page
-derivations are documented, not silently treated as finished tooltips. Any future
-change to that contract needs separate design review and tests. Five supported
-magnitudes are not five fully qualified effects or a validated total-DPS gain.
+Next validation should resolve the remaining Fortification classification, Spot
+type, INT interactions and other source/applicability gaps. The original direct
+typed-numeric-clause path is preserved for unrelated inputs; the approved
+recipe-proof route is limited to four fixed Chains IDs and cannot infer a
+stacking edge. Wider inference or different selected components would require
+separate review. Five supported magnitudes are not five fully qualified effects
+or a validated total-DPS gain. See the [current integration receipt](../../evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json).
 
 The historical bow model, previous snapshots and original retained captures
 remain unchanged. Current generated sections must pass fresh semantic tests;

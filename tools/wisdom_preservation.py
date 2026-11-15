@@ -13,6 +13,7 @@ from pathlib import Path
 import types
 import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
+import wisdom_recipe_proof_preservation as recipe_proofs
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -82,7 +83,9 @@ def frozen_generator_bytes():
 
 
 def restore_file(path, current, *, scope=None):
-    """Restore crafting, correction and original Wisdom layers in that order."""
+    """Restore recipe-proof, crafting, correction and original Wisdom layers."""
+    if path in recipe_proofs.REVIEWED_PATHS:
+        current = recipe_proofs.restore_file(path, current)
     if path in crafting.REVIEWED_PATHS:
         current = crafting.restore_file(path, current)
     if path in corrections.REVIEWED_PATHS:
@@ -134,12 +137,12 @@ def predecessor_file_bytes(path):
     """Only scoped current artifacts are reversed; unaffected files stay literal."""
     if path in REVIEWED_PATHS:
         return predecessor_file_text(path).encode()
-    return (ROOT / path).read_bytes()
+    return recipe_proofs.checkpoint_file_bytes(path)
 
 
 @lru_cache(maxsize=1)
 def historical_renderer():
-    """Execute the pinned predecessor renderer against the unchanged calculator.
+    """Execute the pinned predecessor renderer against the pinned calculator.
 
     Older semantic/mutation tests use this renderer and the restored predecessor
     ledger.  Dedicated current-release tests exercise the production renderer
@@ -151,6 +154,10 @@ def historical_renderer():
     module = types.ModuleType('_wisdom_predecessor_stacking_renderer')
     module.__file__ = str(FIXTURE / 'predecessor-generator.py')
     exec(compile(current_restored, module.__file__, 'exec'), module.__dict__)
+    calculator = recipe_proofs.historical_calculator()
+    for name in ('ROOT', 'validate', 'subtotal', 'source_provenance'):
+        setattr(module, name, getattr(calculator, name))
+    module.load = predecessor_ledger
     return module
 
 
@@ -170,5 +177,5 @@ def validate_full_reversal():
     assert sha(excerpts) == BASE_EXCERPTS_SHA
     assert restored['endgame-stacking-audit.html'] == historical_renderer().detail(data)
     assert sha((ROOT / 'tools/bowmodel.py').read_bytes()) == BASE_MODEL_SHA
-    assert sha((ROOT / 'tools/stacking_audit.py').read_bytes()) == BASE_CALCULATOR_SHA
+    assert sha(recipe_proofs.checkpoint_file_bytes('tools/stacking_audit.py')) == BASE_CALCULATOR_SHA
     return True

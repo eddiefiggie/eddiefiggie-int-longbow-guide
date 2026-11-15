@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 import re
 from urllib.parse import unquote, parse_qs, urlparse
+from recipe_proofs import BOUNDED_COMPONENT_IDS, validate_component as validate_recipe_component
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURE = ROOT / 'tools/fixtures/endgame-stacking/ledger.json'
@@ -83,6 +84,17 @@ def source_provenance(source):
             and observation_context(source))
 
 
+def component_provenance(data, component, *, root=None):
+    """Recheck bounded recipe proofs at every counting entrypoint.
+
+    The fixed Chains IDs cannot escape to legacy provenance by deleting a
+    proof. Unrelated direct-source components retain their original behavior.
+    """
+    if component['id'] in BOUNDED_COMPONENT_IDS or 'recipe_proof' in component:
+        return validate_recipe_component(data, component, ROOT if root is None else root)
+    return source_provenance(data['sources'].get(component['source'], {}))
+
+
 def validate(data, root=ROOT):
     """Validate source identities, exact contexts and machine-extracted inputs."""
     source_ids = set()
@@ -125,7 +137,10 @@ def validate(data, root=ROOT):
         assert component['channel'] and component['stat'] and component['host']
         assert isinstance(component['amount'], (int, float)) and component['amount'] >= 0
         assert component['note']
-        if component['state'] in {'verified', 'conditional'}:
+        if ('recipe_proof' in component or
+                component['id'] in BOUNDED_COMPONENT_IDS and component['state'] in {'verified', 'conditional'}):
+            validate_recipe_component(data, component, root)
+        elif component['state'] in {'verified', 'conditional'}:
             source = data['sources'][component['source']]
             assert source_provenance(source), cid
             match = re.search(component['value_pattern'], source['quote'])
@@ -205,7 +220,7 @@ def subtotal(data, stat, *, channel='gear', active=(), level=36):
     eligible, excluded = [], []
     for c in rows:
         if (c['state'] not in {'verified', 'conditional'} or level < c['kit_min_level']
-                or not source_provenance(data['sources'].get(c['source'], {}))
+                or not component_provenance(data, c)
                 or not set(c['requires']).issubset(active)):
             excluded.append(c['id'])
         else:

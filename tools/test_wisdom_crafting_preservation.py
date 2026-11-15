@@ -1,9 +1,10 @@
-"""Exact new-to-checkpoint preservation, not live crafting or mechanics proof.
+"""Exact .3-to-checkpoint preservation, not live crafting or mechanics proof.
 
 The original source-finding checkpoint and older correction contracts remain
 historical inputs. Actual-current source qualification is exercised separately
-by test_wisdom_crafting_integration; actual-current recipe and renderer checks
-remain in test_wisdom_loadout and the existing integrity suites.
+by test_wisdom_recipe_integration; actual-current recipe and renderer checks
+remain in test_wisdom_loadout and the existing integrity suites. The later .4
+layer is reversed before this unchanged historical contract is exercised.
 """
 import copy
 from pathlib import Path
@@ -12,6 +13,7 @@ import unittest
 import wisdom_crafting_integration as integration
 import wisdom_corrections as corrections
 import wisdom_preservation as preservation
+import wisdom_recipe_proof_preservation as recipe_proofs
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,14 +44,14 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
                 self.assertTrue(row['reviewed_replacements'])
                 self.assertNotEqual(row['current_sha256'], row['baseline_sha256'])
 
-    def test_all_seven_actual_files_reverse_to_fixed_checkpoint_bytes(self):
+    def test_all_seven_restored_point_three_files_reverse_to_fixed_checkpoint_bytes(self):
         self.assertTrue(integration.validate_full_reversal())
         for path, expected in integration.BASE_FILES.items():
             raw = integration.checkpoint_file_bytes(path)
             with self.subTest(path=path):
                 self.assertEqual((len(raw), integration.sha(raw)), expected)
                 self.assertEqual(raw.decode(), integration.checkpoint_file_text(path))
-                self.assertNotEqual(raw, (ROOT / path).read_bytes())
+                self.assertNotEqual(raw, recipe_proofs.checkpoint_file_bytes(path))
 
     def test_exact_hunks_also_reconstruct_current_files_in_forward_order(self):
         scope = integration.load_scope()
@@ -61,7 +63,7 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
                 self.assertEqual(text.count(change['before']), 1, path)
                 text = text.replace(change['before'], change['after'], 1)
             with self.subTest(path=path):
-                self.assertEqual(text, (ROOT / path).read_text())
+                self.assertEqual(text, recipe_proofs.checkpoint_file_text(path))
 
     def test_original_correction_and_wisdom_layers_still_pass_independently(self):
         self.assertTrue(corrections.validate_full_reversal())
@@ -77,7 +79,7 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
     def test_stale_mixed_duplicated_and_unrelated_current_files_are_rejected(self):
         scope = integration.load_scope()
         for path in integration.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = recipe_proofs.checkpoint_file_text(path)
             change = scope['files'][path]['reviewed_replacements'][0]
             mutants = {
                 'already-old': integration.checkpoint_file_text(path),
@@ -93,7 +95,7 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
 
     def test_fixed_checkpoint_rejects_rehashed_unrelated_edits_for_every_file(self):
         for path in integration.REVIEWED_PATHS:
-            mutant = (ROOT / path).read_text() + '\n'
+            mutant = recipe_proofs.checkpoint_file_text(path) + '\n'
             scope = copy.deepcopy(integration.load_scope())
             row = scope['files'][path]
             row['current_bytes'] = len(mutant.encode())
@@ -103,7 +105,7 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
 
     def test_exact_context_guards_reject_rehashed_missing_and_duplicate_hunks(self):
         for path in integration.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = recipe_proofs.checkpoint_file_text(path)
             original_scope = integration.load_scope()
             change = original_scope['files'][path]['reviewed_replacements'][0]
             for label, replacement in (('missing', change['before']),
@@ -117,7 +119,7 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
 
     def test_forged_scope_baseline_cannot_replace_independently_fixed_checkpoint(self):
         path = 'index.html'
-        mutant = (ROOT / path).read_text() + '\n'
+        mutant = recipe_proofs.checkpoint_file_text(path) + '\n'
         forged_checkpoint = integration.checkpoint_file_text(path) + '\n'
         scope = copy.deepcopy(integration.load_scope())
         row = scope['files'][path]
@@ -127,9 +129,11 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             integration.restore_file(path, mutant, scope=scope)
 
-    def test_source_capture_old_scopes_calculator_and_prior_snapshots_stay_literal(self):
+    def test_capture_scopes_calculator_and_snapshots_keep_exact_checkpoint_bytes(self):
         for path, expected in IMMUTABLE.items():
-            raw = (ROOT / path).read_bytes()
+            # Captures/scopes/snapshots remain literal; the newly extended
+            # calculator must reverse to its unchanged .3 byte/hash assertion.
+            raw = recipe_proofs.checkpoint_file_bytes(path)
             with self.subTest(path=path):
                 self.assertNotIn(path, integration.REVIEWED_PATHS)
                 self.assertEqual((len(raw), integration.sha(raw)), expected)
@@ -137,7 +141,7 @@ class WisdomCraftingPreservationTests(unittest.TestCase):
 
     def test_new_and_prior_snapshots_each_match_their_exact_source_build(self):
         import build_snapshot
-        current = (ROOT / 'index.html').read_text()
+        current = recipe_proofs.checkpoint_file_text('index.html')
         checkpoint = integration.checkpoint_file_text('index.html')
         self.assertEqual(build_snapshot.current_build(current), '11-15-26.3')
         self.assertEqual(build_snapshot.current_build(checkpoint), '11-15-26.2')

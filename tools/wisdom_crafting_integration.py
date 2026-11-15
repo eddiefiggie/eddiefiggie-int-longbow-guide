@@ -8,6 +8,7 @@ validation; current semantic tests must read the actual production artifacts.
 import hashlib
 import json
 from pathlib import Path
+import wisdom_recipe_proof_preservation as recipe_proofs
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -71,8 +72,8 @@ def restore_file(path, current, *, scope=None):
 
 
 def checkpoint_file_bytes(path):
-    """Read unaffected files literally; strictly reverse every scoped current file."""
-    raw = (ROOT / path).read_bytes()
+    """Restore the .4 layer first, then this unchanged .3-to-fbb1 contract."""
+    raw = recipe_proofs.checkpoint_file_bytes(path)
     return restore_file(path, raw).encode() if path in REVIEWED_PATHS else raw
 
 
@@ -83,5 +84,5 @@ def checkpoint_file_text(path):
 def validate_full_reversal():
     scope = load_scope()
     for path in REVIEWED_PATHS:
-        restore_file(path, (ROOT / path).read_bytes(), scope=scope)
+        restore_file(path, recipe_proofs.checkpoint_file_bytes(path), scope=scope)
     return True

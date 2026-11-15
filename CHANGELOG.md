@@ -1,6 +1,14 @@
 # Changelog
 
-Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
+Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
+
+## Build 11-15-26.4 (draft bounded-recipe-proof candidate; not published)
+
+- Adds the owner-approved bounded multi-source proof route for four fixed Chains component IDs. Direct source fields stay separate; host/channel, Legendary recipe and category membership are independently bound to real contexts, revisions, observations and hashes.
+- Qualifies only Equipment Combustion +142 and Quality Intelligence +3. Fresh Ability evidence supplies the explicit Intelligence/attributes connection. Fortification's selected classification premise and Spot's exact type remain unresolved and excluded.
+- Distinguishes direct tooltip support from source-supported recipe derivations in the guide/audit. Combustion is gear-only Fire Spell Power, not measured DPS. The complete INT result remains withheld with seven other exclusions and the visible missing Insight/Quality interaction.
+- Keeps all 76 old-input results identical under the new engine; the two qualifications change exactly four level-36 result objects, with 72 unchanged and all 76 level-35 results unchanged. No gear, priorities, numeric/core tuples, stacking rules, exceptions or optimizer result changes.
+- Adds strict .4-to-.3 reversal, protected-record checks, real-new-engine legacy/adversarial tests and actual-current integration tests; regenerates current outputs and a new path-rebased snapshot. Earlier source packets, claim grades and snapshots remain literal. Browser QA, full mechanics validation, merge and publication are separate.
 
 ## Build 11-15-26.3 (draft evidence-integration candidate; not published)
 

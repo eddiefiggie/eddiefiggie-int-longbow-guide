@@ -1,8 +1,10 @@
-"""Actual-current crafting qualification, separate from frozen source grades.
+"""Historical .3 crafting qualification, separate from frozen source grades.
 
-The exact-restored fbb1 ledger is a comparison input, never a substitute for the
-production ledger. These checks bind one newly qualified input and all complete
-calculator results; they do not certify a live-game craft, stacking or DPS.
+The exact-restored .3 and fbb1 ledgers preserve this single-input integration.
+Its direct-path negative cases still exercise the actual new calculator; only
+historical rendering uses pinned .3 behavior. Actual-current .4 qualification
+is checked separately by test_wisdom_recipe_integration. Neither suite certifies
+a live-game craft, stacking or DPS.
 """
 import copy
 from hashlib import sha256
@@ -13,7 +15,7 @@ import unittest
 
 import stacking_audit as audit
 import wisdom_crafting_integration as integration
-import wisdom_loadout as recipe
+import wisdom_recipe_proof_preservation as recipe_proofs
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -116,17 +118,18 @@ def current_scope_contract(current, checkpoint):
     return True
 
 
-class CurrentCraftingIntegrationTests(unittest.TestCase):
+class HistoricalCraftingIntegrationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.checkpoint = json.loads(integration.checkpoint_file_text(LEDGER_PATH))
 
     def setUp(self):
-        self.data = audit.load()
+        self.data = json.loads(recipe_proofs.checkpoint_file_text(LEDGER_PATH))
+        self.recipe = recipe_proofs.historical_recipe_renderer()
         self.packet = json.loads((ROOT / PACKET_PATH).read_text())
         self.record = json.loads((ROOT / RECORD_PATH).read_text())
 
-    def test_actual_current_ledger_matches_exact_one_input_scope(self):
+    def test_exact_point_three_ledger_matches_one_input_scope_on_real_new_engine(self):
         self.assertTrue(current_scope_contract(self.data, self.checkpoint))
         self.assertTrue(audit.validate(self.checkpoint))
         source = self.data['sources'][SOURCE_ID]
@@ -142,7 +145,7 @@ class CurrentCraftingIntegrationTests(unittest.TestCase):
     def test_frozen_source_packet_models_selection_and_original_receipts_remain_bytes(self):
         for path, expected in IMMUTABLE.items():
             with self.subTest(path=path):
-                self.assertEqual(sha256((ROOT / path).read_bytes()).hexdigest(), expected)
+                self.assertEqual(sha256(recipe_proofs.checkpoint_file_bytes(path)).hexdigest(), expected)
         # Historical checkpoint flags are not retroactively rewritten to describe .3.
         self.assertFalse(self.packet['scope']['calculator_components_promoted'])
         self.assertFalse(self.packet['scope']['historical_claim_inventory_regraded'])
@@ -314,7 +317,7 @@ class CurrentCraftingIntegrationTests(unittest.TestCase):
                 with self.assertRaises(AssertionError):
                     current_scope_contract(changed, self.checkpoint)
                 with self.assertRaises(ValueError):
-                    recipe.render_crafting_qualification(changed)
+                    self.recipe.render_crafting_qualification(changed)
 
     def test_integration_record_binds_observation_scope_and_no_unapproved_actions(self):
         record = self.record
@@ -357,24 +360,24 @@ class CurrentCraftingIntegrationTests(unittest.TestCase):
         self.assertFalse(any(s['path'] == RECORD_PATH for s in self.data['sources'].values()))
         self.assertEqual(components(self.data)['chains-spot']['source'], '')
 
-    def test_actual_current_renderer_and_generated_outputs_use_same_qualified_data(self):
-        full = recipe.render_crafting_qualification(self.data)
-        compact = recipe.render_crafting_qualification(self.data, compact=True)
-        self.assertEqual(recipe.render_crafting_qualification(), full)
-        self.assertEqual(recipe.render_crafting_qualification(compact=True), compact)
+    def test_point_three_renderer_and_restored_outputs_use_same_qualified_data(self):
+        full = self.recipe.render_crafting_qualification(self.data)
+        compact = self.recipe.render_crafting_qualification(self.data, compact=True)
+        self.assertEqual(self.recipe.render_crafting_qualification(), full)
+        self.assertEqual(self.recipe.render_crafting_qualification(compact=True), compact)
         self.assertTrue(full.startswith(compact))
         self.assertEqual(full.count('id="wisdom-crafting-evidence"'), 1)
         self.assertIn('SOURCE-QUALIFIED INPUT', full)
         self.assertEqual(full.count('RECIPE SUPPORTED · INPUT WITHHELD'), 4)
         self.assertIn('complete Intelligence combination is still withheld', compact)
         self.assertIn('not weapon damage or measured DPS', full)
-        html = (ROOT / 'index.html').read_text()
-        detail = (ROOT / 'endgame-stacking-audit.html').read_text()
+        html = recipe_proofs.checkpoint_file_text('index.html')
+        detail = recipe_proofs.checkpoint_file_text('endgame-stacking-audit.html')
         self.assertEqual(html.count(full), 1)
         self.assertEqual(html.count(compact), 2)
         self.assertEqual(detail.count(compact), 1)
         self.assertNotIn('id="wisdom-crafting-evidence"', detail)
-        excerpts = json.loads((ROOT / 'evidence/endgame-stacking/source-excerpts.json').read_text())
+        excerpts = json.loads(recipe_proofs.checkpoint_file_text('evidence/endgame-stacking/source-excerpts.json'))
         self.assertEqual(excerpts['sources'], self.data['sources'])
         self.assertEqual(excerpts['source_roles'], self.data['source_roles'])
 
@@ -388,14 +391,14 @@ class CurrentCraftingIntegrationTests(unittest.TestCase):
             else:
                 components(changed)['chains-spot']['source'] = SOURCE_ID
             with self.subTest(mode=mode), self.assertRaises((AssertionError, ValueError)):
-                recipe.render_crafting_qualification(changed)
+                self.recipe.render_crafting_qualification(changed)
 
     def test_missing_duplicate_or_stale_current_guide_qualification_is_rejected(self):
-        from test_wisdom_loadout import current_render_contract
-        html = (ROOT / 'index.html').read_text()
-        full = recipe.render_crafting_qualification(self.data)
-        selected = recipe.load()
-        current_render_contract(html, selected)
+        from test_wisdom_loadout import render_contract
+        html = recipe_proofs.checkpoint_file_text('index.html')
+        full = self.recipe.render_crafting_qualification(self.data)
+        selected = self.recipe.load()
+        render_contract(html, selected, self.recipe)
         mutants = (
             html.replace(full, '', 1),
             html.replace(full, full + full, 1),
@@ -404,7 +407,7 @@ class CurrentCraftingIntegrationTests(unittest.TestCase):
         )
         for mutant in mutants:
             with self.subTest(mutation=mutants.index(mutant)), self.assertRaises(AssertionError):
-                current_render_contract(mutant, selected)
+                render_contract(mutant, selected, self.recipe)
 
 
 if __name__ == '__main__':

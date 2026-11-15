@@ -15,6 +15,7 @@ import stacking_audit as audit
 import wisdom_preservation as preservation
 import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
+import wisdom_recipe_proof_preservation as recipe_proofs
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 
@@ -73,8 +74,13 @@ def record_maxima(record):
 
 
 def current_render_contract(html, data):
-    """Bind only the three new live blocks, not archived historical rankings."""
+    """Bind the actual production renderer; historical callers use the explicit helper."""
     import wisdom_loadout as recipe
+    return render_contract(html, data, recipe)
+
+
+def render_contract(html, data, recipe):
+    """Check exact generated blocks and visibility using the supplied pinned renderer."""
     recipe.validate(data)
     renderers = {'recipe': recipe.render_recipe, 'priorities': recipe.render_priorities,
                  'onepage': recipe.render_onepage_rows}
@@ -533,7 +539,7 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
             with self.subTest(source=sid):
                 self.assertEqual(self.data['sources'][sid], source)
         self.assertEqual(self.data['selection_base_commit'], preservation.BASE_COMMIT)
-        self.assertEqual(preservation.sha((ROOT / 'tools/stacking_audit.py').read_bytes()),
+        self.assertEqual(preservation.sha(recipe_proofs.checkpoint_file_bytes('tools/stacking_audit.py')),
                          preservation.BASE_CALCULATOR_SHA)
 
     def test_current_ability_inputs_match_primary_recipe_without_ring_dexterity13(self):
@@ -595,9 +601,11 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         selected = ('dusk-raider-rp', 'tough-shields-prr', 'quickblade-ds',
                     'perfect-silence-sneak', 'claws-wisdom', 'celestial-dodge',
                     'yeenoghu-quality-deadly',
-                    'chains-combustion', 'solar-sneak-damage', 'emerald-imbue')
+                    'solar-sneak-damage', 'emerald-imbue')
         # Glabrezu's separately integrated exact source has current missing,
         # forged and wrong-definition negatives in test_wisdom_crafting_integration.
+        # Chains Combustion's new recipe-proof path has actual-current negative
+        # controls in test_recipe_proofs and test_wisdom_recipe_integration.
         for cid in selected:
             changed = copy.deepcopy(self.data)
             row = next(c for c in changed['components'] if c['id'] == cid)

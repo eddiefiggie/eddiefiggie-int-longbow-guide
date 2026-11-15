@@ -126,7 +126,7 @@ def detail(data):
     '<p>'+h(chosen['selection']['date'])+' · '+h(chosen['selection']['label'])+' · fully filled level-36 Calamitous/Salt recipe; optional ring craft absent</p>',
     '<p class="note">'+h(data['scope'])+'</p>',
     '<p>Original evidence audit base: <code>'+h(data['base_commit'])+'</code>. Current selection implementation base: <code>'+h(data['selection_base_commit'])+'</code>. The <a href="tools/fixtures/wisdom-loadout/selection.json">shared manifest</a> identifies the production run, selected derivation, exact placements and optional branch. The <a href="evidence/wisdom-loadout/README.md">evidence packet</a> preserves source grades and limits. Chassis, feats, AP/DP purchases and historical damage-model outputs are not silently recomputed. Publication and live-game validation remain separate.</p>',
-    '<p><strong>Status:</strong> verified = exact component definition or explicit applicable rule; conditional = an activation/acquisition condition remains; conflicting = retained sources or scope disagree; unknown = evidence is missing. A verified component does not imply its entire combination is verified. Every counted component and applied rule also requires an exact revision and genuine source-bound observation context. Every counted pair needs its own applicable rule. Artifact touching two bonuses does not prove those other bonuses stack with one another.</p>',
+    '<p><strong>Status:</strong> verified = exact component definition, explicitly labeled source-supported recipe derivation, or explicit applicable rule; conditional = an activation/acquisition condition remains; conflicting = retained sources or scope disagree; unknown = evidence is missing. A recipe derivation binds separate source contexts without inventing a finished-item tooltip. A verified component does not imply its entire combination is verified. Every counted component and applied rule also requires an exact revision and genuine source-bound observation context. Every counted pair needs its own applicable rule. Artifact touching two bonuses does not prove those other bonuses stack with one another.</p>',
     summary(data).replace('id="selected-stacking-summary"','id="audit-summary"').replace('id="selected-stacking-title"','id="audit-summary-title"').replace('aria-labelledby="selected-stacking-title"','aria-labelledby="audit-summary-title"'),
     '<h2 id="components">Selected components and interaction results</h2><p>Numbers in component rows are source-defined inputs or explicitly unverified Guide claims. Only a complete, supported subtotal is asserted. Item minimum levels in the guide are base-item values; this audit requires the fully filled level-36 context. Armor proficiency, ability modifiers, base saves, feats, trees, past lives, filigrees, procs and enemy mechanics are outside these gear subtotals unless specifically listed.</p>']
     for stat in dict.fromkeys(c['stat'] for c in data['components'] if c['channel']=='gear'):
@@ -139,10 +139,16 @@ def detail(data):
         else:out += ['<p class="unknown"><strong>Combined total withheld.</strong> Missing components or interaction support are listed below; this is not a finding that the bonuses fail to stack in game.</p>']
         out += ['<div class="tw"><table><thead><tr><th>Host / component</th><th>Input / type</th><th>Evidence status</th><th>Scope and qualification</th></tr></thead><tbody>']
         for c in [c for c in data['components'] if c['stat']==stat and c['channel']=='gear']:
-            link=f'<a href="#source-{h(c["source"])}">source</a>' if c['source'] else 'source missing'
+            if 'recipe_proof' in c:
+                link = ' · '.join(f'<a href="#source-{h(sid)}">{h(role)} source</a>'
+                                  for role, sid in c['recipe_proof']['sources'].items())
+                status = 'verified · source-supported recipe derivation'
+            else:
+                link=f'<a href="#source-{h(c["source"])}">source</a>' if c['source'] else 'source missing'
+                status = c['state']
             for related in c.get('related_sources', []):
                 link += f' · <a href="#source-{h(related)}">conflicting source</a>'
-            status='suppressed by same-type maximum' if c['id'] in result['suppressed'] else c['state']
+            status='suppressed by same-type maximum' if c['id'] in result['suppressed'] else status
             out += [f'<tr id="component-{h(c["id"])}"><td>{h(c["host"])}<br><small>{h(c["id"])}</small></td><td>{c["amount"]} {h(c["bonus_type"])}</td><td>{h(status)} · {link}</td><td>{h(c["note"])}</td></tr>']
         out += ['</tbody></table></div>']
         if result['missing_interactions']:

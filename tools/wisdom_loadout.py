@@ -285,9 +285,9 @@ def _cells(values):
 def render_crafting_qualification(ledger=None, *, compact=False):
     """Render the bounded current qualification, separately from frozen grades.
 
-    The unchanged calculator validates the actual source binding. Recipe-table
-    support for the four Chains choices does not manufacture exact effect
-    tooltips, positive interaction edges or complete totals.
+    Direct tooltips and bounded multi-source derivations remain distinct.
+    Qualification of an input creates neither a finished-item tooltip nor a
+    positive interaction edge, imbue applicability or complete damage total.
     """
     from stacking_audit import load as load_ledger, validate as validate_ledger, subtotal
 
@@ -299,34 +299,50 @@ def render_crafting_qualification(ledger=None, *, compact=False):
              and glabrezu['source'] == 'glabrezu-insight-int-live-20261115'
              and glabrezu['id'] in subtotal(ledger, 'Intelligence')['counted'],
              'Current Glabrezu qualification lost its source gate')
-    chains_ids = ('chains-fortification', 'chains-combustion',
-                  'chains-quality-int', 'chains-spot')
+    chains_ids = ('chains-fortification', 'chains-spot')
     _require(all(components[cid]['state'] == 'unknown' and not components[cid]['source']
+                 and 'recipe_proof' not in components[cid]
                  for cid in chains_ids), 'Unreviewed Chains qualification')
-    _require(not subtotal(ledger, 'Intelligence')['complete'],
-             'Unreviewed complete Intelligence combination')
+    intelligence = subtotal(ledger, 'Intelligence')
+    combustion = subtotal(ledger, 'Combustion')
+    _require(components['chains-combustion']['state'] == 'verified'
+             and components['chains-quality-int']['state'] == 'verified'
+             and combustion['complete'] and combustion['total'] == 142
+             and combustion['counted'] == ['chains-combustion']
+             and intelligence['counted'] == ['glabrezu-insight-int', 'chains-quality-int']
+             and len(intelligence['excluded']) == 7
+             and intelligence['missing_interactions'] == [
+                 ['glabrezu-insight-int', 'chains-quality-int']]
+             and intelligence['total'] is None and not intelligence['complete'],
+             'Current recipe qualification or unresolved interaction changed')
     paragraph = (
-        '<p class="note" data-crafting-qualification="glabrezu-only">'
-        '<strong>Crafting evidence integrated:</strong> the selected Pendant Insight INT +7 '
-        'is now source-qualified from its exact item tooltip. The complete Intelligence '
-        'combination is still withheld. The four Chains recipe magnitudes have supporting '
-        'evidence, but their exact type/applicability bindings remain unqualified and excluded '
-        'from certified totals. No equipment, priorities, modeled amounts or stacking rules changed. '
-        + _link('evidence/wisdom-loadout/crafting-integration-2026-11-15.json',
-                'Integration record and targeted Spot check') + ' · '
+        '<p class="note" data-crafting-qualification="bounded-recipe-proof">'
+        '<strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its '
+        'direct item-tooltip support. Chains Equipment Combustion +142 and Quality INT +3 '
+        'are now <strong>source-supported recipe derivations</strong>: separate host, '
+        'Legendary recipe and category-definition records, not invented finished-item tooltips. '
+        'The 142 is a selected-gear Fire Spell Power contribution, not weapon damage, '
+        'established imbue scaling, full-character Spell Power or DPS. The Intelligence total '
+        'is still withheld: seven other inputs and the Pendant Insight–Chains Quality '
+        'interaction remain unqualified. Chains Fortification and Spot remain excluded. '
+        'No equipment, priorities, modeled amounts or stacking rules changed. '
+        + _link('evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json',
+                'Bounded integration record') + ' · '
+        + _link('evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json',
+                'New category evidence and remaining gaps') + ' · '
         + _link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',
-                'Exact source captures') + '.</p>')
+                'Original host and recipe captures') + '.</p>')
     if compact:
         return paragraph
     rows = [
-        _cells(['Pendant · Insight INT +7', '<strong>SOURCE-QUALIFIED INPUT</strong>',
+        _cells(['Pendant · Insight INT +7', '<strong>DIRECT SOURCE-QUALIFIED INPUT</strong>',
                 'Own-item typed tooltip; other INT inputs and interactions are not certified.']),
         _cells(['Chains · Prefix Fortification +142%', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Legendary value is explicit; Enhancement is a separate general-rule inference, not a finished Chains tooltip.']),
-        _cells(['Chains · Suffix Combustion +142', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Equipment Spell Power +142 plus a separate Fire/Combustion mapping. Selected imbue applicability remains separate; this is not weapon damage or measured DPS.']),
-        _cells(['Chains · Bonus Quality INT +3', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Quality Attributes +3 is explicit; Intelligence is the selected category mapping, not an exact finished-effect clause.']),
+                'Legendary value is explicit. The general standard-item Enhancement rule lacks a supported premise classifying this selected Slavers Prefix as standard.']),
+        _cells(['Chains · Suffix Combustion +142', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power only; selected imbue applicability and DPS remain separate.']),
+        _cells(['Chains · Bonus Quality INT +3', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input, but no Insight/Quality stacking edge or complete INT total is established.']),
         _cells(['Chains · Extra Spot +20', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
                 'Skills except UMD +20 is explicit. A generic Competence tooltip on another item does not establish this selected Chains craft.']),
     ]

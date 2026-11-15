@@ -16,6 +16,7 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `tools/bowmodel.py` | The preserved historical per-shot bow model; not a DPS simulation of the current Wisdom loadout |
 | `tools/fixtures/wisdom-loadout/selection.json` | Shared current endgame recipe, exact optimizer priorities/constraints and model-only achieved values |
 | `tools/build_wisdom_loadout.py` | Generates the current recipe, priority table and one-page rows from that record |
+| `tools/recipe_proofs.py` | Bounded, source-supported recipe proofs for the four selected Chains IDs; not a general inference or stacking engine |
 
 ## Related
 

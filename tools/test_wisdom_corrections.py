@@ -246,7 +246,9 @@ class CorrectionPreservationTests(unittest.TestCase):
     def test_original_manifest_sources_model_and_prior_draft_snapshot_are_unchanged(self):
         receipt = json.loads(RECEIPT.read_text())
         for path, expected in receipt['original_records_preserved'].items():
-            raw = (ROOT / path).read_bytes()
+            # Only the approved later calculator extension is reversed here;
+            # original receipts, models and snapshots remain literal bytes.
+            raw = crafting.checkpoint_file_bytes(path)
             with self.subTest(path=path):
                 self.assertEqual((len(raw), corrections.sha(raw)), (expected['bytes'], expected['sha256']))
         for path, digest in receipt['retained_sources_sha256'].items():

@@ -70,8 +70,8 @@ Counting requires an exact source revision and a genuine observation date/time b
 
 ## A-074 selected-kit change
 
-`tools/test_queen_basic.py` checks the complete current recipe, explicit empties,
-33 sockets / 28 occupied, model-only deltas, evidence exclusions and exact scope.
+`tools/test_queen_basic.py` checks the complete historical A-074 recipe, explicit
+empties, 33 sockets / 28 occupied, model-only deltas, evidence exclusions and exact scope.
 Its reversible change contract restores the exact prior index before older
 release contracts apply their unchanged hashes. Do not widen that contract to
 allow unrelated choices. Queen relay/model inputs are not original captures and
@@ -92,7 +92,8 @@ The current stacking ledger must contain every relevant selected input, includin
 unresolved additions, and exclude absent prior items/sets. A missing input must
 not manufacture a complete subtotal. Source-quality labels in the optimizer
 review do not replace the existing revision/observation/value/type and positive
-interaction gates. `tools/stacking_audit.py` remains the unchanged calculator.
+interaction gates. The original Wisdom implementation left the calculator
+unchanged; the separately approved .4 bounded proof dispatcher is described below.
 
 The new exact outer preservation contract restores the approved predecessor
 before historical tests apply their unchanged hashes and assertions; those tests
@@ -122,11 +123,39 @@ the unchanged correction and original Wisdom reversals. The original six-source
 crafting packet and its 19-hash checkpoint remain historical evidence; tests of
 that checkpoint read strictly restored bytes, not regraded current inputs.
 
-Actual-current tests separately require the single Glabrezu Insight INT +7
+The .3 checkpoint tests separately require the single Glabrezu Insight INT +7
 source qualification, four withheld Chains inputs, unchanged selected/model
 tuples and the complete expected calculator-result delta. The calculator's
 single-source typed-numeric-clause and positive-interaction gates do not change.
 Do not concatenate recipe/category passages into a fabricated finished tooltip,
 reuse another item's Spot tooltip for Chains, or give an old source a new
-observation date. A future multi-source evidence contract would need separate
-design approval; these preservation layers do not grant it.
+observation date. These preservation layers did not grant permission for a
+multi-source evidence contract; the later bounded design was separately approved.
+
+### Bounded recipe-proof layer
+
+Build 11-15-26.4 adds `tools/recipe_proofs.py` and a narrow dispatcher in the
+existing calculator. The four fixed Chains IDs cannot escape this route by
+deleting or emptying their proof. Every count attempt rereads the pinned selection
+and real source records; an asserted success flag, fabricated joined quote,
+unrelated direct source or unsupported category/type premise must fail closed.
+The same-record header hierarchy, Legendary column, craft channel, category offer
+and membership context are part of the reviewed proof, not optional annotations.
+
+`tools/wisdom_recipe_proof_preservation.py` and its exact eight-file scope restore
+the .3 checkpoint before older reversals or pinned calculator hashes are applied.
+All 55 protected records and prior scopes stay literal. Historical renderers use
+strictly restored .3 dependencies without changing global imports; they are not
+substitutes for tests against the actual new engine. Do not weaken an old hash to
+accept the new code or let a cached historical module bypass current-byte checks.
+
+The real new engine must reproduce all 76 old-input result objects. After only
+Combustion and Quality INT qualify, exactly four level36 records change and 72
+stay identical; all 76 level35 records stay identical. Tests compare every field,
+including the newly exposed missing Insight/Quality edge and seven remaining INT
+exclusions. Current renderer tests distinguish direct from derived source support
+and reject stale qualification labels. Keep the existing direct-path negative
+tests running on the real new engine. All seven interaction rules, numerical
+core semantics, selection, priorities, source grades and previous captures remain
+unchanged. This contract does not certify the rest of the loadout or authorize
+merge/publication; browser, accessibility and print checks remain separate.

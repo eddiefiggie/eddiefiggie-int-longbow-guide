@@ -1,6 +1,6 @@
 # Mechanics and evidence limits
 
-Use **direct** for a statement explicitly present in the scoped source, **derived** for arithmetic with identified inputs, and **conditional** for a result requiring stated ranks, items or stances. Keep conflicting or unverified claims visible; missing evidence is not proof that an effect is absent.
+Use **direct** for a statement explicitly present in the scoped source, **derived** for arithmetic with identified inputs or an explicitly reviewed source composition, and **conditional** for a result requiring stated ranks, items or stances. A source-supported recipe derivation is labeled separately from a finished-item tooltip. Keep conflicting or unverified claims visible; missing evidence is not proof that an effect is absent.
 
 ## Retained evidence on main
 
@@ -27,7 +27,9 @@ source inventory uses grades such as retained-source supported, corroborated-onl
 conflicting and model-only. Those grades are **not** aliases for the component
 ledger's `verified` state. Exact Wiki revision, genuine source-bound observation,
 typed numeric context, applicable conditions and positive interaction rules must
-still pass before an input or sum can be certified. In particular, an item-page
+still pass before an input or sum can be certified. The bounded recipe route below
+is the reviewed alternative to a single direct typed clause, not a waiver of
+source or interaction evidence. In particular, an item-page
 Wisdom +15 choice without retained observation context does not certify a WIS 18
 mixed-type total. Optional ring DEX +13 stays outside the primary selection.
 
@@ -35,3 +37,31 @@ Retarget the current ledger to actual selected sources; do not carry Monolith,
 Solar Doubleshot, Solar Sneak Dice, Defense +40 or absent old equipment forward just
 because an aggregate happens to match. Retain original capture bytes and preserve
 the predecessor tests against their exact historical inputs.
+
+## Bounded selected-recipe proofs — draft build 11-15-26.4
+
+The owner approved a narrow alternative proof route for the four selected
+Legendary Chains craft IDs. Each accepted derivation separately binds the
+selected host/channel, the correctly headed Legendary recipe row and the sourced
+category membership/type. Real source fields retain their page, revision,
+observation, hash and context pointers; no combined quotation or finished-item
+tooltip is fabricated. The [integration record](../../evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json)
+states the exact proof and preservation boundary.
+
+Only two proofs are complete: **142 Equipment Combustion** and **+3 Quality
+Intelligence**. The fresh Ability definition supplies the explicit Intelligence
+membership and attributes/abilities terminology. Combustion's 142 is a gear
+Fire Spell Power contribution, not weapon damage, a proven selected-imbue benefit,
+whole-character Spell Power, measured DPS or a widened critical range.
+
+Fortification remains unknown: the general Enhancement rule covers standard
+Fortification items, but a supported classification premise for this specific
+Slavers Prefix is missing. Spot's selected-craft bonus type also remains unknown;
+another item's Competence tooltip cannot establish it. Bounded source searches
+do not prove that evidence is absent elsewhere.
+
+No new stacking rule is added. Quality INT joins Glabrezu's +7 Insight input,
+but seven other inputs and the Insight/Quality interaction remain unqualified;
+the complete INT result stays null. The former direct-clause path and all seven
+positive-interaction contracts are preserved for their existing scope. Proof
+success does not establish ownership, successful crafting or live-game behavior.

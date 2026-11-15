@@ -2,6 +2,51 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded multi-source recipe proofs — 15 November 2026
+
+After design review, the owner selected implementation option 1 for exactly four
+selected Chains IDs in draft PR #47. Startup checks matched remote head
+`6d978f48fc3eeb807f4560e75ac27e6639af35f4` and initial staged tree
+`b636b6463a2978410ed4dca75ee5c8fc18c763a1`; 63 staged paths, no unstaged or
+untracked changes. Local HEAD remained the approved older base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on the existing feature branch.
+A fresh aggregate run in an exact archive of that tree passed 315 tests in
+43.528 seconds. No reset, fetch, ref switch or history rewrite occurred.
+
+The new hosted-browser [source addendum](evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json)
+records the recipe's Attributes link and the Ability definition, revision 524405,
+which explicitly includes Intelligence and identifies abilities as attributes.
+The existing Legendary recipe and Spell Power records retain their original
+observation windows and bytes. Fresh Fortification and focused Spot checks do
+not establish the missing selected-craft premises; search failure is not proof
+that relevant evidence is absent elsewhere.
+
+Build 11-15-26.4's bounded proof engine admits **Combustion 142 Equipment** and
+**Quality Intelligence +3** from separate real host, recipe and membership
+contexts. It never presents a joined finished-item quote. The independent review
+identified a possible missing-proof fallback to legacy direct provenance; all
+four fixed Chains IDs now require their bounded proof whenever counting is
+attempted, even if a caller removes or empties the proof. Negative tests also
+cover stale/corrupt sources, headers, tiers, categories, duplicate IDs, changed
+selection, asserted success and hybrid bindings.
+
+The real new engine reproduced all 76 old-input result objects before integration.
+After the two qualifications, exactly four level36 objects change and 72 stay
+identical; all 76 level-35 results are unchanged. Combustion is 142 selected-gear
+Fire Spell Power only, not weapon/imbue damage or measured DPS. INT remains
+incomplete/null with seven excluded inputs and the newly visible missing
+Glabrezu Insight/Chains Quality interaction. Fortification and Spot remain
+unknown/excluded. No new stacking rule is inferred.
+
+The [integration receipt](evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json)
+separates source proof, software checks, browser limitations and release status.
+The eight-file exact outer reversal preserves the .3 checkpoint and 55 protected
+records; historical tests remain distinct from real-new-engine legacy negatives
+and current renderer tests. Gear, priorities, numeric/core tuples, original source
+grades, seven interaction rules, acquisition exceptions and previous snapshots
+are unchanged. No optimizer solve, game test, crafting, purchase, merge or
+publication occurred.
+
 ## Bounded crafting qualification integration — 15 November 2026
 
 Owner-selected option 1 authorized targeted Chains checks and evidence

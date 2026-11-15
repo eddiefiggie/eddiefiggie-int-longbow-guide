@@ -30,6 +30,28 @@ Original evidence records retain their dated conclusions. See the
 [current evidence map](../../evidence/wisdom-loadout/README.md) for the distinction
 between the accepted acquisition risk and unchanged mechanics evidence.
 
+## Approved bounded recipe-proof implementation — 15 November 2026
+
+The owner selected option 1 after design review: implement a multi-source proof
+route only for the four fixed selected Chains component IDs, check the remaining
+source gaps, and integrate complete proofs into existing **draft PR #47**.
+Routine implementation, source checks, tests and draft updates are authorized;
+merge and publication are not.
+
+The accepted contract separates host/channel, Legendary recipe and category
+membership/type evidence, preserving their original contexts and provenance.
+It rejects incomplete, asserted, unknown-version, hybrid or out-of-scope proofs,
+including attempts to delete a Chains proof and fall back to an unrelated direct
+source. Two complete proofs qualify Combustion and Quality INT; Fortification
+and Spot remain withheld. Component qualification cannot create a stacking edge.
+
+The selected gear, one Minor Artifact, 32 priorities, numeric/core tuples,
+full-kit level36 floor and seven interaction rules remain unchanged. There is no
+new solve, broader event/acquisition exception, crafting action, purchase,
+critical-range or DPS claim. The [dated integration receipt](../../evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json)
+and [mechanics boundary](MECHANICS.md#bounded-selected-recipe-proofs--draft-build-11-15-264)
+distinguish the new source-derived qualification from unresolved live mechanics.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

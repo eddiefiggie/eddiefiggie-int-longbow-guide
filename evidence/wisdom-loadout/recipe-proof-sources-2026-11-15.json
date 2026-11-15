@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "record_type": "bounded-recipe-proof-source-addendum",
+  "review_date": "2026-11-15",
+  "method": {
+    "surface": "Hosted Chrome browser, scoped rendered text and DOM extraction.",
+    "observation_clock": "New access windows bounded by clock__curr_time calls before and after extraction; not page modification dates, receipt creation times, or repairs to old captures.",
+    "revision_limit": "Permanent-link URLs were read from the displayed pages; those revision endpoints were not independently loaded. Logged-out cache notices are retained as displayed, not freshness guarantees.",
+    "source_authority": "DDO Wiki is community-maintained secondary evidence, not an in-game test.",
+    "attribution": "DDO Wiki contributors, through the exact articles and revision links below.",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/"
+  },
+  "captures": {
+    "slave_lords_category_link": {
+      "source_url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "source_title": "Slave Lords Crafting - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T21:48:13Z",
+        "ended_at_utc": "2026-11-15T21:48:25Z"
+      },
+      "cache_notice": "(this is up to 8 hours old)",
+      "quality_attributes_cell_html": "<td><a href=\"/page/Quality_bonus\" title=\"Quality bonus\"> Quality</a> <a href=\"/page/Attributes\" class=\"mw-redirect\" title=\"Attributes\">Attributes</a></td>",
+      "attributes_link": "/page/Attributes",
+      "scope_limit": "Exact category cell retained from the observed Bonus row. The earlier immutable crafting packet retains the full recipe text, table header structure and Legendary +3 column; this capture does not reconstruct a completed item tooltip."
+    },
+    "ability": {
+      "requested_url": "https://ddowiki.com/page/Attributes",
+      "source_url": "https://ddowiki.com/page/Ability",
+      "source_title": "Ability - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Ability&oldid=524405",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T21:48:41Z",
+        "ended_at_utc": "2026-11-15T21:49:12Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "ability_members_visible_text": "Almost everything a Player Character does is affected by his abilities: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). Play Tabletop RPGs",
+      "attribute_synonym_visible_text": "The \"comeliness\" statistic is used in some versions of tabletop D&D but is not used in DDO. Abilities are also sometimes named attributes or stats.",
+      "page_modified_display": "This page was last modified 15:23, September 8, 2022 (Update 56.0.2) by good old Jan. Based on work by others.",
+      "scope_limit": "The requested Attributes page redirected to Ability. These two paragraphs establish the category vocabulary and Intelligence membership only. The trailing Play Tabletop RPGs text is retained literally, not treated as a rule. No other ability, save, casting or damage claim on the page is adopted by this proof."
+    },
+    "fortification_scope": {
+      "source_url": "https://ddowiki.com/page/Fortification",
+      "source_title": "Fortification - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Fortification&oldid=723727",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T21:50:21Z",
+        "ended_at_utc": "2026-11-15T21:50:56Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "standard_item_rule_visible_text": "Items are the primary source of fortification for most player characters. Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus). Item effects fully stack with the racial fortification, enhancements, or epic destiny perks. Support Veterans",
+      "selected_host_mentions": [],
+      "scope_limit": "The displayed rule still classifies standard Fortification items without identifying the selected Slavers Prefix as a member of that class. The scoped paragraph/list scan found no Legendary Chains or Slavers Fortification match; that is not proof that no supporting source exists. The trailing Support Veterans text is retained literally and is not a rule. No stacking-rule provenance or scope is changed."
+    }
+  },
+  "targeted_search": {
+    "query": "\"Slaver\" \"Competence\"",
+    "source_url": "https://ddowiki.com/index.php?search=%22Slaver%22+%22Competence%22&title=Special%3ASearch&go=Go",
+    "source_title": "Search results for \"\"Slaver\" \"Competence\"\" - DDO wiki",
+    "body_observation": {
+      "started_at_utc": "2026-11-15T21:49:59Z",
+      "ended_at_utc": "2026-11-15T21:50:21Z"
+    },
+    "result_count_visible_text": "Results 1 – 2 of 2",
+    "result_titles": ["t:Item enchantments", "Strength"],
+    "result_snippets": [
+      "Edit: ''<nowiki>[[Talk:Item_Enchantments#Spot_(Competence)|test]]</nowiki>'' (← removed link to table that is only available on histo *[[Slaver's Hand Crossbow]] - Constitution Poison, Virulent - random attribute poison ...",
+      "...t gives +2 Competence Bonus to All Statistics. Does not stack with other [[Competence bonus]]. ...named item sets]] grant Artifact bonus, for example [[Slave Lords Crafting|Slaver's Might]], Legendary Mroranon's Might, Legendary Saltmarsh Explorer, up to ..."
+    ],
+    "interaction_note": "The initial Search-button locator was absent after the page's dynamic controls changed; Enter did not navigate. The observed Go button submitted the same query successfully. No alternative query grid or login was used.",
+    "assessment": "Neither returned snippet establishes the exact selected Chains Spot craft's Competence type. Result pages were not opened or adopted as proof. This bounded search is not evidence that the Wiki or game lacks the effect."
+  },
+  "integration_limits": {
+    "category_reasoning": "A positively offered recipe category plus sourced membership and a reviewed narrow rule may establish selection. Another item's bonus type cannot be transferred merely because it grants the same stat.",
+    "new_membership_supported": "Intelligence belongs to the attributes/abilities category offered by the Quality Attributes recipe.",
+    "still_unqualified": ["chains-fortification: standard-item classification premise", "chains-spot: selected craft bonus type"],
+    "not_established": ["complete Intelligence or Fortification or Spot total", "Fire-imbue applicability", "weapon damage or measured ranged DPS", "actual ownership or crafting completion", "new interaction rules"],
+    "original_captures_rewritten": false,
+    "source_grades_retroactively_promoted": false,
+    "live_game_test": false
+  }
+}
