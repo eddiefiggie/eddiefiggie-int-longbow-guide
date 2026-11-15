@@ -255,6 +255,10 @@ def _link(url, label):
 
 
 def _affix_text(affix):
+    if affix['stat'] == "Ram's Might":
+        return "Ram's Might — permanent while equipped; incremental ranged damage not credited"
+    if affix['stat'] == 'Major Anger':
+        return f"Major Anger — +{affix['value']} Rage uses after resting, not Action Boost uses; catalog type {affix['type']}"
     if affix['type'] == 'Bool':
         return affix['stat'] + ' — present; conditions apply'
     if affix['stat'] == 'Improved Deception':
@@ -338,7 +342,8 @@ def render_recipe(data):
                'Its exact magnitude remains independently unconfirmed; it is not silently included in any primary total. '
                'Sinew remains the guide’s separate conditional bow alternate, not a result explored by this pinned-Calamitous run.</p>')
     out.append('<details><summary>Selected native affixes and typed model contributors</summary><p>Catalog inputs below are inventory, not source-qualified totals. '
-               'Conditional names are not permanent combat bonuses. Bloodrage refers to conditional Melee Power, not Ranged Power; Major Anger is not an always-on ability increase. '
+               'Bloodrage is conditional and does not grant Ranged Power. Ram’s Might is permanent while equipped, not a Bloodrage proc; its incremental ranged damage and overlap with other Ram’s Might sources are not certified. '
+               'Major Anger grants additional Rage uses after resting, not Action Boost uses or an always-on ability increase. The retained item tooltip supports these distinctions but lacks original observation context. '
                'Seeker is not critical threat range. See the separate component ledger for source-qualified evidence.</p>')
     for item in data['items']:
         out.append('<h4>' + _h(item['id']) + '</h4>' + _list([_h(_affix_text(a) + ' — ' + a['evidence_status']) for a in item['native_affixes']]))
@@ -419,7 +424,7 @@ def render_onepage_rows(data):
             '<tr data-loadout-summary="kit"><th scope="row">Kit</th><td>'
             f'<a href="#wisdom-loadout-selection">Wisdom-priority artifact recipe</a>: full kit ML {data["selection"]["full_kit_ml"]}; {counts["items"]} items; Yeenoghu’s Reign is the sole Minor Artifact; '
             f'{counts["occupied"]}/{counts["sockets"]} sockets. Claws selects WIS 15; ring Nearly Finished is empty. Model-only gear {_h(totals)}. '
-            'Optional ring DEX 13 is separate and provisional. No event/limited gear except permitted Festive diamonds; source gaps remain visible.</td></tr>')
+            'Optional ring DEX 13 is separate and provisional. Search policy excludes event/limited gear except permitted Festive diamonds; exact non-event procurement of Healing Amplification +63 remains unverified.</td></tr>')
 
 
 def replace_blocks(html, data):

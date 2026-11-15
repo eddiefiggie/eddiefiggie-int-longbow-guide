@@ -17,6 +17,7 @@ modeled comparison and exact ranked-affix order from the
 | [Claim inventory](claims.json) | All 130 selected affix claims and their retained-source, corroboration, conflict, conditional or model-only grades. | Equivalence to the guide ledger's stricter `verified` status. |
 | [Source-review record](sources.json) | Bounded prior source audits, retained excerpts, exclusion screening and unresolved acquisition/crafting limits. | A fresh observation timestamp for old material or proof of auction availability. |
 | [Implementation verification](verification.json) | Exact tested file identities, 258 passing regression tests, preserved history, static links and the recorded browser-start permission block. | Browser layout, live-game mechanics, remote CI, merge or deployment success. |
+| [Draft mechanics corrections](corrections.json) | Later bounded claim corrections, exact retained pointers, publisher corroboration and unchanged-selection scope for build 11-15-26.2. | Repair of missing original observations, new counted bonuses, a new optimizer solve or a published release. |
 
 The records retain both the **original file identities and SHA256 hashes** and
 the hashes of these compact, path-sanitized extraction files. These are distinct:
@@ -63,6 +64,9 @@ authority for source-qualified subtotals. In particular:
   certification. No new artifact/weapon filigree benefit is counted.
 
 The previous guide is retained as [build 11-09-26.5](../../versions/11-09-26.5.html).
+The first Wisdom implementation is retained as
+[build 11-15-26.1](../../versions/11-15-26.1.html); its dated verification receipt
+applies to those original bytes, not automatically to the later correction.
 Original captures, historical snapshots and bow-model fixtures are preserved.
 See the [implementation note](../../docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md)
 for the selected tradeoffs and validation boundary. Publication remains a

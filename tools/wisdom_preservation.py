@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import types
+import wisdom_corrections as corrections
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -80,8 +81,16 @@ def frozen_generator_bytes():
 
 
 def restore_file(path, current, *, scope=None):
+    """Restore the approved correction layer, then the unchanged Wisdom layer."""
+    if path in corrections.REVIEWED_PATHS:
+        current = corrections.restore_file(path, current)
+    return restore_wisdom_file(path, current, scope=scope)
+
+
+def restore_wisdom_file(path, current, *, scope=None):
     """Reverse each approved exact hunk, then enforce the old complete-file hash.
 
+    This inner operation accepts only the exact PR47 Wisdom predecessor.
     The required current hash rejects mixed releases, extra edits, dropped or
     duplicated changes.  Counts prevent an accidental replacement elsewhere.
     There is deliberately no fallback accepting an already-old file.

@@ -2,6 +2,14 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.2 (draft correction candidate; not published)
+
+- Corrects Yeenoghu's Major Anger to additional Rage uses, distinguishes permanent Ram's Might from conditional Bloodrage, and keeps all such effects outside counted standing damage.
+- Removes starting-Wisdom-only conclusions about Ranger casting and Will; keeps Quicken unselected and final spell/healing/save capabilities unverified.
+- Corrects Doubleshot's independent-arrow description, qualifies critical-profile/Elasticity conditions, and labels the alacrity ratio as historical model arithmetic rather than measured DPS.
+- Makes the unresolved exact non-event procurement of Healing Amplification +63 explicit in the generated quick summary. No equipment, affix priorities, crafts, augments, source grades or numeric model inputs change.
+- Adds a strict correction-to-prior-draft reversal and current-content negative controls, retaining the original Wisdom scope and all prior snapshots. Browser QA remains blocked and is not retried; PR review, merge and deployment remain separate.
+
 ## Build 11-15-26.1 (implementation candidate; publication separate)
 - Updates the selected endgame guide from the actual Wisdom-priority loadout with exactly one Minor Artifact, Yeenoghu's Reign. The primary recipe uses Claws WIS +15 and leaves Celestial Sapphire's ability craft unused; optional ring DEX +13 / gear DEX 19 remains clearly provisional and outside the primary gear DEX 6 result.
 - Generates the current equipment/craft/augment recipe, exact 32-objective priority table and one-page rows from one retained selection manifest. The actual 45-stage production solve and practical manual Luck/Spot refinements remain distinct; no additional solve or global-DPS claim is implied.

@@ -2,6 +2,53 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded Wisdom-draft mechanics corrections — 15 November 2026
+
+Owner-approved code-only follow-up to draft PR #47 at
+`564d5259f715962851fd1a4fcbc62820785f4d56`. The starting 258-test suite passed;
+that did not prevent the prior audit from finding substantive explanatory errors.
+The [correction record](evidence/wisdom-loadout/corrections.json) inventories the
+affected claims, retained source pointers, publisher corroboration and limits.
+
+The current ledger now distinguishes Major Anger's Rage uses from Glabrezu's
+Action Boost uses and permanent Ram's Might from conditional Bloodrage. Those
+annotations remain unknown under the unchanged provenance gate; no additional
+damage, abilities, filigrees or stacking edges are counted. Starting Wisdom is
+no longer treated as the final equipped score for Ranger casting or Will.
+Removing the unsupported exclusion is not certification of a usable spell or
+healing rotation. Quicken remains unselected.
+
+Doubleshot is described as eligible-hit damage multiplication rather than an
+independent arrow. Retained Wiki revision 719351 and publisher U49/U81.4 support
+that correction. Critical-profile arithmetic is conditional; Elasticity's extra
+critical damage requires a qualifying confirmed critical not negated by
+fortification. The alacrity summary retains its historical Haste-always-up model
+assumption rather than claiming measured attack rate or DPS. No new global
+optimality or equal-DPS conclusion is established.
+
+All original source bytes, the selection manifest, numeric components,
+interaction rules, calculator/model and prior snapshots remain protected. The
+previous exact Wisdom scope is not rewritten: a separate strict outer reversal
+restores this correction to the PR's original draft before historical checks
+run. Current semantic and negative tests exercise the corrected files directly.
+
+The earlier browser review could not connect to the local preview and a later
+inspection was blocked by browser security policy. This code-only pass does not
+retry it. Desktop/mobile rendering, keyboard behavior and print pagination remain
+unverified. Five exact craft claims, Skull CON15/16, source-provenance gaps, exact
+non-event Healing Amplification +63 procurement and whole-character/DPS validation
+remain open. No merge, Pages dispatch or live-site verification is implied.
+
+Local correction verification: **275 tests passed in 41.989 seconds, exit 0**,
+including 17 added tests. An initial historical feat-section hash failure was
+resolved by the exact correction reversal without changing the old hash or
+selected schedule; current Quicken and routing checks remain separate. All four
+builders and freshness checks passed. Independent review confirmed all 67 prior
+snapshots, 38 complete calculator results and 39 complete historical bow-model
+tuples unchanged. The five-file, 21-hunk correction reversal restores the exact
+prior PR tree. All 36 reviewed relative Markdown targets exist. These are local
+results; GitHub CI and publication are reported against their own exact heads.
+
 ## Wisdom artifact loadout integration — 15 November 2026
 
 The owner requested the current guide and prioritized affixes be updated from

@@ -3,12 +3,14 @@ import hashlib
 from pathlib import Path
 import re
 import unittest
+import wisdom_corrections as corrections
 
 ROOT = Path(__file__).resolve().parents[1]
 DETAIL_SHA = '47cccc7724c1ea271cf83f02a26d38822987a88d4159020b02afb51bb7b55321'
 
 
 def validate(html):
+    current_html = html
     html = re.sub(r'<!--.*?-->', '', html, flags=re.S)
     row = next(r for r in re.findall(r'<tr>.*?</tr>', html, re.S)
                if r.startswith('<tr><td><a href="#heroic-feats">Heroic feats</a>'))
@@ -19,8 +21,13 @@ def validate(html):
     assert 'Improved Precise Shot 12' not in row, 'no unconditional late schedule'
     target = '<p id="aasimar-scourge-feats"><strong>Aasimar Scourge lives, feat by feat.</strong>'
     assert html.count('id="aasimar-scourge-feats"') == 1 and target in html
-    detail = html.split('<h2 id="heroic-feats">',1)[1].split('<h2 ',1)[0]
-    # Pin the full pre-existing detailed section, normalizing only the added anchor.
+    # Routing above is checked on actual current content. Only the historical
+    # detailed-section hash uses the exact outer-restored PR47 view; current
+    # Quicken semantics are tested separately in test_wisdom_corrections.
+    original = corrections.restore_file('index.html', current_html)
+    original = re.sub(r'<!--.*?-->', '', original, flags=re.S)
+    detail = original.split('<h2 id="heroic-feats">',1)[1].split('<h2 ',1)[0]
+    # Keep the old hash and its sole anchor normalization unchanged.
     detail = detail.replace(target, '<p><strong>Aasimar Scourge lives, feat by feat.</strong>')
     assert hashlib.sha256(detail.encode()).hexdigest() == DETAIL_SHA, 'all detailed schedules, grant and alternatives preserved'
 

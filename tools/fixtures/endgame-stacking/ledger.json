@@ -4539,18 +4539,26 @@
     {
       "id": "yeenoghu-procs",
       "host": "Yeenoghu’s Reign",
-      "claim": "Bloodrage and Ram’s Might",
+      "claim": "Bloodrage — conditional proc",
       "state": "unknown",
       "sources": [],
-      "note": "Retained own-item wording is documented in the source packet but lacks a qualified observation receipt here. Do not add proc STR/CON/damage, Melee Power or AC changes to standing ranged totals."
+      "note": "The retained item tooltip describes a conditional Bloodrage effect, not permanent Ranged Power. Its observation receipt remains unqualified; no proc ability, damage, Melee Power or AC changes are counted in standing ranged totals. Ram’s Might is recorded separately as permanent while equipped."
+    },
+    {
+      "id": "yeenoghu-rams-might",
+      "host": "Yeenoghu’s Reign",
+      "claim": "Ram’s Might — permanent while equipped",
+      "state": "unknown",
+      "sources": [],
+      "note": "The retained own-item tooltip says the wearer permanently benefits from Ram’s Might; it is not a Bloodrage proc. Missing observation context remains unresolved. Ranged applicability and overlap with an existing Ram’s Might spell/effect must be checked before crediting incremental damage; none is added here."
     },
     {
       "id": "yeenoghu-actions",
       "host": "Yeenoghu’s Reign",
-      "claim": "Major Anger +5 Action Boost uses after resting",
+      "claim": "Major Anger +5 Rage uses after resting",
       "state": "unknown",
       "sources": [],
-      "note": "Conditional replenishment/capacity, not five Ranged Power or a permanent damage bonus; exact bonus interactions remain unvalued."
+      "note": "The retained own-item tooltip grants five additional Rage uses after resting, not Action Boost uses. This does not establish an available Rage ability on every life, a Ranged Power increase or a standing damage bonus. Missing observation context and exact interactions remain unresolved."
     },
     {
       "id": "glabrezu-actions",
@@ -4558,7 +4566,7 @@
       "claim": "Action Boost Enhancement +3 uses after resting",
       "state": "unknown",
       "sources": [],
-      "note": "Do not assume a stacking result with the artifact’s Major Anger or convert uses into standing damage."
+      "note": "These are Action Boost uses, a different resource from Yeenoghu’s Major Anger Rage uses. Applicable Action Boost capacity interactions remain unverified; do not convert uses into standing damage."
     },
     {
       "id": "current-augment-sets",

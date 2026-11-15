@@ -101,3 +101,15 @@ drift, priority reordering, a missing artifact, prohibited choices and promotion
 of provisional values into certified totals. Preserve all published snapshots,
 original captures, model bytes, and unrelated build choices. Browser checks of
 the new tables on desktop and narrow viewports remain separate from the suite.
+
+### Bounded correction layer
+
+The 11-15-26.2 mechanics-text correction uses `tools/wisdom_corrections.py` and
+its exact scope fixture to restore the PR47 draft before the original Wisdom
+reversal runs. Do not rewrite the original scope, predecessor hashes or earlier
+snapshots. Inner negative controls test the independently restored draft;
+separate outer controls reject stale, mixed, duplicated and unrelated changes in
+the actual current files. Current recipe and mechanics tests must still read
+the production files. The loadout manifest, numeric ledger, source grades and
+calculator outputs do not change. This layer is preservation evidence, not a
+mechanics certificate or a substitute for the blocked browser release checks.

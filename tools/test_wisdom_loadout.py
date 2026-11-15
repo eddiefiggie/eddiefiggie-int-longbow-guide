@@ -13,6 +13,7 @@ import unittest
 
 import stacking_audit as audit
 import wisdom_preservation as preservation
+import wisdom_corrections as corrections
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 
@@ -196,7 +197,8 @@ class WisdomReleasePreservationTests(unittest.TestCase):
     def test_reversal_rejects_stale_mixed_duplicate_and_unrelated_edits(self):
         scope = preservation.load_scope()
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = (corrections.original_file_text(path) if path in corrections.REVIEWED_PATHS
+                       else (ROOT / path).read_text())
             rule = scope['files'][path]
             self.assertTrue(rule['reviewed_replacements'], path)
             change = rule['reviewed_replacements'][0]
@@ -204,15 +206,16 @@ class WisdomReleasePreservationTests(unittest.TestCase):
                          current.replace(change['after'], change['before'], 1),
                          current.replace(change['after'], change['after'] * 2, 1)]
             for mutant in mutations:
+                self.assertNotEqual(mutant, current)
                 with self.subTest(path=path), self.assertRaises(AssertionError):
-                    preservation.restore_file(path, mutant)
+                    preservation.restore_wisdom_file(path, mutant)
 
     def test_reversal_hash_and_exact_hunks_are_independent_guards(self):
         # Even a caller that changes the current digest cannot bless an extra
         # edit: exact contexts and the fixed predecessor hash still reject it.
         scope = preservation.load_scope()
         path = 'index.html'
-        original = (ROOT / path).read_text()
+        original = corrections.original_file_text(path)
         for mutant in (original + '<p>Unapproved extra content</p>',
                        original.replace('<h2 id="class-split">', '<h2 id="changed-class-split">')):
             self.assertNotEqual(original, mutant)
@@ -220,7 +223,7 @@ class WisdomReleasePreservationTests(unittest.TestCase):
             changed['files'][path]['current_sha256'] = preservation.sha(mutant)
             changed['files'][path]['current_bytes'] = len(mutant.encode())
             with self.assertRaises(AssertionError):
-                preservation.restore_file(path, mutant, scope=changed)
+                preservation.restore_wisdom_file(path, mutant, scope=changed)
 
     def test_predecessor_views_do_not_accept_a_stale_current_release(self):
         with self.assertRaises(AssertionError):
