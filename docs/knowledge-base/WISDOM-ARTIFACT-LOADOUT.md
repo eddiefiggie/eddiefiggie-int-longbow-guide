@@ -29,7 +29,9 @@ This is a manual derivative of that solve, not another optimal result. It rotate
 equal typed craft buckets, fills the unused Chains Spot crafting slot, carries
 the preceding practical socket layout forward and trades Festive CON +2 for
 Good Luck +3. Raw solved CON 34 becomes practical modeled CON 32, with direct
-saves and skills increased by 3. Model-only Spot +20 remains a source-validation gap.
+saves and skills increased by 3. Spot +20 was model-only in that original
+comparison. The new crafting addendum supports the Legendary skill-category
+magnitude, but its exact bonus type and calculator integration remain open.
 
 ## Selected scope and tradeoffs
 
@@ -93,21 +95,40 @@ crafts were therefore not preserved when moving from the guide baseline.
 The [evidence map](../../evidence/wisdom-loadout/README.md) retains the original
 run/recipe identities, derivation, source grades, exact checks and limitations.
 The practical recipe's 373 internal checks and the optional version's 381 checks
-validate catalog construction and arithmetic, not live-game truth. The primary
-130 affix claims include 93 retained-source supported, 24 corroborated-only,
+validate catalog construction and arithmetic, not live-game truth. The original
+primary-loadout inventory contains 130 affix claims: 93 retained-source supported, 24 corroborated-only,
 1 conflicting, 7 conditional/unvalued and 5 model-only. Those labels are not the
 guide's stricter `verified` classification.
 
-Remaining exact primary model values are Glabrezu Insight INT +7 and Chains
-Fortification +142, Combustion +142, Quality INT +3 and Spot +20. Optional ring DEX +13 adds
-another gap. Skull CON +15 versus +16, Queen's incomplete/relayed provenance and exact
-normal procurement of Healing Amplification +63 remain visible. The owner has
+The [15 November hosted-browser addendum](../../evidence/wisdom-loadout/crafting-browser-2026-11-15.json)
+now supports Glabrezu Insight INT +7 directly and the four Chains magnitudes
+through the Legendary crafting table. Its evidence map distinguishes exact
+item support from category mappings: Chains Fortification's Enhancement type
+is a general-rule inference; Combustion is Equipment Fire Spell Power, not
+weapon damage; Quality INT uses the Quality Attributes category; and Spot's
+Competence type is still unverified. All five source findings are recorded,
+**but component qualification is not yet integrated**. Original claim grades,
+ledger bindings, counted totals and generated build 11-15-26.2 remain unchanged.
+The generated five-gap wording describes that preceding qualification checkpoint,
+not an assertion that the newly retained Wiki evidence does not exist.
+
+Optional ring DEX +13 remains an additional unselected gap. Skull CON +15 versus
++16, Queen's incomplete/relayed provenance and exact normal procurement of
+Healing Amplification +63 remain visible. The owner has
 accepted only the HA63 acquisition-evidence gap, so it no longer blocks retaining
 that augment; it remains independently unverified and does not close any other
-validation requirement. Live Wiki access was blocked during the comparison;
-missing original observation metadata was not fabricated. Source-qualified item
+validation requirement. Live Wiki access was blocked during the original
+comparison; the hosted browser worked during this follow-up. Its fresh access
+windows do not repair missing original observation metadata. Public Wiki access
+also does not establish local-guide rendering QA. Source-qualified item
 definitions still require the current ledger's exact provenance and positive
 interaction gates before counting.
+
+Next, integrate supported source bindings and reconcile the generated labels
+under a new additive preservation layer. Keep the unresolved Spot type and any
+missing applicability or positive-interaction evidence excluded; do not turn
+five supported magnitudes into a claim of five fully qualified effects or a
+validated total-DPS gain.
 
 The historical bow model, previous snapshots and original retained captures
 remain unchanged. Current generated sections must pass fresh semantic tests;

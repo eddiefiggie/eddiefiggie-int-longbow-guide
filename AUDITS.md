@@ -2,6 +2,40 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Fresh hosted-browser crafting evidence — 15 November 2026
+
+The owner requested the internal browser for the bounded crafting pass. Direct
+hosted-browser reads succeeded. The [new addendum](evidence/wisdom-loadout/crafting-browser-2026-11-15.json)
+retains six scoped DOM captures with displayed revision links and contemporaneous
+new reading windows between 20:43 and 20:49 UTC; it does not retrofit old capture
+metadata or claim a raw HTTP archive/in-game test.
+
+Glabrezu's exact item tooltip supports Insightful Intelligence +7, corroborated
+by Nearly Complete's Legendary column. Legendary Chains and the Slave Lords
+table support the four selected craft magnitudes and distinct channels. Their
+evidence is not equally complete: Fortification's Enhancement classification is
+a general-rule inference, Quality INT and Spot are selected category mappings,
+and Spot's exact bonus type is unresolved. The spell-power table maps Combustion
+to Fire; +142 Equipment Spell Power is not +142 ranged weapon damage. No finished
+Chains tooltip or positive-interaction rule is invented.
+
+This additive checkpoint starts from PR #47 head
+`3133c86f54fb21cbe9b8fa3b9551a9ba61525750`, tree
+`e107a09dd6a11f3a4e441c9c9d445915c6b8019c`. The actual local HEAD remained
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`; the 54 staged paths matched the remote tree,
+with no unstaged edits before this pass. No reset or ref switch occurred.
+
+**Findings recorded; calculator qualification not integrated.** New evidence
+notes supersede the earlier lack-of-magnitude-evidence statement, not the
+historical claim grades. Guide/audit/print bytes, recipe, priorities, source
+gates, totals, previous JSON packets and snapshots remain unchanged. The new
+tests check source fidelity and this preservation boundary, not live-game truth.
+Next integration must reconcile ledger and generated labels together while
+retaining unresolved types, mappings and interaction gates. Public Wiki access
+does not resolve the separate local-guide browser-QA limitation. No merge,
+publication, crafting, new event exception or new optimizer solve was performed.
+
 ## Owner-approved HA63 acquisition-evidence exception — 15 November 2026
 
 The owner reported that Randall Lyric appears to offer Sapphire of Healing

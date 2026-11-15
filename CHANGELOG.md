@@ -2,6 +2,13 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Source evidence — 15 November 2026 (draft PR #47; not published)
+
+- Adds a fresh hosted-browser crafting-source packet with six exact displayed revisions, separately recorded access windows, scoped DOM excerpts and five qualified findings. Old observations and the original 130-claim inventory are not rewritten.
+- Records direct Glabrezu Insightful INT +7 support and Legendary recipe support for Chains Fortification +142%, Equipment Spell Power +142, Quality Attributes +3 and Skills except UMD +20. Preserves the difference between exact effects, category mappings, a general Fortification type rule and the unresolved Spot type.
+- Reconciles evidence/knowledge notes and adds source-fidelity/preservation tests. Component qualification is not integrated: guide build 11-15-26.2, ledger, calculator, counted totals, recipe, priorities, generated pages and snapshots remain unchanged. Combustion is not presented as weapon damage or measured DPS.
+- Keeps local-guide browser QA, unresolved mechanics and release review separate from successful Wiki access. No merge or publication.
+
 ## Documentation — 15 November 2026 (draft PR #47; not published)
 
 - Records the owner's acquisition-evidence exception for Sapphire of Healing Amplification +63 (ML36), with Randall Lyric explicitly owner-reported rather than independently verified. This one procurement question no longer blocks retaining the augment.

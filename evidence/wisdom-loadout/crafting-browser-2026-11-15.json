@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "record_type": "fresh-browser-source-addendum-not-calculator-promotion",
+  "review_date": "2026-11-15",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "remote_head": "3133c86f54fb21cbe9b8fa3b9551a9ba61525750",
+    "remote_and_initial_staged_tree": "e107a09dd6a11f3a4e441c9c9d445915c6b8019c",
+    "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "local_branch": "feat/wisdom-loadout-priorities",
+    "startup_state": "54 staged paths represented the existing remote draft; no unstaged changes. No reset, fetch, checkout or ref switch performed."
+  },
+  "scope": {
+    "purpose": "Check the five selected crafting values using the hosted browser, preserve new evidence, and update draft evidence notes without changing the loadout or publishing.",
+    "selected_recipe_changed": false,
+    "priorities_changed": false,
+    "old_capture_metadata_repaired": false,
+    "historical_claim_inventory_regraded": false,
+    "calculator_components_promoted": false,
+    "counted_totals_changed": false,
+    "new_optimizer_run": false,
+    "live_game_test": false,
+    "guide_rendering_qa_completed": false,
+    "all_release_gates_closed": false,
+    "merge_or_publication_performed": false
+  },
+  "method": {
+    "surface": "Hosted Chrome browser; direct DDO Wiki page DOM inspection.",
+    "capture_kind": "Scoped rendered-text and tooltip-HTML extractions, not complete raw HTTP responses, screenshots, or independent in-game observations.",
+    "observation_clock": "Each body_observation interval is bounded by clock__curr_time results immediately before and after the new DOM extraction. These are new access windows, not the original historical capture dates, page modification dates, or later receipt-creation times.",
+    "revision_limit": "revision_link is the Permanent link exposed by the page read; it identifies the displayed page revision. The permanent-link URL was not independently loaded again.",
+    "source_authority": "DDO Wiki is a community-maintained secondary source. Direct Wiki support does not by itself certify all live-game interactions.",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attribution": "DDO Wiki contributors, identified through each article and revision link."
+  },
+  "captures": {
+    "glabrezu": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "source_title": "I:Legendary Glabrezu Claw Pendant - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "body_observation": {"started_at_utc": "2026-11-15T20:43:29Z", "ended_at_utc": "2026-11-15T20:43:33Z"},
+      "logged_out_cache_notice_hours": 18,
+      "page_modified_display": "03:07, August 25, 2026 (Update 81.2)",
+      "item_table_visible_text": "Minimum level\t35\t\nItem Type\tJewelry / Necklace\nSlot\tNeck\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t450\nMaterial\tGem\nHardness\t55\nBase Value\t14,001pp \nWeight\t0.10 lbs\nLocation\tTower of Vengeance, end chest\nEnchantments\t\nQuality Accuracy +5\nQuality Seeker +3\nAction Boost Enhancement\nNearly Complete: Insightful Ability Score\nThis item can be upgraded with one of the following:\nInsightful Charisma +7\nInsightful Constitution +7\nInsightful Dexterity +7\nInsightful Intelligence +7\nInsightful Strength +7\nInsightful Wisdom +7\nGreen Augment Slot\nColorless Augment Slot\nMoon Augment Slot\nMythic Neck Boost +1 or +3\n\t\nUpgradeable?\tNearly Complete\nDescription\tThe razor-sharp tip of a Glabrezu's claw hangs at the end of a long gold chain.\nTips\t\n\n\n",
+      "selected_option_html": "<span class=\"popup has_tooltip with-icon basic\"><a href=\"/page/Intelligence\" title=\"Intelligence\">Insightful Intelligence +7</a><span class=\"mw-valign-super\" typeof=\"mw:File\"><span><img src=\"https://images.ddowiki.com/thumb/Icon_tooltip.png/10px-Icon_tooltip.png\" decoding=\"async\" width=\"10\" height=\"8\" class=\"mw-file-element\" srcset=\"https://images.ddowiki.com/Icon_tooltip.png 1.5x\"></span></span><span class=\"popup tooltip wide left below\" style=\"text-align: center ;\"><b><a href=\"/page/Intelligence\" title=\"Intelligence\">Insightful Intelligence +7</a></b>: This item focuses the power of the wearer's mind, granting a +7 <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to Intelligence.</span></span>",
+      "crafting_href": "/page/Nearly_Complete"
+    },
+    "nearly_complete": {
+      "source_url": "https://ddowiki.com/page/Nearly_Complete",
+      "source_title": "Nearly Complete - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Nearly_Complete&oldid=705751",
+      "body_observation": {"started_at_utc": "2026-11-15T20:43:50Z", "ended_at_utc": "2026-11-15T20:43:59Z"},
+      "logged_out_cache_notice_hours": 5,
+      "page_modified_display": "04:27, August 16, 2026 (Update 81.1.1)",
+      "selected_row_visible_text": "Insightful Ability Score\t\nInsightful Charisma +2\nInsightful Constitution +2\nInsightful Dexterity +2\nInsightful Intelligence +2\nInsightful Strength +2\nInsightful Wisdom +2\n\t\nInsightful Charisma +7\nInsightful Constitution +7\nInsightful Dexterity +7\nInsightful Intelligence +7\nInsightful Strength +7\nInsightful Wisdom +7",
+      "table_headers_visible_text": "Effect set\tAvailable upgrades (Heroic)\tAvailable upgrades (Legendary)",
+      "upgrade_rule_visible_text": "Which set of enchantments is available for an item depends on which version of the Nearly Complete enchantment the item has. For example, an item with Nearly Complete: Ability Score can be upgraded with an Enhancement bonus to one of the core stats. Upgrading an item with Nearly Completed requires 25 Abyssal Gems (or Legendary Abyssal Gems for Legendary items) from Terror of Demogorgon end chests. Note that you cannot replace a Nearly Completed upgrade after selecting one - you will need a new copy of the item to apply a different effect. Play Tabletop RPGs",
+      "extraction_note": "The trailing 'Play Tabletop RPGs' was present in the extracted paragraph and is retained verbatim; it is not treated as a crafting rule.",
+      "crafting_location_visible_text": "Nearly Completed is a crafting mechanic that allows players to upgrade items from the Terror of Demogorgon expansion with an extra enchantment from a small list at the Duergar Completion Forge in Gravenhollow."
+    },
+    "chains": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "source_title": "I:Legendary Chains - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "body_observation": {"started_at_utc": "2026-11-15T20:44:23Z", "ended_at_utc": "2026-11-15T20:44:30Z"},
+      "logged_out_cache_notice_hours": 5,
+      "page_modified_display": "19:30, April 21, 2025 (Update 73.1)",
+      "item_table_visible_text": "Minimum level\t28\t\nItem Type\tJewelry / Necklace\nSlot\tNeck\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t290\nMaterial\tGold\nHardness\t38\nBase Value\t11,220pp \nWeight\t0.1 lbs\nLocation\tSlave Pits of the Undercity, Small chest\nEnchantments\t\nLegendary Slaver's Prefix Slot\nLegendary Slaver's Suffix Slot\nLegendary Slaver's Extra Slot\nLegendary Slaver's Bonus Slot\nAgainst the Slave Lords Set Bonus\nLegendary Slaver's Augment Slot\nMythic Neck Boost +1 or +3\n\t\nUpgradeable?\tSlave Lords Crafting\nDescription\tOppression will always fail, just as chains will always be broken.\nTips\t\n\nThis unusual item can be worn in the Neck slot or the Waist slot - it will default to the Neck if both slots are empty when you equip it. The item is always damaged when found.",
+      "slot_tooltip_text": {
+        "Legendary Slaver's Prefix Slot": "Legendary Slaver's Prefix SlotLegendary Slaver's Prefix Slot: Apply a Slaver's shard to this item.",
+        "Legendary Slaver's Suffix Slot": "Legendary Slaver's Suffix SlotLegendary Slaver's Suffix Slot: Apply a Slaver's shard to this item.",
+        "Legendary Slaver's Extra Slot": "Legendary Slaver's Extra SlotLegendary Slaver's Extra Slot: Apply a Slaver's shard to this item.",
+        "Legendary Slaver's Bonus Slot": "Legendary Slaver's Bonus SlotLegendary Slaver's Bonus Slot: Apply a Slaver's shard to this item.",
+        "Legendary Slaver's Augment Slot": "Legendary Slaver's Augment SlotLegendary Slaver's Augment Slot: Apply a Slaver's shard to this item."
+      },
+      "scope_limit": "The uncrafted host page identifies channels and equip slots, not finished numeric effects. The selected recipe equips Chains at Waist, leaving the pendant at Neck."
+    },
+    "slave_lords": {
+      "source_url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "source_title": "Slave Lords Crafting - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "body_observation": {"started_at_utc": "2026-11-15T20:44:30Z", "ended_at_utc": "2026-11-15T20:45:26Z"},
+      "logged_out_cache_notice_hours": 8,
+      "page_modified_display": "10:46, September 18, 2026 (Update 81.3)",
+      "recipe_table_visible_text": "Group\tEnchantment name\tEnchantment value\tIngredient cost\nHeroic\nML 8\tLegendary\nML 28\tHeroic\tLegendary\nPrefix\n\tAttributes\t+5\t+13\t\n50   Broken Shackles\n\t\n100   Legendary Broken Shackles\n\nFalse Life\t+18\t+50\nFortification\t+70%\t+142%\nSheltering\t+12\t+33\nWizardry\t+96\t+269\nSuffix\n\tAccuracy\t+8\t+20\t\n50   Chain Links\n\t\n100   Legendary Chain Links\n\nArmor Piercing\t+8\t+20\nDamage Guards (don't stack with each other)\t+2d8\t+8d8\nDeadly\t+4\t+10\nDeception (no bluff effect)\t+3\t+10\nResistance\t+4\t+10\nSeeker\t+5\t+13\nSpell Lore (single type) (Equipment Bonus)\t+10\t+21\nSpell Power (single type) (Equipment Bonus)\t+70\t+142\nExtra\n\tSkills (except UMD)\t+10\t+20\t\n50   Broken Collars\n\t\n100   Legendary Broken Collars\n\nUMD (note: barter displays incorrect values.)\t+1\t+5\nShatter\t+6\t+15\nSpell Focus Mastery\t+2\t+6\nSpell Penetration\t+3\t+8\nStunning\t+6\t+15\nTendon Slice\t+4\t+10\nVertigo\t+6\t+15\nBonus\n\n\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\n\n\tQuality Attributes\t+1\t+3\t\n20   Frayed Leathers\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Frayed Leathers\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nQuality False Life\t+4\t+12\nQuality Fortification\t+17%\t+35%\nQuality MRR\t+2\t+8\nQuality PRR\t+2\t+8\nQuality Skills\t+2\t+5\nAugment Slot addition\n\tColorless Augment Slot\n\nTIP: Don't make a Colorless slot; make a Blue or Yellow slot instead. All three can accept Colorless augments, and the cost is the same. If you slot a Colorless augment in a Blue or Yellow slot, you have the option later to replace it with a Blue or Yellow augment.\t\n20   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nBlue Augment Slot\nYellow Augment Slot\nGreen Augment Slot\t\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSet bonus addition\n\tSlave Lord's Might\t\n20   Shattered Symbols of the Slave Lords\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Shattered Symbols of Slave Lords\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSlave Lord's Sorcery\nSlaver's Endurance\nMythic upgrades\tMythic Boost\t+1\t+1\t*1   Statuette of the Gods\t*1   Legendary Statuette of the Gods\nMythic Boost\t+3\t+3\t*1   Slave Master's Bust\t*1   Legendary Slave Master's Bust",
+      "recipe_table_headers": [
+        [{"column_span": 1, "row_span": 2, "text": "Group"}, {"column_span": 1, "row_span": 2, "text": "Enchantment name"}, {"column_span": 2, "row_span": 1, "text": "Enchantment value"}, {"column_span": 2, "row_span": 1, "text": "Ingredient cost"}],
+        [{"column_span": 1, "row_span": 1, "text": "Heroic\nML 8"}, {"column_span": 1, "row_span": 1, "text": "Legendary\nML 28"}, {"column_span": 1, "row_span": 1, "text": "Heroic"}, {"column_span": 1, "row_span": 1, "text": "Legendary"}]
+      ],
+      "fortification_row_html": "<tr>\n<td><a href=\"/page/Fortification\" title=\"Fortification\">Fortification</a></td>\n<td>+70%</td>\n<td>+142%\n</td></tr>",
+      "spell_power_row_html": "<tr>\n<td><a href=\"/page/Spell_Power\" title=\"Spell Power\">Spell Power</a> (single type) (Equipment Bonus)</td>\n<td>+70</td>\n<td>+142\n</td></tr>",
+      "skills_row_visible_text": "Extra\n\tSkills (except UMD)\t+10\t+20\t\n50   Broken Collars\n\t\n100   Legendary Broken Collars",
+      "quality_attributes_row_visible_text": "Bonus\n\n\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\n\n\tQuality Attributes\t+1\t+3\t\n20   Frayed Leathers\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Frayed Leathers\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars",
+      "unselected_quality_fortification_row_visible_text": "Quality Fortification\t+17%\t+35%",
+      "base_item_table_visible_text": "Base Item\tIcon\tSlots\tML\tBind\tObtained from\tCommon Ingredient\nUncommon Ingredient\nChains / Legendary\t\tNeck/Waist\t 8 28\tBtA\tSlave Pits of the Undercity (Part 1)\tBroken Shackle\nShattered Symbol of the Slave Lords\nFive Rings / Legendary\t\tTrinket/Ring\tSecret of the Slavers' Stockade (Part 2)\tChain Links\nFrayed Leather\nShackles / Legendary\t\tWrist/Feet\tAssault on the Aerie of the Slave Lords (Part 3)\tBroken Collar\nStaff Splinter",
+      "gem_slot_rule_visible_text": "The next step is to speak to a barter NPC to exchange the basic ingredients for \"gems\" of different sorts (see below), which will be used to give you the effects on your items. Each of the 3 common and 3 uncommon ingredients allows a different kind of effect on the item, and there are 6 possible to create for each item you will create - prefix, suffix, bonus, extra, augment slot (clear, yellow, blue, or green), and set bonus (your choice of 3 possible). Tables below show what sort of effects can go into each of these.",
+      "locked_effect_rule_visible_text": "The last step is to use those gems on the item itself to create the effects you want - and your item is complete! If you don't have all the ingredients you want now, you can always upgrade it later, but you cannot \"erase\" or change an effect - once it's there, it's locked in."
+    },
+    "fortification": {
+      "source_url": "https://ddowiki.com/page/Fortification",
+      "source_title": "Fortification - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Fortification&oldid=723727",
+      "body_observation": {"started_at_utc": "2026-11-15T20:46:28Z", "ended_at_utc": "2026-11-15T20:46:32Z"},
+      "logged_out_cache_notice_hours": 8,
+      "page_modified_display": "10:54, October 24, 2026 (Update 82.0.1)",
+      "standard_item_rule_visible_text": "Items are the primary source of fortification for most player characters. Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus). Item effects fully stack with the racial fortification, enhancements, or epic destiny perks.",
+      "scope_limit": "General item classification, not a finished Legendary Chains tooltip. No new pairwise stacking edge is approved from this paragraph."
+    },
+    "spell_power": {
+      "source_url": "https://ddowiki.com/page/Spell_Power",
+      "source_title": "Spell Power - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Spell_Power&oldid=695517",
+      "body_observation": {"started_at_utc": "2026-11-15T20:49:00Z", "ended_at_utc": "2026-11-15T20:49:05Z"},
+      "logged_out_cache_notice_hours": 8,
+      "page_modified_display": "22:47, July 17, 2026 (Update 80.1)",
+      "selected_row_visible_text": "Combustion\tInferno\tFire Spells",
+      "selected_row_html": "<tr>\n<td><a href=\"/page/Combustion\" title=\"Combustion\">Combustion</a></td>\n<td><a href=\"/page/Inferno\" title=\"Inferno\">Inferno</a></td>\n<td><a href=\"/page/Category:Fire_spells\" title=\"Category:Fire spells\">Fire Spells</a>\n</td></tr>",
+      "headers_visible_text": "Continuous effect (Equipment bonus)\tTemporary effect (Alchemical bonus)\tAffects",
+      "weapon_limit_visible_text": "Spell power affects Spells and SLAs, but does not affect magical damage effects on weapons from augments, filigrees, crafted enchantments etc. unless the description specifically indicates that it does"
+    }
+  },
+  "findings": [
+    {
+      "component_id": "glabrezu-insight-int",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "channel": "Nearly Complete: Insightful Ability Score",
+      "stat": "Intelligence", "value": 7, "bonus_type": "Insight",
+      "magnitude_support": "direct-item-and-legendary-recipe",
+      "type_support": "direct-item-tooltip",
+      "source_ids": ["glabrezu", "nearly_complete"],
+      "evidence_fields": ["glabrezu.item_table_visible_text", "glabrezu.selected_option_html", "nearly_complete.table_headers_visible_text", "nearly_complete.selected_row_visible_text"],
+      "conclusion": "The exact item lists Insightful Intelligence +7; its tooltip names the Insight bonus. The recipe's Legendary column corroborates +7 rather than Heroic +2.",
+      "remaining": "Not yet bound into the current component validator. Other Intelligence inputs and positive interactions remain separately gated."
+    },
+    {
+      "component_id": "chains-fortification",
+      "host": "Legendary Chains",
+      "channel": "Prefix",
+      "stat": "Fortification", "value": 142, "bonus_type": "Enhancement",
+      "magnitude_support": "legendary-recipe-row",
+      "type_support": "general-rule-inference-not-finished-item",
+      "source_ids": ["chains", "slave_lords", "fortification"],
+      "evidence_fields": ["chains.item_table_visible_text", "slave_lords.recipe_table_headers", "slave_lords.recipe_table_visible_text", "slave_lords.fortification_row_html", "fortification.standard_item_rule_visible_text"],
+      "conclusion": "The Legendary Prefix recipe explicitly lists +142% Fortification. Enhancement is supported by the general standard-item rule, not an exact completed Chains tooltip. This is not the unselected Quality Fortification +35% Bonus craft.",
+      "remaining": "Exact finished-effect bonus-type binding and component integration remain open; no Queen-plus-Chains Fortification total is certified."
+    },
+    {
+      "component_id": "chains-combustion",
+      "host": "Legendary Chains",
+      "channel": "Suffix",
+      "stat": "Combustion", "value": 142, "bonus_type": "Equipment",
+      "magnitude_support": "legendary-recipe-plus-effect-name-mapping",
+      "type_support": "explicit-equipment-recipe-table",
+      "source_ids": ["chains", "slave_lords", "spell_power"],
+      "evidence_fields": ["chains.item_table_visible_text", "slave_lords.recipe_table_headers", "slave_lords.recipe_table_visible_text", "slave_lords.spell_power_row_html", "spell_power.headers_visible_text", "spell_power.selected_row_visible_text", "spell_power.weapon_limit_visible_text"],
+      "conclusion": "The Legendary Suffix recipe supplies +142 single-type Equipment Spell Power; the Spell Power table maps Combustion to Fire. This is a cross-page mapping, not a fabricated single +142 Combustion tooltip.",
+      "remaining": "Component integration must preserve the actual source wording and explicitly handle the Combustion/Fire Spell Power mapping. Fire-imbue applicability remains separate. This is not 142 weapon damage or measured ranged DPS."
+    },
+    {
+      "component_id": "chains-quality-int",
+      "host": "Legendary Chains",
+      "channel": "Bonus",
+      "stat": "Intelligence", "value": 3, "bonus_type": "Quality",
+      "magnitude_support": "legendary-attribute-category-mapping",
+      "type_support": "explicit-quality-recipe-table",
+      "source_ids": ["chains", "slave_lords"],
+      "evidence_fields": ["chains.item_table_visible_text", "slave_lords.recipe_table_headers", "slave_lords.recipe_table_visible_text", "slave_lords.quality_attributes_row_visible_text"],
+      "conclusion": "The Legendary Bonus recipe lists Quality Attributes +3. Applying that attribute category to the selected Intelligence craft is an explicit mapping, not a captured finished-item Intelligence tooltip.",
+      "remaining": "Selected-attribute applicability binding and component integration remain open; no complete Intelligence or damage total is certified."
+    },
+    {
+      "component_id": "chains-spot",
+      "host": "Legendary Chains",
+      "channel": "Extra",
+      "stat": "Spot", "value": 20, "bonus_type": "Competence",
+      "magnitude_support": "legendary-skill-category-mapping",
+      "type_support": "unresolved",
+      "source_ids": ["chains", "slave_lords"],
+      "evidence_fields": ["chains.item_table_visible_text", "slave_lords.recipe_table_headers", "slave_lords.recipe_table_visible_text", "slave_lords.skills_row_visible_text"],
+      "conclusion": "The Legendary Extra recipe lists Skills (except UMD) +20, supporting the selected Spot magnitude by category mapping. The retained recipe does not explicitly name the bonus type; Competence remains the selected model assumption, not a newly verified claim.",
+      "remaining": "Obtain an exact finished-effect or equivalent authoritative type statement for this craft, then integrate its source bindings and independently validate its interactions. The recipe alone does not certify the direct Spot subtotal or final Wisdom-based Spot score."
+    }
+  ],
+  "bounded_search_limit": {
+    "purpose": "Look for an exact bonus-type statement for the selected Chains Spot craft.",
+    "pages_inspected_without_retaining_new_source_records": ["https://ddowiki.com/page/Skills", "https://ddowiki.com/page/Spot"],
+    "site_search_query": "\"Slaver's Spot\"",
+    "observed_result": "There were no results matching the query.",
+    "conclusion": "No exact type statement was found in this bounded pass; this does not prove that no source exists."
+  },
+  "construction_findings": [
+    "Legendary Chains may be worn at Waist, so it does not conflict with the selected neck pendant.",
+    "The four selected effects use separate Prefix, Suffix, Extra and Bonus channels. The Green augment slot is a separate unlock, not inherent on the uncrafted host.",
+    "Nearly Complete upgrades cannot be replaced on the same item under the observed rule; Slave Lords effects are likewise described as locked after application.",
+    "No crafting was performed, no materials spent, no ownership or current acquisition stock assumed, and no optional Mythic or Slave Lords set bonus added."
+  ],
+  "integration_status": {
+    "state": "source-findings-recorded-component-qualification-not-integrated",
+    "current_guide_build": "11-15-26.2",
+    "generated_guide_checkpoint": "Guide/audit/print bytes remain the preceding qualification checkpoint. Their five model-only inputs are not automatically promoted by this addendum. Current evidence notes supersede only the earlier statement that no exact crafting magnitudes had source support.",
+    "next_action": "Integrate the exact source bindings with additive preservation tests; retain the unresolved Spot type and conditional/category mappings, and keep missing positive interaction edges excluded. Regenerate guide/audit/snapshot only as part of that explicit integration.",
+    "unchanged_limits": ["Skull CON +15/+16 conflict", "Queen and other retained-source provenance gaps", "optional ring DEX +13 unselected and unqualified", "artifact/weapon filigree reconciliation", "full-character eligibility and stacking", "measured sustained ranged DPS", "local guide browser QA", "exact-head release review and deployment verification"],
+    "owner_exceptions": "Festive ability diamonds remain the only event/limited-time exception. The separate owner-approved HA63 acquisition-evidence exception remains narrow and does not establish vendor stock or mechanics."
+  },
+  "preserved_sha256": {
+    "index.html": "281c8e4ce94f28d5d23c345f01d34bfcb0423f73ff90d871d82b7ecf8611f048",
+    "versions/11-15-26.1.html": "9dcc34e46b405d9917a713d14fb3b63f4b5b10c72284a9d516a95486df4cd17f",
+    "versions/11-15-26.2.html": "48e66b9bb02bc32c991545f6d660e66ea53fa7a4dbb1a5d44535e9bf7200cd67",
+    "endgame-stacking-audit.html": "0b51824f17b18bcb2533034b653254f411775f898b515d971e1e17e6fcf1e2d7",
+    "heroic-crafting-print.html": "87ae7532b16452d35dc20ba9419a1dfe2c40e88a76817d20ff6628cc6f7e12c6",
+    "tools/fixtures/endgame-stacking/ledger.json": "381fe7e81573fdb727a103df020270c5b8e66b560325fc9b8825668878607560",
+    "tools/fixtures/wisdom-loadout/selection.json": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d",
+    "tools/stacking_audit.py": "97432b1a37543645986a343ec0c6d3c8d58b77c4089e03307dfdf2840d3c606d",
+    "tools/wisdom_loadout.py": "25a9bc502ae5afe8e9cdbbc48762c674fa2f62459c96b3a91fe9f3438a055d8c",
+    "tools/build_stacking_audit.py": "699bba973b9f08b2df57e2728534a341935e8390e8be641599b695c75ddee49f",
+    "evidence/endgame-stacking/source-excerpts.json": "0f13e0875c61c4fb0d5420b6825417f416cb3fa1c18677d24074e3bfd9a77c1f",
+    "evidence/wisdom-loadout/claims.json": "2de551db80e4d682da2cd0a3156b1a5e830927a833750b81d370b6c6bbedf1ad",
+    "evidence/wisdom-loadout/sources.json": "cea672fa20445cfda89717a8e04af1a34c73f272ff82bf0ad86630713c1bd92a",
+    "evidence/wisdom-loadout/loadout.json": "20f5bca4573d803a196695aa999f4acc07e71db077e3b66fde51a560b6da0843",
+    "evidence/wisdom-loadout/production.json": "684215235205fb59ba183cf11d9235661becb2973681afb7dfc6ae9e332413e2",
+    "evidence/wisdom-loadout/derivation.json": "215c66ae090b2d25142472634dd8e56c668e08526ed6bbaa6709116ecbc9da02",
+    "evidence/wisdom-loadout/corrections.json": "a6b318f5f71f1f9445e21c19d23a22fddf3ad20f7e4888858bf3ef5effdd591f",
+    "evidence/wisdom-loadout/startup.json": "f4ffd67f7ca1b55a3a44a6ed8e4e28b60d48a9acce4e7294983311adaf0207ef",
+    "evidence/wisdom-loadout/verification.json": "a78f7205b9887f3ac5aa06ffc5f0a8acc446e9c8a9c2739314b510a7e1ee246b"
+  }
+}

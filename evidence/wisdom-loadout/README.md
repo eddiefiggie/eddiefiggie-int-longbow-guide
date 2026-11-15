@@ -1,8 +1,9 @@
 # Wisdom-priority loadout: evidence map
 
 This packet connects the selected guide recipe to the completed optimizer
-analysis. It is a **derived record**, not a new optimizer solve, browser capture,
-in-game test or certification of all mechanics. The guide renders the recipe,
+analysis. Its original records are **derived records**, not a new optimizer
+solve or in-game test. The separately dated browser addendum below contains
+fresh source observations, not certification of all mechanics. The guide renders the recipe,
 modeled comparison and exact ranked-affix order from the
 [shared selection manifest](../../tools/fixtures/wisdom-loadout/selection.json).
 
@@ -18,6 +19,7 @@ modeled comparison and exact ranked-affix order from the
 | [Source-review record](sources.json) | Bounded prior source audits, retained excerpts, exclusion screening and unresolved acquisition/crafting limits. | A fresh observation timestamp for old material or proof of auction availability. |
 | [Implementation verification](verification.json) | Exact tested file identities, 258 passing regression tests, preserved history, static links and the recorded browser-start permission block. | Browser layout, live-game mechanics, remote CI, merge or deployment success. |
 | [Draft mechanics corrections](corrections.json) | Later bounded claim corrections, exact retained pointers, publisher corroboration and unchanged-selection scope for build 11-15-26.2. | Repair of missing original observations, new counted bonuses, a new optimizer solve or a published release. |
+| [Fresh crafting-source addendum](crafting-browser-2026-11-15.json) | Six hosted-browser DOM captures, exact displayed revisions and new capture windows, and five narrowly qualified crafting findings. | Automatic promotion into the calculator, a finished-item tooltip for every Chains craft, complete stacking/DPS validation, or guide rendering QA. |
 
 The records retain both the **original file identities and SHA256 hashes** and
 the hashes of these compact, path-sanitized extraction files. These are distinct:
@@ -58,6 +60,38 @@ gaps and publication requirements remain unchanged. The original JSON receipts
 and generated guide's unverified-procurement wording remain accurate records of
 the source limitation; they are not rewritten into a verification claim.
 
+## Fresh crafting findings — 15 November 2026
+
+The hosted browser successfully read the relevant Wiki pages. The
+[new addendum](crafting-browser-2026-11-15.json) preserves scoped DOM text and
+tooltip HTML, six Permanent-link revision identifiers and the actual new
+20:43–20:49 UTC capture windows. Page modification dates and logged-out cache
+notices are separate fields. These are not raw HTTP archives or repaired dates
+for the older evidence.
+
+| Selected craft | What the new source supports | Remaining qualification |
+| --- | --- | --- |
+| Glabrezu Insightful INT +7 | Exact item option and Insight tooltip; Nearly Complete's Legendary column corroborates +7, not Heroic +2. | Bind the new source into the component validator; other INT inputs/interactions remain separate. |
+| Chains Prefix Fortification +142% | Exact Legendary recipe magnitude. | Enhancement comes from the general standard-item rule, not a captured finished Chains tooltip. |
+| Chains Suffix Combustion +142 | Legendary single-type **Equipment Spell Power +142**, plus the separate Combustion-to-Fire mapping. | Preserve that cross-page mapping; establish the selected imbue's applicability separately. This is not weapon damage or measured DPS. |
+| Chains Bonus Quality INT +3 | Legendary **Quality Attributes +3** recipe category. | Intelligence is the selected attribute mapping, not an exact captured finished-item tooltip. |
+| Chains Extra Spot +20 | Legendary **Skills (except UMD) +20** recipe category. | The exact craft's bonus type remains unresolved; Competence is still a model assumption. |
+
+The host and recipe also support Chains at Waist, four distinct craft channels,
+and a separate Green-slot unlock. No crafting, spending, acquisition or optional
+Mythic/set-bonus selection occurred. The Wiki describes both relevant crafting
+systems as locking an effect after application.
+
+**Source findings recorded; component qualification not yet integrated.**
+The current generated guide, audit and print page remain build 11-15-26.2's
+preceding qualification checkpoint, including its conservative model-only
+labels. This addendum supersedes the old lack-of-magnitude-evidence statement;
+it does not silently regrade the original 130-claim inventory, alter ledger
+bindings, add stacking edges or change counted totals. The next integration must
+update those generated labels and source bindings together, with exact
+preservation and positive/negative tests. A successful public Wiki read does
+not resolve the separate local-guide browser-QA limitation.
+
 ## Arithmetic is not mechanics certification
 
 The manifest validator independently recomputes catalog highest-of-type
@@ -71,8 +105,9 @@ and its unchanged source/value/type/positive-interaction validator remain the
 authority for source-qualified subtotals. In particular:
 
 - Retained support for Claws WIS +15 is not a fabricated observation timestamp.
-- Glabrezu Insightful INT +7 and Chains Fortification +142, Combustion +142,
-  Quality INT +3 and Spot +20 remain exact-value gaps.
+- The five crafting magnitudes now have the narrowly scoped source support
+  above. Their current ledger components remain unqualified until integration;
+  Chains' partial type/applicability limits are not waived.
 - Skull CON +15 versus +16 remains a conflict, with separate sensitivity values.
 - Queen's retained relay limitations remain open. Exact ordinary procurement of
   Healing Amplification +63 remains independently unverified, with the specific
