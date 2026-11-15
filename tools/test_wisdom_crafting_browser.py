@@ -3,7 +3,8 @@
 These are source-fidelity, provenance-boundary and preservation checks, not
 authentication of a Wiki observation, a live-game test, or a finished-item
 tooltip synthesized from several pages. The original qualification checkpoint
-remains unchanged until a separately reviewed integration.
+is recovered by the exact outer reversal; separate tests cover the later
+integration against actual current files.
 """
 import copy
 from datetime import datetime
@@ -15,6 +16,7 @@ import unittest
 from urllib.parse import parse_qs, urlparse
 
 import stacking_audit as audit
+import wisdom_crafting_integration as integration
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -255,7 +257,7 @@ def validate_checkpoint(data):
 
 
 def qualification_checkpoint(ledger):
-    """Check actual current inputs, without treating the addendum as a loader."""
+    """Check historical checkpoint inputs without treating the addendum as a loader."""
     components = {row['id']: row for row in ledger['components']}
     for cid, expected in FINDINGS.items():
         row = components[cid]
@@ -276,12 +278,12 @@ class WisdomCraftingBrowserTests(unittest.TestCase):
     def test_fresh_source_checkpoint_and_all_five_findings(self):
         self.assertTrue(validate_checkpoint(self.data))
 
-    def test_nineteen_qualification_checkpoint_files_are_byte_identical(self):
+    def test_nineteen_exact_restored_qualification_checkpoint_files_are_byte_identical(self):
         self.assertEqual(len(PRESERVED), 19)
         self.assertEqual(self.data['preserved_sha256'], PRESERVED)
         for path, expected in PRESERVED.items():
             with self.subTest(path=path):
-                self.assertEqual(sha256((ROOT / path).read_bytes()).hexdigest(), expected)
+                self.assertEqual(sha256(integration.checkpoint_file_bytes(path)).hexdigest(), expected)
 
     def test_source_urls_revisions_and_actual_access_windows_cannot_be_forged(self):
         for sid in CAPTURES:
@@ -388,8 +390,8 @@ class WisdomCraftingBrowserTests(unittest.TestCase):
         changed['preserved_sha256']['index.html'] = '0' * 64
         self.reject(changed)
 
-    def test_current_ledger_retains_all_five_unqualified_inputs(self):
-        ledger = audit.load()
+    def test_historical_checkpoint_ledger_retains_all_five_unqualified_inputs(self):
+        ledger = json.loads(integration.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
         self.assertTrue(qualification_checkpoint(ledger))
         self.assertTrue(audit.validate(ledger))
         for cid, expected in FINDINGS.items():
@@ -400,9 +402,9 @@ class WisdomCraftingBrowserTests(unittest.TestCase):
                 self.assertFalse(result['complete'])
         self.assertIsNone(ledger['sources']['claws-wisdom']['observed'])
 
-    def test_calculator_promotion_is_rejected_even_with_unchanged_model_amount(self):
+    def test_checkpoint_promotion_is_rejected_even_with_unchanged_model_amount(self):
         for cid in FINDINGS:
-            changed = copy.deepcopy(audit.load())
+            changed = json.loads(integration.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
             next(row for row in changed['components'] if row['id'] == cid)['state'] = 'verified'
             with self.subTest(component=cid), self.assertRaises(AssertionError):
                 qualification_checkpoint(changed)

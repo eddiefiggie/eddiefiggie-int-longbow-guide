@@ -113,3 +113,20 @@ the actual current files. Current recipe and mechanics tests must still read
 the production files. The loadout manifest, numeric ledger, source grades and
 calculator outputs do not change. This layer is preservation evidence, not a
 mechanics certificate or a substitute for the blocked browser release checks.
+
+### Bounded crafting-integration layer
+
+Build 11-15-26.3 adds `tools/wisdom_crafting_integration.py` as an exact outer
+reversal to the fbb1 source-finding checkpoint. Its seven-file scope runs before
+the unchanged correction and original Wisdom reversals. The original six-source
+crafting packet and its 19-hash checkpoint remain historical evidence; tests of
+that checkpoint read strictly restored bytes, not regraded current inputs.
+
+Actual-current tests separately require the single Glabrezu Insight INT +7
+source qualification, four withheld Chains inputs, unchanged selected/model
+tuples and the complete expected calculator-result delta. The calculator's
+single-source typed-numeric-clause and positive-interaction gates do not change.
+Do not concatenate recipe/category passages into a fabricated finished tooltip,
+reuse another item's Spot tooltip for Chains, or give an old source a new
+observation date. A future multi-source evidence contract would need separate
+design approval; these preservation layers do not grant it.

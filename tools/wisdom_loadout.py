@@ -282,6 +282,59 @@ def _cells(values):
     return '<tr>' + ''.join(('<th scope="row">' if n == 0 else '<td>') + value + ('</th>' if n == 0 else '</td>') for n, value in enumerate(values)) + '</tr>'
 
 
+def render_crafting_qualification(ledger=None, *, compact=False):
+    """Render the bounded current qualification, separately from frozen grades.
+
+    The unchanged calculator validates the actual source binding. Recipe-table
+    support for the four Chains choices does not manufacture exact effect
+    tooltips, positive interaction edges or complete totals.
+    """
+    from stacking_audit import load as load_ledger, validate as validate_ledger, subtotal
+
+    ledger = load_ledger() if ledger is None else ledger
+    validate_ledger(ledger)
+    components = {row['id']: row for row in ledger['components']}
+    glabrezu = components['glabrezu-insight-int']
+    _require(glabrezu['state'] == 'verified'
+             and glabrezu['source'] == 'glabrezu-insight-int-live-20261115'
+             and glabrezu['id'] in subtotal(ledger, 'Intelligence')['counted'],
+             'Current Glabrezu qualification lost its source gate')
+    chains_ids = ('chains-fortification', 'chains-combustion',
+                  'chains-quality-int', 'chains-spot')
+    _require(all(components[cid]['state'] == 'unknown' and not components[cid]['source']
+                 for cid in chains_ids), 'Unreviewed Chains qualification')
+    _require(not subtotal(ledger, 'Intelligence')['complete'],
+             'Unreviewed complete Intelligence combination')
+    paragraph = (
+        '<p class="note" data-crafting-qualification="glabrezu-only">'
+        '<strong>Crafting evidence integrated:</strong> the selected Pendant Insight INT +7 '
+        'is now source-qualified from its exact item tooltip. The complete Intelligence '
+        'combination is still withheld. The four Chains recipe magnitudes have supporting '
+        'evidence, but their exact type/applicability bindings remain unqualified and excluded '
+        'from certified totals. No equipment, priorities, modeled amounts or stacking rules changed. '
+        + _link('evidence/wisdom-loadout/crafting-integration-2026-11-15.json',
+                'Integration record and targeted Spot check') + ' · '
+        + _link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',
+                'Exact source captures') + '.</p>')
+    if compact:
+        return paragraph
+    rows = [
+        _cells(['Pendant · Insight INT +7', '<strong>SOURCE-QUALIFIED INPUT</strong>',
+                'Own-item typed tooltip; other INT inputs and interactions are not certified.']),
+        _cells(['Chains · Prefix Fortification +142%', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
+                'Legendary value is explicit; Enhancement is a separate general-rule inference, not a finished Chains tooltip.']),
+        _cells(['Chains · Suffix Combustion +142', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
+                'Equipment Spell Power +142 plus a separate Fire/Combustion mapping. Selected imbue applicability remains separate; this is not weapon damage or measured DPS.']),
+        _cells(['Chains · Bonus Quality INT +3', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
+                'Quality Attributes +3 is explicit; Intelligence is the selected category mapping, not an exact finished-effect clause.']),
+        _cells(['Chains · Extra Spot +20', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
+                'Skills except UMD +20 is explicit. A generic Competence tooltip on another item does not establish this selected Chains craft.']),
+    ]
+    return paragraph + _table('wisdom-crafting-evidence',
+                             'Current crafting qualification — recipe evidence is not complete stacking',
+                             ['Selected craft', 'Current status', 'Evidence boundary'], rows)
+
+
 def render_recipe(data):
     """Render the complete physical primary recipe, model context and limits."""
     validate(data)
@@ -311,7 +364,11 @@ def render_recipe(data):
             fill = socket['fill']
             label = ('Set augment: ' if fill['kind'] == 'set-augment' else '') + fill['id']
             gems.append('<strong>' + _h(socket['color']) + ':</strong> ' + _h(label) + ' (ML' + _h(fill['ml']) + ')')
-        note = _list([_h(x) for x in item['notes']]) if item['notes'] else ''
+        notes = [('Historical inventory grade, retained in the original recipe: ' + x
+                  + ' See the current crafting qualification below.')
+                 if x == 'All four selected Slave Lords craft magnitudes remain model-only in the independent source inventory.'
+                 else x for x in item['notes']]
+        note = _list([_h(x) for x in notes]) if notes else ''
         rows.append(_cells([_h(item['slot']), _link(item['wiki_url'], item['id']) + (' <span class="tag">MINOR ARTIFACT</span>' if item['minor_artifact'] else ''),
                             _h(f"{item['base_ml']} → {item['filled_ml']}"), _list(crafts), _list(gems) + note]))
     out.append(_table('wisdom-recipe-table', 'Exact selected equipment, crafting and every socket', ['Slot', 'Selected item', 'Base → filled ML', 'Selected crafting', 'Exact socket recipe and prerequisites'], rows))
@@ -353,9 +410,10 @@ def render_recipe(data):
     claims = _record(data['evidence']['claim_inventory'], data['evidence']['record_sha256']['claims'])
     grades = '; '.join(f'{n} {status}' for status, n in claims['coverage']['byStatus'].items())
     out.append('<p class="note"><strong>Evidence coverage:</strong> ' + _h(grades) + '. These are independent inventory grades, not the current ledger’s certification decisions. '
-               'The five exact crafting gaps are Pendant Insightful INT 7 and Chains Fortification 142, Combustion 142, Quality INT 3 and Spot 20. '
+               'Those original grades are retained unchanged; the current crafting qualification below records the later source integration separately. '
                'Queen retains the A-074 relay limitations. Skull’s generic CON 15 versus item-page 16 conflict yields separate modeled 32 and own-page 33 cases; '
                'the same Skull Constitution choice appears in the compared kits. No unresolved input is promoted by passing arithmetic.</p>')
+    out.append(render_crafting_qualification())
     out.append('<p>' + _link('tools/fixtures/wisdom-loadout/selection.json', 'Shared selection manifest') + ' · '
                + _link(data['provenance']['production']['path'], 'Actual-run receipt and exact query') + ' · '
                + _link(data['evidence']['derivation'], 'Manual changes and three-way audit') + ' · '

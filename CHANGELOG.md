@@ -2,6 +2,13 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.3 (draft evidence-integration candidate; not published)
+
+- Integrates the exact Glabrezu Insight INT +7 source binding under the unchanged calculator gates. Only that component becomes source-qualified; the combined Intelligence total remains withheld and no stacking rule is added.
+- Reconciles current crafting labels with the fresh source findings: four Chains recipe magnitudes have support, but their exact typed-effect/applicability bindings remain unqualified. The targeted Spot check is explicitly another item's generic tooltip, not a Chains source.
+- Preserves the selected Wisdom recipe, one Minor Artifact, ranked priorities, all modeled amounts, the Festive-only event exception and the narrow owner-approved HA63 acquisition-evidence exception. No new solve, purchase or crafting action.
+- Adds exact outer-checkpoint preservation and actual-current positive/negative integration tests; regenerates the guide/audit/source excerpts/print stamp and creates the new snapshot without replacing earlier snapshots. Original captures and claim grades stay unchanged. Guide browser QA, complete mechanics validation, review, merge and deployment remain separate.
+
 ## Source evidence — 15 November 2026 (draft PR #47; not published)
 
 - Adds a fresh hosted-browser crafting-source packet with six exact displayed revisions, separately recorded access windows, scoped DOM excerpts and five qualified findings. Old observations and the original 130-claim inventory are not rewritten.

@@ -20,6 +20,7 @@ modeled comparison and exact ranked-affix order from the
 | [Implementation verification](verification.json) | Exact tested file identities, 258 passing regression tests, preserved history, static links and the recorded browser-start permission block. | Browser layout, live-game mechanics, remote CI, merge or deployment success. |
 | [Draft mechanics corrections](corrections.json) | Later bounded claim corrections, exact retained pointers, publisher corroboration and unchanged-selection scope for build 11-15-26.2. | Repair of missing original observations, new counted bonuses, a new optimizer solve or a published release. |
 | [Fresh crafting-source addendum](crafting-browser-2026-11-15.json) | Six hosted-browser DOM captures, exact displayed revisions and new capture windows, and five narrowly qualified crafting findings. | Automatic promotion into the calculator, a finished-item tooltip for every Chains craft, complete stacking/DPS validation, or guide rendering QA. |
+| [Bounded crafting integration](crafting-integration-2026-11-15.json) | The later build-11-15-26.3 Glabrezu-only source qualification, targeted Chains Spot check, exact change boundary and remaining exclusions. | A complete INT/DPS total, a qualified Chains finished effect, changed optimizer result, live-game or browser-layout certification. |
 
 The records retain both the **original file identities and SHA256 hashes** and
 the hashes of these compact, path-sanitized extraction files. These are distinct:
@@ -71,26 +72,38 @@ for the older evidence.
 
 | Selected craft | What the new source supports | Remaining qualification |
 | --- | --- | --- |
-| Glabrezu Insightful INT +7 | Exact item option and Insight tooltip; Nearly Complete's Legendary column corroborates +7, not Heroic +2. | Bind the new source into the component validator; other INT inputs/interactions remain separate. |
+| Glabrezu Insightful INT +7 | Exact item option and Insight tooltip; Nearly Complete's Legendary column corroborates +7, not Heroic +2. | Now source-qualified in build 11-15-26.3; other INT inputs/interactions remain separate and the combined total is withheld. |
 | Chains Prefix Fortification +142% | Exact Legendary recipe magnitude. | Enhancement comes from the general standard-item rule, not a captured finished Chains tooltip. |
 | Chains Suffix Combustion +142 | Legendary single-type **Equipment Spell Power +142**, plus the separate Combustion-to-Fire mapping. | Preserve that cross-page mapping; establish the selected imbue's applicability separately. This is not weapon damage or measured DPS. |
 | Chains Bonus Quality INT +3 | Legendary **Quality Attributes +3** recipe category. | Intelligence is the selected attribute mapping, not an exact captured finished-item tooltip. |
-| Chains Extra Spot +20 | Legendary **Skills (except UMD) +20** recipe category. | The exact craft's bonus type remains unresolved; Competence is still a model assumption. |
+| Chains Extra Spot +20 | Legendary **Skills (except UMD) +20** recipe category. | The exact craft's bonus type remains unresolved. A generic Competence tooltip on another item does not qualify Chains. |
 
 The host and recipe also support Chains at Waist, four distinct craft channels,
 and a separate Green-slot unlock. No crafting, spending, acquisition or optional
 Mythic/set-bonus selection occurred. The Wiki describes both relevant crafting
 systems as locking an effect after application.
 
-**Source findings recorded; component qualification not yet integrated.**
-The current generated guide, audit and print page remain build 11-15-26.2's
-preceding qualification checkpoint, including its conservative model-only
-labels. This addendum supersedes the old lack-of-magnitude-evidence statement;
-it does not silently regrade the original 130-claim inventory, alter ledger
-bindings, add stacking edges or change counted totals. The next integration must
-update those generated labels and source bindings together, with exact
-preservation and positive/negative tests. A successful public Wiki read does
-not resolve the separate local-guide browser-QA limitation.
+**Current integration: one source-qualified input; four Chains inputs withheld.**
+The original addendum records the preceding build-11-15-26.2 checkpoint and is
+not rewritten. The [separate integration](crafting-integration-2026-11-15.json)
+binds Glabrezu's exact +7 Insight tooltip to the unchanged calculator in
+build 11-15-26.3, and reconciles the current guide and audit labels. Glabrezu
+moves from excluded to counted in the INT result; the other eight exclusions
+and the incomplete/null combined total remain. No positive stacking edge or
+complete stat total is added.
+
+The targeted follow-up retains the Category:Spot items row for Legendary Keylock
+Ring and its generic Competence tooltip, explicitly as **another host**, not the
+selected Chains craft. The one focused Wiki search returned 18 results without
+establishing that exact binding. These bounded observations do not prove that no
+relevant source exists. Recipe category/mapping evidence is not silently
+converted into a contiguous finished-effect clause to satisfy the validator.
+
+The exact outer preservation layer restores the earlier checkpoint before the
+older tests run. Original claim grades, source metadata, snapshots, model values,
+selection and priorities remain unchanged; new actual-current tests separately
+guard the integration. A successful public Wiki read does not resolve the
+separate local-guide browser-QA limitation.
 
 ## Arithmetic is not mechanics certification
 
@@ -105,9 +118,9 @@ and its unchanged source/value/type/positive-interaction validator remain the
 authority for source-qualified subtotals. In particular:
 
 - Retained support for Claws WIS +15 is not a fabricated observation timestamp.
-- The five crafting magnitudes now have the narrowly scoped source support
-  above. Their current ledger components remain unqualified until integration;
-  Chains' partial type/applicability limits are not waived.
+- The five crafting magnitudes have the narrowly scoped source support above.
+  Only Glabrezu's exact typed input is now integrated. All four Chains components
+  remain unqualified; their type/category/applicability limits are not waived.
 - Skull CON +15 versus +16 remains a conflict, with separate sensitivity values.
 - Queen's retained relay limitations remain open. Exact ordinary procurement of
   Healing Amplification +63 remains independently unverified, with the specific

@@ -4,6 +4,32 @@
   "base_index_sha256": "5b7b42d61e952939c67ca95259655370216ff6d5272078a10bd9d4d69068de92",
   "scope": "Current primary Wisdom-priority loadout, fully filled character level 36, Calamitous/Salt. The recorded 45-stage production solve is followed by explicit manual refinements, not a new optimizer run. Optional Celestial Sapphire Ring Dexterity +13 is not selected. This ledger asserts arithmetic only when every selected component and every counted pair has qualified exact source support. Retained-source support and modeled arithmetic are separate from certification; new unresolved inputs remain visible and excluded. Sources no longer used by this selection are retained as historical/background context, never as current equipped components.",
   "sources": {
+    "glabrezu-insight-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "glabrezu",
+        "selected_option_html"
+      ],
+      "quote": "This item focuses the power of the wearer's mind, granting a +7 <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "observed": "2026-11-15T20:43:29Z",
+      "freshness_limit": "New hosted-browser DOM extraction observed 2026-11-15T20:43:29Z through 2026-11-15T20:43:33Z; the page warned logged-out content may lag up to 18 hours. Scoped tooltip HTML, not a raw HTTP response or live-game test. The Permanent link was read from that page, not independently loaded. Source modification time and previous missing capture metadata are distinct.",
+      "record_pointer": [
+        "captures",
+        "glabrezu"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
     "claws-wisdom": {
       "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
       "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
@@ -3751,12 +3777,12 @@
       "amount": 7,
       "bonus_type": "Insight",
       "host": "Legendary Glabrezu Claw Pendant / Nearly Complete",
-      "source": "",
-      "value_pattern": "",
-      "type_evidence": "",
-      "state": "unknown",
+      "source": "glabrezu-insight-int-live-20261115",
+      "value_pattern": "granting a \\+(?P<value>\\d+) <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to Intelligence\\.",
+      "type_evidence": "Insight bonus",
+      "state": "verified",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Exact selected Insightful Intelligence +7 magnitude remains model-only in the independent inventory. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "The retained exact Legendary item lists the selected Nearly Complete Insightful Intelligence +7 option and its Insight bonus tooltip. This qualifies this crafted-item input only; ownership, other Intelligence inputs, positive stacking edges and complete Intelligence/DPS remain separate. Base item ML35; the unchanged filled-kit applicability floor is ML36. Original claim-inventory grades and historical captures are preserved.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3801,7 +3827,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Prefix magnitude is model-only. The former Battlerager Enhancement 162/Insight 81/Quality 40 contributions are absent. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "The retained Legendary Prefix recipe explicitly lists +142% Fortification. Enhancement is supported by a general standard-item rule, not an exact selected finished-effect binding. This component remains unknown under the unchanged typed-clause gate; no Queen-plus-Chains total is certified. The former Battlerager Enhancement 162/Insight 81/Quality 40 contributions remain absent.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3816,7 +3842,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Selected fire spellpower magnitude is model-only, not 142 weapon damage or a standing DPS increase. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "The retained Legendary Suffix table supplies +142 single-type Equipment Spell Power; a separate Spell Power table maps Combustion to Fire. This cross-page mapping is not a single typed numeric clause, so the component remains unknown. It is not 142 weapon damage, an established Fire-imbue benefit, or measured ranged DPS.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3831,7 +3857,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Exact magnitude is model-only; this is the one selected Bonus option. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "The retained Legendary Bonus table gives Quality Attributes +3. Applying that category to the selected Intelligence craft is an explicit mapping, not a captured finished-effect typed numeric clause. This component remains unknown and is the one selected Bonus option; no complete Intelligence or damage total is certified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3846,7 +3872,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Exact magnitude is model-only. Spot +22 diamond is not selected. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "The retained Legendary Extra table lists Skills (except UMD) +20, supporting the selected Spot magnitude by category mapping. Exact Competence type for this Chains craft remains unqualified; a generic Spot +20 tooltip on a different named item cannot supply its missing binding. This component remains unknown. Spot +22 diamond is not selected; direct and final Wisdom-based Spot totals remain unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -4582,7 +4608,7 @@
       "claim": "Prefix Fortification / Suffix Combustion / Bonus Intelligence / Extra Spot; Green socket upgrade",
       "state": "unknown",
       "sources": [],
-      "note": "Alternative Belt wear location and crafting channels are independently supported at a structural level. The four exact magnitudes remain model-only. The Green socket must actually be unlocked; no Slavers set bonus is selected."
+      "note": "The retained host supports Waist/Belt wear and separate Legendary Prefix, Suffix, Extra and Bonus channels. Recipe rows support the selected magnitudes, with cross-page/general/category mappings explicitly distinguished from component qualification. All four Chains inputs remain unknown in this ledger. The Green socket must actually be unlocked and applied effects are locked; no Slavers set bonus is selected, no crafting performed, and no ownership or materials assumed."
     },
     {
       "id": "ring-nearly-finished",
@@ -4623,6 +4649,7 @@
     "status": "historical, not the current selected loadout"
   },
   "source_roles": {
+    "glabrezu-insight-int-live-20261115": "current component, rule, effect or unresolved context",
     "stack": "current component, rule, effect or unresolved context",
     "artifact": "current component, rule, effect or unresolved context",
     "exceptional": "current component, rule, effect or unresolved context",

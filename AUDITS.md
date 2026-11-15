@@ -2,6 +2,42 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded crafting qualification integration — 15 November 2026
+
+Owner-selected option 1 authorized targeted Chains checks and evidence
+integration into draft PR #47, not a merge or publication. The startup check
+confirmed remote head `fbb1c5ed9aca2c1c360147732ac3ba61c77c435e` and tree
+`df677f8c9d2cd113b55d0418dd765729924895c6`; the 56 staged paths matched that tree
+with no unstaged changes. Local HEAD remained the older base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`. The starting suite passed 288 tests in 41.404
+seconds. No checkout reset or branch switch occurred.
+
+The [new integration record](evidence/wisdom-loadout/crafting-integration-2026-11-15.json)
+binds only Glabrezu's exact Insight INT +7 tooltip, revision 707320 and genuine
+20:43:29–20:43:33 UTC observation from the unchanged earlier source addendum.
+The strict calculator code, existing sources and positive-interaction rules
+are not broadened. Only the Glabrezu input moves from excluded to counted in
+the two INT result configurations; the complete total remains null/incomplete.
+
+The targeted hosted-browser follow-up captured a generic Spot +20 Competence
+tooltip under Legendary Keylock Ring in Category:Spot items, not a selected
+Chains finished effect. The single focused Slave Lords/Competence search
+returned 18 results but did not establish that binding. The category's anomalous
+negative cache-age display is retained literally, not treated as a freshness
+guarantee. These observations are bounded, not an absence-of-evidence proof.
+All four Chains recipe magnitudes retain their supporting evidence and their
+remaining exact type/category/applicability limits; all four inputs stay excluded.
+
+Build 11-15-26.3 reconciles the generated evidence labels and source ledger
+together. The new outer layer restores the exact preceding checkpoint before
+historical assertions; separate current tests guard the one qualified component
+and prevent promotion of the unresolved inputs. Original source packet, claim
+grades, selection, priorities, all modeled numbers and prior snapshots remain
+unchanged. Successful source access is not local-guide layout QA or live-game
+verification. No optimizer rerun, new exception, crafting, purchase, merge or
+publication was performed.
+
 ## Fresh hosted-browser crafting evidence — 15 November 2026
 
 The owner requested the internal browser for the bounded crafting pass. Direct

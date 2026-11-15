@@ -12,6 +12,7 @@ import json
 from pathlib import Path
 import types
 import wisdom_corrections as corrections
+import wisdom_crafting_integration as crafting
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -81,7 +82,9 @@ def frozen_generator_bytes():
 
 
 def restore_file(path, current, *, scope=None):
-    """Restore the approved correction layer, then the unchanged Wisdom layer."""
+    """Restore crafting, correction and original Wisdom layers in that order."""
+    if path in crafting.REVIEWED_PATHS:
+        current = crafting.restore_file(path, current)
     if path in corrections.REVIEWED_PATHS:
         current = corrections.restore_file(path, current)
     return restore_wisdom_file(path, current, scope=scope)

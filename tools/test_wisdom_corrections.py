@@ -12,6 +12,7 @@ import unittest
 import stacking_audit as audit
 import wisdom_corrections as corrections
 import wisdom_preservation as preservation
+import wisdom_crafting_integration as crafting
 from test_lamordia_handling import Document, norm
 
 
@@ -190,14 +191,14 @@ class CorrectionPreservationTests(unittest.TestCase):
         self.assertTrue(preservation.validate_full_reversal())
         for path in preservation.REVIEWED_PATHS:
             original = (corrections.original_file_text(path) if path in corrections.REVIEWED_PATHS
-                        else (ROOT / path).read_text())
+                        else crafting.checkpoint_file_text(path))
             self.assertEqual(preservation.restore_wisdom_file(path, original),
                              preservation.predecessor_file_text(path))
 
     def test_outer_reversal_rejects_stale_mixed_duplicate_and_unrelated_content(self):
         scope = corrections.load_scope()
         for path in corrections.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = crafting.checkpoint_file_text(path)
             change = scope['files'][path]['reviewed_replacements'][0]
             mutants = [current + '\n', corrections.original_file_text(path),
                        current.replace(change['after'], change['before'], 1),
@@ -209,7 +210,7 @@ class CorrectionPreservationTests(unittest.TestCase):
 
     def test_outer_fixed_predecessor_still_rejects_rehashed_extra_edit(self):
         path = 'index.html'
-        current = (ROOT / path).read_text()
+        current = crafting.checkpoint_file_text(path)
         mutant = current + '<p>Unapproved build change</p>'
         scope = copy.deepcopy(corrections.load_scope())
         scope['files'][path]['current_bytes'] = len(mutant.encode())
@@ -219,7 +220,7 @@ class CorrectionPreservationTests(unittest.TestCase):
 
     def test_no_numeric_component_source_rule_or_other_annotation_changed(self):
         old = json.loads(corrections.original_file_text('tools/fixtures/endgame-stacking/ledger.json'))
-        current = audit.load()
+        current = json.loads(crafting.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
         self.assertEqual({k: v for k, v in current.items() if k != 'non_total_effects'},
                          {k: v for k, v in old.items() if k != 'non_total_effects'})
         allowed = {'yeenoghu-actions', 'yeenoghu-procs', 'glabrezu-actions', 'yeenoghu-rams-might'}
@@ -233,7 +234,7 @@ class CorrectionPreservationTests(unittest.TestCase):
 
     def test_complete_calculator_results_are_identical_not_just_totals(self):
         old = json.loads(corrections.original_file_text('tools/fixtures/endgame-stacking/ledger.json'))
-        current = audit.load()
+        current = json.loads(crafting.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
         families = sorted({(c['channel'], c['stat']) for c in old['components']})
         self.assertEqual(len(families), 38)
         for channel, stat in families:
@@ -256,9 +257,9 @@ class CorrectionPreservationTests(unittest.TestCase):
         self.assertEqual(corrections.sha((ROOT / 'versions/11-15-26.1.html').read_bytes()),
                          '9dcc34e46b405d9917a713d14fb3b63f4b5b10c72284a9d516a95486df4cd17f')
 
-    def test_new_snapshot_is_generated_without_overwriting_prior_draft(self):
+    def test_correction_checkpoint_snapshot_is_generated_without_overwriting_prior_draft(self):
         import build_snapshot
-        current = (ROOT / 'index.html').read_text()
+        current = crafting.checkpoint_file_text('index.html')
         self.assertEqual(build_snapshot.current_build(current), '11-15-26.2')
         self.assertEqual((ROOT / 'versions/11-15-26.2.html').read_text(),
                          build_snapshot.snapshot_html(current))

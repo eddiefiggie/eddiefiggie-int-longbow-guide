@@ -106,11 +106,24 @@ through the Legendary crafting table. Its evidence map distinguishes exact
 item support from category mappings: Chains Fortification's Enhancement type
 is a general-rule inference; Combustion is Equipment Fire Spell Power, not
 weapon damage; Quality INT uses the Quality Attributes category; and Spot's
-Competence type is still unverified. All five source findings are recorded,
-**but component qualification is not yet integrated**. Original claim grades,
-ledger bindings, counted totals and generated build 11-15-26.2 remain unchanged.
-The generated five-gap wording describes that preceding qualification checkpoint,
-not an assertion that the newly retained Wiki evidence does not exist.
+Competence type is still unverified for the selected Chains craft.
+
+Build **11-15-26.3** integrates only Glabrezu's exact Insight INT +7 binding,
+using the unchanged source/value/type validator. The component moves from
+excluded to counted, but the complete Intelligence result remains withheld.
+The other eight INT inputs remain excluded; no new interaction rule or complete
+stat total is established. All four Chains components stay unknown and excluded.
+The [integration record](../../evidence/wisdom-loadout/crafting-integration-2026-11-15.json)
+distinguishes their recipe support from the remaining exact typed-effect and
+applicability requirements. The targeted Spot check found a generic +20
+Competence tooltip on Legendary Keylock Ring, not a finished Chains effect;
+it cannot qualify this selected craft. A bounded Wiki search also did not
+establish that binding, which is not proof that no source exists.
+
+Original claim grades and the first addendum's build-11-15-26.2 checkpoint
+remain byte-identical historical records. Current generated labels now show
+the later qualification explicitly. The selected recipe, priorities, modeled
+amounts, calculator code and positive-interaction rules are unchanged.
 
 Optional ring DEX +13 remains an additional unselected gap. Skull CON +15 versus
 +16, Queen's incomplete/relayed provenance and exact normal procurement of
@@ -124,11 +137,12 @@ also does not establish local-guide rendering QA. Source-qualified item
 definitions still require the current ledger's exact provenance and positive
 interaction gates before counting.
 
-Next, integrate supported source bindings and reconcile the generated labels
-under a new additive preservation layer. Keep the unresolved Spot type and any
-missing applicability or positive-interaction evidence excluded; do not turn
-five supported magnitudes into a claim of five fully qualified effects or a
-validated total-DPS gain.
+Next validation should obtain exact selected Chains effect evidence and resolve
+the other source/applicability and positive-interaction gaps. The current
+single-source typed-numeric-clause contract is deliberately unchanged; cross-page
+derivations are documented, not silently treated as finished tooltips. Any future
+change to that contract needs separate design review and tests. Five supported
+magnitudes are not five fully qualified effects or a validated total-DPS gain.
 
 The historical bow model, previous snapshots and original retained captures
 remain unchanged. Current generated sections must pass fresh semantic tests;

@@ -14,6 +14,7 @@ import unittest
 import stacking_audit as audit
 import wisdom_preservation as preservation
 import wisdom_corrections as corrections
+import wisdom_crafting_integration as crafting
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 
@@ -198,7 +199,7 @@ class WisdomReleasePreservationTests(unittest.TestCase):
         scope = preservation.load_scope()
         for path in preservation.REVIEWED_PATHS:
             current = (corrections.original_file_text(path) if path in corrections.REVIEWED_PATHS
-                       else (ROOT / path).read_text())
+                       else crafting.checkpoint_file_text(path))
             rule = scope['files'][path]
             self.assertTrue(rule['reviewed_replacements'], path)
             change = rule['reviewed_replacements'][0]
@@ -593,8 +594,10 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
     def test_source_less_or_unqualified_current_inputs_cannot_be_promoted(self):
         selected = ('dusk-raider-rp', 'tough-shields-prr', 'quickblade-ds',
                     'perfect-silence-sneak', 'claws-wisdom', 'celestial-dodge',
-                    'glabrezu-insight-int', 'yeenoghu-quality-deadly',
+                    'yeenoghu-quality-deadly',
                     'chains-combustion', 'solar-sneak-damage', 'emerald-imbue')
+        # Glabrezu's separately integrated exact source has current missing,
+        # forged and wrong-definition negatives in test_wisdom_crafting_integration.
         for cid in selected:
             changed = copy.deepcopy(self.data)
             row = next(c for c in changed['components'] if c['id'] == cid)

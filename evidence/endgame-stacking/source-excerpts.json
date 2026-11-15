@@ -1,6 +1,7 @@
 {
   "scope": "Exact retained source contexts with origin file hashes/pointers and current versus historical/background roles. Original mixed capture files are not linked as audit payload; new model claims are not promoted to original source receipts.",
   "source_roles": {
+    "glabrezu-insight-int-live-20261115": "current component, rule, effect or unresolved context",
     "stack": "current component, rule, effect or unresolved context",
     "artifact": "current component, rule, effect or unresolved context",
     "exceptional": "current component, rule, effect or unresolved context",
@@ -105,6 +106,32 @@
     "claws-wisdom": "current component, rule, effect or unresolved context"
   },
   "sources": {
+    "glabrezu-insight-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "glabrezu",
+        "selected_option_html"
+      ],
+      "quote": "This item focuses the power of the wearer's mind, granting a +7 <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "observed": "2026-11-15T20:43:29Z",
+      "freshness_limit": "New hosted-browser DOM extraction observed 2026-11-15T20:43:29Z through 2026-11-15T20:43:33Z; the page warned logged-out content may lag up to 18 hours. Scoped tooltip HTML, not a raw HTTP response or live-game test. The Permanent link was read from that page, not independently loaded. Source modification time and previous missing capture metadata are distinct.",
+      "record_pointer": [
+        "captures",
+        "glabrezu"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
     "claws-wisdom": {
       "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
       "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",

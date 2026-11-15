@@ -7,6 +7,7 @@ Current recipe/mechanics tests must still use the actual production files.
 import hashlib
 import json
 from pathlib import Path
+import wisdom_crafting_integration as crafting
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,11 +62,11 @@ def restore_file(path, current, *, scope=None):
 
 
 def original_file_text(path):
-    return restore_file(path, (ROOT / path).read_bytes())
+    return restore_file(path, crafting.checkpoint_file_bytes(path))
 
 
 def validate_full_reversal():
     scope = load_scope()
     for path in REVIEWED_PATHS:
-        restore_file(path, (ROOT / path).read_bytes(), scope=scope)
+        restore_file(path, crafting.checkpoint_file_bytes(path), scope=scope)
     return True
