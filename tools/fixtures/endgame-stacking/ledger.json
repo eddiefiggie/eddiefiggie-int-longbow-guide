@@ -4,6 +4,58 @@
   "base_index_sha256": "5b7b42d61e952939c67ca95259655370216ff6d5272078a10bd9d4d69068de92",
   "scope": "Current primary Wisdom-priority loadout, fully filled character level 36, Calamitous/Salt. The recorded 45-stage production solve is followed by explicit manual refinements, not a new optimizer run. Optional Celestial Sapphire Ring Dexterity +13 is not selected. This ledger asserts arithmetic only when every selected component and every counted pair has qualified exact source support. Retained-source support and modeled arithmetic are separate from certification; new unresolved inputs remain visible and excluded. Sources no longer used by this selection are retained as historical/background context, never as current equipped components.",
   "sources": {
+    "tip179-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "pointer": [
+        "captures",
+        "loading-screen-tips",
+        "scoped_visible_text"
+      ],
+      "quote": "Tip #179: Most beneficial effects have a bonus type, such as enhancement, morale, or luck. Different types of bonuses stack, but usually the same types of bonus do not, with the exception of dodge bonuses, most circumstance bonuses, and racial bonuses.",
+      "url": "https://ddowiki.com/page/Loading_screen_tips",
+      "revision": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "observed": "2026-11-15T22:48:38.253Z",
+      "freshness_limit": "Original hosted-browser DOM observation 2026-11-15T22:48:38.253Z through 2026-11-15T22:48:38.329Z, retained from the preceding read-only audit. Literal cache notice: (this is up to 4 hours old). Displayed modification date/update prefix: This page was last modified 04:07, April 19, 2022 (Update 53.1). Editor metadata is omitted in this public derivative. The Permanent link was observed, not independently reloaded. This is a source observation, not live-game validation; older source records are unchanged.",
+      "record_pointer": [
+        "captures",
+        "loading-screen-tips"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "fort-rule-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "pointer": [
+        "captures",
+        "fortification",
+        "scoped_visible_text"
+      ],
+      "quote": "Items are the primary source of fortification for most player characters. Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus). Item effects fully stack with the racial fortification, enhancements, or epic destiny perks.",
+      "url": "https://ddowiki.com/page/Fortification",
+      "revision": "https://ddowiki.com/index.php?title=Fortification&oldid=723727",
+      "observed": "2026-11-15T22:49:28.036Z",
+      "freshness_limit": "Original hosted-browser DOM observation 2026-11-15T22:49:28.036Z through 2026-11-15T22:49:28.137Z, retained from the preceding read-only audit. Literal cache notice: (this is up to 12 hours old). Displayed modification date/update prefix: This page was last modified 10:54, October 24, 2026 (Update 82.0.1). Editor metadata is omitted in this public derivative. The Permanent link was observed, not independently reloaded. This is a source observation, not live-game validation; older source records are unchanged.",
+      "record_pointer": [
+        "captures",
+        "fortification"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
     "melancholic-int-live-20261115": {
       "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
       "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
@@ -2911,6 +2963,79 @@
       "stats": [
         "Fortification"
       ]
+    },
+    {
+      "id": "int-selected-ten-pairs",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Enhancement",
+        "Insight",
+        "Quality",
+        "Profane",
+        "Festive"
+      ],
+      "stats": [
+        "Intelligence"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "boots-int",
+          "glabrezu-insight-int"
+        ],
+        [
+          "boots-int",
+          "chains-quality-int"
+        ],
+        [
+          "boots-int",
+          "lunar-int"
+        ],
+        [
+          "boots-int",
+          "festive-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "chains-quality-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "lunar-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "festive-int"
+        ],
+        [
+          "chains-quality-int",
+          "lunar-int"
+        ],
+        [
+          "chains-quality-int",
+          "festive-int"
+        ],
+        [
+          "lunar-int",
+          "festive-int"
+        ]
+      ]
+    },
+    {
+      "id": "fort-enh-insight-observed",
+      "source": "fort-rule-live-20261115",
+      "quote": "Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus).",
+      "kind": "pair",
+      "types": [
+        "Enhancement",
+        "Insight"
+      ],
+      "stats": [
+        "Fortification"
+      ],
+      "channel": "gear"
     }
   ],
   "components": [
@@ -3180,7 +3305,7 @@
       "type_evidence": "Artifact Bonus to Intelligence",
       "state": "verified",
       "requires": [],
-      "note": "Fresh own-augment definition: +4 Artifact Intelligence, ML30, Sun. The selected Abyssal Compass offers Sun; its base ML35 and filled ML36 are distinct from the gem level. Existing Artifact interactions are retained; no new rule or complete INT total is inferred.",
+      "note": "Fresh own-augment definition: +4 Artifact Intelligence, ML30, Sun. The selected Abyssal Compass offers Sun; its base ML35 and filled ML36 are distinct from the gem level. Existing Artifact interactions are retained; no new rule or complete INT total is inferred from this definition alone. The separate bounded .6 interaction contract supplies the remaining selected INT edges.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3210,7 +3335,7 @@
       "type_evidence": "Festive bonus to Intelligence",
       "state": "verified",
       "requires": [],
-      "note": "Fresh own-augment definition: +2 Festive Intelligence, ML22, Colorless, in the selected Unnatural Accuracy Green socket. Covered only by the existing owner-approved Festive exception; auction stock is not established. Spooky is its historical naming, not an additional selected type. Mixed-type INT remains unverified.",
+      "note": "Fresh own-augment definition: +2 Festive Intelligence, ML22, Colorless, in the selected Unnatural Accuracy Green socket. Covered only by the existing owner-approved Festive exception; auction stock is not established. Spooky is its historical naming, not an additional selected type. Build 11-15-26.6 adds a separate, bounded positive interaction rule for the ten selected Enhancement/Insight/Quality/Profane/Festive INT pairs; it does not change this definition.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -4068,7 +4193,7 @@
       "type_evidence": "Insight bonus",
       "state": "verified",
       "requires": [],
-      "note": "The retained exact Legendary item lists the selected Nearly Complete Insightful Intelligence +7 option and its Insight bonus tooltip. This qualifies this crafted-item input only; ownership, other Intelligence inputs, positive stacking edges and complete Intelligence/DPS remain separate. Base item ML35; the unchanged filled-kit applicability floor is ML36. Original claim-inventory grades and historical captures are preserved.",
+      "note": "The retained exact Legendary item lists the selected Nearly Complete Insightful Intelligence +7 option and its Insight bonus tooltip. This qualifies this crafted-item input only. Build 11-15-26.6 separately supports the ten selected mixed-type INT pairs, including Insight/Quality; ownership, character ability totals and DPS remain separate. Base item ML35; the unchanged filled-kit applicability floor is ML36. Original claim-inventory grades and historical captures are preserved.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -4151,7 +4276,7 @@
       "type_evidence": "",
       "state": "verified",
       "requires": [],
-      "note": "Source-supported recipe derivation: the selected Legendary host offers Bonus; its recipe offers Quality Attributes +3 in the Legendary column; the sourced Ability definition includes Intelligence and identifies abilities as attributes. This qualifies the one selected Bonus input, not a finished-item tooltip or a stacking edge. All nine selected INT definitions now qualify, with two same-type suppressions; ten mixed-type interactions including Insight/Quality remain unproved and the complete Intelligence total remains withheld.",
+      "note": "Source-supported recipe derivation: the selected Legendary host offers Bonus; its recipe offers Quality Attributes +3 in the Legendary column; the sourced Ability definition includes Intelligence and identifies abilities as attributes. This qualifies the one selected Bonus input, not a finished-item tooltip. Build 11-15-26.6 separately adds exactly ten selected mixed-type INT interactions. All nine selected definitions qualify; seven count and two same-type duplicates are suppressed, deriving +37 gear INT at level36. This is not a character total or a DPS result.",
       "channel": "gear",
       "kit_min_level": 36,
       "recipe_proof": {
@@ -4638,7 +4763,7 @@
       "id": "provenance-gaps",
       "state": "unknown",
       "claim": "Retained definitions with incomplete capture provenance",
-      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired.",
+      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification.",
       "sources": [
         "arcane-archer",
         "armor",
@@ -4951,6 +5076,8 @@
     "status": "historical, not the current selected loadout"
   },
   "source_roles": {
+    "tip179-live-20261115": "current bounded INT rule: exactly ten selected-member gear pairs; no universal different-type default",
+    "fort-rule-live-20261115": "fresh Enhancement/Insight Fortification interaction only; does not qualify Chains or Queen components",
     "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "lunar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",

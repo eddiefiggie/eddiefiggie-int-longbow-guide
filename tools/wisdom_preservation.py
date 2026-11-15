@@ -15,6 +15,7 @@ import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
 import wisdom_recipe_proof_preservation as recipe_proofs
 import wisdom_int_evidence_preservation as int_evidence
+import wisdom_int_stacking_preservation as int_stacking
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -84,7 +85,9 @@ def frozen_generator_bytes():
 
 
 def restore_file(path, current, *, scope=None):
-    """Restore INT, recipe-proof, crafting, correction and original layers."""
+    """Restore stacking, INT, recipe-proof, crafting and original layers."""
+    if path in int_stacking.REVIEWED_PATHS:
+        current = int_stacking.restore_file(path, current)
     if path in int_evidence.REVIEWED_PATHS:
         current = int_evidence.restore_file(path, current)
     if path in recipe_proofs.REVIEWED_PATHS:

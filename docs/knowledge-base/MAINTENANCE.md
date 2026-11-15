@@ -185,3 +185,38 @@ selection/core tuples, rules and lower-level applicability separately from
 changed evidence labels. Record actual suite, builder and diff results in the
 receipt; these checks do not establish source freshness, live-game mechanics,
 guide layout, accessibility, print pagination or release permission.
+
+### Bounded INT-interaction layer
+
+Build 11-15-26.6 adds exactly `int-selected-ten-pairs` and
+`fort-enh-insight-observed`. Accept only the historical seven-rule profile or
+the complete reviewed nine-rule profile; reject duplicate IDs, partial additions,
+renamed rules, widened stats/types/channels and replacement member pairs.
+Keep all seven legacy dictionaries and their source records literal, including
+the old Fortification record's missing observation.
+
+The positive Tip179 clause is bound to exactly five selected IDs and ten pairs.
+The entire nine-definition INT family must also remain intact for completeness:
+pin the direct and recipe bindings, core amounts/types/hosts, state/conditions,
+level floor, suppressed inputs and exact membership. Recheck actual packet bytes
+and original observation/revision contexts in public `proof`/`subtotal` routes;
+calling `validate` first is not a prerequisite callers can be trusted to meet.
+Unknown or conflicting input cannot be enabled by a force flag. A new component
+or source binding requires review, not an edited hash or a broader type list.
+
+`tools/wisdom_int_stacking_preservation.py` strictly restores the exact .5
+checkpoint across eight reviewed production paths. The new scope independently
+pins 187 unchanged evidence/fixture/snapshot/code files, excluding the mutable
+current evidence README index. It precedes the existing .5-to-.4 and earlier
+layers. Historical assertions run on their own exact restored code/inputs;
+actual .6 acceptance runs separately on real production modules. Do not replace
+global imports, relax old hashes or let cached accessors skip current-byte checks.
+
+Compare all 152 complete old-input results at levels35/36 through the real new
+engine. Current data may change only the two level36 INT records: total37,
+seven counted, two suppressed, no excluded input, no missing pair, ten added
+proof edges. The other 74 level36 and all 76 level35 objects remain identical.
+Chains/Queen Fortification and Chains Spot remain excluded. Preserve selection,
+priorities, recipes, claim grades, model outputs and prior snapshots. Build a
+new path-rebased .6 snapshot and record actual suite/CI status separately from
+browser QA, source freshness, in-game testing and release authorization.

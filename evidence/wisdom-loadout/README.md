@@ -25,6 +25,8 @@ modeled comparison and exact ranked-affix order from the
 | [Bounded recipe-proof integration](recipe-proof-integration-2026-11-15.json) | Build-11-15-26.4's two source-supported derivations, four-component proof boundary, full-result delta and exact preservation/testing records. | A new stacking edge, complete INT/DPS result, gear change, new solver run, merge or publication. |
 | [Seven-INT source addendum](int-evidence-sources-2026-11-15.json) | Seven own-item definitions, selected host/socket observations and the historical Slavers Spot example, with their separate provenance and limits. | Repair of old observations, current Chains type proof, every effect on those hosts, or complete mixed-type totals. |
 | [Seven-INT integration](int-evidence-integration-2026-11-15.json) | Build-11-15-26.5's bounded direct-source qualifications, preserved same-type suppression, exact change boundary and verification results. | Additional INT/DPS, a new stacking rule, a new solve, live-game certification, merge or publication. |
+| [Bounded stacking observations](int-stacking-sources-2026-11-15.json) | Original Tip179 and Fortification interaction observations, same-family caveat, current recipe values, and separately labeled historical image/release-note limits. | A universal stacking default, current Chains type proof, newly observed old sources or measured live-game behavior. |
+| [Ten-pair INT integration](int-stacking-integration-2026-11-15.json) | Build-11-15-26.6's two additive rules, derived gearINT37, unchanged other results, strict runtime/preservation checks and actual verification. | Extra INT, full-character ability, DPS/critical-range certification, new gear/solve, merge or publication. |
 
 The records retain both the **original file identities and SHA256 hashes** and
 the hashes of these compact, path-sanitized extraction files. These are distinct:
@@ -76,7 +78,7 @@ for the older evidence.
 
 | Selected craft | What the new source supports | Remaining qualification |
 | --- | --- | --- |
-| Glabrezu Insightful INT +7 | Exact item option and Insight tooltip; Nearly Complete's Legendary column corroborates +7, not Heroic +2. | Now source-qualified in build 11-15-26.3; other INT inputs/interactions remain separate and the combined total is withheld. |
+| Glabrezu Insightful INT +7 | Exact item option and Insight tooltip; Nearly Complete's Legendary column corroborates +7, not Heroic +2. | Source-qualified in .3, when the combined total was still withheld. The separate .6 interaction contract now derives +37 selected-gear INT; this item tooltip alone does not establish that sum. |
 | Chains Prefix Fortification +142% | Exact Legendary recipe magnitude. | No reviewed premise places this selected Slavers Prefix in the general rule's standard-Fortification class. Enhancement remains unqualified. |
 | Chains Suffix Combustion +142 | Legendary single-type **Equipment Spell Power +142**, plus the separate Combustion-to-Fire mapping. | Now qualified as a bounded source-supported recipe derivation in .4. Selected imbue applicability remains separate; this is not weapon damage or measured DPS. |
 | Chains Bonus Quality INT +3 | Legendary **Quality Attributes +3** recipe category, with fresh Ability-source Intelligence membership and attributes/abilities terminology. | Now qualified as a bounded source-supported recipe derivation in .4, not a captured finished-item tooltip or a positive stacking edge. |
@@ -134,7 +136,10 @@ are separate from actual-new-engine direct-path negative tests and current
 renderer tests. Successful public Wiki inspection does not resolve the separate
 local-guide browser-QA limitation or certify live-game mechanics.
 
-### Current .5 integration: seven direct INT definitions qualify
+### Historical .5 integration: seven direct INT definitions qualify
+
+This section records the .5 checkpoint. Current interaction results are recorded
+in the following .6 section; the original source packet and receipt stay literal.
 
 The [new packet](int-evidence-sources-2026-11-15.json) retains genuinely new
 browser observations rather than supplying missing dates to earlier records.
@@ -180,6 +185,52 @@ These source definitions do not establish current stock, ownership, complete
 character scores, DPS or critical range. Public Wiki access is not guide layout,
 keyboard or print QA, and the draft remains unmerged and unpublished.
 
+### Current .6 integration: ten bounded INT pairs support the existing +37 sum
+
+The [new source packet](int-stacking-sources-2026-11-15.json) preserves the preceding
+read-only audit's original observations, including millisecond timestamps. The
+public derivative omits editor identifiers from modification footers only;
+date/update prefixes, mechanics text, revisions, cache notices and observation
+windows are unchanged, with the original packet hash recorded. Tip179
+contains an affirmative different-types statement, not merely a same-type
+prohibition. Its 2022 page modification date and the general Stack article's
+same-family caveat remain visible. The new rule is deliberately limited to the
+ten unordered pairs among five selected gear-INT members:
+
+| Selected member | Typed amount | Independent qualification |
+| --- | --- | --- |
+| Coldlight Runners' Melancholic fill | 15 Enhancement | Own-augment clause and selected socket |
+| Glabrezu Nearly Complete | 7 Insight | Exact selected item option and typed tooltip |
+| Chains Bonus | 3 Quality | Bounded host/Legendary recipe/Intelligence-membership derivation |
+| Glabrezu Moon fill | 4 Profane | Own-augment clause and selected socket |
+| Unnatural Accuracy Green fill | 2 Festive | Own-augment clause; existing approved exception |
+
+The existing Artifact4 and Exceptional2 interactions remain separate. Highest-of-type
+handling still suppresses native Celestial Profane2 and Globe Exceptional1.
+The complete bounded result is **+37 selected-gear INT at level36**: seven
+counted, two suppressed, zero excluded and zero missing interactions. This
+supports the already-modeled value; it is not extra INT, a character score,
+measured damage or critical-range certification. All nine definitions and their
+source bindings are checked at public calculation entrypoints, including
+suppressed inputs, so deleting an input cannot manufacture completeness.
+
+The new Fortification source is a separate genuine observation. It supports
+the Enhancement/Insight relationship without repairing the older record's
+missing observation and without classifying Chains' selected Prefix or
+qualifying Queen. Fortification remains null/incomplete; Chains Spot20 is also
+excluded. The Wiki-linked Five Rings images show Spot10/22 Competence with
+2016 image-page dates, not current Chains20 typing. Their in-game capture dates
+and preview provenance are unverified. Publisher normalization notes do not
+establish current type continuity or an exact 22-to-20 mapping.
+
+The real new engine preserves all 152 old-input results at levels35/36. Current
+inputs change only the two level36 INT records; the other 74 level36 and all76
+level35 results are identical. Original rules, sources, receipts, claim grades,
+selection, priorities, modeled amounts and prior snapshots remain unchanged.
+The [integration receipt](int-stacking-integration-2026-11-15.json) records
+actual testing and remaining browser/mechanics limits. This is draft-only work:
+no new optimizer solve, crafting, purchase, merge or publication.
+
 ## Arithmetic is not mechanics certification
 
 The manifest validator independently recomputes catalog highest-of-type
@@ -189,10 +240,14 @@ full-character ability overlaps, critical range, sustained DPS, proc uptime,
 filigree interactions, armor limits or every source interaction.
 
 The [current stacking ledger](../../tools/fixtures/endgame-stacking/ledger.json)
-and its direct or bounded-recipe source gates, followed by unchanged positive
-interaction rules, remain the authority for source-qualified subtotals. In particular:
+and its direct or bounded-recipe source gates, followed by explicit scoped
+interaction rules, remain the authority for source-qualified subtotals. The
+original seven rules remain literal; .6 adds only the two reviewed rules above.
+In particular:
 
 - Retained support for Claws WIS +15 is not a fabricated observation timestamp.
+- Derived gearINT37 is supported only under the closed current .6 contract; it
+  neither qualifies other item effects nor updates the original claim inventory.
 - The five crafting magnitudes have the narrowly scoped source support above.
   Glabrezu's exact typed input and two explicitly labeled Chains recipe
   derivations are integrated. Fortification and Spot remain unqualified;

@@ -2,6 +2,15 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.6 (draft bounded-INT-stacking candidate; not published)
+
+- Adds one closed positive rule for exactly ten selected gear-INT pairs, using the affirmative different-types clause in Wiki loading-screen Tip 179. The existing seven rules remain literal; this is not a universal all-stat or type-only stacking default.
+- Derives the existing **+37 selected-gear INT at level 36**: seven counted definitions, two same-type suppressions, no excluded INT inputs and no missing INT interactions. The change improves evidence for the same sum; it adds no gear, ability points, character total, DPS gain or critical range.
+- Adds a separate genuinely observed Enhancement/Insight Fortification rule without repairing the old source's missing observation. Chains Fortification and Spot, and Queen Fortification, remain excluded; historical Five Rings images and later normalization do not establish the missing current types.
+- Pins all nine selected INT definitions and their source bindings at runtime, including suppressed inputs. An independent review caught and the implementation fixed false completeness after editing or removing non-ten-pair INT members. Direct subtotal/proof calls now reject that path without relying on prior fixture validation.
+- Preserves all 152 old-input results across levels 35/36. Current inputs change only the two level-36 INT results; the other 74 at level 36 and all 76 at level 35 remain identical. Gear, one Minor Artifact, priorities, model values, original claim grades and exceptions are unchanged.
+- Regenerates the affected guide/audit/print outputs and path-rebased .6 snapshot. Exact .6-to-.5 preservation and separate actual-current tests protect historical checkpoints. See the [integration receipt](evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json) for actual verification and limits. No new solve, crafting, purchase, merge or publication.
+
 ## Build 11-15-26.5 (draft INT-evidence candidate; not published)
 
 - Integrates seven selected INT definitions through the existing direct-source gates: Melancholic +15 Enhancement, Solar +4 Artifact, Lunar +4 Profane, Festive +2, Dimlight +2 Exceptional, Globe +1 Exceptional and Celestial Sapphire's native +2 Profane to all abilities. New observations and source bindings do not repair or regrade the original captures.

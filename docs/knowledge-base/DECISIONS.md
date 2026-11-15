@@ -68,6 +68,29 @@ one Minor Artifact remains selected; the Festive-only event exception and narrow
 HA63 procurement-evidence exception remain distinct. Routine draft integration
 is authorized; merge and publication are not.
 
+## Approved bounded INT-interaction integration — 15 November 2026
+
+The owner selected option 1 after the read-only stacking/type audit: add the
+ten-pair INT rule and fresh Fortification interaction evidence to **draft PR #47**,
+preserve Chains exclusions, regenerate affected outputs and run checks. This
+authorizes the narrow rule integration and draft update, not merge/publication.
+
+The two new rules are additive. The original seven rules and source records
+stay literal. Tip 179 is applied only to the ten pairs among five selected
+gear-INT members; it is not a generic different-types default. Completeness
+also requires the unchanged entire nine-definition INT family, including the
+two suppressed inputs, with real source bytes checked by the public calculation
+entrypoints. This safeguard closes the independent review's false-completeness
+finding without widening the approved interaction scope.
+
+The derived +37 is the existing selected-gear sum, not additional INT, a
+character score or DPS/critical-range certification. The separately observed
+Fortification interaction does not qualify Chains or Queen. Spot and
+Fortification input gaps stay open. Gear, one Minor Artifact, all priorities,
+model values, Festive-only event exception and HA63 acquisition-evidence
+exception are unchanged. No new solve, crafting or purchase is authorized by
+this selection. See the [current integration receipt](../../evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json).
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

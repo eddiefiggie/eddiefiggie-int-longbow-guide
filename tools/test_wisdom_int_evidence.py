@@ -1,10 +1,10 @@
-"""Actual .5 direct-source qualification and unchanged-calculator boundaries.
+"""Historical .5 direct-source qualification and unchanged-calculator boundaries.
 
-These checks read the live ledger and production renderers. The exact .4
-checkpoint supplies comparison data only; it is never a substitute calculator.
-Source-contract checks cannot certify live DDO behavior or a complete INT/DPS
-result. Host/level preservation is tested explicitly, separately from the
-unchanged generic direct-clause validator.
+The strict outer .6-to-.5 view supplies this historical ledger and its own
+renderers. The unchanged .4 contract remains the earlier comparison. These
+checks preserve the original .5 claims; actual .6 acceptance and direct-source
+negative controls must run separately on real production modules. Neither
+historical rendering nor source contracts certify live DDO behavior or DPS.
 """
 import copy
 from datetime import datetime
@@ -15,9 +15,7 @@ import re
 import unittest
 from urllib.parse import parse_qs, urlparse
 
-import stacking_audit as audit
-import build_stacking_audit as page
-import wisdom_loadout as recipe
+import wisdom_int_stacking_preservation as int_stacking
 import wisdom_int_evidence_preservation as preservation
 from test_lamordia_handling import Document, norm
 
@@ -122,7 +120,7 @@ loadout boundaries therefore have their own explicit regression contract.
             assert row['detail'] and row['detail'] != old['detail']
         else:
             assert row == old
-    audit.validate(current)
+    int_stacking.historical_calculator().validate(current)
     return True
 
 
@@ -146,13 +144,16 @@ def historical_spot_contract(packet):
     return True
 
 
-class CurrentIntEvidenceTests(unittest.TestCase):
+class HistoricalIntEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.previous = json.loads(preservation.checkpoint_file_text(LEDGER))
 
     def setUp(self):
-        self.data = audit.load()
+        self.audit = int_stacking.historical_calculator()
+        self.recipe = int_stacking.historical_recipe_renderer()
+        self.page = int_stacking.historical_audit_renderer()
+        self.data = self.audit.load()
 
     def test_scope_qualifies_exactly_seven_inputs_without_new_rules_or_model_changes(self):
         self.assertTrue(current_scope_contract(self.data, self.previous))
@@ -164,7 +165,7 @@ class CurrentIntEvidenceTests(unittest.TestCase):
     def test_calculator_recipe_engine_and_selection_are_byte_identical(self):
         for path, digest in IMMUTABLE.items():
             with self.subTest(path=path):
-                self.assertEqual(sha256((ROOT / path).read_bytes()).hexdigest(), digest)
+                self.assertEqual(sha256(int_stacking.checkpoint_file_bytes(path)).hexdigest(), digest)
 
     def test_seven_bindings_resolve_to_separate_genuine_source_records(self):
         raw = (ROOT / PACKET).read_bytes()
@@ -200,7 +201,7 @@ class CurrentIntEvidenceTests(unittest.TestCase):
                 end = datetime.fromisoformat(record['body_observation']['ended_at_utc'].replace('Z', '+00:00'))
                 self.assertLessEqual(start, end)
                 self.assertEqual(start.date().isoformat(), '2026-11-15')
-                self.assertTrue(audit.source_provenance(source))
+                self.assertTrue(self.audit.source_provenance(source))
                 match = re.search(rows[cid]['value_pattern'], source['quote'])
                 self.assertIsNotNone(match)
                 self.assertEqual(float(match.group('value')), rows[cid]['amount'])
@@ -234,7 +235,7 @@ class CurrentIntEvidenceTests(unittest.TestCase):
     def test_source_levels_slot_families_and_selected_physical_placements_are_distinct(self):
         packet = json.loads((ROOT / PACKET).read_text())
         captures = packet['captures']
-        selection = recipe.load()
+        selection = self.recipe.load()
         items = {row['id']: row for row in selection['items']}
         # Augment ML is not the whole-kit applicability floor. Named families
         # remain exact; in particular, Dimlight is a Weapon, not an Accessory.
@@ -277,8 +278,8 @@ class CurrentIntEvidenceTests(unittest.TestCase):
         changed, unchanged = [], 0
         for stat, channel in pairs:
             for active in ((), ('force',)):
-                before = audit.subtotal(self.previous, stat, channel=channel, active=active)
-                after = audit.subtotal(self.data, stat, channel=channel, active=active)
+                before = self.audit.subtotal(self.previous, stat, channel=channel, active=active)
+                after = self.audit.subtotal(self.data, stat, channel=channel, active=active)
                 expected = EXPECTED_INT if (stat, channel) == ('Intelligence', 'gear') else before
                 with self.subTest(stat=stat, channel=channel, active=active):
                     self.assertEqual(after, expected)
@@ -293,17 +294,17 @@ class CurrentIntEvidenceTests(unittest.TestCase):
         count = 0
         for stat, channel in sorted({(c['stat'], c['channel']) for c in self.data['components']}):
             for active in ((), ('force',)):
-                self.assertEqual(audit.subtotal(self.data, stat, channel=channel, active=active, level=35),
-                                 audit.subtotal(self.previous, stat, channel=channel, active=active, level=35))
+                self.assertEqual(self.audit.subtotal(self.data, stat, channel=channel, active=active, level=35),
+                                 self.audit.subtotal(self.previous, stat, channel=channel, active=active, level=35))
                 count += 1
         self.assertEqual(count, 76)
-        chosen = recipe.load()
+        chosen = self.recipe.load()
         self.assertEqual(chosen['selection']['full_kit_ml'], 36)
         self.assertEqual([i['id'] for i in chosen['items'] if i['minor_artifact']], ["Yeenoghu's Reign"])
         self.assertFalse(chosen['optional']['ring_dexterity_13']['selected'])
 
     def test_no_incomplete_int_result_becomes_a_certified_37_total(self):
-        result = audit.subtotal(self.data, 'Intelligence')
+        result = self.audit.subtotal(self.data, 'Intelligence')
         self.assertEqual(result, EXPECTED_INT)
         self.assertEqual(len(result['missing_interactions']), 10)
         self.assertIsNone(result['total'])
@@ -311,18 +312,18 @@ class CurrentIntEvidenceTests(unittest.TestCase):
         rows = components(self.data)
         self.assertEqual(sum(rows[cid]['amount'] for cid in result['counted']), 37)
         # This sum is explicitly model arithmetic, not a new proof edge.
-        self.assertIsNone(audit.proof(self.data, 'Intelligence', rows['boots-int'], rows['lunar-int']))
+        self.assertIsNone(self.audit.proof(self.data, 'Intelligence', rows['boots-int'], rows['lunar-int']))
 
     def test_same_type_overlaps_are_suppressed_without_transitive_stacking(self):
-        result = audit.subtotal(self.data, 'Intelligence')
+        result = self.audit.subtotal(self.data, 'Intelligence')
         self.assertEqual(result['suppressed'], ['celestial-profane-intelligence', 'globe-intelligence'])
         rows = components(self.data)
         for winner, loser in [('lunar-int', 'celestial-profane-intelligence'),
                               ('dimlight-int', 'globe-intelligence')]:
-            self.assertEqual(audit.proof(self.data, 'Intelligence', rows[winner], rows[loser]), 'same-type-best')
+            self.assertEqual(self.audit.proof(self.data, 'Intelligence', rows[winner], rows[loser]), 'same-type-best')
         changed = copy.deepcopy(self.data)
         changed['rules'] = [r for r in changed['rules'] if r['id'] != 'same-type-best']
-        without_rule = audit.subtotal(changed, 'Intelligence')
+        without_rule = self.audit.subtotal(changed, 'Intelligence')
         self.assertEqual(without_rule['suppressed'], [])
         self.assertEqual(len(without_rule['missing_interactions']), 12)
         self.assertIsNone(without_rule['total'])
@@ -334,7 +335,7 @@ class CurrentIntEvidenceTests(unittest.TestCase):
                 with self.subTest(component=row['id']):
                     self.assertEqual(row, old[row['id']])
                     self.assertEqual(row['state'], 'unknown')
-                    self.assertIn(row['id'], audit.subtotal(self.data, row['stat'])['excluded'])
+                    self.assertIn(row['id'], self.audit.subtotal(self.data, row['stat'])['excluded'])
 
     def test_missing_revision_or_observation_excludes_each_promoted_input(self):
         for cid, (sid, _, _) in BINDINGS.items():
@@ -344,8 +345,8 @@ class CurrentIntEvidenceTests(unittest.TestCase):
                 changed['sources'][sid][pointer] = None
                 with self.subTest(component=cid, missing=field):
                     with self.assertRaises(AssertionError):
-                        audit.validate(changed)
-                    self.assertIn(cid, audit.subtotal(changed, 'Intelligence')['excluded'])
+                        self.audit.validate(changed)
+                    self.assertIn(cid, self.audit.subtotal(changed, 'Intelligence')['excluded'])
 
     def test_source_identity_context_quote_hash_and_nonnull_metadata_are_checked(self):
         mutations = [
@@ -363,7 +364,7 @@ class CurrentIntEvidenceTests(unittest.TestCase):
                 changed = copy.deepcopy(self.data)
                 changed['sources'][sid][field] = value
                 with self.subTest(component=cid, field=field), self.assertRaises((AssertionError, KeyError)):
-                    audit.validate(changed)
+                    self.audit.validate(changed)
 
     def test_direct_numeric_type_stat_and_channel_mutations_are_rejected(self):
         for cid in PROMOTED:
@@ -373,7 +374,7 @@ class CurrentIntEvidenceTests(unittest.TestCase):
                 changed = copy.deepcopy(self.data)
                 components(changed)[cid][field] = value
                 with self.subTest(component=cid, field=field), self.assertRaises(AssertionError):
-                    audit.validate(changed)
+                    self.audit.validate(changed)
 
     def test_direct_clause_assertions_cannot_replace_the_observed_clause(self):
         for cid in PROMOTED:
@@ -382,7 +383,7 @@ class CurrentIntEvidenceTests(unittest.TestCase):
                 changed = copy.deepcopy(self.data)
                 components(changed)[cid][field] = value
                 with self.subTest(component=cid, field=field), self.assertRaises(AssertionError):
-                    audit.validate(changed)
+                    self.audit.validate(changed)
 
     def test_selected_scope_rejects_host_level_condition_and_qualification_drift(self):
         # Host/selection preservation is a scoped integration contract, not a
@@ -415,43 +416,43 @@ class CurrentIntEvidenceTests(unittest.TestCase):
             self.assertEqual((row['state'], row['source'], row['value_pattern'], row['type_evidence']),
                              ('unknown', '', '', ''))
             self.assertNotIn('recipe_proof', row)
-            self.assertIn(cid, audit.subtotal(self.data, row['stat'])['excluded'])
+            self.assertIn(cid, self.audit.subtotal(self.data, row['stat'])['excluded'])
             changed = copy.deepcopy(self.data)
             components(changed)[cid].update(state='verified', source=BINDINGS['boots-int'][0])
             with self.subTest(component=cid):
                 with self.assertRaises(AssertionError):
-                    audit.validate(changed)
+                    self.audit.validate(changed)
                 with self.assertRaises(AssertionError):
-                    audit.subtotal(changed, row['stat'])
+                    self.audit.subtotal(changed, row['stat'])
 
     def test_fortification_and_spot_totals_keep_all_prior_gaps(self):
         for stat, excluded in [('Fortification', ['queen-fortification', 'chains-fortification']),
                                ('Spot', ['chains-spot', 'heroism-spot', 'luck-spot'])]:
-            result = audit.subtotal(self.data, stat)
-            self.assertEqual(result, audit.subtotal(self.previous, stat))
+            result = self.audit.subtotal(self.data, stat)
+            self.assertEqual(result, self.audit.subtotal(self.previous, stat))
             self.assertEqual(result['excluded'], excluded)
             self.assertEqual(result['counted'], [])
             self.assertIsNone(result['total'])
             self.assertFalse(result['complete'])
-        self.assertFalse(audit.source_provenance(self.data['sources']['fortification-rule']))
+        self.assertFalse(self.audit.source_provenance(self.data['sources']['fortification-rule']))
 
-    def test_current_generated_outputs_use_live_source_qualifications(self):
-        html = (ROOT / 'index.html').read_text()
-        full = recipe.render_crafting_qualification(self.data)
-        compact = recipe.render_crafting_qualification(self.data, compact=True)
+    def test_point_five_generated_outputs_use_its_exact_source_qualifications(self):
+        html = int_stacking.checkpoint_file_text('index.html')
+        full = self.recipe.render_crafting_qualification(self.data)
+        compact = self.recipe.render_crafting_qualification(self.data, compact=True)
         self.assertIn(full, html)
         self.assertEqual(html.count(compact), 2)
         self.assertIn('build 11-15-26.5', html)
         self.assertNotIn('seven other inputs', full)
-        self.assertNotIn('seven other inputs', page.summary(self.data))
-        self.assertTrue(page.validate_guide(html, self.data))
-        self.assertEqual((ROOT / 'endgame-stacking-audit.html').read_text(), page.detail(self.data))
-        excerpts = json.loads((ROOT / 'evidence/endgame-stacking/source-excerpts.json').read_text())
+        self.assertNotIn('seven other inputs', self.page.summary(self.data))
+        self.assertTrue(self.page.validate_guide(html, self.data))
+        self.assertEqual(int_stacking.checkpoint_file_text('endgame-stacking-audit.html'), self.page.detail(self.data))
+        excerpts = json.loads(int_stacking.checkpoint_file_text('evidence/endgame-stacking/source-excerpts.json'))
         self.assertEqual(excerpts['sources'], self.data['sources'])
         self.assertEqual(excerpts['source_roles'], self.data['source_roles'])
 
     def test_each_promoted_audit_row_links_its_new_direct_source(self):
-        document = Document(page.detail(self.data))
+        document = Document(self.page.detail(self.data))
         for cid, (sid, _, _) in BINDINGS.items():
             rows = [n for n in document.root.nodes('tr') if n.attrs.get('id') == 'component-' + cid]
             with self.subTest(component=cid):
@@ -462,17 +463,17 @@ class CurrentIntEvidenceTests(unittest.TestCase):
                 self.assertNotIn('source missing', norm(rows[0].text()))
                 self.assertEqual([n.attrs['href'] for n in rows[0].nodes('a')], ['#source-' + sid])
 
-    def test_current_renderer_rejects_withdrawn_or_unsupported_qualification(self):
+    def test_point_five_renderer_rejects_withdrawn_or_unsupported_qualification(self):
         for cid in PROMOTED:
             changed = copy.deepcopy(self.data)
             components(changed)[cid]['state'] = 'unknown'
             with self.subTest(component=cid), self.assertRaisesRegex(ValueError, 'seven-INT qualification'):
-                recipe.render_crafting_qualification(changed)
+                self.recipe.render_crafting_qualification(changed)
         for cid in WITHHELD:
             changed = copy.deepcopy(self.data)
             components(changed)[cid]['state'] = 'verified'
             with self.subTest(component=cid), self.assertRaises(AssertionError):
-                recipe.render_crafting_qualification(changed)
+                self.recipe.render_crafting_qualification(changed)
 
     def test_integration_receipt_does_not_claim_a_new_engine_or_release(self):
         record = json.loads((ROOT / RECORD).read_text())

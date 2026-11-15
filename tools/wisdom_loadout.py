@@ -328,11 +328,13 @@ def render_crafting_qualification(ledger=None, *, compact=False):
              and intelligence['suppressed'] == [
                  'celestial-profane-intelligence', 'globe-intelligence']
              and intelligence['excluded'] == []
-             and len(intelligence['missing_interactions']) == 10
-             and ['glabrezu-insight-int', 'chains-quality-int']
-                 in intelligence['missing_interactions']
-             and intelligence['total'] is None and not intelligence['complete'],
-             'Current recipe qualification or unresolved interaction changed')
+             and intelligence['missing_interactions'] == []
+             and intelligence['total'] == 37 and intelligence['complete']
+             and len([edge for edge in intelligence['proofs']
+                      if edge[2] == 'int-selected-ten-pairs']) == 10
+             and ['glabrezu-insight-int', 'chains-quality-int', 'int-selected-ten-pairs']
+                 in intelligence['proofs'],
+             'Current recipe qualification or bounded INT interaction changed')
     paragraph = (
         '<p class="note" data-crafting-qualification="bounded-recipe-proof">'
         '<strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its '
@@ -345,12 +347,22 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         'Solar +4 Artifact, Lunar +4 Profane, Festive +2, Dimlight +2 Exceptional, '
         'Globe +1 Exceptional and native Celestial +2 Profane. All nine selected INT definitions '
         'qualify, but Globe INT +1 is suppressed by Dimlight +2 and Celestial INT +2 by Lunar +4. '
-        'The combined Intelligence total is still withheld: ten cross-type interactions, '
-        'including Pendant Insight–Chains Quality, remain unqualified. The model-only +37 '
-        'is not a certified total. Chains Fortification and Spot remain excluded. '
-        'No equipment, priorities, modeled amounts or stacking rules changed. '
+        '<strong>Derived selected-gear INT: +37 at level 36.</strong> A separately pinned '
+        'positive rule now covers exactly the ten pairs among the selected Enhancement, '
+        'Insight, Quality, Profane and Festive INT components, including Pendant Insight–Chains Quality. '
+        'The existing Artifact, Exceptional and same-type rules supply the other interactions. '
+        'This supports the already-modeled sum; it is not additional INT, a character ability '
+        'score, a live-game measurement or a DPS/critical-range result. '
+        'A separate genuinely observed Fortification rule supports the Enhancement/Insight '
+        'relationship only; it does not classify the selected Chains Prefix or qualify Queen. '
+        'Chains Fortification and Spot remain excluded. Equipment, priorities, modeled amounts '
+        'and exceptions are unchanged; no universal different-type stacking rule is introduced. '
+        + _link('evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json',
+                'Bounded ten-pair integration and remaining limits') + ' · '
+        + _link('evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json',
+                'Original stacking-rule observations and historical type limits') + ' · '
         + _link('evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json',
-                'Seven-INT integration and remaining gaps') + ' · '
+                'Earlier seven-INT definition integration') + ' · '
         + _link('evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json',
                 'New INT and historical Spot observations') + ' · '
         + _link('evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json',
@@ -361,15 +373,15 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         return paragraph
     rows = [
         _cells(['Pendant · Insight INT +7', '<strong>DIRECT SOURCE-QUALIFIED INPUT</strong>',
-                'Own-item typed tooltip; qualification of all nine selected INT definitions does not establish the ten missing mixed-type interactions.']),
+                'Own-item typed tooltip. The separate ten-pair rule now supplies the selected mixed-type INT interactions; this item definition alone does not do so.']),
         _cells(['Chains · Prefix Fortification +142%', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Legendary value is explicit. The general standard-item Enhancement rule lacks a supported premise classifying this selected Slavers Prefix as standard.']),
+                'Legendary value is explicit. Fresh standard-item/Insightful interaction evidence still lacks a supported premise classifying this selected Slavers Prefix as standard Enhancement Fortification.']),
         _cells(['Chains · Suffix Combustion +142', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
                 'Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power only; selected imbue applicability and DPS remain separate.']),
         _cells(['Chains · Bonus Quality INT +3', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
-                'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input, but no Insight/Quality stacking edge or complete INT total is established.']),
+                'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input; the separate bounded rule now supplies its selected mixed-type INT edges, including Insight/Quality.']),
         _cells(['Chains · Extra Spot +20', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Current Skills except UMD +20 and Spot membership are supported. A Wiki-linked Legendary Five Rings image shows Spot +22 Competence; its page displays 19 August 2016. This is relevant historical Slavers corroboration, not direct current +20 Chains typing; present-day continuity remains inferred.']),
+                'Current Skills except UMD +20 and Spot membership are supported. Wiki-linked Five Rings images show +10 and +22 Competence; their pages display 19 August 2016, before the published Slave Lords release date. Image-page dates do not establish in-game capture dates. Later item normalization does not prove present-day type continuity. Neither image qualifies current Chains Spot +20.']),
     ]
     return paragraph + _table('wisdom-crafting-evidence',
                              'Current crafting qualification — recipe evidence is not complete stacking',
@@ -513,9 +525,16 @@ def render_priorities(data):
 
 def render_onepage_rows(data):
     validate(data)
+    from stacking_audit import load as load_ledger, subtotal
+
+    intelligence = subtotal(load_ledger(), 'Intelligence')
+    _require(intelligence['complete'] and intelligence['total'] == 37
+             and len([edge for edge in intelligence['proofs']
+                      if edge[2] == 'int-selected-ten-pairs']) == 10,
+             'One-page INT claim lost its bounded source calculation')
     targets = data['query']['targets']
     model, counts = data['model']['totals'], data['counts']
-    totals = ' / '.join(f'{label} {model[stat]}' for label, stat in [('WIS', 'Wisdom'), ('DEX', 'Dexterity'), ('INT', 'Intelligence'), ('CON', 'Constitution'), ('direct Spot', 'Spot')])
+    totals = ' / '.join(f'{label} {model[stat]}' for label, stat in [('WIS', 'Wisdom'), ('DEX', 'Dexterity'), ('CON', 'Constitution'), ('direct Spot', 'Spot')])
     return ('<tr data-loadout-summary="priority"><th scope="row">Gear affixes, in order</th><td>'
             '<a href="#current-affix-priority">Exact 32-target search order</a>: eight named-effect presence guards, then '
             + _h(' → '.join(targets[8:])) + '. Wisdom replaces Dexterity at rank 29; caps/floors and conditions are explicit. '
@@ -523,6 +542,7 @@ def render_onepage_rows(data):
             '<tr data-loadout-summary="kit"><th scope="row">Kit</th><td>'
             f'<a href="#wisdom-loadout-selection">Wisdom-priority artifact recipe</a>: full kit ML {data["selection"]["full_kit_ml"]}; {counts["items"]} items; Yeenoghu’s Reign is the sole Minor Artifact; '
             f'{counts["occupied"]}/{counts["sockets"]} sockets. Claws selects WIS 15; ring Nearly Finished is empty. Model-only gear {_h(totals)}. '
+            f'<a href="#selected-stacking-summary">Derived selected-gear INT +{intelligence["total"]} at level 36</a> uses the bounded interaction rule; it is not a character score or DPS gain. '
             'Optional ring DEX 13 is separate and provisional. Search policy excludes event/limited gear except permitted Festive diamonds; exact non-event procurement of Healing Amplification +63 remains unverified.</td></tr>')
 
 

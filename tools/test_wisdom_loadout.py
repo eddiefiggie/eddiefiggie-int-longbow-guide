@@ -531,10 +531,12 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         import build_stacking_audit
         self.renderer = build_stacking_audit
 
-    def test_current_ledger_validates_without_changing_old_source_or_rule_bytes(self):
+    def test_current_ledger_retains_old_sources_and_exactly_two_scoped_rule_additions(self):
         self.assertTrue(audit.validate(self.data))
         old = json.loads(preservation.frozen_ledger_bytes())
-        self.assertEqual(self.data['rules'], old['rules'])
+        self.assertEqual(self.data['rules'][:len(old['rules'])], old['rules'])
+        self.assertEqual([r['id'] for r in self.data['rules'][len(old['rules']):]],
+                         ['int-selected-ten-pairs', 'fort-enh-insight-observed'])
         for sid, source in old['sources'].items():
             with self.subTest(source=sid):
                 self.assertEqual(self.data['sources'][sid], source)
@@ -580,7 +582,7 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         self.assertNotIn('pendant-threat', rows)
 
     def test_current_unproven_whole_combinations_stay_withheld(self):
-        for stat in ('Ranged Power', 'Doubleshot', 'Intelligence', 'Wisdom', 'Dexterity',
+        for stat in ('Ranged Power', 'Doubleshot', 'Wisdom', 'Dexterity',
                      'Spot', 'Listen', 'PRR', 'MRR', 'Dodge', 'Fortification',
                      'Constitution', 'Seeker', 'Armor-Piercing', 'Deadly', 'Sneak dice'):
             with self.subTest(stat=stat):
@@ -596,6 +598,25 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
                 result = audit.subtotal(self.data, stat)
                 self.assertTrue(result['complete'])
                 self.assertEqual(result['total'], expected)
+
+    def test_current_int_gear_subtotal_has_only_the_approved_scoped_completion(self):
+        for active in ((), ('force',)):
+            with self.subTest(active=active):
+                result = audit.subtotal(self.data, 'Intelligence', active=active)
+                self.assertEqual((result['stat'], result['channel'], result['total']),
+                                 ('Intelligence', 'gear', 37))
+                self.assertTrue(result['complete'])
+                self.assertEqual(result['counted'], [
+                    'boots-int', 'solar-int', 'lunar-int', 'festive-int',
+                    'dimlight-int', 'glabrezu-insight-int', 'chains-quality-int'])
+                self.assertEqual(result['suppressed'],
+                                 ['celestial-profane-intelligence', 'globe-intelligence'])
+                self.assertEqual(result['excluded'], [])
+                self.assertEqual(result['missing_interactions'], [])
+                self.assertEqual(sum(p[2] == 'int-selected-ten-pairs' for p in result['proofs']), 10)
+                at35 = audit.subtotal(self.data, 'Intelligence', active=active, level=35)
+                self.assertIsNone(at35['total'])
+                self.assertFalse(at35['complete'])
 
     def test_source_less_or_unqualified_current_inputs_cannot_be_promoted(self):
         selected = ('dusk-raider-rp', 'tough-shields-prr', 'quickblade-ds',

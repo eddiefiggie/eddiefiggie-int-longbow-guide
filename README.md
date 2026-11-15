@@ -17,6 +17,7 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `tools/fixtures/wisdom-loadout/selection.json` | Shared current endgame recipe, exact optimizer priorities/constraints and model-only achieved values |
 | `tools/build_wisdom_loadout.py` | Generates the current recipe, priority table and one-page rows from that record |
 | `tools/recipe_proofs.py` | Bounded, source-supported recipe proofs for the four selected Chains IDs; not a general inference or stacking engine |
+| `tools/stacking_audit.py` | Source-gated gear arithmetic; the current draft adds a closed ten-pair INT rule, not a universal stacking default or DPS simulator |
 
 ## Related
 

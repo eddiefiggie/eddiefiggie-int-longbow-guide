@@ -72,6 +72,9 @@ crafting or live-game behavior.
 
 ## Seven selected INT definitions — draft build 11-15-26.5
 
+This is the historical .5 checkpoint. The later .6 rule integration below changes
+the INT interaction result, not these item definitions or original observations.
+
 The [new source packet](../../evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json)
 supplies genuinely new observation bindings for seven exact selected effects:
 Melancholic +15 Enhancement, Solar +4 Artifact, Lunar +4 Profane, Festive +2,
@@ -96,3 +99,39 @@ selected-Prefix classification is also unresolved. Both inputs remain excluded;
 the current Fortification interaction rule still lacks observation provenance,
 and Spot's Competence/Morale/Luck combinations need positive evidence of their
 own. Qualifying any one component would not resolve those complete totals.
+
+## Bounded INT interactions — current draft build 11-15-26.6
+
+The [new source packet](../../evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json)
+retains the original audit observations. Wiki loading-screen Tip 179 explicitly
+states that different bonus types stack. This is positive evidence, not an
+inversion of the same-type prohibition. The reviewed rule admits **only ten
+unordered selected gear-INT pairs** among Enhancement15, Insight7, Quality3,
+Profane4 and Festive2. It is not an all-stat, type-only or transitive default.
+The source page's 2022 modification date and cached 2026 observation remain
+distinct; live-game behavior was not measured.
+
+Existing Artifact, Exceptional and same-type rules remain unchanged. All nine
+selected INT definitions retain their separate source support; seven count,
+while Globe1 is suppressed by Dimlight2 and Celestial2 by Lunar4. The complete
+bounded result is now **+37 selected-gear INT at level36**. This supports the
+same previously modeled sum, not a new INT gain, whole-character ability score,
+measured DPS or wider critical range. Both level36 active-state configurations
+change only their INT evidence result; every other result and all level35
+results remain unchanged.
+
+The fresh Fortification observation supplies a separate Enhancement/Insight
+interaction. The original unobserved Fortification source is not repaired.
+Neither rule establishes Chains' current Prefix classification or Queen's
+component, and **Fortification remains incomplete**. Chains Spot20 also remains
+unknown: historical Five Rings Spot10/22 Competence images and a later numeric
+normalization are not proof of current type continuity. Spot's other inputs
+and interactions still need their own support.
+
+The Stack article's general same-family caveat is retained alongside the specific
+Fortification combination. No INT-specific contrary exception was established
+in this bounded review; this is not a claim of exhaustive evidence. Review a
+new contradiction before expanding the rule. The
+[integration record](../../evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json)
+separates documentary derivation, software verification and outstanding live
+mechanics validation.

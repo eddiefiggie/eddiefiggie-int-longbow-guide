@@ -28,6 +28,68 @@ RULE_CONTRACTS = {
     'mrr-combination': ('mrr-rule', 'different_types', ('*',), ('MRR',)),
     'vitality-combination': ('vitality-rule', 'different_types', ('Vitality',), ('HP',)),
     'fort-enh-insight': ('fortification-rule', 'pair', ('Enhancement', 'Insight'), ('Fortification',)),
+    'int-selected-ten-pairs': ('tip179-live-20261115', 'selected_pairs',
+                               ('Enhancement', 'Insight', 'Quality', 'Profane', 'Festive'), ('Intelligence',)),
+    'fort-enh-insight-observed': ('fort-rule-live-20261115', 'pair',
+                                 ('Enhancement', 'Insight'), ('Fortification',)),
+}
+# The seven-rule historical profile remains an input to the real current
+# engine. The additive profile must contain BOTH reviewed rules, never a
+# fixture-selected subset or a wildcard different-type rule.
+SCOPED_RULE_IDS = frozenset({'int-selected-ten-pairs', 'fort-enh-insight-observed'})
+LEGACY_RULE_IDS = frozenset(RULE_CONTRACTS) - SCOPED_RULE_IDS
+SELECTED_INT_IDS = ('boots-int', 'glabrezu-insight-int', 'chains-quality-int',
+                    'lunar-int', 'festive-int')
+SELECTED_INT_PAIRS = tuple(itertools.combinations(SELECTED_INT_IDS, 2))
+SCOPED_RULES = {
+    'int-selected-ten-pairs': {
+        'id': 'int-selected-ten-pairs', 'source': 'tip179-live-20261115',
+        'quote': 'Different types of bonuses stack', 'kind': 'selected_pairs',
+        'types': ['Enhancement', 'Insight', 'Quality', 'Profane', 'Festive'],
+        'stats': ['Intelligence'], 'channel': 'gear',
+        'component_pairs': [list(pair) for pair in SELECTED_INT_PAIRS],
+    },
+    'fort-enh-insight-observed': {
+        'id': 'fort-enh-insight-observed', 'source': 'fort-rule-live-20261115',
+        'quote': 'Standard fortification items provide enhancement bonuses to fortification. '
+                 'Multiple effects do not stack with each other. You can combine them with '
+                 'rarer Insightful Fortification items (insight bonus).',
+        'kind': 'pair', 'types': ['Enhancement', 'Insight'],
+        'stats': ['Fortification'], 'channel': 'gear',
+    },
+}
+# Independent pins bind the exact reviewed metadata, including original
+# observation/revision pointers and the immutable packet hash. Runtime checks
+# also reread actual packet bytes; a caller-supplied replacement hash is not
+# authority. These constants do not refresh or repair any legacy source.
+SCOPED_SOURCE_SHA256 = {
+    'tip179-live-20261115': '1a69280033c40da1478ebf5380e8b3be50a9369026eee721ecaeb7ea771a1355',
+    'fort-rule-live-20261115': '1b79021c6aca469baeebb737fd3e3c837ffda616038c8de7c2fb188061670b90',
+}
+# All nine INT definitions (including suppressed inputs) are fixed except the
+# explanatory note. Completeness cannot survive a missing/forged Artifact or
+# Exceptional input merely because those interactions use older rules. The new
+# rule itself still covers only the five IDs and ten pairs above.
+SELECTED_INT_CORE_SHA256 = {
+    'boots-int': 'cd334290891f79e7b28f68f36474bc8734048f9769d87e7610ea1c636a54cb8e',
+    'glabrezu-insight-int': '603e83b40e98ada7494d9c86ed1c116640edb860acb136f8d0cf1d0014202590',
+    'chains-quality-int': 'fb3ca04e6950f0680f6936683e634697bb63452af761d6b8c25ccd074e06dfa1',
+    'lunar-int': '4ebe2ec3bef933349cbeb96ccf512a128a36f2bea183e1bf4a472a5d4ea22375',
+    'festive-int': 'fe01aa60300f8b881db840b7261bcab74c49c5ad3c0c6d8db457e828cb58f9cb',
+    'solar-int': '0f498b787921a7140692fc86d408f81ad715cf0fbdef479a018978efe2def7bf',
+    'dimlight-int': 'ef82bf3d66c01b0e693536140c3daec9660e07aae91a626cf01b85790448f346',
+    'globe-intelligence': 'b76d5835172d649b8610d6be4ae6b140d2c3e14001e475ee556b55b96488f628',
+    'celestial-profane-intelligence': 'd4cb4814f184da259dc02d23a0e2ac39e380a11528434a160e5828e4f270a715',
+}
+SELECTED_INT_SOURCE_SHA256 = {
+    'melancholic-int-live-20261115': 'b26d57efc5775d29bb9e299d6b822cc76deeb3db8985faf91e91249d9efd9fa1',
+    'glabrezu-insight-int-live-20261115': '21463fd81667048ce07c00506e2d26a75a9183d2dcdd9561aa1dbfe7b37ae85f',
+    'lunar-int-live-20261115': '3ce3b3b5dfca71aecd8eacade30b6bf6f2fe4037973afe318ee9a01fdcfd22cb',
+    'festive-int-live-20261115': 'bca0bc45129dbcab7b5d1b7c7e41b432be3c9ad2b8d96749af20b4c2f9acb4ef',
+    'solar-int-live-20261115': 'e0630536f81a0a1ef5b11b04f990be4afef93b624a3064799b356abb71ac5a0c',
+    'dimlight-int-live-20261115': '439c1029d2d59474be366cecaf68687411c1d9fab07d1b1c53d8a522704391f0',
+    'globe-int-live-20261115': '53c8207000552fa7541f6761aa87aae61bfa3f4ce4cc51f3ea70e9c814fa9613',
+    'celestial-profane-int-live-20261115': 'c657f4353b3a013f1f5f0ac95669dce6ba31d02aeefe742d28ed590ee8e633d7',
 }
 STAT_WORDS = {
     'PRR': ('physical',), 'MRR': ('magical',), 'HP': ('hit points', 'maximum hp'),
@@ -90,9 +152,114 @@ def component_provenance(data, component, *, root=None):
     The fixed Chains IDs cannot escape to legacy provenance by deleting a
     proof. Unrelated direct-source components retain their original behavior.
     """
+    if uses_scoped_rules(data) and component['id'] in SELECTED_INT_CORE_SHA256:
+        return (current_rule_profile(data)
+                and selected_int_members(data, (component,), root=root))
     if component['id'] in BOUNDED_COMPONENT_IDS or 'recipe_proof' in component:
         return validate_recipe_component(data, component, ROOT if root is None else root)
     return source_provenance(data['sources'].get(component['source'], {}))
+
+
+def fingerprint(value):
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+
+
+def uses_scoped_rules(data):
+    """Recognize the additive profile even if a caller renames a rule."""
+    return (bool(set(data['sources']) & set(SCOPED_SOURCE_SHA256))
+            or any(r.get('id') in SCOPED_RULE_IDS
+                   or r.get('source') in SCOPED_SOURCE_SHA256
+                   or r.get('kind') == 'selected_pairs' for r in data['rules']))
+
+
+def rule_profile(data):
+    """Return the exact reviewed ID profile, or None; duplicates are invalid."""
+    ids = [rule.get('id') for rule in data['rules']]
+    if len(ids) != len(set(ids)) or set(ids) not in (LEGACY_RULE_IDS, set(RULE_CONTRACTS)):
+        return None
+    for rule in data['rules']:
+        contract = (rule.get('source'), rule.get('kind'),
+                    tuple(rule.get('types', ())), tuple(rule.get('stats', ())))
+        if contract != RULE_CONTRACTS.get(rule.get('id')):
+            return None
+        if rule['id'] in SCOPED_RULES and rule != SCOPED_RULES[rule['id']]:
+            return None
+    return frozenset(ids)
+
+
+def current_rule_profile(data):
+    """Guard new runtime paths without changing seven-rule legacy behavior."""
+    return (rule_profile(data) == frozenset(RULE_CONTRACTS)
+            and all(fingerprint(data['sources'].get(sid)) == digest
+                    for sid, digest in SCOPED_SOURCE_SHA256.items()))
+
+
+def pinned_source(data, sid, digest, *, root=None):
+    """Recheck a reviewed source binding AND its actual bytes on every use."""
+    root = ROOT if root is None else root
+    source = data['sources'][sid]
+    assert fingerprint(source) == digest, sid
+    path = root / source['path']
+    assert path.resolve().is_relative_to(root.resolve()), sid
+    raw = path.read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == source['sha256'], sid
+    capture = json.loads(raw)
+    record = resolve(capture, source['record_pointer'])
+    assert source['quote'] in resolve(capture, source['pointer']), sid
+    assert canonical(record[source['url_key']]) == canonical(source['url']), sid
+    assert resolve(record, source['revision_pointer']) == source['revision'], sid
+    assert resolve(record, source['observed_pointer']) == source['observed'], sid
+    assert source_provenance(source), sid
+    return True
+
+
+def selected_int_members(data, arguments=(), *, root=None):
+    """The complete nine-definition family, not interchangeable type labels.
+
+    A forged argument, a simultaneously edited ledger row, a duplicate/missing
+    member, or any changed source binding fails closed. Recipe derivation is
+    still independently checked by its existing bounded proof engine.
+    """
+    try:
+        family = [row for row in data['components']
+                  if row['stat'] == 'Intelligence' and row['channel'] == 'gear']
+        assert len(family) == len(SELECTED_INT_CORE_SHA256)
+        assert {row['id'] for row in family} == set(SELECTED_INT_CORE_SHA256)
+        selected = {}
+        for cid, digest in SELECTED_INT_CORE_SHA256.items():
+            matches = [row for row in data['components'] if row['id'] == cid]
+            assert len(matches) == 1, cid
+            row = matches[0]
+            assert fingerprint({k: v for k, v in row.items() if k != 'note'}) == digest, cid
+            selected[cid] = row
+            if cid in BOUNDED_COMPONENT_IDS:
+                assert validate_recipe_component(data, row, ROOT if root is None else root), cid
+            else:
+                assert pinned_source(data, row['source'], SELECTED_INT_SOURCE_SHA256[row['source']], root=root), cid
+        assert all(argument == selected[argument['id']] for argument in arguments)
+        return True
+    except (AssertionError, KeyError, TypeError, ValueError, OSError):
+        return False
+
+
+def scoped_proof(data, rule, stat, a, b):
+    """Only the two reviewed positive statements can enter this new route."""
+    try:
+        assert current_rule_profile(data)
+        assert rule == SCOPED_RULES[rule['id']]
+        assert a['id'] != b['id']
+        assert a['channel'] == b['channel'] == rule['channel'] == 'gear'
+        assert a['stat'] == b['stat'] == stat and rule['stats'] == [stat]
+        assert pinned_source(data, rule['source'], SCOPED_SOURCE_SHA256[rule['source']])
+        if rule['id'] == 'int-selected-ten-pairs':
+            assert selected_int_members(data, (a, b))
+            assert frozenset((a['id'], b['id'])) in {
+                frozenset(pair) for pair in SELECTED_INT_PAIRS}
+        else:
+            assert {a['bonus_type'], b['bonus_type']} == {'Enhancement', 'Insight'}
+        return rule['id']
+    except (AssertionError, KeyError, TypeError, ValueError, OSError):
+        return None
 
 
 def validate(data, root=ROOT):
@@ -167,13 +334,18 @@ def validate(data, root=ROOT):
             assert any(word in effect for word in words) or (component['stat'] in {'Intelligence', 'Constitution'} and 'all abilities' in effect), cid
         if component['state'] == 'conditional':
             assert component['requires'], cid
+    assert rule_profile(data) is not None, 'Unreviewed, partial or duplicate rule profile'
     for rule in data['rules']:
         assert rule['source'] in source_ids
-        assert rule['kind'] in {'different_types', 'pair', 'same_type_max'}
+        assert rule['kind'] in {'different_types', 'pair', 'same_type_max', 'selected_pairs'}
         assert rule['quote'] in data['sources'][rule['source']]['quote']
         assert rule['stats'] and rule['types']
         assert (rule['source'], rule['kind'], tuple(rule['types']), tuple(rule['stats'])) == RULE_CONTRACTS[rule['id']]
-    assert {r['id'] for r in data['rules']} == set(RULE_CONTRACTS)
+        if rule['id'] in SCOPED_RULE_IDS:
+            assert pinned_source(data, rule['source'], SCOPED_SOURCE_SHA256[rule['source']], root=root)
+    if rule_profile(data) == frozenset(RULE_CONTRACTS):
+        assert current_rule_profile(data)
+        assert selected_int_members(data, root=root), 'Changed selected INT definitions or bindings'
     for effect in data['non_total_effects']:
         assert effect['state'] in STATES
         assert effect['sources'] or effect['state'] == 'unknown'
@@ -192,8 +364,22 @@ def proof(data, stat, a, b):
     """Return an explicit applicable rule; never infer from absent prohibition."""
     if a['channel'] != b['channel']:
         return None
+    if uses_scoped_rules(data):
+        if a['id'] == b['id'] or not current_rule_profile(data):
+            return None
+        members = tuple(row for row in (a, b) if row['id'] in SELECTED_INT_CORE_SHA256)
+        if members:
+            if any(row['stat'] != stat or row['channel'] != 'gear' for row in members):
+                return None
+            if not selected_int_members(data, members):
+                return None
     ta, tb = a['bonus_type'], b['bonus_type']
     for rule in data['rules']:
+        if rule['id'] in SCOPED_RULE_IDS:
+            found = scoped_proof(data, rule, stat, a, b)
+            if found is not None:
+                return found
+            continue
         if not source_provenance(data['sources'][rule['source']]):
             continue
         if not applies(rule, stat):
@@ -217,9 +403,14 @@ def subtotal(data, stat, *, channel='gear', active=(), level=36):
     treated as standing. Suppression is scoped to statistic AND channel.
     """
     rows = [c for c in data['components'] if c['stat'] == stat and c['channel'] == channel]
+    # The newly complete INT result must describe the unchanged entire selected
+    # family. Deleting/adding an input cannot turn a supported subset into a
+    # falsely complete kit, even when validate() was never called.
+    family_valid = (not (uses_scoped_rules(data) and stat == 'Intelligence' and channel == 'gear')
+                    or current_rule_profile(data) and selected_int_members(data))
     eligible, excluded = [], []
     for c in rows:
-        if (c['state'] not in {'verified', 'conditional'} or level < c['kit_min_level']
+        if (not family_valid or c['state'] not in {'verified', 'conditional'} or level < c['kit_min_level']
                 or not component_provenance(data, c)
                 or not set(c['requires']).issubset(active)):
             excluded.append(c['id'])

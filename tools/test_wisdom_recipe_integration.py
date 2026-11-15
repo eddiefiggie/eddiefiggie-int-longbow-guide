@@ -1,8 +1,9 @@
 """Historical .4 recipe qualification and full-result change boundary.
 
-These tests run the real unchanged engine and strictly restored .4 renderers.
-Exact .3 bytes provide the comparison. Actual .5 acceptance lives separately in
-test_wisdom_int_evidence; historical rendering cannot certify its new inputs.
+These tests run the real current engine on .4 inputs and strictly restored .4
+renderers. Exact .3 bytes provide the comparison. Actual .6 acceptance lives
+separately in test_wisdom_int_stacking; historical rendering cannot certify
+its new inputs.
 Neither source qualification nor a passing suite certifies live-game DPS.
 """
 import copy

@@ -1,7 +1,8 @@
 """Strict .5 checkpoint reversal and literal history, not DDO certification.
 
 Actual-current source, semantic, renderer and whole-result checks are separate
-in test_wisdom_int_evidence. No historical module replaces those entrypoints.
+in test_wisdom_int_stacking. The .5 tests in test_wisdom_int_evidence explicitly
+use historical inputs; no historical module replaces current entrypoints.
 """
 import copy
 import json
@@ -13,6 +14,7 @@ from unittest.mock import patch
 
 import stacking_audit as audit
 import wisdom_int_evidence_preservation as preservation
+import wisdom_int_stacking_preservation as int_stacking
 import wisdom_recipe_proof_preservation as recipes
 import wisdom_crafting_integration as crafting
 import wisdom_corrections as corrections
@@ -41,19 +43,19 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
             raw = preservation.checkpoint_file_bytes(path)
             with self.subTest(path=path):
                 self.assertEqual((len(raw), preservation.sha(raw)), expected)
-                self.assertNotEqual(raw, (ROOT / path).read_bytes())
+                self.assertNotEqual(raw, int_stacking.checkpoint_file_bytes(path))
                 text = raw.decode()
                 for change in scope['files'][path]['reviewed_replacements']:
                     self.assertTrue(change['before'])
                     self.assertNotEqual(change['before'], change['after'])
                     self.assertEqual(text.count(change['before']), 1)
                     text = text.replace(change['before'], change['after'], 1)
-                self.assertEqual(text, (ROOT / path).read_text())
+                self.assertEqual(text, int_stacking.checkpoint_file_text(path))
 
     def test_stale_mixed_duplicate_and_unrelated_current_bytes_fail_closed(self):
         scope = preservation.load_scope()
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = int_stacking.checkpoint_file_text(path)
             change = scope['files'][path]['reviewed_replacements'][0]
             mutants = {
                 'old': preservation.checkpoint_file_text(path),
@@ -69,7 +71,7 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
 
     def test_fixed_baselines_reject_rehashed_unrelated_changes(self):
         for path in preservation.REVIEWED_PATHS:
-            mutant = (ROOT / path).read_text() + '\n'
+            mutant = int_stacking.checkpoint_file_text(path) + '\n'
             scope = copy.deepcopy(preservation.load_scope())
             row = scope['files'][path]
             row['current_bytes'], row['current_sha256'] = len(mutant.encode()), preservation.sha(mutant)
@@ -78,7 +80,7 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
 
     def test_unique_hunks_reject_rehashed_missing_and_duplicate_context(self):
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = int_stacking.checkpoint_file_text(path)
             original = preservation.load_scope()
             change = original['files'][path]['reviewed_replacements'][0]
             for label, replacement in (('missing', change['before']),
@@ -92,7 +94,7 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
 
     def test_forged_scope_cannot_replace_independently_fixed_baseline(self):
         for path in preservation.REVIEWED_PATHS:
-            mutant = (ROOT / path).read_text() + '\n'
+            mutant = int_stacking.checkpoint_file_text(path) + '\n'
             forged_old = preservation.checkpoint_file_text(path) + '\n'
             scope = copy.deepcopy(preservation.load_scope())
             row = scope['files'][path]
@@ -126,9 +128,9 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
                 self.assertEqual(recipes.restore_file(path, preservation.checkpoint_file_bytes(path)),
                                  recipes.checkpoint_file_text(path))
 
-    def test_current_and_predecessor_snapshots_match_their_own_exact_sources(self):
+    def test_point_five_and_predecessor_snapshots_match_their_own_exact_sources(self):
         import build_snapshot
-        current = (ROOT / 'index.html').read_text()
+        current = int_stacking.checkpoint_file_text('index.html')
         old = preservation.checkpoint_file_text('index.html')
         self.assertEqual(build_snapshot.current_build(current), '11-15-26.5')
         self.assertEqual(build_snapshot.current_build(old), '11-15-26.4')
@@ -165,10 +167,10 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
                     with self.assertRaises(AssertionError):
                         accessor()
 
-    def test_actual_engine_and_bounded_proof_code_stay_byte_identical(self):
+    def test_point_five_engine_and_bounded_proof_code_stay_byte_identical(self):
         preserved = preservation.load_scope()['preserved_files']
         for path in ('tools/stacking_audit.py', 'tools/recipe_proofs.py'):
-            raw = (ROOT / path).read_bytes()
+            raw = int_stacking.checkpoint_file_bytes(path)
             with self.subTest(path=path):
                 self.assertEqual((len(raw), preservation.sha(raw)),
                                  (preserved[path]['bytes'], preserved[path]['sha256']))

@@ -1,6 +1,8 @@
 {
   "scope": "Exact retained source contexts with origin file hashes/pointers and current versus historical/background roles. Original mixed capture files are not linked as audit payload; new model claims are not promoted to original source receipts.",
   "source_roles": {
+    "tip179-live-20261115": "current bounded INT rule: exactly ten selected-member gear pairs; no universal different-type default",
+    "fort-rule-live-20261115": "fresh Enhancement/Insight Fortification interaction only; does not qualify Chains or Queen components",
     "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "lunar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
@@ -117,6 +119,58 @@
     "chains-intelligence-membership-20261115": "recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement"
   },
   "sources": {
+    "tip179-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "pointer": [
+        "captures",
+        "loading-screen-tips",
+        "scoped_visible_text"
+      ],
+      "quote": "Tip #179: Most beneficial effects have a bonus type, such as enhancement, morale, or luck. Different types of bonuses stack, but usually the same types of bonus do not, with the exception of dodge bonuses, most circumstance bonuses, and racial bonuses.",
+      "url": "https://ddowiki.com/page/Loading_screen_tips",
+      "revision": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "observed": "2026-11-15T22:48:38.253Z",
+      "freshness_limit": "Original hosted-browser DOM observation 2026-11-15T22:48:38.253Z through 2026-11-15T22:48:38.329Z, retained from the preceding read-only audit. Literal cache notice: (this is up to 4 hours old). Displayed modification date/update prefix: This page was last modified 04:07, April 19, 2022 (Update 53.1). Editor metadata is omitted in this public derivative. The Permanent link was observed, not independently reloaded. This is a source observation, not live-game validation; older source records are unchanged.",
+      "record_pointer": [
+        "captures",
+        "loading-screen-tips"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "fort-rule-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "pointer": [
+        "captures",
+        "fortification",
+        "scoped_visible_text"
+      ],
+      "quote": "Items are the primary source of fortification for most player characters. Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus). Item effects fully stack with the racial fortification, enhancements, or epic destiny perks.",
+      "url": "https://ddowiki.com/page/Fortification",
+      "revision": "https://ddowiki.com/index.php?title=Fortification&oldid=723727",
+      "observed": "2026-11-15T22:49:28.036Z",
+      "freshness_limit": "Original hosted-browser DOM observation 2026-11-15T22:49:28.036Z through 2026-11-15T22:49:28.137Z, retained from the preceding read-only audit. Literal cache notice: (this is up to 12 hours old). Displayed modification date/update prefix: This page was last modified 10:54, October 24, 2026 (Update 82.0.1). Editor metadata is omitted in this public derivative. The Permanent link was observed, not independently reloaded. This is a source observation, not live-game validation; older source records are unchanged.",
+      "record_pointer": [
+        "captures",
+        "fortification"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
     "melancholic-int-live-20261115": {
       "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
       "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",

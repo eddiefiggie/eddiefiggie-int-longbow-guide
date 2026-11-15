@@ -19,6 +19,7 @@ import wisdom_crafting_integration as crafting
 import wisdom_preservation as wisdom
 import wisdom_recipe_proof_preservation as preservation
 import wisdom_int_evidence_preservation as int_evidence
+import wisdom_int_stacking_preservation as int_stacking
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -205,25 +206,43 @@ class RealNewEngineCompatibilityTests(unittest.TestCase):
         self.assertEqual(count, 76)
         self.assertEqual(json.dumps(self.data, sort_keys=True), before)
 
-    def test_existing_states_source_metadata_contracts_and_positive_rules_are_unchanged(self):
+    def test_existing_contracts_and_historical_positive_rules_are_unchanged(self):
+        point_five = int_stacking.historical_calculator()
+        # Preserve the original .5-to-.3 equality, including the seven-rule
+        # registry. The actual .6 registry adds only the two approved rules.
         for name in ('STATES', 'OBSERVATION_POINTERS', 'RULE_CONTRACTS', 'STAT_WORDS'):
             with self.subTest(contract=name):
+                self.assertEqual(getattr(point_five, name), getattr(self.old, name))
+        for name in ('STATES', 'OBSERVATION_POINTERS', 'STAT_WORDS'):
+            with self.subTest(current_contract=name):
                 self.assertEqual(getattr(audit, name), getattr(self.old, name))
+        self.assertEqual(set(audit.RULE_CONTRACTS), set(self.old.RULE_CONTRACTS) | {
+            'int-selected-ten-pairs', 'fort-enh-insight-observed'})
+        for rid, contract in self.old.RULE_CONTRACTS.items():
+            with self.subTest(current_legacy_rule=rid):
+                self.assertEqual(audit.RULE_CONTRACTS[rid], contract)
         for sid, source in self.data['sources'].items():
             with self.subTest(source=sid):
                 self.assertEqual(audit.source_provenance(source), self.old.source_provenance(source))
                 self.assertEqual(audit.observation_context(source), self.old.observation_context(source))
 
-    def test_numeric_core_and_interaction_proof_ast_remain_unchanged(self):
+    def test_numeric_core_and_historical_interaction_proof_ast_remain_unchanged(self):
         current = ast.parse((ROOT / CALCULATOR).read_text())
+        point_five = ast.parse(int_stacking.checkpoint_file_text(CALCULATOR))
         old = ast.parse(preservation.checkpoint_file_text(CALCULATOR))
 
         def functions(module):
             return {node.name: node for node in module.body if isinstance(node, ast.FunctionDef)}
 
-        a, b = functions(current), functions(old)
+        a, b, prior = functions(current), functions(old), functions(point_five)
         for name in ('applies', 'proof', 'doubleshot_effective'):
-            with self.subTest(function=name):
+            with self.subTest(historical_function=name):
+                self.assertEqual(ast.dump(prior[name], include_attributes=False),
+                                 ast.dump(b[name], include_attributes=False))
+        # .6 intentionally changes proof dispatch, but applicability,
+        # doubleshot arithmetic and the numeric subtotal core stay live checks.
+        for name in ('applies', 'doubleshot_effective'):
+            with self.subTest(current_function=name):
                 self.assertEqual(ast.dump(a[name], include_attributes=False),
                                  ast.dump(b[name], include_attributes=False))
 

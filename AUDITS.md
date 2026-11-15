@@ -2,6 +2,65 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded ten-pair INT rule and fresh Fortification interaction — 15 November 2026
+
+The owner selected option 1 after the read-only stacking/type audit: integrate
+the ten selected INT interactions and separately observed Fortification rule in
+**draft PR #47**, retain Chains exclusions, regenerate outputs and run checks.
+Startup matched remote head `b83e6a9251d743ecae39d0301d177a08de54f93c` and staged
+tree `b1b39ce3a38017c67ffd4ea39a9965175c88a243`, with 80 staged paths and no
+unstaged/untracked changes. Local HEAD remained
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on the approved feature branch.
+The exact baseline archive passed **395 tests in 69.451 seconds**, exit 0.
+No reset, ref switch, fetch or local HEAD advancement was used.
+
+The [additive source packet](evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json)
+retains the preceding browser audit's actual nine scoped observations and original
+millisecond timestamps. Its public derivative omits only unnecessary editor
+identifiers from modification footers, retaining the original date/update text,
+mechanics excerpts, cache notices, revision links and observation windows.
+Tip 179 supplies an affirmative different-types statement;
+the implementation does not infer its converse from same-type nonstacking. That
+page's displayed modification date is in 2022 despite its 2026 observation.
+The Stack article's general same-family caveat is retained, not hidden; the
+specific Fortification article explicitly allows its Enhancement/Insight pair.
+No INT-specific contrary exception was established in this bounded review;
+that is not exhaustive absence proof or a live-game test.
+
+Build **11-15-26.6** appends exactly two rules while preserving the original seven
+and every old source dictionary. The new INT rule covers only the ten pairs
+among the selected Enhancement15, Insight7, Quality3, Profane4 and Festive2
+components. Artifact, Exceptional and same-type handling retain their existing
+rules. Seven inputs count; Globe INT is suppressed by Dimlight and Celestial
+INT by Lunar. The derived selected-gear result is **+37 at level36**, not an
+additional bonus, character ability score, DPS estimate or critical profile.
+
+Independent review exposed a false-completeness path when only those five
+members were pinned: edits/removal of Solar, Dimlight or Globe could still
+produce a complete total. The corrected current-profile guard binds the entire
+nine-definition INT family and all source records at runtime, including
+suppressed inputs. It does not widen the ten-pair interaction scope. The reviewed
+fix passed 248 meaningful positive/adversarial checks; 152 complete old-input
+results remained identical. Current inputs change exactly two level36 INT
+records; all other level36 and all level35 records are unchanged. The repository
+suite and exact-head CI are separate verification stages recorded in the
+[integration receipt](evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json).
+
+The fresh Fortification rule supports only the Enhancement/Insight relationship.
+It does not classify Chains' selected Prefix as standard Enhancement Fortification
+or qualify Queen. Chains Fortification and Spot remain unknown/excluded.
+Two Wiki-linked Five Rings images show Spot10/22 Competence and image-page dates
+before the published Slave Lords release; exact in-game capture dates and
+preview provenance are not established. The publisher's later Legendary item
+normalization includes Slavers but does not prove current Spot type continuity.
+No missing type is supplied from those historical examples.
+
+The exact .6-to-.5 layer preserves earlier source packets, receipts, snapshots,
+scopes and test assertions. Equipment, the Minor Artifact, priorities, modeled
+amounts, acquisition exceptions and original claim grades are unchanged.
+Guide browser/keyboard/print QA and full mechanics validation remain outstanding.
+No new optimizer solve, crafting, purchase, merge or publication is included.
+
 ## Seven selected INT definitions — 15 November 2026
 
 The owner selected the bounded integration option after a read-only batch audit:

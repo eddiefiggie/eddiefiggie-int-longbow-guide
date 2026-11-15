@@ -146,6 +146,8 @@ the real new engine also reproduced all 76 results on unchanged .3 data. The sel
 priorities, numeric/core tuples and seven positive-interaction rules are unchanged;
 the calculator changed only by the reviewed bounded qualification dispatcher.
 
+### Historical .5 checkpoint: seven INT definitions
+
 Build **11-15-26.5** adds the [seven-INT source packet](../../evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json)
 and binds seven previously excluded definitions through the unchanged direct
 source path: Melancholic +15 Enhancement, Solar +4 Artifact, Lunar +4 Profane,
@@ -156,9 +158,9 @@ hosts is automatically qualified, and Celestial's optional ability craft stays
 empty.
 
 The existing highest-of-type rule keeps Dimlight instead of Globe's INT and
-Lunar instead of Celestial's INT. This evidence integration creates no new INT
-or DPS gain. Mixed-type interaction evidence is still incomplete, so modeled
-gear INT +37 does not become a certified combined total or character score.
+Lunar instead of Celestial's INT. At this .5 checkpoint, the evidence integration
+created no new INT or DPS gain. Mixed-type interaction evidence was incomplete,
+so modeled gearINT37 did not become a certified combined total or character score.
 
 The new Slavers observation supplies current recipe magnitudes and a source-linked
 Legendary Five Rings image showing Spot +22 Competence. The image page displays
@@ -169,6 +171,35 @@ input/interaction gaps are unchanged. The [new integration receipt](../../eviden
 separates this source support from actual software verification and release
 status. The seven existing stacking rules, gear, priorities, numeric/core tuples
 and original claim grades remain unchanged.
+
+### Current .6 checkpoint: bounded selected-gear INT37
+
+The [stacking-source packet](../../evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json)
+adds the original audit's genuinely observed positive Tip179 clause and
+Fortification paragraph. Build **11-15-26.6** appends only two rules. One admits
+exactly ten pairs among the selected Enhancement15, Insight7, Quality3, Profane4
+and Festive2 INT members; existing Artifact, Exceptional and same-type rules
+remain literal. Seven definitions count and two are suppressed, deriving the
+existing **+37 selected-gear INT at level36**. No extra INT, full-character score,
+DPS gain or critical-range change is claimed.
+
+Runtime completeness requires the unchanged entire nine-definition INT family
+and real source bindings, including suppressed inputs. This prevents an omitted
+or altered non-ten-pair member from turning a subset into a complete kit. The
+new rule is not a universal different-types default. Its 2022 modification date,
+2026 observation and same-family caveat are retained with the bounded
+interpretation; no in-game test is claimed.
+
+The separate fresh Enhancement/Insight Fortification rule does not classify
+Chains' Prefix or qualify Queen; the older unobserved source stays unchanged.
+Historical Five Rings Spot10/22 Competence images, image-page dates predating
+the published Slave Lords release, and subsequent item normalization do not
+establish current Chains Spot20 typing. Both Chains types remain unresolved.
+Only two level36 INT result objects change; the other 74 and all76 level35
+results are identical. Selected gear, Minor Artifact, priorities, model values,
+original claim grades and exceptions remain unchanged. The
+[current integration receipt](../../evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json)
+records software verification separately from source and live-game limits.
 
 Optional ring DEX +13 remains an additional unselected gap. Skull CON +15 versus
 +16, Queen's incomplete/relayed provenance and exact normal procurement of
@@ -183,13 +214,15 @@ definitions still require the current ledger's exact provenance and positive
 interaction gates before counting.
 
 Next validation should resolve the remaining Fortification classification, Spot
-type, INT interactions and other source/applicability gaps. The original direct
+type, and offensive source/applicability gaps needed for DPS and critical-profile
+claims. The selected INT interaction gap is closed only within the .6 contract.
+The original direct
 typed-numeric-clause path is preserved for unrelated inputs; the approved
 recipe-proof route is limited to four fixed Chains IDs and cannot infer a
 stacking edge. Wider inference or different selected components would require
 separate review. Five supported magnitudes are not five fully qualified effects
 or a validated total-DPS gain. See the [historical recipe integration receipt](../../evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json)
-and the [current INT evidence receipt](../../evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json).
+and the [historical INT definition receipt](../../evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json).
 
 The historical bow model, previous snapshots and original retained captures
 remain unchanged. Current generated sections must pass fresh semantic tests;

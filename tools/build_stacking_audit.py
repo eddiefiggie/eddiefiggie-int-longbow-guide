@@ -57,7 +57,7 @@ def model_table(chosen):
             'Model-only gear comparison — not source-certified totals or character-sheet results'
             '</caption><thead><tr><th>Contribution</th><th>Former guide kit</th>'
             '<th>Previous artifact kit</th><th>Primary Wisdom kit</th></tr></thead><tbody>'
-            + ''.join(rows) + '</tbody></table></div><p>Zero means no contribution in that supplied model bucket, not independently verified absence in the live game.</p>')
+            + ''.join(rows) + '</tbody></table></div><p>Zero means no contribution in that supplied model bucket, not independently verified absence in the live game. The current +37 INT entry is independently supported by the bounded calculation above; this does not regrade the frozen comparison models or certify their other totals.</p>')
 
 
 def summary(data):
@@ -95,7 +95,7 @@ def summary(data):
                + (f'Healing Amplification is a single +{healing} Competence component.' if healing is not None else 'Healing Amplification remains unverified.'))
     offense = (f"Modeled Ranged Power {model['Ranged Power']}, Doubleshot {model['Doubleshot']}, "
                f"Seeker {model['Seeker']}, Armor-Piercing {model['Armor-Piercing']}, "
-               f"Deadly {model['Deadly']} and Intelligence {model['Intelligence']}")
+               f"and Deadly {model['Deadly']}")
     survival = (f"Raw modeled PRR {model['Physical Sheltering']}, MRR {model['Magical Sheltering']}, "
                 f"Fortification {model['Fortification']}, Constitution {model['Constitution']} "
                 f"and direct Will/Reflex/Fortitude saves {model['Will Save']}/{model['Reflex Save']}/{model['Fortitude Save']}")
@@ -175,7 +175,13 @@ def detail(data):
         status = 'Eligible: exact revision and bound observation context.' if source_provenance(data['sources'][r['source']]) else 'Unverified provenance: excluded from calculations until revision and genuine observation context are complete.'
         out += [f'<p class="note">{h(status)}</p>']
         out += [f'<h3 id="rule-{h(r["id"])}">{h(r["id"])}</h3><p>Applies to {h(", ".join(r["stats"]))}; type scope {h(", ".join(r["types"]))}; operation {h(r["kind"])}. Same-type suppression stays within the same statistic and channel.</p><blockquote>{h(r["quote"])}</blockquote><p><a href="#source-{h(r["source"])}">Exact source and provenance</a></p>']
-    out += ['<h2 id="sources">Exact source contexts, roles and limits</h2><p>Retained browser captures are scoped DOM excerpts, not raw response bytes. Each underlying capture retains its own actual observation window and cache limits, including the separate 15 November crafting and seven-INT addenda. Reusing an older capture does not refresh its observation date; missing revisions/timestamps remain missing. Source-reported revision metadata does not prove that a historical endpoint was independently read. The generated source-excerpts.json collection is a derived index of those original records, not a new browser observation. Exact package hashes and pointers preserve the distinction; editor and review metadata are omitted. A source marked historical/background below does not describe a currently equipped input. These are documentary checks, not game tests.</p><p>Source text: <a href="https://ddowiki.com/">DDO Wiki contributors</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>. Original articles and revision histories supply attribution. Reused source excerpts retain that license.</p>']
+        if r['id'] == 'int-selected-ten-pairs':
+            out += ['<p><strong>Closed scope:</strong> exactly these ten selected gear-INT pairs; not every source with these type labels and not other stats or character channels. The pinned member definitions and source bytes are rechecked at calculation time. Tip 179 was last modified in 2022 despite its 2026 observation. This is documentary support, not a live-game test.</p><ul>']
+            out += [f'<li>{h(a)} + {h(b)}</li>' for a, b in r['component_pairs']]
+            out += ['</ul>']
+        elif r['id'] == 'fort-enh-insight-observed':
+            out += ['<p><strong>Interaction only:</strong> the new observation does not repair the old Fortification record, supply the missing Chains standard-item classification, or qualify Queen. No complete current-kit Fortification total follows.</p>']
+    out += ['<h2 id="sources">Exact source contexts, roles and limits</h2><p>Retained browser captures are scoped DOM excerpts, not raw response bytes. Each underlying capture retains its own actual observation window and cache limits, including the separate 15 November crafting, seven-INT and bounded-stacking addenda. Reusing an older capture does not refresh its observation date; missing revisions/timestamps remain missing. Source-reported revision metadata does not prove that a historical endpoint was independently read. The generated source-excerpts.json collection is a derived index of those original records, not a new browser observation. Exact package hashes and pointers preserve the distinction; editor and review metadata are omitted. A source marked historical/background below does not describe a currently equipped input. These are documentary checks, not game tests.</p><p>Source text: <a href="https://ddowiki.com/">DDO Wiki contributors</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>. Original articles and revision histories supply attribution. Reused source excerpts retain that license.</p>']
     for sid,s in data['sources'].items():
         pin=s['revision']
         if pin and pin.startswith('/'):pin='https://ddowiki.com'+pin
