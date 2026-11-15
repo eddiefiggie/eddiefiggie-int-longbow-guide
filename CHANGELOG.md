@@ -2,6 +2,13 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.1 (implementation candidate; publication separate)
+- Updates the selected endgame guide from the actual Wisdom-priority loadout with exactly one Minor Artifact, Yeenoghu's Reign. The primary recipe uses Claws WIS +15 and leaves Celestial Sapphire's ability craft unused; optional ring DEX +13 / gear DEX 19 remains clearly provisional and outside the primary gear DEX 6 result.
+- Generates the current equipment/craft/augment recipe, exact 32-objective priority table and one-page rows from one retained selection manifest. The actual 45-stage production solve and practical manual Luck/Spot refinements remain distinct; no additional solve or global-DPS claim is implied.
+- Reconciles current milestones, bow fills/levels, source identities, repeated gear references and the evidence-gated stacking ledger. Replaced Monolith/Solar/old-item components are no longer counted as current; newly unresolved inputs cannot manufacture complete subtotals. The unchanged calculator retains its provenance and positive-interaction gates.
+- Preserves class/feat/tree decisions, historical model bytes, original captures and published snapshots. Corrects the earlier claim that both original Coldlight crafts were preserved, keeps crafting and availability cautions visible, and separates the historical Queen BASIC and old optimizer records from current guidance.
+- Adds exact predecessor-preservation and new current-manifest/rendering/evidence regression checks. Internal tests, browser checks, PR review, merge and deployment are separate receipts; this entry alone asserts none of their outcomes.
+
 ## Build 11-09-26.4
 - Corrects the exact ML36 Diamond of Spot +22 bonus type from Enhancement to Competence in current Guide explanations, the selected ledger and generated audit. Narrows the broad skill-diamond type claim without classifying other variants.
 - Records the [transmitted own-item excerpt and existing normalized Competence rule](evidence/spot-diamond-type/README.md), including missing original item bytes and observation context. Same-type Competence bonuses use the highest; no mixed-type Spot total or final skill gain is asserted. The component remains unknown and excluded from subtotals.

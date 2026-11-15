@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 from test_lamordia_handling import Document, norm
 from test_endgame_evidence import validate_kit, validate_claims
+from wisdom_preservation import predecessor_index
 
 ROOT = Path(__file__).resolve().parents[1]
 FIX = ROOT / 'tools/fixtures/endgame-evidence'
@@ -41,7 +42,7 @@ def validate_supplement(ledger, html):
 
 class FreshEndgameEvidenceTests(unittest.TestCase):
     def setUp(self):
-        self.html = (ROOT / 'index.html').read_text()
+        self.html = predecessor_index()
         self.path = FIX / 'fresh/wiki-live-audit-2026-11-05.json'
         self.data = self.path.read_bytes()
         self.ledger = json.loads(self.data)

@@ -6,11 +6,17 @@ from pathlib import Path
 import unittest
 
 import stacking_audit as audit
-from build_stacking_audit import summary
+from wisdom_preservation import (historical_renderer, predecessor_index,
+                                predecessor_ledger, predecessor_file_text,
+                                predecessor_file_bytes)
 
 ROOT = Path(__file__).resolve().parents[1]
 SCOPE = json.loads((ROOT/'tools/fixtures/editorial-comparison-cleanup/scope.json').read_text())
 BASELINE_SHA = '2aef272d53307beab05f63a557397be744b360f3fcb91ca5261274a0037f5aa3'
+
+
+def summary(data):
+    return historical_renderer().summary(data)
 
 
 def restore_exact(text, changes):
@@ -38,13 +44,13 @@ def validate_current(html):
 
 class EditorialComparisonCleanupTests(unittest.TestCase):
     def test_exact_editorial_scope_preserves_history_choices_numbers_and_links(self):
-        validate_current((ROOT/'index.html').read_text())
+        validate_current(predecessor_index())
         for path, expected in SCOPE['unchanged_inputs'].items():
             with self.subTest(path=path):
-                self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), expected)
+                self.assertEqual(hashlib.sha256(predecessor_file_bytes(path)).hexdigest(), expected)
 
     def test_restored_stale_claim_and_unrelated_changes_are_rejected(self):
-        html = (ROOT/'index.html').read_text()
+        html = predecessor_index()
         rule = SCOPE['reviewed_replacements'][4]
         for before, after in (
             (rule['after'], rule['before']),
@@ -60,13 +66,13 @@ class EditorialComparisonCleanupTests(unittest.TestCase):
                 validate_current(html.replace(before, after))
 
     def test_generator_changes_are_only_the_reviewed_wording(self):
-        text = (ROOT/'tools/build_stacking_audit.py').read_text()
+        text = predecessor_file_text('tools/build_stacking_audit.py')
         self.assertEqual(len(SCOPE['generator_replacements']), 3)
         restored = restore_exact(text, SCOPE['generator_replacements'])
         self.assertEqual(hashlib.sha256(restored.encode()).hexdigest(), SCOPE['baseline_generator_sha256'])
 
     def test_goggles_summary_keeps_evidence_gate_without_old_cloak_comparison(self):
-        data = audit.load()
+        data = predecessor_ledger()
         rendered = summary(data)
         self.assertIn('Goggles provide the selected 9% Enhancement Doubleshot.', rendered)
         # Losing provenance must select the existing unknown-input branch, not certify a source.

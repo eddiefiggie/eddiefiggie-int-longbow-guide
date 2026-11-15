@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import unittest
+from wisdom_preservation import predecessor_index
 
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
@@ -56,7 +57,7 @@ def validate_selection(html):
 class FixedSelectionWordingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.html = (ROOT/'index.html').read_text()
+        cls.html = predecessor_index()
 
     def test_current_selection_and_exact_published_baseline(self):
         validate_selection(self.html)

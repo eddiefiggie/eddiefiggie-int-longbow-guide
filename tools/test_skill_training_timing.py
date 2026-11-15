@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import re
 import unittest
+from wisdom_preservation import predecessor_index
 
 from test_early_xp import visible_nodes, visible_text
 from test_lamordia_handling import Document, norm
@@ -105,7 +106,7 @@ def validate_training(html):
 class SkillTrainingTimingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.html = (ROOT/'index.html').read_text()
+        cls.html = predecessor_index()
 
     def test_current_steps_and_exact_prior_release_preserved(self):
         validate_training(self.html)

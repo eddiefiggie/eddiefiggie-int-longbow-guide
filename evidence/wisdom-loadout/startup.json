@@ -1,0 +1,26 @@
+{
+  "task": "Update the guide and ranked affixes from the completed Wisdom-priority loadout",
+  "user_authorization": "lets update the guide and the affixes with priority with the data coming from the loadout.",
+  "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+  "source_ref": "main",
+  "immutable_base_sha": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+  "initial_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+  "initial_local_branch": "main",
+  "initial_worktree_clean": true,
+  "local_inspection": "git status --short --branch; git rev-parse HEAD; git remote -v before editing",
+  "connected_remote_inspection": "GitHub fetch_commit(main) returned 5ded199eadbade29dcdb0c1eccfad4758a65c328, merge of PR46",
+  "startup_gate": "PASS: local repository identity, initial HEAD, clean state and connected remote main agree",
+  "allowed_working_branch": "feat/wisdom-loadout-priorities",
+  "selected_loadout": "artifact-wisdom-canonical-spot-luck.json",
+  "selected_loadout_sha256": "37e612b60744e9fb104fdfdc39295c88973568ba3affbd0646c8fe1eb6e73a4d",
+  "optional_ring_dexterity_13": "Separate provisional choice; not part of the selected primary recipe or certified totals",
+  "scope": [
+    "One source record for the current endgame equipment, augment/craft recipe, achieved affixes and exact priority order",
+    "Reconcile affected current-guide summaries, evidence boundaries, generated outputs and tests",
+    "Preserve prior snapshots, original source captures, class/feat/tree choices and historical bow-model bytes",
+    "Run internal tests and review the exact resulting diff before any publication decision"
+  ],
+  "release_limit": "This implementation receipt does not itself authorize bypassing evidence gates, protections, merge approval or publication checks. No merge or publication is performed by this record.",
+  "observed_date": "2026-11-15",
+  "timestamp_limit": "No exact timestamp was captured for the startup commands; the date is the task's client date, not a fabricated source-observation time."
+}

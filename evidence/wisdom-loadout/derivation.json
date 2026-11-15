@@ -1,0 +1,3729 @@
+{
+  "schema": "wisdom-derivation-record-v1",
+  "record_kind": "Derived audit summaries and exact recipe changes. Arithmetic and construction checks are not game-mechanics certification.",
+  "origins": [
+    {
+      "file": "analysis_v3/artifact-wisdom-canonical-spot-luck-independent-review.json",
+      "sha256": "2a671af1380604c5854f593298dd7efda17d2b0ec738c0d31d38dfa54dbd9fec"
+    },
+    {
+      "file": "analysis_v3/three_way_comparison.json",
+      "sha256": "fcc92c1021749bbbd9450a23cced7f976d502c0d9194d4066639918c638548c1"
+    },
+    {
+      "file": "analysis_v3/recipe_delta_record.json",
+      "sha256": "6be7ad2705c2b23d1edafa8cb075b10629dad7505e8c7e768e989a6fb6e7f9f1"
+    },
+    {
+      "file": "analysis_v3/practical_derivative_summary.json",
+      "sha256": "dd5315dbad43d96736ecbfedb23216e0e42dfaec4a3413df17979a5d0ac83ec3"
+    }
+  ],
+  "independent_review": {
+    "passed": true,
+    "check_count": 373,
+    "problems": [],
+    "warnings": [],
+    "artifact_count": 1,
+    "socket_count": 34,
+    "occupied": 34,
+    "floors": [
+      {
+        "stat": "Constitution",
+        "minimum": 32,
+        "rawAchieved": 32,
+        "pass": true
+      },
+      {
+        "stat": "Physical Sheltering",
+        "minimum": 133,
+        "rawAchieved": 133,
+        "pass": true
+      },
+      {
+        "stat": "Magical Sheltering",
+        "minimum": 73,
+        "rawAchieved": 73,
+        "pass": true
+      },
+      {
+        "stat": "Fortification",
+        "minimum": 200,
+        "rawAchieved": 226,
+        "pass": true
+      },
+      {
+        "stat": "Freedom of Movement",
+        "minimum": 1,
+        "rawAchieved": 1,
+        "pass": true
+      },
+      {
+        "stat": "Immunity to Fear",
+        "minimum": 1,
+        "rawAchieved": 1,
+        "pass": true
+      },
+      {
+        "stat": "Blindness Immunity",
+        "minimum": 1,
+        "rawAchieved": 1,
+        "pass": true
+      },
+      {
+        "stat": "Improved Deception",
+        "minimum": 1,
+        "rawAchieved": 5,
+        "pass": true
+      }
+    ],
+    "target_checks": [
+      {
+        "stat": "Greater Marksmanship",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Sight Beyond Sight",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Relentless Fury",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Bloodrage",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Alchemical Fire Attunement",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Fiery",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Legendary Salt",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Improved Deception",
+        "reported": 1,
+        "raw": 5,
+        "capped": 1
+      },
+      {
+        "stat": "Ranged Alacrity",
+        "reported": 20,
+        "raw": 20,
+        "capped": 20
+      },
+      {
+        "stat": "Doubleshot",
+        "reported": 35,
+        "raw": 35,
+        "capped": 35
+      },
+      {
+        "stat": "Ranged Power",
+        "reported": 44,
+        "raw": 44,
+        "capped": 44
+      },
+      {
+        "stat": "Intelligence",
+        "reported": 37,
+        "raw": 37,
+        "capped": 37
+      },
+      {
+        "stat": "Seeker",
+        "reported": 29,
+        "raw": 29,
+        "capped": 29
+      },
+      {
+        "stat": "Armor-Piercing",
+        "reported": 76,
+        "raw": 76,
+        "capped": 76
+      },
+      {
+        "stat": "Deadly",
+        "reported": 20,
+        "raw": 20,
+        "capped": 20
+      },
+      {
+        "stat": "Imbue Dice",
+        "reported": 1,
+        "raw": 1,
+        "capped": 1
+      },
+      {
+        "stat": "Sneak Attack Dice",
+        "reported": 3,
+        "raw": 3,
+        "capped": 3
+      },
+      {
+        "stat": "Sneak Attack Damage",
+        "reported": 3,
+        "raw": 3,
+        "capped": 3
+      },
+      {
+        "stat": "Constitution",
+        "reported": 32,
+        "raw": 32,
+        "capped": 32
+      },
+      {
+        "stat": "Physical Sheltering",
+        "reported": 133,
+        "raw": 133,
+        "capped": 133
+      },
+      {
+        "stat": "Magical Sheltering",
+        "reported": 73,
+        "raw": 73,
+        "capped": 73
+      },
+      {
+        "stat": "Fortification",
+        "reported": 226,
+        "raw": 226,
+        "capped": 226
+      },
+      {
+        "stat": "False Life",
+        "reported": 108,
+        "raw": 108,
+        "capped": 108
+      },
+      {
+        "stat": "Healing Amplification",
+        "reported": 63,
+        "raw": 63,
+        "capped": 63
+      },
+      {
+        "stat": "Dodge",
+        "reported": 16,
+        "raw": 16,
+        "capped": 16
+      },
+      {
+        "stat": "Reflex Save",
+        "reported": 26,
+        "raw": 26,
+        "capped": 26
+      },
+      {
+        "stat": "Fortitude Save",
+        "reported": 27,
+        "raw": 27,
+        "capped": 27
+      },
+      {
+        "stat": "Will Save",
+        "reported": 26,
+        "raw": 26,
+        "capped": 26
+      },
+      {
+        "stat": "Wisdom",
+        "reported": 18,
+        "raw": 18,
+        "capped": 18
+      },
+      {
+        "stat": "Accuracy",
+        "reported": 33,
+        "raw": 33,
+        "capped": 33
+      },
+      {
+        "stat": "Combustion",
+        "reported": 142,
+        "raw": 142,
+        "capped": 142
+      },
+      {
+        "stat": "Damage to helpless enemies",
+        "reported": 0,
+        "raw": 0,
+        "capped": 0
+      }
+    ],
+    "source_sensitivity": {
+      "skullConstitution": {
+        "catalogCase": {
+          "baseline": 32,
+          "candidate": 32,
+          "delta": 0
+        },
+        "itemPageCase": {
+          "baseline": 33,
+          "candidate": 33,
+          "delta": 0
+        },
+        "candidateUsesSkullCon": true,
+        "note": "Two source cases, not a silent data correction. Candidate only gains the extra point if Skull CON is selected and +16 improves its Enhancement bucket."
+      },
+      "skullAllAbilityOptions": {
+        "selectedCandidateAbility": "Constitution",
+        "retainedOwnPageRevision": 714102,
+        "source": "tools/fixtures/endgame-evidence/retained/fresh-endgame-a.json[0]: all six Enhancement ability choices are +16",
+        "cases": [
+          {
+            "stat": "Constitution",
+            "catalog": {
+              "baseline": 32,
+              "candidate": 32,
+              "delta": 0
+            },
+            "itemPage": {
+              "baseline": 33,
+              "candidate": 33,
+              "delta": 0
+            }
+          }
+        ],
+        "note": "The conflict is not CON-only. If the candidate selects Skull DEX, the own-page case improves candidate DEX, while only baseline CON improves. Neither source case changes the production dataset."
+      }
+    },
+    "limitations": [
+      "Independent code/math and placement checks, not an independent game-data harvest.",
+      "Own-page retained evidence corroborates supported values only; uncovered and conditional mechanics require source-ledger review.",
+      "No filigree effects, full character sheet, proc uptime, weapon crit profile, or actual DPS simulation.",
+      "Additional craft families and dynamic native-set memberships are flagged rather than silently certified."
+    ]
+  },
+  "manual_adjustments": {
+    "kind": "Manual practical derivative of the completed Wisdom search, not an additional solve",
+    "solverExecuted": false,
+    "sourceProductionRun": "analysis_v3/artifact-wisdom.json",
+    "sourceProductionRunSha256": "6cba0f33765b8c24b19179716e3240147dae98ac047fc53effbecc18470ce6bd",
+    "sourceProductionStatus": "optimal",
+    "sourceProductionPasses": 45,
+    "sourceProductionSeconds": 271.998,
+    "comparisonParent": "analysis_v2/artifact-guarded-deception-canonical-spot-luck.json",
+    "comparisonParentSha256": "52667f00f114cfee1696021460fc78218aadc340636d0b385cf9d7635b4dde7e",
+    "sameBucketRotations": [
+      {
+        "family": "ncPlaced",
+        "host": "Legendary Glabrezu Claw Pendant",
+        "slot": "Insightful Ability Score",
+        "from": "Constitution",
+        "to": "Intelligence",
+        "type": "Insight",
+        "value": 7
+      },
+      {
+        "family": "ncPlaced",
+        "host": "The Queen of Rot",
+        "slot": "Insightful Ability Score",
+        "from": "Intelligence",
+        "to": "Constitution",
+        "type": "Insight",
+        "value": 7
+      },
+      {
+        "family": "ncPlaced",
+        "host": "Legendary Burrowing Claws",
+        "slot": "Ability Score",
+        "from": "Intelligence",
+        "to": "Wisdom",
+        "type": "Enhancement",
+        "value": 15
+      },
+      {
+        "family": "vikPlaced",
+        "host": "Legendary Coldlight Runners",
+        "slot": "Melancholic",
+        "from": "Wisdom",
+        "to": "Intelligence",
+        "type": "Enhancement",
+        "value": 15
+      },
+      {
+        "family": "vikPlaced",
+        "host": "Legendary Coldlight Runners",
+        "slot": "Dolorous",
+        "from": "Intelligence",
+        "to": "Constitution",
+        "type": "Quality",
+        "value": 3
+      },
+      {
+        "family": "slaversPlaced",
+        "host": "Legendary Chains",
+        "slot": "Bonus",
+        "from": "Constitution",
+        "to": "Intelligence",
+        "type": "Quality",
+        "value": 3
+      }
+    ],
+    "rotationProof": {
+      "allRawTotalsEqual": true,
+      "allTypedBucketsEqual": true,
+      "allPresenceFlagsEqual": true
+    },
+    "utilityChangesFromRawSolve": [
+      {
+        "remove": "Diamond of Festive Constitution +2",
+        "add": "Sapphire of Good Luck +3",
+        "effect": "CON−2, all saves and direct skills+3"
+      },
+      {
+        "add": "Slavers Extra: Competence Spot20 on Legendary Chains",
+        "effect": "Direct Spot+20, no ordinary socket displacement; exact20 remains source-provisional"
+      },
+      {
+        "change": "Use the prior practical ordinary/set augment host placements",
+        "effect": "Same item identities, same augment sets, same typed contributions apart from the explicit Luck substitution"
+      }
+    ],
+    "differencesFromPriorPractical": [
+      "Burrowing Claws EnhancementDEX15→EnhancementWIS15; every other selected craft, ordinary augment and set-augment placement is identical."
+    ],
+    "guideOwnershipCautions": [
+      "A finished DEX Burrowing Claws pair cannot be changed in place under the retained Nearly Complete rule; obtain another pair and25 Legendary Abyssal Gems for WIS.",
+      "The guide Coldlight Dolorous craft is QualityINT3, whereas the prior practical candidate and this derivative use QualityCON3. Do not claim both original-guide boots crafts are preserved.",
+      "Skull CON, Queen InsightCON, boots EnhancementINT and all four Calamitous crafts retain the guide selections. Selected recipe preservation does not establish ownership."
+    ],
+    "sourceSensitivity": "SkullCON uses model15; retained own-page16 case adds1 CON to guide, prior and this canonical candidate. No catalog patch is made.",
+    "notOptimalClaim": "The original solve prioritizes CON34; this explicit practical variant trades2CON for3Luck saves/skills as in the prior recommendation. It is not a new lexicographic optimum."
+  },
+  "recipe_changes": [
+    {
+      "id": "raw-to-practical",
+      "itemChanges": [],
+      "craftChanges": [
+        {
+          "identity": [
+            "Legendary Burrowing Claws",
+            "nearly_complete",
+            "Ability Score"
+          ],
+          "before": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Wisdom",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Bonus"
+          ],
+          "before": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Bonus",
+            "name": "Constitution +3 (Quality)",
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Bonus",
+            "name": "Intelligence +3 (Quality)",
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Extra"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Extra",
+            "name": "Spot +20 (Competence)",
+            "affixes": [
+              {
+                "stat": "Spot",
+                "type": "Competence",
+                "value": 20
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Coldlight Runners",
+            "viktranium",
+            "Dolorous"
+          ],
+          "before": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Intelligence (legendary)",
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Constitution (legendary)",
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Coldlight Runners",
+            "viktranium",
+            "Melancholic"
+          ],
+          "before": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Melancholic",
+            "name": "Melancholic Wisdom (legendary)",
+            "affixes": [
+              {
+                "stat": "Wisdom",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Melancholic",
+            "name": "Melancholic Intelligence (legendary)",
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Glabrezu Claw Pendant",
+            "nearly_complete",
+            "Insightful Ability Score"
+          ],
+          "before": {
+            "host": "Legendary Glabrezu Claw Pendant",
+            "family": "nearly_complete",
+            "slot": "Insightful Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Glabrezu Claw Pendant",
+            "family": "nearly_complete",
+            "slot": "Insightful Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "The Queen of Rot",
+            "nearly_complete",
+            "Insightful Ability Score"
+          ],
+          "before": {
+            "host": "The Queen of Rot",
+            "family": "nearly_complete",
+            "slot": "Insightful Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          },
+          "after": {
+            "host": "The Queen of Rot",
+            "family": "nearly_complete",
+            "slot": "Insightful Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          }
+        }
+      ],
+      "ordinaryAugmentChanges": {
+        "removed": [
+          "Diamond of Festive Constitution +2"
+        ],
+        "added": [
+          "Sapphire of Good Luck +3"
+        ]
+      },
+      "setAugmentPlacementChanged": true
+    },
+    {
+      "id": "prior-artifact-to-practical",
+      "itemChanges": [],
+      "craftChanges": [
+        {
+          "identity": [
+            "Legendary Burrowing Claws",
+            "nearly_complete",
+            "Ability Score"
+          ],
+          "before": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Dexterity",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Wisdom",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          }
+        }
+      ],
+      "ordinaryAugmentChanges": {
+        "removed": [],
+        "added": []
+      },
+      "setAugmentPlacementChanged": false
+    },
+    {
+      "id": "guide-to-practical",
+      "itemChanges": [
+        {
+          "slot": "Belt",
+          "before": [
+            "The Unbreakable Cord"
+          ],
+          "after": [
+            "Legendary Chains"
+          ]
+        },
+        {
+          "slot": "Bracers",
+          "before": [
+            "Bracers of the Battlerager"
+          ],
+          "after": [
+            "Yeenoghu's Reign"
+          ]
+        },
+        {
+          "slot": "Necklace",
+          "before": [
+            "Legendary Pendant of Subtle Pain"
+          ],
+          "after": [
+            "Legendary Glabrezu Claw Pendant"
+          ]
+        },
+        {
+          "slot": "Ring",
+          "before": [
+            "Legendary Ring of Unnatural Accuracy",
+            "Legendary The Earth and the Sky"
+          ],
+          "after": [
+            "Legendary Celestial Sapphire Ring",
+            "Legendary Ring of Unnatural Accuracy"
+          ]
+        }
+      ],
+      "craftChanges": [
+        {
+          "identity": [
+            "Bracers of the Battlerager",
+            "seal",
+            "Undeath"
+          ],
+          "before": {
+            "host": "Bracers of the Battlerager",
+            "family": "seal",
+            "slot": "Undeath",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          },
+          "after": null
+        },
+        {
+          "identity": [
+            "Legendary Burrowing Claws",
+            "nearly_complete",
+            "Ability Score"
+          ],
+          "before": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Dexterity",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Wisdom",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Bonus"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Bonus",
+            "name": "Intelligence +3 (Quality)",
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Extra"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Extra",
+            "name": "Spot +20 (Competence)",
+            "affixes": [
+              {
+                "stat": "Spot",
+                "type": "Competence",
+                "value": 20
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Prefix"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Prefix",
+            "name": "Fortification +142 (Enhancement)",
+            "affixes": [
+              {
+                "stat": "Fortification",
+                "type": "Enhancement",
+                "value": 142
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Suffix"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Suffix",
+            "name": "Combustion +142 (Equipment)",
+            "affixes": [
+              {
+                "stat": "Combustion",
+                "type": "Equipment",
+                "value": 142
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Coldlight Runners",
+            "viktranium",
+            "Dolorous"
+          ],
+          "before": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Intelligence (legendary)",
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Constitution (legendary)",
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Glabrezu Claw Pendant",
+            "nearly_complete",
+            "Insightful Ability Score"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Glabrezu Claw Pendant",
+            "family": "nearly_complete",
+            "slot": "Insightful Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "The Unbreakable Cord",
+            "viktranium",
+            "Dolorous"
+          ],
+          "before": {
+            "host": "The Unbreakable Cord",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Constitution (legendary)",
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": null
+        },
+        {
+          "identity": [
+            "The Unbreakable Cord",
+            "viktranium",
+            "Woeful"
+          ],
+          "before": {
+            "host": "The Unbreakable Cord",
+            "family": "viktranium",
+            "slot": "Woeful",
+            "name": "Woeful: Quality Seeker",
+            "affixes": [
+              {
+                "stat": "Seeker",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": null
+        }
+      ],
+      "ordinaryAugmentChanges": {
+        "removed": [
+          "Diamond of Festive Constitution +2",
+          "Diamond of Festive Dexterity +2",
+          "Diamond of Insightful Dexterity +5",
+          "Diamond of Spot +22",
+          "Essence of the Epic Litany of the Dead",
+          "Lunar Gem of Constitution (Legendary)",
+          "Sapphire of Defense +40",
+          "Sapphire of Resistance +12",
+          "Solar Gem of Doubleshot (Legendary)",
+          "Solar Gem of Sneak Attack Dice (Legendary)"
+        ],
+        "added": [
+          "Emerald of Arcane Empowerment",
+          "Lunar Gem of Weapon Damage (Legendary)",
+          "Solar Gem of Constitution (Legendary)",
+          "Solar Gem of Sneak Attack Damage (Legendary)"
+        ]
+      },
+      "setAugmentPlacementChanged": null
+    },
+    {
+      "id": "practical-to-optional-ring-DEX13",
+      "itemChanges": [],
+      "craftChanges": [
+        {
+          "identity": [
+            "Legendary Celestial Sapphire Ring",
+            "nearly_complete",
+            "Nearly Finished"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Celestial Sapphire Ring",
+            "family": "nearly_complete",
+            "slot": "Nearly Finished",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Dexterity",
+                "type": "Enhancement",
+                "value": 13
+              }
+            ]
+          }
+        }
+      ],
+      "ordinaryAugmentChanges": {
+        "removed": [],
+        "added": []
+      },
+      "setAugmentPlacementChanged": false
+    },
+    {
+      "id": "guide-to-optional-ring-DEX13",
+      "itemChanges": [
+        {
+          "slot": "Belt",
+          "before": [
+            "The Unbreakable Cord"
+          ],
+          "after": [
+            "Legendary Chains"
+          ]
+        },
+        {
+          "slot": "Bracers",
+          "before": [
+            "Bracers of the Battlerager"
+          ],
+          "after": [
+            "Yeenoghu's Reign"
+          ]
+        },
+        {
+          "slot": "Necklace",
+          "before": [
+            "Legendary Pendant of Subtle Pain"
+          ],
+          "after": [
+            "Legendary Glabrezu Claw Pendant"
+          ]
+        },
+        {
+          "slot": "Ring",
+          "before": [
+            "Legendary Ring of Unnatural Accuracy",
+            "Legendary The Earth and the Sky"
+          ],
+          "after": [
+            "Legendary Celestial Sapphire Ring",
+            "Legendary Ring of Unnatural Accuracy"
+          ]
+        }
+      ],
+      "craftChanges": [
+        {
+          "identity": [
+            "Bracers of the Battlerager",
+            "seal",
+            "Undeath"
+          ],
+          "before": {
+            "host": "Bracers of the Battlerager",
+            "family": "seal",
+            "slot": "Undeath",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          },
+          "after": null
+        },
+        {
+          "identity": [
+            "Legendary Burrowing Claws",
+            "nearly_complete",
+            "Ability Score"
+          ],
+          "before": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Dexterity",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Burrowing Claws",
+            "family": "nearly_complete",
+            "slot": "Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Wisdom",
+                "type": "Enhancement",
+                "value": 15
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Celestial Sapphire Ring",
+            "nearly_complete",
+            "Nearly Finished"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Celestial Sapphire Ring",
+            "family": "nearly_complete",
+            "slot": "Nearly Finished",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Dexterity",
+                "type": "Enhancement",
+                "value": 13
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Bonus"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Bonus",
+            "name": "Intelligence +3 (Quality)",
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Extra"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Extra",
+            "name": "Spot +20 (Competence)",
+            "affixes": [
+              {
+                "stat": "Spot",
+                "type": "Competence",
+                "value": 20
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Prefix"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Prefix",
+            "name": "Fortification +142 (Enhancement)",
+            "affixes": [
+              {
+                "stat": "Fortification",
+                "type": "Enhancement",
+                "value": 142
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Chains",
+            "slavers",
+            "Suffix"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Chains",
+            "family": "slavers",
+            "slot": "Suffix",
+            "name": "Combustion +142 (Equipment)",
+            "affixes": [
+              {
+                "stat": "Combustion",
+                "type": "Equipment",
+                "value": 142
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Coldlight Runners",
+            "viktranium",
+            "Dolorous"
+          ],
+          "before": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Intelligence (legendary)",
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": {
+            "host": "Legendary Coldlight Runners",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Constitution (legendary)",
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "Legendary Glabrezu Claw Pendant",
+            "nearly_complete",
+            "Insightful Ability Score"
+          ],
+          "before": null,
+          "after": {
+            "host": "Legendary Glabrezu Claw Pendant",
+            "family": "nearly_complete",
+            "slot": "Insightful Ability Score",
+            "name": null,
+            "affixes": [
+              {
+                "stat": "Intelligence",
+                "type": "Insight",
+                "value": 7
+              }
+            ]
+          }
+        },
+        {
+          "identity": [
+            "The Unbreakable Cord",
+            "viktranium",
+            "Dolorous"
+          ],
+          "before": {
+            "host": "The Unbreakable Cord",
+            "family": "viktranium",
+            "slot": "Dolorous",
+            "name": "Dolorous Quality Constitution (legendary)",
+            "affixes": [
+              {
+                "stat": "Constitution",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": null
+        },
+        {
+          "identity": [
+            "The Unbreakable Cord",
+            "viktranium",
+            "Woeful"
+          ],
+          "before": {
+            "host": "The Unbreakable Cord",
+            "family": "viktranium",
+            "slot": "Woeful",
+            "name": "Woeful: Quality Seeker",
+            "affixes": [
+              {
+                "stat": "Seeker",
+                "type": "Quality",
+                "value": 3
+              }
+            ]
+          },
+          "after": null
+        }
+      ],
+      "ordinaryAugmentChanges": {
+        "removed": [
+          "Diamond of Festive Constitution +2",
+          "Diamond of Festive Dexterity +2",
+          "Diamond of Insightful Dexterity +5",
+          "Diamond of Spot +22",
+          "Essence of the Epic Litany of the Dead",
+          "Lunar Gem of Constitution (Legendary)",
+          "Sapphire of Defense +40",
+          "Sapphire of Resistance +12",
+          "Solar Gem of Doubleshot (Legendary)",
+          "Solar Gem of Sneak Attack Dice (Legendary)"
+        ],
+        "added": [
+          "Emerald of Arcane Empowerment",
+          "Lunar Gem of Weapon Damage (Legendary)",
+          "Solar Gem of Constitution (Legendary)",
+          "Solar Gem of Sneak Attack Damage (Legendary)"
+        ]
+      },
+      "setAugmentPlacementChanged": null
+    }
+  ],
+  "coldlight_correction": "Guide uses Melancholic INT15 and Dolorous QualityINT3. Prior artifact and both practical Wisdom recipes use Melancholic INT15 and Dolorous QualityCON3; QualityINT3 moves to Chains. Therefore only the EnhancementINT craft, not both boots crafts, is preserved relative to the guide. This corrects earlier v2 prose metadata without modifying the v2 evidence.",
+  "source_cautions": [
+    "Both variants are manual derivatives of one actual completed45-pass Wisdom run, not additional solves.",
+    "Finished Burrowing Claws DEX→WIS requires another copy under the retained irreversible Nearly Complete rule.",
+    "Optional ringDEX13 is catalog-supported construction, not independently exact-magnitude-certified.",
+    "All prior Queen/Skull/five exact craft-source limitations remain.",
+    "Chains Green socket must first be unlocked with the Legendary Slaver's Green Augment Slot upgrade.",
+    "No ownership, drop certainty, installed filigree state, global optimum, exact live skill/save totals or total-DPS improvement is certified."
+  ],
+  "comparison": {
+    "rows": [
+      {
+        "stat": "Wisdom",
+        "guide-queen-basic": 3,
+        "prior-artifact-luck": 3,
+        "wisdom-candidate": 18
+      },
+      {
+        "stat": "Dexterity",
+        "guide-queen-basic": 28,
+        "prior-artifact-luck": 21,
+        "wisdom-candidate": 6
+      },
+      {
+        "stat": "Spot",
+        "guide-queen-basic": 29,
+        "prior-artifact-luck": 27,
+        "wisdom-candidate": 27
+      },
+      {
+        "stat": "Will Save",
+        "guide-queen-basic": 26,
+        "prior-artifact-luck": 26,
+        "wisdom-candidate": 26
+      },
+      {
+        "stat": "Reflex Save",
+        "guide-queen-basic": 26,
+        "prior-artifact-luck": 26,
+        "wisdom-candidate": 26
+      },
+      {
+        "stat": "Fortitude Save",
+        "guide-queen-basic": 27,
+        "prior-artifact-luck": 27,
+        "wisdom-candidate": 27
+      },
+      {
+        "stat": "Intelligence",
+        "guide-queen-basic": 37,
+        "prior-artifact-luck": 37,
+        "wisdom-candidate": 37
+      },
+      {
+        "stat": "Constitution",
+        "guide-queen-basic": 32,
+        "prior-artifact-luck": 32,
+        "wisdom-candidate": 32
+      },
+      {
+        "stat": "Ranged Power",
+        "guide-queen-basic": 44,
+        "prior-artifact-luck": 44,
+        "wisdom-candidate": 44
+      },
+      {
+        "stat": "Doubleshot",
+        "guide-queen-basic": 35,
+        "prior-artifact-luck": 35,
+        "wisdom-candidate": 35
+      },
+      {
+        "stat": "Seeker",
+        "guide-queen-basic": 29,
+        "prior-artifact-luck": 29,
+        "wisdom-candidate": 29
+      },
+      {
+        "stat": "Armor-Piercing",
+        "guide-queen-basic": 76,
+        "prior-artifact-luck": 76,
+        "wisdom-candidate": 76
+      },
+      {
+        "stat": "Deadly",
+        "guide-queen-basic": 12,
+        "prior-artifact-luck": 20,
+        "wisdom-candidate": 20
+      },
+      {
+        "stat": "Accuracy",
+        "guide-queen-basic": 33,
+        "prior-artifact-luck": 33,
+        "wisdom-candidate": 33
+      },
+      {
+        "stat": "Imbue Dice",
+        "guide-queen-basic": 0,
+        "prior-artifact-luck": 1,
+        "wisdom-candidate": 1
+      },
+      {
+        "stat": "Sneak Attack Dice",
+        "guide-queen-basic": 3,
+        "prior-artifact-luck": 3,
+        "wisdom-candidate": 3
+      },
+      {
+        "stat": "Sneak Attack Damage",
+        "guide-queen-basic": 0,
+        "prior-artifact-luck": 3,
+        "wisdom-candidate": 3
+      },
+      {
+        "stat": "Combustion",
+        "guide-queen-basic": 0,
+        "prior-artifact-luck": 142,
+        "wisdom-candidate": 142
+      },
+      {
+        "stat": "Physical Sheltering",
+        "guide-queen-basic": 133,
+        "prior-artifact-luck": 133,
+        "wisdom-candidate": 133
+      },
+      {
+        "stat": "Magical Sheltering",
+        "guide-queen-basic": 73,
+        "prior-artifact-luck": 73,
+        "wisdom-candidate": 73
+      },
+      {
+        "stat": "Fortification",
+        "guide-queen-basic": 286,
+        "prior-artifact-luck": 226,
+        "wisdom-candidate": 226
+      },
+      {
+        "stat": "False Life",
+        "guide-queen-basic": 108,
+        "prior-artifact-luck": 108,
+        "wisdom-candidate": 108
+      },
+      {
+        "stat": "Healing Amplification",
+        "guide-queen-basic": 63,
+        "prior-artifact-luck": 63,
+        "wisdom-candidate": 63
+      },
+      {
+        "stat": "Dodge",
+        "guide-queen-basic": 16,
+        "prior-artifact-luck": 16,
+        "wisdom-candidate": 16
+      }
+    ],
+    "comparisons": [
+      {
+        "from": "guide-queen-basic",
+        "to": "prior-artifact-luck",
+        "allNumericRows": [
+          {
+            "stat": "Accuracy",
+            "from": 33,
+            "to": 33,
+            "delta": 0
+          },
+          {
+            "stat": "Acid Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Action Boost Charges",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Armor Class",
+            "from": 56,
+            "to": 56,
+            "delta": 0
+          },
+          {
+            "stat": "Armor-Piercing",
+            "from": 76,
+            "to": 76,
+            "delta": 0
+          },
+          {
+            "stat": "Balance",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Bluff",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Charisma",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Combustion",
+            "from": 0,
+            "to": 142,
+            "delta": 142
+          },
+          {
+            "stat": "Concentration",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Constitution",
+            "from": 32,
+            "to": 32,
+            "delta": 0
+          },
+          {
+            "stat": "Corrosion",
+            "from": 30,
+            "to": 0,
+            "delta": -30
+          },
+          {
+            "stat": "Deadly",
+            "from": 12,
+            "to": 20,
+            "delta": 8
+          },
+          {
+            "stat": "Dexterity",
+            "from": 28,
+            "to": 21,
+            "delta": -7
+          },
+          {
+            "stat": "Diplomacy",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Disable Device",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Distant Diversion",
+            "from": 22,
+            "to": 22,
+            "delta": 0
+          },
+          {
+            "stat": "Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Dodge",
+            "from": 16,
+            "to": 16,
+            "delta": 0
+          },
+          {
+            "stat": "Doubleshot",
+            "from": 35,
+            "to": 35,
+            "delta": 0
+          },
+          {
+            "stat": "Doublestrike",
+            "from": 21,
+            "to": 36,
+            "delta": 15
+          },
+          {
+            "stat": "Electric Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Enhancement Bonus (Armor)",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Enhancement Bonus (Weapon)",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "False Life",
+            "from": 108,
+            "to": 108,
+            "delta": 0
+          },
+          {
+            "stat": "Fortification",
+            "from": 286,
+            "to": 226,
+            "delta": -60
+          },
+          {
+            "stat": "Fortitude Save",
+            "from": 27,
+            "to": 27,
+            "delta": 0
+          },
+          {
+            "stat": "Haggle",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Heal",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Healing Amplification",
+            "from": 63,
+            "to": 63,
+            "delta": 0
+          },
+          {
+            "stat": "Hide",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Imbue Dice",
+            "from": 0,
+            "to": 1,
+            "delta": 1
+          },
+          {
+            "stat": "Improved Deception",
+            "from": 21,
+            "to": 5,
+            "delta": -16
+          },
+          {
+            "stat": "Intelligence",
+            "from": 37,
+            "to": 37,
+            "delta": 0
+          },
+          {
+            "stat": "Intimidate",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Jump",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Listen",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Magical Sheltering",
+            "from": 73,
+            "to": 73,
+            "delta": 0
+          },
+          {
+            "stat": "Major Anger",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Max Filigree Slots",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Melee Alacrity",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Melee Power",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Move Silently",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Mystic Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Open Lock",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Perform",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Physical Sheltering",
+            "from": 133,
+            "to": 133,
+            "delta": 0
+          },
+          {
+            "stat": "Ranged Alacrity",
+            "from": 20,
+            "to": 20,
+            "delta": 0
+          },
+          {
+            "stat": "Ranged Power",
+            "from": 44,
+            "to": 44,
+            "delta": 0
+          },
+          {
+            "stat": "Reflex Save",
+            "from": 26,
+            "to": 26,
+            "delta": 0
+          },
+          {
+            "stat": "Repair",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Search",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Seeker",
+            "from": 29,
+            "to": 29,
+            "delta": 0
+          },
+          {
+            "stat": "Shatter",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Sneak Attack Damage",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Sneak Attack Dice",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Spellcraft",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Spot",
+            "from": 29,
+            "to": 27,
+            "delta": -2
+          },
+          {
+            "stat": "Strength",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Stunning",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Swim",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Tumble",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Use Magic Device",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Vertigo",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Will Save",
+            "from": 26,
+            "to": 26,
+            "delta": 0
+          },
+          {
+            "stat": "Wisdom",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          }
+        ],
+        "changedNumericRows": [
+          {
+            "stat": "Acid Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Action Boost Charges",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Combustion",
+            "from": 0,
+            "to": 142,
+            "delta": 142
+          },
+          {
+            "stat": "Corrosion",
+            "from": 30,
+            "to": 0,
+            "delta": -30
+          },
+          {
+            "stat": "Deadly",
+            "from": 12,
+            "to": 20,
+            "delta": 8
+          },
+          {
+            "stat": "Dexterity",
+            "from": 28,
+            "to": 21,
+            "delta": -7
+          },
+          {
+            "stat": "Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Doublestrike",
+            "from": 21,
+            "to": 36,
+            "delta": 15
+          },
+          {
+            "stat": "Electric Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Fortification",
+            "from": 286,
+            "to": 226,
+            "delta": -60
+          },
+          {
+            "stat": "Imbue Dice",
+            "from": 0,
+            "to": 1,
+            "delta": 1
+          },
+          {
+            "stat": "Improved Deception",
+            "from": 21,
+            "to": 5,
+            "delta": -16
+          },
+          {
+            "stat": "Major Anger",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Max Filigree Slots",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Mystic Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Sneak Attack Damage",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Spot",
+            "from": 29,
+            "to": 27,
+            "delta": -2
+          }
+        ],
+        "abilityTranslation": {
+          "status": "Conditional arithmetic, not a full character-sheet prediction or mechanics certification",
+          "wisdomGearDelta": 0,
+          "dexterityGearDelta": -7,
+          "directSpotDelta": -2,
+          "directWillDelta": 0,
+          "modifierCases": [
+            {
+              "fromWholeWisdomParity": "even",
+              "wisdomModifierDelta": 0,
+              "spotIncludingWisdomDelta": -2,
+              "willIncludingWisdomDelta": 0
+            },
+            {
+              "fromWholeWisdomParity": "odd",
+              "wisdomModifierDelta": 0,
+              "spotIncludingWisdomDelta": -2,
+              "willIncludingWisdomDelta": 0
+            }
+          ],
+          "modifierCasesApplyOnlyIf": "No pre-existing same-type source masks any changed Wisdom gear bucket. These are illustrative full-gear-delta cases, not the default live-character prediction.",
+          "fullStackRule": "For each changed ability bonus type t with other applicable source B_t, whole-score change is sum_t(max(newGear_t,B_t)-max(oldGear_t,B_t)). Then apply floor((newWholeScore-10)/2)-floor((oldWholeScore-10)/2). Do not substitute the raw gear-subtotal delta if another source overlaps.",
+          "wisdomTypedChanges": [
+            {
+              "type": "Exceptional",
+              "fromGear": 1,
+              "toGear": 1
+            },
+            {
+              "type": "Profane",
+              "fromGear": 2,
+              "toGear": 2
+            }
+          ],
+          "dexterityTypedChanges": [
+            {
+              "type": "Enhancement",
+              "fromGear": 15,
+              "toGear": 15
+            },
+            {
+              "type": "Exceptional",
+              "fromGear": 1,
+              "toGear": 1
+            },
+            {
+              "type": "Festive",
+              "fromGear": 2,
+              "toGear": 0
+            },
+            {
+              "type": "Insight",
+              "fromGear": 5,
+              "toGear": 0
+            },
+            {
+              "type": "Profane",
+              "fromGear": 2,
+              "toGear": 2
+            },
+            {
+              "type": "Quality",
+              "fromGear": 3,
+              "toGear": 3
+            }
+          ],
+          "wisdomEnhancementExample": "When the only change is Enhancement Wisdom0→15, let E be the already applicable nongear Enhancement Wisdom: actual score increase=max(15,E)-E. It can be smaller than15 or zero.",
+          "dexterityNoOverlapModifierCases": [
+            {
+              "fromWholeDexterityParity": "even",
+              "dexterityModifierDelta": -4
+            },
+            {
+              "fromWholeDexterityParity": "odd",
+              "dexterityModifierDelta": -3
+            }
+          ],
+          "assumptions": [
+            "Same nongear ability contributions, skill ranks and buffs in both cases, but their existing same-type overlap must still be accounted for.",
+            "Wisdom remains the governing ability for Spot and Will; no alternate-stat rule is supplied.",
+            "No item-dependent nongear buff difference, dispel or conditional downtime is inferred."
+          ],
+          "missing": "Actual pre-swap total Wisdom, its parity, and overlapping typed buffs are unknown. The guide starting Wisdom8 is not a complete level36 sheet.",
+          "reflex": "The selected guide has Insightful Reflexes. Preservation is conditional on Intelligence governing Reflex in both kits, as intended by this INT-based guide, and on unchanged nongear contributions. Gear-only INT totals do not establish the full character INT-versus-DEX relationship.",
+          "dexterity": "Balance, Hide, Move Silently, Open Lock and Tumble may lose ability-derived contribution after full same-type-stack reconciliation. AC impact also depends on armor maximum-Dexterity allowance and the full sheet; neither raw gear loss nor modifier loss is automatically final AC loss."
+        }
+      },
+      {
+        "from": "guide-queen-basic",
+        "to": "wisdom-candidate",
+        "allNumericRows": [
+          {
+            "stat": "Accuracy",
+            "from": 33,
+            "to": 33,
+            "delta": 0
+          },
+          {
+            "stat": "Acid Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Action Boost Charges",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Armor Class",
+            "from": 56,
+            "to": 56,
+            "delta": 0
+          },
+          {
+            "stat": "Armor-Piercing",
+            "from": 76,
+            "to": 76,
+            "delta": 0
+          },
+          {
+            "stat": "Balance",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Bluff",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Charisma",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Combustion",
+            "from": 0,
+            "to": 142,
+            "delta": 142
+          },
+          {
+            "stat": "Concentration",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Constitution",
+            "from": 32,
+            "to": 32,
+            "delta": 0
+          },
+          {
+            "stat": "Corrosion",
+            "from": 30,
+            "to": 0,
+            "delta": -30
+          },
+          {
+            "stat": "Deadly",
+            "from": 12,
+            "to": 20,
+            "delta": 8
+          },
+          {
+            "stat": "Dexterity",
+            "from": 28,
+            "to": 6,
+            "delta": -22
+          },
+          {
+            "stat": "Diplomacy",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Disable Device",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Distant Diversion",
+            "from": 22,
+            "to": 22,
+            "delta": 0
+          },
+          {
+            "stat": "Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Dodge",
+            "from": 16,
+            "to": 16,
+            "delta": 0
+          },
+          {
+            "stat": "Doubleshot",
+            "from": 35,
+            "to": 35,
+            "delta": 0
+          },
+          {
+            "stat": "Doublestrike",
+            "from": 21,
+            "to": 36,
+            "delta": 15
+          },
+          {
+            "stat": "Electric Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Enhancement Bonus (Armor)",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Enhancement Bonus (Weapon)",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "False Life",
+            "from": 108,
+            "to": 108,
+            "delta": 0
+          },
+          {
+            "stat": "Fortification",
+            "from": 286,
+            "to": 226,
+            "delta": -60
+          },
+          {
+            "stat": "Fortitude Save",
+            "from": 27,
+            "to": 27,
+            "delta": 0
+          },
+          {
+            "stat": "Haggle",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Heal",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Healing Amplification",
+            "from": 63,
+            "to": 63,
+            "delta": 0
+          },
+          {
+            "stat": "Hide",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Imbue Dice",
+            "from": 0,
+            "to": 1,
+            "delta": 1
+          },
+          {
+            "stat": "Improved Deception",
+            "from": 21,
+            "to": 5,
+            "delta": -16
+          },
+          {
+            "stat": "Intelligence",
+            "from": 37,
+            "to": 37,
+            "delta": 0
+          },
+          {
+            "stat": "Intimidate",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Jump",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Listen",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Magical Sheltering",
+            "from": 73,
+            "to": 73,
+            "delta": 0
+          },
+          {
+            "stat": "Major Anger",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Max Filigree Slots",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Melee Alacrity",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Melee Power",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Move Silently",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Mystic Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Open Lock",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Perform",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Physical Sheltering",
+            "from": 133,
+            "to": 133,
+            "delta": 0
+          },
+          {
+            "stat": "Ranged Alacrity",
+            "from": 20,
+            "to": 20,
+            "delta": 0
+          },
+          {
+            "stat": "Ranged Power",
+            "from": 44,
+            "to": 44,
+            "delta": 0
+          },
+          {
+            "stat": "Reflex Save",
+            "from": 26,
+            "to": 26,
+            "delta": 0
+          },
+          {
+            "stat": "Repair",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Search",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Seeker",
+            "from": 29,
+            "to": 29,
+            "delta": 0
+          },
+          {
+            "stat": "Shatter",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Sneak Attack Damage",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Sneak Attack Dice",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Spellcraft",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Spot",
+            "from": 29,
+            "to": 27,
+            "delta": -2
+          },
+          {
+            "stat": "Strength",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Stunning",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Swim",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Tumble",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Use Magic Device",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Vertigo",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Will Save",
+            "from": 26,
+            "to": 26,
+            "delta": 0
+          },
+          {
+            "stat": "Wisdom",
+            "from": 3,
+            "to": 18,
+            "delta": 15
+          }
+        ],
+        "changedNumericRows": [
+          {
+            "stat": "Acid Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Action Boost Charges",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Combustion",
+            "from": 0,
+            "to": 142,
+            "delta": 142
+          },
+          {
+            "stat": "Corrosion",
+            "from": 30,
+            "to": 0,
+            "delta": -30
+          },
+          {
+            "stat": "Deadly",
+            "from": 12,
+            "to": 20,
+            "delta": 8
+          },
+          {
+            "stat": "Dexterity",
+            "from": 28,
+            "to": 6,
+            "delta": -22
+          },
+          {
+            "stat": "Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Doublestrike",
+            "from": 21,
+            "to": 36,
+            "delta": 15
+          },
+          {
+            "stat": "Electric Resistance",
+            "from": 53,
+            "to": 0,
+            "delta": -53
+          },
+          {
+            "stat": "Fortification",
+            "from": 286,
+            "to": 226,
+            "delta": -60
+          },
+          {
+            "stat": "Imbue Dice",
+            "from": 0,
+            "to": 1,
+            "delta": 1
+          },
+          {
+            "stat": "Improved Deception",
+            "from": 21,
+            "to": 5,
+            "delta": -16
+          },
+          {
+            "stat": "Major Anger",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Max Filigree Slots",
+            "from": 0,
+            "to": 5,
+            "delta": 5
+          },
+          {
+            "stat": "Mystic Diversion",
+            "from": 21,
+            "to": 0,
+            "delta": -21
+          },
+          {
+            "stat": "Sneak Attack Damage",
+            "from": 0,
+            "to": 3,
+            "delta": 3
+          },
+          {
+            "stat": "Spot",
+            "from": 29,
+            "to": 27,
+            "delta": -2
+          },
+          {
+            "stat": "Wisdom",
+            "from": 3,
+            "to": 18,
+            "delta": 15
+          }
+        ],
+        "abilityTranslation": {
+          "status": "Conditional arithmetic, not a full character-sheet prediction or mechanics certification",
+          "wisdomGearDelta": 15,
+          "dexterityGearDelta": -22,
+          "directSpotDelta": -2,
+          "directWillDelta": 0,
+          "modifierCases": [
+            {
+              "fromWholeWisdomParity": "even",
+              "wisdomModifierDelta": 7,
+              "spotIncludingWisdomDelta": 5,
+              "willIncludingWisdomDelta": 7
+            },
+            {
+              "fromWholeWisdomParity": "odd",
+              "wisdomModifierDelta": 8,
+              "spotIncludingWisdomDelta": 6,
+              "willIncludingWisdomDelta": 8
+            }
+          ],
+          "modifierCasesApplyOnlyIf": "No pre-existing same-type source masks any changed Wisdom gear bucket. These are illustrative full-gear-delta cases, not the default live-character prediction.",
+          "fullStackRule": "For each changed ability bonus type t with other applicable source B_t, whole-score change is sum_t(max(newGear_t,B_t)-max(oldGear_t,B_t)). Then apply floor((newWholeScore-10)/2)-floor((oldWholeScore-10)/2). Do not substitute the raw gear-subtotal delta if another source overlaps.",
+          "wisdomTypedChanges": [
+            {
+              "type": "Enhancement",
+              "fromGear": 0,
+              "toGear": 15
+            },
+            {
+              "type": "Exceptional",
+              "fromGear": 1,
+              "toGear": 1
+            },
+            {
+              "type": "Profane",
+              "fromGear": 2,
+              "toGear": 2
+            }
+          ],
+          "dexterityTypedChanges": [
+            {
+              "type": "Enhancement",
+              "fromGear": 15,
+              "toGear": 0
+            },
+            {
+              "type": "Exceptional",
+              "fromGear": 1,
+              "toGear": 1
+            },
+            {
+              "type": "Festive",
+              "fromGear": 2,
+              "toGear": 0
+            },
+            {
+              "type": "Insight",
+              "fromGear": 5,
+              "toGear": 0
+            },
+            {
+              "type": "Profane",
+              "fromGear": 2,
+              "toGear": 2
+            },
+            {
+              "type": "Quality",
+              "fromGear": 3,
+              "toGear": 3
+            }
+          ],
+          "wisdomEnhancementExample": "When the only change is Enhancement Wisdom0→15, let E be the already applicable nongear Enhancement Wisdom: actual score increase=max(15,E)-E. It can be smaller than15 or zero.",
+          "dexterityNoOverlapModifierCases": [
+            {
+              "fromWholeDexterityParity": "even",
+              "dexterityModifierDelta": -11
+            },
+            {
+              "fromWholeDexterityParity": "odd",
+              "dexterityModifierDelta": -11
+            }
+          ],
+          "assumptions": [
+            "Same nongear ability contributions, skill ranks and buffs in both cases, but their existing same-type overlap must still be accounted for.",
+            "Wisdom remains the governing ability for Spot and Will; no alternate-stat rule is supplied.",
+            "No item-dependent nongear buff difference, dispel or conditional downtime is inferred."
+          ],
+          "missing": "Actual pre-swap total Wisdom, its parity, and overlapping typed buffs are unknown. The guide starting Wisdom8 is not a complete level36 sheet.",
+          "reflex": "The selected guide has Insightful Reflexes. Preservation is conditional on Intelligence governing Reflex in both kits, as intended by this INT-based guide, and on unchanged nongear contributions. Gear-only INT totals do not establish the full character INT-versus-DEX relationship.",
+          "dexterity": "Balance, Hide, Move Silently, Open Lock and Tumble may lose ability-derived contribution after full same-type-stack reconciliation. AC impact also depends on armor maximum-Dexterity allowance and the full sheet; neither raw gear loss nor modifier loss is automatically final AC loss."
+        }
+      },
+      {
+        "from": "prior-artifact-luck",
+        "to": "wisdom-candidate",
+        "allNumericRows": [
+          {
+            "stat": "Accuracy",
+            "from": 33,
+            "to": 33,
+            "delta": 0
+          },
+          {
+            "stat": "Action Boost Charges",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Armor Class",
+            "from": 56,
+            "to": 56,
+            "delta": 0
+          },
+          {
+            "stat": "Armor-Piercing",
+            "from": 76,
+            "to": 76,
+            "delta": 0
+          },
+          {
+            "stat": "Balance",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Bluff",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Charisma",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Combustion",
+            "from": 142,
+            "to": 142,
+            "delta": 0
+          },
+          {
+            "stat": "Concentration",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Constitution",
+            "from": 32,
+            "to": 32,
+            "delta": 0
+          },
+          {
+            "stat": "Deadly",
+            "from": 20,
+            "to": 20,
+            "delta": 0
+          },
+          {
+            "stat": "Dexterity",
+            "from": 21,
+            "to": 6,
+            "delta": -15
+          },
+          {
+            "stat": "Diplomacy",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Disable Device",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Distant Diversion",
+            "from": 22,
+            "to": 22,
+            "delta": 0
+          },
+          {
+            "stat": "Dodge",
+            "from": 16,
+            "to": 16,
+            "delta": 0
+          },
+          {
+            "stat": "Doubleshot",
+            "from": 35,
+            "to": 35,
+            "delta": 0
+          },
+          {
+            "stat": "Doublestrike",
+            "from": 36,
+            "to": 36,
+            "delta": 0
+          },
+          {
+            "stat": "Enhancement Bonus (Armor)",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Enhancement Bonus (Weapon)",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "False Life",
+            "from": 108,
+            "to": 108,
+            "delta": 0
+          },
+          {
+            "stat": "Fortification",
+            "from": 226,
+            "to": 226,
+            "delta": 0
+          },
+          {
+            "stat": "Fortitude Save",
+            "from": 27,
+            "to": 27,
+            "delta": 0
+          },
+          {
+            "stat": "Haggle",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Heal",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Healing Amplification",
+            "from": 63,
+            "to": 63,
+            "delta": 0
+          },
+          {
+            "stat": "Hide",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Imbue Dice",
+            "from": 1,
+            "to": 1,
+            "delta": 0
+          },
+          {
+            "stat": "Improved Deception",
+            "from": 5,
+            "to": 5,
+            "delta": 0
+          },
+          {
+            "stat": "Intelligence",
+            "from": 37,
+            "to": 37,
+            "delta": 0
+          },
+          {
+            "stat": "Intimidate",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Jump",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Listen",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Magical Sheltering",
+            "from": 73,
+            "to": 73,
+            "delta": 0
+          },
+          {
+            "stat": "Major Anger",
+            "from": 5,
+            "to": 5,
+            "delta": 0
+          },
+          {
+            "stat": "Max Filigree Slots",
+            "from": 5,
+            "to": 5,
+            "delta": 0
+          },
+          {
+            "stat": "Melee Alacrity",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Melee Power",
+            "from": 15,
+            "to": 15,
+            "delta": 0
+          },
+          {
+            "stat": "Move Silently",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Open Lock",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Perform",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Physical Sheltering",
+            "from": 133,
+            "to": 133,
+            "delta": 0
+          },
+          {
+            "stat": "Ranged Alacrity",
+            "from": 20,
+            "to": 20,
+            "delta": 0
+          },
+          {
+            "stat": "Ranged Power",
+            "from": 44,
+            "to": 44,
+            "delta": 0
+          },
+          {
+            "stat": "Reflex Save",
+            "from": 26,
+            "to": 26,
+            "delta": 0
+          },
+          {
+            "stat": "Repair",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Search",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Seeker",
+            "from": 29,
+            "to": 29,
+            "delta": 0
+          },
+          {
+            "stat": "Shatter",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Sneak Attack Damage",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Sneak Attack Dice",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Spellcraft",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Spot",
+            "from": 27,
+            "to": 27,
+            "delta": 0
+          },
+          {
+            "stat": "Strength",
+            "from": 3,
+            "to": 3,
+            "delta": 0
+          },
+          {
+            "stat": "Stunning",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Swim",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Tumble",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Use Magic Device",
+            "from": 7,
+            "to": 7,
+            "delta": 0
+          },
+          {
+            "stat": "Vertigo",
+            "from": 11,
+            "to": 11,
+            "delta": 0
+          },
+          {
+            "stat": "Will Save",
+            "from": 26,
+            "to": 26,
+            "delta": 0
+          },
+          {
+            "stat": "Wisdom",
+            "from": 3,
+            "to": 18,
+            "delta": 15
+          }
+        ],
+        "changedNumericRows": [
+          {
+            "stat": "Dexterity",
+            "from": 21,
+            "to": 6,
+            "delta": -15
+          },
+          {
+            "stat": "Wisdom",
+            "from": 3,
+            "to": 18,
+            "delta": 15
+          }
+        ],
+        "abilityTranslation": {
+          "status": "Conditional arithmetic, not a full character-sheet prediction or mechanics certification",
+          "wisdomGearDelta": 15,
+          "dexterityGearDelta": -15,
+          "directSpotDelta": 0,
+          "directWillDelta": 0,
+          "modifierCases": [
+            {
+              "fromWholeWisdomParity": "even",
+              "wisdomModifierDelta": 7,
+              "spotIncludingWisdomDelta": 7,
+              "willIncludingWisdomDelta": 7
+            },
+            {
+              "fromWholeWisdomParity": "odd",
+              "wisdomModifierDelta": 8,
+              "spotIncludingWisdomDelta": 8,
+              "willIncludingWisdomDelta": 8
+            }
+          ],
+          "modifierCasesApplyOnlyIf": "No pre-existing same-type source masks any changed Wisdom gear bucket. These are illustrative full-gear-delta cases, not the default live-character prediction.",
+          "fullStackRule": "For each changed ability bonus type t with other applicable source B_t, whole-score change is sum_t(max(newGear_t,B_t)-max(oldGear_t,B_t)). Then apply floor((newWholeScore-10)/2)-floor((oldWholeScore-10)/2). Do not substitute the raw gear-subtotal delta if another source overlaps.",
+          "wisdomTypedChanges": [
+            {
+              "type": "Enhancement",
+              "fromGear": 0,
+              "toGear": 15
+            },
+            {
+              "type": "Exceptional",
+              "fromGear": 1,
+              "toGear": 1
+            },
+            {
+              "type": "Profane",
+              "fromGear": 2,
+              "toGear": 2
+            }
+          ],
+          "dexterityTypedChanges": [
+            {
+              "type": "Enhancement",
+              "fromGear": 15,
+              "toGear": 0
+            },
+            {
+              "type": "Exceptional",
+              "fromGear": 1,
+              "toGear": 1
+            },
+            {
+              "type": "Profane",
+              "fromGear": 2,
+              "toGear": 2
+            },
+            {
+              "type": "Quality",
+              "fromGear": 3,
+              "toGear": 3
+            }
+          ],
+          "wisdomEnhancementExample": "When the only change is Enhancement Wisdom0→15, let E be the already applicable nongear Enhancement Wisdom: actual score increase=max(15,E)-E. It can be smaller than15 or zero.",
+          "dexterityNoOverlapModifierCases": [
+            {
+              "fromWholeDexterityParity": "even",
+              "dexterityModifierDelta": -8
+            },
+            {
+              "fromWholeDexterityParity": "odd",
+              "dexterityModifierDelta": -7
+            }
+          ],
+          "assumptions": [
+            "Same nongear ability contributions, skill ranks and buffs in both cases, but their existing same-type overlap must still be accounted for.",
+            "Wisdom remains the governing ability for Spot and Will; no alternate-stat rule is supplied.",
+            "No item-dependent nongear buff difference, dispel or conditional downtime is inferred."
+          ],
+          "missing": "Actual pre-swap total Wisdom, its parity, and overlapping typed buffs are unknown. The guide starting Wisdom8 is not a complete level36 sheet.",
+          "reflex": "The selected guide has Insightful Reflexes. Preservation is conditional on Intelligence governing Reflex in both kits, as intended by this INT-based guide, and on unchanged nongear contributions. Gear-only INT totals do not establish the full character INT-versus-DEX relationship.",
+          "dexterity": "Balance, Hide, Move Silently, Open Lock and Tumble may lose ability-derived contribution after full same-type-stack reconciliation. AC impact also depends on armor maximum-Dexterity allowance and the full sheet; neither raw gear loss nor modifier loss is automatically final AC loss."
+        }
+      }
+    ],
+    "key_buckets": [
+      {
+        "id": "guide-queen-basic",
+        "buckets": [
+          {
+            "stat": "Dexterity",
+            "type": "Enhancement",
+            "value": 15,
+            "sources": [
+              {
+                "id": "craft:nearly_complete:Ability Score:Dexterity|Enhancement|15",
+                "host": "Legendary Burrowing Claws"
+              }
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Exceptional",
+            "value": 1,
+            "sources": [
+              {
+                "id": "Globe of True Imperial Blood",
+                "host": "Legendary Burrowing Claws"
+              }
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Festive",
+            "value": 2,
+            "sources": [
+              {
+                "id": "Diamond of Festive Dexterity +2",
+                "host": "Legendary Goggles of the Archer"
+              }
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Insight",
+            "value": 5,
+            "sources": [
+              {
+                "id": "Diamond of Insightful Dexterity +5",
+                "host": "Legendary Ring of Unnatural Accuracy"
+              }
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Profane",
+            "value": 2,
+            "sources": [
+              {
+                "id": "Essence of the Epic Litany of the Dead",
+                "host": "Legendary The Earth and the Sky"
+              }
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Quality",
+            "value": 3,
+            "sources": [
+              {
+                "id": "Legendary Ring of Unnatural Accuracy",
+                "host": "Legendary Ring of Unnatural Accuracy"
+              }
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Insight",
+            "value": 6,
+            "sources": [
+              {
+                "id": "Legendary Sapphire of Riposte",
+                "host": "Light Armor of the Warblade's Reflection"
+              }
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              {
+                "id": "Sapphire of Good Luck +3",
+                "host": "Legendary Pendant of Subtle Pain"
+              }
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              {
+                "id": "Sapphire of Greater Heroism",
+                "host": "Legendary Abyssal Compass"
+              }
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Resistance",
+            "value": 13,
+            "sources": [
+              {
+                "id": "The Queen of Rot",
+                "host": "The Queen of Rot"
+              }
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Competence",
+            "value": 22,
+            "sources": [
+              {
+                "id": "Diamond of Spot +22",
+                "host": "Legendary Ring of Unnatural Accuracy"
+              }
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              {
+                "id": "Sapphire of Good Luck +3",
+                "host": "Legendary Pendant of Subtle Pain"
+              }
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              {
+                "id": "Sapphire of Greater Heroism",
+                "host": "Legendary Abyssal Compass"
+              }
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Insight",
+            "value": 6,
+            "sources": [
+              {
+                "id": "Legendary Sapphire of Riposte",
+                "host": "Light Armor of the Warblade's Reflection"
+              }
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              {
+                "id": "Sapphire of Good Luck +3",
+                "host": "Legendary Pendant of Subtle Pain"
+              }
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              {
+                "id": "Sapphire of Greater Heroism",
+                "host": "Legendary Abyssal Compass"
+              }
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Resistance",
+            "value": 13,
+            "sources": [
+              {
+                "id": "The Queen of Rot",
+                "host": "The Queen of Rot"
+              }
+            ]
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Exceptional",
+            "value": 1,
+            "sources": [
+              {
+                "id": "Globe of True Imperial Blood",
+                "host": "Legendary Burrowing Claws"
+              }
+            ]
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Profane",
+            "value": 2,
+            "sources": [
+              {
+                "id": "Essence of the Epic Litany of the Dead",
+                "host": "Legendary The Earth and the Sky"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prior-artifact-luck",
+        "buckets": [
+          {
+            "stat": "Reflex Save",
+            "type": "Resistance",
+            "value": 13,
+            "sources": [
+              "The Queen of Rot"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Resistance",
+            "value": 13,
+            "sources": [
+              "The Queen of Rot"
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Profane",
+            "value": 2,
+            "sources": [
+              "Legendary Celestial Sapphire Ring"
+            ]
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Profane",
+            "value": 2,
+            "sources": [
+              "Legendary Celestial Sapphire Ring"
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Quality",
+            "value": 3,
+            "sources": [
+              "Legendary Ring of Unnatural Accuracy"
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Insight",
+            "value": 6,
+            "sources": [
+              "Legendary Sapphire of Riposte"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Insight",
+            "value": 6,
+            "sources": [
+              "Legendary Sapphire of Riposte"
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              "Sapphire of Greater Heroism"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              "Sapphire of Greater Heroism"
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              "Sapphire of Greater Heroism"
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              "Sapphire of Good Luck +3"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              "Sapphire of Good Luck +3"
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              "Sapphire of Good Luck +3"
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Exceptional",
+            "value": 1,
+            "sources": [
+              "Globe of True Imperial Blood"
+            ]
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Exceptional",
+            "value": 1,
+            "sources": [
+              "Globe of True Imperial Blood"
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Enhancement",
+            "value": 15,
+            "sources": [
+              "Legendary Burrowing Claws"
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Competence",
+            "value": 20,
+            "sources": [
+              "Legendary Chains"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wisdom-candidate",
+        "buckets": [
+          {
+            "stat": "Reflex Save",
+            "type": "Resistance",
+            "value": 13,
+            "sources": [
+              "The Queen of Rot"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Resistance",
+            "value": 13,
+            "sources": [
+              "The Queen of Rot"
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Profane",
+            "value": 2,
+            "sources": [
+              "Legendary Celestial Sapphire Ring"
+            ]
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Profane",
+            "value": 2,
+            "sources": [
+              "Legendary Celestial Sapphire Ring"
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Quality",
+            "value": 3,
+            "sources": [
+              "Legendary Ring of Unnatural Accuracy"
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Insight",
+            "value": 6,
+            "sources": [
+              "Legendary Sapphire of Riposte"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Insight",
+            "value": 6,
+            "sources": [
+              "Legendary Sapphire of Riposte"
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              "Sapphire of Greater Heroism"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              "Sapphire of Greater Heroism"
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Morale",
+            "value": 4,
+            "sources": [
+              "Sapphire of Greater Heroism"
+            ]
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              "Sapphire of Good Luck +3"
+            ]
+          },
+          {
+            "stat": "Will Save",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              "Sapphire of Good Luck +3"
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Luck",
+            "value": 3,
+            "sources": [
+              "Sapphire of Good Luck +3"
+            ]
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Exceptional",
+            "value": 1,
+            "sources": [
+              "Globe of True Imperial Blood"
+            ]
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Exceptional",
+            "value": 1,
+            "sources": [
+              "Globe of True Imperial Blood"
+            ]
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Enhancement",
+            "value": 15,
+            "sources": [
+              "Legendary Burrowing Claws"
+            ]
+          },
+          {
+            "stat": "Spot",
+            "type": "Competence",
+            "value": 20,
+            "sources": [
+              "Legendary Chains"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "practical_summary": {
+    "actualSolve": {
+      "file": "analysis_v3/artifact-wisdom.json",
+      "status": "optimal",
+      "passes": 45,
+      "seconds": 271.998
+    },
+    "manualDerivatives": [
+      {
+        "file": "analysis_v3/artifact-wisdom-canonical-spot-luck.json",
+        "newSolve": false,
+        "auditPassed": true,
+        "checks": 373,
+        "sockets": 34,
+        "occupied": 34,
+        "Wisdom": 18,
+        "Dexterity": 6,
+        "Spot": 27,
+        "Will": 26,
+        "Constitution": 32,
+        "coverage": {
+          "selectedComponents": 54,
+          "selectedAffixes": 130,
+          "byStatus": {
+            "retained-source supported": 93,
+            "corroborated-only": 24,
+            "unresolved/conflicting": 1,
+            "conditional/not valued": 7,
+            "model-only": 5
+          },
+          "notFullyCertified": 30
+        }
+      },
+      {
+        "file": "analysis_v3/artifact-wisdom-canonical-spot-luck-dex13.json",
+        "newSolve": false,
+        "auditPassed": true,
+        "checks": 381,
+        "sockets": 34,
+        "occupied": 34,
+        "Wisdom": 18,
+        "Dexterity": 19,
+        "Spot": 27,
+        "Will": 26,
+        "Constitution": 32,
+        "coverage": {
+          "selectedComponents": 55,
+          "selectedAffixes": 131,
+          "byStatus": {
+            "retained-source supported": 93,
+            "corroborated-only": 24,
+            "unresolved/conflicting": 1,
+            "conditional/not valued": 7,
+            "model-only": 6
+          },
+          "notFullyCertified": 31
+        }
+      }
+    ],
+    "guideBootsMetadataCorrection": "Prior v2 metadata inaccurately said both original Coldlight crafts were preserved. Guide has QualityINT3; practical prior/v3 use QualityCON3. The v2 file is left untouched; this correction is explicit."
+  }
+}
+

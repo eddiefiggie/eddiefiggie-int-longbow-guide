@@ -5,6 +5,7 @@ import unittest
 
 from test_lamordia_handling import Document, Node, norm
 from test_endgame_evidence import validate_preservation
+from wisdom_preservation import predecessor_index
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPARISON = 'third-tree-fatesinger-or-legendary-dreadnought-build-decision'
@@ -117,7 +118,9 @@ class FatesingerTimingTests(unittest.TestCase):
 
     def test_actual_roadmap_dp_and_both_summaries_agree(self):
         validate(self.html)
-        validate_preservation(self.html)  # Original full-build hash, exact prose reversals only.
+        # Current semantic checks above stay live; the older full-build hash
+        # receives the exact-approved outer reversal, not a stale source file.
+        validate_preservation(predecessor_index())
 
     def test_early_or_wrong_summary_milestones_fail(self):
         for old, new in [('Pluck at 22', 'Pluck at 20'),
@@ -170,13 +173,14 @@ class FatesingerTimingTests(unittest.TestCase):
             validate(self.html.replace(text, '<strong>' + text + '</strong>'))
 
     def test_full_build_guard_rejects_purchase_and_comparison_changes(self):
+        predecessor = predecessor_index()
         for old, new in [('Master the Acoustics 3', 'Master the Acoustics 2'),
                          ('Fatesinger 10</td>', 'Fatesinger 9</td>'),
                          ('<td>+15 (damage taken is', '<td>+16 (damage taken is')]:
             with self.subTest(old=old):
-                self.assertIn(old, self.html)
+                self.assertIn(old, predecessor)
                 with self.assertRaises(AssertionError):
-                    validate_preservation(self.html.replace(old, new))
+                    validate_preservation(predecessor.replace(old, new))
 
 
 if __name__ == '__main__':

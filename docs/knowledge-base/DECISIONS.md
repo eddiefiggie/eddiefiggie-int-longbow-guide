@@ -1,6 +1,8 @@
 # Selected choices and open questions
 
-The [Guide](../../index.html) is the reference for selected feats, class routes, past-life sequence and equipment. A-074 selects the [Queen of Rot BASIC recipe](A-074-QUEEN-BASIC.md), with only the approved cloak/Spot changes. It does not adopt an alternate ability score, class split or control mechanic. Compare proposals against that published baseline rather than against an unmerged candidate.
+The [Guide](../../index.html) is the reference for selected feats, class routes, past-life sequence and equipment. On 15 November 2026 the owner requested the guide and prioritized affixes be updated from the completed Wisdom loadout. The [Wisdom artifact record](WISDOM-ARTIFACT-LOADOUT.md) defines that provisional modeled selection, exactly one Minor Artifact, the event exclusion/Festive exception, and the separate unverified ring-DEX option. This changes a gear-affix priority and selected equipment, not base ability allocation, class split, feats, enhancements, destinies or control mechanics. Implementation, PR, merge and deployment remain separate states.
+
+The [A-074 Queen of Rot BASIC recipe](A-074-QUEEN-BASIC.md) remains the historical comparison baseline, preserved in build 11-09-26.5. Its relayed source limitations are not repaired merely because Queen remains in the new outfit. An owner-selected recipe is not a source-certified or globally optimal build.
 
 ## Issue register
 

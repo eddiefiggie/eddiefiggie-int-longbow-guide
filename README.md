@@ -13,16 +13,18 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `index.html` | The current guide (self-contained page; images in `img/`) |
 | `versions/` | Every published build, one file each, named by build number (`10-29-26.8.html`; earlier ones `v32.html` … `v44.html`) |
 | `img/` | Cover art and the six enhancement/destiny tree images (rendered on DDO BuildHub) |
-| `tools/bowmodel.py` | The per-shot bow damage model behind the "Bow damage model" section (`python3 bowmodel.py`) |
+| `tools/bowmodel.py` | The preserved historical per-shot bow model; not a DPS simulation of the current Wisdom loadout |
+| `tools/fixtures/wisdom-loadout/selection.json` | Shared current endgame recipe, exact optimizer priorities/constraints and model-only achieved values |
+| `tools/build_wisdom_loadout.py` | Generates the current recipe, priority table and one-page rows from that record |
 
 ## Related
 
-- [DDO Loadout Optimizer](https://eddiefiggie.github.io/ddo-loadout-optimizer/) — the gear solver the kits were run on (bundle *INT Longbow R10 v3*)
+- [DDO Loadout Optimizer](https://eddiefiggie.github.io/ddo-loadout-optimizer/) — the gear solver; the current exact query and practical manual refinements are retained in the [Wisdom loadout record](docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md), separate from historical bundles
 - [ddo-gear-planner](https://github.com/eddiefiggie/ddo-gear-planner) — item and crafting data
 
 ## Updating
 
-Edit `index.html` and set its displayed build to `MM-DD-YY.x` (x = iteration that day). Run `python3 tools/build_snapshot.py` to generate the matching file in `versions/`, with relative image and print links rebased for that directory. Do not byte-copy the index: that breaks snapshot asset paths. Regenerate the print reference with `python3 tools/build_crafting_sheet.py` when its source or build stamp changes. Run the checks before committing. GitHub Pages serves `main` from the repo root.
+Edit `index.html` and set its displayed build to `MM-DD-YY.x` (x = iteration that day). The current Wisdom recipe, priorities and one-page summary are generated: update their shared selection record and provenance deliberately, then run `python3 tools/build_wisdom_loadout.py`; do not hand-edit those marker blocks. Reconcile the selected evidence ledger without upgrading unsupported claims, then run `python3 tools/build_stacking_audit.py`. Regenerate the print reference with `python3 tools/build_crafting_sheet.py`, then run `python3 tools/build_snapshot.py` to create the matching new file in `versions/`, with relative image, evidence and print links rebased. Do not byte-copy the index or overwrite an existing published snapshot. Run the checks before committing. GitHub Pages serves `main` from the repo root; a local update or PR is not a deployment.
 
 ## Testing
 
@@ -34,7 +36,7 @@ The [Guide checks workflow](.github/workflows/guide-checks.yml) runs that same d
 
 ## Audits
 
-Every section is checked line by line against the DDO wiki; see [AUDITS.md](AUDITS.md) for dates, scope and corrections, and open an issue if a number does not match its page.
+See [AUDITS.md](AUDITS.md) for dated Wiki checks, source scope, corrections and unresolved claims. Internal regression tests and optimizer arithmetic are not blanket mechanics certification; open an issue if a number does not match its stated source.
 
 ## Project maintenance
 

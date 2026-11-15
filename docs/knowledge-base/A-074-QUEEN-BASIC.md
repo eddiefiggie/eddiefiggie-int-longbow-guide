@@ -1,5 +1,13 @@
 # A-074 — Queen of Rot BASIC
 
+**Historical selection record.** The owner-authorized 15 November Wisdom artifact
+update supersedes this recipe in the current candidate guide. The exact previous
+selection remains in [build 11-09-26.5](../../versions/11-09-26.5.html#endgame-kit-ml35-36).
+The dated observations, study report and limitations below are preserved; this
+banner does not turn them into new evidence. See the
+[Wisdom record](WISDOM-ARTIFACT-LOADOUT.md) for the current candidate and its
+separate implementation/release status.
+
 The selected endgame recipe replaces Cloak of Summer’s End (level 36) with
 [The Queen of Rot](https://ddowiki.com/page/Item:The_Queen_of_Rot), selecting
 Nearly Complete: Insightful Constitution +7, and puts Diamond of Spot +22 in
@@ -14,7 +22,7 @@ Legendary. Offhand is empty and the quiver has no sockets. There are eight fixed
 accessory craft selections, plus four weapon crafts only when Calamitous is used.
 The complete outfit and either filled bow require character level 36.
 
-The [current table](../../index.html#endgame-kit-ml35-36) is the complete recipe.
+The [historical table](../../versions/11-09-26.5.html#endgame-kit-ml35-36) is the complete BASIC recipe.
 BASIC does not select the optional imbue package, an Emerald, Imbued Infusions,
 Heart Shard, Bloody Boulder, a Quality CON-to-damage swap, or any class, feat,
 enhancement or destiny change.

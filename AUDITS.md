@@ -2,6 +2,62 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Wisdom artifact loadout integration — 15 November 2026
+
+The owner requested the current guide and prioritized affixes be updated from
+the completed Wisdom loadout. Local and connected remote guide main matched
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` before editing; the exact startup gate is
+in [the implementation receipt](evidence/wisdom-loadout/startup.json).
+
+The actual production query changed only Dexterity to Wisdom at its existing
+rank and completed 45 stages in 271.998 seconds. The selected practical recipe is
+an explicitly manual derivative (equal typed craft rotations, Spot craft and
+Good Luck replacing Festive CON), not another optimal solve. One shared record
+now drives the current gear, ranked affixes and quick summary; source/evidence
+grades remain separate from model arithmetic and achieved query targets.
+
+The [source map](evidence/wisdom-loadout/README.md) retains own-item support for
+Claws WIS +15, the ring ability-menu corroboration and exact DEX +13 gap, the typed
+WIS/DEX overlap conditions, crafting prerequisites and inherited numerical gaps.
+No fresh Wiki access succeeded during that comparison; missing exact revisions
+or genuine source-observation metadata were not invented. The 93 retained-source
+supported claims out of 130 are not 93 certified inputs under the stricter ledger.
+
+The current component ledger is retargeted to actual equipment and set-augment
+sources. Absent Monolith, old pendant/belt/bracers and obsolete gem contributions
+cannot remain current merely because an aggregate number matches. Newly unknown
+inputs are included and excluded by the unchanged source gates, rather than
+omitted to create falsely complete totals. Original source bytes/rules remain
+unchanged. The old Queen BASIC reflection/Solar proof does not certify Quickblade.
+
+The update also corrects the earlier comparison prose: the guide's Coldlight
+Quality INT +3 becomes practical Quality CON +3; Chains supplies practical Quality INT +3.
+The new Globe/Treatise bow fill removes Defense +40's level-36 requirement from the
+bow itself, but the full outfit remains ML36. Sinew is retained as an existing
+conditional alternate, not silently treated as a second optimizer run.
+
+The baseline 229-test suite passed before editing. New exact reversal contracts
+preserve historical expectations and snapshots, while separate current tests
+check the new selection, ordering, source exclusions and generated data flow.
+Final tests, rendering, PR, merge and deployment are reported separately; this
+entry is not proof that publication or full game-mechanics certification occurred.
+
+Local implementation verification subsequently completed: **258 tests passed in
+37.437 seconds, exit 0**, versus the 229-test starting baseline. The 29 added
+tests exercise the current recipe and its preservation boundary. Five initial
+historical-layout/hash-boundary failures were repaired without changing current
+production content or weakening prior assertions; separate current checks remain
+active. All 66 earlier snapshots are unchanged, and all 498 reviewed local links
+and anchors resolve. Builder freshness and `git diff --check` pass.
+
+Browser QA **did not run**: Chromium was denied permission to create its process
+singleton socket before any page or screenshot was loaded. Desktop/mobile
+rendering, keyboard interaction and print pagination therefore remain unverified;
+no permission workaround was attempted. The
+[verification receipt](evidence/wisdom-loadout/verification.json) binds the tested
+files and records these limits. Preparing a draft PR does not authorize merging
+or publishing while release gates remain open.
+
 | Date | Scope | Checked | Found and corrected |
 |---|---|---|---|
 | 29 Oct 2026 | Enhancements and epic destinies | Every AP/DP cost, rank count, progression gate and prerequisite on the Horizon Walker, Deepwood Stalker, Harper Agent, Arcane Archer, Shiradi Champion, Shadowdancer and Fatesinger pages against every tree table, gate table and by-level table | Deepwood Stalker had 4 AP below its 5-AP gates (tier 2 and the Sneak Attack core); fixed with Favored Defense 1 in place of Thrill of the Hunt rank 3, and the AP-by-level table re-sequenced. All other costs matched. Builder point counters that disagree with the wiki cropped from the tree images |

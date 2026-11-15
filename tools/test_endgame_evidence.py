@@ -6,6 +6,7 @@ import re
 import unittest
 from pathlib import Path
 from test_lamordia_handling import Document, norm
+from wisdom_preservation import predecessor_index
 
 ROOT=Path(__file__).resolve().parents[1]
 FIX=ROOT/'tools/fixtures/endgame-evidence'
@@ -151,7 +152,7 @@ def validate_preservation(html):
     assert sha(model.encode())==CONTRACT['bow_model_section_sha256']
 
 class EndgameEvidenceTests(unittest.TestCase):
-    def setUp(self): self.html=(ROOT/'index.html').read_text()
+    def setUp(self): self.html=predecessor_index()
     def test_unchanged_choices_and_all_selected_fills(self): validate_kit(self.html)
     def test_visible_evidence_limits_and_corrections(self): validate_claims(self.html)
     def test_repeated_timing_and_globe_constitution_are_consistent(self):

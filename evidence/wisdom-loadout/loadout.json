@@ -1,0 +1,2445 @@
+{
+  "schema": "wisdom-selected-record-v1",
+  "origin": {
+    "file": "analysis_v3/artifact-wisdom-canonical-spot-luck.json",
+    "sha256": "37e612b60744e9fb104fdfdc39295c88973568ba3affbd0646c8fe1eb6e73a4d"
+  },
+  "record_kind": "Derived selected-output extraction of the explicitly manual practical recipe. Not a new solver invocation.",
+  "name": "artifact-wisdom-canonical-spot-luck",
+  "status": "manual-feasible",
+  "optimizer_commit": "01e17c1675363458aee46f3765ed6f1b811eb8e3",
+  "guide_commit": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+  "dataset_sha256": "b779480ade9e41de8f0c1eeb554a7bd09060a300c8ceb67f6a80c5abfcad08cf",
+  "passes": 45,
+  "elapsed_seconds": 271.998,
+  "catalog_metadata": {
+    "origin": {
+      "file": "optimizer_live_items.json",
+      "sha256": "b779480ade9e41de8f0c1eeb554a7bd09060a300c8ceb67f6a80c5abfcad08cf"
+    },
+    "limitation": "Selected catalog extraction, not independent game evidence. Actual source status is joined from claims.json.",
+    "items": [
+      {
+        "id": "Light Armor of the Warblade's Reflection",
+        "native_affixes": [
+          {
+            "stat": "Armor Class",
+            "type": "Armor",
+            "value": 50
+          },
+          {
+            "stat": "Enhancement Bonus (Armor)",
+            "type": "Enhancement",
+            "value": 15
+          },
+          {
+            "stat": "Accuracy",
+            "type": "Competence",
+            "value": 24
+          },
+          {
+            "stat": "Deadly",
+            "type": "Competence",
+            "value": 12
+          },
+          {
+            "stat": "Shadow Striker",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Armor-Piercing",
+            "type": "Legendary",
+            "value": 5
+          }
+        ],
+        "base_ml": 33,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "The Skull of the Horned King",
+        "native_affixes": [
+          {
+            "stat": "Relentless Fury",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Armor-Piercing",
+            "type": "Enhancement",
+            "value": 25
+          },
+          {
+            "stat": "Doublestrike",
+            "type": "Enhancement",
+            "value": 18
+          },
+          {
+            "stat": "Bloodrage",
+            "type": "Bool",
+            "value": 1
+          }
+        ],
+        "base_ml": 35,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Goggles of the Archer",
+        "native_affixes": [
+          {
+            "stat": "Doubleshot",
+            "type": "Enhancement",
+            "value": 9
+          },
+          {
+            "stat": "Sight Beyond Sight",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Greater Marksmanship",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Armor-Piercing",
+            "type": "Insight",
+            "value": 11
+          }
+        ],
+        "base_ml": 33,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Glabrezu Claw Pendant",
+        "native_affixes": [
+          {
+            "stat": "Accuracy",
+            "type": "Quality",
+            "value": 5
+          },
+          {
+            "stat": "Seeker",
+            "type": "Quality",
+            "value": 3
+          },
+          {
+            "stat": "Action Boost Charges",
+            "type": "Enhancement",
+            "value": 3
+          }
+        ],
+        "base_ml": 35,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Abyssal Compass",
+        "native_affixes": [
+          {
+            "stat": "Sheltering",
+            "type": "Insight",
+            "value": 21
+          },
+          {
+            "stat": "Sheltering",
+            "type": "Quality",
+            "value": 11
+          },
+          {
+            "stat": "Legendary Demonic Shield",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Fortitude Save",
+            "type": "Insight",
+            "value": 7
+          }
+        ],
+        "base_ml": 35,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "The Queen of Rot",
+        "native_affixes": [
+          {
+            "stat": "Sheltering",
+            "type": "Enhancement",
+            "value": 41
+          },
+          {
+            "stat": "Fortitude Save",
+            "type": "Resistance",
+            "value": 13,
+            "via": "Resistance"
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Resistance",
+            "value": 13,
+            "via": "Resistance"
+          },
+          {
+            "stat": "Will Save",
+            "type": "Resistance",
+            "value": 13,
+            "via": "Resistance"
+          },
+          {
+            "stat": "Fortification",
+            "type": "Insight",
+            "value": 84
+          },
+          {
+            "stat": "Freedom of Movement",
+            "type": "Bool",
+            "value": 1
+          }
+        ],
+        "base_ml": 35,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Chains",
+        "native_affixes": [],
+        "base_ml": 28,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Celestial Sapphire Ring",
+        "native_affixes": [
+          {
+            "stat": "Improved Deception",
+            "type": "Enhancement",
+            "value": 5
+          },
+          {
+            "stat": "Dodge",
+            "type": "Enhancement",
+            "value": 13
+          },
+          {
+            "stat": "Strength",
+            "type": "Profane",
+            "value": 2,
+            "via": "Profane Well Rounded"
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Profane",
+            "value": 2,
+            "via": "Profane Well Rounded"
+          },
+          {
+            "stat": "Constitution",
+            "type": "Profane",
+            "value": 2,
+            "via": "Profane Well Rounded"
+          },
+          {
+            "stat": "Intelligence",
+            "type": "Profane",
+            "value": 2,
+            "via": "Profane Well Rounded"
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Profane",
+            "value": 2,
+            "via": "Profane Well Rounded"
+          },
+          {
+            "stat": "Charisma",
+            "type": "Profane",
+            "value": 2,
+            "via": "Profane Well Rounded"
+          }
+        ],
+        "base_ml": 29,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Ring of Unnatural Accuracy",
+        "native_affixes": [
+          {
+            "stat": "Dexterity",
+            "type": "Quality",
+            "value": 3
+          },
+          {
+            "stat": "Doubleshot",
+            "type": "Quality",
+            "value": 3
+          },
+          {
+            "stat": "Greater Marksmanship",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Distant Diversion",
+            "type": "Enhancement",
+            "value": 22
+          }
+        ],
+        "base_ml": 32,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Burrowing Claws",
+        "native_affixes": [
+          {
+            "stat": "Armor-Piercing",
+            "type": "Quality",
+            "value": 5
+          },
+          {
+            "stat": "Seeker",
+            "type": "Enhancement",
+            "value": 15
+          },
+          {
+            "stat": "Seeker",
+            "type": "Insight",
+            "value": 7
+          }
+        ],
+        "base_ml": 35,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Coldlight Runners",
+        "native_affixes": [
+          {
+            "stat": "Greater Marksmanship",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Doubleshot",
+            "type": "Insight",
+            "value": 5
+          }
+        ],
+        "base_ml": 34,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Yeenoghu's Reign",
+        "native_affixes": [
+          {
+            "stat": "Max Filigree Slots",
+            "type": "Untyped",
+            "value": 5
+          },
+          {
+            "stat": "Bloodrage",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Ram's Might",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Major Anger",
+            "type": "Enhancement",
+            "value": 5
+          },
+          {
+            "stat": "Deadly",
+            "type": "Quality",
+            "value": 4
+          }
+        ],
+        "base_ml": 35,
+        "artifact": true,
+        "native_sets": []
+      },
+      {
+        "id": "Epic Purifying Quiver",
+        "native_affixes": [
+          {
+            "stat": "Burning Ammunition - 1d8",
+            "type": "Bool",
+            "value": 1
+          },
+          {
+            "stat": "Blunted Ammunition",
+            "type": "Bool",
+            "value": 1
+          }
+        ],
+        "base_ml": 29,
+        "artifact": false,
+        "native_sets": []
+      },
+      {
+        "id": "Legendary Calamitous Longbow",
+        "native_affixes": [
+          {
+            "stat": "Enhancement Bonus (Weapon)",
+            "type": "Enhancement",
+            "value": 15
+          }
+        ],
+        "base_ml": 34,
+        "artifact": false,
+        "native_sets": []
+      }
+    ],
+    "augments": [
+      {
+        "id": "Solar Gem of Constitution (Legendary)",
+        "ml": 30,
+        "color": "Sun",
+        "native_affixes": [
+          {
+            "stat": "Constitution",
+            "type": "Artifact",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": "Legendary Sapphire of Riposte",
+        "ml": 30,
+        "color": "Blue",
+        "native_affixes": [
+          {
+            "stat": "Armor Class",
+            "type": "Insight",
+            "value": 6,
+            "via": "Riposte"
+          },
+          {
+            "stat": "Fortitude Save",
+            "type": "Insight",
+            "value": 6,
+            "via": "Riposte"
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Insight",
+            "value": 6,
+            "via": "Riposte"
+          },
+          {
+            "stat": "Will Save",
+            "type": "Insight",
+            "value": 6,
+            "via": "Riposte"
+          }
+        ]
+      },
+      {
+        "id": "Solar Gem of Critical Confirmation (Legendary)",
+        "ml": 30,
+        "color": "Sun",
+        "native_affixes": [
+          {
+            "stat": "Seeker",
+            "type": "Artifact",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": "Sapphire of Dodge +16%",
+        "ml": 36,
+        "color": "Blue",
+        "native_affixes": [
+          {
+            "stat": "Dodge",
+            "type": "Enhancement",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "id": "Solar Gem of Fortification Bypass (Legendary)",
+        "ml": 30,
+        "color": "Sun",
+        "native_affixes": [
+          {
+            "stat": "Armor-Piercing",
+            "type": "Artifact",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "id": "Sapphire of False Life +60",
+        "ml": 36,
+        "color": "Blue",
+        "native_affixes": [
+          {
+            "stat": "False Life",
+            "type": "Enhancement",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": "Lunar Gem of Intelligence (Legendary)",
+        "ml": 30,
+        "color": "Moon",
+        "native_affixes": [
+          {
+            "stat": "Intelligence",
+            "type": "Profane",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": "Sapphire of Greater Heroism",
+        "ml": 28,
+        "color": "Blue",
+        "native_affixes": [
+          {
+            "stat": "Greater Heroism",
+            "type": "Bool",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "Solar Gem of Intelligence (Legendary)",
+        "ml": 30,
+        "color": "Sun",
+        "native_affixes": [
+          {
+            "stat": "Intelligence",
+            "type": "Artifact",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": "Sapphire of Healing Amplification +63",
+        "ml": 36,
+        "color": "Blue",
+        "native_affixes": [
+          {
+            "stat": "Healing Amplification",
+            "type": "Competence",
+            "value": 63
+          }
+        ]
+      },
+      {
+        "id": "Solar Gem of Sneak Attack Damage (Legendary)",
+        "ml": 30,
+        "color": "Sun",
+        "native_affixes": [
+          {
+            "stat": "Sneak Attack Damage",
+            "type": "Artifact",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": "Topaz of Blindness Immunity",
+        "ml": 8,
+        "color": "Yellow",
+        "native_affixes": [
+          {
+            "stat": "Blindness Immunity",
+            "type": "Bool",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "Diamond of Festive Intelligence +2",
+        "ml": 22,
+        "color": "Colorless",
+        "native_affixes": [
+          {
+            "stat": "Intelligence",
+            "type": "Festive",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": "Lunar Gem of Physical Protection (Legendary)",
+        "ml": 30,
+        "color": "Moon",
+        "native_affixes": [
+          {
+            "stat": "Physical Sheltering",
+            "type": "Profane",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "id": "Ravil's Book of Legendary Recipes",
+        "ml": 32,
+        "color": "Colorless",
+        "native_affixes": [
+          {
+            "stat": "False Life",
+            "type": "Vitality",
+            "value": 48
+          }
+        ]
+      },
+      {
+        "id": "Lunar Gem of Ranged Power (Legendary)",
+        "ml": 30,
+        "color": "Moon",
+        "native_affixes": [
+          {
+            "stat": "Ranged Power",
+            "type": "Profane",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "id": "Emerald of Arcane Empowerment",
+        "ml": 28,
+        "color": "Green",
+        "native_affixes": [
+          {
+            "stat": "Imbue Dice",
+            "type": "Enhancement",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "Lunar Gem of Weapon Damage (Legendary)",
+        "ml": 30,
+        "color": "Moon",
+        "native_affixes": [
+          {
+            "stat": "Deadly",
+            "type": "Profane",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": "Topaz of Ranged Power +14",
+        "ml": 36,
+        "color": "Yellow",
+        "native_affixes": [
+          {
+            "stat": "Ranged Power",
+            "type": "Enhancement",
+            "value": 14
+          }
+        ]
+      },
+      {
+        "id": "Sapphire of Good Luck +3",
+        "ml": 28,
+        "color": "Blue",
+        "native_affixes": [
+          {
+            "stat": "Fortitude Save",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Reflex Save",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Will Save",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Balance",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Bluff",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Concentration",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Diplomacy",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Disable Device",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Haggle",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Heal",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Hide",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Intimidate",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Jump",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Listen",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Move Silently",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Open Lock",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Perform",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Repair",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Search",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Spellcraft",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Spot",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Swim",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Tumble",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          },
+          {
+            "stat": "Use Magic Device",
+            "type": "Luck",
+            "value": 3,
+            "via": "Good Luck"
+          }
+        ]
+      },
+      {
+        "id": "A Treatise on Battle",
+        "ml": 32,
+        "color": "Orange",
+        "native_affixes": [
+          {
+            "stat": "Stunning",
+            "type": "Enhancement",
+            "value": 11,
+            "via": "Enhancement Combat Mastery"
+          },
+          {
+            "stat": "Vertigo",
+            "type": "Enhancement",
+            "value": 11,
+            "via": "Enhancement Combat Mastery"
+          },
+          {
+            "stat": "Shatter",
+            "type": "Enhancement",
+            "value": 11,
+            "via": "Enhancement Combat Mastery"
+          },
+          {
+            "stat": "Immunity to Fear",
+            "type": "Bool",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "Globe of True Imperial Blood",
+        "ml": 25,
+        "color": "Colorless",
+        "native_affixes": [
+          {
+            "stat": "Strength",
+            "type": "Exceptional",
+            "value": 1,
+            "via": "Exceptional Well Rounded"
+          },
+          {
+            "stat": "Dexterity",
+            "type": "Exceptional",
+            "value": 1,
+            "via": "Exceptional Well Rounded"
+          },
+          {
+            "stat": "Constitution",
+            "type": "Exceptional",
+            "value": 1,
+            "via": "Exceptional Well Rounded"
+          },
+          {
+            "stat": "Intelligence",
+            "type": "Exceptional",
+            "value": 1,
+            "via": "Exceptional Well Rounded"
+          },
+          {
+            "stat": "Wisdom",
+            "type": "Exceptional",
+            "value": 1,
+            "via": "Exceptional Well Rounded"
+          },
+          {
+            "stat": "Charisma",
+            "type": "Exceptional",
+            "value": 1,
+            "via": "Exceptional Well Rounded"
+          }
+        ]
+      }
+    ]
+  },
+  "chosen": [
+    {
+      "slot": "Armor",
+      "id": "Light Armor of the Warblade's Reflection",
+      "base_ml": 33,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Armor Class",
+          "type": "Armor",
+          "value": 50
+        },
+        {
+          "stat": "Enhancement Bonus (Armor)",
+          "type": "Enhancement",
+          "value": 15
+        },
+        {
+          "stat": "Accuracy",
+          "type": "Competence",
+          "value": 24
+        },
+        {
+          "stat": "Deadly",
+          "type": "Competence",
+          "value": 12
+        },
+        {
+          "stat": "Shadow Striker",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Armor-Piercing",
+          "type": "Legendary",
+          "value": 5
+        },
+        {
+          "stat": "Doublestrike",
+          "type": "Profane",
+          "value": 3
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Profane",
+          "value": 3
+        },
+        {
+          "stat": "Melee Alacrity",
+          "type": "Enhancement",
+          "value": 15
+        },
+        {
+          "stat": "Ranged Alacrity",
+          "type": "Enhancement",
+          "value": 20
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Helmet",
+      "id": "The Skull of the Horned King",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Relentless Fury",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Armor-Piercing",
+          "type": "Enhancement",
+          "value": 25
+        },
+        {
+          "stat": "Doublestrike",
+          "type": "Enhancement",
+          "value": 18
+        },
+        {
+          "stat": "Bloodrage",
+          "type": "Bool",
+          "value": 1
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Yellow"
+      ]
+    },
+    {
+      "slot": "Goggles",
+      "id": "Legendary Goggles of the Archer",
+      "base_ml": 33,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Doubleshot",
+          "type": "Enhancement",
+          "value": 9
+        },
+        {
+          "stat": "Sight Beyond Sight",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Greater Marksmanship",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Armor-Piercing",
+          "type": "Insight",
+          "value": 11
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Necklace",
+      "id": "Legendary Glabrezu Claw Pendant",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Accuracy",
+          "type": "Quality",
+          "value": 5
+        },
+        {
+          "stat": "Seeker",
+          "type": "Quality",
+          "value": 3
+        },
+        {
+          "stat": "Action Boost Charges",
+          "type": "Enhancement",
+          "value": 3
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Trinket",
+      "id": "Legendary Abyssal Compass",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Insight",
+          "value": 21,
+          "via": "Insightful Sheltering"
+        },
+        {
+          "stat": "Magical Sheltering",
+          "type": "Insight",
+          "value": 21,
+          "via": "Insightful Sheltering"
+        },
+        {
+          "stat": "Physical Sheltering",
+          "type": "Quality",
+          "value": 11,
+          "via": "Quality Sheltering"
+        },
+        {
+          "stat": "Magical Sheltering",
+          "type": "Quality",
+          "value": 11,
+          "via": "Quality Sheltering"
+        },
+        {
+          "stat": "Legendary Demonic Shield",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Insight",
+          "value": 7
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Cloak",
+      "id": "The Queen of Rot",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Enhancement",
+          "value": 41,
+          "via": "Sheltering"
+        },
+        {
+          "stat": "Magical Sheltering",
+          "type": "Enhancement",
+          "value": 41,
+          "via": "Sheltering"
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Resistance",
+          "value": 13,
+          "via": "Resistance"
+        },
+        {
+          "stat": "Reflex Save",
+          "type": "Resistance",
+          "value": 13,
+          "via": "Resistance"
+        },
+        {
+          "stat": "Will Save",
+          "type": "Resistance",
+          "value": 13,
+          "via": "Resistance"
+        },
+        {
+          "stat": "Fortification",
+          "type": "Insight",
+          "value": 84
+        },
+        {
+          "stat": "Freedom of Movement",
+          "type": "Bool",
+          "value": 1
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Yellow"
+      ]
+    },
+    {
+      "slot": "Belt",
+      "id": "Legendary Chains",
+      "base_ml": 28,
+      "artifact": false,
+      "affixes": [],
+      "sockets": [
+        "Green"
+      ]
+    },
+    {
+      "slot": "Ring",
+      "id": "Legendary Celestial Sapphire Ring",
+      "base_ml": 29,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Improved Deception",
+          "type": "Enhancement",
+          "value": 5
+        },
+        {
+          "stat": "Dodge",
+          "type": "Enhancement",
+          "value": 13
+        },
+        {
+          "stat": "Strength",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Dexterity",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Constitution",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Intelligence",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Wisdom",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Charisma",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        }
+      ],
+      "sockets": [
+        "Yellow"
+      ]
+    },
+    {
+      "slot": "Ring",
+      "id": "Legendary Ring of Unnatural Accuracy",
+      "base_ml": 32,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Dexterity",
+          "type": "Quality",
+          "value": 3
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Quality",
+          "value": 3
+        },
+        {
+          "stat": "Greater Marksmanship",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Distant Diversion",
+          "type": "Enhancement",
+          "value": 22
+        }
+      ],
+      "sockets": [
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Gloves",
+      "id": "Legendary Burrowing Claws",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Armor-Piercing",
+          "type": "Quality",
+          "value": 5
+        },
+        {
+          "stat": "Seeker",
+          "type": "Enhancement",
+          "value": 15
+        },
+        {
+          "stat": "Seeker",
+          "type": "Insight",
+          "value": 7
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Boots",
+      "id": "Legendary Coldlight Runners",
+      "base_ml": 34,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Greater Marksmanship",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Insight",
+          "value": 5
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Bracers",
+      "id": "Yeenoghu's Reign",
+      "base_ml": 35,
+      "artifact": true,
+      "affixes": [
+        {
+          "stat": "Max Filigree Slots",
+          "type": "Untyped",
+          "value": 5
+        },
+        {
+          "stat": "Bloodrage",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Ram's Might",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Major Anger",
+          "type": "Enhancement",
+          "value": 5
+        },
+        {
+          "stat": "Deadly",
+          "type": "Quality",
+          "value": 4
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Yellow",
+        "Blue"
+      ]
+    },
+    {
+      "slot": "Quiver",
+      "id": "Epic Purifying Quiver",
+      "base_ml": 29,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Burning Ammunition - 1d8",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Blunted Ammunition",
+          "type": "Bool",
+          "value": 1
+        }
+      ],
+      "sockets": []
+    },
+    {
+      "slot": "Main Hand",
+      "id": "Legendary Calamitous Longbow",
+      "base_ml": 34,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Enhancement Bonus (Weapon)",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ],
+      "sockets": [
+        "Orange",
+        "Purple"
+      ]
+    }
+  ],
+  "crafts": [
+    {
+      "host": "The Skull of the Horned King",
+      "family": "Nearly Complete",
+      "slot": "Ability Score",
+      "pool": null,
+      "category": "Ability Score",
+      "tier": "legendary",
+      "name": "Constitution",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "host": "Legendary Glabrezu Claw Pendant",
+      "family": "Nearly Complete",
+      "slot": "Insightful Ability Score",
+      "pool": null,
+      "category": "Insightful Ability Score",
+      "tier": "legendary",
+      "name": "Intelligence",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Insight",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "host": "The Queen of Rot",
+      "family": "Nearly Complete",
+      "slot": "Insightful Ability Score",
+      "pool": null,
+      "category": "Insightful Ability Score",
+      "tier": "legendary",
+      "name": "Constitution",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Insight",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "host": "Legendary Burrowing Claws",
+      "family": "Nearly Complete",
+      "slot": "Ability Score",
+      "pool": null,
+      "category": "Ability Score",
+      "tier": "legendary",
+      "name": "Wisdom",
+      "affixes": [
+        {
+          "stat": "Wisdom",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "host": "Legendary Coldlight Runners",
+      "family": "Viktranium",
+      "slot": "Dolorous",
+      "pool": null,
+      "category": "Accessory",
+      "tier": "legendary",
+      "name": "Dolorous Quality Constitution (legendary)",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Quality",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "host": "Legendary Coldlight Runners",
+      "family": "Viktranium",
+      "slot": "Melancholic",
+      "pool": null,
+      "category": "Accessory",
+      "tier": "legendary",
+      "name": "Melancholic Intelligence (legendary)",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Dolorous",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Dolorous Flames (legendary)",
+      "affixes": [
+        {
+          "stat": "Good Aligned",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Alchemical Fire Attunement",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Melancholic",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Melancholic Flames (legendary)",
+      "affixes": [
+        {
+          "stat": "Adamantine",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Fiery",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Miserable",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Miserable Dimlight (legendary)",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Exceptional",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Woeful",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Woeful Salt",
+      "affixes": [
+        {
+          "stat": "Legendary Salt",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "host": "Legendary Chains",
+      "family": "Slave Lords",
+      "slot": "Prefix",
+      "pool": null,
+      "category": null,
+      "tier": "legendary",
+      "name": "Fortification +142 (Enhancement)",
+      "affixes": [
+        {
+          "stat": "Fortification",
+          "type": "Enhancement",
+          "value": 142
+        }
+      ]
+    },
+    {
+      "host": "Legendary Chains",
+      "family": "Slave Lords",
+      "slot": "Suffix",
+      "pool": null,
+      "category": null,
+      "tier": "legendary",
+      "name": "Combustion +142 (Equipment)",
+      "affixes": [
+        {
+          "stat": "Combustion",
+          "type": "Equipment",
+          "value": 142
+        }
+      ]
+    },
+    {
+      "host": "Legendary Chains",
+      "family": "Slave Lords",
+      "slot": "Bonus",
+      "pool": null,
+      "category": null,
+      "tier": "legendary",
+      "name": "Intelligence +3 (Quality)",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Quality",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "host": "Legendary Chains",
+      "family": "Slave Lords",
+      "slot": "Extra",
+      "pool": null,
+      "category": null,
+      "tier": "legendary",
+      "name": "Spot +20 (Competence)",
+      "affixes": [
+        {
+          "stat": "Spot",
+          "type": "Competence",
+          "value": 20
+        }
+      ]
+    }
+  ],
+  "augments": [
+    {
+      "id": "Legendary Sapphire of Riposte",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Armor Class",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        },
+        {
+          "stat": "Reflex Save",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        },
+        {
+          "stat": "Will Save",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of Dodge +16%",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Dodge",
+          "type": "Enhancement",
+          "value": 16
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of False Life +60",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "False Life",
+          "type": "Enhancement",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of Greater Heroism",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Greater Heroism",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Accuracy",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Reflex Save",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Will Save",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Balance",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Bluff",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Concentration",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Diplomacy",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Disable Device",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Haggle",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Heal",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Hide",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Intimidate",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Jump",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Listen",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Move Silently",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Open Lock",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Perform",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Repair",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Search",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Spellcraft",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Spot",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Swim",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Tumble",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Use Magic Device",
+          "type": "Morale",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of Healing Amplification +63",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Healing Amplification",
+          "type": "Competence",
+          "value": 63
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of Good Luck +3",
+      "color": "Blue",
+      "slot_color": "Blue",
+      "affixes": [
+        {
+          "stat": "Fortitude Save",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Reflex Save",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Will Save",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Balance",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Bluff",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Concentration",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Diplomacy",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Disable Device",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Haggle",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Heal",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Hide",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Intimidate",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Jump",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Listen",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Move Silently",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Open Lock",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Perform",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Repair",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Search",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Spellcraft",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Spot",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Swim",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Tumble",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        },
+        {
+          "stat": "Use Magic Device",
+          "type": "Luck",
+          "value": 3,
+          "via": "Good Luck"
+        }
+      ]
+    },
+    {
+      "id": "Diamond of Festive Intelligence +2",
+      "color": "Colorless",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Festive",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "Globe of True Imperial Blood",
+      "color": "Colorless",
+      "slot_color": "Purple",
+      "affixes": [
+        {
+          "stat": "Strength",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Dexterity",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Constitution",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Intelligence",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Wisdom",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Charisma",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        }
+      ]
+    },
+    {
+      "id": "Ravil's Book of Legendary Recipes",
+      "color": "Colorless",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "False Life",
+          "type": "Vitality",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "id": "Emerald of Arcane Empowerment",
+      "color": "Green",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Imbue Dice",
+          "type": "Enhancement",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Intelligence (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Profane",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Physical Protection (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Profane",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Ranged Power (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Ranged Power",
+          "type": "Profane",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Weapon Damage (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Deadly",
+          "type": "Profane",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "A Treatise on Battle",
+      "color": "Orange",
+      "slot_color": "Orange",
+      "affixes": [
+        {
+          "stat": "Stunning",
+          "type": "Enhancement",
+          "value": 11,
+          "via": "Enhancement Combat Mastery"
+        },
+        {
+          "stat": "Vertigo",
+          "type": "Enhancement",
+          "value": 11,
+          "via": "Enhancement Combat Mastery"
+        },
+        {
+          "stat": "Shatter",
+          "type": "Enhancement",
+          "value": 11,
+          "via": "Enhancement Combat Mastery"
+        },
+        {
+          "stat": "Immunity to Fear",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Constitution (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Artifact",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Critical Confirmation (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Seeker",
+          "type": "Artifact",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Fortification Bypass (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Armor-Piercing",
+          "type": "Artifact",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Intelligence (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Artifact",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Sneak Attack Damage (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Sneak Attack Damage",
+          "type": "Artifact",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "Topaz of Blindness Immunity",
+      "color": "Yellow",
+      "slot_color": "Yellow",
+      "affixes": [
+        {
+          "stat": "Blindness Immunity",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Topaz of Ranged Power +14",
+      "color": "Yellow",
+      "slot_color": "Yellow",
+      "affixes": [
+        {
+          "stat": "Ranged Power",
+          "type": "Enhancement",
+          "value": 14
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Dusk Raider",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Melee Power",
+          "type": "Artifact",
+          "value": 15
+        },
+        {
+          "stat": "Ranged Power",
+          "type": "Artifact",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Perfect Silence",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Sneak Attack Dice",
+          "type": "Artifact",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Quickblade",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Doublestrike",
+          "type": "Artifact",
+          "value": 15
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Artifact",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Tough Shields",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Artifact",
+          "value": 30
+        }
+      ]
+    }
+  ],
+  "set_placements": [
+    {
+      "name": "Dusk Raider",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "color": "Colorless"
+    },
+    {
+      "name": "Dusk Raider",
+      "host": "The Queen of Rot",
+      "color": "Green"
+    },
+    {
+      "name": "Dusk Raider",
+      "host": "Legendary Ring of Unnatural Accuracy",
+      "color": "Colorless"
+    },
+    {
+      "name": "Perfect Silence",
+      "host": "The Skull of the Horned King",
+      "color": "Yellow"
+    },
+    {
+      "name": "Perfect Silence",
+      "host": "Legendary Burrowing Claws",
+      "color": "Colorless"
+    },
+    {
+      "name": "Perfect Silence",
+      "host": "Legendary Coldlight Runners",
+      "color": "Colorless"
+    },
+    {
+      "name": "Quickblade",
+      "host": "Legendary Goggles of the Archer",
+      "color": "Colorless"
+    },
+    {
+      "name": "Quickblade",
+      "host": "Legendary Chains",
+      "color": "Green"
+    },
+    {
+      "name": "Quickblade",
+      "host": "Yeenoghu's Reign",
+      "color": "Green"
+    },
+    {
+      "name": "Tough Shields",
+      "host": "Light Armor of the Warblade's Reflection",
+      "color": "Colorless"
+    },
+    {
+      "name": "Tough Shields",
+      "host": "Legendary Abyssal Compass",
+      "color": "Colorless"
+    },
+    {
+      "name": "Tough Shields",
+      "host": "Legendary Celestial Sapphire Ring",
+      "color": "Yellow"
+    }
+  ],
+  "per_target": {
+    "Greater Marksmanship": 1,
+    "Sight Beyond Sight": 1,
+    "Relentless Fury": 1,
+    "Bloodrage": 1,
+    "Alchemical Fire Attunement": 1,
+    "Fiery": 1,
+    "Legendary Salt": 1,
+    "Improved Deception": 1,
+    "Ranged Alacrity": 20,
+    "Doubleshot": 35,
+    "Ranged Power": 44,
+    "Intelligence": 37,
+    "Seeker": 29,
+    "Armor-Piercing": 76,
+    "Deadly": 20,
+    "Imbue Dice": 1,
+    "Sneak Attack Dice": 3,
+    "Sneak Attack Damage": 3,
+    "Constitution": 32,
+    "Physical Sheltering": 133,
+    "Magical Sheltering": 73,
+    "Fortification": 226,
+    "False Life": 108,
+    "Healing Amplification": 63,
+    "Dodge": 16,
+    "Reflex Save": 26,
+    "Fortitude Save": 27,
+    "Will Save": 26,
+    "Wisdom": 18,
+    "Accuracy": 33,
+    "Combustion": 142,
+    "Damage to helpless enemies": 0
+  },
+  "manual_derivation": {
+    "kind": "Manual practical derivative of the completed Wisdom search, not an additional solve",
+    "solverExecuted": false,
+    "sourceProductionRun": "analysis_v3/artifact-wisdom.json",
+    "sourceProductionRunSha256": "6cba0f33765b8c24b19179716e3240147dae98ac047fc53effbecc18470ce6bd",
+    "sourceProductionStatus": "optimal",
+    "sourceProductionPasses": 45,
+    "sourceProductionSeconds": 271.998,
+    "comparisonParent": "analysis_v2/artifact-guarded-deception-canonical-spot-luck.json",
+    "comparisonParentSha256": "52667f00f114cfee1696021460fc78218aadc340636d0b385cf9d7635b4dde7e",
+    "sameBucketRotations": [
+      {
+        "family": "ncPlaced",
+        "host": "Legendary Glabrezu Claw Pendant",
+        "slot": "Insightful Ability Score",
+        "from": "Constitution",
+        "to": "Intelligence",
+        "type": "Insight",
+        "value": 7
+      },
+      {
+        "family": "ncPlaced",
+        "host": "The Queen of Rot",
+        "slot": "Insightful Ability Score",
+        "from": "Intelligence",
+        "to": "Constitution",
+        "type": "Insight",
+        "value": 7
+      },
+      {
+        "family": "ncPlaced",
+        "host": "Legendary Burrowing Claws",
+        "slot": "Ability Score",
+        "from": "Intelligence",
+        "to": "Wisdom",
+        "type": "Enhancement",
+        "value": 15
+      },
+      {
+        "family": "vikPlaced",
+        "host": "Legendary Coldlight Runners",
+        "slot": "Melancholic",
+        "from": "Wisdom",
+        "to": "Intelligence",
+        "type": "Enhancement",
+        "value": 15
+      },
+      {
+        "family": "vikPlaced",
+        "host": "Legendary Coldlight Runners",
+        "slot": "Dolorous",
+        "from": "Intelligence",
+        "to": "Constitution",
+        "type": "Quality",
+        "value": 3
+      },
+      {
+        "family": "slaversPlaced",
+        "host": "Legendary Chains",
+        "slot": "Bonus",
+        "from": "Constitution",
+        "to": "Intelligence",
+        "type": "Quality",
+        "value": 3
+      }
+    ],
+    "rotationProof": {
+      "allRawTotalsEqual": true,
+      "allTypedBucketsEqual": true,
+      "allPresenceFlagsEqual": true
+    },
+    "utilityChangesFromRawSolve": [
+      {
+        "remove": "Diamond of Festive Constitution +2",
+        "add": "Sapphire of Good Luck +3",
+        "effect": "CON−2, all saves and direct skills+3"
+      },
+      {
+        "add": "Slavers Extra: Competence Spot20 on Legendary Chains",
+        "effect": "Direct Spot+20, no ordinary socket displacement; exact20 remains source-provisional"
+      },
+      {
+        "change": "Use the prior practical ordinary/set augment host placements",
+        "effect": "Same item identities, same augment sets, same typed contributions apart from the explicit Luck substitution"
+      }
+    ],
+    "differencesFromPriorPractical": [
+      "Burrowing Claws EnhancementDEX15→EnhancementWIS15; every other selected craft, ordinary augment and set-augment placement is identical."
+    ],
+    "guideOwnershipCautions": [
+      "A finished DEX Burrowing Claws pair cannot be changed in place under the retained Nearly Complete rule; obtain another pair and25 Legendary Abyssal Gems for WIS.",
+      "The guide Coldlight Dolorous craft is QualityINT3, whereas the prior practical candidate and this derivative use QualityCON3. Do not claim both original-guide boots crafts are preserved.",
+      "Skull CON, Queen InsightCON, boots EnhancementINT and all four Calamitous crafts retain the guide selections. Selected recipe preservation does not establish ownership."
+    ],
+    "sourceSensitivity": "SkullCON uses model15; retained own-page16 case adds1 CON to guide, prior and this canonical candidate. No catalog patch is made.",
+    "notOptimalClaim": "The original solve prioritizes CON34; this explicit practical variant trades2CON for3Luck saves/skills as in the prior recommendation. It is not a new lexicographic optimum."
+  }
+}
+

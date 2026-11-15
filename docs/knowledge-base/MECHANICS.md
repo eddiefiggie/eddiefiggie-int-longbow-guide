@@ -18,3 +18,20 @@ The [audit log](../../AUDITS.md) retains source questions about attack-speed sta
 The original knowledge-base draft also recorded potential disagreements over Legendary Dolorous Quality Damage (+3 versus +4) and critical-confirmation rolls of 1. This refresh has not verified the competing pages/images; retain them as questions to resolve before using either interpretation, not newly established conflicts or selected mechanics. The retained crafting capture alone cannot settle all item/image disagreements.
 
 Consult [open decisions](DECISIONS.md) for proposal tracking. This short register is not an exhaustive claim ledger or a new Wiki audit.
+
+## Wisdom artifact loadout evidence boundary
+
+The [15 November selection record](WISDOM-ARTIFACT-LOADOUT.md) comes from an actual
+completed optimizer run plus explicitly identified manual refinements. Its
+source inventory uses grades such as retained-source supported, corroborated-only,
+conflicting and model-only. Those grades are **not** aliases for the component
+ledger's `verified` state. Exact Wiki revision, genuine source-bound observation,
+typed numeric context, applicable conditions and positive interaction rules must
+still pass before an input or sum can be certified. In particular, an item-page
+Wisdom +15 choice without retained observation context does not certify a WIS 18
+mixed-type total. Optional ring DEX +13 stays outside the primary selection.
+
+Retarget the current ledger to actual selected sources; do not carry Monolith,
+Solar Doubleshot, Solar Sneak Dice, Defense +40 or absent old equipment forward just
+because an aggregate happens to match. Retain original capture bytes and preserve
+the predecessor tests against their exact historical inputs.

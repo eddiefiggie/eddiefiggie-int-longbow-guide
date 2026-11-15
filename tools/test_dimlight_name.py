@@ -5,11 +5,12 @@ import json
 from pathlib import Path
 import unittest
 from test_lamordia_handling import Document, norm
+from wisdom_preservation import predecessor_index
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'tools/fixtures/lamordia-handling/viktranium-experiment-crafting.browser-capture.json'
 URL='https://ddowiki.com/index.php?title=Viktranium_Experiment_crafting&oldid=720728'
 
-def validate(source,html):
+def validate_source_and_crafting_table(source,html):
     assert source['permalink']==URL
     raw=source['html'];assert raw.count('id="Miserable_(Weapons)"')==1
     raw=raw.split('id="Miserable_(Weapons)"',1)[1].split('<h3',1)[0]
@@ -28,18 +29,44 @@ def validate(source,html):
     assert norm(cells[1].text()).startswith('Legendary Miserable Dimlight (Weapon) — Exceptional Intelligence +2 (selected Calamitous craft), or Miserable Improved Destruction')
     assert norm(cells[3].text())=='25 each of the four Legendary Bleak parts and 100 Legendary Bleak Wires'
     assert [a.attrs['href'] for a in cells[1].nodes('a')]==[URL+'#Miserable_(Weapons)']
+    assert 'Miserable Exceptional Intelligence +2</strong>' not in html
+
+
+def validate(source,html):
+    """Preserve the unchanged pre-Wisdom selected-kit assertion."""
+    validate_source_and_crafting_table(source,html)
+    rows=Document(html).root.nodes('tr')
     kit=[r for r in rows if len(r.nodes('td'))==6 and norm(r.nodes('td')[1].text())=='Legendary Calamitous Longbow or Legendary Demogorgon’s Sinew']
     assert len(kit)==1
     assert 'Miserable: Legendary Miserable Dimlight (Weapon), Exceptional Intelligence +2;' in norm(kit[0].nodes('td')[4].text())
     assert 'Miserable Exceptional Intelligence +2</strong>' not in html
 
+
+def validate_current(source,html,data):
+    """Bind the current generated Calamitous recipe to the same source fact."""
+    import wisdom_loadout
+    from test_wisdom_loadout import current_render_contract
+    validate_source_and_crafting_table(source,html)
+    current_render_contract(html,data)
+    bow=next(i for i in data['items'] if i['id']=='Legendary Calamitous Longbow')
+    selected=[c for c in bow['crafts'] if c['slot']=='Miserable']
+    assert len(selected)==1
+    craft=selected[0]
+    assert craft['family']=='Viktranium' and craft['category']=='Weapon' and craft['tier']=='legendary'
+    assert craft['name']=='Miserable Dimlight (legendary)'
+    assert craft['affixes']==[{'stat':'Intelligence','type':'Exceptional','value':2}]
+    rendered=Document(wisdom_loadout.render_recipe(data)).root
+    rows=[r for r in rendered.nodes('tr') if r.nodes('th') and norm(r.nodes('th')[0].text())=='Main Hand']
+    assert len(rows)==1
+    assert 'Viktranium / Miserable: Intelligence +2 (Exceptional)' in norm(rows[0].text())
+
 class DimlightNameTests(unittest.TestCase):
     def test_exact_source_and_selected_name(self):
         data=SOURCE.read_bytes();assert len(data)==612486
         assert hashlib.sha256(data).hexdigest()=='e40935cdc1a352a7fa3dde5af1fd7a852e0a4e50f9d9ed3c44dfdb3cbbf5458e'
-        validate(json.loads(data),(ROOT/'index.html').read_text())
+        validate(json.loads(data),predecessor_index())
     def test_negative_controls(self):
-        source=json.loads(SOURCE.read_text());html=(ROOT/'index.html').read_text()
+        source=json.loads(SOURCE.read_text());html=predecessor_index()
         for old,new in [('Legendary Miserable Dimlight (Weapon)','Heroic Miserable Dimlight (Weapon)'),
                         ('Legendary Miserable Dimlight (Weapon)','Legendary Miserable Dimlight (Accessory)'),
                         ('Legendary Miserable Dimlight (Weapon)','Legendary Miserable Shadows (Weapon)'),
@@ -55,3 +82,22 @@ class DimlightNameTests(unittest.TestCase):
             broken=copy.deepcopy(source);assert old in broken['html'];broken['html']=broken['html'].replace(old,new)
             with self.subTest(source=old):
                 with self.assertRaises(AssertionError):validate(broken,html)
+
+    def test_current_recipe_and_crafting_table_keep_the_same_source_bound_choice(self):
+        import wisdom_loadout
+        validate_current(json.loads(SOURCE.read_text()),(ROOT/'index.html').read_text(),wisdom_loadout.load())
+
+    def test_current_name_value_type_and_cost_regressions_are_rejected(self):
+        import wisdom_loadout
+        source=json.loads(SOURCE.read_text());html=(ROOT/'index.html').read_text();data=wisdom_loadout.load()
+        for old,new in [
+            ('Legendary Miserable Dimlight (Weapon)','Heroic Miserable Dimlight (Weapon)'),
+            ('Legendary Miserable Dimlight (Weapon)','Legendary Miserable Dimlight (Accessory)'),
+            ('Viktranium / Miserable: Intelligence +2 (Exceptional)','Viktranium / Miserable: Intelligence +1 (Exceptional)'),
+            ('Viktranium / Miserable: Intelligence +2 (Exceptional)','Viktranium / Miserable: Intelligence +2 (Quality)'),
+            ('25 each of the four Legendary Bleak parts and 100 Legendary Bleak Wires','25 each of the four Legendary Bleak parts and 20 Legendary Bleak Wires'),
+        ]:
+            with self.subTest(old=old):
+                self.assertIn(old,html)
+                with self.assertRaises((AssertionError,ValueError)):
+                    validate_current(source,html.replace(old,new),data)

@@ -1,0 +1,3569 @@
+{
+  "schema": "wisdom-source-record-v1",
+  "record_kind": "Derived, path-sanitized copies of prior bounded audits. Not new browser observations; no source is promoted to a stronger status.",
+  "records": [
+    {
+      "origin": {
+        "file": "analysis_v3/wisdom_source_audit.json",
+        "sha256": "b9b092fd7508735ceefba92c6079210ec17655fc3ffeffcf88ba1f75df791aa4"
+      },
+      "data": {
+        "scope": "Read-only source audit for a Wisdom-priority comparison, not an optimizer solve, repository change, or final recommended replacement",
+        "checkedDate": "2026-11-15",
+        "instructionsRead": [
+          "optimizer/AGENTS.md",
+          "AGENTS.md",
+          "optimizer/docs/solutions/conventions/exclude-until-verified-data-gates.md",
+          "optimizer/docs/solutions/conventions/read-the-dump-for-a-structural-host-marker-before-assuming-a-harvest.md",
+          "optimizer/docs/solutions/design-patterns/render-declared-structure-not-just-placements.md",
+          "optimizer/CONCEPTS.md: Nearly Completed slot; Roll group; data trust; structural slots"
+        ],
+        "retained": {
+          "claws": {
+            "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+            "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+            "pointer": [
+              3
+            ],
+            "requested": "Item:Legendary_Burrowing_Claws",
+            "title": "I:Legendary Burrowing Claws - DDO wiki",
+            "permanent": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+            "modified": "This page was last modified 03:59, August 25, 2026 (Update 81.2) [editor metadata omitted; see source history].",
+            "body": "Legendary Burrowing Claws\nMinimum level\t35\t\nItem Type\tClothing / Gloves\nSlot\tHand\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t450\nMaterial\tLeather\nHardness\t55\nBase Value\t14,001pp \nWeight\t0.10 lbs\nLocation\tThe Darklake, Depthdigger's chest\nEnchantments\t\nQuality Armor-Piercing 5%\nSeeker +15\nInsightful Seeker +7\nNearly Complete: Ability Score\nThis item can be upgraded with one of the following:\nCharisma +15\nConstitution +15\nDexterity +15\nIntelligence +15\nStrength +15\nWisdom +15\nGreen Augment Slot\nColorless Augment Slot\nMoon Augment Slot\nMythic Hands Boost +1 or +3\n\t\nUpgradeable?\tNearly Complete\nDescription\tFashioned after the claws of the Bulette, these would be especially good for digging.\nTips\t",
+            "exactWisdomTooltip": " Wisdom +15: This item makes the wearer more in tune with her surroundings, granting a +15 Enhancement bonus to Wisdom."
+          },
+          "nearlyComplete": {
+            "path": "evidence/endgame-stacking/nearly-complete-705751.json",
+            "sha256": "8b1b40adb26c3f8c21f18f00146269983a64487dfe666d8523ab01a0b8b3faa9",
+            "url": "https://ddowiki.com/page/Nearly_Complete",
+            "permanent": "/index.php?title=Nearly_Complete&oldid=705751",
+            "capturedAt": "2026-11-07T19:50:34.361Z",
+            "craftingRules": "Which set of enchantments is available for an item depends on which version of the Nearly Complete enchantment the item has. For example, an item with Nearly Complete: Ability Score can be upgraded with an Enhancement bonus to one of the core stats. Upgrading an item with Nearly Completed requires 25 Abyssal Gems (or Legendary Abyssal Gems for Legendary items) from Terror of Demogorgon end chests. Note that you cannot replace a Nearly Completed upgrade after selecting one - you will need a new copy of the item to apply a different effect."
+          }
+        },
+        "conclusions": {
+          "clawsWisdom": {
+            "status": "Retained own-page supported",
+            "stat": "Wisdom",
+            "bonusType": "Enhancement",
+            "value": 15,
+            "choice": "Exactly one of the six listed ability scores",
+            "source": "The Darklake, Depthdigger's chest",
+            "eventRequired": false,
+            "craftingCost": "25 Legendary Abyssal Gems per retained general Nearly Complete rule",
+            "replacementCaution": "If the player owns a finished Dexterity pair, the recorded rule requires a new item copy for Wisdom; no supported in-place reroll."
+          },
+          "celestialDexterity": {
+            "host": "Legendary Celestial Sapphire Ring",
+            "independentSource": "https://ddonexus.com/Item/Legendary_Celestial_Sapphire_Ring",
+            "menuStatus": "Current independent community source corroborates a distinct Nearly Finished menu with CON, DEX, or INT, at Cannith Forging/Reforging Station",
+            "ingredients": [
+              "Dampening Alloy",
+              "Reforged Glowing Ingot",
+              "Reforged Dense Ingot",
+              "Stabilizing Compound"
+            ],
+            "effectStatus": "Exact +13 Enhancement Dexterity not independently matched to retained Wiki or live in-game evidence in this bounded audit",
+            "currentCatalog": {
+              "pool": "nearly_complete_per_item['Legendary Celestial Sapphire Ring']",
+              "menu": "Nearly Finished",
+              "stat": "Dexterity",
+              "bonusType": "Enhancement",
+              "value": 13,
+              "alreadyPresent": true
+            },
+            "earlierEmptyPlacement": "Earlier candidate already had Enhancement DEX15, so its separate ring DEX13 option was redundant. An empty recipe is not proof of a missing catalog option; do not call the menu absent without a separate consumer-path test.",
+            "optionalUse": "If exact13 is accepted as a provisional model value, this independent craft slot can recover13 of the15 EnhancementDEX moved to Wisdom, without consuming the ring's ordinary Yellow socket or displacing its native effects. It is not a full15-point recovery.",
+            "recipeMutualExclusion": "Select one Nearly Finished ability; do not add CON/DEX/INT simultaneously",
+            "nonEventSource": "Blown Deadline, Legendary chest2, per independent community collector record",
+            "sourceCaution": "Nexus recipe text prints 'Dexterity +' without a number; secondary build exports reporting13 are only corroboration, not independent Wiki/in-game certification.",
+            "secondaryCorroboration": [
+              "https://www.reddit.com/r/ddo/comments/rpoxxy",
+              "https://scrapbox.io/dungeons-and-dragons-online/Dragon_Lord"
+            ]
+          }
+        },
+        "prospectiveWisdomGems": [
+          {
+            "item": "Diamond of Festive Wisdom +2",
+            "policy": "Allowed solely by user's explicit Festive ability-diamond exception",
+            "knownEventRoute": "Night Revels / Joe Candymaker",
+            "sourceTier": "Catalog's own-page location harvest; no fresh exact effect verification claimed"
+          },
+          {
+            "item": "Lunar Gem of Wisdom (Legendary)",
+            "minimumLevel": 30,
+            "type": "Profane",
+            "value": 4,
+            "policy": "Non-event normal quest route corroborated",
+            "url": "https://ddonexus.com/Item/Lunar_Gem_of_Wisdom_(Legendary)",
+            "normalSources": [
+              "Back to the Abyss",
+              "Ettercap Incursion",
+              "Land of Lamordia",
+              "The Darkness and the Light",
+              "The Price of an Egg"
+            ],
+            "stackingCaution": "Competes with existing Profane Well Rounded2, so adding it is only a2-point Wisdom gain if that source remains"
+          },
+          {
+            "item": "Solar Gem of Wisdom (Legendary)",
+            "minimumLevel": 30,
+            "type": "Artifact",
+            "value": 4,
+            "policy": "Non-event normal quest route corroborated",
+            "url": "https://ddonexus.com/Item/Solar_Gem_of_Wisdom_(Legendary)",
+            "normalSources": [
+              "A Miner Sacrifice",
+              "For Want of a Heart",
+              "The Safehold"
+            ],
+            "slotCaution": "Requires a Sun socket; cannot be inserted into an ordinary Green/Colorless socket"
+          },
+          {
+            "item": "Diamond of Insightful Wisdom +5",
+            "policy": "Conservatively excluded pending a verified permanent source, consistent with all six Insightful+5 diamonds",
+            "notClaimed": "Not proved event-only"
+          },
+          {
+            "item": "Diamond of Wisdom +15",
+            "policy": "Not independently cleared for precise acquisition by this audit; generic acquirable flag is not an exact drop/vendor guarantee",
+            "stackingCaution": "Enhancement type would be redundant with Claws Wisdom15 if both retained"
+          },
+          {
+            "item": "Diamond of Exceptional Wisdom +1",
+            "policy": "No new exact acquisition certification made",
+            "stackingCaution": "Would duplicate Globe of True Imperial Blood's Exceptional Wisdom1 if globe remains"
+          }
+        ],
+        "accessLimits": [
+          "Live DDO Wiki access blocked by robots.txt; no bypass or retry via alternate transport attempted.",
+          "No publisher/in-game numerical source for Celestial Dexterity13 found in the bounded search.",
+          "All preserved v2 evidence remains unchanged."
+        ]
+      }
+    },
+    {
+      "origin": {
+        "file": "analysis_v3/wisdom_dexterity_mechanics.json",
+        "sha256": "c32557e31d10d564adb6ad418b3c97b14ece9e64a3b9e544f2104741f96a9f2a"
+      },
+      "data": {
+        "schema": "intiana-wisdom-dexterity-mechanics-v1",
+        "audit_date": "2026-11-15",
+        "guide_commit": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+        "scope": "Read-only mechanics check of replacing gear-Dexterity priority with Wisdom while preserving the selected INT longbow build. No solver jobs and no repository edits by this auditor.",
+        "comparison_reference": "analysis_v2/artifact-guarded-deception-canonical-spot-luck.json",
+        "access_limit": "Parent observed a non-retryable robots.txt block for fresh DDO Wiki Spot access. No bypass was attempted. Retained direct Wiki receipts, retained source-ledger transcriptions, and independent publisher-authored sources were used. Historical release notes and manual are not an in-game test of every current interaction.",
+        "claims": [
+          {
+            "id": "wisdom_skills_and_will",
+            "status": "source-supported",
+            "claim": "Spot and Listen are Wisdom-based skills. Ordinary Will saves use Wisdom. Heal is also Wisdom-based. No Wisdom-to-Will substitution feat is selected in the preserved guide chassis.",
+            "sources": [
+              "publisher_manual",
+              "retained_class_skill_ledger",
+              "skill_roster_ruling",
+              "guide_build_selection"
+            ],
+            "limits": "A different class-life or unreported feat such as Force of Personality/Liquid Courage could alter the operative Will ability; do not generalize this result to every possible character. Guide is selection evidence, not independent mechanics authority."
+          },
+          {
+            "id": "modifier_parity",
+            "status": "derived",
+            "claim": "Use m(S)=floor((S-10)/2) on the total typed-and-stacked ability score. Adding Enhancement Wisdom15 yields a +15 whole-character Wisdom change only if no pre-existing overlapping Enhancement Wisdom source is already contributing. Under that no-overlap assumption, the modifier gain is +7 when the old total is even and +8 when it is odd. For otherwise unchanged ranks and direct bonuses, Spot, Listen and Wisdom-based Will change by the resulting modifier difference, not by the raw gear affix value.",
+            "formula": "delta_skill_or_save = floor((old_total_WIS + delta_WIS - 10)/2) - floor((old_total_WIS - 10)/2)",
+            "typed_stack_formula": "If E is the pre-existing applicable Enhancement Wisdom bonus, delta_WIS=max(15,E)-E, with other bonus-type contributions unchanged; use that delta in the modifier formula.",
+            "sources": [
+              "publisher_manual",
+              "retained_stacking"
+            ],
+            "limits": "No assumption is made about which buffs the user actually has. A pre-existing Enhancement Wisdom buff can reduce or eliminate the incremental benefit of the new item affix. The manual prints the paired-score modifier table through 24-25; the general floor expression is the standard algebraic expression of that progression. No live character total, full buffs, racial bonuses, or full past-life state was supplied. Do not infer either whole-score delta or parity from the gear-only subtotal. Direct Spot/Will bonuses from other item changes must be added separately."
+          },
+          {
+            "id": "int_bow_damage_and_reflex",
+            "status": "source-supported-conditional",
+            "claim": "The selected Harper Strategic Combat I/II provide INT for missile to-hit/damage. The selected Insightful Reflexes provides INT for Reflex; the original official feat text selects the higher INT/DEX modifier. Keeping INT and those selections preserves those INT-based contributions when INT is the operative higher modifier. Know the Angles remains INT-based. A gear DEX reduction itself does not increase DPS or critical range.",
+            "sources": [
+              "official_harper_u23",
+              "retained_harper",
+              "official_insightful_reflexes_module6",
+              "official_insightful_reflexes_u45",
+              "guide_build_selection"
+            ],
+            "limits": "Conditional on the selected feats/enhancements actually being trained and INT remaining operative. This does not certify total rotation DPS, attack speed, crit profile or proc uptime. No Step Missed, the DEX-based trance, is explicitly not selected in this guide."
+          },
+          {
+            "id": "dexterity_costs",
+            "status": "source-supported-conditional",
+            "claim": "Removing gear DEX can lower the DEX ability-modifier contribution to Balance, Hide, Move Silently, Open Lock and Tumble, and can lower the DEX contribution to Armor Class. A -15 whole-character DEX change is -8 modifier from an even old total or -7 from an odd old total, but this full loss assumes there is no other Enhancement DEX source replacing the removed Enhancement15 contribution. Purchased skill ranks do not change.",
+            "typed_stack_formula": "If E_D is the remaining applicable Enhancement Dexterity bonus, removing the Enhancement15 affix changes the total score by E_D-max(15,E_D); then recompute the modifier from the full typed stack.",
+            "sources": [
+              "publisher_manual",
+              "retained_class_skill_ledger",
+              "skill_roster_ruling",
+              "retained_armor",
+              "retained_stacking"
+            ],
+            "limits": "Exact modifier and final AC loss require the full typed DEX stack, including overlapping nongear buffs, effective Maximum Dexterity Bonus and other AC rules. The raw DEX-derived AC term is constrained by armor MDB, so a raw -7/-8 ability modifier is not automatically -7/-8 final AC. Tumble charge rules keyed to trained ranks are not changed by lowering a gear ability score; no exact current charge/recharge model is certified here."
+          },
+          {
+            "id": "dodge_not_dex_score",
+            "status": "source-supported",
+            "claim": "Dodge chance and Maximum Dexterity Bonus are separate quantities from the Dexterity ability score. The retained Dodge source caps Dodge by the applicable armor/shield MDB, not by the character's DEX modifier. Therefore switching only a DEX gear affix does not by itself lower the raw Dodge bonus or the item's MDB.",
+            "sources": [
+              "retained_dodge",
+              "retained_armor",
+              "dodge_cap_ruling"
+            ],
+            "limits": "Do not equate an unchanged gear Dodge subtotal with certified live effective Dodge; the actual armor/build cap still applies. Armor itself is held unchanged in the controlled comparison."
+          },
+          {
+            "id": "feat_prerequisite_separation",
+            "status": "direct-retained-source-supported",
+            "claim": "Ability-score feat prerequisites count creation score, level-up ability points and inherent ability-tome bonuses. The retained Feats page explicitly excludes gear, enhancements, racial past-life bonuses, buffs and other listed non-inherent sources. A gear-only DEX-to-WIS swap leaves that feat-qualification ledger unchanged; it cannot substitute Wisdom for a DEX prerequisite and cannot remove a DEX contribution that never counted for qualification.",
+            "sources": [
+              "retained_feats",
+              "retained_manyshot",
+              "retained_ips",
+              "guide_build_selection"
+            ],
+            "limits": "The guide config says DEX14 plus +8 tomes, all level-ups INT; ownership and actual live tome state are not independently established. Manyshot Ranger6 grant explicitly waives prerequisites; IPS Ranger11 grant also waives them, but ordinary selected class routes do not all reach Ranger11. Do not promise feats remain usable after arbitrary base-stat damage, reincarnation, feat swaps, or class changes; none is part of this gear-only request."
+          },
+          {
+            "id": "ongoing_equipment_eligibility",
+            "status": "bounded-retained-source-supported",
+            "claim": "The held Calamitous Longbow's retained own page lists ML34, Martial Weapon Proficiency class, required trait None and no racial requirement. Its printed DEX attack/damage modifier is not a minimum-DEX equip requirement and is overridden by the selected Harper mechanics. The held light armor lists ML33, Light Armor Proficiency and Warforged exclusion, with MDB20. The gear-affix swap changes none of these listed requirements.",
+            "sources": [
+              "retained_calamitous",
+              "retained_armor",
+              "retained_harper"
+            ],
+            "limits": "This is a check of the held bow/armor and selected build, not a blanket claim that every equipment item or feat in DDO lacks continuing conditions."
+          },
+          {
+            "id": "listen_control_bonus",
+            "status": "source-supported-conditional",
+            "claim": "The selected Horizon Walker Corner the Quarry uses d20+Listen for its marked-target immobilization save; Banish the Quarry uses d20+Listen for banishing extraplanar marked targets. A Wisdom-derived Listen increase improves these DC contributions when applicable.",
+            "sources": [
+              "retained_horizon_walker",
+              "guide_build_selection"
+            ],
+            "limits": "Boss immunity and target conditions remain. More Wisdom does not turn these into guaranteed control or directly increase their printed weapon/Force damage."
+          }
+        ],
+        "sources": {
+          "publisher_manual": {
+            "url": "https://ftpmirror.your.org/pub/misc/ftp.atari.com/manuals/pc/dungeons_and_dragons_online_stormreach/ddo_manual_revised.pdf",
+            "type": "2006 Atari/Turbine publisher-authored DDO manual, third-party mirror",
+            "locations": "Printed pp14-15 (PDF zero-based page10), pp51 and63",
+            "verified_with": "Text extraction plus visual screenshot of page10 on 2026-11-15",
+            "web_refs": [
+              "turn121view0",
+              "turn123view0",
+              "turn123view1"
+            ],
+            "summary": "Wisdom affects Will, Heal, Listen and Spot. Dexterity affects AC and five named DEX skills. The modifier table advances one point per two ability points. Skill checks add the relevant ability modifier. Historical primary; not treated as a current exhaustive rules specification."
+          },
+          "retained_class_skill_ledger": {
+            "path": "evidence/class-skill-costs/source-ledger.md",
+            "type": "retained exact-excerpt source ledger; original raw packet not locally materialized",
+            "pages": {
+              "Skill": 701579,
+              "Rogue": 683705,
+              "Ranger": 683710,
+              "Spot": 674283
+            },
+            "observed": "2026-11-08",
+            "provenance_limit": "evidence/class-skill-costs/receipt.json says raw_packet_materialized_or_read=false; original receipt filename a018-goldfinger-skill-source-receipt.json, sha256 283c4470f9a69602e9f51ac57e23ef967a3df1e564a8befca35e4cd2456cbdbe."
+          },
+          "skill_roster_ruling": {
+            "path": "optimizer/docs/wiki-evidence/all-skills-grants.md",
+            "url": "https://ddowiki.com/page/Skills",
+            "observed": "2026-08-28",
+            "type": "standing harvest ruling with skill-to-ability table"
+          },
+          "guide_build_selection": {
+            "path": "index.html",
+            "commit": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+            "sections": [
+              "dex-and-bab-check",
+              "heroic-feats",
+              "horizon-walker-41-ap",
+              "harper-agent-14-ap",
+              "deepwood-stalker-25-ap",
+              "epic-destinies-76-points"
+            ],
+            "type": "selected build/configuration only, not mechanics authority"
+          },
+          "official_harper_u23": {
+            "url": "https://www.ddo.com/update-notes/ddo-update-23-release-notes",
+            "date": "2014-09-29",
+            "web_refs": [
+              "turn120view2",
+              "turn121view3"
+            ],
+            "claim_scope": "Strategic Combat I/II INT hit/damage; KTA INT-based insight damage"
+          },
+          "official_insightful_reflexes_module6": {
+            "url": "https://www.ddo.com/update-notes/ddo-module-6-release-notes",
+            "date": "2008-04-16",
+            "web_refs": [
+              "turn120view0",
+              "turn121view1"
+            ],
+            "claim_scope": "INT13 prerequisite; higher INT/DEX modifier for Reflex"
+          },
+          "official_insightful_reflexes_u45": {
+            "url": "https://www.ddo.com/update-notes/ddo-update-45-release-notes",
+            "date": "2020-02-12",
+            "web_refs": [
+              "turn120view1",
+              "turn121view2"
+            ],
+            "claim_scope": "Alchemist level2 grants Insightful Reflexes, described as INT for Reflex saves"
+          },
+          "retained_harper": {
+            "path": "evidence/endgame-stacking/selected-tree-sources.json",
+            "pointer": "/1",
+            "url": "https://ddowiki.com/page/Harper_Agent_enhancements",
+            "oldid": 723355
+          },
+          "retained_horizon_walker": {
+            "path": "evidence/endgame-stacking/selected-tree-sources.json",
+            "pointer": "/2",
+            "url": "https://ddowiki.com/page/Horizon_Walker_enhancements",
+            "oldid": 721857
+          },
+          "retained_ips": {
+            "path": "evidence/endgame-stacking/selected-tree-sources.json",
+            "pointer": "/6",
+            "url": "https://ddowiki.com/page/Improved_Precise_Shot",
+            "oldid": 683999
+          },
+          "retained_feats": {
+            "path": "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-source-evidence-batch-2.json",
+            "pointer": "/pages/0/evidence",
+            "url": "https://ddowiki.com/page/Feats",
+            "observed": "2026-11-02T01:16:03.534Z",
+            "footer_last_modified": "12:20, August 20, 2026 (Update81.2)",
+            "oldid": null,
+            "limit": "Permanent link existed but was truncated, so no revision number was retained."
+          },
+          "retained_manyshot": {
+            "path": "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-source-evidence-batch-2.json",
+            "pointer": "/pages/5/evidence",
+            "url": "https://ddowiki.com/page/Manyshot",
+            "oldid": 721096,
+            "observed": "2026-11-02T01:17:37.173Z"
+          },
+          "retained_dodge": {
+            "path": "evidence/endgame-stacking/augments-and-dodge.json",
+            "pointer": "/receipts/3",
+            "url": "https://ddowiki.com/page/Dodge_bonus",
+            "oldid": 701065,
+            "observed": "2026-11-07T19:35:47.190Z"
+          },
+          "dodge_cap_ruling": {
+            "path": "optimizer/docs/wiki-evidence/intrinsic-stat-caps.md",
+            "claim_scope": "Actual armor MDB, not generic armor category or DEX score, governs the applicable Dodge cap."
+          },
+          "retained_armor": {
+            "path": "tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json",
+            "selector": "pages[].url == https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+            "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+            "oldid": 685449,
+            "observed": "2026-11-05T12:50:30.840Z"
+          },
+          "retained_calamitous": {
+            "path": "tools/fixtures/endgame-evidence/retained/source-calamitous.json",
+            "pointer": "/content/0/text",
+            "url": "https://ddowiki.com/page/Item:Legendary_Calamitous_Longbow",
+            "oldid": 666359,
+            "footer_last_modified": "2025-11-19 (Update76)",
+            "limit": "Retained article payload, not a new live read."
+          },
+          "retained_stacking": {
+            "path": "tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json",
+            "selector": "pages[].url == https://ddowiki.com/page/Stack",
+            "url": "https://ddowiki.com/page/Stack",
+            "oldid": 669682,
+            "observed": "2026-11-05T12:55:27.244Z",
+            "claim_scope": "Same-type bonuses normally do not stack; only the strongest applies. No Wisdom/Dexterity Enhancement exception is asserted."
+          }
+        },
+        "recommendation": "Treat Wisdom in place of gear Dexterity as a defensible utility/Will tradeoff for this preserved INT build, not a free universal upgrade. Preserve DPS-affix safeguards and base/tome/feat selections; report possible lower DEX skills and AC after resolving the full typed stacks. Keep direct gear-only Spot/Will subtotals separate from ability-derived gains. Label +7/+8 Wisdom-derived benefits as conditional on no pre-existing overlapping Enhancement Wisdom source, unchanged other contributions, and the total-score parity.",
+        "not_certified": [
+          "Current player sheet totals and ability parity",
+          "Live tome/feat ownership",
+          "Every possible class-life Will substitution",
+          "Actual endgame AC, effective Dodge or trap-detection thresholds",
+          "Total character DPS or a global optimal loadout"
+        ]
+      }
+    },
+    {
+      "origin": {
+        "file": "analysis_v2/canonical_source_addendum.json",
+        "sha256": "860f19f912e3c4b2c46115aa2b0745e206db923a3a360a6f7561352f109813dd"
+      },
+      "data": {
+        "scope": "Read-only acquisition/effect supplement for artifact-guarded-flex-canonical.json; not a new solve or repository edit",
+        "checkedDate": "2026-11-15",
+        "candidate": "analysis_v2/artifact-guarded-flex-canonical.json",
+        "evidenceCaution": "DDO Nexus is independent community-collected evidence with an explicit beta/incompleteness disclaimer. These findings corroborate the catalog but are not new in-game observations by this audit or publisher certifications.",
+        "newlyCorroboratedEffects": [
+          {
+            "component": "Lunar Gem of Weapon Damage (Legendary)",
+            "effect": {
+              "stat": "Weapon Damage",
+              "type": "Profane",
+              "value": 4
+            },
+            "url": "https://ddonexus.com/Item/Lunar_Gem_of_Weapon_Damage_(Legendary)",
+            "acquisition": "Normal legendary chest records: A Blood Pact, Secrets of the Red Wizards, The Zoo Creeper",
+            "eventRequired": false
+          },
+          {
+            "component": "Solar Gem of Sneak Attack Damage (Legendary)",
+            "effect": {
+              "stat": "Sneak Attack Damage",
+              "type": "Artifact",
+              "value": 3
+            },
+            "not": "Sneak Attack Dice",
+            "url": "https://ddonexus.com/Item/Solar_Gem_of_Sneak_Attack_Damage_(Legendary)",
+            "acquisition": "Normal legendary chest records: A Long Way to Mushrooms, A Miner Sacrifice, Death Hosts This Banquet",
+            "eventRequired": false
+          },
+          {
+            "component": "Topaz of Blindness Immunity",
+            "effect": "Blindness immunity; minimum level8; Yellow/Green/Orange compatible",
+            "url": "https://ddonexus.com/Item/Topaz_of_Blindness_Immunity",
+            "acquisition": [
+              {
+                "vendor": "Chor Blasthorn",
+                "ingredients": {
+                  "Romantic Sonnets": 30,
+                  "Silver Flame Hymnals": 10,
+                  "Tomes: Lost Songs of Cyre": 5
+                },
+                "alternative": "12 Astral Shards"
+              },
+              {
+                "vendor": "Mantakhan",
+                "ingredients": {
+                  "Duskbrood Trumpeters": 30,
+                  "Headsman Beetles": 10,
+                  "Executioner Beetles": 5
+                }
+              },
+              {
+                "vendor": "Lahar, Epic Trader",
+                "ingredients": {
+                  "Tokens of the Twelve": 20
+                }
+              }
+            ],
+            "eventRequired": false
+          },
+          {
+            "component": "Legendary Glabrezu Claw Pendant",
+            "url": "https://ddonexus.com/Item/Legendary_Glabrezu_Claw_Pendant",
+            "acquisition": "Tower of Vengeance, Legendary chest1",
+            "effects": [
+              "Quality Accuracy5",
+              "Quality Seeker3",
+              "3 additional Action Boost uses, only after resting",
+              "Nearly Complete: Insightful Ability Score"
+            ],
+            "ordinarySockets": [
+              "Green",
+              "Colorless"
+            ],
+            "specialSockets": [
+              "Moon"
+            ],
+            "eventRequired": false,
+            "uncertainty": "Action Boost Enhancement is the effect label; the description does not independently establish the optimizer's typed bonus category. Exact NC InsightCON7 is not printed."
+          }
+        ],
+        "recipeEvidence": [
+          {
+            "component": "Pendant Nearly Complete Insightful Constitution",
+            "url": "https://ddonexus.com/Crafting/Duergar_Completion_Forge?p=1&q=",
+            "host": "Any Legendary item with Nearly Complete: Insightful Ability Score",
+            "ingredients": {
+              "Legendary Abyssal Gems": 25
+            },
+            "output": "Insightful Constitution +",
+            "exactMagnitudeSupported": false,
+            "eventRequired": false
+          },
+          {
+            "component": "Legendary Five Rings",
+            "url": "https://ddonexus.com/Item/Legendary_Five_Rings",
+            "minimumLevel": 28,
+            "wornSlots": [
+              "First Finger",
+              "Second Finger",
+              "Trinket"
+            ],
+            "craftSlots": [
+              "Prefix",
+              "Suffix",
+              "Extra",
+              "Bonus",
+              "Set Bonus"
+            ],
+            "augmentSlot": "Craftable Legendary Slaver's Augment Slot, not intrinsically Green",
+            "eventRequired": false
+          },
+          {
+            "component": "Legendary Slaver Fortification",
+            "slot": "Prefix",
+            "recipeUrl": "https://ddonexus.com/Crafting/Trade_In",
+            "applicationUrl": "https://ddonexus.com/Crafting/Workbench?p=3&q=",
+            "ingredients": {
+              "Legendary Broken Shackles": 100
+            },
+            "output": "Fortification +%",
+            "exactMagnitudeSupported": false
+          },
+          {
+            "component": "Legendary Slaver's Combustion",
+            "slot": "Suffix",
+            "url": "https://ddonexus.com/Item/Legendary_Slavers_Combustion",
+            "ingredients": {
+              "Legendary Chain Links": 100
+            },
+            "output": "Combustion +",
+            "exactMagnitudeSupported": false
+          },
+          {
+            "component": "Legendary Slaver Quality Fortification",
+            "slot": "Bonus",
+            "url": "https://ddonexus.com/Item/Legendary_Slaver_Quality_Fortification",
+            "ingredients": {
+              "Legendary Frayed Leathers": 50,
+              "Legendary Broken Shackles": 50,
+              "Legendary Chain Links": 50,
+              "Legendary Broken Collars": 50
+            },
+            "output": "Quality Fortification +%",
+            "exactMagnitudeSupported": false
+          },
+          {
+            "component": "Legendary Slaver's Green Augment Slot",
+            "url": "https://ddonexus.com/Item/Legendary_Slavers_Green_Augment_Slot",
+            "ingredients": {
+              "Legendary Staff Splinters": 100,
+              "Legendary Broken Shackles": 50,
+              "Legendary Chain Links": 50,
+              "Legendary Broken Collars": 50
+            },
+            "application": "Workbench consumes the Legendary Slaver's Augment Slot and adds Green Augment Slot",
+            "requiredBefore": "Placing the candidate's ordinary augment in Five Rings",
+            "eventRequired": false
+          }
+        ],
+        "remainingExactMagnitudeGaps": [
+          {
+            "component": "Legendary Glabrezu Claw Pendant",
+            "claim": "Nearly Complete Insightful Constitution7",
+            "status": "Recipe family and stat supported; exact7 not independently established here"
+          },
+          {
+            "component": "Legendary Five Rings",
+            "claim": "Prefix Enhancement Fortification142",
+            "status": "Prefix family and normal procurement supported; exact142 and bonus category not independently established here"
+          },
+          {
+            "component": "Legendary Five Rings",
+            "claim": "Suffix Equipment Combustion142",
+            "status": "Suffix family and normal procurement supported; exact142 and bonus category not independently established here"
+          },
+          {
+            "component": "Legendary Five Rings",
+            "claim": "Bonus Quality Fortification35",
+            "status": "Bonus family/type and normal procurement supported; exact35 not independently established here"
+          }
+        ],
+        "conflictsNotResolved": [
+          {
+            "component": "The Skull of the Horned King",
+            "claim": "Enhancement ability score15 versus item-page16",
+            "treatment": "Canonical candidate and baseline both choose CON here; model32->36 and own-page33->37 both give CON delta+4. Do not label either absolute total in-game verified."
+          },
+          {
+            "component": "Legendary Belt of the Burrower",
+            "claim": "Quality Deception3 tooltip flat sneak damage5 versus4",
+            "treatment": "Native Quality Deception3 label supported; do not invent resolved flat SA damage or overlook conditional eligibility."
+          }
+        ],
+        "optionalUnusedCraftSlot": {
+          "component": "Legendary Five Rings",
+          "slot": "Extra",
+          "modelOption": "Spot +20 (Competence)",
+          "impact": "Would reduce modeled Spot loss22 to loss2 without spending an ordinary socket or displacing selected DPS/defense recipes",
+          "caution": "Proposed manual addition, not part of the current canonical file at time of this supplement and not a new solve. Exact20 still needs independent effect evidence."
+        },
+        "sourcePolicy": "Festive +2 ability diamonds remain the only event exception. No evidence found that these new named items/recipes require an event. Exact-source uncertainty must not be converted into a claim that an item is event-only."
+      }
+    },
+    {
+      "origin": {
+        "file": "analysis_v2/guarded_deception_source_addendum.json",
+        "sha256": "cf44eb43b7b71e30363ea8a8ffa764b90a51d7d812d04ce745260723e7e2e016"
+      },
+      "data": {
+        "checkedDate": "2026-11-15",
+        "scope": "Focused source and acquisition audit of artifact-guarded-deception.json, before any manually canonicalized descendant",
+        "candidate": "analysis_v2/artifact-guarded-deception.json",
+        "noRepositoryChanges": true,
+        "policyCheck": {
+          "inspectedNamedItems": 14,
+          "inspectedOrdinaryAndSunMoonAugmentSelections": 22,
+          "inspectedSetAugmentPlacements": 12,
+          "selectedPolicyExcludedVariants": [],
+          "selectedUnresolvedInsightful5OrSpot22": [],
+          "allowedEventExceptionsSelected": [
+            "Diamond of Festive Constitution +2",
+            "Diamond of Festive Intelligence +2"
+          ],
+          "rule": "Only the six +2 Festive ability diamonds are event exceptions; every other known event/historic/limited item is excluded. Unknown sources are not automatically certified permanent.",
+          "caveat": "Sapphire of Healing Amplification +63 still lacks an individually specified acquisition location in retained evidence; broad common-augment provenance is not an exact farming route."
+        },
+        "celestialSapphireRing": {
+          "url": "https://ddonexus.com/Item/Legendary_Celestial_Sapphire_Ring",
+          "evidenceClass": "Independent community-collected corroboration; current beta site explicitly warns data can be incomplete or incorrect",
+          "acquisition": "Blown Deadline, Legendary chest2; Masterminds of Sharn ordinary adventure content, not an event",
+          "minimumLevel": 29,
+          "wornSlots": [
+            "First Finger",
+            "Second Finger"
+          ],
+          "binding": "Bound to Account on Acquire",
+          "ordinarySockets": [
+            "Yellow"
+          ],
+          "effects": [
+            {
+              "name": "Improved Deception",
+              "numericMeaning": "+5 Enhancement bonus to Bluff; NOT +5 DPS",
+              "proc": "Conditional chance to make the target vulnerable to sneak attacks for a short time",
+              "limitations": [
+                "No numeric proc probability or duration established here",
+                "Preserves the named proc family, not independently measured identical uptime compared with the old Pendant",
+                "Source uses generic weapon wording even on a ring; do not invent a ranged-specific uptime guarantee"
+              ]
+            },
+            {
+              "name": "Dodge",
+              "type": "Enhancement",
+              "value": 13,
+              "unit": "percent"
+            },
+            {
+              "name": "Profane Well Rounded",
+              "type": "Profane",
+              "value": 2,
+              "stats": [
+                "Strength",
+                "Dexterity",
+                "Constitution",
+                "Intelligence",
+                "Wisdom",
+                "Charisma"
+              ]
+            }
+          ],
+          "nearlyFinished": {
+            "nature": "Selectable crafting menu, not a random roll",
+            "station": "Cannith Forging/Reforging Station",
+            "choices": [
+              "Constitution",
+              "Dexterity",
+              "Intelligence"
+            ],
+            "ingredients": [
+              "Dampening Alloy",
+              "Reforged Glowing Ingot",
+              "Reforged Dense Ingot",
+              "Stabilizing Compound"
+            ],
+            "magnitude": "Nexus recipe output omits scaled number; catalog says Enhancement13, not independently certified here",
+            "selectedByActualCandidate": false,
+            "ruling": "Leaving this optional craft unfinished is legal; do not credit an unselected +13 stat."
+          }
+        },
+        "legendaryChains": {
+          "url": "https://ddonexus.com/Item/Legendary_Chains",
+          "retainedDualSlotEvidence": "optimizer/docs/wiki-evidence/dual-slot-items.md; Legendary Chains own-page revision631926",
+          "acquisition": "Catalog own-page metadata identifies Slave Pits of the Undercity, Against the Slave Lords. Publisher U32 release notes corroborate ordinary legendary adventure-pack/crafting context; new Nexus own page has no Found In collector record.",
+          "acquisitionEvidenceLimit": "Exact quest drop location not independently live-confirmed here; no evidence it requires an event.",
+          "minimumLevel": 28,
+          "wornSlots": [
+            "Neck",
+            "Waist"
+          ],
+          "selectedWornSlot": "Waist/Belt",
+          "binding": "Bound to Account on Acquire",
+          "craftSlots": [
+            "Prefix",
+            "Suffix",
+            "Extra",
+            "Bonus",
+            "Set Bonus"
+          ],
+          "selectedCrafts": [
+            {
+              "slot": "Prefix",
+              "effect": "Enhancement Fortification142",
+              "sourceUrl": "https://ddonexus.com/Crafting/Workbench?p=3&q=",
+              "recipeIngredients": {
+                "Legendary Broken Shackles": 100
+              },
+              "status": "Prefix family and normal recipe corroborated; exact142 and type not independently established by this source"
+            },
+            {
+              "slot": "Suffix",
+              "effect": "Equipment Combustion142",
+              "sourceUrl": "https://ddonexus.com/Item/Legendary_Slavers_Combustion",
+              "recipeIngredients": {
+                "Legendary Chain Links": 100
+              },
+              "status": "Suffix family and normal recipe corroborated; exact142 and type not independently established by this source"
+            },
+            {
+              "slot": "Bonus",
+              "effect": "Quality Constitution3",
+              "sourceUrl": "https://ddonexus.com/Item/Legendary_Slaver_Quality_Constitution",
+              "recipeIngredients": {
+                "Legendary Frayed Leathers": 50,
+                "Legendary Broken Shackles": 50,
+                "Legendary Chain Links": 50,
+                "Legendary Broken Collars": 50
+              },
+              "status": "Bonus family and Quality type corroborated; exact3 is not printed"
+            }
+          ],
+          "greenSocketPrerequisite": {
+            "url": "https://ddonexus.com/Item/Legendary_Slavers_Green_Augment_Slot",
+            "recipeIngredients": {
+              "Legendary Staff Splinters": 100,
+              "Legendary Broken Shackles": 50,
+              "Legendary Chain Links": 50,
+              "Legendary Broken Collars": 50
+            },
+            "action": "Apply the crafted slot shard at Workbench; replaces Legendary Slaver's Augment Slot with Green Augment Slot",
+            "whyRequired": "Actual candidate places a Quickblade set augment in Chains' Green slot; the base item does not arrive with an automatically unlocked green ordinary socket."
+          },
+          "unusedExtraSlot": "May hold a separate optional skill recipe. The model offers Spot20 Competence, but a manual addition must be labeled and audited separately, with its exact magnitude still not source-verified here."
+        },
+        "remainingExactSelectedCraftGaps": [
+          "Legendary Glabrezu Claw Pendant: Nearly Complete Insightful Intelligence7",
+          "Legendary Chains: Prefix Enhancement Fortification142",
+          "Legendary Chains: Suffix Equipment Combustion142",
+          "Legendary Chains: Bonus Quality Constitution3"
+        ],
+        "inheritedSourceCautions": [
+          "The Skull of the Horned King generic15 versus own-page16 ability-score conflict remains. Actual run selects DEX; a manual canonical rotation back to guide CON should preserve all modeled buckets but changes which exact source sensitivity applies.",
+          "Glabrezu +3 Action Boost uses only become available after resting; no assumed uptime.",
+          "Dusk Raider/Perfect Silence/Quickblade/Tough Shields are normal permanent raid-item/Threads/Soul Vessel craft families, three distinct hosts per set; no Court of Strahd event items required.",
+          "No fully verified numerical DPS gain or global optimum can be claimed solely from the unmodified solver."
+        ],
+        "sourceBurdenComparison": {
+          "comparedTo": "artifact-guarded-flex-canonical.json",
+          "removals": [
+            "Legendary Belt of the Burrower",
+            "Legendary Five Rings"
+          ],
+          "additions": [
+            "Legendary Chains",
+            "Legendary Celestial Sapphire Ring"
+          ],
+          "notes": [
+            "New ring native effects have direct independent community corroboration, not a fresh retained publisher/game capture.",
+            "Same four exact selected craft magnitudes remain unresolved independently, with Slavers QualityCON3 replacing QualityFort35 and Pendant INT7 replacingCON7.",
+            "Burrower Quality Deception damage4-versus5 conflict drops out because that belt is no longer selected.",
+            "Same one Slavers green-slot unlock prerequisite remains.",
+            "Raw run retains Queen's guide InsightCON7 selection; an audited three-way Enhancement recipe rotation could also preserve guide SkullCON and ClawsDEX, avoiding new finished NC copies if those existing pieces are owned."
+          ]
+        }
+      }
+    }
+  ],
+  "policy": {
+    "event_exceptions": [
+      "Diamond of Festive Intelligence +2",
+      "Diamond of Festive Constitution +2",
+      "Diamond of Festive Dexterity +2"
+    ],
+    "reason": "The user explicitly allows Festive gems because they are obtainable through the shard auction house. This is an exception, not a guarantee of current listing availability or price.",
+    "other_event_or_limited_time_items": "excluded",
+    "known_exclusions": [
+      {
+        "id": "+1 Intimidating Dagger of Acid",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "+1 Starter Heavy Steel Shield",
+        "reason": "no known live acquisition source"
+      },
+      {
+        "id": "+1 Starter Heavy Wooden Shield",
+        "reason": "no known live acquisition source"
+      },
+      {
+        "id": "+1 Vorpal Sickle of Haggling",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "+2 Intimidating Dagger of Paralyzing Acid",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Admiral's Tricorne",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Amulet of Natural Armor",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Artemist's Aegis (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Artemist's Aegis (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Artemist's Aegis (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Artemist's Aegis (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Artemist's Aegis (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Artemist's Aegis (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Battleworn Shield of Cyre",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Bold Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Boots of Minor Striding",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Bottled Fear",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Bouquet of Flowers",
+        "reason": "seasonal store item, conservative exclusion"
+      },
+      {
+        "id": "Brawling Gloves (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Brawling Gloves (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Brawling Gloves (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Brawling Gloves (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Brigand's Cutlass (legacy) (level 12)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Brigand's Cutlass (legacy) (level 16)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Brigand's Cutlass (legacy) (level 4)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Brigand's Cutlass (legacy) (level 8)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Brigand's Cutlass (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Brigand's Cutlass (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Brigand's Cutlass (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Brigand's Cutlass (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Broccoli Bashers",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Broken Oar (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Broken Oar (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Broken Oar (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Broken Oar (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Bronze Ingot Arcanum (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Brooch of Waterbreathing",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Brussel Sprout Beater",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Brutish Cuirass (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Bulwark of the Storm's Fist (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Captain's Chapeau",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Captain's Cutter (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Captain's Cutter (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Captain's Cutter (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Captain's Cutter (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cataclysmic Buckler",
+        "reason": "no known live acquisition source"
+      },
+      {
+        "id": "Cataclysmic Large Shield",
+        "reason": "no known live acquisition source"
+      },
+      {
+        "id": "Cataclysmic Small Shield",
+        "reason": "no known live acquisition source"
+      },
+      {
+        "id": "Cataclysmic Tower Shield",
+        "reason": "no known live acquisition source"
+      },
+      {
+        "id": "Caustic Forum Post (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Caustic Forum Post (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Caustic Forum Post (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Caustic Forum Post (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Caustic Forum Post (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Caustic Forum Post (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Cavalry Plate (legacy) (level 12)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cavalry Plate (legacy) (level 16)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cavalry Plate (legacy) (level 4)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cavalry Plate (legacy) (level 8)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cavalry Plate (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cavalry Plate (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cavalry Plate (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cavalry Plate (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Chain Shirt of Toppling (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Charming Festival Mask",
+        "reason": "seasonal store item, conservative exclusion"
+      },
+      {
+        "id": "Charoush's Inferno (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Cheap Shot (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Cheap Shot (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Cheap Shot (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Cheap Shot (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Cheap Shot (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Cheap Shot (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Clamorous Forum Post (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Clamorous Forum Post (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Clamorous Forum Post (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Clamorous Forum Post (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Clamorous Forum Post (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Clamorous Forum Post (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Cloak of Night (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Night (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Night (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Night (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Summer's End (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of Winter's End (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of the Mimic (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of the Mimic (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of the Mimic (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of the Mimic (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of the Mimic (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of the Mimic (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cloak of the Mimic (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Coat of the Wanderer (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Copper Dwarven War Axe",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Copper Ingot Arcanum (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Coronach (historic)",
+        "reason": "no known live acquisition source; historic or legacy version"
+      },
+      {
+        "id": "Corsair's Skullcap",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystalline Frostaxe",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Crystallized Eternity (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cunning Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cutthroat's Smallblade (legacy) (level 12)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cutthroat's Smallblade (legacy) (level 16)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cutthroat's Smallblade (legacy) (level 4)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cutthroat's Smallblade (legacy) (level 8)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Cutthroat's Smallblade (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cutthroat's Smallblade (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cutthroat's Smallblade (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Cutthroat's Smallblade (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Death's Smile",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Delighter's Docent",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Docent of Shadow (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Docent of Shadow (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Docent of Shadow (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Docent of Shadow (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dragonsoul Vestments (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Admiral's Tricorne",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Dread Pirate's Cloak (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Duelist's Leathers (legacy) (level 12)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Duelist's Leathers (legacy) (level 16)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Duelist's Leathers (legacy) (level 4)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Duelist's Leathers (legacy) (level 8)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Duelist's Leathers (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Duelist's Leathers (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Duelist's Leathers (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Duelist's Leathers (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Enchanted Chocolates by Fabiano & Zelda",
+        "reason": "seasonal store item, conservative exclusion"
+      },
+      {
+        "id": "Eon, the Poisoned Reign",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Brawling Gloves (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Brawling Gloves (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Brawling Gloves (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Brigand's Cutlass (legacy) (level 20)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Brigand's Cutlass (legacy) (level 24)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Brigand's Cutlass (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Brigand's Cutlass (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Brigand's Cutlass (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Broken Oar (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Broken Oar (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Broken Oar (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Captain's Cutter (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Captain's Cutter (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Captain's Cutter (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cavalry Plate (legacy) (level 20)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Cavalry Plate (legacy) (level 24)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Cavalry Plate (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cavalry Plate (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cavalry Plate (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cloak of Night (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cloak of Night (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cloak of Night (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cutthroat's Smallblade (legacy) (level 20)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Cutthroat's Smallblade (legacy) (level 24)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Cutthroat's Smallblade (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cutthroat's Smallblade (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Cutthroat's Smallblade (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Docent of Shadow (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Docent of Shadow (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Docent of Shadow (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Duelist's Leathers (legacy) (level 20)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Duelist's Leathers (legacy) (level 24)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Duelist's Leathers (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Duelist's Leathers (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Duelist's Leathers (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Flotsam (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Flotsam (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Flotsam (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Hull-Melter's Mace (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Hull-Melter's Mace (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Hull-Melter's Mace (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Hull-Wrecker's Hammer (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Hull-Wrecker's Hammer (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Hull-Wrecker's Hammer (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ornamented Dagger (legacy) (level 20)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Ornamented Dagger (legacy) (level 24)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Ornamented Dagger (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ornamented Dagger (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ornamented Dagger (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ratkiller (legacy) (level 20)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Ratkiller (legacy) (level 24)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Ratkiller (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ratkiller (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ratkiller (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ring of the Buccaneer (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ring of the Buccaneer (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ring of the Buccaneer (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Robe of Shadow (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Robe of Shadow (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Robe of Shadow (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ship-Chaplain's Sidearm (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ship-Chaplain's Sidearm (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ship-Chaplain's Sidearm (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ship-Siege Bow (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ship-Siege Bow (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Ship-Siege Bow (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Spectre Deflector (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Spectre Deflector (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Spectre Deflector (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Swashbuckler (legacy) (level 20)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Swashbuckler (legacy) (level 24)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Epic Swashbuckler (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Swashbuckler (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Swashbuckler (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic The Drowned (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic The Drowned (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic The Drowned (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Treasure Hunter's Spyglass (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Treasure Hunter's Spyglass (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Treasure Hunter's Spyglass (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Wraps of Endless Light (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Wraps of Endless Light (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Epic Wraps of Endless Light (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Festival Luck Charms",
+        "reason": "seasonal store item, conservative exclusion"
+      },
+      {
+        "id": "First Light (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "First Light (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "First Light (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "First Light (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "First Light (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "First Light (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Flaming Forum Post (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Flaming Forum Post (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Flaming Forum Post (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Flaming Forum Post (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Flaming Forum Post (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Flaming Forum Post (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Flotsam (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Flotsam (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Flotsam (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Flotsam (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Founder's Helm",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Freebooter's Bandana",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Glass Cannon",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Glass Cannon (legacy) (tier 1)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Glass Cannon (legacy) (tier 2)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Glass Cannon (legacy) (tier 3)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Grand Ringmaster's Plate (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Great Axe of the Chained Soldier (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Greater Bold Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Greater Cunning Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Greater Nimble Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Greater Stalwart Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Greater Vial of Seafog",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Green Steel Greatclub",
+        "reason": "retired special-event pseudo-source"
+      },
+      {
+        "id": "Green Steel Light Hammer",
+        "reason": "retired special-event pseudo-source"
+      },
+      {
+        "id": "Hammer of the Leaden Clouds (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Hat of the Night Hag",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hood of Unrest",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Melter's Mace (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Melter's Mace (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Melter's Mace (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Melter's Mace (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Wrecker's Hammer (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Wrecker's Hammer (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Wrecker's Hammer (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Hull-Wrecker's Hammer (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Icy Forum Post (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Icy Forum Post (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Icy Forum Post (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Icy Forum Post (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Icy Forum Post (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Icy Forum Post (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Indomitable Wrappings (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Indomitable Wrappings (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Indomitable Wrappings (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Indomitable Wrappings (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Indomitable Wrappings (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Indomitable Wrappings (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Indomitable Wrappings (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Jolly Roger Bomb",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Kookie Kutter (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Kookie Kutter (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Kookie Kutter (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Kookie Kutter (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Kookie Kutter (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Kookie Kutter (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Lawrence's Robe of Trivial Knowledge",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Legendary Brawling Gloves (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Brawling Gloves (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Brigand's Cutlass (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Brigand's Cutlass (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Broken Oar (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Broken Oar (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Captain's Cutter (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Captain's Cutter (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Cavalry Plate (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Cavalry Plate (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Cloak of Night (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Cloak of Night (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Cutthroat's Smallblade (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Cutthroat's Smallblade (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Docent of Shadow (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Docent of Shadow (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Duelist's Leathers (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Duelist's Leathers (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Flotsam (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Flotsam (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Hull-Melter's Mace (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Hull-Melter's Mace (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Hull-Wrecker's Hammer (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Hull-Wrecker's Hammer (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ornamented Dagger (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ornamented Dagger (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ratkiller (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ratkiller (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ring of the Buccaneer (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ring of the Buccaneer (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Robe of Shadow (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Robe of Shadow (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ship-Chaplain's Sidearm (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ship-Chaplain's Sidearm (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ship-Siege Bow (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Ship-Siege Bow (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Spectre Deflector (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Spectre Deflector (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Swashbuckler (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Swashbuckler (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary The Drowned (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary The Drowned (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Treasure Hunter's Spyglass (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Legendary Treasure Hunter's Spyglass (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lesser Bold Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lesser Cunning Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lesser Nimble Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lesser Stalwart Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lesser Vial of Seafog",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lesser Whirlwind Armor",
+        "reason": "preview-only source"
+      },
+      {
+        "id": "Lomizir's To-Do List",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Long Broom of Mystery",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lousy Chain Docent?",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Lousy Chainshirt",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Lucky Hat",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Lump of Coal",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Lynnabel's Bug Killer (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Lynnabel's Bug Killer (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Lynnabel's Bug Killer (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Lynnabel's Bug Killer (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Lynnabel's Bug Killer (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Lynnabel's Bug Killer (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Malicia's Crown (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Malicia's Crown (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Minos Lorica (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Mysterious Bracers (level 14)",
+        "reason": "Champion Hunter Week item, conservative exclusion"
+      },
+      {
+        "id": "Mysterious Bracers (level 21)",
+        "reason": "Champion Hunter Week item, conservative exclusion"
+      },
+      {
+        "id": "Mysterious Bracers (level 7)",
+        "reason": "Champion Hunter Week item, conservative exclusion"
+      },
+      {
+        "id": "Mysterious Cloak (level 14)",
+        "reason": "Champion Hunter Week item, conservative exclusion"
+      },
+      {
+        "id": "Mysterious Cloak (level 21)",
+        "reason": "Champion Hunter Week item, conservative exclusion"
+      },
+      {
+        "id": "Mysterious Cloak (level 7)",
+        "reason": "Champion Hunter Week item, conservative exclusion"
+      },
+      {
+        "id": "Necklace of Glib Tongue (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Necklace of Glib Tongue (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Necklace of Glib Tongue (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Necklace of Glib Tongue (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Necklace of Glib Tongue (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Necklace of Glib Tongue (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Necklace of Glib Tongue (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Necrotic Forum Post (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Necrotic Forum Post (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Necrotic Forum Post (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Necrotic Forum Post (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Necrotic Forum Post (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Necrotic Forum Post (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Nimble Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "No Worries (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "No Worries (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "No Worries (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "No Worries (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "No Worries (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "No Worries (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Official Risia Ice Games Ice Skates",
+        "reason": "seasonal store item, conservative exclusion"
+      },
+      {
+        "id": "Orb of Many Charts",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ornamented Dagger (legacy) (level 12)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ornamented Dagger (legacy) (level 16)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ornamented Dagger (legacy) (level 4)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ornamented Dagger (legacy) (level 8)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ornamented Dagger (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ornamented Dagger (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ornamented Dagger (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ornamented Dagger (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pick of Endless Light (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Pirate's Bandana",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Power Evidence",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Pumpkin Head",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Quorforged Docent of Victory (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ratkiller (legacy) (level 12)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ratkiller (legacy) (level 16)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ratkiller (legacy) (level 4)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ratkiller (legacy) (level 8)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Ratkiller (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ratkiller (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ratkiller (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ratkiller (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Reveler's Regalia",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ring of the Buccaneer (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ring of the Buccaneer (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ring of the Buccaneer (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ring of the Buccaneer (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Resonance (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Shadow (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Shadow (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Shadow (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Robe of Shadow (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Rod of Teleport",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Rose Colored Goggles",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Royal Scimitar (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Scary Festival Mask",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Scepter of Siberys",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Seeker Tap of Spellsight",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Severlin's Iron Fists (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Iron Fists (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Iron Fists (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Iron Fists (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Iron Fists (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Iron Fists (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Leaden Boots (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Leaden Boots (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Leaden Boots (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Leaden Boots (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Leaden Boots (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Severlin's Leaden Boots (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Shen's Robe",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Ship-Chaplain's Sidearm (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ship-Chaplain's Sidearm (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ship-Chaplain's Sidearm (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ship-Chaplain's Sidearm (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ship-Siege Bow (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ship-Siege Bow (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ship-Siege Bow (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Ship-Siege Bow (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Shocking Forum Post (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Shocking Forum Post (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Shocking Forum Post (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Shocking Forum Post (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Shocking Forum Post (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Shocking Forum Post (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Short Broom of Mystery",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Silence of the Tasty Hams",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Silver Ingot Arcanum (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Skull Head",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Skullsmasher (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Skyvault Shield (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Snowball",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Dagger (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Longbow (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Throwing Dagger (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectre Deflector (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectre Deflector (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectre Deflector (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectre Deflector (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spooky Festival Mask",
+        "reason": "seasonal store item, conservative exclusion"
+      },
+      {
+        "id": "Squid Smasher",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Stalwart Trinket",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Star of Endless Night (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Swabby's Kerchief",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Swashbuckler (legacy) (level 12)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Swashbuckler (legacy) (level 16)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Swashbuckler (legacy) (level 4)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Swashbuckler (legacy) (level 8)",
+        "reason": "event-classified source; historic or legacy version"
+      },
+      {
+        "id": "Swashbuckler (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Swashbuckler (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Swashbuckler (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Swashbuckler (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Tainted Helm of Mystery",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Tchurvul's Kukri",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "The Admiral of Bling",
+        "reason": "retired special-event pseudo-source"
+      },
+      {
+        "id": "The Astral Projector",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Balance Bat",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Balance Beam",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Banhammer",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Commander of Bling (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 20)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 24)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 28)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Commander of Bling (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Darkwood Skull",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Diplomancer (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Diplomancer (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Diplomancer (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Diplomancer (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Diplomancer (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Diplomancer (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Drowned (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Drowned (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Drowned (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Drowned (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Epic Astral Projector",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Frozen Skull",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Ice Dragon's Tooth",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "The Mother Board (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Mother Board (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Mother Board (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Mother Board (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Mother Board (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Mother Board (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Only Exception (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Only Exception (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Only Exception (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Only Exception (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Only Exception (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Only Exception (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "The Sword of Snow",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Thick Skin (level 10)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Thick Skin (level 15)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Thick Skin (level 20)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Thick Skin (level 25)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Thick Skin (level 30)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Thick Skin (level 5)",
+        "reason": "Anniversary Party event"
+      },
+      {
+        "id": "Tortured Livewood Bow (historic)",
+        "reason": "historic or legacy version"
+      },
+      {
+        "id": "Treasure Hunter's Spyglass (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Treasure Hunter's Spyglass (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Treasure Hunter's Spyglass (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Treasure Hunter's Spyglass (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Vial of Seafog",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Wayfinder's Scepter",
+        "reason": "retired special-event pseudo-source; no known live acquisition source"
+      },
+      {
+        "id": "Wraps of Endless Light (level 12)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Wraps of Endless Light (level 16)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Wraps of Endless Light (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Wraps of Endless Light (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Wraps of Endless Light (level 4)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Wraps of Endless Light (level 8)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Axe (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Great Crossbow (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 32)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Spectral Warhammer (level 36)",
+        "reason": "event-classified source"
+      },
+      {
+        "id": "Sapphire of Snowpeaks Speed",
+        "reason": "event-only named augment"
+      },
+      {
+        "id": "Ruby of Ghostbane",
+        "reason": "event-only named augment"
+      },
+      {
+        "id": "Ruby of the Adamantine Blessing",
+        "reason": "event-only named augment"
+      },
+      {
+        "id": "Ruby of the Endless Night",
+        "reason": "event-only named augment"
+      },
+      {
+        "id": "Ruby of the Iron Hand",
+        "reason": "event-only named augment"
+      },
+      {
+        "id": "Ruby of the Snowpeaks",
+        "reason": "event-only named augment"
+      },
+      {
+        "id": "Ruby of the Surging Tide",
+        "reason": "event-only named augment"
+      },
+      {
+        "id": "Ruby of the Vampire Slayer",
+        "reason": "event-only named augment"
+      }
+    ],
+    "blocklist_origin": {
+      "file": "analysis_v3/artifact-wisdom.json",
+      "sha256": "6cba0f33765b8c24b19179716e3240147dae98ac047fc53effbecc18470ce6bd"
+    }
+  }
+}
+

@@ -44,7 +44,7 @@ class SnapshotPathTests(unittest.TestCase):
             self.snapshot.replace('src="../img/', 'src="img/'),
             self.snapshot.replace('href="../heroic-crafting-print.html"', 'href="heroic-crafting-print.html"'),
             self.snapshot.replace('href="#pierce-deception-source-note"', 'href="../#pierce-deception-source-note"'),
-            self.snapshot.replace('Constitution contribution is <strong>33</strong>', 'Constitution contribution is <strong>32</strong>'),
+            self.snapshot.replace('Model-only gear WIS 18 / DEX 6', 'Model-only gear WIS 18 / DEX 19'),
         ]
         for html in mutations:
             self.assertNotEqual(html, self.snapshot)

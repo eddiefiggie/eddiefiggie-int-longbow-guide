@@ -1,0 +1,4045 @@
+{
+  "schema": "wisdom-claim-inventory-v1",
+  "origin": {
+    "file": "analysis_v3/artifact-wisdom-canonical-spot-luck-claim-inventory.json",
+    "sha256": "4015f9018bd7b4e67bae596f12e790250a24253758733c94a66cd38d40131d8a"
+  },
+  "record_kind": "Derived and path-sanitized inventory; repeated source references deduplicated. Retained-source support is not current ledger certification.",
+  "coverage": {
+    "selectedComponents": 54,
+    "selectedAffixes": 130,
+    "byStatus": {
+      "retained-source supported": 93,
+      "corroborated-only": 24,
+      "unresolved/conflicting": 1,
+      "conditional/not valued": 7,
+      "model-only": 5
+    },
+    "notFullyCertified": 30
+  },
+  "statusDefinitions": {
+    "retained-source supported": "An explicitly matched retained source passage supports this effect/value; not a new live-game observation.",
+    "corroborated-only": "Matching own-harvest or independent fan-reference evidence exists, but not independent full primary-source validation.",
+    "unresolved/conflicting": "Selected claim has a source conflict or an unresolved mechanic that cannot be silently certified.",
+    "conditional/not valued": "Presence/effect is recorded, but its activation, applicability, uptime or magnitude is not a permanent scored contribution.",
+    "model-only": "Selected catalog/solver claim with no sufficiently matched independent retained evidence established by this inventory."
+  },
+  "components": [
+    {
+      "kind": "item",
+      "id": "Light Armor of the Warblade's Reflection",
+      "slot": "Armor",
+      "claimStart": 0,
+      "claimCount": 6,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "The Skull of the Horned King",
+      "slot": "Helmet",
+      "claimStart": 6,
+      "claimCount": 4,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Goggles of the Archer",
+      "slot": "Goggles",
+      "claimStart": 10,
+      "claimCount": 4,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Glabrezu Claw Pendant",
+      "slot": "Necklace",
+      "claimStart": 14,
+      "claimCount": 3,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Abyssal Compass",
+      "slot": "Trinket",
+      "claimStart": 17,
+      "claimCount": 4,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "The Queen of Rot",
+      "slot": "Cloak",
+      "claimStart": 21,
+      "claimCount": 6,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Chains",
+      "slot": "Belt",
+      "claimStart": 27,
+      "claimCount": 0,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Celestial Sapphire Ring",
+      "slot": "Ring",
+      "claimStart": 27,
+      "claimCount": 8,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Ring of Unnatural Accuracy",
+      "slot": "Ring",
+      "claimStart": 35,
+      "claimCount": 4,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Burrowing Claws",
+      "slot": "Gloves",
+      "claimStart": 39,
+      "claimCount": 3,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Coldlight Runners",
+      "slot": "Boots",
+      "claimStart": 42,
+      "claimCount": 2,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Yeenoghu's Reign",
+      "slot": "Bracers",
+      "claimStart": 44,
+      "claimCount": 5,
+      "artifact": true
+    },
+    {
+      "kind": "item",
+      "id": "Epic Purifying Quiver",
+      "slot": "Quiver",
+      "claimStart": 49,
+      "claimCount": 2,
+      "artifact": false
+    },
+    {
+      "kind": "item",
+      "id": "Legendary Calamitous Longbow",
+      "slot": "Main Hand",
+      "claimStart": 51,
+      "claimCount": 1,
+      "artifact": false
+    },
+    {
+      "kind": "augment",
+      "id": "Legendary Sapphire of Riposte",
+      "claimStart": 52,
+      "claimCount": 4
+    },
+    {
+      "kind": "augment",
+      "id": "Sapphire of Dodge +16%",
+      "claimStart": 56,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Sapphire of False Life +60",
+      "claimStart": 57,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Sapphire of Greater Heroism",
+      "claimStart": 58,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Sapphire of Healing Amplification +63",
+      "claimStart": 59,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Sapphire of Good Luck +3",
+      "claimStart": 60,
+      "claimCount": 24
+    },
+    {
+      "kind": "augment",
+      "id": "Diamond of Festive Intelligence +2",
+      "claimStart": 84,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Globe of True Imperial Blood",
+      "claimStart": 85,
+      "claimCount": 6
+    },
+    {
+      "kind": "augment",
+      "id": "Ravil's Book of Legendary Recipes",
+      "claimStart": 91,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Emerald of Arcane Empowerment",
+      "claimStart": 92,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Lunar Gem of Intelligence (Legendary)",
+      "claimStart": 93,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Lunar Gem of Physical Protection (Legendary)",
+      "claimStart": 94,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Lunar Gem of Ranged Power (Legendary)",
+      "claimStart": 95,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Lunar Gem of Weapon Damage (Legendary)",
+      "claimStart": 96,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "A Treatise on Battle",
+      "claimStart": 97,
+      "claimCount": 4
+    },
+    {
+      "kind": "augment",
+      "id": "Solar Gem of Constitution (Legendary)",
+      "claimStart": 101,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Solar Gem of Critical Confirmation (Legendary)",
+      "claimStart": 102,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Solar Gem of Fortification Bypass (Legendary)",
+      "claimStart": 103,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Solar Gem of Intelligence (Legendary)",
+      "claimStart": 104,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Solar Gem of Sneak Attack Damage (Legendary)",
+      "claimStart": 105,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Topaz of Blindness Immunity",
+      "claimStart": 106,
+      "claimCount": 1
+    },
+    {
+      "kind": "augment",
+      "id": "Topaz of Ranged Power +14",
+      "claimStart": 107,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "nearly_complete: Constitution Enhancement 15",
+      "host": "The Skull of the Horned King",
+      "claimStart": 108,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "nearly_complete: Intelligence Insight 7",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "claimStart": 109,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "nearly_complete: Constitution Insight 7",
+      "host": "The Queen of Rot",
+      "claimStart": 110,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "nearly_complete: Wisdom Enhancement 15",
+      "host": "Legendary Burrowing Claws",
+      "claimStart": 111,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Dolorous Quality Constitution (legendary)",
+      "host": "Legendary Coldlight Runners",
+      "claimStart": 112,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Melancholic Intelligence (legendary)",
+      "host": "Legendary Coldlight Runners",
+      "claimStart": 113,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Dolorous Flames (legendary)",
+      "host": "Legendary Calamitous Longbow",
+      "claimStart": 114,
+      "claimCount": 2
+    },
+    {
+      "kind": "craft",
+      "id": "Melancholic Flames (legendary)",
+      "host": "Legendary Calamitous Longbow",
+      "claimStart": 116,
+      "claimCount": 2
+    },
+    {
+      "kind": "craft",
+      "id": "Miserable Dimlight (legendary)",
+      "host": "Legendary Calamitous Longbow",
+      "claimStart": 118,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Woeful Salt",
+      "host": "Legendary Calamitous Longbow",
+      "claimStart": 119,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Fortification +142 (Enhancement)",
+      "host": "Legendary Chains",
+      "claimStart": 120,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Combustion +142 (Equipment)",
+      "host": "Legendary Chains",
+      "claimStart": 121,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Intelligence +3 (Quality)",
+      "host": "Legendary Chains",
+      "claimStart": 122,
+      "claimCount": 1
+    },
+    {
+      "kind": "craft",
+      "id": "Spot +20 (Competence)",
+      "host": "Legendary Chains",
+      "claimStart": 123,
+      "claimCount": 1
+    },
+    {
+      "kind": "set",
+      "id": "Dusk Raider",
+      "claimStart": 124,
+      "claimCount": 2
+    },
+    {
+      "kind": "set",
+      "id": "Perfect Silence",
+      "claimStart": 126,
+      "claimCount": 1
+    },
+    {
+      "kind": "set",
+      "id": "Quickblade",
+      "claimStart": 127,
+      "claimCount": 2
+    },
+    {
+      "kind": "set",
+      "id": "Tough Shields",
+      "claimStart": 129,
+      "claimCount": 1
+    }
+  ],
+  "claims": [
+    {
+      "kind": "item",
+      "component": "Light Armor of the Warblade's Reflection",
+      "stat": "Armor Class",
+      "type": "Armor",
+      "value": 50,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Light Armor of the Warblade's Reflection",
+        "family": "item"
+      },
+      "conditions": [
+        "The item's printed Armor Bonus is +50. This inventory does not independently certify whether the model's separate +15 armor enhancement should add to or already be included in that printed total."
+      ],
+      "slot": "Armor",
+      "source_ids": [
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Light Armor of the Warblade's Reflection",
+      "stat": "Enhancement Bonus (Armor)",
+      "type": "Enhancement",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Light Armor of the Warblade's Reflection",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Armor",
+      "source_ids": [
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Light Armor of the Warblade's Reflection",
+      "stat": "Accuracy",
+      "type": "Competence",
+      "value": 24,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Light Armor of the Warblade's Reflection",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Armor",
+      "source_ids": [
+        1
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Light Armor of the Warblade's Reflection",
+      "stat": "Deadly",
+      "type": "Competence",
+      "value": 12,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Light Armor of the Warblade's Reflection",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Armor",
+      "source_ids": [
+        2
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Light Armor of the Warblade's Reflection",
+      "stat": "Shadow Striker",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Light Armor of the Warblade's Reflection",
+        "family": "item"
+      },
+      "conditions": [
+        "Composite: +3% Profane Doubleshot/Doublestrike, +15% Enhancement melee and +20% Enhancement ranged speed. Not extra critical threat range."
+      ],
+      "slot": "Armor",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Light Armor of the Warblade's Reflection",
+      "stat": "Armor-Piercing",
+      "type": "Legendary",
+      "value": 5,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Light Armor of the Warblade's Reflection",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Armor",
+      "source_ids": [
+        4
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Skull of the Horned King",
+      "stat": "Relentless Fury",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "conditional/not valued",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Skull of the Horned King",
+        "family": "item"
+      },
+      "conditions": [
+        "Killing-blow-triggered 30-second enhancement damage buff; not unconditional 5% sustained DPS."
+      ],
+      "slot": "Helmet",
+      "value_evidence_status": "model-only",
+      "source_ids": [
+        5
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Skull of the Horned King",
+      "stat": "Armor-Piercing",
+      "type": "Enhancement",
+      "value": 25,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Skull of the Horned King",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Helmet",
+      "source_ids": [
+        6
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Skull of the Horned King",
+      "stat": "Doublestrike",
+      "type": "Enhancement",
+      "value": 18,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Skull of the Horned King",
+        "family": "item"
+      },
+      "conditions": [
+        "Doublestrike affects melee attacks, not longbow Doubleshot."
+      ],
+      "slot": "Helmet",
+      "source_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Skull of the Horned King",
+      "stat": "Bloodrage",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "conditional/not valued",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Skull of the Horned King",
+        "family": "item"
+      },
+      "conditions": [
+        "Trigger-dependent buff; not +8 permanent Constitution or +5 permanent damage. Distinguish Enhanced Bloodrage's source label from catalog's generic Bloodrage flag."
+      ],
+      "slot": "Helmet",
+      "value_evidence_status": "model-only",
+      "source_ids": [
+        9
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Goggles of the Archer",
+      "stat": "Doubleshot",
+      "type": "Enhancement",
+      "value": 9,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Goggles of the Archer",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Goggles",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Goggles of the Archer",
+      "stat": "Sight Beyond Sight",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Goggles of the Archer",
+        "family": "item"
+      },
+      "conditions": [
+        "+5% Enhancement dodge bypass, not a critical-range increase."
+      ],
+      "slot": "Goggles",
+      "source_ids": [
+        11
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Goggles of the Archer",
+      "stat": "Greater Marksmanship",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Goggles of the Archer",
+        "family": "item"
+      },
+      "conditions": [
+        "One effect grants +3 ranged attack/+2 ranged damage, stacks with generic Accuracy/Deadly per retained source; multiple copies do not multiply it. Optimizer keeps a Boolean only."
+      ],
+      "slot": "Goggles",
+      "source_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Goggles of the Archer",
+      "stat": "Armor-Piercing",
+      "type": "Insight",
+      "value": 11,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Goggles of the Archer",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Goggles",
+      "source_ids": [
+        14
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Glabrezu Claw Pendant",
+      "stat": "Accuracy",
+      "type": "Quality",
+      "value": 5,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Glabrezu Claw Pendant",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Necklace",
+      "source_ids": [
+        15,
+        16
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Glabrezu Claw Pendant",
+      "stat": "Seeker",
+      "type": "Quality",
+      "value": 3,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Glabrezu Claw Pendant",
+        "family": "item"
+      },
+      "conditions": [
+        "Critical confirmation and critical damage; no threat-range enlargement is implied."
+      ],
+      "slot": "Necklace",
+      "source_ids": [
+        15,
+        16
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Glabrezu Claw Pendant",
+      "stat": "Action Boost Charges",
+      "type": "Enhancement",
+      "value": 3,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Glabrezu Claw Pendant",
+        "family": "item"
+      },
+      "conditions": [
+        "Three additional uses take effect only after resting. The source calls the effect Action Boost Enhancement but does not independently establish the catalog's Enhancement bonus type. No assumed proc/boost uptime or DPS value."
+      ],
+      "slot": "Necklace",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Abyssal Compass",
+      "stat": "Sheltering",
+      "type": "Insight",
+      "value": 21,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Abyssal Compass",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Trinket",
+      "source_ids": [
+        17
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Abyssal Compass",
+      "stat": "Sheltering",
+      "type": "Quality",
+      "value": 11,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Abyssal Compass",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Trinket",
+      "source_ids": [
+        18
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Abyssal Compass",
+      "stat": "Legendary Demonic Shield",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "conditional/not valued",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Abyssal Compass",
+        "family": "item"
+      },
+      "conditions": [
+        "Chance when hit in melee to gain temporary HP; not flat permanent maximum HP."
+      ],
+      "slot": "Trinket",
+      "value_evidence_status": "model-only",
+      "source_ids": [
+        19
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Abyssal Compass",
+      "stat": "Fortitude Save",
+      "type": "Insight",
+      "value": 7,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Abyssal Compass",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Trinket",
+      "source_ids": [
+        20
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Queen of Rot",
+      "stat": "Sheltering",
+      "type": "Enhancement",
+      "value": 41,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Queen of Rot",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Cloak",
+      "source_ids": [
+        21
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Queen of Rot",
+      "stat": "Fortitude Save",
+      "type": "Resistance",
+      "value": 13,
+      "via": "Resistance",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Queen of Rot",
+        "family": "item"
+      },
+      "conditions": [
+        "Queen types remain model assumptions where exact original tooltips are missing; relayed named effects are not promoted to retained-source supported."
+      ],
+      "slot": "Cloak",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Queen of Rot",
+      "stat": "Reflex Save",
+      "type": "Resistance",
+      "value": 13,
+      "via": "Resistance",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Queen of Rot",
+        "family": "item"
+      },
+      "conditions": [
+        "Queen types remain model assumptions where exact original tooltips are missing; relayed named effects are not promoted to retained-source supported."
+      ],
+      "slot": "Cloak",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Queen of Rot",
+      "stat": "Will Save",
+      "type": "Resistance",
+      "value": 13,
+      "via": "Resistance",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Queen of Rot",
+        "family": "item"
+      },
+      "conditions": [
+        "Queen types remain model assumptions where exact original tooltips are missing; relayed named effects are not promoted to retained-source supported."
+      ],
+      "slot": "Cloak",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Queen of Rot",
+      "stat": "Fortification",
+      "type": "Insight",
+      "value": 84,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Queen of Rot",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Cloak",
+      "source_ids": [
+        21
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "The Queen of Rot",
+      "stat": "Freedom of Movement",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "The Queen of Rot",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Cloak",
+      "source_ids": [
+        21
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Improved Deception",
+      "type": "Enhancement",
+      "value": 5,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [
+        "Numeric value is a Bluff-check bonus, NOT guaranteed sneak-attack damage/uptime. The target-darkness proc is conditional and unvalued.",
+        "Preserves the named conditional vulnerability-to-sneak-attacks proc family. +5 is Enhancement Bluff, not proc probability. Identical ranged uptime versus the old Pendant was NOT independently established; generic weapon wording on the item is not a ranged-specific guarantee."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        23,
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Dodge",
+      "type": "Enhancement",
+      "value": 13,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Ring",
+      "source_ids": [
+        23,
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Strength",
+      "type": "Profane",
+      "value": 2,
+      "via": "Profane Well Rounded",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [
+        "Profane Well Rounded+2 does not add to a larger Profane ability gem. Nearly Finished is a separate host-specific craft slot: this recipe leaves it unselected."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Dexterity",
+      "type": "Profane",
+      "value": 2,
+      "via": "Profane Well Rounded",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [
+        "Profane Well Rounded+2 does not add to a larger Profane ability gem. Nearly Finished is a separate host-specific craft slot: this recipe leaves it unselected."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Constitution",
+      "type": "Profane",
+      "value": 2,
+      "via": "Profane Well Rounded",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [
+        "Profane Well Rounded+2 does not add to a larger Profane ability gem. Nearly Finished is a separate host-specific craft slot: this recipe leaves it unselected."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Intelligence",
+      "type": "Profane",
+      "value": 2,
+      "via": "Profane Well Rounded",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [
+        "Profane Well Rounded+2 does not add to a larger Profane ability gem. Nearly Finished is a separate host-specific craft slot: this recipe leaves it unselected."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Wisdom",
+      "type": "Profane",
+      "value": 2,
+      "via": "Profane Well Rounded",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [
+        "Profane Well Rounded+2 does not add to a larger Profane ability gem. Nearly Finished is a separate host-specific craft slot: this recipe leaves it unselected."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Celestial Sapphire Ring",
+      "stat": "Charisma",
+      "type": "Profane",
+      "value": 2,
+      "via": "Profane Well Rounded",
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Celestial Sapphire Ring",
+        "family": "item"
+      },
+      "conditions": [
+        "Profane Well Rounded+2 does not add to a larger Profane ability gem. Nearly Finished is a separate host-specific craft slot: this recipe leaves it unselected."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        24
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Ring of Unnatural Accuracy",
+      "stat": "Dexterity",
+      "type": "Quality",
+      "value": 3,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Ring of Unnatural Accuracy",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Ring",
+      "source_ids": [
+        25
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Ring of Unnatural Accuracy",
+      "stat": "Doubleshot",
+      "type": "Quality",
+      "value": 3,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Ring of Unnatural Accuracy",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Ring",
+      "source_ids": [
+        26
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Ring of Unnatural Accuracy",
+      "stat": "Greater Marksmanship",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Ring of Unnatural Accuracy",
+        "family": "item"
+      },
+      "conditions": [
+        "One effect grants +3 ranged attack/+2 ranged damage, stacks with generic Accuracy/Deadly per retained source; multiple copies do not multiply it. Optimizer keeps a Boolean only."
+      ],
+      "slot": "Ring",
+      "source_ids": [
+        27,
+        13
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Ring of Unnatural Accuracy",
+      "stat": "Distant Diversion",
+      "type": "Enhancement",
+      "value": 22,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Ring of Unnatural Accuracy",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Ring",
+      "source_ids": [
+        28
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Burrowing Claws",
+      "stat": "Armor-Piercing",
+      "type": "Quality",
+      "value": 5,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Burrowing Claws",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Gloves",
+      "source_ids": [
+        29
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Burrowing Claws",
+      "stat": "Seeker",
+      "type": "Enhancement",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Burrowing Claws",
+        "family": "item"
+      },
+      "conditions": [
+        "Critical confirmation and critical damage; no threat-range enlargement is implied."
+      ],
+      "slot": "Gloves",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Burrowing Claws",
+      "stat": "Seeker",
+      "type": "Insight",
+      "value": 7,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Burrowing Claws",
+        "family": "item"
+      },
+      "conditions": [
+        "Critical confirmation and critical damage; no threat-range enlargement is implied."
+      ],
+      "slot": "Gloves",
+      "source_ids": [
+        31
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Coldlight Runners",
+      "stat": "Greater Marksmanship",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Coldlight Runners",
+        "family": "item"
+      },
+      "conditions": [
+        "One effect grants +3 ranged attack/+2 ranged damage, stacks with generic Accuracy/Deadly per retained source; multiple copies do not multiply it. Optimizer keeps a Boolean only."
+      ],
+      "slot": "Boots",
+      "source_ids": [
+        32,
+        13
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Coldlight Runners",
+      "stat": "Doubleshot",
+      "type": "Insight",
+      "value": 5,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Coldlight Runners",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Boots",
+      "source_ids": [
+        33
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Yeenoghu's Reign",
+      "stat": "Max Filigree Slots",
+      "type": "Untyped",
+      "value": 5,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Yeenoghu's Reign",
+        "family": "item"
+      },
+      "conditions": [
+        "Capacity, not unlocked/filled slots. Engine does not score installed filigree effects; full weapon/artifact reconciliation remains separate."
+      ],
+      "slot": "Bracers",
+      "source_ids": [
+        34
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Yeenoghu's Reign",
+      "stat": "Bloodrage",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "conditional/not valued",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Yeenoghu's Reign",
+        "family": "item"
+      },
+      "conditions": [
+        "Trigger-dependent buff; not +8 permanent Constitution or +5 permanent damage. Distinguish Enhanced Bloodrage's source label from catalog's generic Bloodrage flag."
+      ],
+      "slot": "Bracers",
+      "value_evidence_status": "model-only",
+      "source_ids": [
+        9,
+        34
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Yeenoghu's Reign",
+      "stat": "Ram's Might",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Yeenoghu's Reign",
+        "family": "item"
+      },
+      "conditions": [
+        "Source says permanent benefit of the spell; Ranger can already cast it, so do not assume incremental damage without comparing active spell buffs."
+      ],
+      "slot": "Bracers",
+      "source_ids": [
+        35,
+        34
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Yeenoghu's Reign",
+      "stat": "Major Anger",
+      "type": "Enhancement",
+      "value": 5,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Yeenoghu's Reign",
+        "family": "item"
+      },
+      "conditions": [
+        "Source explicitly states five extra Rage uses after resting, but the catalog Enhancement bonus type was not independently established; not a longbow damage increase."
+      ],
+      "slot": "Bracers",
+      "source_ids": [
+        34
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Yeenoghu's Reign",
+      "stat": "Deadly",
+      "type": "Quality",
+      "value": 4,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Yeenoghu's Reign",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Bracers",
+      "source_ids": [
+        35,
+        34
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Epic Purifying Quiver",
+      "stat": "Burning Ammunition - 1d8",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Epic Purifying Quiver",
+        "family": "item"
+      },
+      "conditions": [
+        "This establishes the named enchantments only; quiver proc behavior/stacking and whole-DPS contribution remain outside the optimizer model."
+      ],
+      "slot": "Quiver",
+      "source_ids": [
+        36
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Epic Purifying Quiver",
+      "stat": "Blunted Ammunition",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Epic Purifying Quiver",
+        "family": "item"
+      },
+      "conditions": [
+        "This establishes the named enchantments only; quiver proc behavior/stacking and whole-DPS contribution remain outside the optimizer model."
+      ],
+      "slot": "Quiver",
+      "source_ids": [
+        37,
+        36
+      ]
+    },
+    {
+      "kind": "item",
+      "component": "Legendary Calamitous Longbow",
+      "stat": "Enhancement Bonus (Weapon)",
+      "type": "Enhancement",
+      "value": 15,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Calamitous Longbow",
+        "family": "item"
+      },
+      "conditions": [],
+      "slot": "Main Hand",
+      "source_ids": [
+        38
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Legendary Sapphire of Riposte",
+      "stat": "Armor Class",
+      "type": "Insight",
+      "value": 6,
+      "via": "Riposte",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Sapphire of Riposte",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        39
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Legendary Sapphire of Riposte",
+      "stat": "Fortitude Save",
+      "type": "Insight",
+      "value": 6,
+      "via": "Riposte",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Sapphire of Riposte",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        39
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Legendary Sapphire of Riposte",
+      "stat": "Reflex Save",
+      "type": "Insight",
+      "value": 6,
+      "via": "Riposte",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Sapphire of Riposte",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        39
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Legendary Sapphire of Riposte",
+      "stat": "Will Save",
+      "type": "Insight",
+      "value": 6,
+      "via": "Riposte",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Legendary Sapphire of Riposte",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        39
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Dodge +16%",
+      "stat": "Dodge",
+      "type": "Enhancement",
+      "value": 16,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Dodge +16%",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        40
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of False Life +60",
+      "stat": "False Life",
+      "type": "Enhancement",
+      "value": 60,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of False Life +60",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        41
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Greater Heroism",
+      "stat": "Greater Heroism",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Greater Heroism",
+        "family": "augment"
+      },
+      "conditions": [
+        "Passive item form does not grant spell's temporary HP or fear immunity; its +4 Morale bonuses still do not stack with spell copies."
+      ],
+      "slotColor": "Green",
+      "source_ids": [
+        42
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Healing Amplification +63",
+      "stat": "Healing Amplification",
+      "type": "Competence",
+      "value": 63,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Healing Amplification +63",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        43
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Fortitude Save",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Reflex Save",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Will Save",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Balance",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Bluff",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Concentration",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Diplomacy",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Disable Device",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Haggle",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Heal",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Hide",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Intimidate",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Jump",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Listen",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Move Silently",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Open Lock",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Perform",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Repair",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Search",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Spellcraft",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Spot",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Swim",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Tumble",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Sapphire of Good Luck +3",
+      "stat": "Use Magic Device",
+      "type": "Luck",
+      "value": 3,
+      "via": "Good Luck",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Sapphire of Good Luck +3",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Blue",
+      "source_ids": [
+        44
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Diamond of Festive Intelligence +2",
+      "stat": "Intelligence",
+      "type": "Festive",
+      "value": 2,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Diamond of Festive Intelligence +2",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        45
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Globe of True Imperial Blood",
+      "stat": "Strength",
+      "type": "Exceptional",
+      "value": 1,
+      "via": "Exceptional Well Rounded",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Globe of True Imperial Blood",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Purple",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Globe of True Imperial Blood",
+      "stat": "Dexterity",
+      "type": "Exceptional",
+      "value": 1,
+      "via": "Exceptional Well Rounded",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Globe of True Imperial Blood",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Purple",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Globe of True Imperial Blood",
+      "stat": "Constitution",
+      "type": "Exceptional",
+      "value": 1,
+      "via": "Exceptional Well Rounded",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Globe of True Imperial Blood",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Purple",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Globe of True Imperial Blood",
+      "stat": "Intelligence",
+      "type": "Exceptional",
+      "value": 1,
+      "via": "Exceptional Well Rounded",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Globe of True Imperial Blood",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Purple",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Globe of True Imperial Blood",
+      "stat": "Wisdom",
+      "type": "Exceptional",
+      "value": 1,
+      "via": "Exceptional Well Rounded",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Globe of True Imperial Blood",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Purple",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Globe of True Imperial Blood",
+      "stat": "Charisma",
+      "type": "Exceptional",
+      "value": 1,
+      "via": "Exceptional Well Rounded",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Globe of True Imperial Blood",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Purple",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Ravil's Book of Legendary Recipes",
+      "stat": "False Life",
+      "type": "Vitality",
+      "value": 48,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Ravil's Book of Legendary Recipes",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        47
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Emerald of Arcane Empowerment",
+      "stat": "Imbue Dice",
+      "type": "Enhancement",
+      "value": 1,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Emerald of Arcane Empowerment",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Green",
+      "source_ids": [
+        48
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Lunar Gem of Intelligence (Legendary)",
+      "stat": "Intelligence",
+      "type": "Profane",
+      "value": 4,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Lunar Gem of Intelligence (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Moon",
+      "source_ids": [
+        49
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Lunar Gem of Physical Protection (Legendary)",
+      "stat": "Physical Sheltering",
+      "type": "Profane",
+      "value": 30,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Lunar Gem of Physical Protection (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Moon",
+      "source_ids": [
+        50
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Lunar Gem of Ranged Power (Legendary)",
+      "stat": "Ranged Power",
+      "type": "Profane",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Lunar Gem of Ranged Power (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Moon",
+      "source_ids": [
+        51
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Lunar Gem of Weapon Damage (Legendary)",
+      "stat": "Deadly",
+      "type": "Profane",
+      "value": 4,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Lunar Gem of Weapon Damage (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Moon",
+      "source_ids": [
+        52
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "A Treatise on Battle",
+      "stat": "Stunning",
+      "type": "Enhancement",
+      "value": 11,
+      "via": "Enhancement Combat Mastery",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "A Treatise on Battle",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Orange",
+      "source_ids": [
+        53
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "A Treatise on Battle",
+      "stat": "Vertigo",
+      "type": "Enhancement",
+      "value": 11,
+      "via": "Enhancement Combat Mastery",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "A Treatise on Battle",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Orange",
+      "source_ids": [
+        53
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "A Treatise on Battle",
+      "stat": "Shatter",
+      "type": "Enhancement",
+      "value": 11,
+      "via": "Enhancement Combat Mastery",
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "A Treatise on Battle",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Orange",
+      "source_ids": [
+        53
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "A Treatise on Battle",
+      "stat": "Immunity to Fear",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "A Treatise on Battle",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Orange",
+      "source_ids": [
+        53
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Solar Gem of Constitution (Legendary)",
+      "stat": "Constitution",
+      "type": "Artifact",
+      "value": 4,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Solar Gem of Constitution (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Sun",
+      "source_ids": [
+        54
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Solar Gem of Critical Confirmation (Legendary)",
+      "stat": "Seeker",
+      "type": "Artifact",
+      "value": 4,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Solar Gem of Critical Confirmation (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [
+        "Critical confirmation and critical damage; no threat-range enlargement is implied."
+      ],
+      "slotColor": "Sun",
+      "source_ids": [
+        55
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Solar Gem of Fortification Bypass (Legendary)",
+      "stat": "Armor-Piercing",
+      "type": "Artifact",
+      "value": 30,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Solar Gem of Fortification Bypass (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Sun",
+      "source_ids": [
+        56
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Solar Gem of Intelligence (Legendary)",
+      "stat": "Intelligence",
+      "type": "Artifact",
+      "value": 4,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Solar Gem of Intelligence (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Sun",
+      "source_ids": [
+        57
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Solar Gem of Sneak Attack Damage (Legendary)",
+      "stat": "Sneak Attack Damage",
+      "type": "Artifact",
+      "value": 3,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Solar Gem of Sneak Attack Damage (Legendary)",
+        "family": "augment"
+      },
+      "conditions": [
+        "Flat sneak-eligible damage, NOT three sneak dice. No guaranteed sneak-attack uptime is implied."
+      ],
+      "slotColor": "Sun",
+      "source_ids": [
+        58
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Topaz of Blindness Immunity",
+      "stat": "Blindness Immunity",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Topaz of Blindness Immunity",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Yellow",
+      "source_ids": [
+        59
+      ]
+    },
+    {
+      "kind": "augment",
+      "component": "Topaz of Ranged Power +14",
+      "stat": "Ranged Power",
+      "type": "Enhancement",
+      "value": 14,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Topaz of Ranged Power +14",
+        "family": "augment"
+      },
+      "conditions": [],
+      "slotColor": "Yellow",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "nearly_complete: Constitution Enhancement 15",
+      "stat": "Constitution",
+      "type": "Enhancement",
+      "value": 15,
+      "via": null,
+      "status": "unresolved/conflicting",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "nearly_complete: Constitution Enhancement 15",
+        "family": "nearly_complete"
+      },
+      "conditions": [
+        "Catalog generic recipe +15 vs retained item page +16 for every selected ability. Report both cases. If baseline and candidate both use Skull CON, adding one to both preserves delta; if candidate instead chooses DEX/INT/etc, only that candidate ability improves while baseline CON improves separately."
+      ],
+      "family": "nearly_complete",
+      "host": "The Skull of the Horned King",
+      "category": "Ability Score",
+      "source_ids": [
+        61,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "nearly_complete: Intelligence Insight 7",
+      "stat": "Intelligence",
+      "type": "Insight",
+      "value": 7,
+      "via": null,
+      "status": "model-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "nearly_complete: Intelligence Insight 7",
+        "family": "nearly_complete"
+      },
+      "conditions": [
+        "The exact Insight+7 magnitude remains catalog-only in this independent review; a matching family alone does not certify the number."
+      ],
+      "family": "nearly_complete",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "category": "Insightful Ability Score",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "nearly_complete: Constitution Insight 7",
+      "stat": "Constitution",
+      "type": "Insight",
+      "value": 7,
+      "via": null,
+      "status": "corroborated-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "nearly_complete: Constitution Insight 7",
+        "family": "nearly_complete"
+      },
+      "conditions": [
+        "Queen types remain model assumptions where exact original tooltips are missing; relayed named effects are not promoted to retained-source supported."
+      ],
+      "family": "nearly_complete",
+      "host": "The Queen of Rot",
+      "category": "Insightful Ability Score",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "nearly_complete: Wisdom Enhancement 15",
+      "stat": "Wisdom",
+      "type": "Enhancement",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "nearly_complete: Wisdom Enhancement 15",
+        "family": "nearly_complete"
+      },
+      "conditions": [
+        "Nearly Complete permits exactly one ability choice; a completed DEX copy cannot be rerolled under the retained rule. A new Claws copy is required if changing an already-completed pair."
+      ],
+      "family": "nearly_complete",
+      "host": "Legendary Burrowing Claws",
+      "category": "Ability Score",
+      "source_ids": [
+        61,
+        65
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Dolorous Quality Constitution (legendary)",
+      "stat": "Constitution",
+      "type": "Quality",
+      "value": 3,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Dolorous Quality Constitution (legendary)",
+        "family": "viktranium"
+      },
+      "conditions": [
+        "Exact Legendary column of retained Accessories table was read separately; only one option per corresponding host craft slot."
+      ],
+      "family": "viktranium",
+      "host": "Legendary Coldlight Runners",
+      "category": "Accessory",
+      "source_ids": [
+        66
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Melancholic Intelligence (legendary)",
+      "stat": "Intelligence",
+      "type": "Enhancement",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Melancholic Intelligence (legendary)",
+        "family": "viktranium"
+      },
+      "conditions": [
+        "Exact Legendary column of retained Accessories table was read separately; only one option per corresponding host craft slot."
+      ],
+      "family": "viktranium",
+      "host": "Legendary Coldlight Runners",
+      "category": "Accessory",
+      "source_ids": [
+        66
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Dolorous Flames (legendary)",
+      "stat": "Good Aligned",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Dolorous Flames (legendary)",
+        "family": "viktranium"
+      },
+      "conditions": [],
+      "family": "viktranium",
+      "host": "Legendary Calamitous Longbow",
+      "category": "Weapon",
+      "source_ids": [
+        67
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Dolorous Flames (legendary)",
+      "stat": "Alchemical Fire Attunement",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "conditional/not valued",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Dolorous Flames (legendary)",
+        "family": "viktranium"
+      },
+      "conditions": [
+        "Chance fire-damage effect, with proc rate/uptime not valued by optimizer. Do not infer extra copies stack."
+      ],
+      "family": "viktranium",
+      "host": "Legendary Calamitous Longbow",
+      "category": "Weapon",
+      "value_evidence_status": "model-only",
+      "source_ids": [
+        67
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Melancholic Flames (legendary)",
+      "stat": "Adamantine",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Melancholic Flames (legendary)",
+        "family": "viktranium"
+      },
+      "conditions": [],
+      "family": "viktranium",
+      "host": "Legendary Calamitous Longbow",
+      "category": "Weapon",
+      "source_ids": [
+        68
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Melancholic Flames (legendary)",
+      "stat": "Fiery",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "conditional/not valued",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Melancholic Flames (legendary)",
+        "family": "viktranium"
+      },
+      "conditions": [
+        "Retained weapon insert states 16d6 on-hit Fire, but catalog uses a Boolean flag; no total-DPS valuation follows from presence alone."
+      ],
+      "family": "viktranium",
+      "host": "Legendary Calamitous Longbow",
+      "category": "Weapon",
+      "value_evidence_status": "model-only",
+      "source_ids": [
+        68
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Miserable Dimlight (legendary)",
+      "stat": "Intelligence",
+      "type": "Exceptional",
+      "value": 2,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Miserable Dimlight (legendary)",
+        "family": "viktranium"
+      },
+      "conditions": [],
+      "family": "viktranium",
+      "host": "Legendary Calamitous Longbow",
+      "category": "Weapon",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Woeful Salt",
+      "stat": "Legendary Salt",
+      "type": "Bool",
+      "value": 1,
+      "via": null,
+      "status": "conditional/not valued",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Woeful Salt",
+        "family": "viktranium"
+      },
+      "conditions": [
+        "Chance to slow non-bosses, fading stacks and internal cooldown; no numeric DPS scored."
+      ],
+      "family": "viktranium",
+      "host": "Legendary Calamitous Longbow",
+      "category": "Weapon",
+      "value_evidence_status": "model-only",
+      "source_ids": [
+        70
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Fortification +142 (Enhancement)",
+      "stat": "Fortification",
+      "type": "Enhancement",
+      "value": 142,
+      "via": null,
+      "status": "model-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Fortification +142 (Enhancement)",
+        "family": "slavers"
+      },
+      "conditions": [
+        "Exact selected magnitude remains catalog-only. Legal catalog craft-slot membership is independently checked by the arithmetic/placement script but is not independent proof of the game value."
+      ],
+      "family": "slavers",
+      "host": "Legendary Chains",
+      "source_ids": [
+        71
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Combustion +142 (Equipment)",
+      "stat": "Combustion",
+      "type": "Equipment",
+      "value": 142,
+      "via": null,
+      "status": "model-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Combustion +142 (Equipment)",
+        "family": "slavers"
+      },
+      "conditions": [
+        "Exact selected magnitude remains catalog-only. Legal catalog craft-slot membership is independently checked by the arithmetic/placement script but is not independent proof of the game value."
+      ],
+      "family": "slavers",
+      "host": "Legendary Chains",
+      "source_ids": [
+        71
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Intelligence +3 (Quality)",
+      "stat": "Intelligence",
+      "type": "Quality",
+      "value": 3,
+      "via": null,
+      "status": "model-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Intelligence +3 (Quality)",
+        "family": "slavers"
+      },
+      "conditions": [
+        "Exact selected magnitude remains catalog-only. Legal catalog craft-slot membership is independently checked by the arithmetic/placement script but is not independent proof of the game value."
+      ],
+      "family": "slavers",
+      "host": "Legendary Chains",
+      "source_ids": [
+        71
+      ]
+    },
+    {
+      "kind": "craft",
+      "component": "Spot +20 (Competence)",
+      "stat": "Spot",
+      "type": "Competence",
+      "value": 20,
+      "via": null,
+      "status": "model-only",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Spot +20 (Competence)",
+        "family": "slavers"
+      },
+      "conditions": [
+        "Exact selected magnitude remains catalog-only. Legal catalog craft-slot membership is independently checked by the arithmetic/placement script but is not independent proof of the game value."
+      ],
+      "family": "slavers",
+      "host": "Legendary Chains",
+      "source_ids": [
+        71
+      ]
+    },
+    {
+      "kind": "set",
+      "component": "Dusk Raider",
+      "stat": "Melee Power",
+      "type": "Artifact",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Dusk Raider",
+        "family": "set"
+      },
+      "conditions": [
+        "Requires three copies on three equipped host items; host native set memberships are suppressed; bonus awarded once at threshold. Same typed bonuses do not add."
+      ],
+      "piecesRequired": 3,
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "kind": "set",
+      "component": "Dusk Raider",
+      "stat": "Ranged Power",
+      "type": "Artifact",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Dusk Raider",
+        "family": "set"
+      },
+      "conditions": [
+        "Requires three copies on three equipped host items; host native set memberships are suppressed; bonus awarded once at threshold. Same typed bonuses do not add."
+      ],
+      "piecesRequired": 3,
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "kind": "set",
+      "component": "Perfect Silence",
+      "stat": "Sneak Attack Dice",
+      "type": "Artifact",
+      "value": 3,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Perfect Silence",
+        "family": "set"
+      },
+      "conditions": [
+        "Requires three copies on three equipped host items; host native set memberships are suppressed; bonus awarded once at threshold. Same typed bonuses do not add."
+      ],
+      "piecesRequired": 3,
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "kind": "set",
+      "component": "Quickblade",
+      "stat": "Doublestrike",
+      "type": "Artifact",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Quickblade",
+        "family": "set"
+      },
+      "conditions": [
+        "Requires three copies on three equipped host items; host native set memberships are suppressed; bonus awarded once at threshold. Same typed bonuses do not add."
+      ],
+      "piecesRequired": 3,
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "kind": "set",
+      "component": "Quickblade",
+      "stat": "Doubleshot",
+      "type": "Artifact",
+      "value": 15,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Quickblade",
+        "family": "set"
+      },
+      "conditions": [
+        "Requires three copies on three equipped host items; host native set memberships are suppressed; bonus awarded once at threshold. Same typed bonuses do not add."
+      ],
+      "piecesRequired": 3,
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "kind": "set",
+      "component": "Tough Shields",
+      "stat": "Physical Sheltering",
+      "type": "Artifact",
+      "value": 30,
+      "via": null,
+      "status": "retained-source supported",
+      "modelSource": {
+        "path": "optimizer_live_items.json",
+        "component": "Tough Shields",
+        "family": "set"
+      },
+      "conditions": [
+        "Requires three copies on three equipped host items; host native set memberships are suppressed; bonus awarded once at threshold. Same typed bonuses do not add."
+      ],
+      "piecesRequired": 3,
+      "source_ids": [
+        72
+      ]
+    }
+  ],
+  "source_records": [
+    {
+      "key": "armor",
+      "path": "tools/fixtures/endgame-evidence/retained/initial-armor.raw.json",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        0,
+        "fulltext"
+      ],
+      "sha256": "e365bd8253e6dfb7c81212efd88c768146374b7c1364f5b3d26a34ecbe71e95e",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "armor-accuracy",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed": "2026-11-07T20:08:31.322Z",
+      "pointer": [
+        "records",
+        8,
+        "tooltips",
+        0
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "armor-deadly",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed": "2026-11-07T20:08:31.322Z",
+      "pointer": [
+        "records",
+        8,
+        "tooltips",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "armor-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed": "2026-11-07T20:08:31.322Z",
+      "pointer": [
+        "records",
+        8,
+        "tooltips",
+        2
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "armor-ap",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed": "2026-11-07T20:08:31.322Z",
+      "pointer": [
+        "records",
+        8,
+        "tooltips",
+        3
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "fury",
+      "path": "tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json",
+      "url": "https://ddowiki.com/page/Relentless_Fury",
+      "revision": "https://ddowiki.com/index.php?title=Relentless_Fury&oldid=595013",
+      "observed": "2026-11-05T12:54:37.000Z",
+      "pointer": [
+        "pages",
+        17,
+        "text"
+      ],
+      "sha256": "e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "skull-ap",
+      "path": "evidence/endgame-stacking/skull-714102.json",
+      "url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King",
+      "revision": "/index.php?title=Item:The_Skull_of_the_Horned_King&oldid=714102",
+      "observed": "2026-11-07T19:40:00.140Z",
+      "pointer": [
+        "tooltips",
+        3
+      ],
+      "sha256": "2f7221440d488a9ce93735e80d1327aeb8fbc863a6a3787926f8b4b3c5e14fc8",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "path": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 714102,
+      "independence": "Retained own-item harvest is also an input to this catalog; confirms provenance, NOT independently revalidated mechanics."
+    },
+    {
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-a.json",
+      "pointer": [
+        0,
+        "tooltips",
+        4
+      ],
+      "revision": 714102,
+      "url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King",
+      "independence": "Exact typed own-item tooltip independently read"
+    },
+    {
+      "key": "bloodrage",
+      "path": "tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json",
+      "url": "https://ddowiki.com/page/Enhanced_Bloodrage",
+      "revision": "https://ddowiki.com/index.php?title=Enhanced_Bloodrage&oldid=678950",
+      "observed": "2026-11-05T12:54:12.811Z",
+      "pointer": [
+        "pages",
+        16,
+        "text"
+      ],
+      "sha256": "e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "goggles-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "observed": "2026-11-07T20:08:30.460Z",
+      "pointer": [
+        "records",
+        6,
+        "tooltips",
+        0
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "goggles-dodge-bypass",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "observed": "2026-11-07T20:08:30.460Z",
+      "pointer": [
+        "records",
+        6,
+        "tooltips",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "marksmanship-goggles",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "observed": "2026-11-07T20:08:30.460Z",
+      "pointer": [
+        "records",
+        6,
+        "tooltips",
+        2
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "marksmanship-rule",
+      "path": "tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json",
+      "url": "https://ddowiki.com/page/Marksmanship",
+      "revision": "https://ddowiki.com/index.php?title=Marksmanship&oldid=594788",
+      "observed": "2026-11-05T12:54:57.126Z",
+      "pointer": [
+        "pages",
+        19,
+        "text"
+      ],
+      "sha256": "e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "goggles-ap",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "observed": "2026-11-07T20:08:30.460Z",
+      "pointer": [
+        "records",
+        6,
+        "tooltips",
+        3
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "path": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 707320,
+      "independence": "Retained own-item harvest is also an input to this catalog; confirms provenance, NOT independently revalidated mechanics."
+    },
+    {
+      "url": "https://ddonexus.com/Item/Legendary_Glabrezu_Claw_Pendant",
+      "path": "analysis_v2/canonical_source_addendum.json",
+      "independence": "Source-audit agent independently read the current direct community item page; beta/incompleteness disclaimer applies. Not publisher or game certification."
+    },
+    {
+      "key": "compass-insight",
+      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Abyssal_Compass&oldid=699719",
+      "observed": "2026-11-07T19:32:22.881Z",
+      "pointer": [
+        "receipts",
+        0,
+        "tooltips",
+        0
+      ],
+      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "compass-quality",
+      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Abyssal_Compass&oldid=699719",
+      "observed": "2026-11-07T19:32:22.881Z",
+      "pointer": [
+        "receipts",
+        0,
+        "tooltips",
+        1
+      ],
+      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "demonic-shield",
+      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Abyssal_Compass&oldid=699719",
+      "observed": "2026-11-07T19:32:22.881Z",
+      "pointer": [
+        "receipts",
+        0,
+        "tooltips",
+        2
+      ],
+      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "compass-fort",
+      "path": "evidence/endgame-stacking/tooltips-and-rules.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Abyssal_Compass&oldid=699719",
+      "observed": "2026-11-07T19:32:22.881Z",
+      "pointer": [
+        "receipts",
+        0,
+        "tooltips",
+        3
+      ],
+      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "path": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 715898,
+      "independence": "Retained own-item harvest is also an input to this catalog; confirms provenance, NOT independently revalidated mechanics."
+    },
+    {
+      "path": "docs/knowledge-base/A-074-QUEEN-BASIC.md",
+      "section": "Evidence and provenance",
+      "independence": "Relayed normal-page observation only; original item bytes, exact revision and every bonus-type tooltip were not retained. Not independent source certification."
+    },
+    {
+      "path": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 631921,
+      "independence": "Retained own-item harvest is also an input to this catalog; confirms provenance, NOT independently revalidated mechanics."
+    },
+    {
+      "url": "https://ddonexus.com/Item/Legendary_Celestial_Sapphire_Ring",
+      "path": "analysis_v2/guarded_deception_source_addendum.json",
+      "independence": "Source-audit agent independently read the current direct community item page, including exact native effects. Beta/incompleteness disclaimer applies."
+    },
+    {
+      "key": "ring-quality-dex",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "observed": null,
+      "pointer": [
+        2,
+        "tooltips",
+        2
+      ],
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "ring-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "revision": "/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "observed": "2026-11-07T20:08:30.015Z",
+      "pointer": [
+        "records",
+        5,
+        "tooltips",
+        0
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "marksmanship-ring1",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "revision": "/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "observed": "2026-11-07T20:08:30.015Z",
+      "pointer": [
+        "records",
+        5,
+        "tooltips",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "ring-threat",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "revision": "/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "observed": "2026-11-07T20:08:30.015Z",
+      "pointer": [
+        "records",
+        5,
+        "tooltips",
+        2
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "claws-ap",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "observed": null,
+      "pointer": [
+        3,
+        "tooltips",
+        2
+      ],
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "claws-seeker",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "observed": null,
+      "pointer": [
+        3,
+        "tooltips",
+        3
+      ],
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "claws-insight-seeker",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "observed": null,
+      "pointer": [
+        3,
+        "tooltips",
+        4
+      ],
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "marksmanship-boots",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "revision": "/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "observed": "2026-11-07T20:08:30.889Z",
+      "pointer": [
+        "records",
+        7,
+        "tooltips",
+        0
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "boots-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "revision": "/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "observed": "2026-11-07T20:08:30.889Z",
+      "pointer": [
+        "records",
+        7,
+        "tooltips",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "selector": "requested = Item:Yeenoghu%27s_Reign",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision": 700306,
+      "independence": "Actual retained own-item body and tooltips, matched title and request; independently inspected in this review"
+    },
+    {
+      "path": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 700306,
+      "independence": "Retained own-item harvest is also an input to this catalog; confirms provenance, NOT independently revalidated mechanics."
+    },
+    {
+      "path": "tools/fixtures/endgame-evidence/retained/baseline-quiver.browser.json",
+      "pointer": [
+        "tool_result",
+        "content",
+        0,
+        "text",
+        "$json",
+        "text"
+      ],
+      "url": "https://ddowiki.com/page/Item:Epic_Purifying_Quiver",
+      "revision": null,
+      "independence": "Separate identity-matched retained own-item text; do not use the mislabeled Bracers object."
+    },
+    {
+      "path": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 630281,
+      "independence": "Retained own-item harvest is also an input to this catalog; confirms provenance, NOT independently revalidated mechanics."
+    },
+    {
+      "path": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 666359,
+      "independence": "Retained own-item harvest is also an input to this catalog; confirms provenance, NOT independently revalidated mechanics."
+    },
+    {
+      "key": "riposte",
+      "path": "tools/fixtures/endgame-evidence/retained/named-augments-2.browser.json",
+      "url": "https://ddowiki.com/page/Item:Legendary_Sapphire_of_Riposte",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        1,
+        "text"
+      ],
+      "sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "dodge-item",
+      "path": "evidence/endgame-stacking/retained-augment-descriptions.json",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Dodge_%2B16%25",
+      "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Dodge_%2B16%25&oldid=718395",
+      "observed": "2026-11-02T05:03:28.754Z",
+      "pointer": [
+        0,
+        "text"
+      ],
+      "sha256": "b9b1493eb2eea6f0b4e6a28414d49a9cbcd4f2b578cd970c4b5a396db8a1da54",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "hp-false-life",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_False_Life_%2B60",
+      "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_False_Life_%2B60&oldid=718406",
+      "observed": "2026-11-07T20:05:58.726Z",
+      "pointer": [
+        "records",
+        1,
+        "excerpts",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "heroism",
+      "path": "tools/fixtures/endgame-evidence/retained/named-augments-2.browser.json",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Greater_Heroism",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        2,
+        "text"
+      ],
+      "sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "ha",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Healing_Amplification_%2B63",
+      "revision": "/index.php?title=Item:Sapphire_of_Healing_Amplification_%2B63&oldid=718422",
+      "observed": "2026-11-07T20:05:59.729Z",
+      "pointer": [
+        "records",
+        3,
+        "excerpts",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "good-luck",
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-augments.browser.json",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        1,
+        "text",
+        "$json",
+        0,
+        "text"
+      ],
+      "sha256": "aac7d2d2461032d8f6867c954c66c3daca860da0b4000cee46405b96b7e815ba",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "festive-int",
+      "path": "tools/fixtures/endgame-evidence/retained/festive-augments.browser.json",
+      "url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "tool_result",
+        "content",
+        0,
+        "text",
+        "$json",
+        0,
+        "text"
+      ],
+      "sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "globe",
+      "path": "tools/fixtures/endgame-evidence/retained/named-augments-2.browser.json",
+      "url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        0,
+        "text"
+      ],
+      "sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "hp-vitality",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Ravil%27s_Book_of_Legendary_Recipes",
+      "revision": "https://ddowiki.com/index.php?title=Item:Ravil%27s_Book_of_Legendary_Recipes&oldid=643165",
+      "observed": "2026-11-07T20:05:59.031Z",
+      "pointer": [
+        "records",
+        2,
+        "excerpts",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "url": "https://ddonexus.com/Item/Hunter_Rune",
+      "ref": "turn85search2",
+      "independence": "Independent indexed fan-reference item text states +1 Enhancement bonus to bonus Imbue dice; not an official or independently retained own-page game test."
+    },
+    {
+      "key": "lunar-int",
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-named-gems.browser.json",
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Intelligence_(Legendary)",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        3,
+        "text"
+      ],
+      "sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "lunar-prr",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Physical_Protection_(Legendary)",
+      "revision": "/index.php?title=Item:Lunar_Gem_of_Physical_Protection_(Legendary)&oldid=700929",
+      "observed": "2026-11-07T20:06:00.077Z",
+      "pointer": [
+        "records",
+        4,
+        "excerpts",
+        1
+      ],
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "rp-lunar",
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-named-gems.browser.json",
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Ranged_Power_(Legendary)",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        4,
+        "text"
+      ],
+      "sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "url": "https://ddonexus.com/Item/Lunar_Gem_of_Weapon_Damage_(Legendary)",
+      "ref": "turn102view0",
+      "independence": "Current direct independent community item page, including exact slotted-effect text. Site explicitly warns beta data may be incomplete/incorrect; not publisher or in-game certification."
+    },
+    {
+      "key": "treatise",
+      "path": "tools/fixtures/endgame-evidence/retained/named-augments-1.browser.json",
+      "url": "https://ddowiki.com/page/Item:A_Treatise_on_Battle",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        1,
+        "text"
+      ],
+      "sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-augments.browser.json",
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        1
+      ],
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Constitution_(Legendary)",
+      "revision": null,
+      "independence": "Matched retained own-item text explicitly states +4 Artifact Constitution; no exact revision or fresh game test."
+    },
+    {
+      "key": "solar-seeker",
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-named-gems.browser.json",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Critical_Confirmation_(Legendary)",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        0,
+        "text"
+      ],
+      "sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "solar-ap",
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-named-gems.browser.json",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Fortification_Bypass_(Legendary)",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        1,
+        "text"
+      ],
+      "sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "solar-int",
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-named-gems.browser.json",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Intelligence_(Legendary)",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        2,
+        "text"
+      ],
+      "sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "url": "https://ddonexus.com/Item/Solar_Gem_of_Sneak_Attack_Damage_(Legendary)",
+      "ref": "turn102view1",
+      "independence": "Current direct independent community item page, including exact slotted-effect text. Site explicitly warns beta data may be incomplete/incorrect; not publisher or in-game certification."
+    },
+    {
+      "url": "https://ddonexus.com/Item/Topaz_of_Blindness_Immunity",
+      "ref": "turn102view2",
+      "independence": "Current direct independent community item page, including exact slotted-effect text. Site explicitly warns beta data may be incomplete/incorrect; not publisher or in-game certification."
+    },
+    {
+      "key": "rp-topaz",
+      "path": "tools/fixtures/endgame-evidence/retained/final-compromise-common-augments-2.browser.json",
+      "url": "https://ddowiki.com/page/Item:Topaz_of_Ranged_Power_%2B14",
+      "revision": null,
+      "observed": null,
+      "pointer": [
+        "content",
+        0,
+        "text",
+        "$json",
+        0,
+        "text"
+      ],
+      "sha256": "73ded9d2d7448a9ddb66704ed641270a4b5f06e7de504da74e09027c81f3354c",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "nearly-complete",
+      "path": "evidence/endgame-stacking/nearly-complete-705751.json",
+      "url": "https://ddowiki.com/page/Nearly_Complete",
+      "revision": "/index.php?title=Nearly_Complete&oldid=705751",
+      "observed": "2026-11-07T19:50:34.361Z",
+      "pointer": [
+        "excerpts",
+        2
+      ],
+      "sha256": "8b1b40adb26c3f8c21f18f00146269983a64487dfe666d8523ab01a0b8b3faa9",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "skull-con",
+      "path": "evidence/endgame-stacking/skull-714102.json",
+      "url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King",
+      "revision": "/index.php?title=Item:The_Skull_of_the_Horned_King&oldid=714102",
+      "observed": "2026-11-07T19:40:00.140Z",
+      "pointer": [
+        "tooltips",
+        0
+      ],
+      "sha256": "2f7221440d488a9ce93735e80d1327aeb8fbc863a6a3787926f8b4b3c5e14fc8",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-a.json",
+      "pointer": [
+        0
+      ],
+      "revision": 714102,
+      "note": "Own-item text and typed tooltips explicitly show all six ability choices at+16, not only Constitution."
+    },
+    {
+      "url": "https://ddonexus.com/Crafting/Duergar_Completion_Forge?p=1&q=",
+      "path": "analysis_v2/guarded_deception_source_addendum.json",
+      "independence": "Host marker and generic Insightful ability recipe family corroborated; displayed recipe omits the scaled number."
+    },
+    {
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "pointer": [
+        3,
+        "tooltips",
+        11
+      ],
+      "url": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "revision": 707232,
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "independence": "Actual identity-matched retained own-item tooltip explicitly states Wisdom15 Enhancement; independently inspected, not a new live-game test."
+    },
+    {
+      "key": "viktranium",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-crafts.json",
+      "url": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+      "revision": "https://ddowiki.com/index.php?title=Viktranium_Experiment_crafting&oldid=720728",
+      "observed": null,
+      "pointer": [
+        2,
+        "text"
+      ],
+      "sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "dolorous-flames",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-crafts.json",
+      "url": "https://ddowiki.com/page/Item:Dolorous_Flames_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Dolorous_Flames_(legendary)&oldid=702222",
+      "observed": null,
+      "pointer": [
+        4,
+        "text"
+      ],
+      "sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "melancholic-flames",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-crafts.json",
+      "url": "https://ddowiki.com/page/Item:Melancholic_Flames_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Melancholic_Flames_(legendary)&oldid=702265",
+      "observed": null,
+      "pointer": [
+        3,
+        "text"
+      ],
+      "sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "dimlight",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-crafts.json",
+      "url": "https://ddowiki.com/page/Item:Miserable_Dimlight_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+      "observed": null,
+      "pointer": [
+        5,
+        "text"
+      ],
+      "sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "key": "salt",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-crafts.json",
+      "url": "https://ddowiki.com/page/Item:Woeful_Salt",
+      "revision": "https://ddowiki.com/index.php?title=Item:Woeful_Salt&oldid=665327",
+      "observed": null,
+      "pointer": [
+        6,
+        "text"
+      ],
+      "sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05",
+      "independence": "Retained actual wiki excerpt; not a fresh game test or new November 15 retrieval"
+    },
+    {
+      "path": "analysis_v2/guarded_deception_source_addendum.json",
+      "independence": "Independent community workbench/recipe evidence establishes family and ordinary procurement, but not every selected exact magnitude or type."
+    },
+    {
+      "path": "optimizer/docs/wiki-evidence/augment-sets.md",
+      "url": "https://ddowiki.com/page/Augment_Slot/Set_Augment",
+      "observed": "2026-08-04 / placement ruling 2026-08-14",
+      "independence": "Retained explicit wiki table and mechanic quotations, not a new live item capture"
+    }
+  ],
+  "interactionClaims": [
+    {
+      "claim": "At most one Minor Artifact may be equipped, regardless of slot",
+      "status": "Official historical primary source checked live",
+      "source": "https://www.ddo.com/update-notes/ddo-update-42-release-notes",
+      "source_date": "2019-05-14",
+      "retrieved_ref": "turn51view0",
+      "model": "includeArtifact adds exactly-one only if a candidate can be selected and not more than one artifact is pinned. There are documented fallback exceptions.",
+      "test": "Assert the actual final artifact count is exactly one, independent of includeArtifact and run status."
+    },
+    {
+      "claim": "Artifact filigrees count toward sets shared with the sentient weapon; capacity differs by artifact",
+      "status": "Official historical primary source checked live; selected capacity still needs item-page corroboration",
+      "source": "https://www.ddo.com/update-notes/ddo-update-42-release-notes",
+      "model": "Capacity is carried as Max Filigree Slots, but actual filigree effects and sentient-weapon system are deliberately not modeled.",
+      "caution": "Five available slots does not prove five unlocked/filled slots or assign any unmodeled DPS gain. The 2019 statement on identical cross-item filigrees conflicts with later player reports; do not certify that interaction from this note alone."
+    },
+    {
+      "claim": "Set augments require three copies on three different equipped hosts and suppress each host's native set membership",
+      "status": "Retained wiki evidence, not freshly fetched",
+      "source": "optimizer/docs/wiki-evidence/augment-sets.md",
+      "source_date": "2026-08-04 and 2026-08-14",
+      "model": "Host-aware placement and suppression are modeled. Three copies grant one set bonus, not three stacking copies of the stat.",
+      "test": "Independently reserve named host/color sockets, reject reused hosts, recount active native sets after suppression."
+    },
+    {
+      "claim": "Baphomet's Reign has Legendary Deadly +3 and Quality Sheltering +11",
+      "status": "Independently retained own-item wiki shard corroborates catalog",
+      "source": "optimizer/data/seed/compendium/wiki_item_affixes.json",
+      "revision": 700300,
+      "model": "Legendary Deadly is a separate typed bucket. Sheltering expands to both PRR and MRR with the same Quality type; only the highest Quality value applies."
+    },
+    {
+      "claim": "Baphomet's Legendary Conditioning 15 means +15% Legendary maximum HP, not +15 flat HP",
+      "status": "Retained wiki template evidence plus independent current indexed item text; direct current item page inaccessible to this agent",
+      "source": "optimizer/src/legendary_fold.py and https://ddonexus.com/Quest/1879303597/Legendary",
+      "retrieved_ref": "turn58search0",
+      "model": "Stored as Conditioning | Legendary | 15, separate from flat False Life. Not ranked in the initial revised runs.",
+      "stacking": "Solar Enduring 10 uses the same Conditioning/Legendary bucket. Legendary Bulwark's 10% has a different dataset stat label but must not be added to the same Legendary HP bonus. Do not claim 25% from 15%+10%.",
+      "caution": "Do not convert this to a precise character HP gain without the character's HP bases and other percentage bonuses."
+    },
+    {
+      "claim": "Baphomet's Mind Drain reduces maximum spell points by 5%; its stagger needs a melee-weapon vorpal",
+      "status": "Independent current indexed item text; needs primary item-page or game-tooltip confirmation for full certification",
+      "source": "https://ddonexus.com/Quest/1879303597/Legendary",
+      "retrieved_ref": "turn58search0",
+      "model": "Mind Drain is represented as Maximum Spell Points (%) | Penalty | -5. Stagger is Boolean and must contribute no bow DPS or ranged crowd-control claim."
+    },
+    {
+      "claim": "Greater Marksmanship contributes separately from generic Deadly/Accuracy, but multiple copies do not add",
+      "status": "Guide's retained explicit stacking evidence; official U66 notes corroborate a ranged attack/damage effect but do not supply its magnitude",
+      "source": "evidence/endgame-stacking and https://www.ddo.com/update-notes/ddo-update-66-release-notes",
+      "model": "Boolean only; a Deadly gain can conceal losing this effect unless its presence is held or explicitly compared."
+    },
+    {
+      "claim": "Seeker affects critical confirmation and critical damage, not critical threat range",
+      "status": "Retained verbatim wiki tooltip",
+      "source": "optimizer/data/seed/compendium/affix_tooltip.json: Seeker",
+      "source_date": "2026-09-04",
+      "model": "Seeker is numerically scored; critical range/multiplier and weapon base profile are not. Increasing Seeker is not evidence of increased crit range."
+    },
+    {
+      "claim": "Insightful Deadly does not add to Know the Angles' Insight damage",
+      "status": "Published guide's retained build-specific stacking evidence",
+      "model": "Insight Deadly is explicitly excluded from optimization credit for this build. Raw gear contributions and objective-comparable contributions must be kept distinct."
+    },
+    {
+      "claim": "Relentless Fury, Bloodrage, Improved Deception, Salt and elemental attunements are not proven permanent damage bonuses",
+      "status": "Retained conditional tooltips and guide evidence",
+      "source": "optimizer/docs/wiki-evidence/conditional-affixes.md and guide/evidence/endgame-stacking",
+      "model": "Presence flags generally receive no proc damage/uptime valuation. Improved Deception's numeric value is its Bluff bonus, not guaranteed sneak-attack uptime. Preserve or explicitly describe these flags rather than inventing constant DPS."
+    },
+    {
+      "claim": "No exact percent DPS improvement is established by a higher lexicographic tuple",
+      "status": "Model-boundary finding verified in original engine and project non-goals",
+      "source": "optimizer/AGENTS.md and optimizer/web/solver.js",
+      "missing_inputs": [
+        "Complete character stats",
+        "Active imbue and Fire Spell Power",
+        "Attack rotation and rate",
+        "Crit range and multiplier by attack",
+        "Enemy fortification/resistance",
+        "Proc uptime",
+        "Filigree loadout"
+      ],
+      "allowed_conclusion": "Report exact typed gear deltas, constraints, physical construction and source confidence; distinguish a search candidate from a proven overall DPS winner."
+    }
+  ],
+  "knownSourceDiscrepancies": [
+    {
+      "item": "The Skull of the Horned King",
+      "issue": "Generic Nearly Complete catalog options give +15 Enhancement to each ability; retained own-item page gives +16 to all six options. The final canonical recipe and baseline both select CON, so the extra1 applies to both source cases. Preserve exact model/source distinction; do not silently correct either receipt."
+    },
+    {
+      "item": "Diamond of Spot +22",
+      "issue": "Original baseline uses it, but a current year-round acquisition route was not established. Revised search blocks it. Any Spot loss is a real utility tradeoff and must be disclosed."
+    },
+    {
+      "effect": "Dolorous Quality Damage",
+      "issue": "Source auditor located retained crafting-page visible text, HTML and DOM at revision720728, all listing Legendary +3; own-item read timed out. Catalog +4 remains unresolved. Evaluate +3 sensitivity unless another source-supported Quality+4 already wins that bucket.",
+      "source": "tools/fixtures/lamordia-handling/viktranium-experiment-crafting.browser-capture.json"
+    },
+    {
+      "set": "Frenzied Berserker",
+      "issue": "Retained template revision723530 and named-set page revision720202 say +2 damage per swing; neither explicit ranged applicability nor Exceptional bonus type was established. Do not certify catalog Deadly+2 Exceptional as bow damage. Separate conditional Frenzied Berserker III Strength/Constitution clause does not apply to this build.",
+      "source": "optimizer/docs/reports/2026-11-01-prose-set-thresholds.json -> remaining_threshold_unstated"
+    }
+  ],
+  "rejectedCapture": {
+    "file": "tools/fixtures/endgame-evidence/retained/baseline-items-3.browser.json",
+    "reason": "The object carrying a Bracers URL and Epic Purifying Quiver body is not used as evidence; correct separate captures remain."
+  },
+  "limitations": [
+    "No bulk promotion from catalog agreement to mechanics certification.",
+    "Native composite effects may expand into several mathematical stats; the native claim inventory avoids counting those expansions as independent source proofs.",
+    "Input changes must rerun this inventory; this file does not establish an optimizer global optimum or actual total DPS."
+  ]
+}
+

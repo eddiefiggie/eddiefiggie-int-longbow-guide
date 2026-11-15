@@ -6,6 +6,7 @@ import re
 import unittest
 
 from test_lamordia_handling import Document, guide_content, guide_text
+from wisdom_preservation import predecessor_index
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTRACT = json.loads((ROOT / 'tools/fixtures/endgame-bow-options/scope.json').read_text())
@@ -110,7 +111,7 @@ def validate_scope(html):
 class EndgameBowOptionsTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.html = (ROOT / 'index.html').read_text()
+        cls.html = predecessor_index()
 
     def test_both_options_conditions_and_socket_handling(self):
         validate_choice(self.html)

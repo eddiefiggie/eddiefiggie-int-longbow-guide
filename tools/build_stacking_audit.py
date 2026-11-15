@@ -4,6 +4,7 @@ from pathlib import Path
 import re
 import json
 from stacking_audit import ROOT, load, validate, subtotal, source_provenance
+from wisdom_loadout import load as load_selection, validate as validate_selection
 
 BEGIN = '<!-- selected-stacking-summary:start -->'
 END = '<!-- selected-stacking-summary:end -->'
@@ -18,8 +19,51 @@ def quoted(text):
     return re.sub(r' +(?=\n)', lambda m: '&#32;' * len(m.group(0)), h(text).replace('\t','&#9;'))
 
 
+def selection(data):
+    """Join the selected recipe without upgrading its independent source grades."""
+    chosen = load_selection()
+    validate_selection(chosen)
+    assert data['selection_record'] == 'tools/fixtures/wisdom-loadout/selection.json'
+    assert data['selection_sha256'] == chosen['provenance']['selected']['sha256']
+    assert data['selection_base_commit'] == chosen['provenance']['guide_commit']
+    assert not chosen['optional']['ring_dexterity_13']['selected']
+    return chosen
+
+
+def model_table(chosen):
+    """Display model arithmetic separately from the evidence-gated calculator."""
+    keys = [('Ranged Power', 'Ranged Power'), ('Doubleshot', 'Doubleshot'),
+            ('Seeker', 'Seeker'), ('Armor-Piercing', 'Armor-Piercing'),
+            ('Deadly', 'Deadly (flat weapon damage)'), ('Accuracy', 'Accuracy'),
+            ('Intelligence', 'Intelligence contribution'),
+            ('Wisdom', 'Wisdom contribution'), ('Dexterity', 'Dexterity contribution'),
+            ('Constitution', 'Constitution contribution — model case'),
+            ('Spot', 'Direct Spot bonus, before ability modifier'),
+            ('Sneak Attack Dice', 'Sneak dice'), ('Sneak Attack Damage', 'Flat sneak damage'),
+            ('Imbue Dice', 'Imbue dice'), ('Combustion', 'Combustion'),
+            ('Physical Sheltering', 'Raw PRR before whole-character calculation'),
+            ('Magical Sheltering', 'Raw MRR before caps'),
+            ('Fortification', 'Fortification'), ('False Life', 'Flat maximum HP'),
+            ('Healing Amplification', 'Healing Amplification'), ('Dodge', 'Dodge before caps'),
+            ('Will Save', 'Direct Will save'), ('Reflex Save', 'Direct Reflex save'),
+            ('Fortitude Save', 'Direct Fortitude save')]
+    model = chosen['model']
+    rows = []
+    for key, label in keys:
+        values = [model[name].get(key, 0) for name in ('guide_totals', 'prior_totals', 'totals')]
+        rows.append('<tr><th scope="row">'+h(label)+'</th>'+''.join('<td>'+h(str(v))+'</td>' for v in values)+'</tr>')
+    return ('<div class="tw"><table data-model-only="wisdom-comparison"><caption>'
+            'Model-only gear comparison — not source-certified totals or character-sheet results'
+            '</caption><thead><tr><th>Contribution</th><th>Former guide kit</th>'
+            '<th>Previous artifact kit</th><th>Primary Wisdom kit</th></tr></thead><tbody>'
+            + ''.join(rows) + '</tbody></table></div><p>Zero means no contribution in that supplied model bucket, not independently verified absence in the live game.</p>')
+
+
 def summary(data):
     validate(data)
+    chosen = selection(data)
+    model = chosen['model']['totals']
+    production = chosen['provenance']['production']
     # Fixed factual clauses have explicit prerequisites too; withhold rendering
     # instead of emitting a stale claim after its provenance is lost.
     for sid in ('augment-min-level', 'augment-values', 'skull-con',
@@ -42,38 +86,44 @@ def summary(data):
     gm_attack, gm_damage = established('Greater Marksmanship attack'), established('Greater Marksmanship damage')
     gm = (f'Greater Marksmanship counts once (+{gm_attack} ranged attack, +{gm_damage} ranged damage). '
           if gm_attack is not None and gm_damage is not None else 'Greater Marksmanship remains unverified. ')
-    overlaps = []
-    for stat, cid, message in [
-        ('Armor-Piercing', 'pendant-ap', 'Skull Armor-Piercing 25% suppresses Pendant 21%.')]:
-        overlaps.append(message if cid in subtotal(data, stat)['suppressed'] else f'{stat} overlap remains unverified.')
-    overlaps.insert(0, 'Goggles provide the selected 9% Enhancement Doubleshot.'
-                    if 'goggles-ds' in subtotal(data, 'Doubleshot')['counted']
-                    else 'The goggles Doubleshot input remains unverified.')
-    sneak = established('Sneak dice')
-    sneak_note = f'The selected Solar gem directly supplies {sneak} Artifact sneak dice.' if sneak is not None else 'The selected Solar sneak-dice input remains unverified.'
+    goggles = ('Goggles provide the selected 9% Enhancement Doubleshot. '
+               if 'goggles-ds' in subtotal(data, 'Doubleshot')['counted']
+               else 'The goggles Doubleshot input remains unverified. ')
     threat, healing = established('Ranged threat reduction'), established('Healing Amplification')
-    utility = ((f'The item threat reduction is {threat}% (Pendant 21% is the same type); ' if threat is not None else 'The combined item threat reduction remains unverified; ')
+    utility = ((f'The selected ring threat-reduction contribution is {threat}%; ' if threat is not None else 'The item threat-reduction contribution remains unverified; ')
                + (f'Healing Amplification is a single +{healing} Competence component.' if healing is not None else 'Healing Amplification remains unverified.'))
+    offense = (f"Modeled Ranged Power {model['Ranged Power']}, Doubleshot {model['Doubleshot']}, "
+               f"Seeker {model['Seeker']}, Armor-Piercing {model['Armor-Piercing']}, "
+               f"Deadly {model['Deadly']} and Intelligence {model['Intelligence']}")
+    survival = (f"Raw modeled PRR {model['Physical Sheltering']}, MRR {model['Magical Sheltering']}, "
+                f"Fortification {model['Fortification']}, Constitution {model['Constitution']} "
+                f"and direct Will/Reflex/Fortitude saves {model['Will Save']}/{model['Reflex Save']}/{model['Fortitude Save']}")
+    wis_dex = (f"The primary model has Wisdom {model['Wisdom']}, Dexterity {model['Dexterity']} "
+               f"and direct Spot {model['Spot']} before ability modifiers. ")
     return BEGIN + '''
 <section id="selected-stacking-summary" aria-labelledby="selected-stacking-title">
-<h3 id="selected-stacking-title">Selected loadout: stacking checked against Wiki evidence</h3>
-<p><strong>The fully filled kit requires character level 36.</strong> The augments raise their hosts’ minimum level. The figures below are derived gear contributions supported by direct item definitions and applicable stacking rules; they are not complete character-sheet totals or an in-game test. A-074 selects Queen of Rot with Insightful Constitution +7 and adds Spot +22; other selected gear and crafts are preserved.</p>
-<p><strong>Damage first.</strong> ''' + h(gm + ' '.join(overlaps) + ' ' + sneak_note) + ''' The modeled combined RP 44, Doubleshot 35, Seeker 29, Armor-Piercing 76, Intelligence 37 (Calamitous) / 36 (Sinew) and whole-build Doubleshot/sneak totals remain <strong>unverified</strong>: some inputs lack required provenance or positive interaction rules. They are retained in the detailed log, excluded from asserted totals.</p>
+<h3 id="selected-stacking-title">Primary Wisdom loadout: modeled results and source-gated evidence</h3>
+<p><strong>The fully filled kit requires character level 36.</strong> Selected augments raise their hosts’ minimum level. The primary recipe has one Minor Artifact, Yeenoghu’s Reign; Claws Nearly Complete selects Wisdom +15; the Celestial Sapphire Ring’s Nearly Finished slot is empty. The no-event/no-limited policy allows only Festive ability diamonds as the exception. Acquisition screening, legal construction and source-certified effect totals are different checks.</p>
+<p><strong>Actual run, followed by manual refinements.</strong> The retained production run completed ''' + h(str(production['passes'])) + ''' stages in ''' + h(str(production['seconds'])) + ''' seconds. The documented canonical craft rotation, Spot/Good Luck choices and Wisdom refinement derive the selected recipe; they are not a new solver run or proof of a global optimum. The raw output modeled Constitution ''' + h(str(chosen['model']['raw_production_totals']['Constitution'])) + '''; this practical selection models ''' + h(str(model['Constitution'])) + ''' after choosing Good Luck for saves/skills, and adds the provisional Slavers Extra Spot +20. The production run’s status is not an optimality claim for those manual changes. See the <a href="evidence/wisdom-loadout/README.md">run, derivation and source-limit packet</a> and <a href="tools/fixtures/wisdom-loadout/selection.json">exact selected manifest</a>.</p>
+<p><strong>Damage first; certification is limited.</strong> ''' + h(gm + goggles + offense) + ''' remain <strong>unverified combinations</strong>. Dusk Raider, Tough Shields, Quickblade and Perfect Silence each require three selected hosts; their model inputs are not certified by arithmetic alone. Perfect Silence’s modeled three sneak dice are separate from the selected Solar gem’s modeled three flat sneak damage. The Emerald’s modeled one imbue die and Chains Combustion require activation and scaling checks; no DPS percentage or wider critical range is asserted.</p>
 <div class="tw"><table><caption>Current survival evidence at level 36</caption><thead><tr><th>Contribution</th><th>Derived subtotal</th><th>Supported component inputs</th></tr></thead><tbody>''' + ''.join(facts) + '''</tbody></table></div>
-<p>''' + h(utility) + ''' Current modeled raw PRR 133, raw MRR 73, Fortification 286, Constitution 33 and saves 26/26/27 remain unverified combinations. Queen source bytes, an exact revision and complete tooltip types were not retained; its inputs cannot enter certified subtotals. The model uses the higher of Queen Sheltering 41 and Defense 40, Resistance 13 and 12, and Insightful Fortification 84 and 81. The objective cap 132 does not cap raw PRR. Apply the light-armor MRR cap of 100 to whole-character MRR, with any independently established cap increases. The Skull’s own item page lists +16 Constitution while the generic Nearly Complete page lists +15; that discrepancy remains unresolved. The historical solver Constitution 32 and the listed-recipe arithmetic 33 are separate records; this audit does not rerun or certify an optimizer result.</p>
-<p><strong>Boundaries that matter.</strong> Cut to the Soul’s +3% is offensive Dodge bypass, not defensive Dodge. The full defensive Dodge and its two caps need their complete selected-source check. The selected Queen’s Freedom of Movement is a relayed item effect. Spot +22 is a Competence source, not a guaranteed final skill gain. Its <a href="evidence/spot-diamond-type/README.md">transmitted own-item excerpt</a> does not supply local original bytes or an observation timestamp; the component remains unknown and excluded from subtotals. The preserved bow model uses a different weapon/craft scenario and a level-35 kit assumption; its outputs do not certify this fully filled level-36 Calamitous-and-Salt loadout. Static weapon riders, imbues, sneak damage and procs require their own scaling and activation checks.</p>
-<p><a href="endgame-stacking-audit.html">Open the component-by-component audit, exact Wiki evidence, missing interactions and unverified log</a>. “Verified” there means the stated source support, not a guarantee of current live-game behavior. The retained 7 November captures remain dated evidence. The Queen/Spot study relay is documented separately in <a href="docs/knowledge-base/A-074-QUEEN-BASIC.md">A-074 source limits</a>; it is not an original capture or local optimizer rerun. Historical Summer’s End observations are retained in their original files and earlier snapshot, not counted as current components.</p>
+<p>''' + h(utility + ' ' + survival) + ''' remain unverified combinations. The HP subtotal still uses the selected False Life +60 in Goggles Green and Vitality +48 in Claws Green. Queen and newly selected unresolved sources remain in the ledger rather than being dropped to make totals appear complete. The objective PRR cap is not raw PRR; armor caps apply to whole-character MRR. Skull own-page Constitution +16 conflicts with the generic/model +15: modeled CON 32 and the own-page sensitivity 33 remain separate, uncertified cases.</p>
+<p><strong>Wisdom priority, with a visible tradeoff.</strong> ''' + h(wis_dex) + '''These are gear contributions, not final ability or skill scores. The own Claws page lists Wisdom +15, but its retained source lacks an observation timestamp and cannot enter certified totals. The source review identifies Nearly Complete as irreversible: plan for another Claws copy if the existing one is already finished with Dexterity. The optional ring Dexterity +13 branch would model Dexterity ''' + h(str(chosen['optional']['ring_dexterity_13']['gear_dexterity_if_selected'])) + '''; it is <strong>unselected and model-only</strong>. Neither it nor the quarantined Insightful +5/Spot +22 diamonds is silently added to the primary kit.</p>
+<p><strong>Boundaries that matter.</strong> Cut to the Soul’s +3% is offensive Dodge bypass, not defensive Dodge. Defensive Dodge and its two caps still need their full check, including the newly selected ring input. Improved Deception remains a conditional ring proc, not a guaranteed sneak-attack uptime. Static weapon riders, imbues, sneak damage and procs are separate damage channels. The preserved level-35 bow-model scenario does not certify this level-36 Calamitous-and-Salt recipe or its critical range.</p>
+<p><a href="endgame-stacking-audit.html">Open the component-by-component audit, exact source contexts, missing interactions and unverified log</a>. “Verified” means the specific gated source support, not a live-game guarantee. The <a href="evidence/wisdom-loadout/claims.json">independent claim inventory</a> and <a href="evidence/wisdom-loadout/sources.json">source review</a> retain their own grades: retained-source-supported does not mean certified by this ledger. Old A-074 and earlier source records remain preserved history; unused old item/augment effects are not current components.</p>
 </section>
 ''' + END
 
 
 def detail(data):
     validate(data)
+    chosen = selection(data)
     out = ['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Selected endgame stacking audit — INT Longbow Guide</title><style>
 :root{color-scheme:dark;background:#101722;color:#e4eaf2;font:17px/1.6 system-ui,sans-serif}body{max-width:1140px;margin:auto;padding:24px}a{color:#9ed1ff}h1,h2,h3{line-height:1.2}h2{margin-top:2.5rem;border-top:1px solid #465568;padding-top:1rem}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid #465568}th{background:#202d3e}.tw{overflow-x:auto}caption{text-align:left;font-weight:700;padding:12px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.5 ui-monospace,monospace}code{overflow-wrap:anywhere}details{border:1px solid #465568;border-radius:6px;padding:12px;margin:12px 0}summary{cursor:pointer;font-weight:700}.note{border-left:4px solid #e9bd6c;padding-left:14px}.unknown{color:#f2ce92}nav a{margin-right:16px}@media(max-width:600px){body{padding:16px}th,td{padding:8px}table{min-width:650px}}
-</style></head><body><nav><a href="index.html#selected-stacking-summary">Back to the guide</a><a href="#components">Components</a><a href="#unverified">Unverified log</a><a href="#rules">Rules</a><a href="#sources">Source receipts</a></nav><h1>Selected endgame stacking audit</h1><p>9 November 2026 · Queen of Rot BASIC · fully filled level-36 kit; Calamitous component reference</p>''',
+</style></head><body><nav><a href="index.html#selected-stacking-summary">Back to the guide</a><a href="#components">Components</a><a href="#unverified">Unverified log</a><a href="#rules">Rules</a><a href="#sources">Source receipts</a></nav><h1>Selected Wisdom endgame stacking audit</h1>''',
+    '<p>'+h(chosen['selection']['date'])+' · '+h(chosen['selection']['label'])+' · fully filled level-36 Calamitous/Salt recipe; optional ring craft absent</p>',
     '<p class="note">'+h(data['scope'])+'</p>',
-    '<p>Original evidence audit base: <code>'+h(data['base_commit'])+'</code>. A-074 selection base: <code>'+h(data['selection_base_commit'])+'</code>. Queen and Spot replace the former cloak/empty socket; other selected gear/crafts, chassis, feats, AP/DP purchases and historical damage-model outputs are preserved. Publication and live-game validation are separate from this documentary audit.</p>',
+    '<p>Original evidence audit base: <code>'+h(data['base_commit'])+'</code>. Current selection implementation base: <code>'+h(data['selection_base_commit'])+'</code>. The <a href="tools/fixtures/wisdom-loadout/selection.json">shared manifest</a> identifies the production run, selected derivation, exact placements and optional branch. The <a href="evidence/wisdom-loadout/README.md">evidence packet</a> preserves source grades and limits. Chassis, feats, AP/DP purchases and historical damage-model outputs are not silently recomputed. Publication and live-game validation remain separate.</p>',
     '<p><strong>Status:</strong> verified = exact component definition or explicit applicable rule; conditional = an activation/acquisition condition remains; conflicting = retained sources or scope disagree; unknown = evidence is missing. A verified component does not imply its entire combination is verified. Every counted component and applied rule also requires an exact revision and genuine source-bound observation context. Every counted pair needs its own applicable rule. Artifact touching two bonuses does not prove those other bonuses stack with one another.</p>',
     summary(data).replace('id="selected-stacking-summary"','id="audit-summary"').replace('id="selected-stacking-title"','id="audit-summary-title"').replace('aria-labelledby="selected-stacking-title"','aria-labelledby="audit-summary-title"'),
     '<h2 id="components">Selected components and interaction results</h2><p>Numbers in component rows are source-defined inputs or explicitly unverified Guide claims. Only a complete, supported subtotal is asserted. Item minimum levels in the guide are base-item values; this audit requires the fully filled level-36 context. Armor proficiency, ability modifiers, base saves, feats, trees, past lives, filigrees, procs and enemy mechanics are outside these gear subtotals unless specifically listed.</p>']
@@ -105,9 +155,10 @@ def detail(data):
         links=', '.join(f'<a href="#source-{h(x)}">{h(x)}</a>' for x in e['sources']) or 'Own-effect source missing'
         out += [f'<tr id="effect-{h(e["id"])}"><td>{h(e["host"])}: {h(e["claim"])}</td><td>{h(e["state"])}</td><td>{h(e["note"])}<br>{links}</td></tr>']
     out += ['</tbody></table></div>']
-    out += ['<h2 id="unverified">Whole-build and unverified claims</h2><p>Current model-only arithmetic: RP 44, Doubleshot 35, Seeker 29, INT 37 Calamitous / 36 Sinew, Armor-Piercing 76, CON 32 generic / 33 Skull-item case, raw PRR 133, raw MRR 73, Fortification 286 and saves Will/Reflex/Fortitude 26/26/27. It does not become verified merely because the arithmetic is correct. Prior Summer’s End values live in the Guide’s historical disclosure and prior snapshots; the replaced cloak is absent from the current component ledger.</p>']
+    out += ['<h2 id="unverified">Model-only comparisons and unresolved claims</h2><p>The following table comes from the shared selected-recipe manifest, not the source-gated subtotal calculator. Correct arithmetic and independent construction checks do not make a model total certified. Ability entries are gear contributions; Spot and saves exclude ability modifiers and other character inputs. The ring Dexterity +13 branch remains unselected. The Skull Constitution +15/model versus +16/own-page conflict is preserved as separate sensitivity cases.</p>', model_table(chosen), '<p>Removed items, Monolith, Litany, obsolete gems and previous crafting choices are not current inputs. Prior guide and artifact columns are named comparisons, not alternative current selections. Original A-074, Summer’s End and bow-model evidence remain historical records.</p>']
     for g in data['unresolved']:
-        out += [f'<h3 id="gap-{h(g["id"])}">{h(g["claim"])}</h3><p><strong>{h(g["state"])}</strong> — {h(g["detail"])}</p><p>Direct-source scope: '+', '.join(f'<a href="#source-{h(s)}">{h(s)}</a>' for s in g['sources'])+'.</p>']
+        sources = ', '.join(f'<a href="#source-{h(s)}">{h(s)}</a>' for s in g['sources']) or 'No qualified original receipt joined here; see the selected manifest and source packet'
+        out += [f'<h3 id="gap-{h(g["id"])}">{h(g["claim"])}</h3><p><strong>{h(g["state"])}</strong> — {h(g["detail"])}</p><p>Source context: '+sources+'.</p>']
     out+=['<div class="tw"><table><caption>Additional selected build inputs, excluded from asserted totals</caption><thead><tr><th>Input</th><th>Guide amount</th><th>Direct source / unresolved scope</th></tr></thead><tbody>']
     for c in [c for c in data['components'] if c['channel']=='build']:
         out += [f'<tr><td>{h(c["host"])}</td><td>{c["amount"]} {h(c["stat"])}</td><td><a href="#source-{h(c["source"])}">Source context</a>. {h(c["note"])}</td></tr>']
@@ -116,16 +167,19 @@ def detail(data):
         status = 'Eligible: exact revision and bound observation context.' if source_provenance(data['sources'][r['source']]) else 'Unverified provenance: excluded from calculations until revision and genuine observation context are complete.'
         out += [f'<p class="note">{h(status)}</p>']
         out += [f'<h3 id="rule-{h(r["id"])}">{h(r["id"])}</h3><p>Applies to {h(", ".join(r["stats"]))}; type scope {h(", ".join(r["types"]))}; operation {h(r["kind"])}. Same-type suppression stays within the same statistic and channel.</p><blockquote>{h(r["quote"])}</blockquote><p><a href="#source-{h(r["source"])}">Exact source and provenance</a></p>']
-    out += ['<h2 id="sources">Exact source receipts and limits</h2><p>Fresh browser captures are exact visible-DOM excerpts, not raw response bytes. Cache windows differ by record: the 7 November retained pages report up to five hours; the separate Queen relay reports up to twelve hours. Older records are retained observations, not fresh checks. Source-reported revision metadata does not prove that a historical endpoint was independently read. Missing revisions/timestamps remain missing. Extracted original receipts preserve their original package hash and pointer; editor and review metadata are omitted. These are documentary checks, not game tests.</p><p>Source text: <a href="https://ddowiki.com/">DDO Wiki contributors</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>. Original articles and revision histories supply attribution. Reused source excerpts retain that license.</p>']
+    out += ['<h2 id="sources">Exact source contexts, roles and limits</h2><p>Retained browser captures are exact visible-DOM excerpts, not raw response bytes or fresh checks. Their original dates and cache limits remain attached to each record. Source-reported revision metadata does not prove that a historical endpoint was independently read. Missing revisions/timestamps remain missing. Extracted original receipts preserve their original package hash and pointer; editor and review metadata are omitted. The new source packet is derived analysis, not newly captured Wiki evidence. A source marked historical/background below does not describe a currently equipped input. These are documentary checks, not game tests.</p><p>Source text: <a href="https://ddowiki.com/">DDO Wiki contributors</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>. Original articles and revision histories supply attribution. Reused source excerpts retain that license.</p>']
     for sid,s in data['sources'].items():
         pin=s['revision']
         if pin and pin.startswith('/'):pin='https://ddowiki.com'+pin
         revision=f'<a href="{h(pin)}">Observed revision</a>' if pin else 'Revision not retained'
-        out += [f'<details id="source-{h(sid)}"><summary>{h(sid)}</summary><p><a href="{h(s["url"])}">Wiki article</a> · {revision} · observed {h(s["observed"] or "timestamp unavailable in this source record")}</p><p>{h(s["freshness_limit"])}</p><p><a href="evidence/endgame-stacking/source-excerpts.json">Selected source excerpts</a><br>Original capture: <code>{h(s["path"])}</code><br>SHA-256: <code>{h(s["sha256"])}</code><br>JSON pointer: <code>{h(str(s["pointer"]))}</code></p><pre>{quoted(s["quote"])}</pre></details>']
+        role = data['source_roles'][sid]
+        out += [f'<details id="source-{h(sid)}"><summary>{h(sid)} — {h(role)}</summary><p><a href="{h(s["url"])}">Wiki article</a> · {revision} · observed {h(s["observed"] or "timestamp unavailable in this source record")}</p><p>{h(s["freshness_limit"])}</p><p><a href="evidence/endgame-stacking/source-excerpts.json">Retained source excerpts and role labels</a><br>Original capture: <code>{h(s["path"])}</code><br>SHA-256: <code>{h(s["sha256"])}</code><br>JSON pointer: <code>{h(str(s["pointer"]))}</code></p><pre>{quoted(s["quote"])}</pre></details>']
     return ''.join(out)+'</body></html>\n'
 
 
 def validate_guide(html,data):
+    chosen = selection(data)
+    model = chosen['model']['totals']
     from test_lamordia_handling import Document, norm
     doc=Document(html)
     sections=[n for n in doc.root.nodes('section') if n.attrs.get('id')=='selected-stacking-summary']
@@ -157,8 +211,8 @@ def validate_guide(html,data):
                 match=re.fullmatch(r'(\d+) gear '+stat, norm(reference.text()))
                 assert match and int(match.group(1))==result['total']
             else:
-                expected = {'PRR': 'unverified gear PRR (modeled raw 133)',
-                            'MRR': 'unverified gear MRR (modeled raw 73, before caps)'}
+                expected = {'PRR': f"unverified gear PRR (modeled raw {model['Physical Sheltering']})",
+                            'MRR': f"unverified gear MRR (modeled raw {model['Magical Sheltering']}, before caps)"}
                 assert norm(reference.text()) == expected[stat]
             assert reference.attrs.get('href')=='#selected-stacking-summary'
     fort_references=[n for n in doc.root.nodes('span') if n.attrs.get('data-unverified-stat')=='Fortification']
@@ -179,7 +233,7 @@ def validate_guide(html,data):
 
 def main():
     data=load();validate(data)
-    (ROOT/'evidence/endgame-stacking/source-excerpts.json').write_text(json.dumps({'scope':'Selected source contexts only; exact excerpts with origin file hashes/pointers. Original mixed capture files are not linked as audit payload.', 'sources':data['sources']}, ensure_ascii=False, indent=2)+'\n')
+    (ROOT/'evidence/endgame-stacking/source-excerpts.json').write_text(json.dumps({'scope':'Exact retained source contexts with origin file hashes/pointers and current versus historical/background roles. Original mixed capture files are not linked as audit payload; new model claims are not promoted to original source receipts.', 'source_roles':data['source_roles'], 'sources':data['sources']}, ensure_ascii=False, indent=2)+'\n')
     (ROOT/'endgame-stacking-audit.html').write_text(detail(data))
     path=ROOT/'index.html';text=path.read_text()
     if BEGIN in text:

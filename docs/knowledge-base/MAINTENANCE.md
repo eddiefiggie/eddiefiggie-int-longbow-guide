@@ -78,3 +78,26 @@ allow unrelated choices. Queen relay/model inputs are not original captures and
 cannot qualify for counting without the existing provenance and type gates.
 Run `tools/build_stacking_audit.py`, `tools/build_crafting_sheet.py` and
 `tools/build_snapshot.py` after current Guide/audit edits, then run full discovery.
+
+## Wisdom artifact selection and generated priorities
+
+`tools/fixtures/wisdom-loadout/selection.json` is the shared input for the current
+recipe, ranked objectives and one-page summary. The exact query order is not
+derived by sorting achieved values. The raw optimal result, practical manual
+refinement and optional ring completion are separate records. Run builders in
+this order: `tools/build_wisdom_loadout.py`, `tools/build_stacking_audit.py`,
+`tools/build_crafting_sheet.py`, then `tools/build_snapshot.py`.
+
+The current stacking ledger must contain every relevant selected input, including
+unresolved additions, and exclude absent prior items/sets. A missing input must
+not manufacture a complete subtotal. Source-quality labels in the optimizer
+review do not replace the existing revision/observation/value/type and positive
+interaction gates. `tools/stacking_audit.py` remains the unchanged calculator.
+
+The new exact outer preservation contract restores the approved predecessor
+before historical tests apply their unchanged hashes and assertions; those tests
+do not certify the new kit. Separate current tests must reject manifest/render
+drift, priority reordering, a missing artifact, prohibited choices and promotion
+of provisional values into certified totals. Preserve all published snapshots,
+original captures, model bytes, and unrelated build choices. Browser checks of
+the new tables on desktop and narrow viewports remain separate from the suite.
