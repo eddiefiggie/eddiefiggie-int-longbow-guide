@@ -7,11 +7,15 @@ This log records source checks against the named DDO wiki pages and internal con
 Owner-selected option 1 authorized targeted Chains checks and evidence
 integration into draft PR #47, not a merge or publication. The startup check
 confirmed remote head `fbb1c5ed9aca2c1c360147732ac3ba61c77c435e` and tree
-`df677f8c9d2cd113b55d0418dd765729924895c6`; the 56 staged paths matched that tree
+`df677f8c9d2cd113b55d0418dd765729924895c6`; the 57 staged paths matched that tree
 with no unstaged changes. Local HEAD remained the older base
 `5ded199eadbade29dcdb0c1eccfad4758a65c328` on
 `feat/wisdom-loadout-priorities`. The starting suite passed 288 tests in 41.404
 seconds. No checkout reset or branch switch occurred.
+
+The final exact base-to-tree comparison corrected an earlier working path count
+of 56 to 57. The tree identity was correct throughout; this is a receipt-count
+correction, not an added or omitted source, selection or code change.
 
 The [new integration record](evidence/wisdom-loadout/crafting-integration-2026-11-15.json)
 binds only Glabrezu's exact Insight INT +7 tooltip, revision 707320 and genuine

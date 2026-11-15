@@ -322,6 +322,9 @@ class CurrentCraftingIntegrationTests(unittest.TestCase):
                          (1, 'bounded-crafting-source-integration', '11-15-26.3'))
         self.assertEqual(record['baseline']['remote_head'], integration.BASE_COMMIT)
         self.assertEqual(record['baseline']['remote_and_initial_staged_tree'], integration.BASE_TREE)
+        self.assertEqual(record['baseline']['initial_staged_paths'], 57)
+        self.assertIn('earlier working count of 56 was a clerical error',
+                      record['baseline']['checkout_note'])
         self.assertEqual(record['scope']['promoted_component_ids'], [COMPONENT_ID])
         self.assertEqual(record['scope']['unqualified_component_ids'], list(CHAINS))
         flags = set(record['scope']) - {'purpose', 'promoted_component_ids', 'unqualified_component_ids'}

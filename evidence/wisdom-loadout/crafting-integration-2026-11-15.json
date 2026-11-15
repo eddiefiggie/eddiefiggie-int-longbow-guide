@@ -11,9 +11,9 @@
     "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
     "local_branch": "feat/wisdom-loadout-priorities",
     "verified_at_utc": "2026-11-15T21:10:28Z",
-    "initial_staged_paths": 56,
+    "initial_staged_paths": 57,
     "initial_unstaged_changes": false,
-    "checkout_note": "The existing staged tree represented the remote draft despite the older local HEAD. No reset, ref switch or historical snapshot overwrite was performed."
+    "checkout_note": "The existing staged tree represented the remote draft despite the older local HEAD. Final exact Git base-to-tree comparison establishes 57 changed paths; the earlier working count of 56 was a clerical error, not a different tree. No reset, ref switch or historical snapshot overwrite was performed."
   },
   "scope": {
     "purpose": "Owner-selected option 1: targeted Chains checks, then integrate only supported source bindings and reconcile generated labels in draft PR 47.",
