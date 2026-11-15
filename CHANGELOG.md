@@ -2,6 +2,12 @@
 
 Build numbers are MM-DD-YY.x, x being the iteration published that day. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Documentation — 15 November 2026 (draft PR #47; not published)
+
+- Records the owner's acquisition-evidence exception for Sapphire of Healing Amplification +63 (ML36), with Randall Lyric explicitly owner-reported rather than independently verified. This one procurement question no longer blocks retaining the augment.
+- Keeps the factual evidence gap visible without inventing a vendor location, price, stock or observation. The no-event rule/Festive exception, all other validation requirements and draft-only release status are unchanged.
+- Reconciles decision and evidence notes only. Guide build 11-15-26.2, equipment, priorities, original evidence JSON, source grades, model outputs, generated files and snapshots are unchanged; this is not a new optimizer run or release.
+
 ## Build 11-15-26.2 (draft correction candidate; not published)
 
 - Corrects Yeenoghu's Major Anger to additional Rage uses, distinguishes permanent Ram's Might from conditional Bloodrage, and keeps all such effects outside counted standing damage.

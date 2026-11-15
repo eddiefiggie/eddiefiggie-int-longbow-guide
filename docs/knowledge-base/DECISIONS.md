@@ -4,6 +4,32 @@ The [Guide](../../index.html) is the reference for selected feats, class routes,
 
 The [A-074 Queen of Rot BASIC recipe](A-074-QUEEN-BASIC.md) remains the historical comparison baseline, preserved in build 11-09-26.5. Its relayed source limitations are not repaired merely because Queen remains in the new outfit. An owner-selected recipe is not a source-certified or globally optimal build.
 
+## Approved acquisition-evidence exception — 15 November 2026
+
+**Scope: Sapphire of Healing Amplification +63, minimum level 36, only.** The
+owner reported that Randall Lyric appears to offer the augment and explicitly
+accepted an exception to the missing independent acquisition evidence. Retaining
+this exact augment in the selected Wisdom loadout no longer depends on obtaining
+that acquisition capture; this one procurement-evidence gap is accepted, not
+independently resolved.
+
+Record the vendor as **owner-reported, not independently verified**. No exact
+vendor location, price, current stock, in-game observation time or new Wiki
+revision was supplied. The retained item page's missing location is not proof
+that the item is event-only, nor does this decision establish that the Wiki is
+incorrect. A later exact source capture may improve the evidence, but is not a
+remaining requirement for this accepted procurement exception.
+
+This is **not an additional event-item exception**: the no-event/limited-time
+rule and existing Festive ability-diamond exception are unchanged. It does not
+waive checks of the augment's effect, bonus type, stacking, level or sockets;
+promote source grades or totals; change equipment or priorities; or close any
+other crafting, provenance, conflict, character, DPS or browser-QA requirement.
+PR #47 remains a draft; this decision does not authorize merge or publication.
+Original evidence records retain their dated conclusions. See the
+[current evidence map](../../evidence/wisdom-loadout/README.md) for the distinction
+between the accepted acquisition risk and unchanged mechanics evidence.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

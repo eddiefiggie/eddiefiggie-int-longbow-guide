@@ -2,6 +2,33 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Owner-approved HA63 acquisition-evidence exception — 15 November 2026
+
+The owner reported that Randall Lyric appears to offer Sapphire of Healing
+Amplification +63 (ML36) and accepted the absent independent acquisition evidence
+as a scoped exception. The [decision](docs/knowledge-base/DECISIONS.md#approved-acquisition-evidence-exception--15-november-2026)
+removes that one procurement question as a blocker to retaining the augment;
+it does not claim independent vendor verification or close the factual gap.
+No vendor location, price, current stock or original observation is invented.
+The Wiki's missing acquisition entry is not treated as proof of event-only
+status or a demonstrated error.
+
+This documentation-only follow-up starts from draft PR #47 head
+`222733d49839fd4dfc12ba61a8bd8c4ef23cc721`. Before edits, the actual local HEAD
+remained `5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`; its 54 staged paths and tree
+`6e41c0af3cc36920ff0b13b76983ffc45783ea78` matched that existing remote draft,
+with no unstaged changes. No checkout reset or ref switch was performed.
+
+The exception changes risk acceptance only. The selected loadout, event rule
+with its Festive exception, all source grades, counted totals, original receipts,
+generated guide/audit/print files, build stamp and snapshots remain unchanged.
+Five exact craft values, Skull CON15/16, source-provenance gaps, full-character
+and DPS validation, and browser QA remain open. No new optimizer solve, browser
+attempt, merge or publication is authorized by this decision. Earlier dated
+entries below retain their original evidence conclusions; this entry supersedes
+only the requirement to resolve HA63 acquisition before retaining that augment.
+
 ## Bounded Wisdom-draft mechanics corrections — 15 November 2026
 
 Owner-approved code-only follow-up to draft PR #47 at

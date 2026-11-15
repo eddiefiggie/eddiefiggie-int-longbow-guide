@@ -44,7 +44,10 @@ saves and skills increased by 3. Model-only Spot +20 remains a source-validation
   its exact +13 is not independently verified. It is not selected or certified.
 - No event/limited-time items except the owner's Festive ability-diamond
   exception. Screening is not a promise of ownership, auction stock or exact
-  permanent acquisition for every augment.
+  permanent acquisition for every augment. The owner separately accepted an
+  [acquisition-evidence exception for HA63 only](DECISIONS.md#approved-acquisition-evidence-exception--15-november-2026):
+  Randall Lyric is owner-reported, not independently verified. This accepts the
+  procurement evidence gap without adding an event-item exception.
 - Calamitous is pinned in the source run. The existing conditional Sinew option
   remains separate and was not solved. The fully filled outfit is ML36 even
   though the new Globe/Treatise bow fills no longer impose Defense +40's ML36.
@@ -98,10 +101,13 @@ guide's stricter `verified` classification.
 Remaining exact primary model values are Glabrezu Insight INT +7 and Chains
 Fortification +142, Combustion +142, Quality INT +3 and Spot +20. Optional ring DEX +13 adds
 another gap. Skull CON +15 versus +16, Queen's incomplete/relayed provenance and exact
-normal procurement of Healing Amplification +63 remain visible. Live Wiki access
-was blocked during the comparison; missing original observation metadata was
-not fabricated. Source-qualified item definitions still require the current
-ledger's exact provenance and positive interaction gates before counting.
+normal procurement of Healing Amplification +63 remain visible. The owner has
+accepted only the HA63 acquisition-evidence gap, so it no longer blocks retaining
+that augment; it remains independently unverified and does not close any other
+validation requirement. Live Wiki access was blocked during the comparison;
+missing original observation metadata was not fabricated. Source-qualified item
+definitions still require the current ledger's exact provenance and positive
+interaction gates before counting.
 
 The historical bow model, previous snapshots and original retained captures
 remain unchanged. Current generated sections must pass fresh semantic tests;

@@ -38,8 +38,25 @@ not explored by this run. The fully socketed outfit requires level 36.
 The user excludes event and limited-time items, except Festive ability
 diamonds. Only Festive Intelligence +2 is selected here. Exclusion screening is
 not proof that the user owns an item or that an auction currently has it. Any
-unresolved permanent procurement route remains a limitation, not an implied
-additional exception.
+unresolved permanent procurement route remains a factual limitation, not an
+implied additional exception. The one explicit acquisition-evidence exception
+below changes acceptance of that risk, not the item's evidence classification.
+
+### Owner-approved HA63 acquisition-evidence exception
+
+On 15 November 2026, the owner reported that Randall Lyric appears to offer
+**Sapphire of Healing Amplification +63 (ML36)** and accepted the missing
+independent acquisition evidence as an exception. Under the
+[scoped decision](../../docs/knowledge-base/DECISIONS.md#approved-acquisition-evidence-exception--15-november-2026),
+that procurement question is no longer a blocker to retaining this exact
+augment. The vendor remains owner-reported, not independently verified; no
+location, price, current stock or observation metadata is inferred.
+
+This is not permission for other event/limited-time gear and is not new mechanics
+evidence. All effect, type, stacking and applicability checks, other evidence
+gaps and publication requirements remain unchanged. The original JSON receipts
+and generated guide's unverified-procurement wording remain accurate records of
+the source limitation; they are not rewritten into a verification claim.
 
 ## Arithmetic is not mechanics certification
 
@@ -57,8 +74,10 @@ authority for source-qualified subtotals. In particular:
 - Glabrezu Insightful INT +7 and Chains Fortification +142, Combustion +142,
   Quality INT +3 and Spot +20 remain exact-value gaps.
 - Skull CON +15 versus +16 remains a conflict, with separate sensitivity values.
-- Queen's retained relay limitations and exact ordinary procurement of Healing
-  Amplification +63 remain visible.
+- Queen's retained relay limitations remain open. Exact ordinary procurement of
+  Healing Amplification +63 remains independently unverified, with the specific
+  owner-approved acquisition-evidence exception above; it is not an open
+  procurement blocker for retaining this augment.
 - Optional ring Enhancement DEX +13 is model-only, not part of primary totals.
 - Equal subtotals from new items or set augments do not inherit the old sources'
   certification. No new artifact/weapon filigree benefit is counted.
