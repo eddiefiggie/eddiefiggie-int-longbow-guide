@@ -23,6 +23,8 @@ modeled comparison and exact ranked-affix order from the
 | [Bounded crafting integration](crafting-integration-2026-11-15.json) | The later build-11-15-26.3 Glabrezu-only source qualification, targeted Chains Spot check, exact change boundary and remaining exclusions. | A complete INT/DPS total, a qualified Chains finished effect, changed optimizer result, live-game or browser-layout certification. |
 | [Recipe-proof source addendum](recipe-proof-sources-2026-11-15.json) | Fresh Attributes-to-Ability route, explicit Intelligence membership/terminology and bounded remaining Fortification/Spot checks. | A finished Chains tooltip, selected Fortification class or Spot type proof, or an exhaustive absence finding. |
 | [Bounded recipe-proof integration](recipe-proof-integration-2026-11-15.json) | Build-11-15-26.4's two source-supported derivations, four-component proof boundary, full-result delta and exact preservation/testing records. | A new stacking edge, complete INT/DPS result, gear change, new solver run, merge or publication. |
+| [Seven-INT source addendum](int-evidence-sources-2026-11-15.json) | Seven own-item definitions, selected host/socket observations and the historical Slavers Spot example, with their separate provenance and limits. | Repair of old observations, current Chains type proof, every effect on those hosts, or complete mixed-type totals. |
+| [Seven-INT integration](int-evidence-integration-2026-11-15.json) | Build-11-15-26.5's bounded direct-source qualifications, preserved same-type suppression, exact change boundary and verification results. | Additional INT/DPS, a new stacking rule, a new solve, live-game certification, merge or publication. |
 
 The records retain both the **original file identities and SHA256 hashes** and
 the hashes of these compact, path-sanitized extraction files. These are distinct:
@@ -78,7 +80,7 @@ for the older evidence.
 | Chains Prefix Fortification +142% | Exact Legendary recipe magnitude. | No reviewed premise places this selected Slavers Prefix in the general rule's standard-Fortification class. Enhancement remains unqualified. |
 | Chains Suffix Combustion +142 | Legendary single-type **Equipment Spell Power +142**, plus the separate Combustion-to-Fire mapping. | Now qualified as a bounded source-supported recipe derivation in .4. Selected imbue applicability remains separate; this is not weapon damage or measured DPS. |
 | Chains Bonus Quality INT +3 | Legendary **Quality Attributes +3** recipe category, with fresh Ability-source Intelligence membership and attributes/abilities terminology. | Now qualified as a bounded source-supported recipe derivation in .4, not a captured finished-item tooltip or a positive stacking edge. |
-| Chains Extra Spot +20 | Legendary **Skills (except UMD) +20** recipe category. | The exact craft's bonus type remains unresolved. A generic Competence tooltip on another item does not qualify Chains. |
+| Chains Extra Spot +20 | Legendary **Skills (except UMD) +20** recipe category. | The exact current craft's bonus type remains unresolved. The later .5 addendum supplies historical Slavers-family Competence corroboration, not current Chains qualification. |
 
 The host and recipe also support Chains at Waist, four distinct craft channels,
 and a separate Green-slot unlock. No crafting, spending, acquisition or optional
@@ -101,9 +103,9 @@ establishing that exact binding. These bounded observations do not prove that no
 relevant source exists. Recipe category/mapping evidence is not silently
 converted into a contiguous finished-effect clause to satisfy the validator.
 
-### Current .4 integration: two recipe-derived inputs qualify
+### Historical .4 integration: two recipe-derived inputs qualified
 
-The separately approved bounded contract now binds three real source roles:
+The separately approved bounded contract bound three real source roles:
 selected host/channel, the correctly headed Legendary recipe and sourced
 category membership/type. The [new source packet](recipe-proof-sources-2026-11-15.json)
 retains the actual 21:48–21:50 UTC follow-up windows, the Attributes redirect to
@@ -111,18 +113,19 @@ Ability and the explicit Intelligence/attributes terminology. Existing recipe
 and Spell Power records keep their original observation windows. Separate fields
 are not stitched into a fictional finished-item quotation.
 
-**Combustion 142 Equipment** is now a complete selected-gear Fire Spell Power
+**Combustion 142 Equipment** became a complete selected-gear Fire Spell Power
 contribution. It is not full-character Spell Power, weapon damage, established
-selected-imbue scaling or measured DPS. **Quality INT +3** is a qualified input
-alongside Glabrezu Insight INT +7, but their positive interaction is not proved.
-Seven other INT inputs remain excluded and the complete INT total remains null.
-Fortification and Spot remain unknown/excluded for the distinct gaps above.
+selected-imbue scaling or measured DPS. **Quality INT +3** became a qualified input
+alongside Glabrezu Insight INT +7, but their positive interaction was not proved.
+At that checkpoint, seven other INT inputs remained excluded and the complete INT
+total remained null. Fortification and Spot stayed unknown/excluded for the
+distinct gaps above. The later .5 state is recorded next.
 
-All 76 results from unchanged old input data match the real new engine. After
-the two qualifications, four level36 result objects change and 72 remain identical;
-all 76 level35 results remain identical. The [integration receipt](recipe-proof-integration-2026-11-15.json)
-and current tests compare complete results, including the newly visible missing
-Insight/Quality interaction, not merely a headline number.
+All 76 results from unchanged old input data matched the real new engine. After
+the two .4 qualifications, four level36 result objects changed and 72 stayed
+identical; all 76 level35 results remained identical. The [integration receipt](recipe-proof-integration-2026-11-15.json)
+and that checkpoint's tests compare complete results, including the newly visible
+missing Insight/Quality interaction, not merely a headline number.
 
 The new exact eight-file outer layer restores .3 before older tests run. All 55
 protected records, original claim grades, source metadata, previous snapshots,
@@ -130,6 +133,52 @@ model values, selection and priorities remain unchanged. Historical code views
 are separate from actual-new-engine direct-path negative tests and current
 renderer tests. Successful public Wiki inspection does not resolve the separate
 local-guide browser-QA limitation or certify live-game mechanics.
+
+### Current .5 integration: seven direct INT definitions qualify
+
+The [new packet](int-evidence-sources-2026-11-15.json) retains genuinely new
+browser observations rather than supplying missing dates to earlier records.
+The existing direct-source gates now bind these seven selected INT definitions:
+
+| Selected effect | Typed INT definition | Current contribution limit |
+| --- | --- | --- |
+| Coldlight Runners' Melancholic Accessory fill | +15 Enhancement | Exact selected INT effect only; separate host/socket evidence retained |
+| Compass's Solar Gem | +4 Artifact | Sun slot; no other Compass effect is newly qualified |
+| Glabrezu's Lunar Gem | +4 Profane | Moon slot; supersedes Celestial's Profane INT |
+| Unnatural Accuracy's Festive Diamond | +2 Festive | Colorless in Green; covered by the existing Festive exception |
+| Calamitous's Miserable Dimlight | +2 Exceptional | Miserable Weapon slot; supersedes Globe's Exceptional INT |
+| Calamitous's Globe of True Imperial Blood | +1 Exceptional | Colorless in Purple; INT is redundant while Dimlight applies |
+| Celestial Sapphire's native Profane Well Rounded | +2 Profane to all abilities | INT is redundant while Lunar applies; Nearly Finished remains empty |
+
+The selected full-kit floor stays level36; it is not a claim that every source
+item or augment individually requires that level. The two same-type suppressions
+are unchanged highest-of-type behavior, not a newly discovered stat loss or gain.
+No positive interaction rule is added. The model-only INT +37 remains
+uncertified, and the complete calculator total stays withheld.
+
+The complete .4-to-.5 result comparison changes only the two level36 gear-INT
+records (inactive and Force configurations); the other 74 results and all 76
+level35 results are identical. INT now has seven counted inputs, two suppressed
+same-type inputs and no excluded inputs, but ten positive interaction gaps
+remain among Enhancement, Insight, Quality, Profane and Festive. The result is
+still incomplete with a null total; source-qualified inputs are not a combined
+total certificate.
+
+The current Slavers recipe supplies Fortification +142% and Skills except UMD
++20. A Wiki-linked Legendary Five Rings screenshot explicitly identifies Spot
++22 as Competence; the image page displays 19 August 2016 and its item values are
+older. It is relevant historical crafting-family evidence, not the selected
+Chains host or a current +20 tooltip. Current bonus-type continuity is still an
+assumption. Fortification's selected-Prefix classification also remains open.
+Neither Chains input is promoted, and other Fortification/Spot input and
+interaction gaps remain separate.
+
+The [new integration receipt](int-evidence-integration-2026-11-15.json) records
+the exact verification and preservation results. Original captures, claim grades,
+model values, selected gear, priorities and previous snapshots are unchanged.
+These source definitions do not establish current stock, ownership, complete
+character scores, DPS or critical range. Public Wiki access is not guide layout,
+keyboard or print QA, and the draft remains unmerged and unpublished.
 
 ## Arithmetic is not mechanics certification
 

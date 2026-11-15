@@ -11,6 +11,7 @@ from unittest.mock import patch
 
 import recipe_proofs as proofs
 import stacking_audit as audit
+import wisdom_int_evidence_preservation as int_evidence
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,8 +30,8 @@ def raw_record(binding):
 
 
 def ready_ledger():
-    """Bind exact real source contexts under independent test-only source IDs."""
-    data = audit.load()
+    """Exercise the real engine with fixed .4 data and test-only source IDs."""
+    data = json.loads(int_evidence.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
     for binding in ('host', 'recipe', 'combustion', 'intelligence'):
         packet, name, field, _ = proofs.SOURCE_BINDINGS[binding]
         path, digest = proofs.PACKETS[packet]

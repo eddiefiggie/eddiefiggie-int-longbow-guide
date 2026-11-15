@@ -159,3 +159,29 @@ tests running on the real new engine. All seven interaction rules, numerical
 core semantics, selection, priorities, source grades and previous captures remain
 unchanged. This contract does not certify the rest of the loadout or authorize
 merge/publication; browser, accessibility and print checks remain separate.
+
+### Seven-INT direct-source integration layer
+
+Build 11-15-26.5 uses the existing direct-source gates for seven selected INT
+definitions. The new [source packet](../../evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json)
+and [integration receipt](../../evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json)
+are additive records; old observations, claim grades and provenance gaps must
+not be rewritten. New host/socket observations do not silently qualify every
+effect on those hosts. Historical Slavers Spot evidence is recorded with its
+older value, different host and continuity limit, not added to counted inputs.
+
+`tools/wisdom_int_evidence_preservation.py` restores the exact .4 checkpoint
+before the existing bounded-recipe and older preservation layers run. Its
+seven-production-file scope contains 27 unique reversal hunks and 61 protected
+records. Preserve the earlier scope fixtures, hashes and historical assertions.
+Separate current-state
+tests must exercise actual production data and the unchanged calculator,
+rejecting source/provenance/value/type/host/level mutations and promotion of
+unresolved Chains inputs. Compare complete result objects, not only totals.
+
+Keep the existing same-type suppression and positive-interaction gates: newly
+qualified inputs cannot manufacture a complete INT total. Test unchanged
+selection/core tuples, rules and lower-level applicability separately from
+changed evidence labels. Record actual suite, builder and diff results in the
+receipt; these checks do not establish source freshness, live-game mechanics,
+guide layout, accessibility, print pagination or release permission.

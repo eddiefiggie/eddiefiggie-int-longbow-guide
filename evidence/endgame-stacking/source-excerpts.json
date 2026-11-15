@@ -1,6 +1,13 @@
 {
   "scope": "Exact retained source contexts with origin file hashes/pointers and current versus historical/background roles. Original mixed capture files are not linked as audit payload; new model claims are not promoted to original source receipts.",
   "source_roles": {
+    "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "lunar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "festive-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "dimlight-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "globe-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "celestial-profane-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "glabrezu-insight-int-live-20261115": "current component, rule, effect or unresolved context",
     "stack": "current component, rule, effect or unresolved context",
     "artifact": "current component, rule, effect or unresolved context",
@@ -110,6 +117,188 @@
     "chains-intelligence-membership-20261115": "recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement"
   },
   "sources": {
+    "melancholic-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "melancholic-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +15 Enhancement bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Melancholic_Intelligence_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Melancholic_Intelligence_(legendary)&oldid=702267",
+      "observed": "2026-11-15T22:19:01Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:01Z through 2026-11-15T22:19:27Z. Literal cache notice: (this is up to 13 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "melancholic-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "solar-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "solar-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +4 Artifact Bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Intelligence_(Legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Intelligence_(Legendary)&oldid=700860",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to 17 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "solar-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "lunar-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "lunar-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +4 Profane Bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Intelligence_(Legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Lunar_Gem_of_Intelligence_(Legendary)&oldid=691752",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to 4 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "lunar-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "festive-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "festive-int",
+        "effect_visible_text"
+      ],
+      "quote": "Drag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2",
+      "revision": "https://ddowiki.com/index.php?title=Item:Diamond_of_Festive_Intelligence_%2B2&oldid=720823",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to an hour old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "festive-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "dimlight-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "dimlight",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +2 Exceptional bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Miserable_Dimlight_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+      "observed": "2026-11-15T22:19:27Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:27Z through 2026-11-15T22:19:35Z. Literal cache notice: (this is up to 0 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "dimlight"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "globe-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "globe",
+        "effect_visible_text"
+      ],
+      "quote": "Drag this augment into a slot to upgrade an item with a +1 Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. This augment can go in any color Augment Slot.",
+      "url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+      "revision": "https://ddowiki.com/index.php?title=Item:Globe_of_True_Imperial_Blood&oldid=643056",
+      "observed": "2026-11-15T22:19:27Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:27Z through 2026-11-15T22:19:35Z. Literal cache notice: (this is up to 11 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "globe"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "celestial-profane-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "celestial-host",
+        "profane_tooltip_html"
+      ],
+      "quote": "+2 <a href=\"/page/Profane_bonus\" title=\"Profane bonus\">Profane bonus</a> to all abilities.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Celestial_Sapphire_Ring",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Celestial_Sapphire_Ring&oldid=631921",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to -4 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "celestial-host"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
     "glabrezu-insight-int-live-20261115": {
       "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
       "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",

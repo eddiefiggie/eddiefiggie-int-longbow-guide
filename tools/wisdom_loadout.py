@@ -305,14 +305,32 @@ def render_crafting_qualification(ledger=None, *, compact=False):
                  for cid in chains_ids), 'Unreviewed Chains qualification')
     intelligence = subtotal(ledger, 'Intelligence')
     combustion = subtotal(ledger, 'Combustion')
+    int_sources = {
+        'boots-int': 'melancholic-int-live-20261115',
+        'solar-int': 'solar-int-live-20261115',
+        'lunar-int': 'lunar-int-live-20261115',
+        'festive-int': 'festive-int-live-20261115',
+        'dimlight-int': 'dimlight-int-live-20261115',
+        'globe-intelligence': 'globe-int-live-20261115',
+        'celestial-profane-intelligence': 'celestial-profane-int-live-20261115',
+    }
+    _require(all(components[cid]['state'] == 'verified'
+                 and components[cid]['source'] == sid
+                 for cid, sid in int_sources.items()),
+             'Current seven-INT qualification lost its selected source gate')
     _require(components['chains-combustion']['state'] == 'verified'
              and components['chains-quality-int']['state'] == 'verified'
              and combustion['complete'] and combustion['total'] == 142
              and combustion['counted'] == ['chains-combustion']
-             and intelligence['counted'] == ['glabrezu-insight-int', 'chains-quality-int']
-             and len(intelligence['excluded']) == 7
-             and intelligence['missing_interactions'] == [
-                 ['glabrezu-insight-int', 'chains-quality-int']]
+             and intelligence['counted'] == [
+                 'boots-int', 'solar-int', 'lunar-int', 'festive-int',
+                 'dimlight-int', 'glabrezu-insight-int', 'chains-quality-int']
+             and intelligence['suppressed'] == [
+                 'celestial-profane-intelligence', 'globe-intelligence']
+             and intelligence['excluded'] == []
+             and len(intelligence['missing_interactions']) == 10
+             and ['glabrezu-insight-int', 'chains-quality-int']
+                 in intelligence['missing_interactions']
              and intelligence['total'] is None and not intelligence['complete'],
              'Current recipe qualification or unresolved interaction changed')
     paragraph = (
@@ -322,21 +340,28 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         'are now <strong>source-supported recipe derivations</strong>: separate host, '
         'Legendary recipe and category-definition records, not invented finished-item tooltips. '
         'The 142 is a selected-gear Fire Spell Power contribution, not weapon damage, '
-        'established imbue scaling, full-character Spell Power or DPS. The Intelligence total '
-        'is still withheld: seven other inputs and the Pendant Insight–Chains Quality '
-        'interaction remain unqualified. Chains Fortification and Spot remain excluded. '
+        'established imbue scaling, full-character Spell Power or DPS. '
+        'Seven additional INT definitions now have direct source support: Melancholic +15 Enhancement, '
+        'Solar +4 Artifact, Lunar +4 Profane, Festive +2, Dimlight +2 Exceptional, '
+        'Globe +1 Exceptional and native Celestial +2 Profane. All nine selected INT definitions '
+        'qualify, but Globe INT +1 is suppressed by Dimlight +2 and Celestial INT +2 by Lunar +4. '
+        'The combined Intelligence total is still withheld: ten cross-type interactions, '
+        'including Pendant Insight–Chains Quality, remain unqualified. The model-only +37 '
+        'is not a certified total. Chains Fortification and Spot remain excluded. '
         'No equipment, priorities, modeled amounts or stacking rules changed. '
+        + _link('evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json',
+                'Seven-INT integration and remaining gaps') + ' · '
+        + _link('evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json',
+                'New INT and historical Spot observations') + ' · '
         + _link('evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json',
-                'Bounded integration record') + ' · '
-        + _link('evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json',
-                'New category evidence and remaining gaps') + ' · '
+                'Earlier bounded recipe integration') + ' · '
         + _link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',
                 'Original host and recipe captures') + '.</p>')
     if compact:
         return paragraph
     rows = [
         _cells(['Pendant · Insight INT +7', '<strong>DIRECT SOURCE-QUALIFIED INPUT</strong>',
-                'Own-item typed tooltip; other INT inputs and interactions are not certified.']),
+                'Own-item typed tooltip; qualification of all nine selected INT definitions does not establish the ten missing mixed-type interactions.']),
         _cells(['Chains · Prefix Fortification +142%', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
                 'Legendary value is explicit. The general standard-item Enhancement rule lacks a supported premise classifying this selected Slavers Prefix as standard.']),
         _cells(['Chains · Suffix Combustion +142', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
@@ -344,7 +369,7 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         _cells(['Chains · Bonus Quality INT +3', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
                 'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input, but no Insight/Quality stacking edge or complete INT total is established.']),
         _cells(['Chains · Extra Spot +20', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Skills except UMD +20 is explicit. A generic Competence tooltip on another item does not establish this selected Chains craft.']),
+                'Current Skills except UMD +20 and Spot membership are supported. A Wiki-linked Legendary Five Rings image shows Spot +22 Competence; its page displays 19 August 2016. This is relevant historical Slavers corroboration, not direct current +20 Chains typing; present-day continuity remains inferred.']),
     ]
     return paragraph + _table('wisdom-crafting-evidence',
                              'Current crafting qualification — recipe evidence is not complete stacking',

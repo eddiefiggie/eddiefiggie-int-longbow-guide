@@ -52,6 +52,22 @@ critical-range or DPS claim. The [dated integration receipt](../../evidence/wisd
 and [mechanics boundary](MECHANICS.md#bounded-selected-recipe-proofs--draft-build-11-15-264)
 distinguish the new source-derived qualification from unresolved live mechanics.
 
+## Approved seven-INT evidence integration — 15 November 2026
+
+After the consolidated read-only audit, the owner selected option 1: integrate
+the seven source-supported INT definitions into the existing draft, record the
+historical Slavers Spot evidence without promoting it, regenerate affected guide
+outputs and run checks. The [integration receipt](../../evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json)
+records the implementation and actual verification separately from this approval.
+
+The existing direct-source validator and all seven interaction rules are
+unchanged. This decision does not approve a generic different-types-stack rule,
+a current Chains Spot/Fortification qualification, a certified INT/DPS total, a
+new solve, or changes to selected equipment, priorities or exceptions. Exactly
+one Minor Artifact remains selected; the Festive-only event exception and narrow
+HA63 procurement-evidence exception remain distinct. Routine draft integration
+is authorized; merge and publication are not.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

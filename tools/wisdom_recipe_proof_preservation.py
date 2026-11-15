@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import types
+import wisdom_int_evidence_preservation as int_evidence
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -83,8 +84,8 @@ def restore_file(path, current, *, scope=None):
 
 
 def checkpoint_file_bytes(path):
-    """Return exact .3 bytes for reviewed files; unaffected paths stay literal."""
-    raw = (ROOT / path).read_bytes()
+    """Reverse .5 first, then return the unchanged exact .3 checkpoint."""
+    raw = int_evidence.checkpoint_file_bytes(path)
     return restore_file(path, raw).encode() if path in REVIEWED_PATHS else raw
 
 
@@ -102,7 +103,7 @@ def validate_preserved_files():
 def validate_full_reversal():
     scope = load_scope()
     for path in REVIEWED_PATHS:
-        restore_file(path, (ROOT / path).read_bytes(), scope=scope)
+        restore_file(path, int_evidence.checkpoint_file_bytes(path), scope=scope)
     return validate_preserved_files()
 
 

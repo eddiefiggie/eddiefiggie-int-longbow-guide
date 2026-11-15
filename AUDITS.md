@@ -2,6 +2,47 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Seven selected INT definitions — 15 November 2026
+
+The owner selected the bounded integration option after a read-only batch audit:
+record seven supported INT definitions in draft PR #47, retain historical Slavers
+Spot corroboration without qualifying it, regenerate affected outputs and test.
+Startup checks matched remote head
+`d05e7865da76a47a92741cb79029a35fbd0f7712` and staged tree
+`c1b236d5cafc7695af9ec77410d329c7a0b9cc44`; the existing 73 staged paths had no
+unstaged or untracked changes. Local HEAD remained the approved older base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`. No reset, fetch or branch switch was used.
+
+The [new source packet](evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json)
+retains the browser observations separately from earlier captures. Exact own-item
+clauses support Melancholic INT +15 Enhancement, Solar INT +4 Artifact, Lunar INT
++4 Profane, Festive INT +2, Dimlight INT +2 Exceptional, Globe INT +1 Exceptional,
+and Celestial Sapphire's native +2 Profane to all abilities. Host/socket and level
+checks retain their separate scope. These are public Wiki observations with
+displayed revision metadata, not in-game tests or historical-endpoint byte checks.
+
+Build 11-15-26.5 binds only those seven selected INT components through the
+unchanged direct-source validator. The existing highest-of-type rule suppresses
+Globe's INT beneath Dimlight and Celestial's INT beneath Lunar. No interaction
+rule is added, and the complete INT total remains withheld. The model-only +37
+does not become a certified gear total, character score or DPS result.
+
+The current Slavers recipe supports Fortification +142% and Skills except UMD
++20. Its linked Legendary Five Rings image explicitly shows Spot +22 Competence,
+but the image page displays 19 August 2016 and the item has older values. This is
+crafting-family-specific historical corroboration, not a current Chains +20
+tooltip or proof that its type persisted through later changes. Chains Spot and
+Fortification remain unknown/excluded; the latter still lacks a supported
+selected-Prefix classification premise. Search results do not establish absence.
+
+The [integration receipt](evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json)
+separates actual verification from source support and release status. Prior source
+records, claim grades, selected gear, priorities, numeric/core tuples, interaction
+rules, exceptions and snapshots are preserved. No new solve, crafting, purchase,
+merge or publication is included. Guide rendering and complete mechanics/DPS
+validation remain separate.
+
 ## Bounded multi-source recipe proofs — 15 November 2026
 
 After design review, the owner selected implementation option 1 for exactly four

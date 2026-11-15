@@ -31,7 +31,9 @@ the preceding practical socket layout forward and trades Festive CON +2 for
 Good Luck +3. Raw solved CON 34 becomes practical modeled CON 32, with direct
 saves and skills increased by 3. Spot +20 was model-only in that original
 comparison. The new crafting addendum supports the Legendary skill-category
-magnitude, but its exact bonus type and calculator integration remain open.
+magnitude. The later .5 packet adds historical Slavers-family Competence
+corroboration, but current-type continuity and calculator qualification remain
+open.
 
 ## Selected scope and tradeoffs
 
@@ -122,27 +124,51 @@ it cannot qualify this selected craft. A bounded Wiki search also did not
 establish that binding, which is not proof that no source exists.
 
 That is the preserved .3 checkpoint, not the latest qualification state.
-Build **11-15-26.4** adds the separately approved bounded multi-source proof
-route. It qualifies Chains **Equipment Combustion +142** and **Quality INT +3**
+Build **11-15-26.4** added the separately approved bounded multi-source proof
+route. It qualified Chains **Equipment Combustion +142** and **Quality INT +3**
 as source-supported recipe derivations, not finished-item tooltips. Separate
 host/channel, Legendary recipe and category-definition records are bound with
 their actual provenance. The [fresh Ability source](../../evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json)
 explicitly supplies Intelligence membership and attributes/abilities terminology.
 
-The 142 is a complete selected-gear Fire Spell Power contribution only. The INT
-result now counts Glabrezu and Chains Quality, but still has seven excluded inputs
-and a newly exposed missing Insight/Quality interaction; the complete total
-remains null. Fortification is still missing the premise that this Slavers Prefix
-is in the general rule's standard-item class. Spot's exact selected-craft type
-remains unsupported. Neither incomplete proof is promoted.
+The 142 is a complete selected-gear Fire Spell Power contribution only. At the
+.4 checkpoint, the INT result counted Glabrezu and Chains Quality but still had
+seven excluded inputs and a newly exposed missing Insight/Quality interaction;
+the complete total remained null. Fortification still lacked the premise that
+this Slavers Prefix is in the general rule's standard-item class. Spot's exact
+selected-craft type remained unsupported. Neither incomplete proof was promoted.
 
 Original claim grades and previous source packets remain byte-identical historical
 records. Current generated labels identify direct versus recipe-derived support.
-Only four of 76 complete level36 result objects change; 72 remain identical, and
-all 76 level35 results are unchanged. Before integration, the real new engine
-also reproduced all 76 results on unchanged .3 data. The selected recipe,
+At .4, only four of 76 complete level36 result objects changed; 72 stayed
+identical, and all 76 level35 results were unchanged. Before that integration,
+the real new engine also reproduced all 76 results on unchanged .3 data. The selected recipe,
 priorities, numeric/core tuples and seven positive-interaction rules are unchanged;
-the calculator changes only by the reviewed bounded qualification dispatcher.
+the calculator changed only by the reviewed bounded qualification dispatcher.
+
+Build **11-15-26.5** adds the [seven-INT source packet](../../evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json)
+and binds seven previously excluded definitions through the unchanged direct
+source path: Melancholic +15 Enhancement, Solar +4 Artifact, Lunar +4 Profane,
+Festive +2, Dimlight +2 Exceptional, Globe +1 Exceptional and Celestial Sapphire's
+native +2 Profane to all abilities. Separate host/socket checks support their
+selected placement. No old observation is repaired, no other effect on those
+hosts is automatically qualified, and Celestial's optional ability craft stays
+empty.
+
+The existing highest-of-type rule keeps Dimlight instead of Globe's INT and
+Lunar instead of Celestial's INT. This evidence integration creates no new INT
+or DPS gain. Mixed-type interaction evidence is still incomplete, so modeled
+gear INT +37 does not become a certified combined total or character score.
+
+The new Slavers observation supplies current recipe magnitudes and a source-linked
+Legendary Five Rings image showing Spot +22 Competence. The image page displays
+19 August 2016; its values and host differ from the selected current Chains +20
+craft. That is stronger historical corroboration, not a direct current type
+proof. Chains Spot and Fortification remain unknown/excluded, and their other
+input/interaction gaps are unchanged. The [new integration receipt](../../evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json)
+separates this source support from actual software verification and release
+status. The seven existing stacking rules, gear, priorities, numeric/core tuples
+and original claim grades remain unchanged.
 
 Optional ring DEX +13 remains an additional unselected gap. Skull CON +15 versus
 +16, Queen's incomplete/relayed provenance and exact normal procurement of
@@ -162,7 +188,8 @@ typed-numeric-clause path is preserved for unrelated inputs; the approved
 recipe-proof route is limited to four fixed Chains IDs and cannot infer a
 stacking edge. Wider inference or different selected components would require
 separate review. Five supported magnitudes are not five fully qualified effects
-or a validated total-DPS gain. See the [current integration receipt](../../evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json).
+or a validated total-DPS gain. See the [historical recipe integration receipt](../../evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json)
+and the [current INT evidence receipt](../../evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json).
 
 The historical bow model, previous snapshots and original retained captures
 remain unchanged. Current generated sections must pass fresh semantic tests;

@@ -40,6 +40,9 @@ the predecessor tests against their exact historical inputs.
 
 ## Bounded selected-recipe proofs — draft build 11-15-26.4
 
+This section records the .4 checkpoint; the later seven-INT integration is
+described below. Its source and interaction limits remain in force.
+
 The owner approved a narrow alternative proof route for the four selected
 Legendary Chains craft IDs. Each accepted derivation separately binds the
 selected host/channel, the correctly headed Legendary recipe row and the sourced
@@ -60,8 +63,36 @@ Slavers Prefix is missing. Spot's selected-craft bonus type also remains unknown
 another item's Competence tooltip cannot establish it. Bounded source searches
 do not prove that evidence is absent elsewhere.
 
-No new stacking rule is added. Quality INT joins Glabrezu's +7 Insight input,
-but seven other inputs and the Insight/Quality interaction remain unqualified;
-the complete INT result stays null. The former direct-clause path and all seven
-positive-interaction contracts are preserved for their existing scope. Proof
-success does not establish ownership, successful crafting or live-game behavior.
+No new stacking rule was added at that checkpoint. Quality INT joined Glabrezu's
++7 Insight input, while seven other inputs and the Insight/Quality interaction
+remained unqualified; the complete INT result stayed null. The former
+direct-clause path and all seven positive-interaction contracts were preserved
+for their existing scope. Proof success does not establish ownership, successful
+crafting or live-game behavior.
+
+## Seven selected INT definitions — draft build 11-15-26.5
+
+The [new source packet](../../evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json)
+supplies genuinely new observation bindings for seven exact selected effects:
+Melancholic +15 Enhancement, Solar +4 Artifact, Lunar +4 Profane, Festive +2,
+Dimlight +2 Exceptional, Globe +1 Exceptional and Celestial Sapphire's native
++2 Profane to all abilities. Their own-item clauses and the separate selected
+socket checks support those component definitions without widening the existing
+direct-source validator. No old source is given a new observation date.
+
+Qualification is not an additional bonus: the existing highest-of-type handling
+suppresses Globe's INT beneath Dimlight and Celestial's INT beneath Lunar. The
+model-only INT +37 remains uncertified because ten positive mixed-type
+interactions among Enhancement, Insight, Quality, Profane and Festive still lack
+coverage. No generic different-types-stack premise or new edge is
+introduced. This is not a full-character Intelligence, damage or critical-range
+certificate, and it does not qualify other stats appearing on the same items.
+
+The Wiki-linked Legendary Five Rings image now corroborates **historical Slavers
+Spot Competence typing**, unlike the earlier unrelated-item tooltip. It shows
+Spot +22 and a page date of 19 August 2016, not the current selected Chains +20
+effect. A current-type continuity premise is still needed. Fortification's
+selected-Prefix classification is also unresolved. Both inputs remain excluded;
+the current Fortification interaction rule still lacks observation provenance,
+and Spot's Competence/Morale/Luck combinations need positive evidence of their
+own. Qualifying any one component would not resolve those complete totals.

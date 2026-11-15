@@ -18,6 +18,7 @@ import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
 import wisdom_preservation as wisdom
 import wisdom_recipe_proof_preservation as preservation
+import wisdom_int_evidence_preservation as int_evidence
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -54,19 +55,19 @@ class RecipeProofPreservationTests(unittest.TestCase):
             raw = preservation.checkpoint_file_bytes(path)
             with self.subTest(path=path):
                 self.assertEqual((len(raw), preservation.sha(raw)), expected)
-                self.assertNotEqual(raw, (ROOT / path).read_bytes())
+                self.assertNotEqual(raw, int_evidence.checkpoint_file_bytes(path))
                 text = raw.decode()
                 for change in scope['files'][path]['reviewed_replacements']:
                     self.assertTrue(change['before'])
                     self.assertNotEqual(change['before'], change['after'])
                     self.assertEqual(text.count(change['before']), 1)
                     text = text.replace(change['before'], change['after'], 1)
-                self.assertEqual(text, (ROOT / path).read_text())
+                self.assertEqual(text, int_evidence.checkpoint_file_text(path))
 
     def test_old_mixed_duplicate_and_unrelated_files_have_no_fallback(self):
         scope = preservation.load_scope()
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = int_evidence.checkpoint_file_text(path)
             change = scope['files'][path]['reviewed_replacements'][0]
             mutants = {
                 'old': preservation.checkpoint_file_text(path),
@@ -82,7 +83,7 @@ class RecipeProofPreservationTests(unittest.TestCase):
 
     def test_fixed_baselines_reject_rehashed_unrelated_changes(self):
         for path in preservation.REVIEWED_PATHS:
-            mutant = (ROOT / path).read_text() + '\n'
+            mutant = int_evidence.checkpoint_file_text(path) + '\n'
             scope = copy.deepcopy(preservation.load_scope())
             row = scope['files'][path]
             row['current_bytes'], row['current_sha256'] = len(mutant.encode()), preservation.sha(mutant)
@@ -91,7 +92,7 @@ class RecipeProofPreservationTests(unittest.TestCase):
 
     def test_unique_context_guards_reject_rehashed_missing_or_duplicated_hunks(self):
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = int_evidence.checkpoint_file_text(path)
             original = preservation.load_scope()
             change = original['files'][path]['reviewed_replacements'][0]
             for label, replacement in (('missing', change['before']),
@@ -104,7 +105,7 @@ class RecipeProofPreservationTests(unittest.TestCase):
                     preservation.restore_file(path, mutant, scope=scope)
 
     def test_mutable_scope_cannot_replace_the_independent_calculator_baseline(self):
-        mutant = (ROOT / CALCULATOR).read_text() + '\n'
+        mutant = int_evidence.checkpoint_file_text(CALCULATOR) + '\n'
         forged_old = preservation.checkpoint_file_text(CALCULATOR) + '\n'
         scope = copy.deepcopy(preservation.load_scope())
         row = scope['files'][CALCULATOR]
@@ -140,7 +141,7 @@ class RecipeProofPreservationTests(unittest.TestCase):
 
     def test_current_and_prior_snapshots_match_their_own_exact_sources(self):
         import build_snapshot
-        current = (ROOT / 'index.html').read_text()
+        current = int_evidence.checkpoint_file_text('index.html')
         old = preservation.checkpoint_file_text('index.html')
         self.assertEqual(build_snapshot.current_build(current), '11-15-26.4')
         self.assertEqual(build_snapshot.current_build(old), '11-15-26.3')

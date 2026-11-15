@@ -4,6 +4,188 @@
   "base_index_sha256": "5b7b42d61e952939c67ca95259655370216ff6d5272078a10bd9d4d69068de92",
   "scope": "Current primary Wisdom-priority loadout, fully filled character level 36, Calamitous/Salt. The recorded 45-stage production solve is followed by explicit manual refinements, not a new optimizer run. Optional Celestial Sapphire Ring Dexterity +13 is not selected. This ledger asserts arithmetic only when every selected component and every counted pair has qualified exact source support. Retained-source support and modeled arithmetic are separate from certification; new unresolved inputs remain visible and excluded. Sources no longer used by this selection are retained as historical/background context, never as current equipped components.",
   "sources": {
+    "melancholic-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "melancholic-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +15 Enhancement bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Melancholic_Intelligence_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Melancholic_Intelligence_(legendary)&oldid=702267",
+      "observed": "2026-11-15T22:19:01Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:01Z through 2026-11-15T22:19:27Z. Literal cache notice: (this is up to 13 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "melancholic-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "solar-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "solar-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +4 Artifact Bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Intelligence_(Legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Intelligence_(Legendary)&oldid=700860",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to 17 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "solar-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "lunar-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "lunar-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +4 Profane Bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Intelligence_(Legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Lunar_Gem_of_Intelligence_(Legendary)&oldid=691752",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to 4 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "lunar-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "festive-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "festive-int",
+        "effect_visible_text"
+      ],
+      "quote": "Drag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2",
+      "revision": "https://ddowiki.com/index.php?title=Item:Diamond_of_Festive_Intelligence_%2B2&oldid=720823",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to an hour old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "festive-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "dimlight-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "dimlight",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +2 Exceptional bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Miserable_Dimlight_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+      "observed": "2026-11-15T22:19:27Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:27Z through 2026-11-15T22:19:35Z. Literal cache notice: (this is up to 0 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "dimlight"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "globe-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "globe",
+        "effect_visible_text"
+      ],
+      "quote": "Drag this augment into a slot to upgrade an item with a +1 Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. This augment can go in any color Augment Slot.",
+      "url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+      "revision": "https://ddowiki.com/index.php?title=Item:Globe_of_True_Imperial_Blood&oldid=643056",
+      "observed": "2026-11-15T22:19:27Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:27Z through 2026-11-15T22:19:35Z. Literal cache notice: (this is up to 11 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "globe"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "celestial-profane-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "celestial-host",
+        "profane_tooltip_html"
+      ],
+      "quote": "+2 <a href=\"/page/Profane_bonus\" title=\"Profane bonus\">Profane bonus</a> to all abilities.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Celestial_Sapphire_Ring",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Celestial_Sapphire_Ring&oldid=631921",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to -4 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "celestial-host"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
     "glabrezu-insight-int-live-20261115": {
       "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
       "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
@@ -2978,12 +3160,12 @@
       "amount": 15,
       "bonus_type": "Enhancement",
       "host": "Boots",
-      "source": "viktranium",
-      "value_pattern": "Melancholic Intelligence[\\s\\S]*?\\+(?P<value>15) Enhancement bonus to Intelligence",
+      "source": "melancholic-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Enhancement bonus to Intelligence",
       "type_evidence": "Enhancement bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Legendary accessory column of selected Melancholic/Dolorous craft, not the heroic value.",
+      "note": "Fresh own-augment definition: +15 Enhancement Intelligence, ML34, Melancholic Accessory. The selected Coldlight Runners offer the matching Accessory socket. Only this INT definition qualifies; other ability inputs and positive interaction edges are separate. Full-kit applicability remains ML36.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -2993,12 +3175,12 @@
       "amount": 4,
       "bonus_type": "Artifact",
       "host": "Legendary Abyssal Compass / Sun",
-      "source": "solar-int",
-      "value_pattern": "\\+(?P<value>4) Artifact Bonus to Intelligence",
+      "source": "solar-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Artifact Bonus to Intelligence",
       "type_evidence": "Artifact Bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +4 Artifact Intelligence, ML30, Sun. The selected Abyssal Compass offers Sun; its base ML35 and filled ML36 are distinct from the gem level. Existing Artifact interactions are retained; no new rule or complete INT total is inferred.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3008,12 +3190,12 @@
       "amount": 4,
       "bonus_type": "Profane",
       "host": "Legendary Glabrezu Claw Pendant / Moon",
-      "source": "lunar-int",
-      "value_pattern": "\\+(?P<value>4) Profane Bonus to Intelligence",
+      "source": "lunar-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Profane Bonus to Intelligence",
       "type_evidence": "Profane Bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +4 Profane Intelligence, ML30, Moon, in the selected Glabrezu Moon socket. This is the higher INT Profane input; Celestial's native +2 INT is suppressed under the existing same-type rule, not added. Other type interactions remain separate.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3023,12 +3205,12 @@
       "amount": 2,
       "bonus_type": "Festive",
       "host": "Legendary Ring of Unnatural Accuracy / Green",
-      "source": "festive-int",
-      "value_pattern": "\\+(?P<value>2) Festive bonus to Intelligence",
+      "source": "festive-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Festive bonus to Intelligence",
       "type_evidence": "Festive bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +2 Festive Intelligence, ML22, Colorless, in the selected Unnatural Accuracy Green socket. Covered only by the existing owner-approved Festive exception; auction stock is not established. Spooky is its historical naming, not an additional selected type. Mixed-type INT remains unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3038,12 +3220,12 @@
       "amount": 2,
       "bonus_type": "Exceptional",
       "host": "Weapon",
-      "source": "dimlight",
-      "value_pattern": "\\+(?P<value>2) Exceptional bonus to Intelligence",
+      "source": "dimlight-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Exceptional bonus to Intelligence",
       "type_evidence": "Exceptional bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +2 Exceptional Intelligence, ML34, Miserable Weapon, in Calamitous's matching slot. This is not the separate Melancholic caster augment and no quarterstaff condition is imported. Globe's +1 INT is suppressed by the existing same-type maximum; no new INT or DPS gain.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3053,12 +3235,12 @@
       "amount": 1,
       "bonus_type": "Exceptional",
       "host": "Legendary Calamitous Longbow / Purple",
-      "source": "globe",
-      "value_pattern": "\\+(?P<value>1) Exceptional Bonus",
+      "source": "globe-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Exceptional Bonus",
       "type_evidence": "Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "One selected Globe in the bow Purple socket. Exact retained text lacks qualified revision/observation provenance. The model suppresses Globe INT +1 against Exceptional Dimlight INT +2; no certified combination is asserted.",
+      "note": "Fresh own-augment definition explicitly includes Intelligence in its +1 Exceptional abilities effect, ML25, Colorless; the page permits any ordinary-color socket. The selected bow Purple placement is supported. This INT input is suppressed by Dimlight +2, not added; other Globe ability inputs retain their independent evidence status.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3969,7 +4151,7 @@
       "type_evidence": "",
       "state": "verified",
       "requires": [],
-      "note": "Source-supported recipe derivation: the selected Legendary host offers Bonus; its recipe offers Quality Attributes +3 in the Legendary column; the sourced Ability definition includes Intelligence and identifies abilities as attributes. This qualifies the one selected Bonus input, not a finished-item tooltip or a stacking edge. The Insight/Quality interaction with Glabrezu remains unproved, seven other INT inputs remain excluded, and the complete Intelligence total remains withheld.",
+      "note": "Source-supported recipe derivation: the selected Legendary host offers Bonus; its recipe offers Quality Attributes +3 in the Legendary column; the sourced Ability definition includes Intelligence and identifies abilities as attributes. This qualifies the one selected Bonus input, not a finished-item tooltip or a stacking edge. All nine selected INT definitions now qualify, with two same-type suppressions; ten mixed-type interactions including Insight/Quality remain unproved and the complete Intelligence total remains withheld.",
       "channel": "gear",
       "kit_min_level": 36,
       "recipe_proof": {
@@ -3992,7 +4174,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "The retained Legendary Extra table lists Skills (except UMD) +20, supporting the selected Spot magnitude by category mapping. Exact Competence type for this Chains craft remains unqualified; a generic Spot +20 tooltip on a different named item cannot supply its missing binding. This component remains unknown. Spot +22 diamond is not selected; direct and final Wisdom-based Spot totals remain unverified.",
+      "note": "The current Legendary Extra table lists Skills (except UMD) +20, and the Skill page explicitly includes Spot. A Wiki-linked historical Legendary Five Rings image displays Spot +22 Competence; its page date is August 19, 2016, not a current +20 Chains tooltip. Present-day type continuity remains inferred, so this component stays unknown/excluded. The Spot +22 diamond remains unselected; direct and Wisdom-derived Spot totals remain unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -4107,12 +4289,12 @@
       "amount": 2,
       "bonus_type": "Profane",
       "host": "Legendary Celestial Sapphire Ring",
-      "source": "",
-      "value_pattern": "",
-      "type_evidence": "",
-      "state": "unknown",
+      "source": "celestial-profane-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) <a href=\"/page/Profane_bonus\" title=\"Profane bonus\">Profane bonus</a> to all abilities\\.",
+      "type_evidence": "Profane bonus",
+      "state": "verified",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Profane Well Rounded is corroborated, not an original qualified typed receipt; the ring Nearly Finished slot is unselected. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "Fresh own-item native Profane Well Rounded tooltip gives +2 Profane to all abilities, including INT under the existing direct-source contract. The Nearly Finished craft remains unselected. Lunar +4 suppresses this INT +2; other ring effects and abilities are not automatically qualified. The page's negative cache-age display is retained as an anomaly.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -4456,7 +4638,7 @@
       "id": "provenance-gaps",
       "state": "unknown",
       "claim": "Retained definitions with incomplete capture provenance",
-      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages.",
+      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired.",
       "sources": [
         "arcane-archer",
         "armor",
@@ -4769,6 +4951,13 @@
     "status": "historical, not the current selected loadout"
   },
   "source_roles": {
+    "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "lunar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "festive-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "dimlight-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "globe-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "celestial-profane-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "glabrezu-insight-int-live-20261115": "current component, rule, effect or unresolved context",
     "stack": "current component, rule, effect or unresolved context",
     "artifact": "current component, rule, effect or unresolved context",

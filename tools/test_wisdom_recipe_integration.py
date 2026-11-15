@@ -1,7 +1,8 @@
-"""Actual .4 recipe qualification and full-result change boundary.
+"""Historical .4 recipe qualification and full-result change boundary.
 
-These tests run the real new engine and renderers. Exact .3 bytes provide the
-comparison, not a replacement implementation for the current acceptance tests.
+These tests run the real unchanged engine and strictly restored .4 renderers.
+Exact .3 bytes provide the comparison. Actual .5 acceptance lives separately in
+test_wisdom_int_evidence; historical rendering cannot certify its new inputs.
 Neither source qualification nor a passing suite certifies live-game DPS.
 """
 import copy
@@ -11,9 +12,8 @@ from pathlib import Path
 import unittest
 
 import stacking_audit as audit
-import build_stacking_audit as page
-import wisdom_loadout as recipe
 import wisdom_recipe_proof_preservation as preservation
+import wisdom_int_evidence_preservation as int_evidence
 from test_lamordia_handling import Document, norm
 
 
@@ -81,7 +81,9 @@ class CurrentRecipeIntegrationTests(unittest.TestCase):
         cls.old_engine = preservation.historical_calculator()
 
     def setUp(self):
-        self.data = audit.load()
+        self.data = json.loads(int_evidence.checkpoint_file_text(LEDGER))
+        self.recipe = int_evidence.historical_recipe_renderer()
+        self.page = int_evidence.historical_audit_renderer()
 
     def test_only_reviewed_two_proofs_and_notes_change(self):
         self.assertTrue(current_scope_contract(self.data, self.previous))
@@ -142,7 +144,7 @@ class CurrentRecipeIntegrationTests(unittest.TestCase):
                 self.assertEqual(audit.subtotal(self.data, stat, channel=channel, active=active, level=35),
                                  self.old_engine.subtotal(self.previous, stat, channel=channel,
                                                           active=active, level=35))
-        chosen = recipe.load()
+        chosen = self.recipe.load()
         self.assertEqual(chosen['selection']['full_kit_ml'], 36)
         self.assertEqual([i['id'] for i in chosen['items'] if i['minor_artifact']], ["Yeenoghu's Reign"])
         self.assertFalse(chosen['optional']['ring_dexterity_13']['selected'])
@@ -157,8 +159,8 @@ class CurrentRecipeIntegrationTests(unittest.TestCase):
         self.assertEqual(self.data['rules'], self.previous['rules'])
 
     def test_current_renderer_and_generated_pages_explicitly_label_proof_kind(self):
-        compact = recipe.render_crafting_qualification(self.data, compact=True)
-        full = recipe.render_crafting_qualification(self.data)
+        compact = self.recipe.render_crafting_qualification(self.data, compact=True)
+        full = self.recipe.render_crafting_qualification(self.data)
         self.assertIn('data-crafting-qualification="bounded-recipe-proof"', compact)
         self.assertEqual(full.count('<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>'), 2)
         self.assertEqual(full.count('<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>'), 2)
@@ -166,16 +168,16 @@ class CurrentRecipeIntegrationTests(unittest.TestCase):
         for limit in ('not weapon damage', 'seven other inputs', 'Insight–Chains Quality',
                       'Fortification and Spot remain excluded', 'not invented finished-item tooltips'):
             self.assertIn(limit, compact)
-        html = (ROOT / 'index.html').read_text()
+        html = int_evidence.checkpoint_file_text('index.html')
         self.assertIn(full, html)
         self.assertEqual(html.count(compact), 2)
         self.assertNotIn('data-crafting-qualification="glabrezu-only"', html)
         self.assertIn('build 11-15-26.4', html)
-        self.assertTrue(page.validate_guide(html, self.data))
-        self.assertEqual((ROOT / 'endgame-stacking-audit.html').read_text(), page.detail(self.data))
+        self.assertTrue(self.page.validate_guide(html, self.data))
+        self.assertEqual(int_evidence.checkpoint_file_text('endgame-stacking-audit.html'), self.page.detail(self.data))
 
     def test_audit_rows_link_all_proof_legs_without_false_missing_source_labels(self):
-        document = Document(page.detail(self.data))
+        document = Document(self.page.detail(self.data))
         for cid in QUALIFIED:
             rows = [n for n in document.root.nodes('tr') if n.attrs.get('id') == 'component-' + cid]
             self.assertEqual(len(rows), 1)
@@ -196,7 +198,7 @@ class CurrentRecipeIntegrationTests(unittest.TestCase):
             data = copy.deepcopy(self.data)
             mutate(data)
             with self.subTest(label=label), self.assertRaises(AssertionError):
-                recipe.render_crafting_qualification(data)
+                self.recipe.render_crafting_qualification(data)
 
     def test_current_scope_rejects_model_and_semantic_drift(self):
         for field, value in [('amount', 143), ('bonus_type', 'Insight'), ('host', 'Another host'),
@@ -211,7 +213,7 @@ class CurrentRecipeIntegrationTests(unittest.TestCase):
             current_scope_contract(data, self.previous)
 
     def test_generated_source_index_is_literal_current_ledger_projection(self):
-        excerpts = json.loads((ROOT / 'evidence/endgame-stacking/source-excerpts.json').read_text())
+        excerpts = json.loads(int_evidence.checkpoint_file_text('evidence/endgame-stacking/source-excerpts.json'))
         self.assertEqual(excerpts['sources'], self.data['sources'])
         self.assertEqual(excerpts['source_roles'], self.data['source_roles'])
 

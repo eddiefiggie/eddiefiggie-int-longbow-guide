@@ -2,6 +2,14 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.5 (draft INT-evidence candidate; not published)
+
+- Integrates seven selected INT definitions through the existing direct-source gates: Melancholic +15 Enhancement, Solar +4 Artifact, Lunar +4 Profane, Festive +2, Dimlight +2 Exceptional, Globe +1 Exceptional and Celestial Sapphire's native +2 Profane to all abilities. New observations and source bindings do not repair or regrade the original captures.
+- Preserves highest-of-type handling: Dimlight supersedes Globe's INT and Lunar supersedes Celestial's INT. No additional INT or DPS gain is claimed. The complete INT total remains withheld because positive cross-type interaction evidence is incomplete.
+- Records current Slavers recipe magnitudes and the Wiki-linked historical Legendary Five Rings example showing Spot +22 Competence. Its displayed 2016 date, older value and different host remain explicit; current Chains Spot +20 and Fortification typing stay unqualified.
+- Keeps equipment, one Minor Artifact, all priorities, numeric/core tuples, seven stacking rules, original claim grades and existing exceptions unchanged. No new optimizer solve, crafting action, purchase, merge or publication.
+- Regenerates affected current outputs and a new path-rebased snapshot, with an exact outer preservation layer and separate current-state tests. Earlier snapshots and source packets remain historical records. Verification results and limitations are recorded separately in the [integration receipt](evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json).
+
 ## Build 11-15-26.4 (draft bounded-recipe-proof candidate; not published)
 
 - Adds the owner-approved bounded multi-source proof route for four fixed Chains component IDs. Direct source fields stay separate; host/channel, Legendary recipe and category membership are independently bound to real contexts, revisions, observations and hashes.
