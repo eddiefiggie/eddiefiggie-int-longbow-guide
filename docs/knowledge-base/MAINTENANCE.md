@@ -238,3 +238,42 @@ equipped Emerald's 5d6/3d6, and preserve archived experiment sections exactly.
 Use all four documented builders and a new path-rebased snapshot. Report actual
 aggregate/CI results in the integration receipt; browser rendering, keyboard
 behavior, print pagination and live-game validation remain separate checks.
+
+### Bounded Fortification/Spot integration layer
+
+Build 11-15-26.8 adds only the three reviewed definitions and the exact
+`heroism-spot` / `luck-spot` pair. Retain the
+[source register](../../evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
+as the frozen investigation bytes: its read-only scope and no-promotion field
+describe that earlier stage, while the separate integration receipt records
+the later implementation. Do not silently update an old observation, join
+Queen's label and description into a synthetic quote, or replace the explicit
+Skill/Spot membership evidence with a generic keyword mapping.
+
+Recheck actual source bytes and exact identity, amount, type, selected host,
+socket, level, state and proof bindings through public calculation/proof routes;
+prior fixture validation is not a trusted prerequisite. Preserve all nine prior
+rules and the original direct-source and bounded Chains contracts. The new pair
+must not admit other IDs, stats, channels or type combinations. Both fixed Chains
+IDs must remain unresolved even if a caller attaches another proof or a direct
+source label.
+
+Fortification completeness requires exactly `chains-fortification` and
+`queen-fortification`. Spot requires exactly `chains-spot`, `heroism-spot` and
+`luck-spot`. Test deletion, renaming, duplication, altered bindings and wrong
+source context against these families, retaining the existing INT guard. The
+current level-36 complete results must remain `null`, with supported subsets
+84 and 7 and the appropriate Chains exclusion. Compare complete result objects,
+including counted/excluded inputs and interaction details, rather than checking
+only those two numbers. Lower-level applicability and all unaffected results
+need their own preservation comparison.
+
+Use an exact outer .8-to-.7 restoration before the existing historical layers;
+keep prior scope files, fixed hashes and negative controls intact. Separate
+current-state tests must exercise actual .8 production code and inputs. Preserve
+all selected data, complete historical bow tuples/results, old evidence and
+snapshots. Run the four documented builders and generate a new path-rebased .8
+snapshot. Record actual builder, aggregate and draft-update results in the
+[receipt](../../evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json);
+do not reuse the preceding build's test count or treat source review as browser,
+accessibility, print, live-game or release verification.

@@ -2876,6 +2876,314 @@
         "body_observation",
         "started_at_utc"
       ]
+    },
+    "fort-spot-queen-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        0,
+        "exact_dom_markup"
+      ],
+      "quote": "<span class=\"popup has_tooltip with-icon basic\"><a href=\"/page/Fortification\" title=\"Fortification\">Insightful Fortification  +84%</a><span class=\"mw-valign-super\" typeof=\"mw:File\"><span><img src=\"https://images.ddowiki.com/thumb/Icon_tooltip.png/10px-Icon_tooltip.png\" decoding=\"async\" width=\"10\" height=\"8\" class=\"mw-file-element\" srcset=\"https://images.ddowiki.com/Icon_tooltip.png 1.5x\"></span></span><span class=\"popup tooltip wide left below\" style=\"text-align: center ;\"><b><a href=\"/page/Fortification\" title=\"Fortification\">Insightful Fortification  +84%</a>:</b> +84% <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to reduced chance of taking critical damage on a critical hit.</span></span>",
+      "record_pointer": [
+        "observations",
+        0
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:The_Queen_of_Rot&oldid=715898",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:05:25.602Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 10 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-heroism-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        4,
+        "exact_item_text"
+      ],
+      "quote": "Sapphire of Greater Heroism\nMinimum Level\t28\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +4 Morale Bonus to Attack Rolls, Saving Throws, and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nImmortality Lessons, end chest and Sweet Granny's chest\n\nEnhancements\t\nGreater Heroism\n\nMaximum stack size\t5",
+      "record_pointer": [
+        "observations",
+        4
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Greater_Heroism",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Greater_Heroism&oldid=709967",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:09:07.734Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 7 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-luck-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        5,
+        "exact_item_text"
+      ],
+      "quote": "Sapphire of Good Luck +3\nMinimum Level\t28\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +3 Luck bonus to Saving Throws and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nThe Haunting of Saltmarsh, end chest\n\nEnhancements\t\nGood Luck +3\n\nMaximum stack size\t5",
+      "record_pointer": [
+        "observations",
+        5
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Good_Luck_%2B3&oldid=718411",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:09:37.578Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 9 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-skill-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        6,
+        "exact_spot_row"
+      ],
+      "quote": "\tSpot\tYes\tWisdom\tPassive\tEagle\tAllows you to sense nearby hidden doors, traps, objects, and stealthed enemies. Except for the enemies, the exact locations will be unknown until a search check is successfully made.",
+      "record_pointer": [
+        "observations",
+        6
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Skill",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Skill&oldid=701579",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:09:56.532Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-spot-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        7,
+        "exact_excerpts",
+        1
+      ],
+      "quote": "The Spot skill enables you to sense secret doors, hidden enemies, and possibly traps.",
+      "record_pointer": [
+        "observations",
+        7
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Spot",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Spot&oldid=674283",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:11:01.629Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-luck-type-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        8,
+        "exact_excerpts",
+        0
+      ],
+      "quote": "Multiple luck bonuses on the same character or object do not stack. Only the highest luck bonus applies.",
+      "record_pointer": [
+        "observations",
+        8
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Luck_bonus",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Luck_bonus&oldid=606272",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:11:11.360Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-morale-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        9,
+        "exact_excerpts",
+        0
+      ],
+      "quote": "Multiple morale bonuses on the same character do not stack. Only the highest morale bonus applies.",
+      "record_pointer": [
+        "observations",
+        9
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Morale_bonus",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Morale_bonus&oldid=256257",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:11:29.079Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-tip179-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        11,
+        "exact_excerpts",
+        0
+      ],
+      "quote": "Tip #179: Most beneficial effects have a bonus type, such as enhancement, morale, or luck. Different types of bonuses stack, but usually the same types of bonus do not, with the exception of dodge bonuses, most circumstance bonuses, and racial bonuses.",
+      "record_pointer": [
+        "observations",
+        11
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Loading_screen_tips",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:12:43.234Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 4 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-pendant-host-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        14,
+        "exact_excerpts",
+        2
+      ],
+      "quote": "Green Augment Slot",
+      "record_pointer": [
+        "observations",
+        14
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:14:26.094Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-pendant-level-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        14,
+        "exact_excerpts",
+        1
+      ],
+      "quote": "Minimum level\t35\t",
+      "record_pointer": [
+        "observations",
+        14
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:14:26.094Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-artifact-host-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        15,
+        "exact_excerpts",
+        2
+      ],
+      "quote": "Blue Augment Slot",
+      "record_pointer": [
+        "observations",
+        15
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:15:14.309Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-artifact-level-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        15,
+        "exact_excerpts",
+        1
+      ],
+      "quote": "Minimum level\t35\t",
+      "record_pointer": [
+        "observations",
+        15
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:15:14.309Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
     }
   },
   "rules": [
@@ -3036,6 +3344,26 @@
         "Fortification"
       ],
       "channel": "gear"
+    },
+    {
+      "id": "spot-heroism-luck",
+      "source": "fort-spot-tip179-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Morale",
+        "Luck"
+      ],
+      "stats": [
+        "Spot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "heroism-spot",
+          "luck-spot"
+        ]
+      ]
     }
   ],
   "components": [
@@ -4036,16 +4364,23 @@
       "id": "queen-fortification",
       "stat": "Fortification",
       "amount": 84,
-      "bonus_type": "unknown",
+      "bonus_type": "Insight",
       "host": "Cloak",
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained Queen input in the current Wisdom loadout; source evidence does not meet this ledger’s exact revision/observation/type gate. Its modeled value is not certified. The prior Defense augment, Resistance augment and Battlerager are absent, so their historical overlap is not a current input. Modeled Insightful Fortification +84 is not an independent qualified typed receipt.",
+      "note": "Source-supported same-item field association: the own Queen popup binds its Fortification +84% label to the +84% Insight description. The exact fields remain separate; no combined tooltip is invented. This qualifies only the selected Queen Fortification contribution in the full level-36 kit. Chains remains excluded, so modeled Fortification 226 is not a complete supported total. Other Queen effects and the historical relay retain their original limits.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-fort-spot-v1",
+        "method": "same-item-popup",
+        "sources": {
+          "item": "fort-spot-queen-20261115"
+        }
+      }
     },
     {
       "id": "queen-fortitude",
@@ -4564,14 +4899,25 @@
       "amount": 4,
       "bonus_type": "Morale",
       "host": "Legendary Glabrezu Claw Pendant / Green",
-      "source": "heroism",
+      "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Greater Heroism skill bonus is a selected direct-skill input, separate from any Wisdom modifier. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "Source-supported category derivation: the own augment gives +4 Morale to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Glabrezu Green socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level36. Only this Spot component qualifies. The exact Heroism/Luck pair supports a +7 subset, not a full selected or character Spot total, additional gain over overlapping Morale/Luck buffs, or proof of the full Greater Heroism spell.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-fort-spot-v1",
+        "method": "skill-check-membership",
+        "sources": {
+          "item": "fort-spot-heroism-20261115",
+          "skill": "fort-spot-skill-20261115",
+          "spot": "fort-spot-spot-20261115",
+          "host": "fort-spot-pendant-host-20261115",
+          "host_level": "fort-spot-pendant-level-20261115"
+        }
+      }
     },
     {
       "id": "luck-spot",
@@ -4579,14 +4925,25 @@
       "amount": 3,
       "bonus_type": "Luck",
       "host": "Yeenoghu’s Reign / Blue",
-      "source": "good-luck",
+      "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Good Luck skill bonus is a selected direct-skill input, separate from any Wisdom modifier. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "Source-supported category derivation: the own augment gives +3 Luck to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Yeenoghu Blue socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level36. Only this Spot component qualifies. Chains remains excluded; the exact Heroism/Luck pair supports a +7 subset while modeled direct Spot27 remains incomplete. Existing same-type Luck overlaps still apply.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-fort-spot-v1",
+        "method": "skill-check-membership",
+        "sources": {
+          "item": "fort-spot-luck-20261115",
+          "skill": "fort-spot-skill-20261115",
+          "spot": "fort-spot-spot-20261115",
+          "host": "fort-spot-artifact-host-20261115",
+          "host_level": "fort-spot-artifact-level-20261115"
+        }
+      }
     },
     {
       "id": "heroism-listen",
@@ -4763,7 +5120,7 @@
       "id": "provenance-gaps",
       "state": "unknown",
       "claim": "Retained definitions with incomplete capture provenance",
-      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification.",
+      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification. Build 11-15-26.8 separately qualifies Queen Fortification and the two selected Spot augment components from a new register; none of the older source dictionaries listed here is repaired. Chains Fortification and Spot remain excluded.",
       "sources": [
         "arcane-archer",
         "armor",
@@ -5191,6 +5548,18 @@
     "chains-host-recipe-20261115": "recipe proof: selected Legendary host, Waist placement and distinct crafting channels",
     "chains-legendary-recipe-20261115": "recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule",
     "chains-combustion-membership-20261115": "recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage",
-    "chains-intelligence-membership-20261115": "recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement"
+    "chains-intelligence-membership-20261115": "recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement",
+    "fort-spot-queen-20261115": "current selected definition support",
+    "fort-spot-heroism-20261115": "current selected definition support",
+    "fort-spot-luck-20261115": "current selected definition support",
+    "fort-spot-skill-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-spot-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-luck-type-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-morale-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-tip179-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-pendant-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-pendant-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-artifact-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support"
   }
 }

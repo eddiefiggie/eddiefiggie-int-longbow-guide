@@ -177,3 +177,52 @@ or validating exact Reaper rounding and channel treatment. Critical-profile
 interactions, the dated confirmation conflict, proc uptime, full-character
 totals and sustained DPS remain unresolved. The preserved historical archive
 is not rewritten into current guidance.
+
+## Bounded Fortification and Spot definitions — current draft build 11-15-26.8
+
+The [fresh source register](../../evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
+supports three definitions through two narrowly scoped interpretation routes.
+Queen's own-item markup places its Fortification label and separate +84 Insight
+description in the same popup. This association qualifies `queen-fortification`
+without reordering fragments into an invented numeric quotation or accepting
+text from another effect. It does not qualify the Queen's other effects or
+mean 84% less incoming damage.
+
+The selected Sapphire of Greater Heroism supplies +4 Morale to skill checks;
+the selected Sapphire of Good Luck +3 supplies +3 Luck. The Skill table and Spot
+article explicitly establish Spot as a skill with Spot checks. Together these
+support the bounded category derivations for `heroism-spot` and `luck-spot`.
+Neither augment's tooltip names Spot directly, and its displayed name alone
+does not import every benefit of a similarly named spell. Both augments are
+ML28 Blue augments that permit the selected Green and Blue sockets; their
+selected hosts are base ML35, and the complete filled kit's applicability floor
+remains level 36.
+
+Fresh Tip 179 positively supports combining different bonus types. Its use here
+is limited to the exact **`heroism-spot` ↔ `luck-spot`** gear-Spot pair, with both
+definitions and source bindings required. It does not widen the ten-pair INT
+rule or supply the two missing Chains Spot interactions. Morale and Luck each
+retain highest-applicable same-type handling; a character already receiving
+either type need not gain the entire listed amount. The Stack article's broad
+same-family caution remains recorded alongside the specific interpretation.
+
+| Level-36 selected family | Supported subset | Complete result | Unresolved input |
+| --- | --- | --- | --- |
+| Fortification | 84 from Queen | `null` / incomplete | `chains-fortification`: current 142 recipe magnitude, selected type still unproved |
+| Direct Spot bonuses | 4 + 3 = 7 from the two augments | `null` / incomplete | `chains-spot`: current 20 recipe magnitude, selected type and remaining pair proofs still unproved |
+
+The full selected families contain exactly two Fortification IDs and three Spot
+IDs. Their completeness guards retain unresolved members and reject removal,
+renaming, duplication or changed bindings as a shortcut to completeness. The
+existing INT family guard remains independent. Component definition support,
+pair support and complete-family support are separate requirements.
+
+Conditional `142 + 84 = 226` and `20 + 4 + 3 = 27` remain model arithmetic.
+Historical Five Rings Spot +10/+22 Competence, later Slavers normalization and
+the inspected blank Chains image do not establish the missing current types.
+The specific Fortification rule supports Enhancement plus Insight, but it does
+not classify the selected Chains Prefix. Whole-character Spot additionally
+depends on ranks, actual total Wisdom and other sources; the gear contribution
+18 is not a final Wisdom score or a trap-success certificate. The
+[integration receipt](../../evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json)
+separates these documentary derivations from software and live-game verification.

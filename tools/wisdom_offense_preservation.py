@@ -10,6 +10,7 @@ import hashlib
 import json
 from pathlib import Path
 import types
+import wisdom_fort_spot_preservation as fort_spot
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -73,7 +74,7 @@ def restore_file(path, current, *, scope=None):
 
 def checkpoint_file_bytes(path):
     """Return exact .6 bytes while checking literal preserved inputs on disk."""
-    raw = (ROOT / path).read_bytes()
+    raw = fort_spot.checkpoint_file_bytes(path)
     if path in REVIEWED_PATHS:
         return restore_file(path, raw).encode()
     preserved = load_scope()['preserved_files']
@@ -89,7 +90,7 @@ def checkpoint_file_text(path):
 
 def validate_preserved_files():
     for path, expected in load_scope()['preserved_files'].items():
-        raw = (ROOT / path).read_bytes()
+        raw = fort_spot.checkpoint_file_bytes(path)
         assert (len(raw), sha(raw)) == (expected['bytes'], expected['sha256']), path
     return True
 
@@ -97,7 +98,7 @@ def validate_preserved_files():
 def validate_full_reversal():
     scope = load_scope()
     for path in REVIEWED_PATHS:
-        restore_file(path, (ROOT / path).read_bytes(), scope=scope)
+        restore_file(path, fort_spot.checkpoint_file_bytes(path), scope=scope)
     return validate_preserved_files()
 
 

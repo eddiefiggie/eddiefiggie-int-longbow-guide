@@ -17,6 +17,7 @@ import wisdom_recipe_proof_preservation as recipe_proofs
 import wisdom_int_evidence_preservation as int_evidence
 import wisdom_int_stacking_preservation as int_stacking
 import wisdom_offense_preservation as offense
+import wisdom_fort_spot_preservation as fort_spot
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -86,7 +87,9 @@ def frozen_generator_bytes():
 
 
 def restore_file(path, current, *, scope=None):
-    """Restore offense, stacking, INT, recipe-proof, crafting and original layers."""
+    """Restore Fort/Spot, offense, stacking, INT and older approved layers."""
+    if path in fort_spot.REVIEWED_PATHS:
+        current = fort_spot.restore_file(path, current)
     if path in offense.REVIEWED_PATHS:
         current = offense.restore_file(path, current)
     if path in int_stacking.REVIEWED_PATHS:

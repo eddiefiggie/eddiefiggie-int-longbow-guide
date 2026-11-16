@@ -121,6 +121,39 @@ weapon-rider/proc scaling or a winning bow. See the
 [offensive integration receipt](../../evidence/wisdom-loadout/offensive-integration-2026-11-15.json)
 for actual implementation and verification.
 
+## Approved bounded Fortification/Spot integration — 15 November 2026
+
+The owner selected option 1 after the completed read-only review: integrate
+exactly `queen-fortification`, `heroism-spot` and `luck-spot`, plus the exact
+Heroism/Luck Spot pair, into **draft PR #47**. Required regeneration and
+verification are included. This authorizes the bounded draft update; merge,
+publication, purchases, crafting and a new optimizer solve remain separate.
+
+Queen's definition uses its actual own-item label/popup association. Each
+augment's own skill-check definition is combined with separately retained
+Skill/Spot membership and the unchanged selected placement. The approval does
+not permit reconstructed quotations, a general stat synonym, a universal
+different-types rule, or new qualifications for the Queen's other effects.
+The [16-observation register](../../evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
+remains the exact investigation record, including its original read-only scope;
+the later integration has its own receipt.
+
+The existing nine rules and exact INT family guard are preserved. Add exact
+two-ID Fortification and three-ID Spot family guards so an omitted, renamed,
+duplicated or changed selected input cannot manufacture a complete total.
+Both Chains IDs remain unknown/excluded. The level-36 supported subsets may
+show **84 Fortification and 7 direct Spot**; both full selected-family totals
+remain `null`. These are existing contributions whose evidence improved, not
+additional character bonuses, whole-character totals or proof of trap success.
+
+Selected gear, Yeenoghu's Reign as the sole Minor Artifact, all 32 priorities,
+crafts, sockets, feats/AP, historical model results and original evidence are
+unchanged. Preserve the Festive-only event exception and the narrow HA63
+acquisition-evidence exception without extending either to other gaps. The
+[integration receipt](../../evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json)
+records actual checks and draft status; approval and source review do not
+themselves establish successful tests or live-game behavior.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

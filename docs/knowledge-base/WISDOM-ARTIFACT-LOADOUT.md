@@ -235,3 +235,43 @@ The historical bow model, previous snapshots and original retained captures
 remain unchanged. Current generated sections must pass fresh semantic tests;
 reversible predecessor tests preserve the prior records rather than certifying
 the new selection. Publication requires its own exact-head checks and review.
+
+## Current bounded Fortification/Spot evidence — build 11-15-26.8
+
+The [fresh 16-observation register](../../evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
+narrows three of the preceding evidence gaps. Queen's own-item popup supports
+its **84 Insight Fortification** definition through the actual label/description
+association. The two selected augments supply **4 Morale** and **3 Luck** to
+skill checks, and separate Skill/Spot evidence establishes their Spot
+applicability. Only the exact Heroism/Luck Spot pair is added; the selected
+items, model values and existing INT derivation are unchanged.
+
+| Existing selected placement | Retained level boundary |
+| --- | --- |
+| Sapphire of Greater Heroism in Legendary Glabrezu Claw Pendant, Green socket index 1 | Augment ML28; host base ML35 |
+| Sapphire of Good Luck +3 in Yeenoghu's Reign, Blue socket index 3 | Augment ML28; host base ML35; complete selected fills reach ML36 |
+
+Both augments' own definitions permit those socket colors. The complete outfit
+and current ledger applicability floor remain **level 36**; an augment's lower
+minimum level does not bypass its host or the full kit. Documented compatibility
+does not establish inventory, completed socketing or present acquisition.
+
+The resulting supported subsets are **84 Fortification** and **7 direct Spot**.
+Both complete family totals remain `null` because `chains-fortification` and
+`chains-spot` remain unknown/excluded. Exact two-ID and three-ID family guards
+retain those members. Conditional modeled 226 Fortification and 27 direct Spot
+are still incomplete, and the original 130-claim grades and remaining Queen
+relay limits are preserved. Whole-character Spot additionally requires ranks,
+the modifier from actual total Wisdom and other applicable sources; gear Wisdom
+18 and the supported direct subset do not establish a final skill score.
+
+Yeenoghu's Reign remains the sole Minor Artifact. No equipment, craft, socket,
+feat/AP choice, priority or historical model result changes; optional ring
+DEX +13 remains unselected. The Festive-only event exception and the narrow
+HA63 acquisition-evidence exception retain their original limits. This is a
+bounded evidence integration, with actual verification recorded in the
+[receipt](../../evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json),
+not a new optimizer run or additional character gain. The next unresolved
+gear-evidence work is current selected-craft type support for both Chains rows
+and the remaining Spot pair proofs, alongside the other previously retained
+mechanics and acquisition gaps.

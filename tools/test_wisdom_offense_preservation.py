@@ -17,6 +17,7 @@ import stacking_audit as audit
 import wisdom_loadout
 import wisdom_int_stacking_preservation as int_stacking
 import wisdom_offense_preservation as preservation
+import wisdom_fort_spot_preservation as fort_spot
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,18 +63,18 @@ class OffensivePreservationTests(unittest.TestCase):
             raw = preservation.checkpoint_file_bytes(path)
             with self.subTest(path=path):
                 self.assertEqual((len(raw), preservation.sha(raw)), expected)
-                self.assertNotEqual(raw, (ROOT / path).read_bytes())
+                self.assertNotEqual(raw, fort_spot.checkpoint_file_bytes(path))
                 text = raw.decode()
                 for change in scope['files'][path]['reviewed_replacements']:
                     self.assertTrue(change['before'])
                     self.assertEqual(text.count(change['before']), 1)
                     text = text.replace(change['before'], change['after'], 1)
-                self.assertEqual(text, (ROOT / path).read_text())
+                self.assertEqual(text, fort_spot.checkpoint_file_text(path))
 
     def test_stale_mixed_duplicate_and_unrelated_bytes_fail_closed(self):
         scope = preservation.load_scope()
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = fort_spot.checkpoint_file_text(path)
             change = scope['files'][path]['reviewed_replacements'][0]
             mutants = {
                 'stale': preservation.checkpoint_file_text(path),
@@ -89,7 +90,7 @@ class OffensivePreservationTests(unittest.TestCase):
 
     def test_rehashed_mutants_cannot_evade_unique_contexts_or_fixed_baselines(self):
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = fort_spot.checkpoint_file_text(path)
             original = preservation.load_scope()
             change = original['files'][path]['reviewed_replacements'][0]
             mutants = {
@@ -152,7 +153,7 @@ class OffensivePreservationTests(unittest.TestCase):
         self.assertIsNot(calculator, audit)
         self.assertIsNot(recipe, wisdom_loadout)
         self.assertIsNot(renderer, build_stacking_audit)
-        self.assertEqual(calculator.load(), audit.load())
+        self.assertEqual(calculator.load(), json.loads(fort_spot.checkpoint_file_text(LEDGER)))
         self.assertEqual(renderer.detail(calculator.load()),
                          preservation.checkpoint_file_text('endgame-stacking-audit.html'))
         html = preservation.checkpoint_file_text('index.html')
@@ -202,8 +203,8 @@ class CompleteRetainedArithmeticTests(unittest.TestCase):
     def test_actual_engine_preserves_all_152_complete_ledger_results(self):
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / 'tools/stacking_audit.py')
         self.assertIs(audit, sys.modules['stacking_audit'])
-        self.assertEqual(preservation.checkpoint_file_bytes(LEDGER), (ROOT / LEDGER).read_bytes())
-        data = audit.load()
+        self.assertEqual(preservation.checkpoint_file_bytes(LEDGER), fort_spot.checkpoint_file_bytes(LEDGER))
+        data = json.loads(fort_spot.checkpoint_file_text(LEDGER))
         before = json.dumps(data, sort_keys=True)
         families = sorted({(row['stat'], row['channel']) for row in data['components']})
         self.assertEqual(len(families), 38)

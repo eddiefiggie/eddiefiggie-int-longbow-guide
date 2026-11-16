@@ -2,6 +2,15 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.8 (draft Fortification/Spot evidence candidate; not published)
+
+- Binds Queen's 84 Insight Fortification through its actual own-item label/popup association, preserving the separate source fragments and the limits on other Queen effects.
+- Binds Greater Heroism's 4 Morale and Good Luck's 3 Luck to Spot through each augment's own skill-check definition and separately sourced Skill/Spot membership. Preserves selected hosts, socket colors and the full kit's level-36 floor.
+- Adds only the exact Heroism/Luck Spot pair. Keeps the nine existing rules and INT family safeguard; adds exact two-ID Fortification and three-ID Spot completeness guards so dropping an unresolved member cannot produce a false complete total.
+- Exposes supported subsets of 84 Fortification and 7 direct Spot while both complete totals remain `null`. Chains Fortification and Spot remain unknown/excluded. Conditional modeled 226 and 27 are not newly demonstrated totals or character gains.
+- Preserves the selected Wisdom kit, Yeenoghu's Reign as the sole Minor Artifact, 32 priorities, crafts, sockets, feats/AP, historical models/results, prior snapshots/source records and the Festive-only and HA63 exceptions.
+- Retains the exact 16-observation source register and adds a separate integration receipt. Required current outputs and the path-rebased .8 snapshot belong to this integration; precommit verification passed: 503 tests in 142.921 seconds, all four builders, 126 local documentation links and independent review. See the [integration receipt](evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json) for actual checks and draft-update status. No new solve, crafting, purchase, merge or publication.
+
 ## Build 11-15-26.7 (draft offensive-correction candidate; not published)
 
 - Reconciles current bow ability damage to 2× the operative modifier after Precise Shot and Improved Precise Shot, keeping Know the Angles separate. Updates current illustrative arithmetic without changing the historical model.

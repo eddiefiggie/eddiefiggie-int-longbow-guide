@@ -20,6 +20,7 @@ import wisdom_preservation as wisdom
 import wisdom_recipe_proof_preservation as preservation
 import wisdom_int_evidence_preservation as int_evidence
 import wisdom_int_stacking_preservation as int_stacking
+import wisdom_fort_spot_preservation as fort_spot
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -209,14 +210,16 @@ class RealNewEngineCompatibilityTests(unittest.TestCase):
     def test_existing_contracts_and_historical_positive_rules_are_unchanged(self):
         point_five = int_stacking.historical_calculator()
         # Preserve the original .5-to-.3 equality, including the seven-rule
-        # registry. The actual .6 registry adds only the two approved rules.
+        # registry. The historical .6/.7 registry adds only its two approved
+        # rules; current .8 additions have separate exact-profile tests.
         for name in ('STATES', 'OBSERVATION_POINTERS', 'RULE_CONTRACTS', 'STAT_WORDS'):
             with self.subTest(contract=name):
                 self.assertEqual(getattr(point_five, name), getattr(self.old, name))
         for name in ('STATES', 'OBSERVATION_POINTERS', 'STAT_WORDS'):
             with self.subTest(current_contract=name):
                 self.assertEqual(getattr(audit, name), getattr(self.old, name))
-        self.assertEqual(set(audit.RULE_CONTRACTS), set(self.old.RULE_CONTRACTS) | {
+        point_seven = fort_spot.historical_calculator()
+        self.assertEqual(set(point_seven.RULE_CONTRACTS), set(self.old.RULE_CONTRACTS) | {
             'int-selected-ten-pairs', 'fort-enh-insight-observed'})
         for rid, contract in self.old.RULE_CONTRACTS.items():
             with self.subTest(current_legacy_rule=rid):

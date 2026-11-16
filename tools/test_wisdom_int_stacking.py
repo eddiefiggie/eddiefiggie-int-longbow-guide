@@ -1,4 +1,4 @@
-"""Actual .6 source/rule contracts, full-result deltas and negative controls.
+"""Preserved .6 source/rule contracts, full-result deltas and negative controls.
 
 The current engine is imported normally. Exact historical views are comparison
 inputs only; passing this suite does not measure live-game INT, DPS or crits.
@@ -15,6 +15,7 @@ from unittest.mock import patch
 import stacking_audit as audit
 import wisdom_int_stacking_preservation as preservation
 import wisdom_offense_preservation as offense
+import wisdom_fort_spot_preservation as fort_spot
 from test_lamordia_handling import Document, norm
 
 
@@ -45,9 +46,9 @@ def digest(value):
     return hashlib.sha256(value).hexdigest()
 
 
-class CurrentScopedIntSourceTests(unittest.TestCase):
+class HistoricalInputScopedIntSourceTests(unittest.TestCase):
     def setUp(self):
-        self.data = audit.load()
+        self.data = json.loads(fort_spot.checkpoint_file_text(LEDGER))
 
     def assert_withheld(self, data):
         for active in ((), ('force',), ('force', 'equipped', 'enabled')):
@@ -366,9 +367,9 @@ class CurrentScopedIntSourceTests(unittest.TestCase):
         self.assertIn('did not explicitly guarantee', findings[1]['finding'])
 
 
-class CurrentScopedIntDeltaTests(unittest.TestCase):
+class HistoricalInputScopedIntDeltaTests(unittest.TestCase):
     def setUp(self):
-        self.data = audit.load()
+        self.data = json.loads(fort_spot.checkpoint_file_text(LEDGER))
         self.previous = json.loads(preservation.checkpoint_file_text(LEDGER))
         self.old = preservation.historical_calculator()
 
@@ -466,13 +467,14 @@ class CurrentScopedIntPresentationTests(unittest.TestCase):
         renderer = offense.historical_audit_renderer()
         recipe = offense.historical_recipe_renderer()
         current = offense.checkpoint_file_text('index.html')
-        self.assertTrue(renderer.validate_guide(current, audit.load()))
+        data = json.loads(offense.checkpoint_file_text(LEDGER))
+        self.assertTrue(renderer.validate_guide(current, data))
         self.assertIn(recipe.render_recipe(recipe.load()), current)
-        self.assertEqual(offense.checkpoint_file_text('endgame-stacking-audit.html'), renderer.detail(audit.load()))
+        self.assertEqual(offense.checkpoint_file_text('endgame-stacking-audit.html'), renderer.detail(data))
         self.assertEqual((ROOT / 'versions/11-15-26.6.html').read_text(), snapshot_html(current))
-        excerpts = json.loads((ROOT / 'evidence/endgame-stacking/source-excerpts.json').read_text())
-        self.assertEqual(excerpts['sources'], audit.load()['sources'])
-        self.assertEqual(excerpts['source_roles'], audit.load()['source_roles'])
+        excerpts = json.loads(offense.checkpoint_file_text('evidence/endgame-stacking/source-excerpts.json'))
+        self.assertEqual(excerpts['sources'], data['sources'])
+        self.assertEqual(excerpts['source_roles'], data['source_roles'])
 
     def test_integration_record_is_scoped_draft_work_not_release_or_dps_certification(self):
         record = json.loads((ROOT / RECORD).read_text())

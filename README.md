@@ -46,6 +46,24 @@ Doubleshot corrections separately from preserved historical experiments. Its
 source register contains transcribed browser observations and paraphrases, not
 an exported raw DOM packet or new calculator-qualified component records.
 
+### Current draft: bounded Fortification and Spot evidence
+
+Build **11-15-26.8** binds three selected definitions: Queen's 84 Insight
+Fortification, Greater Heroism's 4 Morale Spot and Good Luck's 3 Luck Spot.
+One named Heroism/Luck Spot interaction supports their combined **7**. At the
+selected kit's level-36 applicability floor, **84 Fortification and 7 direct
+Spot are supported subsets**; both complete selected-gear totals remain
+`null` because the Chains inputs remain unknown and excluded. These are
+existing contributions with improved evidence, not additional character bonuses.
+
+The [new source register](evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
+retains the fresh review's 16 scoped browser observations, including separate
+tooltip labels, exact fragments, category membership and provenance limits.
+The [integration receipt](evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json)
+records verification and draft-update status separately. The existing closed INT
+rule and family safeguards remain; this adds one exact Spot pair and bounded
+Fortification/Spot completeness guards, not a general stacking default.
+
 ## Project maintenance
 
 See the [knowledge base](docs/knowledge-base/README.md) for build principles, evidence limits, open decisions, maintenance checks and a dated release checkpoint.

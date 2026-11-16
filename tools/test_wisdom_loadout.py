@@ -536,12 +536,12 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         import build_stacking_audit
         self.renderer = build_stacking_audit
 
-    def test_current_ledger_retains_old_sources_and_exactly_two_scoped_rule_additions(self):
+    def test_current_ledger_retains_old_sources_and_exactly_three_scoped_rule_additions(self):
         self.assertTrue(audit.validate(self.data))
         old = json.loads(preservation.frozen_ledger_bytes())
         self.assertEqual(self.data['rules'][:len(old['rules'])], old['rules'])
         self.assertEqual([r['id'] for r in self.data['rules'][len(old['rules']):]],
-                         ['int-selected-ten-pairs', 'fort-enh-insight-observed'])
+                         ['int-selected-ten-pairs', 'fort-enh-insight-observed', 'spot-heroism-luck'])
         for sid, source in old['sources'].items():
             with self.subTest(source=sid):
                 self.assertEqual(self.data['sources'][sid], source)

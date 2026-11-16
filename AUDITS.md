@@ -2,6 +2,62 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded Fortification and Spot integration — 15 November 2026
+
+The owner selected option 1 after the completed read-only Fortification/Spot
+review: integrate exactly three component definitions and one named Spot pair
+into **draft PR #47**, preserve both Chains exclusions, add exact-family
+completeness safeguards, regenerate required outputs and verify the result.
+Startup matched remote head `72db151c4f881c08844d273caee2914ddc736641` and staged
+tree `573c0b26ac30dce65a3d4fcf6107a38dc5c8058d`, with no unstaged or untracked
+paths. Local HEAD remained the intentional base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on the approved feature branch.
+
+The [source register](evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
+is the exact frozen 16-record browser register from that investigation. Its
+observations run from **01:05:25.602 to 01:15:14.309 UTC on 16 November 2026**,
+corresponding to the 15 November Pacific review date. Actual selected DOM/text
+fragments, separately labeled context, displayed revisions and recorded cache
+notices are retained. This is neither a complete raw DOM/HTTP archive nor a
+cryptographically authenticated browser capture. Permanent revision endpoints
+were not independently reopened; the linked Chains image was inspected but
+not archived. The original register's read-only/no-promotion metadata describes
+the investigation; the separate integration receipt describes this later change.
+Old captures, missing observations and claim grades are not repaired.
+
+| Selected component | Bounded support integrated | Remaining boundary |
+| --- | --- | --- |
+| `queen-fortification` | The Queen's own-item popup associates the Fortification label with its separate +84 Insight description. | The fragments stay separate; this qualifies only that effect, not the Queen's other relayed effects or a complete Fortification total. |
+| `heroism-spot` | The own Sapphire of Greater Heroism definition supplies +4 Morale to skill checks; Skill and Spot records establish Spot membership. | An explicit category derivation, not a reconstructed Spot-named tooltip or every benefit of the Greater Heroism spell. |
+| `luck-spot` | The own Sapphire of Good Luck +3 definition supplies +3 Luck to skill checks, with the same separately retained Spot membership. | Selected host/socket and level conditions remain required; existing same-type bonuses can affect a character's marginal gain. |
+
+The only added positive interaction is the exact `heroism-spot` ↔ `luck-spot`
+pair, supported by the fresh affirmative Tip 179 observation together with
+those definitions. The nine earlier rules, including ten closed INT pairs and
+the existing Enhancement/Insight Fortification interaction, remain literal.
+Two-ID Fortification and three-ID Spot family guards prevent removal, renaming
+or mutation of an unresolved member from manufacturing a complete result;
+the prior nine-definition INT safeguard remains intact.
+
+At the selected level-36 floor, the supported subsets are **84 Fortification**
+and **4 + 3 = 7 direct Spot**. Both complete selected-family totals remain
+`null`. Chains' current recipe magnitudes 142 and 20 have support, but their
+selected-craft bonus types remain unresolved and both IDs stay excluded.
+Conditional 226 Fortification and 27 direct Spot remain modeled combinations,
+not demonstrated full results. The older Five Rings examples, item-normalization
+history and blank Chains image do not supply either missing type. Whole-character
+Spot also needs ranks, total equipped/buffed Wisdom and other applicable sources;
+gear Wisdom 18 is not the character's Wisdom score.
+
+Build 11-15-26.8 preserves the Wisdom selection, sole Minor Artifact, 32 priorities,
+crafts, sockets, feats/AP, all historical model results and existing exceptions.
+**Precommit verification passed: 503 tests in 142.921 seconds, all four documented builders, 126 local documentation links and independent review with no remaining blocker.** The
+[integration receipt](evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json)
+records actual preservation, builder, suite and draft-update results separately.
+Source support and software checks do not certify live-game behavior, browser
+layout, accessibility, print pagination, item ownership or acquisition. No new
+solve, crafting, purchase, merge or publication is included.
+
 ## Scoped offensive-mechanics integration — 15 November 2026
 
 The owner selected option 1 after the completed read-only offensive audit:

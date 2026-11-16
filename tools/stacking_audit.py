@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 from urllib.parse import unquote, parse_qs, urlparse
 from recipe_proofs import BOUNDED_COMPONENT_IDS, validate_component as validate_recipe_component
+import fort_spot_proofs as fort_spot
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURE = ROOT / 'tools/fixtures/endgame-stacking/ledger.json'
@@ -32,12 +33,18 @@ RULE_CONTRACTS = {
                                ('Enhancement', 'Insight', 'Quality', 'Profane', 'Festive'), ('Intelligence',)),
     'fort-enh-insight-observed': ('fort-rule-live-20261115', 'pair',
                                  ('Enhancement', 'Insight'), ('Fortification',)),
+    'spot-heroism-luck': ('fort-spot-tip179-20261115', 'selected_pairs',
+                         ('Morale', 'Luck'), ('Spot',)),
 }
 # The seven-rule historical profile remains an input to the real current
 # engine. The additive profile must contain BOTH reviewed rules, never a
 # fixture-selected subset or a wildcard different-type rule.
 SCOPED_RULE_IDS = frozenset({'int-selected-ten-pairs', 'fort-enh-insight-observed'})
-LEGACY_RULE_IDS = frozenset(RULE_CONTRACTS) - SCOPED_RULE_IDS
+LEGACY_RULE_IDS = frozenset({'same-type-best', 'artifact-other-types',
+                            'exceptional-other-types', 'prr-combination',
+                            'mrr-combination', 'vitality-combination', 'fort-enh-insight'})
+INT_RULE_IDS = LEGACY_RULE_IDS | SCOPED_RULE_IDS
+FORT_SPOT_RULE_IDS = INT_RULE_IDS | {fort_spot.RULE_ID}
 SELECTED_INT_IDS = ('boots-int', 'glabrezu-insight-int', 'chains-quality-int',
                     'lunar-int', 'festive-int')
 SELECTED_INT_PAIRS = tuple(itertools.combinations(SELECTED_INT_IDS, 2))
@@ -128,7 +135,7 @@ def resolve(root, pointer):
 def observation_context(source):
     pointer = tuple(source.get('observed_pointer') or ())
     value = source.get('observed')
-    return (pointer in OBSERVATION_POINTERS and isinstance(value, str)
+    return fort_spot.observation_context(source) or (pointer in OBSERVATION_POINTERS and isinstance(value, str)
             and re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2}))?', value) is not None)
 
 
@@ -152,12 +159,18 @@ def component_provenance(data, component, *, root=None):
     The fixed Chains IDs cannot escape to legacy provenance by deleting a
     proof. Unrelated direct-source components retain their original behavior.
     """
+    if component['id'] in fort_spot.DEFINITION_IDS or 'definition_proof' in component:
+        return (rule_profile(data) == FORT_SPOT_RULE_IDS and current_rule_profile(data)
+                and fort_spot.validate_component(data, component, ROOT if root is None else root))
     if uses_scoped_rules(data) and component['id'] in SELECTED_INT_CORE_SHA256:
         return (current_rule_profile(data)
                 and selected_int_members(data, (component,), root=root))
     if component['id'] in BOUNDED_COMPONENT_IDS or 'recipe_proof' in component:
         return validate_recipe_component(data, component, ROOT if root is None else root)
-    return source_provenance(data['sources'].get(component['source'], {}))
+    source = data['sources'].get(component['source'], {})
+    if fort_spot.bounded_source(source, component['source']):
+        return False
+    return source_provenance(source)
 
 
 def fingerprint(value):
@@ -175,7 +188,7 @@ def uses_scoped_rules(data):
 def rule_profile(data):
     """Return the exact reviewed ID profile, or None; duplicates are invalid."""
     ids = [rule.get('id') for rule in data['rules']]
-    if len(ids) != len(set(ids)) or set(ids) not in (LEGACY_RULE_IDS, set(RULE_CONTRACTS)):
+    if len(ids) != len(set(ids)) or set(ids) not in (LEGACY_RULE_IDS, INT_RULE_IDS, FORT_SPOT_RULE_IDS):
         return None
     for rule in data['rules']:
         contract = (rule.get('source'), rule.get('kind'),
@@ -184,12 +197,16 @@ def rule_profile(data):
             return None
         if rule['id'] in SCOPED_RULES and rule != SCOPED_RULES[rule['id']]:
             return None
+        if rule['id'] == fort_spot.RULE_ID and rule != fort_spot.SPOT_RULE:
+            return None
     return frozenset(ids)
 
 
 def current_rule_profile(data):
-    """Guard new runtime paths without changing seven-rule legacy behavior."""
-    return (rule_profile(data) == frozenset(RULE_CONTRACTS)
+    """Preserve exact seven/nine-rule history; partial new inputs fail closed."""
+    profile = rule_profile(data)
+    return (profile in (INT_RULE_IDS, FORT_SPOT_RULE_IDS)
+            and (not fort_spot.uses_contract(data) or profile == FORT_SPOT_RULE_IDS)
             and all(fingerprint(data['sources'].get(sid)) == digest
                     for sid, digest in SCOPED_SOURCE_SHA256.items()))
 
@@ -304,11 +321,15 @@ def validate(data, root=ROOT):
         assert component['channel'] and component['stat'] and component['host']
         assert isinstance(component['amount'], (int, float)) and component['amount'] >= 0
         assert component['note']
-        if ('recipe_proof' in component or
+        if ('definition_proof' in component or
+                cid in fort_spot.DEFINITION_IDS and component['state'] in {'verified', 'conditional'}):
+            assert fort_spot.validate_component(data, component, root), cid
+        elif ('recipe_proof' in component or
                 component['id'] in BOUNDED_COMPONENT_IDS and component['state'] in {'verified', 'conditional'}):
             validate_recipe_component(data, component, root)
         elif component['state'] in {'verified', 'conditional'}:
             source = data['sources'][component['source']]
+            assert not fort_spot.bounded_source(source, component['source']), cid
             assert source_provenance(source), cid
             match = re.search(component['value_pattern'], source['quote'])
             assert match and float(match.group('value')) == component['amount'], cid
@@ -343,15 +364,23 @@ def validate(data, root=ROOT):
         assert (rule['source'], rule['kind'], tuple(rule['types']), tuple(rule['stats'])) == RULE_CONTRACTS[rule['id']]
         if rule['id'] in SCOPED_RULE_IDS:
             assert pinned_source(data, rule['source'], SCOPED_SOURCE_SHA256[rule['source']], root=root)
-    if rule_profile(data) == frozenset(RULE_CONTRACTS):
+        if rule['id'] == fort_spot.RULE_ID:
+            assert fort_spot.validate_rule_source(data, root), 'Unqualified named Spot interaction source'
+    if rule_profile(data) in (INT_RULE_IDS, FORT_SPOT_RULE_IDS):
         assert current_rule_profile(data)
         assert selected_int_members(data, root=root), 'Changed selected INT definitions or bindings'
+    if fort_spot.uses_contract(data):
+        assert rule_profile(data) == FORT_SPOT_RULE_IDS, 'Incomplete Fortification/Spot rule profile'
+        for stat in fort_spot.FAMILIES:
+            assert fort_spot.family_valid(data, stat, root=root), 'Changed selected ' + stat + ' family'
     for effect in data['non_total_effects']:
         assert effect['state'] in STATES
         assert effect['sources'] or effect['state'] == 'unknown'
         assert all(s in source_ids for s in effect['sources'])
         assert effect['note']
         if effect['state'] in {'verified', 'conditional'}:
+            assert not any(fort_spot.bounded_source(data['sources'][sid], sid)
+                           for sid in effect['sources']), effect['id']
             assert all(source_provenance(data['sources'][sid]) for sid in effect['sources']), effect['id']
     return True
 
@@ -364,6 +393,17 @@ def proof(data, stat, a, b):
     """Return an explicit applicable rule; never infer from absent prohibition."""
     if a['channel'] != b['channel']:
         return None
+    if any(fort_spot.bounded_source(data['sources'].get(row.get('source'), {}), row.get('source'))
+           for row in (a, b)):
+        return None
+    if fort_spot.uses_contract(data) and (stat in fort_spot.FAMILIES
+                                         or a['id'] in fort_spot.FAMILY_IDS
+                                         or b['id'] in fort_spot.FAMILY_IDS):
+        if (rule_profile(data) != FORT_SPOT_RULE_IDS or not current_rule_profile(data)
+                or a['channel'] != 'gear'
+                or not fort_spot.family_valid(data, stat, (a, b), ROOT)
+                or not all(fort_spot.validate_component(data, row, ROOT) for row in (a, b))):
+            return None
     if uses_scoped_rules(data):
         if a['id'] == b['id'] or not current_rule_profile(data):
             return None
@@ -375,6 +415,13 @@ def proof(data, stat, a, b):
                 return None
     ta, tb = a['bonus_type'], b['bonus_type']
     for rule in data['rules']:
+        if rule['id'] == fort_spot.RULE_ID:
+            if (rule == fort_spot.SPOT_RULE and stat == 'Spot'
+                    and a['channel'] == b['channel'] == 'gear'
+                    and {a['id'], b['id']} == {'heroism-spot', 'luck-spot'}
+                    and fort_spot.validate_rule_source(data, ROOT)):
+                return rule['id']
+            continue
         if rule['id'] in SCOPED_RULE_IDS:
             found = scoped_proof(data, rule, stat, a, b)
             if found is not None:
@@ -408,6 +455,9 @@ def subtotal(data, stat, *, channel='gear', active=(), level=36):
     # falsely complete kit, even when validate() was never called.
     family_valid = (not (uses_scoped_rules(data) and stat == 'Intelligence' and channel == 'gear')
                     or current_rule_profile(data) and selected_int_members(data))
+    if fort_spot.uses_contract(data) and stat in fort_spot.FAMILIES and channel == 'gear':
+        family_valid = (rule_profile(data) == FORT_SPOT_RULE_IDS and current_rule_profile(data)
+                        and fort_spot.family_valid(data, stat, root=ROOT))
     eligible, excluded = [], []
     for c in rows:
         if (not family_valid or c['state'] not in {'verified', 'conditional'} or level < c['kit_min_level']

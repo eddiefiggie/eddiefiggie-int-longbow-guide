@@ -335,6 +335,17 @@ def render_crafting_qualification(ledger=None, *, compact=False):
              and ['glabrezu-insight-int', 'chains-quality-int', 'int-selected-ten-pairs']
                  in intelligence['proofs'],
              'Current recipe qualification or bounded INT interaction changed')
+    fortification = subtotal(ledger, 'Fortification')
+    spot = subtotal(ledger, 'Spot')
+    _require(fortification['counted'] == ['queen-fortification']
+             and fortification['excluded'] == ['chains-fortification']
+             and not fortification['complete'] and fortification['total'] is None
+             and spot['counted'] == ['heroism-spot', 'luck-spot']
+             and spot['excluded'] == ['chains-spot']
+             and spot['proofs'] == [['heroism-spot', 'luck-spot', 'spot-heroism-luck']]
+             and not spot['missing_interactions']
+             and not spot['complete'] and spot['total'] is None,
+             'Current Fortification/Spot subset or full-family boundary changed')
     paragraph = (
         '<p class="note" data-crafting-qualification="bounded-recipe-proof">'
         '<strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its '
@@ -357,7 +368,8 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         'This supports the already-modeled sum; it is not additional INT, a character ability '
         'score, a live-game measurement or a DPS/critical-range result. '
         'A separate genuinely observed Fortification rule supports the Enhancement/Insight '
-        'relationship only; it does not classify the selected Chains Prefix or qualify Queen. '
+        'relationship only; it does not classify the selected Chains Prefix. Queen’s '
+        'component now has separate own-item field support, described below. '
         'Chains Fortification and Spot remain excluded. Equipment, priorities, modeled amounts '
         'and exceptions are unchanged; no universal different-type stacking rule is introduced. '
         + _link('evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json',
@@ -373,7 +385,27 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         + _link('evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json',
                 'Earlier bounded recipe integration') + ' · '
         + _link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',
-                'Original host and recipe captures') + '.</p>')
+                'Original host and recipe captures') + '.</p>'
+        '<p class="note" data-fort-spot-qualification="selected-definitions">'
+        '<strong>Supported inputs at full-kit level 36:</strong> Queen contributes '
+        '<strong>84% Insight Fortification</strong>, binding its actual Fortification '
+        'label and typed description within the same item popup. Greater Heroism '
+        '<strong>+4 Morale</strong> and Good Luck <strong>+3 Luck</strong> apply to Spot '
+        'through separately sourced skill/check membership and their selected sockets. '
+        'One positive rule covers only that named pair: <strong>supported two-augment '
+        'Spot subset +7</strong>. The exact two-member Fortification and three-member '
+        'Spot families remain required; omitting an unresolved member cannot complete a result. '
+        '<strong>Both complete selected totals remain withheld.</strong> Chains’ '
+        'Fortification +142% classification and Spot +20 type remain unresolved, so '
+        'the modeled 226% and +27 are conditional. These are existing gear contributions, '
+        'not newly gained bonuses or whole-character scores. Existing Morale/Luck '
+        'overlaps can reduce the marginal benefit; 84% Fortification is not an 84% '
+        'reduction in all incoming damage. Other Queen and augment effects retain '
+        'their own evidence limits. '
+        + _link('evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json',
+                'Separate exact source fields, revisions and observations') + ' · '
+        + _link('evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json',
+                'Bounded definitions, one Spot pair and remaining gaps') + '.</p>')
     if compact:
         return paragraph
     rows = [

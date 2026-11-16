@@ -9,6 +9,7 @@ import wisdom_recipe_proof_preservation as recipe_proofs
 import wisdom_int_evidence_preservation as int_evidence
 import wisdom_int_stacking_preservation as int_stacking
 import wisdom_offense_preservation as offense
+import wisdom_fort_spot_preservation as fort_spot
 
 ROOT = Path(__file__).resolve().parents[1]
 DETAIL_SHA = '47cccc7724c1ea271cf83f02a26d38822987a88d4159020b02afb51bb7b55321'
@@ -29,7 +30,8 @@ def validate(html):
     # Routing above is checked on actual current content. Only the historical
     # detailed-section hash uses the exact outer-restored PR47 view; current
     # Quicken semantics are tested separately in test_wisdom_corrections.
-    point_six = offense.restore_file('index.html', current_html)
+    point_seven = fort_spot.restore_file('index.html', current_html)
+    point_six = offense.restore_file('index.html', point_seven)
     point_five = int_stacking.restore_file('index.html', point_six)
     point_four = int_evidence.restore_file('index.html', point_five)
     predecessor = recipe_proofs.restore_file('index.html', point_four)

@@ -333,3 +333,55 @@ or numerical results. In particular, the documentary Emerald subtotal does not
 promote its ledger input, and supported Flaming applicability does not certify
 complete damage. Actual integration checks and draft-update state are recorded
 separately; these two records are not test, live-game or release receipts.
+
+## Bounded Fortification/Spot integration — 15 November 2026
+
+The [new source register](fort-spot-sources-2026-11-15.json) is the exact frozen
+browser-observation file from the subsequent read-only investigation. Its
+**16 observations** span **2026-11-16T01:05:25.602Z through
+2026-11-16T01:15:14.309Z**; the review date is 15 November Pacific. Unlike the
+preceding offensive summaries, this register retains actual selected DOM/text
+fragments from the browser results, with separate context and visual observations.
+It remains a scoped excerpt register, not a complete raw DOM/HTTP archive or a
+cryptographically authenticated browser capture. Displayed permanent revisions
+were not independently reopened. Cache notices, observation times and page
+modification dates remain distinct; an unrecorded cache notice does not prove
+freshness. The inspected Chains image was not archived or embedded.
+
+The register's original read-only scope and `formal_ledger_promotion: false`
+describe the investigation at capture time and remain unchanged. The separate
+[integration receipt](fort-spot-integration-2026-11-15.json) records this later
+approved .8 implementation and its actual verification/draft-update status.
+Neither copying the register nor hashing it authenticates the browser or
+repairs missing provenance in older records. Article/revision attribution and
+the recorded CC BY-SA 2.5 license remain intact.
+
+The integration binds only these three definitions:
+
+- **`queen-fortification`: 84 Insight Fortification.** The own-item markup places
+  the effect label and the separate typed numeric description in the same popup.
+  That association supplies the meaning without reconstructing a combined
+  quotation or borrowing a neighboring effect. Other Queen claims retain their
+  previous evidence limits.
+- **`heroism-spot`: 4 Morale Spot.** The own Sapphire of Greater Heroism supplies
+  a skill-check bonus; the separately retained Skill and Spot observations
+  establish the category membership. The selected pendant's Green socket and
+  host identity are retained.
+- **`luck-spot`: 3 Luck Spot.** The own Sapphire of Good Luck +3 supplies the
+  typed skill-check definition, using the same explicit membership route. The
+  selected Yeenoghu Blue socket and host identity remain required.
+
+Fresh Tip 179 supports the one exact Heroism/Luck gear-Spot pair. This does not
+expand the existing ten selected INT pairs, invent a general type default or
+supply either Chains Spot pair. Same-type Morale/Luck overlap remains relevant.
+The specific Fortification interaction stays separate from the missing premise
+classifying the selected Chains Prefix. Old rule records are not repaired.
+
+At the full kit's level-36 floor, supported subsets **84 Fortification and
+4 + 3 = 7 direct Spot** may be displayed while both complete totals remain
+`null`. Exact family guards retain two Fortification IDs and three Spot IDs;
+both Chains inputs remain unknown/excluded. The current recipe values, older
+Five Rings examples and blank Chains image do not establish the missing
+selected types. Conditional 226 and 27 remain modeled combinations. No additional
+character bonus, full skill score, trap-success threshold, live-game validation,
+new solve, acquisition, merge or publication follows from this evidence change.
