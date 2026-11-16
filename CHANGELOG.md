@@ -2,6 +2,15 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.7 (draft offensive-correction candidate; not published)
+
+- Reconciles current bow ability damage to 2× the operative modifier after Precise Shot and Improved Precise Shot, keeping Know the Angles separate. Updates current illustrative arithmetic without changing the historical model.
+- Separates the level 30 named imbue subtotal (4d6 Chaotic / 2d6 otherwise) from the equipped Emerald subtotal (5d6 / 3d6; selected boots ML34, full kit ML36). Retains d6 Fire/100% Spell Power scaling and conditions instead of unconditional fixed damage.
+- Records selected Flaming applicability for Chains Fire Spell Power, keeping separate weapon riders/procs and complete character totals unresolved. No ledger qualification, component, rule or numerical result changes.
+- Reconciles selected Feywild timing to15, identifies representative historical evaluation levels, labels historical speed-adjusted comparison scores accurately, and records missing model inputs. Current armor alacrity overlap and Doubleshot eligible-damage wording replace misleading speed/projectile implications.
+- Corrects the common-Reaper-mitigation rationale without reordering priorities. Preserves equipment, one Minor Artifact, all 32 priorities, feat/AP choices, original evidence, archived experiments, historical model outputs, snapshots and approved exceptions.
+- Adds a scoped observation/claim register, exact outer preservation and actual-current checks; regenerates current outputs and a new path-rebased snapshot. The [integration receipt](evidence/wisdom-loadout/offensive-integration-2026-11-15.json) records actual verification separately from browser and live-game limits. No new optimizer solve, merge or publication.
+
 ## Build 11-15-26.6 (draft bounded-INT-stacking candidate; not published)
 
 - Adds one closed positive rule for exactly ten selected gear-INT pairs, using the affirmative different-types clause in Wiki loading-screen Tip 179. The existing seven rules remain literal; this is not a universal all-stat or type-only stacking default.

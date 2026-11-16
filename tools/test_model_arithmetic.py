@@ -5,6 +5,7 @@ import re
 import unittest
 
 import bowmodel
+import wisdom_offense_preservation as offense
 from test_editorial_consistency import GuideText
 
 
@@ -15,7 +16,9 @@ FRACTION = r"(\d+(?:\.\d+)?)\s*/\s*(\d+(?:\.\d+)?)"
 class ModelArithmeticTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.guide = GuideText((ROOT / "index.html").read_text(encoding="utf-8"))
+        # This preserves the .6 direct-source-review wording. Current stacking
+        # and model-only speed claims are checked on actual .7 production text.
+        cls.guide = GuideText(offense.checkpoint_file_text('index.html'))
 
     def alacrity_paragraph(self):
         matches = [block for blocks in self.guide.blocks.values() for block in blocks

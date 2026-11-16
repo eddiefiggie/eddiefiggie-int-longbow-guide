@@ -16,6 +16,7 @@ import wisdom_preservation as preservation
 import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
 import wisdom_recipe_proof_preservation as recipe_proofs
+import wisdom_offense_preservation as offense
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 
@@ -198,7 +199,11 @@ class WisdomReleasePreservationTests(unittest.TestCase):
             pattern = r'<' + tag + r'\b[^>]*>.*?</' + tag + '>'
             self.assertEqual(re.findall(pattern, current, re.S), re.findall(pattern, previous, re.S))
         start, end = '<h3 id="bow-damage-model">', '<h3 id="crafted-endgame-bow">'
-        self.assertEqual(current[current.index(start):current.index(end)],
+        # The .7 release corrects the model's current explanatory prose. Keep
+        # this original whole-section equality against its exact .6 view;
+        # current score semantics and all 39 tuples have separate live tests.
+        point_six = offense.checkpoint_file_text('index.html')
+        self.assertEqual(point_six[point_six.index(start):point_six.index(end)],
                          previous[previous.index(start):previous.index(end)])
 
     def test_reversal_rejects_stale_mixed_duplicate_and_unrelated_edits(self):

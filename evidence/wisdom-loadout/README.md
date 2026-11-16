@@ -274,3 +274,62 @@ Retained Wiki excerpts are attributed to [DDO Wiki contributors](https://ddowiki
 through the article/revision links in the source records and retain the
 [CC BY-SA 2.5 license](https://creativecommons.org/licenses/by-sa/2.5/).
 No missing capture or observation metadata is supplied by that attribution.
+
+## Offensive source and text review — 15 November 2026
+
+The completed audit's source register and reconciled decisions are retained in
+two additive records:
+
+| Record | What it establishes | What it does not establish |
+| --- | --- | --- |
+| [Offensive source register](offensive-sources-2026-11-15.json) | All 27 transcribed Wiki observations with recorded revisions and observation windows; eight publisher links; pointers to selected repository evidence. | Original raw DOM, exact source quotations, a cryptographically bound browser capture, independently reopened permanent revisions, or repaired old observation gaps. |
+| [Scoped offensive claim inventory](offensive-mechanics-2026-11-15.json) | All 37 reconciled review records, source IDs, prerequisites, current versus historical dispositions, conditional named-source arithmetic and remaining limits. | 37 unique proven errors, complete guide-mechanics coverage, new ledger qualifications, a current DPS winner or whole-character totals. |
+
+The source metadata is copied from the completed audit's observation register.
+Its displayed modification dates, browser observation windows and cache notices
+remain distinct. The audit HTML hash identifies that report's bytes only; it is
+not a hash of the original browser DOM. Publisher references retain their
+recorded identities without invented per-page capture times. The summaries and
+claims are paraphrases, not joined or reconstructed source quotations. Existing
+source records and their qualification boundaries remain literal.
+
+The current text can now distinguish these supported, bounded conclusions:
+
+- **INT damage:** with selected Harper INT-to-damage and both Precise Shot and
+  Improved Precise Shot acquired, the ordinary bow ability contribution is
+  `1 + 0.5 + 0.5 = 2` times the INT modifier. Know the Angles remains a separate
+  active Insight damage bonus; its INT basis does not make it another doubled
+  ability contribution.
+- **Named Flaming dice:** the level-30 feat-and-tree subtotal is **4d6 while
+  Chaotic / 2d6 otherwise**. Equipping the selected Emerald-bearing Coldlight
+  Runners raises it to **5d6 / 3d6**. The Emerald is ML28, its selected host is
+  **ML34**, and the complete selected outfit requires **level 36**. This counts
+  the named sources only, with the selected toggle active; it does not assume
+  unspecified buffs, filigrees or target damage. Whirling Wrists 3 is selected,
+  so the unselected Flickering Fingers alternative supplies no dice here.
+- **Fire Spell Power:** the existing Chains Combustion 142 Equipment contribution
+  applies to selected AA Flaming. It is neither 142 weapon damage nor a total
+  Fire Spell Power value or overall DPS percentage. Melancholic's Fire rider
+  and Dolorous's conditional effect retain their separate scaling and proc
+  questions. The four selected weapon craft slots coexist.
+- **Speed and critical context:** selected armor already provides 20%
+  Enhancement ranged alacrity; another same-type 20% effect adds no speed in
+  that equipped kit. Doubleshot wording describes eligible damage, rather than
+  independent attacks. The selected roadmap buys Feywild at level 15. Historical
+  scores require their stated assumptions and each weapon's actual minimum
+  level; their evaluation labels do not certify equip eligibility.
+
+The inventory labels the frozen bow result a **historical speed-adjusted
+comparison score**. Its omitted Seeker and additional Combat Archery weapon
+die, simplified defenses, historical Cataclysmic/Shadow recipe and uncalibrated
+timing remain visible. The current Calamitous/Salt/Dimlight selection is not a
+new result from that model. Archived experiments, stored scores and prior
+snapshots are preserved. The mitigation explanation is corrected without
+changing the approved 32 priorities.
+
+This integration adds source applicability and current explanatory corrections.
+It does not alter the selected data, component/rule gates, ledger qualifications
+or numerical results. In particular, the documentary Emerald subtotal does not
+promote its ledger input, and supported Flaming applicability does not certify
+complete damage. Actual integration checks and draft-update state are recorded
+separately; these two records are not test, live-game or release receipts.

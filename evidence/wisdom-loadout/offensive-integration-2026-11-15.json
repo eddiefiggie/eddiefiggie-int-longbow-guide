@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "record_type": "bounded-offensive-mechanics-text-integration",
+  "review_date": "2026-11-15",
+  "review_timezone": "America/Los_Angeles",
+  "build": "11-15-26.7",
+  "status": "Completed bounded source/text integration candidate for draft PR47; local precommit verification passed. Post-commit CI is reported separately against the actual new head. Merge/publication are not authorized.",
+  "approval": "Owner selected option1 after the read-only offensive audit: integrate supported current corrections and source records into draft PR47, regenerate outputs and verify; preserve selected loadout/priorities/exceptions and historical model/results.",
+  "startup": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "approved_remote_head": "cdb39fe7cdfbcbb2d2143c49c88979b008158c28",
+    "approved_branch": "feat/wisdom-loadout-priorities",
+    "initial_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "initial_staged_tree": "11b6e905e2174ea9bcae0ad77c7aaf224e999701",
+    "initial_remote_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide.git",
+    "observed_utc": "2026-11-16T00:30:46.752007+00:00",
+    "inspection_method": "Local Git refs/tree/diff inventory plus GitHub PR metadata read before edits; existing local staged tree intentionally represents remote draft while local HEAD remains main base.",
+    "gate": "matched current reviewed staged tree and unchanged remote head; no unstaged or untracked paths",
+    "scope": "Owner selected option1: bounded offensive source/text corrections, derived outputs, required tests and draft PR update; preserve selected data, priorities, historical engine/results and snapshots; no merge/publication."
+  },
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "branch": "feat/wisdom-loadout-priorities",
+    "remote_head": "cdb39fe7cdfbcbb2d2143c49c88979b008158c28",
+    "remote_tree": "11b6e905e2174ea9bcae0ad77c7aaf224e999701",
+    "build": "11-15-26.6",
+    "initial_staged_paths": 87,
+    "initial_unstaged_paths": 0,
+    "initial_untracked_paths": 0,
+    "baseline_suite": "Not rerun in this integration; prior CI remains a separate historical result. Current aggregate will be run after edits."
+  },
+  "scope": {
+    "new_optimizer_solve": false,
+    "gear_changed": false,
+    "priorities_changed": false,
+    "feat_or_ap_selections_changed": false,
+    "calculator_changed": false,
+    "ledger_changed": false,
+    "historical_model_changed": false,
+    "prior_snapshots_changed": false,
+    "old_source_records_changed": false,
+    "original_claim_grades_changed": false,
+    "exceptions_changed": false,
+    "minor_artifact_count": 1,
+    "full_kit_minimum_level": 36,
+    "crafting_performed": false,
+    "purchases": false,
+    "merged": false,
+    "published": false,
+    "live_game_test": false
+  },
+  "source_register": {
+    "path": "evidence/wisdom-loadout/offensive-sources-2026-11-15.json",
+    "observation_count": 27,
+    "provenance": "Transcribed observation metadata and paraphrases from the completed read-only audit. Displayed revision links were observed, not independently reopened. No complete raw DOM export or new counting-source qualification is claimed.",
+    "utc_date": "2026-11-16",
+    "local_date": "2026-11-15",
+    "publisher_source_count": 8,
+    "sha256": "58479bff309e52e0227f92631a9ce178cfd23a38659ddbcf466b804dc77a7dcd"
+  },
+  "claim_inventory": {
+    "path": "evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json",
+    "reconciled_review_records": 37,
+    "meaning": "Overlapping specialist records, not37 unique errors or a blanket mechanics certificate.",
+    "sha256": "3b0159c1d989d4f73b3902149f1361b7b91d7c0bb396519625dfc9a05234d4e1"
+  },
+  "current_corrections": [
+    "Precise Shot and Improved Precise Shot jointly give2x operative bow ability modifier once acquired; Know the Angles stays a separate Insight contribution.",
+    "Named feat/tree imbue subtotal4d6 Chaotic/2d6 otherwise at30;5d6/3d6 with selected Emerald-bearing ML34 boots equipped; full kit36.",
+    "Current Flaming d6/100% scaling and Chains Fire Spell Power applicability; separate weapon riders/procs and target/activation conditions.",
+    "Selected Feywild purchase15; representative historical evaluation levels rather than uniform band profiles.",
+    "Historical speed-adjusted comparison score units; omitted inputs and current-kit boundary.",
+    "Armor20% Enhancement ranged alacrity duplicates an equal bow bonus.",
+    "Doubleshot eligible-damage language, conditional109-to115 arithmetic, above200% extension limit.",
+    "Common-mitigation Reaper algebra without reordering approved priorities."
+  ],
+  "preservation": {
+    "scope_file": "tools/fixtures/wisdom-offense/scope.json",
+    "status": "passed independent exact reversal and baseline verification",
+    "archived_text_policy": "Preserve explicitly archived rankings/experiments and superseded Summer End notes; correct current guidance separately.",
+    "reviewed_production_paths": [
+      "index.html",
+      "endgame-stacking-audit.html",
+      "heroic-crafting-print.html",
+      "tools/wisdom_loadout.py",
+      "tools/build_stacking_audit.py"
+    ],
+    "reviewed_hunks": 42,
+    "protected_previous_files": 194,
+    "prior_evidence_files_unchanged": 49,
+    "prior_snapshots_unchanged": 72,
+    "scope_sha256": "23baa60d33e7e7ca5c339eee2690f80870a16bb95bde5646a357e980e210efe4",
+    "complete_historical_bow_tuples_preserved": 39,
+    "complete_current_ledger_result_objects_preserved": 152
+  },
+  "verification": {
+    "full_suite": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "status": "passed",
+      "exit_code": 0,
+      "tests": 467,
+      "unittest_seconds": 129.449,
+      "wall_seconds": 129.85,
+      "completed_utc": "2026-11-16T00:53:51.664832+00:00",
+      "log_sha256": "42138fe28e2c8922a1da8e06ab11b273ef9ba9525d135d55bfd7e0f32d0abc25",
+      "raw_local_log_committed": false
+    },
+    "generators": {
+      "status": "passed",
+      "runs": [
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_wisdom_loadout.py",
+          "exit_code": 0,
+          "seconds": 0.878,
+          "stdout": "Rendered Wisdom loadout blocks: 14 items, 1 artifact, 34 sockets. No mechanics certification implied.\n",
+          "stderr": "",
+          "completed_utc": "2026-11-16T00:42:33.131714+00:00"
+        },
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_stacking_audit.py",
+          "exit_code": 0,
+          "seconds": 1.328,
+          "stdout": "",
+          "stderr": "",
+          "completed_utc": "2026-11-16T00:42:34.460307+00:00"
+        },
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_crafting_sheet.py",
+          "exit_code": 0,
+          "seconds": 0.073,
+          "stdout": "",
+          "stderr": "",
+          "completed_utc": "2026-11-16T00:42:34.533887+00:00"
+        },
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_snapshot.py",
+          "exit_code": 0,
+          "seconds": 0.097,
+          "stdout": "/workspace/scratch/f67d3d0dd89f/guide/versions/11-15-26.7.html\n",
+          "stderr": "",
+          "completed_utc": "2026-11-16T00:42:34.630660+00:00"
+        }
+      ],
+      "reason_for_second_generation": "Independent review found one additional current R10-flat-damage parenthetical; corrected within scope before final verification."
+    },
+    "independent_review": {
+      "status": "passed; no remaining blocker",
+      "checks": [
+        "Five restored .6 files equal independently copied baseline bytes",
+        "All194 protected entries agree with baseline",
+        "Existing inner .6-to-.5 contract passes",
+        "New .7 snapshot matches path-rebased current output",
+        "Model/calculator/recipe engine/ledger/selection unchanged",
+        "Both entire historical HTML archives unchanged",
+        "All27 Wiki/eight publisher records and37 times six original review fields retained literally",
+        "Provenance and no-new-ledger-qualification boundaries explicit"
+      ],
+      "findings_fixed": [
+        "Current Fatesinger/Dreadnought row repeated the near-zero-flat-damage inference; parenthetical corrected without changing +5 attack/+2 damage or selection.",
+        "New inventory archive description corrected to the actual Archived rankings and optimizer experiments identity; no original review field changed."
+      ],
+      "aggregate_suite_run_by_reviewer": false,
+      "remote_writes_by_reviewer": false,
+      "recorded_utc": "2026-11-16T00:45:32.584871+00:00"
+    },
+    "post_commit_ci": {
+      "status": "pending at receipt creation",
+      "report_location": "Draft PR47 current-head verification section; no historical CI run substituted for the new commit."
+    },
+    "browser_qa": {
+      "status": "not run in this correction pass",
+      "limit": "Earlier guide preview was unavailable; successful public Wiki reads do not establish desktop/mobile layout, keyboard behavior or print pagination."
+    },
+    "live_mechanics": {
+      "status": "not measured",
+      "limit": "Source support and software tests do not establish actual character totals, timing, proc behavior, maximum critical range or a DPS winner."
+    },
+    "documentation_links": {
+      "checked_relative_links": 111,
+      "errors": []
+    },
+    "diff_check": {
+      "scope": "new unstaged changes relative to starting draft index",
+      "exit_code": 0,
+      "limit": "Whole PR retains pre-existing immutable JSON blank-at-EOF warnings; those historical bytes are not rewritten."
+    },
+    "initial_full_suite": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "status": "failed",
+      "exit_code": 1,
+      "tests": 466,
+      "unittest_seconds": 120.721,
+      "wall_seconds": 121.11,
+      "completed_utc": "2026-11-16T00:47:47.570057+00:00",
+      "failures": [
+        "Legacy exact level8 bow-row label no longer matches the representative-level label.",
+        "Legacy roadmap table hash sees the approved imbue wording change.",
+        "Retained Sapphire roadmap context includes that changed neighboring imbue wording."
+      ]
+    },
+    "focused_sources": {
+      "status": "passed",
+      "tests": 124,
+      "seconds": 63.61,
+      "scope": "Two new offense modules and seven directly affected prior/current modules",
+      "limit": "This initial focused set did not include the three legacy failures later found by full discovery."
+    },
+    "legacy_context_followup": {
+      "status": "passed",
+      "tests": 38,
+      "seconds": 10.647,
+      "changes": [
+        "Old level8 label retained against exact .6; actual .7 evaluated-level label separately required.",
+        "Roadmap cue/focus checks inspect actual caller HTML; unchanged historical table hash receives that same argument after strict .7-to-.6 restoration.",
+        "Original Sapphire record/validator remain literal; original .6 and independently literal current .7 roadmap contexts both checked, retaining current mutation controls."
+      ],
+      "independent_review": "Passed; no assertion/hash/source weakening. Reviewer directly rejected caller-column and ML34-to28 context mutations. All five frozen production paths remain unchanged."
+    }
+  },
+  "remaining_limits": [
+    "Chains and Queen Fortification remain excluded; Chains/other unresolved Spot inputs remain excluded.",
+    "Current whole-character totals, filigrees, actual shot rate/rotation, defenses and proc eligibility/uptime remain unresolved.",
+    "Old Critical hit confirmation evidence does not settle the previously recorded natural-one conflict.",
+    "The owner-accepted HA63 acquisition-evidence exception remains narrow and independently unverified."
+  ],
+  "implementation_hashes": {
+    "index.html": "c093cc88d07e53b4b17469515b9e3e820b703152767dccfa4febd73b4bda97df",
+    "endgame-stacking-audit.html": "52e383ac1e9f5b30a33c588dff0027cbe29d864026afe0f1578bdf8e9093d1be",
+    "heroic-crafting-print.html": "503b3831d44001bde975338e9124d2aa08cb8aa98324b07a40c2ce6dff339058",
+    "tools/wisdom_loadout.py": "11e5620f5a8f2065a18e13045573c1e323519329645aa3a95af4a85659c7b39e",
+    "tools/build_stacking_audit.py": "4009b6b4fce269af1bffb9c1be9f95556b062c032b62af1c690fb96560be8841",
+    "tools/fixtures/endgame-stacking/ledger.json": "cb71531a07b73697b0af1bccf6fe330e10e0db900a7f194f79036ce3ccf2da0a",
+    "tools/fixtures/wisdom-loadout/selection.json": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d",
+    "tools/bowmodel.py": "7d9e0843939310214d73b00e7e936ca4e842bf7bf0fc3f8da1b849e8c8faf236",
+    "tools/stacking_audit.py": "92a32e9d4d2fd78e55640ec16834b3c7ec97d8501e4daa03adbf28f81c7e1998",
+    "tools/recipe_proofs.py": "b4c2b4fd95a0a9de4b5f8155245ba8934a8f1ae89c3e2f1d7e8eac545bb627ec",
+    "evidence/wisdom-loadout/offensive-sources-2026-11-15.json": "58479bff309e52e0227f92631a9ce178cfd23a38659ddbcf466b804dc77a7dcd",
+    "evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json": "3b0159c1d989d4f73b3902149f1361b7b91d7c0bb396519625dfc9a05234d4e1",
+    "versions/11-15-26.7.html": "9a64dbe2b118afc99aacc13ff8687134f5dd140488d052de27f2f24e0ff6998c",
+    "tools/fixtures/wisdom-offense/baseline-results.json": "e41e7e7dcac3a128d7a6822c7fc802c3e48218c3718b69abe33dee85b8c009e1",
+    "tools/fixtures/wisdom-offense/scope.json": "23baa60d33e7e7ca5c339eee2690f80870a16bb95bde5646a357e980e210efe4",
+    "tools/test_bow_corrections.py": "2fab07fbf9845399a2d014820e6262fbccf925f92b7f7faaf1e9fdc67d2a0e8a",
+    "tools/test_feat_summary_routing.py": "7c19962fdcb67208d1df4db9bd95d08a48c48310c7e078731150129c9c252a1b",
+    "tools/test_model_arithmetic.py": "94e5cd0bd4b8f441b106cf35d3d587bd0455f201e1d08c2dd42c7bde7b567bd5",
+    "tools/test_roadmap_scroll_cue.py": "cfede0c5fe0c4c2ef5fe091615f78dc42cebd2c3a9d79bd7826a783fc76d6d52",
+    "tools/test_sapphire_evidence.py": "87f21effb6ccdef3a6423a561c74cf3036409f80c4c0d7977f41b10d8215b43f",
+    "tools/test_score_explanation.py": "75ad746b44220fd71a28e23b0646dbff557b928c19befacc76323b286fcd1625",
+    "tools/test_wisdom_int_stacking.py": "47dd6b294c93021648c65150a577f4c021052709e57ea5acd251c5a65dfac881",
+    "tools/test_wisdom_int_stacking_preservation.py": "3017aca90270c3b74a6a808f0e540037e7545c23e6d1a4e63a57a0101d08028c",
+    "tools/test_wisdom_loadout.py": "4229b3058a66a6ba76d6366008bf4522435a3d7a3572ac0a783f69ad1609fca7",
+    "tools/test_wisdom_offense.py": "dac2db18b7fb0532296135c0094bb3968087de449ef73b5428f8c52629cc748b",
+    "tools/test_wisdom_offense_preservation.py": "71c01f322e2ad585cd7f21425845b2388d9af6e81ea7679543f7a464a1fa2ed0",
+    "tools/wisdom_int_stacking_preservation.py": "d1463e9bc27836daf8f17cd926db6c53d1434e439f3dcf09eeb5087815847904",
+    "tools/wisdom_offense_preservation.py": "5d66ed56bd6a985d16f31b9d1c46f348521a340437f1038733b21a8662ad0485",
+    "tools/wisdom_preservation.py": "95a6a8d74819dd68d25eb442370d1a95339f8955b441471a34c580c4ef4bbc67"
+  }
+}

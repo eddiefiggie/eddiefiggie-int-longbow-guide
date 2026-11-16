@@ -100,7 +100,7 @@ the current Fortification interaction rule still lacks observation provenance,
 and Spot's Competence/Morale/Luck combinations need positive evidence of their
 own. Qualifying any one component would not resolve those complete totals.
 
-## Bounded INT interactions — current draft build 11-15-26.6
+## Bounded INT interactions — draft checkpoint 11-15-26.6
 
 The [new source packet](../../evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json)
 retains the original audit observations. Wiki loading-screen Tip 179 explicitly
@@ -135,3 +135,45 @@ new contradiction before expanding the rule. The
 [integration record](../../evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json)
 separates documentary derivation, software verification and outstanding live
 mechanics validation.
+
+## Scoped offensive corrections — current draft build 11-15-26.7
+
+The [offensive claim inventory](../../evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json)
+and [source register](../../evidence/wisdom-loadout/offensive-sources-2026-11-15.json)
+retain the read-only audit's 27 Wiki observations and reconciled findings.
+The register is a transcription of displayed metadata and paraphrased source
+observations. It is not the original complete DOM capture, and its new file hash
+cannot be substituted for original capture provenance. No ledger qualification,
+component, rule or calculated result is changed by this integration.
+
+Current prose distinguishes the two bow ability passives (2× the operative
+modifier after both feats) from Know the Angles' separate Insight bonus. Flaming
+uses d6 Fire dice and Fire Spell Power; U63 supersedes the intermediate U62
+d8/75% wording. Named feat/tree sources give 4d6 while Chaotic / 2d6 otherwise
+from level 30; the selected Emerald adds one die only while its ML34 boots are
+equipped, giving 5d6 / 3d6. The full selected kit remains ML36. This is not a
+complete character total or an unconditional damage value.
+
+The earlier Combustion applicability gap is now narrowed: the selected Flaming
+definition supports Fire Spell Power's relevance to that imbue. Overlapping
+Equipment bonuses, complete Spell Power, target defenses and realized damage
+remain separate. Melancholic's weapon rider and Dolorous's proc do not inherit
+Flaming scaling from sharing the Fire element. Original recipe qualification
+and its dated limits remain preserved.
+
+Feywild is purchased at 15 in the selected schedule. Historical profile bands
+must identify their evaluated level; the stored engine has no level 14 case.
+The historical returned score includes speed and is not per-attack damage or
+calibrated DPS. Omitted Seeker, Combat Archery's extra weapon die, defenses,
+current rotation and separate channels prevent a current winner claim.
+Armor-supplied 20% Enhancement alacrity makes an equal bow bonus redundant in
+that equipped kit; it does not certify actual rate or eliminate other Haste
+benefits. Doubleshot multiplies eligible damage and is not a new independent
+attack/proc roll. Above-200% scaling limits extension of the historical model.
+
+Common mitigation alone does not erase the relative benefit of eligible flat
+damage. This algebra corrects the Reaper rationale without changing priorities
+or validating exact Reaper rounding and channel treatment. Critical-profile
+interactions, the dated confirmation conflict, proc uptime, full-character
+totals and sustained DPS remain unresolved. The preserved historical archive
+is not rewritten into current guidance.

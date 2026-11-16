@@ -14,6 +14,7 @@ from unittest.mock import patch
 
 import stacking_audit as audit
 import wisdom_int_stacking_preservation as preservation
+import wisdom_offense_preservation as offense
 from test_lamordia_handling import Document, norm
 
 
@@ -460,14 +461,14 @@ class CurrentScopedIntPresentationTests(unittest.TestCase):
         self.assertIn('Tip 179 was last modified in 2022', audit_text)
         self.assertIn('old Fortification record', audit_text)
 
-    def test_current_generated_outputs_and_path_rebased_snapshot_match(self):
-        from build_stacking_audit import detail, validate_guide
+    def test_point_six_generated_outputs_and_path_rebased_snapshot_match(self):
         from build_snapshot import snapshot_html
-        from wisdom_loadout import load, render_recipe
-        current = (ROOT / 'index.html').read_text()
-        self.assertTrue(validate_guide(current, audit.load()))
-        self.assertIn(render_recipe(load()), current)
-        self.assertEqual((ROOT / 'endgame-stacking-audit.html').read_text(), detail(audit.load()))
+        renderer = offense.historical_audit_renderer()
+        recipe = offense.historical_recipe_renderer()
+        current = offense.checkpoint_file_text('index.html')
+        self.assertTrue(renderer.validate_guide(current, audit.load()))
+        self.assertIn(recipe.render_recipe(recipe.load()), current)
+        self.assertEqual(offense.checkpoint_file_text('endgame-stacking-audit.html'), renderer.detail(audit.load()))
         self.assertEqual((ROOT / 'versions/11-15-26.6.html').read_text(), snapshot_html(current))
         excerpts = json.loads((ROOT / 'evidence/endgame-stacking/source-excerpts.json').read_text())
         self.assertEqual(excerpts['sources'], audit.load()['sources'])

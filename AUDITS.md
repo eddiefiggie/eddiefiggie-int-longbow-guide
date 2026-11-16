@@ -2,6 +2,52 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Scoped offensive-mechanics integration — 15 November 2026
+
+The owner selected option 1 after the completed read-only offensive audit:
+integrate supported source records and current explanatory corrections into
+draft PR 47, regenerate required outputs and verify the result. Startup matched
+remote head `cdb39fe7cdfbcbb2d2143c49c88979b008158c28`, staged tree
+`11b6e905e2174ea9bcae0ad77c7aaf224e999701` and the existing approved feature branch,
+with no unstaged or untracked paths. Local HEAD remained the known base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328`; no checkout/reset/fetch was used.
+
+The [source register](evidence/wisdom-loadout/offensive-sources-2026-11-15.json)
+records 27 browser-observed Wiki pages with displayed revisions, original
+observation windows and paraphrased scope. These are transcribed observations,
+not an exported complete raw DOM packet or independently reopened historical
+revision bodies. The date is 15 November Pacific; the observations occurred
+16 November UTC. Cached article ages, old modification dates and the dated
+Critical hit confirmation conflict remain explicit. No old observation or source
+grade is repaired, and no component is newly admitted to the calculator.
+
+The [reconciled inventory](evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json)
+distinguishes current corrections from historical records. The selected two
+bow ability passives give 2× the operative modifier once acquired, with Know the
+Angles separate. U63's d6/100% normalization supersedes U62's intermediate
+imbue rule. Named sources give 4d6/2d6 at 30, or 5d6/3d6 with the Emerald-bearing
+ML34 boots equipped; the complete kit remains ML36. The independent review
+caught the host-level gate and protected the archived 1440/1468 and superseded 1207
+passages from being counted as current errors.
+
+Feywild's chosen purchase is15; no stored level 14 model case changes. The
+historical table now identifies its evaluated levels. Its returned score
+includes speed, omits important offensive/defense inputs and does not simulate
+the current recipe. Current armor 20% Enhancement alacrity duplicates an equal
+bow bonus; Doubleshot scales eligible damage rather than creating independent
+attacks or proc opportunities. Common Reaper mitigation does not itself remove
+the relative value of eligible flat damage. None of these findings establishes
+a current DPS winner or permits silent priority/gear changes.
+
+Build 11-15-26.7 reconciles current prose and generated explanations, while the
+ledger, selected data, engine, full historical model results and earlier source
+records remain literal. Source-supported Flaming applicability does not transfer
+to every Fire rider/proc or certify whole-character Spell Power/damage. The
+[integration receipt](evidence/wisdom-loadout/offensive-integration-2026-11-15.json)
+records actual preservation, test, builder and draft-update results. Browser
+layout/accessibility/print QA and live-game validation remain separate. No new
+optimizer solve, crafting, purchase, merge or publication is included.
+
 ## Bounded ten-pair INT rule and fresh Fortification interaction — 15 November 2026
 
 The owner selected option 1 after the read-only stacking/type audit: integrate

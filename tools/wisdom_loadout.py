@@ -341,8 +341,11 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         'direct item-tooltip support. Chains Equipment Combustion +142 and Quality INT +3 '
         'are now <strong>source-supported recipe derivations</strong>: separate host, '
         'Legendary recipe and category-definition records, not invented finished-item tooltips. '
-        'The 142 is a selected-gear Fire Spell Power contribution, not weapon damage, '
-        'established imbue scaling, full-character Spell Power or DPS. '
+        'The 142 is a selected-gear Fire Spell Power contribution. The scoped offensive '
+        'audit supports its applicability to the selected Arcane Archer Flaming imbue '
+        'while active; overlapping Equipment Spell Power can reduce its marginal benefit. '
+        'It is not weapon damage, full-character Spell Power or DPS, and does not '
+        'establish scaling for Melancholic or Dolorous weapon effects. '
         'Seven additional INT definitions now have direct source support: Melancholic +15 Enhancement, '
         'Solar +4 Artifact, Lunar +4 Profane, Festive +2, Dimlight +2 Exceptional, '
         'Globe +1 Exceptional and native Celestial +2 Profane. All nine selected INT definitions '
@@ -357,6 +360,8 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         'relationship only; it does not classify the selected Chains Prefix or qualify Queen. '
         'Chains Fortification and Spot remain excluded. Equipment, priorities, modeled amounts '
         'and exceptions are unchanged; no universal different-type stacking rule is introduced. '
+        + _link('evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json',
+                'Scoped offensive findings, conditions and remaining limits') + ' · '
         + _link('evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json',
                 'Bounded ten-pair integration and remaining limits') + ' · '
         + _link('evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json',
@@ -377,7 +382,7 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         _cells(['Chains · Prefix Fortification +142%', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
                 'Legendary value is explicit. Fresh standard-item/Insightful interaction evidence still lacks a supported premise classifying this selected Slavers Prefix as standard Enhancement Fortification.']),
         _cells(['Chains · Suffix Combustion +142', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
-                'Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power only; selected imbue applicability and DPS remain separate.']),
+                'Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power. The separate offensive audit supports selected Flaming applicability, not a full Spell Power stack, weapon-rider scaling or DPS result.']),
         _cells(['Chains · Bonus Quality INT +3', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
                 'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input; the separate bounded rule now supplies its selected mixed-type INT edges, including Insight/Quality.']),
         _cells(['Chains · Extra Spot +20', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
@@ -519,7 +524,7 @@ def render_priorities(data):
     pins = [_cells([_h(slot), _h(value['variant_id'])]) for slot, value in query['slotConstraints'].items() if value['type'] == 'pin']
     out.append('<details><summary>Fixed equipment in this search</summary>' + _table('wisdom-query-pins', 'Exact ten equipment pins in the original query', ['Slot', 'Pinned item'], pins) + '</details>')
     out.append('<p>The shared manifest preserves the complete query, including every exclusion, target order, type exclusion, pin, cap and floor. '
-               'Insight Deadly is not added on top of Know the Angles. Gear alone does not establish final critical range, critical damage, Doubleshot effectiveness, imbue scaling or sustained DPS.</p></section>')
+               'Insight Deadly is not added on top of Know the Angles. Gear alone does not establish final critical range, critical damage, Doubleshot effectiveness, realized imbue damage or sustained DPS.</p></section>')
     return '\n'.join(out)
 
 

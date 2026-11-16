@@ -6,9 +6,30 @@ and context checks work independently of the immutable capture identity check.
 import copy
 import json
 import unittest
+import wisdom_offense_preservation as offense
 
 from sapphire_evidence import (FIXTURE, ROOT, load_record, validate_guide,
                                validate_source, verify_bytes)
+
+
+# Independently reviewed .7 context, deliberately literal rather than copied
+# from the HTML under test. Only the unrelated Flaming progression changed;
+# all required Sapphire claims, source fields and other full contexts remain
+# the original contract. The original complete contract still runs on exact .6.
+CURRENT_ROADMAP_CONTEXT = (
+    '4-5Arcane Archer: Arcane Archer, Elemental Arrows (Flaming). Deepwood: Far Shot, '
+    'Stealthy 3, Favored Defense 1Cheap Shot from 5; Sapphire Sting from 7 (not at 4-5)'
+    'The Flaming Arrows imbue: 1d6 now; named feat-and-tree subtotal 4d6 while Chaotic / '
+    '2d6 otherwise at 30. The selected Emerald’s later ML34-host contribution is detailed '
+    'separately. +1 bow enhancement; three sneak dice, the fourth at 6')
+
+
+def current_guide_record(original):
+    record = copy.deepcopy(original)
+    roadmap = [claim for claim in record['guide_claims'] if claim['name'] == 'roadmap']
+    assert len(roadmap) == 1
+    roadmap[0]['context_text'] = CURRENT_ROADMAP_CONTEXT
+    return record
 
 
 class SapphireEvidenceTests(unittest.TestCase):
@@ -18,6 +39,7 @@ class SapphireEvidenceTests(unittest.TestCase):
         cls.raw = (FIXTURE / 'source.json').read_bytes()
         cls.source = json.loads(cls.raw)
         cls.guide = (ROOT / 'index.html').read_text()
+        cls.current_record = current_guide_record(cls.record)
 
     def test_exact_retained_bytes(self):
         verify_bytes(self.raw, self.record)
@@ -26,7 +48,21 @@ class SapphireEvidenceTests(unittest.TestCase):
         validate_source(self.source, self.record)
 
     def test_selected_published_occurrences(self):
-        validate_guide(self.guide, self.source, self.record)
+        validate_guide(offense.checkpoint_file_text('index.html'), self.source, self.record)
+        validate_guide(self.guide, self.source, self.current_record)
+
+    def test_original_and_current_whole_context_guards_remain_strict(self):
+        original = offense.checkpoint_file_text('index.html')
+        mutant = original.replace('The Flaming Arrows imbue (1d6 now, 4d6 from 30 while Chaotic)',
+                                  'Unsupported replacement of the original roadmap context', 1)
+        self.assertNotEqual(mutant, original)
+        with self.assertRaisesRegex(ValueError, 'roadmap: context drift'):
+            validate_guide(mutant, self.source, self.record)
+        mutant = self.guide.replace('The selected Emerald’s later ML34-host contribution',
+                                   'The selected Emerald’s later ML28-host contribution', 1)
+        self.assertNotEqual(mutant, self.guide)
+        with self.assertRaisesRegex(ValueError, 'roadmap: context drift'):
+            validate_guide(mutant, self.source, self.current_record)
 
     def test_byte_corruption_is_rejected(self):
         for raw in (self.raw + b' ', self.raw.replace(b'700645', b'700646')):
@@ -91,7 +127,7 @@ class SapphireEvidenceTests(unittest.TestCase):
                 self.assertIn(old, row)
                 mutant = self.guide[:start] + row.replace(old, new) + self.guide[end:]
                 with self.assertRaisesRegex(ValueError, 'Guide item cells'):
-                    validate_guide(mutant, self.source, self.record)
+                    validate_guide(mutant, self.source, self.current_record)
 
     def test_contradictory_additions_in_selected_context_are_rejected(self):
         for before, addition in [
@@ -104,7 +140,7 @@ class SapphireEvidenceTests(unittest.TestCase):
                 self.assertIn(before, self.guide)
                 mutant = self.guide.replace(before, before + addition, 1)
                 with self.assertRaisesRegex(ValueError, 'context drift'):
-                    validate_guide(mutant, self.source, self.record)
+                    validate_guide(mutant, self.source, self.current_record)
 
     def test_each_selected_claim_and_uncertainty_is_guarded(self):
         # Use parsed text replacement for every required claim, so inline anchors
@@ -126,7 +162,7 @@ class SapphireEvidenceTests(unittest.TestCase):
                     markup = next(b for b in candidates if norm(Document(b).root.text()) == text)
                     mutant = original.replace(markup, '<'+block.tag+'>'+text.replace(required, '[REMOVED]')+'</'+block.tag+'>', 1)
                     with self.assertRaises(ValueError):
-                        validate_guide(mutant, self.source, self.record)
+                        validate_guide(mutant, self.source, self.current_record)
 
 
 if __name__ == '__main__':

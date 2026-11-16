@@ -213,9 +213,16 @@ also does not establish local-guide rendering QA. Source-qualified item
 definitions still require the current ledger's exact provenance and positive
 interaction gates before counting.
 
+The subsequent [scoped offensive audit](../../evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json)
+supports the selected Flaming imbue's Fire Spell Power applicability and the
+Emerald's conditional named-source die contribution. Current prose distinguishes
+level30's 4d6/2d6 from 5d6/3d6 with the selected ML34 boots equipped. Those
+documentary findings do not change calculator qualification or establish full
+character damage, weapon-rider scaling, proc uptime or a current DPS winner.
 Next validation should resolve the remaining Fortification classification, Spot
-type, and offensive source/applicability gaps needed for DPS and critical-profile
-claims. The selected INT interaction gap is closed only within the .6 contract.
+type, and complete offensive interactions/scenarios needed for DPS and
+critical-profile claims. The selected INT interaction gap is closed only within
+the .6 contract.
 The original direct
 typed-numeric-clause path is preserved for unrelated inputs; the approved
 recipe-proof route is limited to four fixed Chains IDs and cannot infer a

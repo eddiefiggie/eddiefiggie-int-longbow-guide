@@ -91,6 +91,36 @@ model values, Festive-only event exception and HA63 acquisition-evidence
 exception are unchanged. No new solve, crafting or purchase is authorized by
 this selection. See the [current integration receipt](../../evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json).
 
+## Approved bounded offensive corrections — 15 November 2026
+
+The owner selected option 1 after the completed read-only offensive audit:
+integrate supported source records and current explanatory corrections into
+**draft PR #47**, regenerate the required outputs and verify the change. This
+authorizes the bounded draft update, not a new DPS-model design, optimizer solve,
+merge or publication.
+
+The current guide may reconcile Precise Shot plus Improved Precise Shot's 2×
+operative ability modifier, separate Know the Angles, named imbue contributions
+and their level/alignment/activation conditions, Feywild purchase timing and
+representative critical bands, historical score units and limitations, current
+armor alacrity overlap, Doubleshot damage language and the common-mitigation
+Reaper rationale. Current illustrative arithmetic follows the corrected inputs;
+frozen historical model bytes and complete results remain unchanged.
+
+The level- 30 feat-and-tree imbue subtotal remains 4d6 while Chaotic / 2d6
+otherwise. The Emerald-equipped subtotal is 5d6 / 3d6 only when its selected
+ML34 boots are equipped; the full selected kit is ML36. Archived rankings and
+superseded Summer's End notes retain their historical content.
+
+Selected gear, crafts, sockets, one Minor Artifact, all 32 priorities, calculator
+components/rules/results, original claim grades, snapshots and approved
+exceptions remain unchanged. New source summaries do not automatically satisfy
+the ledger's exact raw-source qualification contract. Fire Spell Power
+applicability to selected Flaming is distinct from complete character damage,
+weapon-rider/proc scaling or a winning bow. See the
+[offensive integration receipt](../../evidence/wisdom-loadout/offensive-integration-2026-11-15.json)
+for actual implementation and verification.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

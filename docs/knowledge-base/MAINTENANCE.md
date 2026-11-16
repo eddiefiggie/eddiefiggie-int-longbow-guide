@@ -220,3 +220,21 @@ Chains/Queen Fortification and Chains Spot remain excluded. Preserve selection,
 priorities, recipes, claim grades, model outputs and prior snapshots. Build a
 new path-rebased .6 snapshot and record actual suite/CI status separately from
 browser QA, source freshness, in-game testing and release authorization.
+
+### Bounded offensive-text integration layer
+
+Build 11-15-26.7 corrects current explanations and generated applicability labels,
+with a separate source/claim inventory. The source summaries are transcribed
+observations and paraphrases, not new raw-capture records for ledger counting.
+Keep the selection manifest, ledger, calculator, recipe proof engine, bow model,
+old evidence and previous snapshots literal. Compare complete results, not only
+the INT headline, when verifying this presentation-only integration.
+
+`tools/wisdom_offense_preservation.py` restores the exact .6 checkpoint before
+the existing .6-to-.5 and earlier contracts. Keep their fixed baselines and
+negative controls intact; current .7 assertions must read actual production
+files separately. Distinguish level 30's 4d6/2d6 named imbue subtotal from the
+equipped Emerald's 5d6/3d6, and preserve archived experiment sections exactly.
+Use all four documented builders and a new path-rebased snapshot. Report actual
+aggregate/CI results in the integration receipt; browser rendering, keyboard
+behavior, print pagination and live-game validation remain separate checks.

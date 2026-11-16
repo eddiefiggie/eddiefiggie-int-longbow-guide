@@ -3,6 +3,7 @@ import re
 import unittest
 from pathlib import Path
 import bowmodel
+import wisdom_offense_preservation as offense
 
 ROOT = Path(__file__).resolve().parents[1]
 HTML = (ROOT / 'index.html').read_text()
@@ -53,7 +54,8 @@ class BowCorrectionTests(unittest.TestCase):
         self.assertNotIn('So a bow printed 19-20 without Keen', HTML)
 
     def test_sapphire_comparison_level_eight_only(self):
-        self.assertIn('<tr><td>8 (19-20 x3)</td>', HTML)
+        self.assertIn('<tr><td>8 (19-20 x3)</td>', offense.checkpoint_file_text('index.html'))
+        self.assertIn('<tr><td>8 · evaluated at 8 (19-20 x3)</td>', HTML)
         self.assertNotIn('<tr><td>8-9 (19-20 x3)</td>', HTML)
         self.assertIn('its comparison below is evaluated at level 8 only', HTML)
 

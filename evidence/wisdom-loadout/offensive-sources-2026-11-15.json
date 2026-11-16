@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "record_type": "scoped-offensive-source-observation-register",
+  "review_boundary": {
+    "repository": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "branch": "feat/wisdom-loadout-priorities",
+    "reviewed_remote_head": "cdb39fe7cdfbcbb2d2143c49c88979b008158c28",
+    "reviewed_tree": "11b6e905e2174ea9bcae0ad77c7aaf224e999701",
+    "review_date_local": "2026-11-15",
+    "review_timezone": "America/Los_Angeles",
+    "location_basis": "Repository locations retained from the completed audit refer to the reviewed head/tree, before current text integration; line numbers are not promised to remain current."
+  },
+  "origin": {
+    "artifact_name": "INTiana-Offensive-Mechanics-Audit-2026-11-15.html",
+    "artifact_sha256": "0433fb072630bec4c97fa3cc6d402a95583df1383b5cada13f6d2f5f56e82417",
+    "embedded_data_element": "script#audit-data",
+    "artifact_hash_scope": "Identity of the completed audit HTML bytes only; not a hash of original browser DOM, an authenticated source archive or proof that a displayed permanent revision was reopened.",
+    "completed_read_only_audit_state": {
+      "repo_edits": false,
+      "tests_run": false,
+      "builders_run": false,
+      "optimizer_run": false,
+      "remote_writes": false,
+      "untracked_paths": [],
+      "unstaged_paths": [],
+      "reviewers_finished": true
+    },
+    "transfer": "All 27 wiki_observations and all 8 publisher_sources are copied literally from the completed reconciled audit register."
+  },
+  "provenance": {
+    "record_kind": "transcribed observation summaries and paraphrases",
+    "raw_dom_capture_included": false,
+    "exact_quotation_claimed": false,
+    "cryptographic_browser_capture_binding": false,
+    "independently_reopened_revision_urls": false,
+    "retained_source_metadata_repaired": false,
+    "new_component_qualification": false,
+    "original_limit": "Manually transcribed observation register and reconciled review records; not a full raw DOM export. Original specialist reports remain temporary working notes; their final decisions are fully represented here.",
+    "revision_limit": "Displayed permanent links identify the revisions reported by the inspected article pages. Each oldid URL was not independently reopened; page modification dates are distinct from observation windows and do not date each individual rule.",
+    "cache_limit": "Recorded pages showed logged-out cache ages of 4 to 14 hours. No cache match was recorded for Overwhelming Critical; a missing cache value is not zero.",
+    "scope_limit": "The Imbue_Dice request redirected to Imbue and its collapsed imbue table was not expanded. The crafting review covered the needed visible legendary rows, not omitted tail content.",
+    "publisher_limit": "The audit records that these official pages were opened, but its embedded register supplies no per-page capture timestamps or raw text; none are invented here. Earlier updates are historical where later updates supersede them.",
+    "repository_limit": "Repository records establish selected choices, prior evidence boundaries or implementation behavior. They do not independently prove mechanics and receive no new external observation timestamp.",
+    "attribution": "DDO Wiki contributors",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "license_limit": "Attribution preserves the observed Wiki license notice; it does not supply missing source observations or authenticate the transcriptions."
+  },
+  "wiki_observations": [
+    {
+      "id": "calamitous",
+      "title": "Item:Legendary Calamitous Longbow",
+      "canonical_url": "https://ddowiki.com/page/Item:Legendary_Calamitous_Longbow",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Item:Legendary_Calamitous_Longbow&oldid=666359",
+      "displayed_revision": 666359,
+      "displayed_last_modified": "2025-11-19 11:17 UTC",
+      "observed_begin_utc": "2026-11-16T00:00:48.612Z",
+      "observed_end_utc": "2026-11-16T00:00:48.637Z",
+      "displayed_cache_age_hours": 11,
+      "scope": "Printed weapon fields and four Lamordia weapon craft slots."
+    },
+    {
+      "id": "threat-range",
+      "title": "Threat range",
+      "canonical_url": "https://ddowiki.com/page/Threat_range",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Threat_range&oldid=720167",
+      "displayed_revision": 720167,
+      "displayed_last_modified": "2026-10-10 22:21 UTC",
+      "observed_begin_utc": "2026-11-16T00:00:49.788Z",
+      "observed_end_utc": "2026-11-16T00:00:49.816Z",
+      "displayed_cache_age_hours": 7,
+      "scope": "Base range, Improved Critical and bonus-type qualifications."
+    },
+    {
+      "id": "combat-archery",
+      "title": "Combat Archery",
+      "canonical_url": "https://ddowiki.com/page/Combat_Archery",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Combat_Archery&oldid=719285",
+      "displayed_revision": 719285,
+      "displayed_last_modified": "2026-10-07 06:30 UTC",
+      "observed_begin_utc": "2026-11-16T00:00:50.593Z",
+      "observed_end_utc": "2026-11-16T00:00:50.617Z",
+      "displayed_cache_age_hours": 12,
+      "scope": "Additional weapon die and bow critical increments; feat prerequisites."
+    },
+    {
+      "id": "harper",
+      "title": "Harper Agent enhancements",
+      "canonical_url": "https://ddowiki.com/page/Harper_Agent_enhancements",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Harper_Agent_enhancements&oldid=723355",
+      "displayed_revision": 723355,
+      "displayed_last_modified": "2026-10-20 04:08 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:06.489Z",
+      "observed_end_utc": "2026-11-16T00:01:06.550Z",
+      "displayed_cache_age_hours": 12,
+      "scope": "Strategic Combat and Know the Angles applicability."
+    },
+    {
+      "id": "arcane-archer",
+      "title": "Arcane Archer enhancements",
+      "canonical_url": "https://ddowiki.com/page/Arcane_Archer_enhancements",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Arcane_Archer_enhancements&oldid=730899",
+      "displayed_revision": 730899,
+      "displayed_last_modified": "2026-11-13 07:22 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:07.654Z",
+      "observed_end_utc": "2026-11-16T00:01:07.681Z",
+      "displayed_cache_age_hours": 14,
+      "scope": "Flaming toggle uses d6 Fire dice and Fire Spell Power."
+    },
+    {
+      "id": "improved-precise-shot",
+      "title": "Improved Precise Shot",
+      "canonical_url": "https://ddowiki.com/page/Improved_Precise_Shot",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Improved_Precise_Shot&oldid=683999",
+      "displayed_revision": 683999,
+      "displayed_last_modified": "2026-04-12 19:04 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:08.335Z",
+      "observed_end_utc": "2026-11-16T00:01:08.349Z",
+      "displayed_cache_age_hours": 7,
+      "scope": "Passive bow ability contribution stacks with Precise Shot; active stance has separate effects."
+    },
+    {
+      "id": "precise-shot",
+      "title": "Precise Shot",
+      "canonical_url": "https://ddowiki.com/page/Precise_Shot",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Precise_Shot&oldid=682184",
+      "displayed_revision": 682184,
+      "displayed_last_modified": "2026-04-04 23:35 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:09.023Z",
+      "observed_end_utc": "2026-11-16T00:01:09.037Z",
+      "displayed_cache_age_hours": 5,
+      "scope": "Passive bow ability contribution and Archer Focus."
+    },
+    {
+      "id": "horizon-walker",
+      "title": "Horizon Walker enhancements",
+      "canonical_url": "https://ddowiki.com/page/Horizon_Walker_enhancements",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Horizon_Walker_enhancements&oldid=721857",
+      "displayed_revision": 721857,
+      "displayed_last_modified": "2026-10-16 00:55 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:42.836Z",
+      "observed_end_utc": "2026-11-16T00:01:42.883Z",
+      "displayed_cache_age_hours": 6,
+      "scope": "Tier-five gate, Feywild Attunement, Scattershot and Haste SLA."
+    },
+    {
+      "id": "patience",
+      "title": "Patience",
+      "canonical_url": "https://ddowiki.com/page/Patience",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Patience&oldid=625511",
+      "displayed_revision": 625511,
+      "displayed_last_modified": "2025-04-16 11:57 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:43.797Z",
+      "observed_end_utc": "2026-11-16T00:01:43.813Z",
+      "displayed_cache_age_hours": 14,
+      "scope": "Critical multiplier increase and attack-speed cost."
+    },
+    {
+      "id": "overwhelming-critical",
+      "title": "Overwhelming Critical",
+      "canonical_url": "https://ddowiki.com/page/Overwhelming_Critical",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Overwhelming_Critical&oldid=598868",
+      "displayed_revision": 598868,
+      "displayed_last_modified": "2024-09-12 06:43 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:44.527Z",
+      "observed_end_utc": "2026-11-16T00:01:44.539Z",
+      "displayed_cache_age_hours": null,
+      "scope": "High-roll critical multiplier and prerequisites."
+    },
+    {
+      "id": "shiradi",
+      "title": "Shiradi Champion",
+      "canonical_url": "https://ddowiki.com/page/Shiradi_Champion",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Shiradi_Champion&oldid=720961",
+      "displayed_revision": 720961,
+      "displayed_last_modified": "2026-10-14 08:17 UTC",
+      "observed_begin_utc": "2026-11-16T00:01:45.423Z",
+      "observed_end_utc": "2026-11-16T00:01:45.458Z",
+      "displayed_cache_age_hours": 12,
+      "scope": "Lore, Hunt’s End, Whirling Wrists, Flickering Fingers and proc descriptions."
+    },
+    {
+      "id": "doubleshot",
+      "title": "Doubleshot",
+      "canonical_url": "https://ddowiki.com/page/Doubleshot",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Doubleshot&oldid=719351",
+      "displayed_revision": 719351,
+      "displayed_last_modified": "2026-10-07 12:39 UTC",
+      "observed_begin_utc": "2026-11-16T00:02:29.037Z",
+      "observed_end_utc": "2026-11-16T00:02:29.078Z",
+      "displayed_cache_age_hours": 5,
+      "scope": "Damage multiplication, eligible channels and reduced scaling above 200 percent."
+    },
+    {
+      "id": "ranged-alacrity",
+      "title": "Ranged Alacrity",
+      "canonical_url": "https://ddowiki.com/page/Ranged_Alacrity",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Ranged_Alacrity&oldid=612753",
+      "displayed_revision": 612753,
+      "displayed_last_modified": "2024-12-24 13:43 UTC",
+      "observed_begin_utc": "2026-11-16T00:02:29.867Z",
+      "observed_end_utc": "2026-11-16T00:02:29.890Z",
+      "displayed_cache_age_hours": 6,
+      "scope": "Enhancement ranged attack speed; same-type overlap with Haste."
+    },
+    {
+      "id": "haste",
+      "title": "Haste",
+      "canonical_url": "https://ddowiki.com/page/Haste",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Haste&oldid=724664",
+      "displayed_revision": 724664,
+      "displayed_last_modified": "2026-10-27 04:06 UTC",
+      "observed_begin_utc": "2026-11-16T00:02:30.915Z",
+      "observed_end_utc": "2026-11-16T00:02:30.957Z",
+      "displayed_cache_age_hours": 4,
+      "scope": "Enhancement attack-speed bonus and other spell benefits."
+    },
+    {
+      "id": "manyshot",
+      "title": "Manyshot",
+      "canonical_url": "https://ddowiki.com/page/Manyshot",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Manyshot&oldid=721096",
+      "displayed_revision": 721096,
+      "displayed_last_modified": "2026-10-14 14:24 UTC",
+      "observed_begin_utc": "2026-11-16T00:02:31.680Z",
+      "observed_end_utc": "2026-11-16T00:02:31.704Z",
+      "displayed_cache_age_hours": 4,
+      "scope": "Three arrows, current special-attack bonuses and passive BAB-based Doubleshot."
+    },
+    {
+      "id": "demogorgon-sinew",
+      "title": "Item:Legendary Demogorgon's Sinew",
+      "canonical_url": "https://ddowiki.com/page/Item:Legendary_Demogorgon's_Sinew",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Item:Legendary_Demogorgon%27s_Sinew&oldid=714159",
+      "displayed_revision": 714159,
+      "displayed_last_modified": "2026-09-16 15:18 UTC",
+      "observed_begin_utc": "2026-11-16T00:04:18.520Z",
+      "observed_end_utc": "2026-11-16T00:04:18.535Z",
+      "displayed_cache_age_hours": 13,
+      "scope": "Printed weapon fields and Elasticity affix."
+    },
+    {
+      "id": "critical-hit",
+      "title": "Critical hit",
+      "canonical_url": "https://ddowiki.com/page/Critical_hit",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Critical_hit&oldid=533336",
+      "displayed_revision": 533336,
+      "displayed_last_modified": "2023-02-03 09:31 UTC",
+      "observed_begin_utc": "2026-11-16T00:04:19.397Z",
+      "observed_end_utc": "2026-11-16T00:04:19.431Z",
+      "displayed_cache_age_hours": 14,
+      "scope": "Critical stages and damage-channel distinctions; dated confirmation evidence."
+    },
+    {
+      "id": "emerald-imbue",
+      "title": "Item:Emerald of Arcane Empowerment",
+      "canonical_url": "https://ddowiki.com/page/Item:Emerald_of_Arcane_Empowerment",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Item:Emerald_of_Arcane_Empowerment&oldid=644546",
+      "displayed_revision": 644546,
+      "displayed_last_modified": "2025-06-06 20:23 UTC",
+      "observed_begin_utc": "2026-11-16T00:04:20.236Z",
+      "observed_end_utc": "2026-11-16T00:04:20.251Z",
+      "displayed_cache_age_hours": 5,
+      "scope": "One Enhancement bonus imbue die, green augment, ML28."
+    },
+    {
+      "id": "scion-arborea",
+      "title": "Scion of Arborea",
+      "canonical_url": "https://ddowiki.com/page/Scion_of_Arborea",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Scion_of_Arborea&oldid=528658",
+      "displayed_revision": 528658,
+      "displayed_last_modified": "2022-11-10 07:54 UTC",
+      "observed_begin_utc": "2026-11-16T00:04:21.155Z",
+      "observed_end_utc": "2026-11-16T00:04:21.174Z",
+      "displayed_cache_age_hours": 14,
+      "scope": "Selected feat includes one bonus imbue die."
+    },
+    {
+      "id": "harbinger-chaos",
+      "title": "Harbinger of Chaos",
+      "canonical_url": "https://ddowiki.com/page/Harbinger_of_Chaos",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Harbinger_of_Chaos&oldid=679073",
+      "displayed_revision": 679073,
+      "displayed_last_modified": "2026-03-18 07:07 UTC",
+      "observed_begin_utc": "2026-11-16T00:04:21.847Z",
+      "observed_end_utc": "2026-11-16T00:04:21.873Z",
+      "displayed_cache_age_hours": 6,
+      "scope": "Two bonus imbue dice conditional on Chaotic alignment."
+    },
+    {
+      "id": "imbue-dice",
+      "title": "Imbue",
+      "canonical_url": "https://ddowiki.com/page/Imbue",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Imbue&oldid=708088",
+      "displayed_revision": 708088,
+      "displayed_last_modified": "2026-08-26 18:03 UTC",
+      "observed_begin_utc": "2026-11-16T00:05:26.253Z",
+      "observed_end_utc": "2026-11-16T00:05:26.286Z",
+      "displayed_cache_age_hours": 14,
+      "scope": "Imbue rules and update history; the collapsed imbue table was not expanded."
+    },
+    {
+      "id": "elasticity",
+      "title": "Elasticity",
+      "canonical_url": "https://ddowiki.com/page/Elasticity",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Elasticity&oldid=676061",
+      "displayed_revision": 676061,
+      "displayed_last_modified": "2026-02-22 11:48 UTC",
+      "observed_begin_utc": "2026-11-16T00:05:27.277Z",
+      "observed_end_utc": "2026-11-16T00:05:27.306Z",
+      "displayed_cache_age_hours": 5,
+      "scope": "Additional multiplier on qualifying natural 19 or 20 ranged criticals."
+    },
+    {
+      "id": "rapid-shot",
+      "title": "Rapid Shot",
+      "canonical_url": "https://ddowiki.com/page/Rapid_Shot",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Rapid_Shot&oldid=683659",
+      "displayed_revision": 683659,
+      "displayed_last_modified": "2026-04-10 22:02 UTC",
+      "observed_begin_utc": "2026-11-16T00:05:28.215Z",
+      "observed_end_utc": "2026-11-16T00:05:28.243Z",
+      "displayed_cache_age_hours": 5,
+      "scope": "Passive BAB-based Ranged Power for bows; no current calibrated timing measurement."
+    },
+    {
+      "id": "shot-on-run",
+      "title": "Shot on the Run",
+      "canonical_url": "https://ddowiki.com/page/Shot_on_the_Run",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Shot_on_the_Run&oldid=579786",
+      "displayed_revision": 579786,
+      "displayed_last_modified": "2024-06-04 22:19 UTC",
+      "observed_begin_utc": "2026-11-16T00:05:28.998Z",
+      "observed_end_utc": "2026-11-16T00:05:29.027Z",
+      "displayed_cache_age_hours": 6,
+      "scope": "Movement attack-penalty treatment and six Ranged Power."
+    },
+    {
+      "id": "warblade-armor",
+      "title": "Item:Light Armor of the Warblade's Reflection",
+      "canonical_url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "displayed_revision": 685449,
+      "displayed_last_modified": "2026-05-06 08:17 UTC",
+      "observed_begin_utc": "2026-11-16T00:07:56.857Z",
+      "observed_end_utc": "2026-11-16T00:07:56.872Z",
+      "displayed_cache_age_hours": 6,
+      "scope": "Selected armor has Shadow Striker."
+    },
+    {
+      "id": "viktranium-weapons",
+      "title": "Viktranium Experiment crafting",
+      "canonical_url": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Viktranium_Experiment_crafting&oldid=720728",
+      "displayed_revision": 720728,
+      "displayed_last_modified": "2026-10-13 10:05 UTC",
+      "observed_begin_utc": "2026-11-16T00:07:58.665Z",
+      "observed_end_utc": "2026-11-16T00:07:58.724Z",
+      "displayed_cache_age_hours": 12,
+      "scope": "Selected legendary weapon rows: Melancholic, Dolorous, Miserable and separate craft slots."
+    },
+    {
+      "id": "shadow-striker",
+      "title": "Shadow Striker",
+      "canonical_url": "https://ddowiki.com/page/Shadow_Striker",
+      "displayed_revision_url": "https://ddowiki.com/index.php?title=Shadow_Striker&oldid=677712",
+      "displayed_revision": 677712,
+      "displayed_last_modified": "2026-03-04 19:05 UTC",
+      "observed_begin_utc": "2026-11-16T00:08:56.289Z",
+      "observed_end_utc": "2026-11-16T00:08:56.303Z",
+      "displayed_cache_age_hours": 4,
+      "scope": "Ranged Alacrity20 and Profane Doubleshot3; selected armor listed."
+    }
+  ],
+  "publisher_sources": [
+    {
+      "id": "u734",
+      "title": "Update 73.4",
+      "url": "https://www.ddo.com/update-notes/ddo-update-73-4-release-notes?locale=en_US"
+    },
+    {
+      "id": "u76",
+      "title": "Update 76",
+      "url": "https://www.ddo.com/update-notes/ddo-update-76-release-notes"
+    },
+    {
+      "id": "u45",
+      "title": "Update 45",
+      "url": "https://www.ddo.com/update-notes/ddo-update-45-release-notes"
+    },
+    {
+      "id": "u62",
+      "title": "Update 62",
+      "url": "https://www.ddo.com/update-notes/ddo-update-62-release-notes"
+    },
+    {
+      "id": "u63",
+      "title": "Update 63",
+      "url": "https://www.ddo.com/update-notes/ddo-update-63-release-notes"
+    },
+    {
+      "id": "u49",
+      "title": "Update 49",
+      "url": "https://www.ddo.com/update-notes/ddo-update-49-release-notes"
+    },
+    {
+      "id": "u814",
+      "title": "Update 81.4",
+      "url": "https://www.ddo.com/update-notes/ddo-update-81-4-release-notes"
+    },
+    {
+      "id": "u82",
+      "title": "Update 82",
+      "url": "https://www.ddo.com/update-notes/ddo-update-82-release-notes"
+    }
+  ],
+  "publisher_source_context": {
+    "u734": "Precise Shot passive bow ability contribution.",
+    "u76": "Improved Precise Shot additional passive contribution, including with its stance off.",
+    "u45": "Know the Angles Insight damage and ranged applicability.",
+    "u62": "Historical intermediate spell-power imbue rules, including Arcane Archer.",
+    "u63": "Later d6/100-percent normalization, on-critical Doubleshot damage correction and Improved Deception Bluff correction.",
+    "u49": "Doubleshot damage-multiplication change and historical bow changes.",
+    "u814": "Bow speed curve, Manyshot/Scattershot system, Combat Archery range and Doubleshot threshold.",
+    "u82": "Fix to the announced Manyshot/Scattershot critical bonuses."
+  },
+  "repository_sources": [
+    {
+      "id": "repo-guide",
+      "path": "index.html",
+      "scope": "Selected feats, AP purchases, progression, current assertions and explicitly archived experiment sections; build-selection evidence, not independent mechanics authority.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-bowmodel",
+      "path": "tools/bowmodel.py",
+      "scope": "Read-only inspection of frozen assumptions, BANDS, formula and omitted inputs; not a new model execution or current DPS certification.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-selection",
+      "path": "tools/fixtures/wisdom-loadout/selection.json",
+      "scope": "Exact selected items, crafts, sockets, named Emerald host and minimum levels; selection identity, not blanket live-game validation.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-ledger",
+      "path": "tools/fixtures/endgame-stacking/ledger.json",
+      "scope": "Existing component definitions and qualification states; this inventory does not change them.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-corrections",
+      "path": "evidence/wisdom-loadout/corrections.json",
+      "scope": "Retained conditional-effect distinctions and historical source limits; no fresh observation date is supplied.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-affix-claims",
+      "path": "evidence/wisdom-loadout/claims.json",
+      "scope": "Original selected affix claims, including Improved Deception; their original grades remain unchanged.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-chains-proof",
+      "path": "evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json",
+      "scope": "findings[id=chains-combustion]: existing bounded derivation of 142 Equipment Fire Spell Power; preserve its original historical applicability limit.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-coldlight-host",
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "scope": "captures.coldlight-host: retained own-host minimum level 34 and Green socket observation; not one of the 27 new offensive observations.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-artifact-retained",
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "scope": "Entry 5, Yeenoghu's Reign tooltips: Ram's Might, Enhanced Bloodrage and Major Anger; original observation gap remains.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-critical-retained",
+      "path": "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-critical-power-rules-01-evidence.json",
+      "scope": "Retained Seeker/critical-power source receipts; not a fresh Power Critical or four-type Seeker total validation.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    },
+    {
+      "id": "repo-loadout-note",
+      "path": "docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md",
+      "scope": "Selected practical derivative, optimizer priority tuple and documented distinction from complete weapon DPS.",
+      "evidence_kind": "repository or previously retained evidence",
+      "new_external_observation": false
+    }
+  ]
+}

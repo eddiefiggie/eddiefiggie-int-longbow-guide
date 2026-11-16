@@ -13,7 +13,7 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `index.html` | The current guide (self-contained page; images in `img/`) |
 | `versions/` | Every published build, one file each, named by build number (`10-29-26.8.html`; earlier ones `v32.html` … `v44.html`) |
 | `img/` | Cover art and the six enhancement/destiny tree images (rendered on DDO BuildHub) |
-| `tools/bowmodel.py` | The preserved historical per-shot bow model; not a DPS simulation of the current Wisdom loadout |
+| `tools/bowmodel.py` | The preserved historical speed-adjusted bow comparison model; not calibrated DPS or a simulation of the current Wisdom loadout |
 | `tools/fixtures/wisdom-loadout/selection.json` | Shared current endgame recipe, exact optimizer priorities/constraints and model-only achieved values |
 | `tools/build_wisdom_loadout.py` | Generates the current recipe, priority table and one-page rows from that record |
 | `tools/recipe_proofs.py` | Bounded, source-supported recipe proofs for the four selected Chains IDs; not a general inference or stacking engine |
@@ -39,6 +39,12 @@ The [Guide checks workflow](.github/workflows/guide-checks.yml) runs that same d
 ## Audits
 
 See [AUDITS.md](AUDITS.md) for dated Wiki checks, source scope, corrections and unresolved claims. Internal regression tests and optimizer arithmetic are not blanket mechanics certification; open an issue if a number does not match its stated source.
+
+The [scoped offensive-mechanics inventory](evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json)
+records the current ability-modifier, imbue, critical-progression, alacrity and
+Doubleshot corrections separately from preserved historical experiments. Its
+source register contains transcribed browser observations and paraphrases, not
+an exported raw DOM packet or new calculator-qualified component records.
 
 ## Project maintenance
 
