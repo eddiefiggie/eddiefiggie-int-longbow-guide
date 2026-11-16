@@ -368,3 +368,11 @@ Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft a
 
 ## v29 — 2026-10-28
 - Edge-case tests on the affix order; Physical Sheltering ranked third (bundle INT Longbow R10 v3); ML35-36 kit re-solved (seven items changed); Incite trap on Black Earth Guardian's Lenses documented.
+
+## Build 11-16-26.2 (draft selected-gear Doubleshot candidate; not published)
+
+- Qualifies only Quickblade's one 15 Artifact Doubleshot contribution and adds six exact native pairs under a closed 17-rule profile. The four native definitions and sixteen earlier rules remain literal; four existing Artifact relationships are reused.
+- Derives the existing selected-gear **35 at level 36** (`9 Enhancement + 3 Quality + 5 Insight + 3 Profane + 15 Artifact`); level-35 full-kit results remain incomplete. Three distinct equipped hosts, exact ordinary sockets, Chains' one Green-slot upgrade and selected set-suppression context remain prerequisites.
+- Retains the immutable 12-observation/11-page source packet, original native/source timestamps and the Tip 179/Stack caveat. No universal type default, client test, whole-character Doubleshot, Doublestrike, proc-rate or DPS certification is added.
+- Preserves INT 37, WIS 18, CON subset 17/full `null` and the Skull conflict, Fortification 226, direct Spot 27, selected gear, sole Minor Artifact, 32 priorities, crafts/sockets, feats/AP, historical bow results and existing Festive-only/HA63 exceptions.
+- Adds exact outer .2-to-.1 preservation and current public-route guards. Acceptance permits only two of 152 current result objects to change; the other 150, all old-input results and all 39 full bow-model cases remain protected. Four builders, the path-rebased .2 snapshot, aggregate tests and CI are required. See the [integration receipt](evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json) for actual precommit outcomes and draft PR #47 for the delivered head and CI. No new solve, crafting, purchase, merge or publication.

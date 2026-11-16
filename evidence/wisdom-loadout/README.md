@@ -425,7 +425,7 @@ with improved evidence, not new bonuses, whole-character scores, damage-reductio
 percentages or trap-success guarantees. All selected data, priorities, historical
 results, earlier source bytes and approved exceptions are preserved.
 
-## Current Wisdom/Constitution integration — build 11-16-26.1
+## Historical .1 checkpoint — Wisdom/Constitution integration
 
 The [source register](wisdom-con-sources-2026-11-16.json) is the exact frozen
 completed audit record: 12 new observations, nine reused-source references,
@@ -470,3 +470,45 @@ reopened; original cache notices and observation intervals remain literal.
 The Nexus Skull note lacks a separately timed read, and its note-creation time
 is not substituted. No final character score, HP/Spot/Will/DPS result, live-game
 test, new solve, acquisition, merge or publication follows from this integration.
+
+## Current Doubleshot integration — build 11-16-26.2
+
+The immutable [Doubleshot source packet](doubleshot-sources-2026-11-16.json)
+(SHA256 `49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5`)
+contains **12 scoped observations across 11 Wiki pages**, retained native and
+interaction-source bindings, selected host/socket inventory, set-suppression
+findings and explicit equipment-label mappings. It preserves the completed
+read-only audit's interpretation. Later authorization, implementation and
+actual verification belong in the separate
+[integration receipt](doubleshot-integration-2026-11-16.json).
+
+The new definition is Quickblade's one **15 Artifact Doubleshot** reward for
+three distinct equipped hosts, each holding one ML30 Colorless augment. The ordinary sockets,
+host levels, Chains' one Green-slot recipe (100/50/50/50 Legendary ingredients)
+and full-kit ML36 are separate applicability premises. Selected occupancy
+credits no suppressed native set; that is not evidence of an owned item's state.
+Only six exact native pairs are added under Tip 179 with the Stack caveat;
+four existing Artifact relationships complete the derived **35** at level 36.
+The native 9 Enhancement, 3 Quality, 5 Insight and 3 Profane bindings stay intact.
+
+The November 16 UTC observations are scoped browser transcriptions, not full
+DOM/HTTP archives, client observations or historical-byte authentication.
+The parent set table and its direct subpage are one transclusion, not independent
+authorities. Slave Lords' recipe read at 05:14:35.225–05:14:51.536 UTC and its
+metadata supplement at 05:15:00.324–05:15:00.346 retain separate intervals. The
+Augment Slot cache string's literal negative age and other absent metadata are
+not repaired. Displayed permanent links were not independently reopened.
+
+Reused native definitions retain their November 7 observations; Tip 179,
+Artifact and both Stack contexts keep their original times, revision strings,
+actual file identities and capture limits. A new observation does not refresh
+or regrade an old record. Historical publisher notes corroborate generic
+augment/set context, not Quickblade's exact 15. This remains community-source
+mechanics support, not a live-client or whole-character/DPS certificate.
+
+The new 17-rule profile and exact five-member public family checks preserve
+all previous definitions, rules, selected data, prior snapshots and claim grades.
+Level-35 full-kit results stay incomplete. The earlier INT/WIS/CON/Fortification/
+Spot outcomes and Skull conflict remain unchanged. The receipt records actual
+precommit verification; draft PR #47 records the delivered head and its CI
+outcome. The completed source audit remains separate from software validation.

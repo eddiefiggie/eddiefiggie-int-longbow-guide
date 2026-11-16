@@ -14,6 +14,7 @@ from recipe_proofs import BOUNDED_COMPONENT_IDS, validate_component as validate_
 import fort_spot_proofs as fort_spot
 import chains_type_proofs as chains_types
 import wisdom_ability_proofs as abilities
+import wisdom_doubleshot_proofs as doubleshot
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURE = ROOT / 'tools/fixtures/endgame-stacking/ledger.json'
@@ -46,6 +47,10 @@ RULE_CONTRACTS.update({
     rid: (rule['source'], rule['kind'], tuple(rule['types']), tuple(rule['stats']))
     for rid, rule in abilities.RULES.items()
 })
+RULE_CONTRACTS.update({
+    rid: (rule['source'], rule['kind'], tuple(rule['types']), tuple(rule['stats']))
+    for rid, rule in doubleshot.RULES.items()
+})
 # The seven-rule historical profile remains an input to the real current
 # engine. The additive profile must contain BOTH reviewed rules, never a
 # fixture-selected subset or a wildcard different-type rule.
@@ -57,7 +62,10 @@ INT_RULE_IDS = LEGACY_RULE_IDS | SCOPED_RULE_IDS
 FORT_SPOT_RULE_IDS = INT_RULE_IDS | {fort_spot.RULE_ID}
 CHAINS_TYPE_RULE_IDS = FORT_SPOT_RULE_IDS | chains_types.RULE_IDS
 ABILITY_RULE_IDS = CHAINS_TYPE_RULE_IDS | abilities.RULE_IDS
-DEFINITION_RULE_PROFILES = (FORT_SPOT_RULE_IDS, CHAINS_TYPE_RULE_IDS, ABILITY_RULE_IDS)
+DOUBLESHOT_RULE_IDS = ABILITY_RULE_IDS | doubleshot.RULE_IDS
+ABILITY_RULE_PROFILES = (ABILITY_RULE_IDS, DOUBLESHOT_RULE_IDS)
+DEFINITION_RULE_PROFILES = (FORT_SPOT_RULE_IDS, CHAINS_TYPE_RULE_IDS, *ABILITY_RULE_PROFILES)
+CURRENT_RULE_PROFILES = (INT_RULE_IDS, *DEFINITION_RULE_PROFILES)
 SELECTED_INT_IDS = ('boots-int', 'glabrezu-insight-int', 'chains-quality-int',
                     'lunar-int', 'festive-int')
 SELECTED_INT_PAIRS = tuple(itertools.combinations(SELECTED_INT_IDS, 2))
@@ -148,7 +156,7 @@ def resolve(root, pointer):
 def observation_context(source):
     pointer = tuple(source.get('observed_pointer') or ())
     value = source.get('observed')
-    return fort_spot.observation_context(source) or (pointer in OBSERVATION_POINTERS and isinstance(value, str)
+    return doubleshot.observation_context(source) or fort_spot.observation_context(source) or (pointer in OBSERVATION_POINTERS and isinstance(value, str)
             and re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2}))?', value) is not None)
 
 
@@ -169,7 +177,7 @@ def source_provenance(source):
 def bounded_source(source, sid=None):
     """New recipe/field records cannot leak into legacy direct-source routes."""
     return (fort_spot.bounded_source(source, sid) or chains_types.bounded_source(source, sid)
-            or abilities.bounded_source(source, sid))
+            or abilities.bounded_source(source, sid) or doubleshot.bounded_source(source, sid))
 
 
 def ability_definition(component):
@@ -184,9 +192,13 @@ def component_provenance(data, component, *, root=None):
     The fixed Chains IDs cannot escape to legacy provenance by deleting a
     proof. Unrelated direct-source components retain their original behavior.
     """
+    if ((doubleshot.uses_contract(data) and component['id'] in doubleshot.FAMILY_IDS)
+            or doubleshot.definition(component)):
+        return (rule_profile(data) == DOUBLESHOT_RULE_IDS
+                and doubleshot.validate_component(data, component, ROOT if root is None else root))
     if ((abilities.uses_contract(data) and component['id'] in abilities.FAMILY_IDS)
             or ability_definition(component)):
-        return (rule_profile(data) == ABILITY_RULE_IDS and current_rule_profile(data)
+        return (rule_profile(data) in ABILITY_RULE_PROFILES and current_rule_profile(data)
                 and abilities.validate_component(data, component, ROOT if root is None else root))
     if component['id'] in fort_spot.DEFINITION_IDS or 'definition_proof' in component:
         return (rule_profile(data) in DEFINITION_RULE_PROFILES and current_rule_profile(data)
@@ -217,9 +229,7 @@ def uses_scoped_rules(data):
 def rule_profile(data):
     """Return the exact reviewed ID profile, or None; duplicates are invalid."""
     ids = [rule.get('id') for rule in data['rules']]
-    if len(ids) != len(set(ids)) or set(ids) not in (LEGACY_RULE_IDS, INT_RULE_IDS,
-                                                  FORT_SPOT_RULE_IDS, CHAINS_TYPE_RULE_IDS,
-                                                  ABILITY_RULE_IDS):
+    if len(ids) != len(set(ids)) or set(ids) not in (LEGACY_RULE_IDS, *CURRENT_RULE_PROFILES):
         return None
     for rule in data['rules']:
         contract = (rule.get('source'), rule.get('kind'),
@@ -234,16 +244,19 @@ def rule_profile(data):
             return None
         if rule['id'] in abilities.RULE_IDS and rule != abilities.RULES[rule['id']]:
             return None
+        if rule['id'] in doubleshot.RULE_IDS and rule != doubleshot.RULES[rule['id']]:
+            return None
     return frozenset(ids)
 
 
 def current_rule_profile(data):
     """Preserve reviewed historical profiles; partial new inputs fail closed."""
     profile = rule_profile(data)
-    return (profile in (INT_RULE_IDS, FORT_SPOT_RULE_IDS, CHAINS_TYPE_RULE_IDS, ABILITY_RULE_IDS)
+    return (profile in CURRENT_RULE_PROFILES
             and (not fort_spot.uses_contract(data) or profile in DEFINITION_RULE_PROFILES)
-            and (not chains_types.uses_contract(data) or profile in (CHAINS_TYPE_RULE_IDS, ABILITY_RULE_IDS))
-            and (not abilities.uses_contract(data) or profile == ABILITY_RULE_IDS)
+            and (not chains_types.uses_contract(data) or profile in (CHAINS_TYPE_RULE_IDS, *ABILITY_RULE_PROFILES))
+            and (not abilities.uses_contract(data) or profile in ABILITY_RULE_PROFILES)
+            and (not doubleshot.uses_contract(data) or profile == DOUBLESHOT_RULE_IDS)
             and all(fingerprint(data['sources'].get(sid)) == digest
                     for sid, digest in SCOPED_SOURCE_SHA256.items()))
 
@@ -323,6 +336,9 @@ def validate(data, root=ROOT):
     for sid, source in data['sources'].items():
         assert sid not in source_ids
         source_ids.add(sid)
+        if doubleshot.bounded_source(source, sid):
+            assert doubleshot.validate_source(data, sid, root), sid
+            continue
         if abilities.bounded_source(source, sid):
             assert abilities.validate_source(data, sid, root), sid
             continue
@@ -364,7 +380,10 @@ def validate(data, root=ROOT):
         assert component['channel'] and component['stat'] and component['host']
         assert isinstance(component['amount'], (int, float)) and component['amount'] >= 0
         assert component['note']
-        if ((abilities.uses_contract(data) and cid in abilities.COMPONENT_IDS)
+        if ((doubleshot.uses_contract(data) and cid in doubleshot.FAMILY_IDS)
+                or doubleshot.definition(component)):
+            assert doubleshot.validate_component(data, component, root), cid
+        elif ((abilities.uses_contract(data) and cid in abilities.COMPONENT_IDS)
                 or ability_definition(component)):
             assert abilities.validate_component(data, component, root), cid
         elif ('definition_proof' in component or
@@ -414,7 +433,9 @@ def validate(data, root=ROOT):
             assert fort_spot.validate_rule_source(data, root), 'Unqualified named Spot interaction source'
         if rule['id'] in abilities.RULE_IDS:
             assert abilities.validate_rule_source(data, root), 'Unqualified named WIS/CON interaction source'
-    if rule_profile(data) in (INT_RULE_IDS, FORT_SPOT_RULE_IDS, CHAINS_TYPE_RULE_IDS, ABILITY_RULE_IDS):
+        if rule['id'] in doubleshot.RULE_IDS:
+            assert doubleshot.validate_rule_source(data, root), 'Unqualified named Doubleshot interaction source'
+    if rule_profile(data) in CURRENT_RULE_PROFILES:
         assert current_rule_profile(data)
         assert selected_int_members(data, root=root), 'Changed selected INT definitions or bindings'
     if fort_spot.uses_contract(data):
@@ -422,12 +443,17 @@ def validate(data, root=ROOT):
         for stat in fort_spot.FAMILIES:
             assert fort_spot.family_valid(data, stat, root=root), 'Changed selected ' + stat + ' family'
     if abilities.uses_contract(data):
-        assert rule_profile(data) == ABILITY_RULE_IDS, 'Incomplete Wisdom/Constitution rule profile'
+        assert rule_profile(data) in ABILITY_RULE_PROFILES, 'Incomplete Wisdom/Constitution rule profile'
         for stat in abilities.FAMILIES:
             assert abilities.family_valid(data, stat, root=root), 'Changed selected ' + stat + ' family'
         for rule in data['rules']:
             if rule['id'] in {'artifact-other-types', 'exceptional-other-types'}:
                 assert abilities.validate_existing_rule(data, rule, root), 'Changed reused ability interaction'
+    if doubleshot.uses_contract(data):
+        assert rule_profile(data) == DOUBLESHOT_RULE_IDS, 'Incomplete Doubleshot rule profile'
+        assert doubleshot.family_valid(data, root=root), 'Changed selected Doubleshot family'
+        assert doubleshot.validate_artifact_rule(data, next(r for r in data['rules']
+                                                           if r['id'] == 'artifact-other-types'), root), 'Changed reused Doubleshot interaction'
     for effect in data['non_total_effects']:
         assert effect['state'] in STATES
         assert effect['sources'] or effect['state'] == 'unknown'
@@ -446,8 +472,23 @@ def applies(rule, stat):
 
 def proof(data, stat, a, b):
     """Return an explicit applicable rule; never infer from absent prohibition."""
+    doubleshot_pair = doubleshot.uses_contract(data) and (
+        stat == 'Doubleshot' or any(isinstance(row, dict) and (
+            row.get('id') in doubleshot.FAMILY_IDS or row.get('stat') == 'Doubleshot'
+            or doubleshot.definition(row)) for row in (a, b)))
+    if doubleshot_pair and any(not isinstance(row, dict) or not
+                               {'id', 'stat', 'channel', 'bonus_type'} <= row.keys()
+                               for row in (a, b)):
+        return None
     if a['channel'] != b['channel']:
         return None
+    if doubleshot_pair:
+        # This includes the four reused Artifact edges: a generic rule cannot
+        # bypass selected-family, component or actual source-byte checks.
+        if (rule_profile(data) != DOUBLESHOT_RULE_IDS
+                or a['id'] == b['id'] or a['channel'] != 'gear'
+                or not doubleshot.family_valid(data, stat, (a, b), ROOT)):
+            return None
     ability_pair = abilities.uses_contract(data) and (
         stat in abilities.FAMILIES or a['id'] in abilities.FAMILY_IDS or b['id'] in abilities.FAMILY_IDS
         or any(ability_definition(row) for row in (a, b)))
@@ -455,7 +496,7 @@ def proof(data, stat, a, b):
         # Validate the whole selected family before reaching even an existing
         # Artifact/Exceptional route. The conflicting Skull can never be a
         # qualified endpoint, though it must remain present for completeness.
-        if (rule_profile(data) != ABILITY_RULE_IDS or not current_rule_profile(data)
+        if (rule_profile(data) not in ABILITY_RULE_PROFILES or not current_rule_profile(data)
                 or a['channel'] != 'gear'
                 or not abilities.family_valid(data, stat, (a, b), ROOT)
                 or not all(component_provenance(data, row) for row in (a, b))):
@@ -471,7 +512,7 @@ def proof(data, stat, a, b):
                 or not fort_spot.family_valid(data, stat, (a, b), ROOT)
                 or not all(component_provenance(data, row) for row in (a, b))):
             return None
-    if uses_scoped_rules(data):
+    if uses_scoped_rules(data) and not doubleshot_pair:
         if a['id'] == b['id'] or not current_rule_profile(data):
             return None
         members = tuple(row for row in (a, b) if row['id'] in SELECTED_INT_CORE_SHA256)
@@ -482,6 +523,15 @@ def proof(data, stat, a, b):
                 return None
     ta, tb = a['bonus_type'], b['bonus_type']
     for rule in data['rules']:
+        if rule['id'] in doubleshot.RULE_IDS:
+            if doubleshot_pair and doubleshot.validate_pair(data, rule, stat, a, b, ROOT):
+                return rule['id']
+            continue
+        if doubleshot_pair:
+            if (rule['id'] == 'artifact-other-types' and ta != tb and 'Artifact' in (ta, tb)
+                    and doubleshot.validate_artifact_rule(data, rule, ROOT)):
+                return rule['id']
+            continue
         if rule['id'] in abilities.RULE_IDS:
             if ability_pair and abilities.validate_pair(data, rule, stat, a, b, ROOT):
                 return rule['id']
@@ -538,8 +588,13 @@ def subtotal(data, stat, *, channel='gear', active=(), level=36):
         family_valid = (rule_profile(data) in DEFINITION_RULE_PROFILES and current_rule_profile(data)
                         and fort_spot.family_valid(data, stat, root=ROOT))
     if abilities.uses_contract(data) and stat in abilities.FAMILIES and channel == 'gear':
-        family_valid = (rule_profile(data) == ABILITY_RULE_IDS and current_rule_profile(data)
+        family_valid = (rule_profile(data) in ABILITY_RULE_PROFILES and current_rule_profile(data)
                         and abilities.family_valid(data, stat, root=ROOT))
+    if doubleshot.uses_contract(data) and stat == 'Doubleshot' and channel == 'gear':
+        # Interaction sources are checked by each edge. Losing Tip179 or
+        # Artifact evidence must not erase independently qualified definitions.
+        family_valid = (rule_profile(data) == DOUBLESHOT_RULE_IDS
+                        and doubleshot.family_valid(data, stat, root=ROOT))
     eligible, excluded = [], []
     for c in rows:
         if (not family_valid or c['state'] not in {'verified', 'conditional'} or level < c['kit_min_level']

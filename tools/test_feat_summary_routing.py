@@ -12,6 +12,7 @@ import wisdom_offense_preservation as offense
 import wisdom_fort_spot_preservation as fort_spot
 import wisdom_chains_type_preservation as chains_type
 import wisdom_ability_preservation as abilities
+import wisdom_doubleshot_preservation as doubleshot
 
 ROOT = Path(__file__).resolve().parents[1]
 DETAIL_SHA = '47cccc7724c1ea271cf83f02a26d38822987a88d4159020b02afb51bb7b55321'
@@ -32,7 +33,8 @@ def validate(html):
     # Routing above is checked on actual current content. Only the historical
     # detailed-section hash uses the exact outer-restored PR47 view; current
     # Quicken semantics are tested separately in test_wisdom_corrections.
-    point_nine = abilities.restore_file('index.html', current_html)
+    point_one = doubleshot.restore_file('index.html', current_html)
+    point_nine = abilities.restore_file('index.html', point_one)
     point_eight = chains_type.restore_file('index.html', point_nine)
     point_seven = fort_spot.restore_file('index.html', point_eight)
     point_six = offense.restore_file('index.html', point_seven)

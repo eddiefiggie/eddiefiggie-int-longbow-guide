@@ -736,3 +736,48 @@ Only the current A-074 explanations are reconciled; historical study records,
 source bodies and snapshots remain unchanged. Exact reversal contracts preserve
 the prior Guide and ledger, alongside positive and negative regressions for type,
 variant, scope, source qualifications and withheld results.
+
+## Bounded selected-gear Doubleshot integration — build 11-16-26.2 — 15 November 2026
+
+The owner approved option 1 after the completed read-only audit: qualify one
+Quickblade 15 Artifact contribution, add exactly six native Doubleshot pairs,
+verify preservation and update draft PR #47 with CI. The displayed date is
+November 15 in America/Los_Angeles; source/adoption records use November 16 UTC.
+Merge, publication, a new solve and selection changes are outside this approval.
+
+Startup verified source `dca599357207c5861d2819358f7d011bba5d6dd0`, tree
+`239b0303b28572df40cda9d9838d76cde2365d0c`, all 320 tracked working/index files
+and the intentional 129-path staged mirror. Actual local HEAD remained
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on `feat/wisdom-loadout-priorities`.
+Independent documentation-lane inspection matched all eight owned file hashes
+to the startup gate before edits. The exact .1 baseline was retained separately.
+
+The [source packet](evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json)
+contains 12 scoped observations across 11 Wiki pages and retained premises.
+One ML30 Colorless Quickblade goes in each of the goggles' Colorless, Chains'
+crafted Green and Yeenoghu's Green sockets. Three distinct hosts must be equipped;
+one set grants one reward. Chains requires its one Legendary Green-slot upgrade
+(100 Staff Splinters plus 50 each Broken Shackles, Chain Links and Broken Collars).
+Other fills impose the unchanged full-kit floor of 36. No native named-set
+reward is credited on these selected hosts; owned-item state is not inferred.
+
+The existing native definitions remain 9 Enhancement, 3 Quality, 5 Insight and
+3 Profane. Six exact pairs use Tip 179 with the Stack caveat; four other pairs
+reuse the existing Artifact rule. The 17-rule successor derives **35 gear
+Doubleshot at 36**, retaining level-35 incompleteness. Public five-member guards
+and actual source-byte checks prevent omitted or altered inputs from creating a
+false complete result. Old source grades, timestamps and revision strings stay
+literal; the Wiki observations are not live-client verification.
+
+Preservation requires only two of 152 current result objects to change, with
+the other 150, all old-input results and all 39 complete bow cases unchanged.
+INT 37, WIS 18, CON subset 17/full `null` with Skull excluded, Fortification 226,
+direct Spot 27, selected gear, sole Minor Artifact, all 32 priorities, crafts,
+sockets, feats/AP and Festive-only/HA63 exceptions remain fixed. Existing
+Doubleshot damage wording and full-character/DPS limitations remain intact.
+
+The [integration receipt](evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json)
+records actual precommit preservation, builder, suite and independent-review
+outcomes. Draft PR #47 records the delivered head and its CI outcome. The
+read-only audit ran no tests, builders or solver; that
+historical fact is separate from this later authorized implementation.

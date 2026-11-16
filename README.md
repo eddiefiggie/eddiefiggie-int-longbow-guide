@@ -19,7 +19,8 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `tools/recipe_proofs.py` | Bounded, source-supported recipe proofs for the four selected Chains IDs; not a general inference or stacking engine |
 | `tools/chains_type_proofs.py` | Exact Wiki/Nexus recipe bindings for the two selected Chains type definitions, preserving missing numeric fields and source limits |
 | `tools/wisdom_ability_proofs.py` | Eight exact WIS/CON definition bindings, four named pairs and complete-family safeguards that retain the conflicting Skull |
-| `tools/stacking_audit.py` | Source-gated gear arithmetic; the current draft adds a closed ten-pair INT rule, not a universal stacking default or DPS simulator |
+| `tools/wisdom_doubleshot_proofs.py` | One selected Quickblade definition, six exact native Doubleshot pairs and five-member family/applicability safeguards |
+| `tools/stacking_audit.py` | Source-gated selected-gear arithmetic with exact definition, family and positive-interaction checks; not a universal stacking default or DPS simulator |
 
 ## Related
 
@@ -48,7 +49,33 @@ Doubleshot corrections separately from preserved historical experiments. Its
 source register contains transcribed browser observations and paraphrases, not
 an exported raw DOM packet or new calculator-qualified component records.
 
-### Current draft: bounded Wisdom and Constitution evidence
+### Current draft: selected-gear Doubleshot evidence
+
+Build **11-16-26.2** qualifies one **Quickblade 15 Artifact Doubleshot**
+contribution and adds exactly six named interactions among the four native
+bonuses. Four existing Artifact-rule relationships complete the five-member
+family: **9 Enhancement + 3 Quality + 5 Insight + 3 Profane + 15 Artifact =
+35 percentage points** of selected-gear Doubleshot at the unchanged kit floor
+of **level 36**. Level-35 full-kit results remain withheld. This is the same
+gear contribution with improved evidence, not a new 35-point character gain.
+
+Quickblade requires three distinct equipped hosts: the goggles' ordinary
+Colorless socket, Chains' separately crafted Green socket, and Yeenoghu's
+Green socket. Each augment is ML30; other selected fills make the whole kit
+ML36. One three-piece set gives one reward. The selected configuration credits
+no native named-set bonus on those hosts that Quickblade would suppress; this
+does not establish an owned item's upgrade state. See the
+[placement record](docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md#current-selected-gear-doubleshot-integration--build-11-16-262).
+
+The [source packet](evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json)
+keeps actual Wiki observations, reused-source identities and the Stack caveat.
+The closed 17-rule profile is not a universal stacking default or a client test.
+INT 37, WIS 18, CON subset 17/full `null`, Fortification 226 and direct Spot 27
+remain unchanged. The [integration receipt](evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json)
+records actual precommit verification; [draft PR #47](https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/pull/47)
+records the delivered commit and its CI outcome. A draft is not a published release.
+
+### Historical .1 checkpoint: bounded Wisdom and Constitution evidence
 
 Build **11-16-26.1** integrates eight standing-gear definitions and four exact
 positive pairs. At the unchanged level-36 kit floor, selected-gear **Wisdom is

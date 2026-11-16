@@ -303,6 +303,49 @@ def _ability_results(ledger):
     return wisdom, constitution, supported
 
 
+def _doubleshot_result(ledger):
+    """Require the complete selected family before rendering its gear result."""
+    from stacking_audit import subtotal
+    from wisdom_doubleshot_proofs import RULE_ID
+
+    result = subtotal(ledger, 'Doubleshot')
+    _require(result['complete'] and result['total'] == 35
+             and result['counted'] == ['goggles-ds', 'ring-ds', 'boots-ds',
+                                       'armor-ds', 'quickblade-ds']
+             and not result['excluded'] and not result['suppressed']
+             and not result['missing_interactions']
+             and len(result['proofs']) == 10
+             and sum(edge[2] == RULE_ID for edge in result['proofs']) == 6
+             and sum(edge[2] == 'artifact-other-types' for edge in result['proofs']) == 4,
+             'Current Doubleshot claim lost its exact five-source calculation')
+    return result
+
+
+def render_doubleshot_qualification(ledger):
+    _doubleshot_result(ledger)
+    return (
+        '<p class="note" data-doubleshot-qualification="selected-five">'
+        '<strong>Derived selected-gear Doubleshot: 35 percentage points at level 36.</strong> '
+        'Goggles 9 Enhancement, ring 3 Quality, boots 5 Insight and armor 3 Profane '
+        'combine with one Quickblade 15 Artifact reward. Quickblade is a Colorless ML30 '
+        'augment: the selected goggles Colorless, Chains crafted Green and Yeenoghu Green '
+        'placements must belong to three distinct equipped hosts. Chains first needs its '
+        'one Legendary Green-slot upgrade: 100 Legendary Staff Splinters and 50 each '
+        'Legendary Broken Shackles, Chain Links and Broken Collars. Ordinary Colorless '
+        'compatibility applies to these sockets; the full filled kit remains ML36. '
+        'Set augments suppress existing host set membership; this selection credits no '
+        'competing native set on these hosts. Six exact native pairs use the retained '
+        'Tip 179 premise with its Stack caveat; four other pairs use the existing Artifact '
+        'rule. Every calculation rechecks the complete five-source family and its evidence. '
+        'This qualifies the already-modeled gear contribution. Ownership, completed crafting '
+        'and actual equipment state are not observed; nongear sources, whole-character '
+        'Doubleshot, damage resolution and DPS retain their separate limits. '
+        + _link('evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json',
+                'Quickblade, host and stacking evidence') + ' · '
+        + _link('evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json',
+                'Bounded integration and verification record') + '.</p>')
+
+
 def render_ability_qualification(ledger):
     _ability_results(ledger)
     return (
@@ -462,6 +505,7 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         + _link('evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json',
                 'Queen, augment and skill-membership observations') + '.</p>')
     paragraph += render_ability_qualification(ledger)
+    paragraph += render_doubleshot_qualification(ledger)
     if compact:
         return paragraph
     rows = [
@@ -572,6 +616,8 @@ def render_recipe(data):
 def render_priorities(data):
     """Render exact original lexicographic order, not a sorted stat wishlist."""
     validate(data)
+    from stacking_audit import load as load_ledger
+    doubleshot = _doubleshot_result(load_ledger())
     query, model = data['query'], data['model']
     rows = []
     for rank, stat in enumerate(query['targets'], 1):
@@ -585,6 +631,9 @@ def render_priorities(data):
             notes = 'Conditional Melee Power effect held; not a Ranged Power contribution.'
         elif stat == 'Seeker':
             notes = 'Critical confirmation / damage input, not critical threat range.'
+        elif stat == 'Doubleshot':
+            notes = (f'Selected gear {doubleshot["total"]} has separate bounded source support at ML36; '
+                     'the search order and modeled target remain unchanged. Not whole-character Doubleshot or DPS.')
         elif stat == 'Constitution':
             notes = 'Raw solve 34; practical Good Luck derivative 32. Skull source conflict remains.'
         elif stat == 'Wisdom':
@@ -627,6 +676,7 @@ def render_onepage_rows(data):
                       if edge[2] == 'int-selected-ten-pairs']) == 10,
              'One-page INT claim lost its bounded source calculation')
     wisdom, constitution, con_subset = _ability_results(ledger)
+    doubleshot = _doubleshot_result(ledger)
     direct_spot = subtotal(ledger, 'Spot')
     _require(direct_spot['complete'] and direct_spot['total'] == 27,
              'One-page direct Spot claim lost its bounded source calculation')
@@ -640,6 +690,7 @@ def render_onepage_rows(data):
             f'<a href="#wisdom-loadout-selection">Wisdom-priority artifact recipe</a>: full kit ML {data["selection"]["full_kit_ml"]}; {counts["items"]} items; Yeenoghu’s Reign is the sole Minor Artifact; '
             f'{counts["occupied"]}/{counts["sockets"]} sockets. Claws selects WIS 15; ring Nearly Finished is empty. '
             f'<a href="#selected-stacking-summary">Derived selected-gear INT +{intelligence["total"]}, WIS +{wisdom["total"]} and direct Spot +{direct_spot["total"]} at level 36</a>. '
+             f'<a href="#selected-stacking-summary">Selected gear Doubleshot contributes {doubleshot["total"]} percentage points</a>, including one three-host Quickblade reward. '
             f'Standing CON has a supported +{con_subset} subset; the full total is withheld because Skull +15/+16 remains conflicting. '
             f'Modeled full gear CON 32/33 and DEX {model["Dexterity"]} remain separate. These are gear contributions, not character scores or DPS gains. '
             'Optional ring DEX 13 is separate and provisional. Search policy excludes event/limited gear except permitted Festive diamonds; exact non-event procurement of Healing Amplification +63 remains unverified.</td></tr>')

@@ -212,6 +212,37 @@ narrow. No whole-character score, HP/Spot/Will/DPS certificate, new solve,
 crafting, purchase or live-game test is authorized by this implementation scope.
 Successful tests and CI must be recorded from actual results.
 
+## Approved bounded Doubleshot integration — 15 November 2026
+
+After the completed read-only audit, the owner selected option 1: qualify only
+Quickblade's selected **15 Artifact Doubleshot** contribution, add the six exact
+native pairs under a 17-rule successor, verify preservation and update **draft
+PR #47** with CI. The build is **11-16-26.2**; the user-facing date is November 15
+in America/Los_Angeles, while the source observations and adoption record use
+November 16 UTC. Merge, publication and selection changes remain excluded.
+
+The [source packet](../../evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json)
+preserves the completed audit's original read-only interpretation separately
+from this approval and the later
+[integration receipt](../../evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json).
+No older evidence, observation time or source grade is repaired. The approved
+result is the existing selected-gear **35** at kit ML36, with level 35 withheld:
+9 Enhancement, 3 Quality, 5 Insight, 3 Profane and one 15 Artifact reward.
+
+The definition remains conditional on three distinct equipped hosts, exact
+ordinary sockets, Chains' one Green-slot construction prerequisite and the
+selected set-suppression context. Tip 179 supports only six named native pairs
+with the Stack caveat retained; four relationships reuse the existing Artifact
+rule. No universal stacking or set-activation inference is approved.
+
+Preserve the previous sixteen rules and old profiles, all five Doubleshot
+members, INT 37, WIS 18, CON subset 17/full `null` with the Skull conflict,
+Fortification 226 and direct Spot 27. The Wisdom recipe, sole Minor Artifact
+Yeenoghu, all 32 priorities, crafts/sockets, feats/AP, original source grades,
+historical outputs and Festive-only/HA63 exceptions remain fixed. No new solve,
+crafting, purchase, whole-character or DPS claim follows. Required checks and
+CI must be reported from actual outcomes, not the completed source audit.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

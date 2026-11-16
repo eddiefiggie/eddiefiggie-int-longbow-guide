@@ -574,12 +574,11 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         self.assertIsNone(audit.subtotal(point_nine, 'Wisdom')['total'])
         self.assertIsNone(audit.subtotal(self.data, 'Dexterity')['total'])
 
-    def test_current_set_components_are_named_unknowns_not_laundered_old_monolith(self):
+    def test_current_sets_qualify_only_quickblade_and_preserve_named_unknowns(self):
         rows = {c['id']: c for c in self.data['components']}
         for cid, stat, amount in (
             ('dusk-raider-rp', 'Ranged Power', 15),
             ('tough-shields-prr', 'PRR', 30),
-            ('quickblade-ds', 'Doubleshot', 15),
             ('perfect-silence-sneak', 'Sneak dice', 3),
         ):
             with self.subTest(component=cid):
@@ -588,6 +587,31 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
                 self.assertEqual(c['state'], 'unknown')
                 self.assertEqual(c['source'], '')
                 self.assertIn(cid, audit.subtotal(self.data, stat, active=['force'])['excluded'])
+        quickblade = rows['quickblade-ds']
+        self.assertEqual((quickblade['stat'], quickblade['amount'], quickblade['bonus_type']),
+                         ('Doubleshot', 15, 'Artifact'))
+        self.assertEqual((quickblade['state'], quickblade['source']), ('verified', ''))
+        self.assertEqual(quickblade['definition_proof'], {
+            'contract': 'selected-gear-doubleshot-v1',
+            'method': 'three-selected-equipped-hosts',
+            'sources': {
+                'system': 'ds-augment-system-20261116',
+                'item': 'ds-quickblade-20261116',
+                'table': 'ds-set-table-20261116',
+                'set_rules': 'ds-set-rules-20261116',
+                'goggles_host': 'ds-goggles-host-20261116',
+                'chains_host': 'ds-chains-host-20261116',
+                'artifact_host': 'ds-yeenoghu-host-20261116',
+                'green_recipe': 'ds-green-recipe-20261116',
+            },
+        })
+        for active in ((), ('force',)):
+            result = audit.subtotal(self.data, 'Doubleshot', active=active)
+            self.assertEqual((result['total'], result['complete']), (35, True))
+            self.assertEqual(result['counted'], [
+                'goggles-ds', 'ring-ds', 'boots-ds', 'armor-ds', 'quickblade-ds'])
+            self.assertEqual(result['counted'].count('quickblade-ds'), 1)
+            self.assertEqual((result['excluded'], result['missing_interactions']), ([], []))
         self.assertNotIn('monolith-rp', rows)
         self.assertNotIn('monolith-prr', rows)
         self.assertNotIn('pendant-ap', rows)
@@ -676,8 +700,15 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
             with self.assertRaises(AssertionError):
                 self.renderer.validate_guide(mutant, self.data)
         changed = copy.deepcopy(self.data)
-        next(c for c in changed['components'] if c['id'] == 'goggles-ds')['state'] = 'unknown'
-        self.assertTrue(audit.validate(changed))
+        goggles = next(c for c in changed['components'] if c['id'] == 'goggles-ds')
+        goggles['state'] = 'unknown'
+        with self.assertRaises(AssertionError):
+            audit.validate(changed)
+        result = audit.subtotal(changed, 'Doubleshot')
+        self.assertEqual((result['total'], result['complete'], result['counted']), (None, False, []))
+        quickblade = next(c for c in changed['components'] if c['id'] == 'quickblade-ds')
+        self.assertIsNone(audit.proof(changed, 'Doubleshot', goggles, quickblade))
+        self.assertIsNone(audit.proof(changed, 'Doubleshot', quickblade, goggles))
         with self.assertRaises(AssertionError):
             self.renderer.validate_guide(html, changed)
 

@@ -315,7 +315,7 @@ results in the [receipt](../../evidence/wisdom-loadout/chains-type-integration-2
 The .8 test count belongs to that checkpoint; source review and software checks
 do not establish primary client testing, browser QA or release permission.
 
-### Bounded Wisdom/Constitution integration layer
+### Historical .1 Wisdom/Constitution integration layer
 
 Build 11-16-26.1 uses `tools/wisdom_ability_proofs.py` for exactly eight reviewed
 definitions and four named pairs. Preserve the frozen
@@ -350,3 +350,47 @@ the [receipt](../../evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.js
 Earlier test counts and the completed audit do not substitute for those checks;
 browser layout, accessibility, print pagination and live-game validation remain
 separate. Merge and publication are outside this approval.
+
+### Bounded Doubleshot integration layer — build 11-16-26.2
+
+`tools/wisdom_doubleshot_proofs.py` binds `selected-gear-doubleshot-v1` to one
+Quickblade definition and the exact five selected Doubleshot IDs. Preserve the
+[source packet](../../evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json)
+and its original observations; the new rule is `doubleshot-selected-six-pairs`.
+The 17-rule successor retains all sixteen prior rule dictionaries and exact
+historical 7/9/10/12/16 profiles. Six new native pairs and four existing Artifact
+pairs must resolve in both operand orders without opening a generic fallback.
+
+Public subtotal and direct-pair routes must independently check complete family
+membership, unchanged native cores, source identity/context and actual evidence
+bytes. Reject missing, duplicated, renamed, moved, extra or substituted members;
+malformed proof shapes and absent source keys must fail safely. A dropped member
+cannot manufacture completeness. Lost Tip 179 evidence withholds six edges;
+lost Artifact evidence withholds four, without pretending that independently
+supported component definitions disappeared.
+
+Pin three distinct equipped hosts and the exact Quickblade fills. Keep explicit
+Wiki-to-selection slot mappings (Eye→Goggles, Waist→Belt, Wrist→Bracers), ordinary
+Colorless/Green compatibility, Chains' one constructed Green socket, selected
+set-suppression context, augment ML30 and full-kit ML36. Two hosts, duplicate
+hosts, replaced fills, missing construction or an override flag cannot activate
+the set. Source provenance and metadata-only or rehashed evidence mutations must
+not bypass the public checks. No new source may qualify unrelated components.
+
+`tools/wisdom_doubleshot_preservation.py` restores exact **.2 → .1** before the
+unchanged older layers; keep their scopes, hashes, source bytes and negative
+controls literal. Compare all complete current result objects against the frozen
+.1 baseline: only the two level-36 gear-Doubleshot objects (`active=[]` and
+`active=["force"]`) may change to complete 35. The other **150 of 152**, including
+all **76 level-35** objects, must remain identical. Preserve complete old-input
+results under every retained profile and all **39 complete bow-model cases**.
+
+Use `test_wisdom_doubleshot.py` for actual-current source/family/host/pair negative
+cases and `test_wisdom_doubleshot_preservation.py` for outer restoration; fixtures
+belong in `tools/fixtures/wisdom-doubleshot/`. Preserve WIS 18, CON subset 17/full
+`null` and every Skull exclusion alongside INT 37, Fortification 226 and Spot 27.
+Run the four documented builders, create the path-rebased **11-16-26.2** snapshot,
+then record actual aggregate-suite, independent-review, draft-update and CI
+results in the [receipt](../../evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json).
+Record the delivered commit and its exact-head CI result in draft PR #47.
+No earlier test count substitutes; rendering and live-game verification remain separate.

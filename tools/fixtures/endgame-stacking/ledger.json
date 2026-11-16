@@ -3484,6 +3484,219 @@
       "observed": "2026-11-16T03:33:55.511Z",
       "source_contract": "selected-wisdom-constitution-v1",
       "freshness_limit": "Original scoped browser observation 2026-11-16T03:33:55.511Z through 2026-11-16T03:33:57.629Z. Literal cache notice: (this is up to 12 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "ds-augment-system-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        0,
+        "exact_excerpts",
+        "set_augment_rules"
+      ],
+      "quote": "These level 30 Set augments can be slotted in any augment color slot. The item into which they are slotted becomes part of a unique three-piece item set. They can be crafted in the Hut from Beyond (lower north harbor) in the Cauldron of Cadence. Be aware that slotting a Set Augment into an item with any existing sets will suppress those sets while the Set Augment is slotted, so you should avoid slotting set augments into items that are part of sets you intend to complete.",
+      "record_pointer": [
+        "observations",
+        0
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Augment_Slot#Augment_Slot",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Augment_Slot&oldid=717357",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:04:12.273Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:04:12.273Z through 2026-11-16T05:04:14.556Z. Literal cache notice: (this is up to -4 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-quickblade-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        1,
+        "exact_item_fields",
+        "Description"
+      ],
+      "quote": "Slotting this Augment in any Augment Slot will override its Set Bonus to the Quickblade set.\n\nQuickblade:\n\n3 pieces equipped: +15% Artifact bonus to Doublestrike and Doubleshot",
+      "record_pointer": [
+        "observations",
+        1
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Set_Augment:_Quickblade",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Set_Augment:_Quickblade&oldid=643217",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:06:23.132Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:06:23.132Z through 2026-11-16T05:06:23.156Z. Literal cache notice: (this is up to 5 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-set-table-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        2,
+        "exact_quickblade_row"
+      ],
+      "quote": "Set Augment: Quickblade\tColorless\t30\t\nThread of Fate x 50\nEmpty Soul Vessel\nGuided Sight\n\t3 Pieces Equipped: +15% Artifact bonus to Doublestrike and Doubleshot\tRiding the Storm Out",
+      "record_pointer": [
+        "observations",
+        2
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Augment_Slot/Set_Augment",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Augment_Slot/Set_Augment&oldid=726131",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:06:46.834Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:06:46.834Z through 2026-11-16T05:06:48.404Z. Literal cache notice: (this is up to 12 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-set-rules-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        3,
+        "exact_excerpts",
+        "augment_sets"
+      ],
+      "quote": "Collect 3 of the same BtC raid loot across your account. Take them to the Cauldron of Cadence in the Hut from Beyond and combine them with 50 Threads of Fate and an Empty Soul Vessel each, to forge BtA Colorless Augments. Then slot them into 3 items across equipment slots of one character to gain 3 piece Set Bonueses listed below. Be aware that slotting a Set Augment into an item with any existing sets will suppress those sets while the Set Augment is slotted. For the list of other Essence Augments see Augment Slot#Essence augments.",
+      "record_pointer": [
+        "observations",
+        3
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Named_item_sets#Quickblade",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Named_item_sets&oldid=730838#Quickblade",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:07:35.550Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:07:35.550Z through 2026-11-16T05:07:40.967Z. Cache notice is absent from this scoped observation; no value is inferred. The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-goggles-host-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        4,
+        "exact_doubleshot_clause"
+      ],
+      "quote": "Passive: 9% Enhancement bonus to Doubleshot.",
+      "record_pointer": [
+        "observations",
+        4
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:09:47.770Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:09:47.770Z through 2026-11-16T05:09:48.797Z. Literal cache notice: (this is up to 8 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-chains-host-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        5,
+        "exact_excerpts",
+        "augment_channel"
+      ],
+      "quote": "Legendary Slaver's Augment Slot: Apply a Slaver's shard to this item.",
+      "record_pointer": [
+        "observations",
+        5
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:11:05.432Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:11:05.432Z through 2026-11-16T05:11:06.418Z. Literal cache notice: (this is up to 5 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-yeenoghu-host-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        6,
+        "exact_green_tooltip"
+      ],
+      "quote": "Blue, Green, Yellow, and/or Colorless",
+      "record_pointer": [
+        "observations",
+        6
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:11:06.418Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:11:06.418Z through 2026-11-16T05:11:07.083Z. Literal cache notice: (this is up to 14 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-green-recipe-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        10,
+        "exact_excerpts",
+        "green_recipe_row"
+      ],
+      "quote": "Green Augment Slot\t\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars",
+      "record_pointer": [
+        "observations",
+        10
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:14:35.225Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:14:35.225Z through 2026-11-16T05:14:51.536Z. Cache notice is absent from this scoped observation; no value is inferred. The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
     }
   },
   "rules": [
@@ -3782,6 +3995,48 @@
         [
           "boots-quality-con",
           "celestial-profane-constitution"
+        ]
+      ]
+    },
+    {
+      "id": "doubleshot-selected-six-pairs",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Enhancement",
+        "Quality",
+        "Insight",
+        "Profane"
+      ],
+      "stats": [
+        "Doubleshot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "goggles-ds",
+          "ring-ds"
+        ],
+        [
+          "goggles-ds",
+          "boots-ds"
+        ],
+        [
+          "goggles-ds",
+          "armor-ds"
+        ],
+        [
+          "ring-ds",
+          "boots-ds"
+        ],
+        [
+          "ring-ds",
+          "armor-ds"
+        ],
+        [
+          "boots-ds",
+          "armor-ds"
         ]
       ]
     }
@@ -4901,11 +5156,25 @@
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Requires three distinct equipped hosts and the crafted Chains Green socket. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "note": "Source-supported selected Quickblade contribution: one +15 Artifact Doubleshot reward from three Colorless ML30 augments on three distinct equipped hosts (Goggles Colorless, crafted Chains Green, Yeenoghu Green). The Chains slot upgrade is a prerequisite, not a second socket. Source/type, ordinary-slot compatibility, distinct-host threshold, once-only reward and original observation contexts are separately bound. Full filled-kit applicability remains level36. This documentary selected-kit result does not establish ownership, completed crafting, live activation, whole-character Doubleshot or DPS.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-gear-doubleshot-v1",
+        "method": "three-selected-equipped-hosts",
+        "sources": {
+          "system": "ds-augment-system-20261116",
+          "item": "ds-quickblade-20261116",
+          "table": "ds-set-table-20261116",
+          "set_rules": "ds-set-rules-20261116",
+          "goggles_host": "ds-goggles-host-20261116",
+          "chains_host": "ds-chains-host-20261116",
+          "artifact_host": "ds-yeenoghu-host-20261116",
+          "green_recipe": "ds-green-recipe-20261116"
+        }
+      }
     },
     {
       "id": "perfect-silence-sneak",
@@ -5937,7 +6206,7 @@
     "status": "historical, not the current selected loadout"
   },
   "source_roles": {
-    "tip179-live-20261115": "current positive premise for exactly ten selected INT pairs and four separately named Wisdom/Constitution pairs; original observation and Stack caveat preserved; no generic different-type default",
+    "tip179-live-20261115": "current positive premise for exactly ten selected INT pairs, four separately named Wisdom/Constitution pairs and six selected Doubleshot pairs; original observation and Stack caveat preserved; no generic different-type default",
     "fort-rule-live-20261115": "fresh Enhancement/Insight Fortification interaction only; does not qualify Chains or Queen components",
     "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
@@ -6075,6 +6344,14 @@
     "wiscon-dolorous-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
     "wiscon-coldlight-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
     "wiscon-reflection-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
-    "wiscon-sun-system-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only"
+    "wiscon-sun-system-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "ds-augment-system-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-quickblade-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-set-table-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-set-rules-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-goggles-host-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-chains-host-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-yeenoghu-host-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-green-recipe-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained"
   }
 }

@@ -20,6 +20,7 @@ import wisdom_offense_preservation as offense
 import wisdom_fort_spot_preservation as fort_spot
 import wisdom_chains_type_preservation as chains_type
 import wisdom_ability_preservation as abilities
+import wisdom_doubleshot_preservation as doubleshot
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,7 +90,9 @@ def frozen_generator_bytes():
 
 
 def restore_file(path, current, *, scope=None):
-    """Restore abilities, Chains, Fort/Spot, INT and older approved layers."""
+    """Restore Doubleshot, abilities, Chains, Fort/Spot and older approved layers."""
+    if path in doubleshot.REVIEWED_PATHS:
+        current = doubleshot.restore_file(path, current)
     if path in abilities.REVIEWED_PATHS:
         current = abilities.restore_file(path, current)
     if path in chains_type.REVIEWED_PATHS:

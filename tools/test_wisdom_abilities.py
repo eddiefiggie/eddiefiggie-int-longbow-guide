@@ -19,6 +19,7 @@ from unittest.mock import patch
 import stacking_audit as audit
 import wisdom_ability_proofs as definitions
 import wisdom_ability_preservation as preservation
+import wisdom_doubleshot_preservation as doubleshot
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -122,7 +123,8 @@ class CurrentAbilityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory(prefix='wiscon-functional-') as directory:
             root = Path(directory)
             packet = json.loads((ROOT / PACKET).read_text())
-            paths = {MANIFEST, PACKET} | {s['path'] for s in self.data['sources'].values()}
+            paths = {MANIFEST, PACKET, 'evidence/wisdom-loadout/loadout.json'} | {
+                s['path'] for s in self.data['sources'].values()}
             paths |= {s['path'] for s in packet['reused_sources']}
             for path in paths:
                 target = root / path
@@ -575,34 +577,64 @@ class CurrentAbilityTests(unittest.TestCase):
 
     def test_prior_sources_rules_unrelated_components_and_skull_core_remain_literal(self):
         previous = json.loads(preservation.checkpoint_file_text(LEDGER))
-        self.assertEqual(set(self.data['sources']), set(previous['sources']) | NEW_SOURCES)
+        point_one = json.loads(doubleshot.checkpoint_file_text(LEDGER))
+        # This is the literal .9-to-.1 addition contract. The current .2
+        # Doubleshot addition has its own independently pinned outer contract.
+        self.assertEqual(set(point_one['sources']), set(previous['sources']) | NEW_SOURCES)
         for sid, old in previous['sources'].items():
-            self.assertEqual(self.data['sources'][sid], old, sid)
-            self.assertEqual(self.data['source_roles'][sid],
+            self.assertEqual(point_one['sources'][sid], old, sid)
+            self.assertEqual(point_one['source_roles'][sid],
                              EXPECTED_REUSE_ROLES.get(sid, previous['source_roles'][sid]), sid)
         self.assertEqual({sid for sid in previous['source_roles']
-                          if self.data['source_roles'][sid] != previous['source_roles'][sid]},
+                          if point_one['source_roles'][sid] != previous['source_roles'][sid]},
                          set(EXPECTED_REUSE_ROLES))
-        self.assertEqual(self.data['rules'][:len(previous['rules'])], previous['rules'])
-        self.assertEqual({r['id'] for r in self.data['rules'][len(previous['rules']):]}, set(PAIR_RULES.values()))
-        self.assertEqual([r['id'] for r in self.data['components']], [r['id'] for r in previous['components']])
-        for old, new in zip(previous['components'], self.data['components']):
+        self.assertEqual(point_one['rules'][:len(previous['rules'])], previous['rules'])
+        self.assertEqual({r['id'] for r in point_one['rules'][len(previous['rules']):]}, set(PAIR_RULES.values()))
+        self.assertEqual([r['id'] for r in point_one['components']], [r['id'] for r in previous['components']])
+        for old, new in zip(previous['components'], point_one['components']):
             if old['id'] not in QUALIFIED:
                 self.assertEqual(core(new), core(old), old['id'])
-        self.assertEqual(component(self.data, 'skull-con'), component(previous, 'skull-con'))
+        self.assertEqual(component(point_one, 'skull-con'), component(previous, 'skull-con'))
+        # Keep real-current checks: every prior source dictionary, all sixteen
+        # prior rules and every non-Quickblade component core stay literal.
+        # Only Tip 179's role adds the six explicitly scoped Doubleshot pairs;
+        # both role strings are pinned independently of the candidate data.
+        tip_role = 'tip179-live-20261115'
+        self.assertEqual(point_one['source_roles'][tip_role],
+                         'current positive premise for exactly ten selected INT pairs and four separately '
+                         'named Wisdom/Constitution pairs; original observation and Stack caveat preserved; '
+                         'no generic different-type default')
+        current_tip_role = (
+            'current positive premise for exactly ten selected INT pairs, four separately named '
+            'Wisdom/Constitution pairs and six selected Doubleshot pairs; original observation and '
+            'Stack caveat preserved; no generic different-type default')
+        for sid, old in point_one['sources'].items():
+            self.assertEqual(self.data['sources'][sid], old, sid)
+            expected_role = current_tip_role if sid == tip_role else point_one['source_roles'][sid]
+            self.assertEqual(self.data['source_roles'][sid], expected_role, sid)
+        self.assertEqual({sid for sid in point_one['source_roles']
+                          if self.data['source_roles'][sid] != point_one['source_roles'][sid]}, {tip_role})
+        self.assertEqual(self.data['rules'][:16], point_one['rules'])
+        self.assertEqual([r['id'] for r in self.data['rules'][16:]], ['doubleshot-selected-six-pairs'])
+        self.assertEqual([r['id'] for r in self.data['components']], [r['id'] for r in point_one['components']])
+        for old, current in zip(point_one['components'], self.data['components']):
+            if old['id'] != 'quickblade-ds':
+                self.assertEqual(core(current), core(old), old['id'])
+        self.assertEqual(component(self.data, 'skull-con'), component(point_one, 'skull-con'))
 
     def test_exact_historical_rule_profiles_remain_inputs_to_the_real_new_engine(self):
         import wisdom_int_stacking_preservation as point_five
         import wisdom_fort_spot_preservation as point_seven
         import wisdom_chains_type_preservation as point_eight
-        for count, view in ((7, point_five), (9, point_seven), (10, point_eight), (12, preservation)):
+        for count, view in ((7, point_five), (9, point_seven), (10, point_eight),
+                            (12, preservation), (16, doubleshot)):
             data = json.loads(view.checkpoint_file_text(LEDGER))
             before = json.dumps(data, sort_keys=True)
             with self.subTest(profile=count):
                 self.assertEqual(len(audit.rule_profile(data)), count)
                 self.assertTrue(audit.validate(data))
                 self.assertEqual(json.dumps(data, sort_keys=True), before)
-        self.assertEqual(len(audit.rule_profile(self.data)), 16)
+        self.assertEqual(len(audit.rule_profile(self.data)), 17)
 
     def test_current_renderers_explain_complete_wisdom_and_only_a_constitution_subset(self):
         import build_stacking_audit as renderer
@@ -617,8 +649,8 @@ class CurrentAbilityTests(unittest.TestCase):
         self.assertIn(paragraph, renderer.summary(self.data))
         self.assertTrue(renderer.validate_guide(html, self.data))
         self.assertEqual(renderer.detail(self.data), (ROOT / 'endgame-stacking-audit.html').read_text())
-        self.assertEqual(current_build(html), '11-16-26.1')
-        self.assertEqual(snapshot_html(html), (ROOT / 'versions/11-16-26.1.html').read_text())
+        self.assertEqual(current_build(html), '11-16-26.2')
+        self.assertEqual(snapshot_html(html), (ROOT / 'versions/11-16-26.2.html').read_text())
         for mutation in ('missing-skull', 'changed-wisdom'):
             data = deepcopy(self.data)
             if mutation == 'missing-skull':

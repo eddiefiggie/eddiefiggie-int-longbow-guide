@@ -314,7 +314,7 @@ See the [integration receipt](../../evidence/wisdom-loadout/chains-type-integrat
 for actual verification and draft status; no new solve, crafting, purchase,
 merge or publication is included.
 
-## Current Wisdom/Constitution evidence integration — build 11-16-26.1
+## Historical .1 checkpoint — Wisdom/Constitution evidence integration
 
 The [frozen audit register](../../evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
 supplies eight bounded definition bindings without changing the recipe.
@@ -348,3 +348,46 @@ other unresolved effects and complete character/HP/Spot/Will/DPS questions remai
 visible. The [integration receipt](../../evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json)
 records actual checks and draft status; no new solve, crafting, purchase, merge
 or publication is included.
+
+## Current selected-gear Doubleshot integration — build 11-16-26.2
+
+The same recipe now has a bounded source derivation of **35 percentage points
+of gear Doubleshot at level 36**: goggles 9 Enhancement, ring 3 Quality, boots
+5 Insight, armor 3 Profane and Quickblade 15 Artifact once. Only Quickblade's
+qualification and six exact native pair proofs are new; four Quickblade/native
+pairs reuse the existing Artifact rule. Full-kit level-35 results stay withheld.
+
+| Exact Quickblade host | Ordinary socket / manifest pointer | Explicit slot mapping | Base → filled item ML |
+| --- | --- | --- | --- |
+| Legendary Goggles of the Archer | Colorless; `items[2].sockets[2]` | Wiki Eye → selected Goggles | 33 → 36 |
+| Legendary Chains | Crafted Green; `items[6].sockets[0]` | Wiki alternate Waist → selected Belt | 28 → 30 |
+| Yeenoghu's Reign | Green; `items[11].sockets[1]` | Wiki Wrist → selected Bracers | 35 → 36 |
+
+Each Colorless Quickblade gem is **ML30**. Source rules support these ordinary
+Colorless/Green placements; they do not cover Sun, Moon or filigree slots.
+The higher host/augment requirement applies, and other selected fills raise
+the goggles and bracers to 36. Three distinct hosts must be equipped together;
+three inventory copies or more than three copies do not multiply the one
+three-piece reward.
+
+Chains first needs its **one** Green-slot upgrade: **100 Legendary Staff
+Splinters plus 50 each Legendary Broken Shackles, Chain Links and Broken
+Collars**. This is the Legendary recipe, not the Heroic 30/20/20/20 column or an
+additional socket. It remains a construction prerequisite, not an ownership or
+completed-crafting claim.
+
+A set augment suppresses existing named-set membership on its host. No Quickblade
+host receives another selected set augment, and this manifest credits no native
+named-set reward on any of them. Chains permits an optional Slavers set upgrade,
+but none is selected/credited; no explicit negative inventory fact is inferred.
+The goggles' individual 9 Enhancement affix is not a named-set reward. Current
+occupancy, source compatibility and an owned item's state remain distinct.
+
+The [source packet](../../evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json)
+retains community-source provenance and the bounded Tip 179/Stack interpretation.
+Original source grades, previous qualifications, all 32 priorities, sole Minor
+Artifact, selected crafts/sockets, feats/AP, exceptions and historical results
+remain unchanged. Whole-character Doubleshot, Doublestrike, proc rate and DPS
+remain outside this integration. See the [receipt](../../evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json)
+for actual precommit checks and draft PR #47 for the delivered head and CI.
+No new solve, purchase, crafting, merge or publication is included.

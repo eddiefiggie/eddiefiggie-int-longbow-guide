@@ -268,7 +268,7 @@ is established. The
 [integration receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
 records actual verification separately from the source derivation and its limits.
 
-## Bounded Wisdom/Constitution evidence — current draft build 11-16-26.1
+## Bounded Wisdom/Constitution evidence — historical .1 checkpoint
 
 The [completed audit register](../../evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
 supports eight selected definitions: Claws 15 Enhancement Wisdom; Celestial
@@ -317,3 +317,53 @@ selected Human query; complete character eligibility is not certified here.
 These standing-gear amounts exclude Bloodrage and do not calculate final ability
 scores, HP, Spot, Will or DPS. Actual verification is recorded in the
 [integration receipt](../../evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json).
+
+## Selected-gear Doubleshot — current draft build 11-16-26.2
+
+The [source packet](../../evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json)
+supports one new qualified definition, `quickblade-ds`: **15 Artifact
+Doubleshot**, conditional on three distinct equipped Quickblade hosts. The four
+native definitions retain their original cores and bindings:
+
+| Component | Existing selected definition |
+| --- | --- |
+| `goggles-ds` | 9 Enhancement Doubleshot |
+| `ring-ds` | 3 Quality Doubleshot |
+| `boots-ds` | 5 Insight Doubleshot |
+| `armor-ds` | 3 Profane Doubleshot |
+
+One rule, `doubleshot-selected-six-pairs`, admits exactly these unordered
+Doubleshot/gear relationships, in either operand order:
+
+| Exact component pair | Types |
+| --- | --- |
+| `goggles-ds` ↔ `ring-ds` | Enhancement / Quality |
+| `goggles-ds` ↔ `boots-ds` | Enhancement / Insight |
+| `goggles-ds` ↔ `armor-ds` | Enhancement / Profane |
+| `ring-ds` ↔ `boots-ds` | Quality / Insight |
+| `ring-ds` ↔ `armor-ds` | Quality / Profane |
+| `boots-ds` ↔ `armor-ds` | Insight / Profane |
+
+The affirmative Tip 179 premise accompanies the retained Stack same-family
+caveat. This is a bounded adoption, not exhaustive proof of no exceptions or a
+global different-types default. Existing `artifact-other-types` supplies only
+the four Quickblade/native relationships after its actual source bytes and
+identity are checked. Same-Artifact nonstacking remains; three copies produce
+one set reward, not 45 points.
+
+The complete selected-gear result at level 36 is **35 percentage points** from
+`9 + 3 + 5 + 3 + 15`; level-35 full-kit results stay incomplete. This follows
+source-supported prerequisites and named pair proofs, not optimizer arithmetic
+alone. The [loadout record](WISDOM-ARTIFACT-LOADOUT.md#current-selected-gear-doubleshot-integration--build-11-16-262)
+separates ML30 gems, individual host requirements, selected occupancy, native-set
+suppression and the ML36 kit. No whole-character Doubleshot, Doublestrike, attack
+rate, independent-projectile behavior, proc rate or DPS result is certified.
+Existing offensive-mechanics wording and historical bow results remain intact.
+
+Fresh observations corroborate the native definitions without replacing their
+November 7 bindings. Tip 179, Artifact and Stack retain their earlier times,
+revision strings and limits. Wiki is a community reference, not a client
+observation; repeated transclusions are not independent authorities. The
+[integration receipt](../../evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json)
+records actual precommit verification. Draft PR #47 records the delivered head
+and its CI outcome; those software checks do not authenticate game behavior.

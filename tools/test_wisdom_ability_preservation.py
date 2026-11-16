@@ -14,6 +14,7 @@ import stacking_audit as audit
 import wisdom_loadout
 import wisdom_chains_type_preservation as chains_type
 import wisdom_ability_preservation as preservation
+import wisdom_doubleshot_preservation as doubleshot
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,18 +57,18 @@ class AbilityPreservationTests(unittest.TestCase):
             with self.subTest(path=path):
                 raw = preservation.checkpoint_file_bytes(path)
                 self.assertEqual((len(raw), preservation.sha(raw)), expected)
-                self.assertNotEqual(raw, (ROOT / path).read_bytes())
+                self.assertNotEqual(raw, doubleshot.checkpoint_file_bytes(path))
                 text = raw.decode()
                 for change in scope['files'][path]['reviewed_replacements']:
                     self.assertTrue(change['before'])
                     self.assertEqual(text.count(change['before']), 1)
                     text = text.replace(change['before'], change['after'], 1)
-                self.assertEqual(text, (ROOT / path).read_text())
+                self.assertEqual(text, doubleshot.checkpoint_file_text(path))
 
     def test_stale_mixed_duplicate_and_unrelated_mutants_fail_closed(self):
         for path in preservation.REVIEWED_PATHS:
             scope = preservation.load_scope()
-            current = (ROOT / path).read_text()
+            current = doubleshot.checkpoint_file_text(path)
             change = scope['files'][path]['reviewed_replacements'][0]
             mutants = (preservation.checkpoint_file_text(path), current + '\n',
                        current.replace(change['after'], change['before'], 1),
@@ -80,7 +81,7 @@ class AbilityPreservationTests(unittest.TestCase):
 
     def test_rehashed_mutants_cannot_redefine_contexts_or_fixed_baselines(self):
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = doubleshot.checkpoint_file_text(path)
             original = preservation.load_scope()
             change = original['files'][path]['reviewed_replacements'][0]
             for mutant in (current + '\n', current.replace(change['after'], change['before'], 1),
@@ -200,8 +201,8 @@ class CompletePointNineArithmeticTests(unittest.TestCase):
                                                active=case['active'], level=case['level']), case['result'])
         self.assertEqual(json.dumps(data, sort_keys=True), before)
 
-    def test_current_delta_is_only_four_level36_wisdom_constitution_objects(self):
-        data = audit.load()
+    def test_point_one_input_delta_is_only_four_level36_wisdom_constitution_objects(self):
+        data = json.loads(doubleshot.checkpoint_file_text(LEDGER))
         self.assertTrue(audit.validate(data))
         before = json.dumps(data, sort_keys=True)
         changes = []
