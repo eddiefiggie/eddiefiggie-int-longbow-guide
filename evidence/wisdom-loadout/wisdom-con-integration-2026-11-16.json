@@ -1,0 +1,864 @@
+{
+  "schema_version": 1,
+  "build": "11-16-26.1",
+  "status": "Precommit verification complete; subsequent commit and exact-head CI results are recorded in draft PR47.",
+  "recorded_at_utc": "2026-11-16T04:40:21.946643+00:00",
+  "startup": {
+    "approved_scope": "Option 1: integrate eight exact Wisdom/Constitution definitions and four named positive pairs; exact three-member Wisdom and six-member Constitution guards; retain Skull conflict and full Constitution null; run required verification, update existing draft PR47 and verify CI. No merge, publication or selection changes.",
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "source_ref": "feat/wisdom-loadout-priorities",
+    "immutable_remote_base_sha": "834b8c4cc648f9263ea19ac4203eedd872888f06",
+    "allowed_working_branch": "feat/wisdom-loadout-priorities",
+    "actual_local_repository": "/workspace/scratch/f67d3d0dd89f/guide",
+    "initial_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "initial_local_branch": "feat/wisdom-loadout-priorities",
+    "initial_staged_tree": "0b6263ca9bb201b5267774d6f8af198fe013d35e",
+    "initial_unstaged_paths": [],
+    "initial_untracked_paths": [],
+    "baseline_files": 311,
+    "root_gate": {
+      "recorded_at_utc": "2026-11-16T03:51:42.511704+00:00",
+      "record": "/workspace/scratch/92680a97b4fb/wiscon-integration/startup-gate.json",
+      "result": "passed",
+      "scope": "Root verified source tree, all311 file bytes and indexed blobs, intentional local mirror, and remote PR head/base/state before implementation."
+    },
+    "independent_documentation_gate": {
+      "captured_at_utc": "2026-11-16T03:53:32.567623+00:00",
+      "actual_repository": "/workspace/scratch/f67d3d0dd89f/guide",
+      "initial_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+      "initial_local_branch": "feat/wisdom-loadout-priorities",
+      "initial_staged_path_count": 119,
+      "initial_unstaged_paths": [],
+      "initial_untracked_paths": [],
+      "index_entry_count": 311,
+      "source_files_compared": 311,
+      "index_paths_match": true,
+      "mismatches": [],
+      "recorded_approved_source_tree": "0b6263ca9bb201b5267774d6f8af198fe013d35e",
+      "gate_result": "passed",
+      "inspection_method": "Independent read-only local status/HEAD/branch/index inspection and SHA256 comparison of all311 tracked files against root startup-gate.json; GIT_OPTIONAL_LOCKS=0. No fetch/reset/ref switch/write-tree/index mutation or remote call."
+    },
+    "baseline_capture_before_mutation": {
+      "confirmed_by": "review_int_evidence and root",
+      "confirmed_ready": true,
+      "path": "/workspace/scratch/92680a97b4fb/wiscon-integration/preservation-baseline",
+      "baseline_results_path": "/workspace/scratch/92680a97b4fb/wiscon-integration/baseline-results.json",
+      "complete_ledger_result_objects": 152,
+      "complete_bow_cases": 39,
+      "scope": "Independent baseline capture, not verification that the subsequent implementation preserves those results."
+    }
+  },
+  "source_register": {
+    "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+    "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+    "size_bytes": 49296,
+    "original_investigation_bytes_preserved": true,
+    "copy_check": "Public source file SHA256 and size match the frozen audit register.",
+    "new_audit_source_records": 12,
+    "reused_source_references": 9,
+    "reviewed_components": 9,
+    "within_family_pairs": 18,
+    "original_status_preserved": "The register describes the completed read-only audit and its then-proposed implementation. This separate receipt records the later owner-approved implementation.",
+    "provenance_limits": [
+      "Scoped transcription of actual observations; not a complete DOM/HTTP archive or authenticated live-game capture.",
+      "Displayed Wiki revision endpoints were not independently reopened; original cache notices and observation intervals are retained.",
+      "The Nexus Skull read lacks a separately timed interval; its note-creation time remains distinct.",
+      "No missing number, revision, client version or fresh source-observation timestamp is invented.",
+      "Retained source bytes and historical INT-only adoption scopes remain unchanged.",
+      "The file hash identifies bytes only; it does not authenticate browser observations or prove game mechanics."
+    ]
+  },
+  "approved_components": {
+    "claws-wisdom": {
+      "stat": "Wisdom",
+      "amount": 15,
+      "bonus_type": "Enhancement"
+    },
+    "celestial-profane-wisdom": {
+      "stat": "Wisdom",
+      "amount": 2,
+      "bonus_type": "Profane"
+    },
+    "globe-wisdom": {
+      "stat": "Wisdom",
+      "amount": 1,
+      "bonus_type": "Exceptional"
+    },
+    "queen-insight-con": {
+      "stat": "Constitution",
+      "amount": 7,
+      "bonus_type": "Insight"
+    },
+    "boots-quality-con": {
+      "stat": "Constitution",
+      "amount": 3,
+      "bonus_type": "Quality"
+    },
+    "solar-con": {
+      "stat": "Constitution",
+      "amount": 4,
+      "bonus_type": "Artifact"
+    },
+    "celestial-profane-constitution": {
+      "stat": "Constitution",
+      "amount": 2,
+      "bonus_type": "Profane"
+    },
+    "globe-constitution": {
+      "stat": "Constitution",
+      "amount": 1,
+      "bonus_type": "Exceptional"
+    }
+  },
+  "added_rules": [
+    "wisdom-claws-celestial",
+    "constitution-queen-boots",
+    "constitution-queen-celestial",
+    "constitution-boots-celestial"
+  ],
+  "approved_positive_pairs": [
+    {
+      "stat": "Wisdom",
+      "channel": "gear",
+      "members": [
+        "claws-wisdom",
+        "celestial-profane-wisdom"
+      ],
+      "types": [
+        "Enhancement",
+        "Profane"
+      ]
+    },
+    {
+      "stat": "Constitution",
+      "channel": "gear",
+      "members": [
+        "queen-insight-con",
+        "boots-quality-con"
+      ],
+      "types": [
+        "Insight",
+        "Quality"
+      ]
+    },
+    {
+      "stat": "Constitution",
+      "channel": "gear",
+      "members": [
+        "queen-insight-con",
+        "celestial-profane-constitution"
+      ],
+      "types": [
+        "Insight",
+        "Profane"
+      ]
+    },
+    {
+      "stat": "Constitution",
+      "channel": "gear",
+      "members": [
+        "boots-quality-con",
+        "celestial-profane-constitution"
+      ],
+      "types": [
+        "Quality",
+        "Profane"
+      ]
+    }
+  ],
+  "source_contract": {
+    "name": "selected-wisdom-constitution-v1",
+    "helper": "tools/wisdom_ability_proofs.py",
+    "definition_count": 8,
+    "full_family_guards": {
+      "Wisdom": [
+        "claws-wisdom",
+        "celestial-profane-wisdom",
+        "globe-wisdom"
+      ],
+      "Constitution": [
+        "skull-con",
+        "queen-insight-con",
+        "boots-quality-con",
+        "solar-con",
+        "celestial-profane-constitution",
+        "globe-constitution"
+      ]
+    },
+    "existing_rules_preserved": 12,
+    "historical_rule_profile_sizes": [
+      7,
+      9,
+      10,
+      12
+    ],
+    "interpretation_boundary": "Exact selected definitions and pairs only. Celestial's native all-abilities wording uses separately bound WIS/CON membership; no global stat alias or type-only rule.",
+    "stacking_caveat": "Carry forward int-stacking-sources-2026-11-15.json captures.stack and reviewed_interpretation.stack_caveat alongside the affirmative Tip179 premise. The four new pairs do not prove exhaustive absence of exceptions.",
+    "placement_boundary": "Source pages establish host slots and levels; the pinned selection establishes occupancy. Solar Sun type plus armor Sun slot plus Lunar/Solar system and retained ML rule jointly support placement. Dolorous Accessory must match Accessory.",
+    "public_entrypoints": "Subtotal and proof calls must enforce actual source bytes and all family/identity/type/host/level bindings without relying on prior validation.",
+    "skull_boundary": "Retain the exact conflicting Skull core and15/16 source/model cases. Every public Skull proof must fail in this profile, including generic Artifact/Exceptional routes; no conflict override.",
+    "no_full_character_or_live_game_certification": true
+  },
+  "expected_selected_gear_outcomes": {
+    "scope": "Approved implementation expectations at full-kit level36; not new observed calculator output.",
+    "Wisdom": {
+      "expression": "15 + 2 + 1",
+      "full_total": 18,
+      "complete": true
+    },
+    "Constitution": {
+      "supported_subset_expression": "7 + 3 + 4 + 2 + 1",
+      "supported_subset": 17,
+      "full_total": null,
+      "complete": false,
+      "excluded": [
+        "skull-con"
+      ]
+    },
+    "preserved_complete_totals": {
+      "Intelligence": 37,
+      "Fortification": 226,
+      "Spot": 27
+    },
+    "level35": "Full-kit results remain incomplete.",
+    "preserved_constitution_model_cases": {
+      "generic_craft": 32,
+      "own_item_sensitivity": 33
+    },
+    "standing_scope": "Bloodrage and other conditional/nongear sources are not added; these are existing gear contributions, not new character gains or final scores."
+  },
+  "observed_selected_gear_results": {
+    "observed_at_utc": "2026-11-16T04:21:51.642013+00:00",
+    "scope": "standing selected gear, level36, no active conditional effects",
+    "results": {
+      "Wisdom": {
+        "stat": "Wisdom",
+        "channel": "gear",
+        "total": 18,
+        "counted": [
+          "claws-wisdom",
+          "celestial-profane-wisdom",
+          "globe-wisdom"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "claws-wisdom",
+            "celestial-profane-wisdom",
+            "wisdom-claws-celestial"
+          ],
+          [
+            "claws-wisdom",
+            "globe-wisdom",
+            "exceptional-other-types"
+          ],
+          [
+            "celestial-profane-wisdom",
+            "globe-wisdom",
+            "exceptional-other-types"
+          ]
+        ],
+        "complete": true
+      },
+      "Constitution": {
+        "stat": "Constitution",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "globe-constitution",
+          "queen-insight-con",
+          "boots-quality-con",
+          "solar-con",
+          "celestial-profane-constitution"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "skull-con"
+        ],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "globe-constitution",
+            "queen-insight-con",
+            "exceptional-other-types"
+          ],
+          [
+            "globe-constitution",
+            "boots-quality-con",
+            "exceptional-other-types"
+          ],
+          [
+            "globe-constitution",
+            "solar-con",
+            "artifact-other-types"
+          ],
+          [
+            "globe-constitution",
+            "celestial-profane-constitution",
+            "exceptional-other-types"
+          ],
+          [
+            "queen-insight-con",
+            "boots-quality-con",
+            "constitution-queen-boots"
+          ],
+          [
+            "queen-insight-con",
+            "solar-con",
+            "artifact-other-types"
+          ],
+          [
+            "queen-insight-con",
+            "celestial-profane-constitution",
+            "constitution-queen-celestial"
+          ],
+          [
+            "boots-quality-con",
+            "solar-con",
+            "artifact-other-types"
+          ],
+          [
+            "boots-quality-con",
+            "celestial-profane-constitution",
+            "constitution-boots-celestial"
+          ],
+          [
+            "solar-con",
+            "celestial-profane-constitution",
+            "artifact-other-types"
+          ]
+        ],
+        "complete": false
+      },
+      "Intelligence": {
+        "stat": "Intelligence",
+        "channel": "gear",
+        "total": 37,
+        "counted": [
+          "boots-int",
+          "solar-int",
+          "lunar-int",
+          "festive-int",
+          "dimlight-int",
+          "glabrezu-insight-int",
+          "chains-quality-int"
+        ],
+        "suppressed": [
+          "celestial-profane-intelligence",
+          "globe-intelligence"
+        ],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "lunar-int",
+            "celestial-profane-intelligence",
+            "same-type-best"
+          ],
+          [
+            "dimlight-int",
+            "globe-intelligence",
+            "same-type-best"
+          ],
+          [
+            "boots-int",
+            "solar-int",
+            "artifact-other-types"
+          ],
+          [
+            "boots-int",
+            "lunar-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "festive-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "boots-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "solar-int",
+            "lunar-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "festive-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "dimlight-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "glabrezu-insight-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "chains-quality-int",
+            "artifact-other-types"
+          ],
+          [
+            "lunar-int",
+            "festive-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "lunar-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "lunar-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "lunar-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "festive-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "festive-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "festive-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "dimlight-int",
+            "glabrezu-insight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "dimlight-int",
+            "chains-quality-int",
+            "exceptional-other-types"
+          ],
+          [
+            "glabrezu-insight-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ]
+        ],
+        "complete": true
+      },
+      "Fortification": {
+        "stat": "Fortification",
+        "channel": "gear",
+        "total": 226,
+        "counted": [
+          "queen-fortification",
+          "chains-fortification"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "queen-fortification",
+            "chains-fortification",
+            "fort-enh-insight-observed"
+          ]
+        ],
+        "complete": true
+      },
+      "Spot": {
+        "stat": "Spot",
+        "channel": "gear",
+        "total": 27,
+        "counted": [
+          "chains-spot",
+          "heroism-spot",
+          "luck-spot"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "chains-spot",
+            "heroism-spot",
+            "spot-chains-heroism"
+          ],
+          [
+            "chains-spot",
+            "luck-spot",
+            "spot-chains-luck"
+          ],
+          [
+            "heroism-spot",
+            "luck-spot",
+            "spot-heroism-luck"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    "level35": {
+      "Wisdom": {
+        "stat": "Wisdom",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-wisdom",
+          "celestial-profane-wisdom",
+          "globe-wisdom"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      },
+      "Constitution": {
+        "stat": "Constitution",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "globe-constitution",
+          "skull-con",
+          "queen-insight-con",
+          "boots-quality-con",
+          "solar-con",
+          "celestial-profane-constitution"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    "supported_constitution_subset": {
+      "value": 17,
+      "calculation": "7 + 3 + 4 + 2 + 1",
+      "method": "Sum only the five IDs in the actual Constitution counted array; never assign this subset to the full total.",
+      "full_result_remains_null": true
+    }
+  },
+  "preservation": {
+    "status": "passed complete-object and byte-preservation checks in the final aggregate",
+    "adapter": "tools/wisdom_ability_preservation.py",
+    "exact_predecessor_build": "11-15-26.9",
+    "baseline_capture_complete": true,
+    "baseline_complete_ledger_results": 152,
+    "baseline_complete_bow_cases": 39,
+    "prior_scope_hashes_and_negative_controls": "Original literal hashes, exact reversal assertions and negative-control intent retained; historical modules run through isolated restored predecessors.",
+    "unchanged_scope": [
+      "Selected equipment, crafts, sockets and all32 priorities",
+      "Sole Minor Artifact Yeenoghu's Reign",
+      "Feat/AP choices and documented racial/iconic exceptions",
+      "Skull model32/33 cases and all historical bow tuples/results",
+      "Existing INT37, Fortification226 and Spot27 results",
+      "Original source bytes, source grades, historical interpretations and snapshots",
+      "Festive-only event exception and narrow HA63 procurement-evidence exception",
+      "Full-kit level36 and lower-level applicability limits"
+    ],
+    "scope_sha256": "e06a1b90ff20a3d1c467032723ae2b2aea03379bf948f9eaf3c7a50066d777fd",
+    "baseline_results_sha256": "e96e8c4b561b69eec2d3a70eb5647ce01c7bf7f523d1db1de422a1728a70f16d",
+    "restored_production_files": 8,
+    "unique_exact_reversal_hunks": 51,
+    "literal_protected_files": 209,
+    "complete_old_input_results_preserved": 152,
+    "complete_bow_cases_preserved": 39,
+    "current_changed_results": {
+      "count": 4,
+      "level": 36,
+      "stats": [
+        "Wisdom",
+        "Constitution"
+      ],
+      "active_scenarios": [
+        [],
+        [
+          "force"
+        ]
+      ]
+    },
+    "current_unchanged_level35_results": 76,
+    "current_unchanged_level36_results": 72,
+    "selection_sha256": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d"
+  },
+  "verification": {
+    "source_copy": {
+      "status": "passed",
+      "method": "SHA256 and byte-size comparison against the frozen audit register",
+      "checked_sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d"
+    },
+    "documentation_review": {
+      "status": "passed bounded documentation review",
+      "method": "Compared eight Markdown files with the frozen .9 baseline and parsed this separate receipt.",
+      "markdown_files_reviewed": 8,
+      "historical_heading_relabels": 5,
+      "unexpected_removed_lines": [],
+      "new_local_evidence_links_missing": [],
+      "trailing_whitespace": [],
+      "limit": "Documentation content, local links and JSON structure only. Software gates and the independent source/text review are recorded separately below; no visual rendering claim follows.",
+      "root_followup": "Root reviewed the later maintenance note and the one-line CI timeout change against the measured 567.634-second first aggregate; the documented command, triggers and permissions stay unchanged."
+    },
+    "focused_tests": {
+      "status": "Passed corrected controls; all are included in the final successful aggregate.",
+      "runs": [
+        {
+          "log": "abilities-focused.log",
+          "tests": 36,
+          "seconds": 101.477,
+          "failures": 11,
+          "errors": 2,
+          "explanation": "Ten failures rejected stale scope after concurrent presentation edits; one expectation incorrectly excluded definitions when only Tip 179 interactions failed. Two errors exposed missing Artifact/Exceptional lookup handling on direct routes, fixed in production."
+        },
+        {
+          "log": "abilities-focused-final.log",
+          "tests": 36,
+          "seconds": 113.034,
+          "result": "PASS",
+          "timing": "After missing-source fix; before later malformed-proof safe-predicate fix."
+        },
+        {
+          "log": "abilities-history-final.log",
+          "tests": 86,
+          "seconds": 240.221,
+          "failures": 1,
+          "errors": 0,
+          "explanation": "Only original priority-row mutant targeted the earlier newly added summary row; all other tests passed."
+        },
+        {
+          "log": "abilities-compatibility-recheck.log",
+          "result": "PASS",
+          "tests": 2,
+          "seconds": 25.797
+        },
+        {
+          "log": "snapshot-compatibility-recheck.log",
+          "tests": 5,
+          "seconds": 0.447,
+          "result": "PASS"
+        }
+      ],
+      "production_findings_fixed": [
+        "Direct missing Artifact/Exceptional binding lookup raised KeyError instead of withholding the affected pair.",
+        "Non-dictionary proofs after all other new markers were removed raised AttributeError before fixed-ID contract detection; safe helper and public dispatch predicates now reject them."
+      ],
+      "test_corrections": [
+        "Tip 179 byte loss preserves independently supported definitions and withholds the four named interaction edges.",
+        "Four exact source-role label changes are independently literal; all original source dictionaries remain unchanged.",
+        "Priority negative control now mutates the actual rank-29 priority row; all existing assertion intent remains.",
+        "Artifact/Exceptional deletion now checks exact missing Constitution edges, not merely the already-null full result, while retaining the independently supported Globe/Solar alternative.",
+        "Snapshot content negative control now changes the unique current CON32/33-and-DEX6 phrase to DEX19; all asset/fragment mutations, non-no-op assertions and strict snapshot equality remain unchanged."
+      ]
+    },
+    "aggregate_tests": {
+      "status": "passed final required discovery",
+      "runs": [
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p test_*.py -v",
+          "started_at_utc": "2026-11-16T04:19:33.246083+00:00",
+          "ended_at_utc": "2026-11-16T04:29:01.478622+00:00",
+          "exit_code": 1,
+          "tests": 568,
+          "seconds": 567.634,
+          "failures_and_errors": [
+            "test_asset_and_content_regressions_are_rejected (test_snapshot_paths.SnapshotPathTests.test_asset_and_content_regressions_are_rejected)"
+          ],
+          "log_path": "/workspace/scratch/92680a97b4fb/wiscon-integration/full-suite.log",
+          "log_sha256": "36d00e49b744f5ab9bf004ba2dbb8cc74668a70f2b603c6b0955ab2c482cd0fd",
+          "changed_inputs_during_run": []
+        },
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p test_*.py -v",
+          "started_at_utc": "2026-11-16T04:30:40.248894+00:00",
+          "ended_at_utc": "2026-11-16T04:39:59.269390+00:00",
+          "exit_code": 0,
+          "tests": 568,
+          "seconds": 558.47,
+          "failures_and_errors": [],
+          "log_path": "/workspace/scratch/92680a97b4fb/wiscon-integration/full-suite-final.log",
+          "log_sha256": "a4e55074869b4810a92b52530f41a48b56bacdef899ce308cfbd91cf50c8f3bb",
+          "changed_inputs_during_run": []
+        }
+      ],
+      "final_tests": 568,
+      "final_seconds": 558.47,
+      "inputs_unchanged_during_each_run": true,
+      "failed_run_explanation": "The first aggregate found a stale snapshot content-mutation literal. Production snapshot content/path validation passed; the test was retargeted to the unique current phrase without relaxing its validator. All subsequent aggregate outcomes are retained above.",
+      "post_gate_metadata": "This receipt is finalized after the local gate. The exact final committed tree, including this record, is checked by PR CI; that later result belongs in the PR rather than a self-referential receipt."
+    },
+    "builders": {
+      "status": "all four documented builders passed",
+      "runs": [
+        {
+          "builder": "tools/build_wisdom_loadout.py",
+          "started_at_utc": "2026-11-16T04:04:40.814728+00:00",
+          "ended_at_utc": "2026-11-16T04:04:45.390860+00:00",
+          "exit_code": 0,
+          "stdout": "Rendered Wisdom loadout blocks: 14 items, 1 artifact, 34 sockets. No mechanics certification implied.\n",
+          "stderr": ""
+        },
+        {
+          "builder": "tools/build_stacking_audit.py",
+          "started_at_utc": "2026-11-16T04:04:45.391211+00:00",
+          "ended_at_utc": "2026-11-16T04:04:57.831459+00:00",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "builder": "tools/build_crafting_sheet.py",
+          "started_at_utc": "2026-11-16T04:04:57.831688+00:00",
+          "ended_at_utc": "2026-11-16T04:04:57.904696+00:00",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "builder": "tools/build_snapshot.py",
+          "started_at_utc": "2026-11-16T04:04:57.905114+00:00",
+          "ended_at_utc": "2026-11-16T04:04:57.999774+00:00",
+          "exit_code": 0,
+          "stdout": "/workspace/scratch/f67d3d0dd89f/guide/versions/11-16-26.1.html\n",
+          "stderr": ""
+        }
+      ],
+      "earlier_runs": [
+        {
+          "builder": "tools/build_wisdom_loadout.py",
+          "started_at_utc": "2026-11-16T04:00:42.429886+00:00",
+          "ended_at_utc": "2026-11-16T04:00:46.912435+00:00",
+          "exit_code": 0,
+          "stdout": "Rendered Wisdom loadout blocks: 14 items, 1 artifact, 34 sockets. No mechanics certification implied.\n",
+          "stderr": ""
+        },
+        {
+          "builder": "tools/build_stacking_audit.py",
+          "started_at_utc": "2026-11-16T04:00:46.912694+00:00",
+          "ended_at_utc": "2026-11-16T04:00:59.743501+00:00",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "builder": "tools/build_crafting_sheet.py",
+          "started_at_utc": "2026-11-16T04:00:59.743966+00:00",
+          "ended_at_utc": "2026-11-16T04:00:59.830104+00:00",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "builder": "tools/build_snapshot.py",
+          "started_at_utc": "2026-11-16T04:00:59.830337+00:00",
+          "ended_at_utc": "2026-11-16T04:00:59.935042+00:00",
+          "exit_code": 0,
+          "stdout": "/workspace/scratch/f67d3d0dd89f/guide/versions/11-16-26.1.html\n",
+          "stderr": ""
+        }
+      ],
+      "output_verification": "Final aggregate includes exact generated guide/audit/print/snapshot comparisons. Subsequent malformed-input fixes did not change valid generated outputs."
+    },
+    "complete_result_preservation": {
+      "status": "passed",
+      "complete_old_input_objects": 152,
+      "complete_bow_inputs_and_outputs": 39,
+      "changed_current_level36_objects": 4,
+      "unchanged_current_level36_objects": 72,
+      "unchanged_current_level35_objects": 76,
+      "literal_protected_files": 209,
+      "restored_production_files": 8,
+      "exact_hunks": 51,
+      "source_register_bytes_unchanged": true,
+      "selected_equipment_and_priorities_unchanged": true
+    },
+    "independent_implementation_review": {
+      "status": "passed after resolving the listed findings",
+      "runtime_review": {
+        "reviewer": "audit_damage_channels",
+        "complete_old_results_compared": 152,
+        "public_mutation_probes": 20,
+        "resolved_findings": [
+          "Clarified four current source-role labels without altering original source dictionaries.",
+          "Restored direct Spot27 in the current one-page summary using the qualified result."
+        ],
+        "remaining_blockers": []
+      },
+      "preservation_review": {
+        "reviewer": "review_int_evidence",
+        "status": "frozen after corrected controls passed; final aggregate also passed"
+      },
+      "generated_content_review": {
+        "reviewer": "audit_speed_doubleshot",
+        "remaining_blockers": [],
+        "scope": "Current guide/index, stacking audit, one-page and priority output, heroic print content, eight qualified definitions, four pairs, local evidence/rule/source links, historical inventory labels and unresolved boundaries.",
+        "limit": "Source/text review only, not browser layout, keyboard, screen-reader or print verification."
+      }
+    },
+    "ci": {
+      "status": "Not run at this precommit checkpoint. Inspect and record the new commit-specific Guide checks result in draft PR47.",
+      "head_sha": null,
+      "check_url": null,
+      "job_timeout_minutes": 15,
+      "workflow_scope": "Same pull_request trigger, pinned checkout, read-only contents permission and full discovery command; no publication trigger added.",
+      "timeout_reason": "The expanded aggregate exceeded the former five-minute job budget locally. Only its maximum allowed duration was increased; required tests and permissions are unchanged."
+    },
+    "browser_layout": {
+      "status": "not run in this integration",
+      "limit": "No visual rendering pass is inferred from document or source checks."
+    },
+    "accessibility_and_keyboard": {
+      "status": "not run in this integration"
+    },
+    "print_pagination": {
+      "status": "not run in this integration"
+    },
+    "live_game": {
+      "status": "not performed"
+    },
+    "new_optimizer_solve": {
+      "status": "not performed"
+    }
+  },
+  "release": {
+    "pull_request": 47,
+    "draft": true,
+    "draft_update_status": "Pending at this precommit checkpoint; subsequent exact commit and CI are recorded in PR47.",
+    "resulting_head_sha": null,
+    "merged": false,
+    "published": false,
+    "merge_authorized": false,
+    "publication_authorized": false
+  },
+  "delivery": {
+    "authorized_destination": "Existing draft PR47 on feat/wisdom-loadout-priorities",
+    "expected_parent": "834b8c4cc648f9263ea19ac4203eedd872888f06",
+    "gate": "Root must verify the expected parent still matches before advancing the branch, then record actual resulting head and CI.",
+    "merge_and_publication": "Outside this approval.",
+    "postcommit_record": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/pull/47"
+  }
+}

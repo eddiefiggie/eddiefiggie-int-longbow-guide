@@ -261,14 +261,14 @@ class CurrentOffensiveClaimsTests(unittest.TestCase):
         cls.html = (ROOT / 'index.html').read_text()
 
     def test_actual_outputs_match_current_generators_and_new_snapshot(self):
-        self.assertEqual(current_build(self.html), '11-15-26.9')
+        self.assertEqual(current_build(self.html), '11-16-26.1')
         self.assertEqual(Path(wisdom_loadout.__file__).resolve(), ROOT / 'tools/wisdom_loadout.py')
         self.assertEqual(Path(build_stacking_audit.__file__).resolve(), ROOT / 'tools/build_stacking_audit.py')
         data = wisdom_loadout.load()
         self.assertTrue(current_render_contract(self.html, data))
         self.assertTrue(build_stacking_audit.validate_guide(self.html, audit.load()))
         self.assertEqual((ROOT / 'endgame-stacking-audit.html').read_text(), build_stacking_audit.detail(audit.load()))
-        self.assertEqual((ROOT / 'versions/11-15-26.9.html').read_text(), snapshot_html(self.html))
+        self.assertEqual((ROOT / 'versions/11-16-26.1.html').read_text(), snapshot_html(self.html))
         self.assertEqual(wisdom_loadout.validate(data)['claim_count'], 130)
         self.assertEqual(len(data['query']['targets']), 32)
 

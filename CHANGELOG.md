@@ -2,6 +2,14 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-16-26.1 (draft Wisdom/Constitution evidence candidate; not published)
+
+- Binds eight selected standing-gear definitions: three Wisdom inputs and five Constitution inputs. Preserves exact own-effect evidence, bounded Celestial ability membership, host/craft/socket applicability and the full-kit level-36 floor.
+- Adds only four named WIS/CON pairs under the retained positive premise and Stack caveat. Preserves all twelve prior rules and historical profiles; adds exact three-member Wisdom and six-member Constitution family guards.
+- Supports selected-gear **Wisdom 18** and a **Constitution subset of 17**, while full Constitution remains `null`. Keeps the conflicting Skull present and excluded from every public proof, including generic Artifact/Exceptional paths. The CON 32/33 model cases and conditional Bloodrage treatment remain unchanged.
+- Preserves INT 37, Fortification 226%, direct Spot 27, level-35 incompleteness, selected gear, Yeenoghu as the sole Minor Artifact, 32 priorities, crafts/sockets, feats/AP, historical results and existing Festive-only/HA63 exceptions. No additional character gain, whole-character score or HP/Spot/Will/DPS result is claimed.
+- Retains the frozen audit register and adds a separate integration receipt plus exact outer .1-to-.9 preservation. Required outputs and a path-rebased .1 snapshot belong to this integration; precommit verification and CI are pending at this documentation checkpoint. See the [integration receipt](evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json) for actual outcomes. No new solve, crafting, purchase, merge or publication.
+
 ## Build 11-15-26.9 (draft Chains type-evidence candidate; not published)
 
 - Qualifies only Chains 142 Enhancement Fortification and 20 Competence Spot through exact Legendary Nexus recipe type records combined with retained Wiki values, host applicability and Spot membership. Preserves the Spot Extra variant `0x7002C66B`, absent Nexus numeric parameters/client versions and beta-source limitations.

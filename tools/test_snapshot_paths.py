@@ -40,11 +40,13 @@ class SnapshotPathTests(unittest.TestCase):
         self.assertEqual(snapshot_html(before), expected)
 
     def test_asset_and_content_regressions_are_rejected(self):
+        content_target = 'Modeled full gear CON 32/33 and DEX 6'
+        self.assertEqual(self.snapshot.count(content_target), 1)
         mutations = [
             self.snapshot.replace('src="../img/', 'src="img/'),
             self.snapshot.replace('href="../heroic-crafting-print.html"', 'href="heroic-crafting-print.html"'),
             self.snapshot.replace('href="#pierce-deception-source-note"', 'href="../#pierce-deception-source-note"'),
-            self.snapshot.replace('Model-only gear WIS 18 / DEX 6', 'Model-only gear WIS 18 / DEX 19'),
+            self.snapshot.replace(content_target, 'Modeled full gear CON 32/33 and DEX 19'),
         ]
         for html in mutations:
             self.assertNotEqual(html, self.snapshot)

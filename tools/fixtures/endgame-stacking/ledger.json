@@ -3260,6 +3260,230 @@
       ],
       "observed": "2026-11-16T02:21:13.157Z",
       "freshness_limit": "Number missing in the rendered effect. Preserve the exact variant and Extra-slot association. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "wiscon-nearly-complete-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        1,
+        "exact_fragments",
+        2
+      ],
+      "quote": "Wisdom +15",
+      "record_pointer": [
+        "observations",
+        1
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Nearly_Complete",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Nearly_Complete&oldid=705751",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:13.149Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:13.149Z through 2026-11-16T03:27:13.171Z. Literal cache notice: (this is up to 5 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-claws-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        2,
+        "exact_fragments",
+        0
+      ],
+      "quote": "granting a +15 Enhancement bonus to Wisdom.",
+      "record_pointer": [
+        "observations",
+        2
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:27.449Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:27.449Z through 2026-11-16T03:27:27.481Z. Literal cache notice: (this is up to 17 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-queen-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        3,
+        "exact_fragments",
+        0
+      ],
+      "quote": "granting a +7 Insight bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        3
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:The_Queen_of_Rot&oldid=715898",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:48.675Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:48.675Z through 2026-11-16T03:27:48.698Z. Literal cache notice: (this is up to 17 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-solar-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        4,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Slotted Effect: +4 Artifact Bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        4
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Constitution_(Legendary)",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Constitution_(Legendary)&oldid=691768",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:06.959Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:06.959Z through 2026-11-16T03:28:06.980Z. Literal cache notice: (this is up to 10 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-dolorous-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        5,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Slotted Effect: +3 Quality bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        5
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Dolorous_Quality_Constitution_(legendary)",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Dolorous_Quality_Constitution_(legendary)&oldid=702234",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:34.938Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:34.938Z through 2026-11-16T03:28:34.957Z. Literal cache notice: (this is up to 15 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-coldlight-host-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        6,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Lamordia: Dolorous Slot (Accessory)",
+      "record_pointer": [
+        "observations",
+        6
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:57.431Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:57.431Z through 2026-11-16T03:28:57.450Z. Literal cache notice: (this is up to 16 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-reflection-host-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        7,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Sun Augment Slot",
+      "record_pointer": [
+        "observations",
+        7
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed_pointer": [
+        "additional_slot_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:30:06.826Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original explicit Sun-slot browser observation 2026-11-16T03:30:06.826Z through 2026-11-16T03:30:06.875Z; the item-context observation is separately retained at 2026-11-16T03:29:42.853Z through 2026-11-16T03:29:42.871Z. Literal cache notice: (this is up to 6 hours old). Exact short fragments and separately labelled context are retained, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-sun-system-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        11,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Players can slot Lunar and Solar Gems into these slots to provide their bonuses.",
+      "record_pointer": [
+        "observations",
+        11
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Lunar_and_Solar_Gems&oldid=707220",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:33:55.511Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:33:55.511Z through 2026-11-16T03:33:57.629Z. Literal cache notice: (this is up to 12 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
     }
   },
   "rules": [
@@ -3478,6 +3702,86 @@
         [
           "chains-spot",
           "luck-spot"
+        ]
+      ]
+    },
+    {
+      "id": "wisdom-claws-celestial",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Enhancement",
+        "Profane"
+      ],
+      "stats": [
+        "Wisdom"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "claws-wisdom",
+          "celestial-profane-wisdom"
+        ]
+      ]
+    },
+    {
+      "id": "constitution-queen-boots",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Insight",
+        "Quality"
+      ],
+      "stats": [
+        "Constitution"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "queen-insight-con",
+          "boots-quality-con"
+        ]
+      ]
+    },
+    {
+      "id": "constitution-queen-celestial",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Insight",
+        "Profane"
+      ],
+      "stats": [
+        "Constitution"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "queen-insight-con",
+          "celestial-profane-constitution"
+        ]
+      ]
+    },
+    {
+      "id": "constitution-boots-celestial",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Quality",
+        "Profane"
+      ],
+      "stats": [
+        "Constitution"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "boots-quality-con",
+          "celestial-profane-constitution"
         ]
       ]
     }
@@ -3819,14 +4123,21 @@
       "amount": 1,
       "bonus_type": "Exceptional",
       "host": "Legendary Calamitous Longbow / Purple",
-      "source": "globe",
-      "value_pattern": "\\+(?P<value>1) Exceptional Bonus",
-      "type_evidence": "Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence",
-      "state": "unknown",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
       "requires": [],
-      "note": "One selected Globe in the bow Purple socket. Exact retained text lacks qualified revision/observation provenance. The model suppresses Globe INT +1 against Exceptional Dimlight INT +2; no certified combination is asserted.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-colorless-all-abilities",
+        "sources": {
+          "item": "globe-int-live-20261115"
+        }
+      },
+      "note": "The selected Colorless Globe explicitly grants +1 Exceptional Constitution. Its unchanged original observation, ML25, Calamitous ML34 Purple socket1 and retained ordinary-slot compatibility are separately bound. Skull remains excluded from the full Constitution result."
     },
     {
       "id": "skull-con",
@@ -4465,16 +4776,24 @@
       "id": "queen-insight-con",
       "stat": "Constitution",
       "amount": 7,
-      "bonus_type": "unknown",
+      "bonus_type": "Insight",
       "host": "Cloak Nearly Complete",
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained Queen input in the current Wisdom loadout; source evidence does not meet this ledger’s exact revision/observation/type gate. Its modeled value is not certified. The prior Defense augment, Resistance augment and Battlerager are absent, so their historical overlap is not a current input. Selected Nearly Complete Insightful Constitution +7 remains provisional.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-nearly-complete",
+        "sources": {
+          "item": "wiscon-queen-20261116",
+          "craft": "wiscon-nearly-complete-20261116"
+        }
+      },
+      "note": "Selected Nearly Complete Insightful Constitution craft. The fresh own-item +7 Insight clause and generic Legendary craft context qualify this definition independently of Queen Fortification; other Queen effects retain their own evidence limits."
     },
     {
       "id": "queen-fortification",
@@ -4780,14 +5099,22 @@
       "amount": 3,
       "bonus_type": "Quality",
       "host": "Legendary Coldlight Runners / Dolorous",
-      "source": "viktranium",
+      "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Selected Dolorous Quality Constitution +3 replaces the prior Quality Intelligence option. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-lamordia-accessory",
+        "sources": {
+          "item": "wiscon-dolorous-20261116",
+          "host": "wiscon-coldlight-host-20261116"
+        }
+      },
+      "note": "Selected Legendary Dolorous Quality Constitution +3 in Coldlight Runners. Its own Quality clause, ML34 and exact Accessory variant match the host slot and retained Lamordia rule; no other Dolorous effect is inferred."
     },
     {
       "id": "solar-con",
@@ -4798,11 +5125,20 @@
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Legendary Solar Constitution; exact retained source support has not met this ledger’s full provenance gate. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-sun-socket",
+        "sources": {
+          "item": "wiscon-solar-20261116",
+          "host": "wiscon-reflection-host-20261116",
+          "slot_rule": "wiscon-sun-system-20261116"
+        }
+      },
+      "note": "Selected Legendary Solar Constitution +4 Artifact in Reflection armor Sun socket0. The own gem, actual host Sun link, special-slot system and retained minimum-level rule support this placement; ML30 does not raise the ML33 host. Complete kit remains level36."
     },
     {
       "id": "claws-wisdom",
@@ -4810,14 +5146,22 @@
       "amount": 15,
       "bonus_type": "Enhancement",
       "host": "Legendary Burrowing Claws / Nearly Complete",
-      "source": "claws-wisdom",
+      "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "The own-item page explicitly lists this Wisdom +15 Enhancement option, revision 707232. Its source observation timestamp is missing, so the selected Wisdom input remains unknown here rather than certified. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-nearly-complete",
+        "sources": {
+          "item": "wiscon-claws-20261116",
+          "craft": "wiscon-nearly-complete-20261116"
+        }
+      },
+      "note": "Selected Nearly Complete Wisdom craft. Fresh own-item typed clause and generic Legendary craft context qualify +15 Enhancement at the unchanged full-kit level36 floor. The older Claws source remains unmodified; the optional ring craft is not selected."
     },
     {
       "id": "ring-quality-dex",
@@ -4873,11 +5217,19 @@
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Profane Well Rounded is corroborated, not an original qualified typed receipt; the ring Nearly Finished slot is unselected. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-all-ability-membership",
+        "sources": {
+          "item": "celestial-profane-int-live-20261115",
+          "membership": "chains-intelligence-membership-20261115"
+        }
+      },
+      "note": "Native Celestial Profane Well Rounded +2, with explicit retained Constitution ability membership. This is a bounded CON definition using unchanged original observations; Nearly Finished remains empty. The full Constitution result is withheld while Skull remains conflicting."
     },
     {
       "id": "celestial-profane-intelligence",
@@ -4903,11 +5255,19 @@
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Selected model input, not a qualified component under this ledger’s source gate. Profane Well Rounded is corroborated, not an original qualified typed receipt; the ring Nearly Finished slot is unselected. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-all-ability-membership",
+        "sources": {
+          "item": "celestial-profane-int-live-20261115",
+          "membership": "chains-intelligence-membership-20261115"
+        }
+      },
+      "note": "Native Celestial Profane Well Rounded +2, with explicit retained Wisdom ability membership. This is a bounded WIS definition using unchanged original observations; Nearly Finished remains empty. INT suppression does not suppress this separate Wisdom contribution."
     },
     {
       "id": "celestial-profane-charisma",
@@ -4960,14 +5320,21 @@
       "amount": 1,
       "bonus_type": "Exceptional",
       "host": "Legendary Calamitous Longbow / Purple",
-      "source": "globe",
+      "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained Globe all-ability definition lacks complete capture provenance. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-colorless-all-abilities",
+        "sources": {
+          "item": "globe-int-live-20261115"
+        }
+      },
+      "note": "The selected Colorless Globe explicitly grants +1 Exceptional Wisdom. Its unchanged original observation, ML25, Calamitous ML34 Purple socket1 and retained ordinary-slot compatibility are separately bound. Higher Exceptional INT does not suppress this separate Wisdom contribution."
     },
     {
       "id": "globe-charisma",
@@ -5256,7 +5623,7 @@
       "id": "provenance-gaps",
       "state": "unknown",
       "claim": "Retained definitions with incomplete capture provenance",
-      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification. Build 11-15-26.8 separately qualifies Queen Fortification and the two selected Spot augment components from a new register; none of the older source dictionaries listed here is repaired. Build 11-15-26.9 separately admits the two exact Legendary Nexus recipe-type observations through a closed source contract and combines them with pinned Wiki values and applicability. The Nexus numeric parameters and client versions remain absent; no Wiki-style revision or missing legacy metadata is fabricated.",
+      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification. Build 11-15-26.8 separately qualifies Queen Fortification and the two selected Spot augment components from a new register; none of the older source dictionaries listed here is repaired. Build 11-15-26.9 separately admits the two exact Legendary Nexus recipe-type observations through a closed source contract and combines them with pinned Wiki values and applicability. The Nexus numeric parameters and client versions remain absent; no Wiki-style revision or missing legacy metadata is fabricated. Build11-16-26.1 uses a separate frozen Wisdom/Constitution register for fresh selected observations and explicitly reuses unchanged original ability/placement records. Eight exact definitions qualify; none of the legacy dictionaries or missing observations listed here is repaired. The Skull conflict stays unresolved.",
       "sources": [
         "arcane-archer",
         "armor",
@@ -5296,11 +5663,12 @@
     {
       "id": "wisdom-selection",
       "state": "unknown",
-      "claim": "Current Wisdom loadout and optional ring branch",
-      "detail": "The primary recipe selects Claws Wisdom +15 and leaves the Celestial Sapphire Ring Nearly Finished slot empty. Model WIS 18 / DEX 6 is not a certified character score. Optional ring Dexterity +13 would model DEX 19 only; it remains an unselected, model-only scenario. Wisdom’s modifier can improve Spot/Listen and Will only after complete character ability/parity/overlap checks. No final Spot score is asserted.",
+      "claim": "Whole-character Wisdom effects and optional ring branch",
+      "detail": "The selected three-input gear Wisdom family now derives18 at level36 through separately qualified Claws15, native Celestial2 and Globe1 definitions and all three positive pairs. This does not regrade the original model/inventory or calculate a character ability score. Standing Constitution has five supported inputs summing17; its full result stays null because the required Skull15/16 conflict remains. Optional ring Dexterity13 remains unselected and model-only. Wisdom modifiers, Spot/Listen, Will and HP require complete character sources, parity and same-type overlap checks.",
       "sources": [
-        "claws-wisdom",
-        "globe"
+        "wiscon-claws-20261116",
+        "celestial-profane-int-live-20261115",
+        "globe-int-live-20261115"
       ]
     },
     {
@@ -5569,15 +5937,15 @@
     "status": "historical, not the current selected loadout"
   },
   "source_roles": {
-    "tip179-live-20261115": "current bounded INT rule: exactly ten selected-member gear pairs; no universal different-type default",
+    "tip179-live-20261115": "current positive premise for exactly ten selected INT pairs and four separately named Wisdom/Constitution pairs; original observation and Stack caveat preserved; no generic different-type default",
     "fort-rule-live-20261115": "fresh Enhancement/Insight Fortification interaction only; does not qualify Chains or Queen components",
     "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "lunar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "festive-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "dimlight-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
-    "globe-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
-    "celestial-profane-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "globe-int-live-20261115": "current selected Globe INT definition and bounded Wisdom/Constitution reuse; original observed all-ability clause and historical INT-only adoption scope preserved",
+    "celestial-profane-int-live-20261115": "current selected native Celestial INT definition and bounded Wisdom/Constitution membership derivations; optional Nearly Finished remains unselected and original capture/adoption scope is preserved",
     "glabrezu-insight-int-live-20261115": "current component, rule, effect or unresolved context",
     "stack": "current component, rule, effect or unresolved context",
     "artifact": "current component, rule, effect or unresolved context",
@@ -5684,7 +6052,7 @@
     "chains-host-recipe-20261115": "recipe proof: selected Legendary host, Waist placement and distinct crafting channels",
     "chains-legendary-recipe-20261115": "recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule",
     "chains-combustion-membership-20261115": "recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage",
-    "chains-intelligence-membership-20261115": "recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement",
+    "chains-intelligence-membership-20261115": "current selected Chains INT category premise and bounded native Celestial Wisdom/Constitution membership reuse; original observed ability list and historical INT recipe interpretation preserved",
     "fort-spot-queen-20261115": "current selected definition support",
     "fort-spot-heroism-20261115": "current selected definition support",
     "fort-spot-luck-20261115": "current selected definition support",
@@ -5699,6 +6067,14 @@
     "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
     "chains-types-shared-host-20261115": "bounded recipe applicability: explicit shared base-item crafting statement",
     "chains-types-fortification-20261115": "bounded Legendary recipe type only: exact Prefix Fortification; numeric parameter and client version absent",
-    "chains-types-spot-20261115": "bounded Legendary recipe type only: exact Extra Spot variant 0x7002C66B; numeric parameter and client version absent"
+    "chains-types-spot-20261115": "bounded Legendary recipe type only: exact Extra Spot variant 0x7002C66B; numeric parameter and client version absent",
+    "wiscon-nearly-complete-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-claws-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-queen-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-solar-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-dolorous-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-coldlight-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-reflection-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-sun-system-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only"
   }
 }

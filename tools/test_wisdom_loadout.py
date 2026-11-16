@@ -18,6 +18,7 @@ import wisdom_crafting_integration as crafting
 import wisdom_recipe_proof_preservation as recipe_proofs
 import wisdom_offense_preservation as offense
 import wisdom_chains_type_preservation as chains_type
+import wisdom_ability_preservation as abilities
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 
@@ -488,12 +489,14 @@ class CurrentWisdomRenderedGuideTests(unittest.TestCase):
         self.assertNotEqual(wrong_order, priorities)
         stale_wisdom = rows[28].replace('<td>18</td>', '<td>3</td>')
         self.assertNotEqual(stale_wisdom, rows[28])
+        wrong_stat, changed = re.subn('data-stat="Wisdom"', 'data-stat="Dexterity"', rows[28])
+        self.assertEqual(changed, 1)
         onepage = self.recipe.render_onepage_rows(self.data)
         stale_onepage, changed = re.subn(r'DEX\s*6\b', 'DEX 19', onepage)
         self.assertEqual(changed, 1)
         mutated = [self.html.replace(priorities, wrong_order, 1),
                    self.html.replace(rows[28], stale_wisdom, 1),
-                   self.html.replace('data-stat="Wisdom"', 'data-stat="Dexterity"', 1),
+                   self.html.replace(rows[28], wrong_stat, 1),
                    self.html.replace('<span class="tag">MINOR ARTIFACT</span>', '', 1),
                    self.html.replace(onepage, stale_onepage, 1)]
         for value in mutated:
@@ -530,7 +533,7 @@ class CurrentWisdomRenderedGuideTests(unittest.TestCase):
 
 
 class CurrentWisdomEvidenceGateTests(unittest.TestCase):
-    """Exercise the real current calculator inputs, never the restored ledger."""
+    """Current calculator gates plus explicitly named historical-input checks."""
 
     def setUp(self):
         self.data = audit.load()
@@ -565,8 +568,10 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         })
         self.assertEqual(sum(v[1] for v in rows.values() if v[0] == 'Wisdom'), 18)
         self.assertEqual(sum(v[1] for v in rows.values() if v[0] == 'Dexterity'), 6)
-        # These checks are of modeled ingredient amounts, not certified sums.
-        self.assertIsNone(audit.subtotal(self.data, 'Wisdom')['total'])
+        # Preserve the old evidence gap on exact .9 input through the real engine.
+        # Current WIS qualification is checked separately in test_wisdom_abilities.
+        point_nine = json.loads(abilities.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
+        self.assertIsNone(audit.subtotal(point_nine, 'Wisdom')['total'])
         self.assertIsNone(audit.subtotal(self.data, 'Dexterity')['total'])
 
     def test_current_set_components_are_named_unknowns_not_laundered_old_monolith(self):
@@ -627,7 +632,8 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
                 self.assertIsNone(at35['total'])
                 self.assertFalse(at35['complete'])
 
-    def test_source_less_or_unqualified_current_inputs_cannot_be_promoted(self):
+    def test_source_less_point_nine_inputs_cannot_be_promoted_through_current_engine(self):
+        point_nine = json.loads(abilities.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
         selected = ('dusk-raider-rp', 'tough-shields-prr', 'quickblade-ds',
                     'perfect-silence-sneak', 'claws-wisdom', 'celestial-dodge',
                     'yeenoghu-quality-deadly',
@@ -637,13 +643,13 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         # Chains Combustion's new recipe-proof path has actual-current negative
         # controls in test_recipe_proofs and test_wisdom_recipe_integration.
         for cid in selected:
-            changed = copy.deepcopy(self.data)
+            changed = copy.deepcopy(point_nine)
             row = next(c for c in changed['components'] if c['id'] == cid)
             self.assertEqual(row['state'], 'unknown')
             row['state'] = 'verified'
             with self.subTest(component=cid), self.assertRaises((AssertionError, KeyError)):
                 audit.validate(changed)
-        changed = copy.deepcopy(self.data)
+        changed = copy.deepcopy(point_nine)
         source = changed['sources']['claws-wisdom']
         self.assertIsNone(source['observed'])
         source['observed'] = '2026-11-15T00:00:00Z'

@@ -14,7 +14,7 @@ From the repository root:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v
 ```
 
-The [Guide checks workflow](../../.github/workflows/guide-checks.yml) runs that discovery command on PRs, including drafts. Main contains tests for selected bow corrections, editorial consistency, model arithmetic, Guide integrity, roadmap accessibility markup, Sapphire evidence and Lamordia handling. The [model](../../tools/bowmodel.py) supplies the shipped scenarios; compare all complete output tuples when checking preservation. Do not substitute an old test count for running current discovery. There is no `tools/qc.py` entrypoint on the checkpointed main.
+The [Guide checks workflow](../../.github/workflows/guide-checks.yml) runs that discovery command on PRs, including drafts. Its job timeout is 15 minutes: the expanded Wisdom/Constitution evidence and preservation suite took 567.634 seconds in the initial local aggregate, exceeding the former five-minute budget. The required command, triggers and permissions are unchanged. Main contains tests for selected bow corrections, editorial consistency, model arithmetic, Guide integrity, roadmap accessibility markup, Sapphire evidence and Lamordia handling. The [model](../../tools/bowmodel.py) supplies the shipped scenarios; compare all complete output tuples when checking preservation. Do not substitute an old test count for running current discovery. There is no `tools/qc.py` entrypoint on the checkpointed main.
 
 Integrity tests check the current snapshot, unique IDs, internal anchors and Guide-relative assets. They do not check all historical snapshots, external URLs, CSS URLs, srcset or actual rendering. For documentation, validate relative paths and fragments, review external targets against actual repository records, and scan for private information and unsupported status claims. Use browser checks for affected layout and interactions; an unavailable viewport is unverified, not a pass.
 
@@ -278,7 +278,7 @@ snapshot. Record actual builder, aggregate and draft-update results in the
 do not reuse the preceding build's test count or treat source review as browser,
 accessibility, print, live-game or release verification.
 
-### Bounded Chains type integration layer
+### Historical .9 Chains type integration layer
 
 Build 11-15-26.9 admits only the two reviewed Chains definitions through
 `tools/chains_type_proofs.py`. Preserve the exact
@@ -314,3 +314,39 @@ replacing prior snapshots. Record actual suite, builder, review and draft-update
 results in the [receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json).
 The .8 test count belongs to that checkpoint; source review and software checks
 do not establish primary client testing, browser QA or release permission.
+
+### Bounded Wisdom/Constitution integration layer
+
+Build 11-16-26.1 uses `tools/wisdom_ability_proofs.py` for exactly eight reviewed
+definitions and four named pairs. Preserve the frozen
+[source register](../../evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
+and its original audit/proposed metadata; the separate receipt records the
+later approved implementation. Keep source identity, revision/observation,
+actual bytes, host/craft/socket context and full-kit level conditions bound.
+Celestial's all-abilities interpretation is limited to the selected WIS/CON
+claims. Source host slots and selected occupancy are distinct premises.
+
+Preserve the twelve earlier rule dictionaries and historical 7/9/10/12 profiles.
+Carry the Stack same-family caveat alongside Tip 179; only the four named pairs
+are new. Retain all three Wisdom and all six Constitution IDs, including the
+exact conflicting Skull core. Deletion, duplication, renaming, stat/channel
+movement or substitution must fail closed. Every public Skull proof must fail
+in the new profile, even through generic Artifact/Exceptional rules. Public
+proof/subtotal calls cannot rely on prior validation or an override flag.
+
+Compare complete results across levels and conditions. At 36, Wisdom 18 must be
+complete, Constitution must retain subset 17/full `null` and the Skull exclusion,
+and existing INT 37, Fortification 226 and Spot 27 results remain unchanged. Full-kit
+results at 35 stay incomplete. Preserve the complete 32/33 model cases, selected
+data and all historical bow tuples/results; do not test only headline totals.
+
+`tools/wisdom_ability_preservation.py` restores the exact 11-15-26.9 checkpoint
+before earlier layers. Keep their scope files, fixed hashes and negative controls
+literal. Actual-current tests must separately exercise the new production code
+and data, including source/host/level/type mutation and all Skull proof routes.
+Use the four documented builders and a new path-rebased 11-16-26.1 snapshot.
+Record actual suite, builder, independent-review, draft-update and CI results in
+the [receipt](../../evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json).
+Earlier test counts and the completed audit do not substitute for those checks;
+browser layout, accessibility, print pagination and live-game validation remain
+separate. Merge and publication are outside this approval.

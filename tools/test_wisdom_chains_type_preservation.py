@@ -21,6 +21,7 @@ import stacking_audit as audit
 import wisdom_loadout
 import wisdom_fort_spot_preservation as fort_spot
 import wisdom_chains_type_preservation as preservation
+import wisdom_ability_preservation as abilities
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -72,18 +73,18 @@ class ChainsTypePreservationTests(unittest.TestCase):
             with self.subTest(path=path):
                 old = preservation.checkpoint_file_bytes(path)
                 self.assertEqual((len(old), preservation.sha(old)), expected)
-                self.assertNotEqual(old, (ROOT / path).read_bytes())
+                self.assertNotEqual(old, abilities.checkpoint_file_bytes(path))
                 text = old.decode()
                 for change in scope['files'][path]['reviewed_replacements']:
                     self.assertTrue(change['before'])
                     self.assertEqual(text.count(change['before']), 1)
                     text = text.replace(change['before'], change['after'], 1)
-                self.assertEqual(text, (ROOT / path).read_text())
+                self.assertEqual(text, abilities.checkpoint_file_text(path))
 
     def test_stale_mixed_duplicate_and_unrelated_bytes_fail_closed(self):
         scope = preservation.load_scope()
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = abilities.checkpoint_file_text(path)
             change = scope['files'][path]['reviewed_replacements'][0]
             mutants = {
                 'stale': preservation.checkpoint_file_text(path),
@@ -99,7 +100,7 @@ class ChainsTypePreservationTests(unittest.TestCase):
 
     def test_rehashed_mutants_cannot_redefine_contexts_or_fixed_baselines(self):
         for path in preservation.REVIEWED_PATHS:
-            current = (ROOT / path).read_text()
+            current = abilities.checkpoint_file_text(path)
             original = preservation.load_scope()
             change = original['files'][path]['reviewed_replacements'][0]
             mutants = {
@@ -249,14 +250,15 @@ class CompletePointEightArithmeticTests(unittest.TestCase):
         self.assertEqual(actual, self.expected['ledger_cases'])
         self.assertEqual(json.dumps(data, sort_keys=True), before)
 
-    def test_current_delta_is_only_four_level36_fortification_spot_results(self):
-        data = audit.load()
-        self.assertTrue(audit.validate(data))
+    def test_point_nine_delta_is_only_four_level36_fortification_spot_results(self):
+        calculator = abilities.historical_calculator()
+        data = calculator.load()
+        self.assertTrue(calculator.validate(data))
         before = json.dumps(data, sort_keys=True)
         changed = []
         for case in self.expected['ledger_cases']:
-            actual = audit.subtotal(data, case['stat'], channel=case['channel'],
-                                    active=case['active'], level=case['level'])
+            actual = calculator.subtotal(data, case['stat'], channel=case['channel'],
+                                         active=case['active'], level=case['level'])
             if actual != case['result']:
                 key = (case['level'], case['stat'], tuple(case['active']))
                 changed.append(key)

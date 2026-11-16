@@ -18,6 +18,7 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `tools/build_wisdom_loadout.py` | Generates the current recipe, priority table and one-page rows from that record |
 | `tools/recipe_proofs.py` | Bounded, source-supported recipe proofs for the four selected Chains IDs; not a general inference or stacking engine |
 | `tools/chains_type_proofs.py` | Exact Wiki/Nexus recipe bindings for the two selected Chains type definitions, preserving missing numeric fields and source limits |
+| `tools/wisdom_ability_proofs.py` | Eight exact WIS/CON definition bindings, four named pairs and complete-family safeguards that retain the conflicting Skull |
 | `tools/stacking_audit.py` | Source-gated gear arithmetic; the current draft adds a closed ten-pair INT rule, not a universal stacking default or DPS simulator |
 
 ## Related
@@ -47,7 +48,28 @@ Doubleshot corrections separately from preserved historical experiments. Its
 source register contains transcribed browser observations and paraphrases, not
 an exported raw DOM packet or new calculator-qualified component records.
 
-### Current draft: completed selected Fortification and Spot families
+### Current draft: bounded Wisdom and Constitution evidence
+
+Build **11-16-26.1** integrates eight standing-gear definitions and four exact
+positive pairs. At the unchanged level-36 kit floor, selected-gear **Wisdom is
+18** (`15 + 2 + 1`), while **Constitution has a supported subset of 17**
+(`7 + 3 + 4 + 2 + 1`) and a complete result of `null`. The conflicting Skull
+remains present and excluded, including from every public pair proof. Its
+modeled 32 and own-page 33 Constitution cases remain separate and unchanged.
+
+Exact three-member Wisdom and six-member Constitution guards prevent an omitted
+or changed input from manufacturing completeness. Existing **INT 37,
+Fortification 226% and direct Spot 27** remain unchanged; level-35 full-kit
+results stay incomplete. These are existing gear contributions, not new ability
+points, whole-character scores or HP/Spot/Will/DPS results.
+
+The [source register](evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
+preserves the completed audit's original observations, reused-source references,
+Skull conflict and Stack caveat. The
+[integration receipt](evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json)
+records this later authorized change and actual verification/draft status.
+
+### Historical .9 checkpoint: completed selected Fortification and Spot families
 
 Build **11-15-26.9** qualifies the existing Chains **142 Enhancement
 Fortification** and **20 Competence Spot** recipe contributions, using retained

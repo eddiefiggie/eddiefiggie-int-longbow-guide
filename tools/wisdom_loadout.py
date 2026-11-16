@@ -282,6 +282,56 @@ def _cells(values):
     return '<tr>' + ''.join(('<th scope="row">' if n == 0 else '<td>') + value + ('</th>' if n == 0 else '</td>') for n, value in enumerate(values)) + '</tr>'
 
 
+def _ability_results(ledger):
+    """Require the exact current ability outcomes before rendering their claims."""
+    from stacking_audit import subtotal
+
+    wisdom = subtotal(ledger, 'Wisdom')
+    constitution = subtotal(ledger, 'Constitution')
+    _require(wisdom['complete'] and wisdom['total'] == 18
+             and set(wisdom['counted']) == {'claws-wisdom', 'celestial-profane-wisdom', 'globe-wisdom'}
+             and not wisdom['excluded'] and not wisdom['suppressed'] and not wisdom['missing_interactions'],
+             'Current selected Wisdom derivation lost its complete source/pair family')
+    _require(not constitution['complete'] and constitution['total'] is None
+             and set(constitution['counted']) == {'queen-insight-con', 'boots-quality-con', 'solar-con',
+                                                 'celestial-profane-constitution', 'globe-constitution'}
+             and constitution['excluded'] == ['skull-con'] and not constitution['suppressed']
+             and not constitution['missing_interactions'],
+             'Current selected Constitution subset or Skull exclusion changed')
+    supported = sum(row['amount'] for row in ledger['components'] if row['id'] in constitution['counted'])
+    _require(supported == 17, 'Current supported Constitution subset changed')
+    return wisdom, constitution, supported
+
+
+def render_ability_qualification(ledger):
+    _ability_results(ledger)
+    return (
+        '<p class="note" data-wiscon-qualification="selected-definitions">'
+        '<strong>Derived selected-gear Wisdom: +18 at level 36.</strong> '
+        'Claws +15 Enhancement, native Celestial +2 Profane and Globe +1 Exceptional '
+        'have separately bound definitions and all three positive pair relationships. '
+        '<strong>Supported standing Constitution subset: +17; full total withheld.</strong> '
+        'Queen +7 Insight, Dolorous boots +3 Quality, Solar +4 Artifact, Celestial +2 Profane '
+        'and Globe +1 Exceptional have complete support within that five-input subset. '
+        'The sixth selected input, Skull Constitution, stays conflicting and excluded: '
+        'its own-item +16 and generic-craft +15 leave the full modeled 33 and 32 cases unresolved. '
+        'Fresh own-item observations and retained ability, slot and level evidence qualify only '
+        'these eight definitions. Four exact added pairs cover Claws/Celestial Wisdom and '
+        'Queen/boots, Queen/Celestial and boots/Celestial Constitution; the existing Artifact '
+        'and Exceptional rules supply the remaining supported relationships. '
+        'The complete three-input Wisdom and six-input Constitution families are required; '
+        'omitting the Skull cannot make +17 a complete Constitution result. '
+        'Every proof involving the Skull remains withheld, including otherwise applicable '
+        'Artifact or Exceptional combinations. The retained Stack caveat remains attached '
+        'to this bounded interpretation. Bloodrage is outside these standing sums. '
+        'These are existing gear contributions; whole-character ability scores, Wisdom modifiers, '
+        'HP, Spot and Will outcomes still require other sources and overlap checks. '
+        + _link('evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json',
+                'Wisdom/Constitution observations and retained-source bindings') + ' · '
+        + _link('evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json',
+                'Eight definitions, four pairs and verification limits') + '.</p>')
+
+
 def render_crafting_qualification(ledger=None, *, compact=False):
     """Render the bounded current qualification, separately from frozen grades.
 
@@ -411,6 +461,7 @@ def render_crafting_qualification(ledger=None, *, compact=False):
                 'Two Chains definitions and two added Spot pairs') + ' · '
         + _link('evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json',
                 'Queen, augment and skill-membership observations') + '.</p>')
+    paragraph += render_ability_qualification(ledger)
     if compact:
         return paragraph
     rows = [
@@ -506,7 +557,7 @@ def render_recipe(data):
     grades = '; '.join(f'{n} {status}' for status, n in claims['coverage']['byStatus'].items())
     out.append('<p class="note"><strong>Evidence coverage:</strong> ' + _h(grades) + '. These are independent inventory grades, not the current ledger’s certification decisions. '
                'Those original grades are retained unchanged; the current crafting qualification below records the later source integration separately. '
-               'Queen retains the A-074 relay limitations. Skull’s generic CON 15 versus item-page 16 conflict yields separate modeled 32 and own-page 33 cases; '
+               'The original Queen inventory retains its A-074 relay limitations; later effect-specific qualifications are recorded below. Skull’s generic CON 15 versus item-page 16 conflict yields separate modeled 32 and own-page 33 cases; '
                'the same Skull Constitution choice appears in the compared kits. No unresolved input is promoted by passing arithmetic.</p>')
     out.append(render_crafting_qualification())
     out.append('<p>' + _link('tools/fixtures/wisdom-loadout/selection.json', 'Shared selection manifest') + ' · '
@@ -569,22 +620,28 @@ def render_onepage_rows(data):
     validate(data)
     from stacking_audit import load as load_ledger, subtotal
 
-    intelligence = subtotal(load_ledger(), 'Intelligence')
+    ledger = load_ledger()
+    intelligence = subtotal(ledger, 'Intelligence')
     _require(intelligence['complete'] and intelligence['total'] == 37
              and len([edge for edge in intelligence['proofs']
                       if edge[2] == 'int-selected-ten-pairs']) == 10,
              'One-page INT claim lost its bounded source calculation')
+    wisdom, constitution, con_subset = _ability_results(ledger)
+    direct_spot = subtotal(ledger, 'Spot')
+    _require(direct_spot['complete'] and direct_spot['total'] == 27,
+             'One-page direct Spot claim lost its bounded source calculation')
     targets = data['query']['targets']
     model, counts = data['model']['totals'], data['counts']
-    totals = ' / '.join(f'{label} {model[stat]}' for label, stat in [('WIS', 'Wisdom'), ('DEX', 'Dexterity'), ('CON', 'Constitution'), ('direct Spot', 'Spot')])
     return ('<tr data-loadout-summary="priority"><th scope="row">Gear affixes, in order</th><td>'
             '<a href="#current-affix-priority">Exact 32-target search order</a>: eight named-effect presence guards, then '
             + _h(' → '.join(targets[8:])) + '. Wisdom replaces Dexterity at rank 29; caps/floors and conditions are explicit. '
             'Practical Spot / Good Luck refinements are a manual utility tradeoff, not another optimal solve.</td></tr>\n'
             '<tr data-loadout-summary="kit"><th scope="row">Kit</th><td>'
             f'<a href="#wisdom-loadout-selection">Wisdom-priority artifact recipe</a>: full kit ML {data["selection"]["full_kit_ml"]}; {counts["items"]} items; Yeenoghu’s Reign is the sole Minor Artifact; '
-            f'{counts["occupied"]}/{counts["sockets"]} sockets. Claws selects WIS 15; ring Nearly Finished is empty. Model-only gear {_h(totals)}. '
-            f'<a href="#selected-stacking-summary">Derived selected-gear INT +{intelligence["total"]} at level 36</a> uses the bounded interaction rule; it is not a character score or DPS gain. '
+            f'{counts["occupied"]}/{counts["sockets"]} sockets. Claws selects WIS 15; ring Nearly Finished is empty. '
+            f'<a href="#selected-stacking-summary">Derived selected-gear INT +{intelligence["total"]}, WIS +{wisdom["total"]} and direct Spot +{direct_spot["total"]} at level 36</a>. '
+            f'Standing CON has a supported +{con_subset} subset; the full total is withheld because Skull +15/+16 remains conflicting. '
+            f'Modeled full gear CON 32/33 and DEX {model["Dexterity"]} remain separate. These are gear contributions, not character scores or DPS gains. '
             'Optional ring DEX 13 is separate and provisional. Search policy excludes event/limited gear except permitted Festive diamonds; exact non-event procurement of Healing Amplification +63 remains unverified.</td></tr>')
 
 

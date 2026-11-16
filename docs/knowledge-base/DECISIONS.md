@@ -181,6 +181,37 @@ narrow HA63 acquisition-evidence exception. The
 records actual checks and draft status separately from authorization and source
 support; purchases, crafting and primary client testing are not part of this work.
 
+## Approved bounded Wisdom/Constitution integration — 16 November 2026
+
+The owner selected option 1 after the completed read-only audit: integrate
+the eight supported definitions and four exact positive pairs, preserve the
+Skull conflict, add exact three-member Wisdom and six-member Constitution guards,
+run required verification and update **draft PR #47** with CI review. This
+approval excludes merge, publication and selection changes.
+
+The adopted scope is recorded in the
+[frozen source register](../../evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
+and later [integration receipt](../../evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json).
+The source register's original proposed/read-only status describes the completed
+audit; it is not rewritten into an implementation receipt. Retain source bytes,
+actual observation intervals, missing timing/version fields, earlier adoption
+scopes and the Stack caveat. Do not create a global all-abilities alias or type
+rule, or reconstruct missing source text.
+
+The approved level-36 outcomes are complete selected-gear **Wisdom 18** and
+**Constitution subset 17 with full result `null`**. Retain `skull-con` in the
+family and reject every public proof involving it, including generic
+Artifact/Exceptional routes. Keep its model 32/33 cases and all lower-level
+applicability limits. Existing INT 37, Fortification 226 and direct Spot 27 stay
+unchanged. These are existing gear contributions, not additional character gains.
+
+Gear, sole Minor Artifact Yeenoghu's Reign, 32 priorities, crafts/sockets,
+feats/AP, historical model results, original claim grades and snapshots remain
+fixed. The Festive-only event and HA63 procurement-evidence exceptions remain
+narrow. No whole-character score, HP/Spot/Will/DPS certificate, new solve,
+crafting, purchase or live-game test is authorized by this implementation scope.
+Successful tests and CI must be recorded from actual results.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

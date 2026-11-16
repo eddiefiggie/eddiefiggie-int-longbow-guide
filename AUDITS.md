@@ -2,6 +2,63 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded Wisdom/Constitution integration — build 11-16-26.1 — 16 November 2026
+
+The owner selected option 1 after the read-only audit: integrate eight exact
+definitions and four named positive pairs, preserve the Skull conflict, add
+three-member Wisdom and six-member Constitution safeguards, verify the result
+and update **draft PR #47**. Merge, publication and selection changes are excluded.
+Startup matched approved remote head `834b8c4cc648f9263ea19ac4203eedd872888f06`
+and source tree `0b6263ca9bb201b5267774d6f8af198fe013d35e`. The intentional
+local HEAD remained `5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`. Independent documentation-lane inspection
+matched all 311 tracked file hashes and index entries, with no unstaged or
+untracked paths. The exact .9 baseline was captured before mutations.
+
+The [source register](evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
+is the frozen completed audit record: 12 new source records, nine reused-source
+references, nine reviewed inputs and all 18 within-family pairs. Its original
+read-only/proposed status describes that investigation. This integration has a
+separate receipt; it does not rewrite the original observations, timestamps,
+source grades or earlier INT-only adoption scopes. The register is a scoped
+transcription, not a complete DOM/HTTP archive or authenticated game capture.
+Displayed Wiki revision endpoints were not separately reopened. The untimed
+Nexus Skull read retains that limitation; its note time is not a source-read time.
+
+The new definition bindings cover Claws Wisdom 15 Enhancement; native Celestial
+2 Profane and Globe 1 Exceptional for each ability; Queen Constitution 7 Insight;
+Dolorous Constitution 3 Quality; and Solar Constitution 4 Artifact. Celestial's
+all-abilities wording is joined to explicit ability membership only for these
+selected claims. Solar's own Sun type, the armor's Sun slot and the specific
+Sun/Moon system support placement; the pinned selection supplies occupancy.
+Dolorous Accessory matches the boots' Accessory slot. Host/augment levels and
+the full-kit level-36 floor remain distinct.
+
+Only four positive pairs are added: Claws/Celestial Wisdom, Queen/boots
+Constitution, Queen/Celestial Constitution and boots/Celestial Constitution.
+The retained affirmative Tip 179 premise is accompanied by the Stack same-family
+caveat; this is a bounded interpretation, not exhaustive absence of exceptions.
+All twelve prior rule dictionaries and historical profiles remain literal.
+Every public proof involving the Skull must be withheld in the new profile,
+including generic Artifact/Exceptional routes. Deleting, duplicating, renaming,
+moving or substituting a family member cannot manufacture completeness.
+
+At level 36 the intended current outcomes are **Wisdom 18 complete** and
+**Constitution subset 17, full result `null`**. Skull's item page still says
+16 while generic Nearly Complete says 15. An unfinished image, an unparameterized
+Nexus recipe and the builder's same-release generic correction/six named
+exceptions do not resolve the Skull. Model CON 32/33 remains unchanged, and
+Bloodrage remains excluded from standing sums. Existing INT 37, Fortification
+226 and direct Spot 27 are preserved; full-kit results at 35 remain incomplete.
+
+Selected gear, sole Minor Artifact, all 32 priorities, crafts/sockets, feats/AP,
+historical model results, original evidence and approved exceptions remain fixed.
+**Precommit verification is pending at this documentation checkpoint.** The
+[integration receipt](evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json)
+records actual preservation, builder, suite, review, draft-update and CI results.
+No whole-character score, HP/Spot/Will/DPS certificate, live-game test, new solve,
+crafting, purchase, merge or publication follows from this change.
+
 ## Bounded Chains type integration — build 11-15-26.9 — 15 November 2026
 
 The owner selected option 1 after the Chains type investigation: qualify exactly

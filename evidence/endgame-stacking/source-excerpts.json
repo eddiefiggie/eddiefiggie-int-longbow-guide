@@ -1,15 +1,15 @@
 {
   "scope": "Exact retained source contexts with origin file hashes/pointers and current versus historical/background roles. Original mixed capture files are not linked as audit payload; new model claims are not promoted to original source receipts.",
   "source_roles": {
-    "tip179-live-20261115": "current bounded INT rule: exactly ten selected-member gear pairs; no universal different-type default",
+    "tip179-live-20261115": "current positive premise for exactly ten selected INT pairs and four separately named Wisdom/Constitution pairs; original observation and Stack caveat preserved; no generic different-type default",
     "fort-rule-live-20261115": "fresh Enhancement/Insight Fortification interaction only; does not qualify Chains or Queen components",
     "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "lunar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "festive-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
     "dimlight-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
-    "globe-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
-    "celestial-profane-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "globe-int-live-20261115": "current selected Globe INT definition and bounded Wisdom/Constitution reuse; original observed all-ability clause and historical INT-only adoption scope preserved",
+    "celestial-profane-int-live-20261115": "current selected native Celestial INT definition and bounded Wisdom/Constitution membership derivations; optional Nearly Finished remains unselected and original capture/adoption scope is preserved",
     "glabrezu-insight-int-live-20261115": "current component, rule, effect or unresolved context",
     "stack": "current component, rule, effect or unresolved context",
     "artifact": "current component, rule, effect or unresolved context",
@@ -116,7 +116,7 @@
     "chains-host-recipe-20261115": "recipe proof: selected Legendary host, Waist placement and distinct crafting channels",
     "chains-legendary-recipe-20261115": "recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule",
     "chains-combustion-membership-20261115": "recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage",
-    "chains-intelligence-membership-20261115": "recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement",
+    "chains-intelligence-membership-20261115": "current selected Chains INT category premise and bounded native Celestial Wisdom/Constitution membership reuse; original observed ability list and historical INT recipe interpretation preserved",
     "fort-spot-queen-20261115": "current selected definition support",
     "fort-spot-heroism-20261115": "current selected definition support",
     "fort-spot-luck-20261115": "current selected definition support",
@@ -131,7 +131,15 @@
     "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
     "chains-types-shared-host-20261115": "bounded recipe applicability: explicit shared base-item crafting statement",
     "chains-types-fortification-20261115": "bounded Legendary recipe type only: exact Prefix Fortification; numeric parameter and client version absent",
-    "chains-types-spot-20261115": "bounded Legendary recipe type only: exact Extra Spot variant 0x7002C66B; numeric parameter and client version absent"
+    "chains-types-spot-20261115": "bounded Legendary recipe type only: exact Extra Spot variant 0x7002C66B; numeric parameter and client version absent",
+    "wiscon-nearly-complete-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-claws-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-queen-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-solar-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-dolorous-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-coldlight-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-reflection-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-sun-system-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only"
   },
   "sources": {
     "tip179-live-20261115": {
@@ -3390,6 +3398,230 @@
       ],
       "observed": "2026-11-16T02:21:13.157Z",
       "freshness_limit": "Number missing in the rendered effect. Preserve the exact variant and Extra-slot association. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "wiscon-nearly-complete-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        1,
+        "exact_fragments",
+        2
+      ],
+      "quote": "Wisdom +15",
+      "record_pointer": [
+        "observations",
+        1
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Nearly_Complete",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Nearly_Complete&oldid=705751",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:13.149Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:13.149Z through 2026-11-16T03:27:13.171Z. Literal cache notice: (this is up to 5 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-claws-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        2,
+        "exact_fragments",
+        0
+      ],
+      "quote": "granting a +15 Enhancement bonus to Wisdom.",
+      "record_pointer": [
+        "observations",
+        2
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:27.449Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:27.449Z through 2026-11-16T03:27:27.481Z. Literal cache notice: (this is up to 17 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-queen-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        3,
+        "exact_fragments",
+        0
+      ],
+      "quote": "granting a +7 Insight bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        3
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:The_Queen_of_Rot&oldid=715898",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:48.675Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:48.675Z through 2026-11-16T03:27:48.698Z. Literal cache notice: (this is up to 17 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-solar-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        4,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Slotted Effect: +4 Artifact Bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        4
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Constitution_(Legendary)",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Constitution_(Legendary)&oldid=691768",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:06.959Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:06.959Z through 2026-11-16T03:28:06.980Z. Literal cache notice: (this is up to 10 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-dolorous-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        5,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Slotted Effect: +3 Quality bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        5
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Dolorous_Quality_Constitution_(legendary)",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Dolorous_Quality_Constitution_(legendary)&oldid=702234",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:34.938Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:34.938Z through 2026-11-16T03:28:34.957Z. Literal cache notice: (this is up to 15 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-coldlight-host-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        6,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Lamordia: Dolorous Slot (Accessory)",
+      "record_pointer": [
+        "observations",
+        6
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:57.431Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:57.431Z through 2026-11-16T03:28:57.450Z. Literal cache notice: (this is up to 16 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-reflection-host-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        7,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Sun Augment Slot",
+      "record_pointer": [
+        "observations",
+        7
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed_pointer": [
+        "additional_slot_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:30:06.826Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original explicit Sun-slot browser observation 2026-11-16T03:30:06.826Z through 2026-11-16T03:30:06.875Z; the item-context observation is separately retained at 2026-11-16T03:29:42.853Z through 2026-11-16T03:29:42.871Z. Literal cache notice: (this is up to 6 hours old). Exact short fragments and separately labelled context are retained, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-sun-system-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        11,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Players can slot Lunar and Solar Gems into these slots to provide their bonuses.",
+      "record_pointer": [
+        "observations",
+        11
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Lunar_and_Solar_Gems&oldid=707220",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:33:55.511Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:33:55.511Z through 2026-11-16T03:33:57.629Z. Literal cache notice: (this is up to 12 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
     }
   }
 }

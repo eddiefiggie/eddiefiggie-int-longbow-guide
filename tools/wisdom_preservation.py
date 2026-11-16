@@ -19,6 +19,7 @@ import wisdom_int_stacking_preservation as int_stacking
 import wisdom_offense_preservation as offense
 import wisdom_fort_spot_preservation as fort_spot
 import wisdom_chains_type_preservation as chains_type
+import wisdom_ability_preservation as abilities
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -88,7 +89,9 @@ def frozen_generator_bytes():
 
 
 def restore_file(path, current, *, scope=None):
-    """Restore Chains, Fort/Spot, offense, stacking, INT and older approved layers."""
+    """Restore abilities, Chains, Fort/Spot, INT and older approved layers."""
+    if path in abilities.REVIEWED_PATHS:
+        current = abilities.restore_file(path, current)
     if path in chains_type.REVIEWED_PATHS:
         current = chains_type.restore_file(path, current)
     if path in fort_spot.REVIEWED_PATHS:

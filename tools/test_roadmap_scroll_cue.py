@@ -7,6 +7,7 @@ import unittest
 import wisdom_offense_preservation as offense
 import wisdom_fort_spot_preservation as fort_spot
 import wisdom_chains_type_preservation as chains_type
+import wisdom_ability_preservation as abilities
 
 ROOT = Path(__file__).resolve().parents[1]
 CUE = ('All five columns: on narrow screens, scroll this table horizontally to see '
@@ -62,10 +63,11 @@ def validate(html):
     assert doc.tables == 1, 'one native table within region'
     assert html.index('id="roadmap-scroll-help"') < html.index('aria-describedby="roadmap-scroll-help"'), 'cue before region'
     assert '.tw{overflow-x:auto;' in html, 'horizontal scrolling retained'
-    # All cue/focus assertions above inspect the caller's actual .9 HTML. Only
+    # All cue/focus assertions above inspect the caller's actual current HTML. Only
     # the old whole-table text hash uses the exact restored .6 source, because
     # .7 corrects its Flaming progression explanation without changing choices.
     # Restore the argument itself so caller mutations cannot bypass this guard.
+    html = abilities.restore_file('index.html', html)
     html = chains_type.restore_file('index.html', html)
     html = fort_spot.restore_file('index.html', html)
     html = offense.restore_file('index.html', html)

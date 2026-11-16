@@ -281,7 +281,7 @@ gear-evidence work is current selected-craft type support for both Chains rows
 and the remaining Spot pair proofs, alongside the other previously retained
 mechanics and acquisition gaps.
 
-## Current Chains evidence integration — build 11-15-26.9
+## Historical .9 checkpoint — Chains evidence integration
 
 The [Chains type register](../../evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
 closes the two selected-craft classification gaps recorded above. Retained Wiki
@@ -313,3 +313,38 @@ and the remaining mechanics/acquisition gaps are not regraded by this change.
 See the [integration receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
 for actual verification and draft status; no new solve, crafting, purchase,
 merge or publication is included.
+
+## Current Wisdom/Constitution evidence integration — build 11-16-26.1
+
+The [frozen audit register](../../evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
+supplies eight bounded definition bindings without changing the recipe.
+Claws Wisdom 15, native Celestial Profane 2 and Globe Exceptional 1 derive
+**18 selected-gear Wisdom** at the full-kit level-36 floor. Queen Insight 7,
+Dolorous Quality 3, Solar Artifact 4, native Celestial Profane 2 and Globe
+Exceptional 1 derive a **17 Constitution supported subset**. Full Constitution
+remains `null`: the Skull is present, conflicting and excluded from every public
+pair proof. The complete model cases remain 32 and 33.
+
+The selected placements stay literal: Claws Nearly Complete Wisdom (base/filled
+ML 35); Queen Insightful Constitution (35); Coldlight Dolorous Accessory
+Constitution (34); Solar Constitution in Reflection Sun socket 0 (augment 30,
+host 33); Globe in the Calamitous Purple socket (augment 25, host 34); and native
+Celestial Profane abilities (base 29, filled 30). Skull remains base 35/filled 36.
+The complete kit remains level 36. Source pages establish slots and requirements;
+the manifest establishes occupancy. No owned or installed gear is inferred.
+
+Only Claws/Celestial Wisdom and Queen/boots, Queen/Celestial and boots/Celestial
+Constitution pairs are added. Exact three-ID and six-ID guards retain the full
+families, including the Skull. Prior INT 37, Fortification 226 and direct Spot 27
+remain intact, with full-kit incompleteness at 35. These are standing-gear sums:
+Bloodrage is excluded, and Wisdom 18 is not the character's Wisdom score or a
+direct addition of 18 to Spot or Will.
+
+The Wisdom selection, Yeenoghu as the sole Minor Artifact, all 32 priorities,
+crafts/sockets, feats/AP, historical results, original source grades and prior
+snapshots are unchanged. Optional ring DEX remains unselected. Festive-only and
+HA63 procurement-evidence exceptions retain their exact scope. The Skull conflict,
+other unresolved effects and complete character/HP/Spot/Will/DPS questions remain
+visible. The [integration receipt](../../evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json)
+records actual checks and draft status; no new solve, crafting, purchase, merge
+or publication is included.

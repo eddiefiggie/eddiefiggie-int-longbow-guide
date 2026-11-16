@@ -227,7 +227,7 @@ depends on ranks, actual total Wisdom and other sources; the gear contribution
 [integration receipt](../../evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json)
 separates these documentary derivations from software and live-game verification.
 
-## Complete selected Fortification/Spot families — current draft build 11-15-26.9
+## Complete selected Fortification/Spot families — historical .9 checkpoint
 
 The [Chains type register](../../evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
 supplies the two previously missing Legendary classification premises. Nexus
@@ -267,3 +267,53 @@ No final character score, trap threshold, DPS result or wider stacking default
 is established. The
 [integration receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
 records actual verification separately from the source derivation and its limits.
+
+## Bounded Wisdom/Constitution evidence — current draft build 11-16-26.1
+
+The [completed audit register](../../evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
+supports eight selected definitions: Claws 15 Enhancement Wisdom; Celestial
+2 Profane and Globe 1 Exceptional for both abilities; Queen 7 Insight
+Constitution; Dolorous 3 Quality Constitution; and Solar 4 Artifact Constitution.
+The native Celestial effect uses explicit ability membership; its separate
+Nearly Finished craft remains empty. Globe names WIS/CON directly. New bindings
+do not rewrite the earlier captures or their historical adoption scopes.
+
+The exact four new gear-channel pairs are:
+
+| Stat | Selected IDs | Types in the same order |
+| --- | --- | --- |
+| Wisdom | `celestial-profane-wisdom` ↔ `claws-wisdom` | Profane ↔ Enhancement |
+| Constitution | `boots-quality-con` ↔ `queen-insight-con` | Quality ↔ Insight |
+| Constitution | `celestial-profane-constitution` ↔ `queen-insight-con` | Profane ↔ Insight |
+| Constitution | `boots-quality-con` ↔ `celestial-profane-constitution` | Quality ↔ Profane |
+
+The affirmative Tip 179 premise remains accompanied by the retained Stack
+same-family caveat and its historical interpretation. These four bindings do
+not establish a general type default or exhaustive absence of exceptions.
+Existing Artifact/Exceptional rules support nine other relationships among
+qualified candidates; all five Skull relationships are withheld. The original
+twelve rules remain unchanged.
+
+At the full-kit level-36 floor, **Wisdom derives 15 + 2 + 1 = 18**. The
+supported Constitution subset is **7 + 3 + 4 + 2 + 1 = 17**; full Constitution
+stays `null` because `skull-con` remains present and conflicting. Its ledger
+16 and model 15 are not silently reconciled. The preserved model cases remain
+32 and 33. The builder's generic 15 correction and six named 16 exceptions
+appear in the same release; no explicit Skull result resolves the conflict.
+Every public Skull pair proof is rejected in this profile, including otherwise
+generic Artifact/Exceptional paths.
+
+Exact three-ID Wisdom and six-ID Constitution safeguards retain all selected
+members. Public proof/subtotal routes require real source bytes, identities,
+types and selected context; an omitted or moved component cannot turn a subset
+into a complete result. Level-35 full-kit results remain incomplete. INT 37,
+Fortification 226 and direct Spot 27 remain unchanged.
+
+Host applicability remains explicit: ML 30 Solar occupies the selected ML 33
+armor's Sun slot under the Sun/Moon system; ML 34 Dolorous Accessory matches
+the ML 34 boots. Wiki sources establish host slots, and the pinned selection
+establishes occupancy. The armor's Warforged exclusion does not exclude the
+selected Human query; complete character eligibility is not certified here.
+These standing-gear amounts exclude Bloodrage and do not calculate final ability
+scores, HP, Spot, Will or DPS. Actual verification is recorded in the
+[integration receipt](../../evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json).

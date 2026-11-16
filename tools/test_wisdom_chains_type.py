@@ -1,4 +1,8 @@
-"""Actual-current acceptance and misuse controls for the two Legendary types."""
+"""Exact .9 acceptance and misuse controls for the two Legendary types.
+
+The ability layer restores the matching .9 calculator, inputs and renderers;
+unchanged proof helper bytes are independently checked before historical access.
+"""
 from copy import deepcopy
 from hashlib import sha256
 import json
@@ -10,13 +14,16 @@ from unittest.mock import patch
 import chains_type_proofs as types
 import fort_spot_proofs as fort_spot
 import recipe_proofs as recipes
-import stacking_audit as audit
-import wisdom_loadout as loadout
-import build_stacking_audit as renderer
+import wisdom_ability_preservation as abilities
+
+audit = abilities.historical_calculator()
+loadout = abilities.historical_recipe_renderer()
+renderer = abilities.historical_audit_renderer()
 
 
 class ChainsTypeIntegrationTests(unittest.TestCase):
     def setUp(self):
+        self.assertIs(audit, abilities.historical_calculator())
         self.data = audit.load()
 
     def row(self, cid, data=None):
@@ -266,7 +273,7 @@ class ChainsTypeIntegrationTests(unittest.TestCase):
                 self.assertIsNone(audit.subtotal(self.data, 'Spot')['total'])
 
     def test_rendered_outputs_describe_actual_totals_and_source_limits(self):
-        self.assertTrue(renderer.validate_guide((audit.ROOT / 'index.html').read_text(), self.data))
+        self.assertTrue(renderer.validate_guide(abilities.checkpoint_file_text('index.html'), self.data))
         paragraph = loadout.render_crafting_qualification(self.data)
         for text in ('226% Fortification', '+27 direct Spot', '+37 at level 36',
                      'numeric parameters are empty', 'data is marked beta',
@@ -275,7 +282,7 @@ class ChainsTypeIntegrationTests(unittest.TestCase):
         self.assertNotIn('INPUT WITHHELD', paragraph)
         self.assertNotIn('Both complete selected totals remain withheld', paragraph)
         detail = renderer.detail(self.data)
-        self.assertEqual(detail, (audit.ROOT / 'endgame-stacking-audit.html').read_text())
+        self.assertEqual(detail, abilities.checkpoint_file_text('endgame-stacking-audit.html'))
         self.assertIn('no available revision or client version', detail)
         self.assertIn('Source page', detail)
         self.assertIn('0x7002C66B', detail)

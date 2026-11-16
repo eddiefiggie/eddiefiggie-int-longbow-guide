@@ -386,7 +386,7 @@ selected types. Conditional 226 and 27 remain modeled combinations. No additiona
 character bonus, full skill score, trap-success threshold, live-game validation,
 new solve, acquisition, merge or publication follows from this evidence change.
 
-## Current Chains type integration — build 11-15-26.9
+## Historical .9 checkpoint — Chains type integration
 
 The [Chains type source register](chains-type-sources-2026-11-15.json) is the
 exact frozen investigation record: five principal sources, additional inspected
@@ -424,3 +424,49 @@ The level-35 full-kit results stay incomplete. These are existing contributions
 with improved evidence, not new bonuses, whole-character scores, damage-reduction
 percentages or trap-success guarantees. All selected data, priorities, historical
 results, earlier source bytes and approved exceptions are preserved.
+
+## Current Wisdom/Constitution integration — build 11-16-26.1
+
+The [source register](wisdom-con-sources-2026-11-16.json) is the exact frozen
+completed audit record: 12 new observations, nine reused-source references,
+nine reviewed components and all 18 within-family pairs. Its original read-only
+scope, proposed implementation and audit-verification fields remain unchanged.
+The [integration receipt](wisdom-con-integration-2026-11-16.json) records the
+later approval and actual implementation/test/draft/CI state. Copying the record
+does not create new source observations or repair older metadata.
+
+The new definition bindings are Claws Wisdom 15 Enhancement; Celestial 2 Profane
+and Globe 1 Exceptional for each ability; Queen Constitution 7 Insight; Dolorous
+Constitution 3 Quality; and Solar Constitution 4 Artifact. Globe names both
+abilities. Celestial's native all-abilities popup uses separately retained
+ability membership; its Nearly Finished option remains unselected. Earlier
+INT-only adoption scopes and original claim grades stay historical.
+
+Placement evidence remains separate: Solar's Sun type, the armor's actual Sun
+slot and the observed Sun/Moon system establish compatibility; the selected
+manifest establishes occupancy. The retained ML rule preserves the higher
+requirement. Dolorous Accessory matches Coldlight's Accessory slot. The selected
+Human is not excluded by the armor's Warforged restriction, but complete build
+eligibility is not certified. The full-kit floor remains 36.
+
+Four named positive pairs are added using Tip 179 with the retained Stack caveat:
+Claws/Celestial Wisdom and Queen/boots, Queen/Celestial, boots/Celestial
+Constitution. Nine other candidate relationships use existing Artifact or
+Exceptional rules after qualification. All five Skull relationships are withheld,
+including generic public proof routes; no new Skull edge or override exists.
+The exact three-member Wisdom and six-member Constitution families remain whole.
+
+The level-36 outcomes are **Wisdom 18 complete** and **Constitution subset 17,
+full `null`**. Skull's own 16 and generic 15 remain conflicting, with original
+32/33 model cases preserved. The builder's generic correction and six named 16
+exceptions occur in the same release and do not identify the selected Skull;
+unfinished items and missing Nexus numbers do not resolve it. Bloodrage remains
+conditional and excluded from standing sums. INT 37, Fortification 226, Spot 27,
+level-35 limits, selected data and approved exceptions remain unchanged.
+
+The register is a scoped transcription, not a complete DOM/HTTP archive or
+authenticated game capture. Displayed permanent links were not independently
+reopened; original cache notices and observation intervals remain literal.
+The Nexus Skull note lacks a separately timed read, and its note-creation time
+is not substituted. No final character score, HP/Spot/Will/DPS result, live-game
+test, new solve, acquisition, merge or publication follows from this integration.

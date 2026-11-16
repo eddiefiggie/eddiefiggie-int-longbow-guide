@@ -6,6 +6,7 @@ import json
 from stacking_audit import ROOT, load, validate, subtotal, source_provenance
 from wisdom_loadout import (load as load_selection, validate as validate_selection,
                            render_crafting_qualification)
+from wisdom_ability_proofs import RULE_IDS as ABILITY_PAIR_IDS, CONTRACT as ABILITY_CONTRACT
 
 BEGIN = '<!-- selected-stacking-summary:start -->'
 END = '<!-- selected-stacking-summary:end -->'
@@ -57,7 +58,7 @@ def model_table(chosen):
             'Model-only gear comparison — not source-certified totals or character-sheet results'
             '</caption><thead><tr><th>Contribution</th><th>Former guide kit</th>'
             '<th>Previous artifact kit</th><th>Primary Wisdom kit</th></tr></thead><tbody>'
-            + ''.join(rows) + '</tbody></table></div><p>Zero means no contribution in that supplied model bucket, not independently verified absence in the live game. The current +37 INT, 226% Fortification and +27 direct Spot entries have separate bounded support above; this does not regrade the frozen comparison models or certify their other totals.</p>')
+            + ''.join(rows) + '</tbody></table></div><p>Zero means no contribution in that supplied model bucket, not independently verified absence in the live game. The current +37 INT, +18 Wisdom, 226% Fortification and +27 direct Spot entries have separate bounded support above; Constitution supports only a +17 subset while its full total remains withheld. This does not regrade the frozen comparison models or certify their other totals.</p>')
 
 
 def summary(data):
@@ -73,13 +74,19 @@ def summary(data):
     facts = []
     for stat, label in [('PRR', 'Physical Resistance'), ('MRR', 'Magical Resistance'),
                         ('HP', 'Flat maximum HP'), ('Fortification', 'Fortification (%)'),
-                        ('Spot', 'Direct Spot bonus')]:
+                        ('Spot', 'Direct Spot bonus'), ('Wisdom', 'Wisdom contribution'),
+                        ('Constitution', 'Standing Constitution contribution')]:
         result = subtotal(data, stat)
         value = str(result['total']) if result['complete'] else 'Unverified'
         parts = [c for c in data['components'] if c['id'] in result['counted']]
         breakdown = ' + '.join(f"{c['amount']} {c['bonus_type']}" for c in parts)
         if not result['complete']:
-            breakdown = 'Supported inputs only (not a subtotal): ' + breakdown + '; excluded inputs: ' + ', '.join(result['excluded'])
+            if (stat == 'Constitution' and result['excluded'] == ['skull-con']
+                    and not result['missing_interactions'] and len(parts) == 5):
+                value = '+' + str(sum(c['amount'] for c in parts)) + ' supported subset; full total withheld'
+                breakdown += '; excluded conflicting input: skull-con'
+            else:
+                breakdown = 'Supported inputs only (not a subtotal): ' + breakdown + '; excluded inputs: ' + ', '.join(result['excluded'])
             if result['missing_interactions']:
                 breakdown += f"; {len(result['missing_interactions'])} unverified pairwise interactions"
         facts.append(f'<tr data-stat="{h(stat)}"><td>{h(label)}</td><td>{h(value)}</td><td>{h(breakdown)}</td></tr>')
@@ -109,9 +116,9 @@ def summary(data):
 <p><strong>The fully filled kit requires character level 36.</strong> Selected augments raise their hosts’ minimum level. The primary recipe has one Minor Artifact, Yeenoghu’s Reign; Claws Nearly Complete selects Wisdom +15; the Celestial Sapphire Ring’s Nearly Finished slot is empty. The no-event/no-limited policy allows only Festive ability diamonds as the exception. Acquisition screening, legal construction and source-certified effect totals are different checks.</p>
 <p><strong>Actual run, followed by manual refinements.</strong> The retained production run completed ''' + h(str(production['passes'])) + ''' stages in ''' + h(str(production['seconds'])) + ''' seconds. The documented canonical craft rotation, Spot/Good Luck choices and Wisdom refinement derive the selected recipe; they are not a new solver run or proof of a global optimum. The raw output modeled Constitution ''' + h(str(chosen['model']['raw_production_totals']['Constitution'])) + '''; this practical selection models ''' + h(str(model['Constitution'])) + ''' after choosing Good Luck for saves/skills, and adds Slavers Extra Spot +20, whose recipe derivation is now separately supported below. The production run’s status is not an optimality claim for those manual changes. See the <a href="evidence/wisdom-loadout/README.md">run, derivation and source-limit packet</a> and <a href="tools/fixtures/wisdom-loadout/selection.json">exact selected manifest</a>.</p>
 <p><strong>Damage first; certification is limited.</strong> ''' + h(gm + goggles + offense) + ''' remain <strong>unverified combinations</strong>. Dusk Raider, Tough Shields, Quickblade and Perfect Silence each require three selected hosts; their model inputs are not certified by arithmetic alone. Perfect Silence’s modeled three sneak dice are separate from the selected Solar gem’s modeled three flat sneak damage. The <a href="evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json">scoped offensive audit</a> supports the selected Flaming imbue’s Fire Spell Power scaling and one Enhancement bonus die from the Emerald. Named sources give 4d6 while Chaotic / 2d6 otherwise from level 30, or 5d6 / 3d6 with the Emerald-bearing Coldlight Runners equipped (host ML34; full kit ML36). These conditional named-source subtotals do not add unspecified filigrees or buffs, qualify new ledger inputs, establish realized damage against every target, or assert a DPS percentage or wider critical range.</p>
-<div class="tw"><table><caption>Current survival and Spot evidence at level 36</caption><thead><tr><th>Contribution</th><th>Derived subtotal</th><th>Supported component inputs</th></tr></thead><tbody>''' + ''.join(facts) + '''</tbody></table></div>
+<div class="tw"><table><caption>Current survival, ability and Spot evidence at level 36</caption><thead><tr><th>Contribution</th><th>Derived subtotal or stated subset</th><th>Supported component inputs</th></tr></thead><tbody>''' + ''.join(facts) + '''</tbody></table></div>
 <p>''' + h(utility + ' ' + survival) + ''' remain unverified combinations. Fortification and direct Spot now have the separate selected-gear derivations shown above. The HP subtotal still uses the selected False Life +60 in Goggles Green and Vitality +48 in Claws Green. Other unknown inputs remain visible in the ledger; dropping a required component cannot manufacture a complete result. The objective PRR cap is not raw PRR; armor caps apply to whole-character MRR. Skull own-page Constitution +16 conflicts with the generic/model +15: modeled CON 32 and the own-page sensitivity 33 remain separate, uncertified cases.</p>
-<p><strong>Wisdom priority, with a visible tradeoff.</strong> ''' + h(wis_dex) + '''These are gear contributions, not final ability or skill scores. The own Claws page lists Wisdom +15, but its retained source lacks an observation timestamp and cannot enter certified totals. The source review identifies Nearly Complete as irreversible: plan for another Claws copy if the existing one is already finished with Dexterity. The optional ring Dexterity +13 branch would model Dexterity ''' + h(str(chosen['optional']['ring_dexterity_13']['gear_dexterity_if_selected'])) + '''; it is <strong>unselected and model-only</strong>. Neither it nor the quarantined Insightful +5/Spot +22 diamonds is silently added to the primary kit.</p>
+<p><strong>Wisdom priority, with a visible tradeoff.</strong> ''' + h(wis_dex) + '''These are gear contributions, not final ability or skill scores. A fresh Claws Wisdom observation and the separately retained Celestial/Globe definitions now support the selected three-part Wisdom family; the earlier capture's missing metadata remains historical. The source review identifies Nearly Complete as irreversible: plan for another Claws copy if the existing one is already finished with Dexterity. The optional ring Dexterity +13 branch would model Dexterity ''' + h(str(chosen['optional']['ring_dexterity_13']['gear_dexterity_if_selected'])) + '''; it is <strong>unselected and model-only</strong>. Neither it nor the quarantined Insightful +5/Spot +22 diamonds is silently added to the primary kit.</p>
 ''' + render_crafting_qualification(data, compact=True) + '''
 <p><strong>Boundaries that matter.</strong> Cut to the Soul’s +3% is offensive Dodge bypass, not defensive Dodge. Defensive Dodge and its two caps still need their full check, including the newly selected ring input. Improved Deception remains a conditional ring proc, not a guaranteed sneak-attack uptime. Static weapon riders, imbues, sneak damage and procs are separate damage channels. The preserved level-35 bow-model scenario does not certify this level-36 Calamitous-and-Salt recipe or its critical range.</p>
 <p><a href="endgame-stacking-audit.html">Open the component-by-component audit, exact source contexts, missing interactions and unverified log</a>. “Verified” means the specific gated source support, not a live-game guarantee. The <a href="evidence/wisdom-loadout/claims.json">independent claim inventory</a> and <a href="evidence/wisdom-loadout/sources.json">source review</a> retain their own grades: retained-source-supported does not mean certified by this ledger. Old A-074 and earlier source records remain preserved history; unused old item/augment effects are not current components.</p>
@@ -138,15 +145,22 @@ def detail(data):
             out += [f'<p><strong>Derived selected-gear subtotal: {result["total"]}.</strong> This names the listed contribution family, not a whole-character roll or damage total.</p>']
             if stat.startswith('Greater Marksmanship'):
                 out += ['<p>The <a href="#source-marksmanship-rule">pinned Marksmanship definition</a> explicitly permits its ranged attack/damage bonuses to stack with Competence Accuracy/Deadly. This is that named cross-family exception; duplicate Greater Marksmanship still counts once. It does not verify the other Quality/Morale Accuracy combination.</p>']
-        else:out += ['<p class="unknown"><strong>Combined total withheld.</strong> Missing components or interaction support are listed below; this is not a finding that the bonuses fail to stack in game.</p>']
+        else:
+            out += ['<p class="unknown"><strong>Combined total withheld.</strong> Missing components or interaction support are listed below; this is not a finding that the bonuses fail to stack in game.</p>']
+            if stat == 'Constitution' and result['excluded'] == ['skull-con'] and not result['missing_interactions']:
+                supported = sum(c['amount'] for c in data['components'] if c['id'] in result['counted'])
+                out += [f'<p><strong>Supported standing Constitution subset: +{supported}.</strong> The unresolved Skull remains the sixth required member, so this subset cannot be presented as the complete selected-gear total. The full modeled 32/33 alternatives remain unqualified.</p>']
         out += ['<div class="tw"><table><thead><tr><th>Host / component</th><th>Input / type</th><th>Evidence status</th><th>Scope and qualification</th></tr></thead><tbody>']
         for c in [c for c in data['components'] if c['stat']==stat and c['channel']=='gear']:
             if 'definition_proof' in c:
                 link = ' · '.join(f'<a href="#source-{h(sid)}">{h(role)} source</a>'
                                   for role, sid in c['definition_proof']['sources'].items())
-                status = ('verified · source-supported field association'
-                          if c['definition_proof']['method'] == 'same-item-popup'
-                          else 'verified · source-supported skill-membership derivation')
+                if c['definition_proof'].get('contract') == ABILITY_CONTRACT:
+                    status = 'verified · source-supported selected ability definition'
+                else:
+                    status = ('verified · source-supported field association'
+                              if c['definition_proof']['method'] == 'same-item-popup'
+                              else 'verified · source-supported skill-membership derivation')
             elif 'recipe_proof' in c:
                 link = ' · '.join(f'<a href="#source-{h(sid)}">{h(role)} source</a>'
                                   for role, sid in c['recipe_proof']['sources'].items())
@@ -194,7 +208,10 @@ def detail(data):
         elif r['id'] in {'spot-chains-heroism', 'spot-chains-luck'}:
             a, b = r['component_pairs'][0]
             out += ['<p><strong>Closed scope:</strong> exactly '+h(a)+' + '+h(b)+'. The retained affirmative Tip 179 clause is applied only after validating the complete selected Spot family and each separate definition. No other component, statistic, channel or type pair is admitted. This does not change the original Heroism/Luck rule or establish whole-character Spot.</p>']
-    out += ['<h2 id="sources">Exact source contexts, roles and limits</h2><p>Retained browser captures are scoped DOM excerpts, not raw response bytes. Each underlying capture retains its own actual observation window and cache limits, including the separate 15 November crafting, seven-INT, bounded-stacking and Fortification/Spot addenda. The latter retains 16 scoped observations from 16 November UTC (15 November America/Los_Angeles); it is not a complete raw DOM/HTTP archive or live-game capture. Reusing an older capture does not refresh its observation date; missing revisions/timestamps remain missing. Source-reported revision metadata does not prove that a historical endpoint was independently read. The generated source-excerpts.json collection is a derived index of those original records, not a new browser observation. Exact package hashes and pointers preserve the distinction; editor and review metadata are omitted. A source marked historical/background below does not describe a currently equipped input. These are documentary checks, not game tests.</p><p>Source text: <a href="https://ddowiki.com/">DDO Wiki contributors</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>. Original articles and revision histories supply attribution. Reused Wiki excerpts retain that license. The separate <a href="https://ddonexus.com/About">DDO Nexus fan reference</a> supplies only the two explicitly identified Legendary recipe-type observations. Its beta warning, empty numeric parameters and absent per-item client version remain attached; no Wiki revision is invented for Nexus.</p>']
+        elif r['id'] in ABILITY_PAIR_IDS:
+            a, b = r['component_pairs'][0]
+            out += ['<p><strong>Closed scope:</strong> exactly '+h(a)+' + '+h(b)+' in the selected gear '+h(r['stats'][0])+' family. The retained Tip 179 premise and Stack caveat remain separate source context. Both definitions, selected placements and the exact full family must pass on every proof call. No rule admits the conflicting Skull, including existing Artifact or Exceptional routes. This supports the existing selected contribution, not a whole-character ability or skill score.</p>']
+    out += ['<h2 id="sources">Exact source contexts, roles and limits</h2><p>Retained browser captures are scoped DOM excerpts, not raw response bytes. Each underlying capture retains its own actual observation window and cache limits, including the separate 15 November crafting, seven-INT, bounded-stacking and Fortification/Spot addenda. The latter retains 16 scoped observations from 16 November UTC (15 November America/Los_Angeles); it is not a complete raw DOM/HTTP archive or live-game capture. Reusing an older capture does not refresh its observation date; missing revisions/timestamps remain missing. Source-reported revision metadata does not prove that a historical endpoint was independently read. The separate 16 November Wisdom/Constitution register adds twelve scoped observations and nine retained-source references. Its read-only audit metadata remains the original investigation record; later implementation status belongs to the separate integration receipt. The generated source-excerpts.json collection is a derived index of those original records, not a new browser observation. Exact package hashes and pointers preserve the distinction; editor and review metadata are omitted. A source marked historical/background below does not describe a currently equipped input. These are documentary checks, not game tests.</p><p>Source text: <a href="https://ddowiki.com/">DDO Wiki contributors</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>. Original articles and revision histories supply attribution. Reused Wiki excerpts retain that license. The separate <a href="https://ddonexus.com/About">DDO Nexus fan reference</a> supplies only the two explicitly identified Legendary recipe-type observations. Its beta warning, empty numeric parameters and absent per-item client version remain attached; no Wiki revision is invented for Nexus.</p>']
     for sid,s in data['sources'].items():
         pin=s['revision']
         if pin and pin.startswith('/'):pin='https://ddowiki.com'+pin

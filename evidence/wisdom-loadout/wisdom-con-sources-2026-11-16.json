@@ -1,0 +1,1135 @@
+{
+  "schema_version": 1,
+  "record_type": "INTiana Wisdom and Constitution read-only evidence audit",
+  "review_date_utc": "2026-11-16",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pr": 47,
+    "branch": "feat/wisdom-loadout-priorities",
+    "head": "834b8c4cc648f9263ea19ac4203eedd872888f06",
+    "build": "11-15-26.9",
+    "tree": "0b6263ca9bb201b5267774d6f8af198fe013d35e",
+    "intentional_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "selection_sha256": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d"
+  },
+  "approved_scope": "Read-only audit of three selected Wisdom and six selected standing Constitution contributions, including values, types, selected host/craft/socket/level applicability, positive interactions, and the Skull15/16 conflict. Prepare findings and a proposed implementation scope.",
+  "method": {
+    "primary_investigation": "User-requested internal cloud browser; scoped accessibility observations, read-only DOM inspection, and one Wiki screenshot inspected visually.",
+    "capture_form": "Transcription of actual tool observations with short exact text/HTML fragments; not a complete DOM archive, raw HTTP response, or authenticated live-game capture.",
+    "timestamps": "Measured DOM/AX observation intervals are retained where captured. The Nexus own-Skull note lacks a separately timed read; its note-creation time is explicitly not observation evidence.",
+    "cache_notice_binding": "Unless separately noted, each literal cache notice was transcribed from the initial accessibility observation during the same page navigation. Timed DOM intervals identify the later scoped definition/metadata read.",
+    "permalink_limit": "Displayed Wiki permanent-link URLs were observed; their historical endpoints were not separately reopened. Rendered templates and cached pages may have independent update timing.",
+    "editorial_minimization": "Page-modification prefixes retain date/update information; editor identities, unrelated page content, advertisements, and screenshot bytes are omitted.",
+    "old_records": "Existing captures and their historical INT-only adoption scopes stay unchanged; this register describes newly reviewed WIS/CON applications.",
+    "implementation_status": "No repository implementation, ledger qualification, model/selection change, commit, PR update, merge, publication, crafting, purchase, or live-game test.",
+    "search_supplement": "Search Service was used to locate and read a builder author's release notes. It is background software documentation, not a primary source for the Skull's in-game result."
+  },
+  "observations": [
+    {
+      "id": "skull-own-20261116",
+      "source_url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:The_Skull_of_the_Horned_King&oldid=714102",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:26:43.216Z",
+        "ended_at_utc": "2026-11-16T03:26:43.317Z"
+      },
+      "cache_notice": "(this is up to 18 hours old)",
+      "page_modified_display_prefix": "This page was last modified 13:48, September 16, 2026 (Update 81.3)",
+      "exact_fragments": [
+        "granting a +16 Enhancement bonus to Constitution."
+      ],
+      "exact_html_fragments": [
+        "granting a +16 <a href=\"/page/Enhancement_bonus\" title=\"Enhancement bonus\">Enhancement bonus</a> to Constitution."
+      ],
+      "context": {
+        "item": "The Skull of the Horned King",
+        "minimum_level": 35,
+        "selected_craft_family": "Nearly Complete: Ability Score",
+        "selected_ability": "Constitution",
+        "displayed_craft_amount": 16,
+        "all_six_displayed_ability_options": 16
+      },
+      "finding": "Direct own-item support for 16 Enhancement. Contradicts the retained generic 15 case; no resolution is inferred."
+    },
+    {
+      "id": "nearly-complete-20261116",
+      "source_url": "https://ddowiki.com/page/Nearly_Complete",
+      "revision_link": "https://ddowiki.com/index.php?title=Nearly_Complete&oldid=705751",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:27:13.149Z",
+        "ended_at_utc": "2026-11-16T03:27:13.171Z"
+      },
+      "cache_notice": "(this is up to 5 hours old)",
+      "page_modified_display_prefix": "This page was last modified 04:27, August 16, 2026 (Update 81.1.1)",
+      "exact_fragments": [
+        "Available upgrades (Legendary)",
+        "Constitution +15",
+        "Wisdom +15",
+        "Insightful Constitution +7"
+      ],
+      "context": {
+        "ability_score_legendary": 15,
+        "insightful_ability_score_legendary": 7,
+        "bonus_type_for_ability_score": "Enhancement",
+        "legendary_cost": {
+          "item": "Legendary Abyssal Gems",
+          "quantity": 25
+        },
+        "crafting_location": "Duergar Completion Forge, Gravenhollow",
+        "replacement_allowed": false
+      },
+      "finding": "The generic table still gives 15. The inspected article supplies no explicit Skull-specific or raid scaling explanation. Missing qualification does not resolve the discrepancy.",
+      "context_capture_limit": "The column header and cache notice were transcribed from the initial AX observation for this navigation; the timed DOM read captures the matching Ability Score and Insightful Ability Score rows and explanatory paragraphs."
+    },
+    {
+      "id": "claws-wisdom-20261116",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:27:27.449Z",
+        "ended_at_utc": "2026-11-16T03:27:27.481Z"
+      },
+      "cache_notice": "(this is up to 17 hours old)",
+      "page_modified_display_prefix": "This page was last modified 02:59, August 25, 2026 (Update 81.2)",
+      "exact_fragments": [
+        "granting a +15 Enhancement bonus to Wisdom."
+      ],
+      "exact_html_fragments": [
+        "granting a +15 <a href=\"/page/Enhancement_bonus\" title=\"Enhancement bonus\">Enhancement bonus</a> to Wisdom."
+      ],
+      "context": {
+        "item": "Legendary Burrowing Claws",
+        "minimum_level": 35,
+        "selected_craft_family": "Nearly Complete: Ability Score",
+        "selected_option": "Wisdom +15",
+        "other_ability_options_unselected": true
+      },
+      "finding": "Exact selected item and craft explicitly support 15 Enhancement Wisdom. This is a new observation; the older undated capture is unchanged."
+    },
+    {
+      "id": "queen-con-20261116",
+      "source_url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:The_Queen_of_Rot&oldid=715898",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:27:48.675Z",
+        "ended_at_utc": "2026-11-16T03:27:48.698Z"
+      },
+      "cache_notice": "(this is up to 17 hours old)",
+      "page_modified_display_prefix": "This page was last modified 08:40, September 19, 2026 (Update 81.3)",
+      "exact_fragments": [
+        "granting a +7 Insight bonus to Constitution."
+      ],
+      "exact_html_fragments": [
+        "granting a +7 <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to Constitution."
+      ],
+      "context": {
+        "item": "The Queen of Rot",
+        "minimum_level": 35,
+        "selected_craft_family": "Nearly Complete: Insightful Ability Score",
+        "selected_option": "Insightful Constitution +7"
+      },
+      "finding": "Own-item Constitution popup supplies the exact 7 Insight definition separately from previously qualified Queen Fortification."
+    },
+    {
+      "id": "solar-con-20261116",
+      "source_url": "https://ddowiki.com/page/Item:Solar_Gem_of_Constitution_(Legendary)",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Constitution_(Legendary)&oldid=691768",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:28:06.959Z",
+        "ended_at_utc": "2026-11-16T03:28:06.980Z"
+      },
+      "cache_notice": "(this is up to 10 hours old)",
+      "page_modified_display_prefix": "This page was last modified 16:51, July 3, 2026 (Update 80.0.1)",
+      "exact_fragments": [
+        "Slotted Effect: +4 Artifact Bonus to Constitution."
+      ],
+      "context": {
+        "minimum_level": 30,
+        "augment_type": "Sun",
+        "selected_host": "Light Armor of the Warblade's Reflection",
+        "selected_host_socket_index": 0
+      },
+      "finding": "Own Legendary Constitution augment supports 4 Artifact; the Sun slot and level applicability are supported separately."
+    },
+    {
+      "id": "dolorous-con-20261116",
+      "source_url": "https://ddowiki.com/page/Item:Dolorous_Quality_Constitution_(legendary)",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Dolorous_Quality_Constitution_(legendary)&oldid=702234",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:28:34.938Z",
+        "ended_at_utc": "2026-11-16T03:28:34.957Z"
+      },
+      "cache_notice": "(this is up to 15 hours old)",
+      "page_modified_display_prefix": "This page was last modified 08:53, July 31, 2026 (Update 81.0.1)",
+      "exact_fragments": [
+        "Slotted Effect: +3 Quality bonus to Constitution."
+      ],
+      "context": {
+        "minimum_level": 34,
+        "augment_type": "Lamordia: Dolorous (Accessory)",
+        "selected_host": "Legendary Coldlight Runners"
+      },
+      "finding": "The exact Legendary accessory augment supports 3 Quality Constitution. This is not a weapon or armor Dolorous variant."
+    },
+    {
+      "id": "coldlight-host-20261116",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:28:57.431Z",
+        "ended_at_utc": "2026-11-16T03:28:57.450Z"
+      },
+      "cache_notice": "(this is up to 16 hours old)",
+      "page_modified_display_prefix": "This page was last modified 08:12, May 6, 2026 (Update 79.0.1)",
+      "exact_fragments": [
+        "Lamordia: Dolorous Slot (Accessory)"
+      ],
+      "context": {
+        "minimum_level": 34,
+        "item_slot": "Feet"
+      },
+      "finding": "The selected host has the matching Dolorous accessory slot at ML34."
+    },
+    {
+      "id": "reflection-host-20261116",
+      "source_url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:29:42.853Z",
+        "ended_at_utc": "2026-11-16T03:29:42.871Z"
+      },
+      "additional_slot_observation": {
+        "started_at_utc": "2026-11-16T03:30:06.826Z",
+        "ended_at_utc": "2026-11-16T03:30:06.875Z"
+      },
+      "cache_notice": "(this is up to 6 hours old)",
+      "page_modified_display_prefix": "This page was last modified 08:17, May 6, 2026 (Update 79.0.1)",
+      "exact_fragments": [
+        "Sun Augment Slot"
+      ],
+      "exact_html_fragments": [
+        "<a href=\"/page/Lunar_and_Solar_Gems\" title=\"Lunar and Solar Gems\">Sun&nbsp;Augment&nbsp;Slot</a>"
+      ],
+      "context": {
+        "minimum_level": 33,
+        "feat_requirement": "Light Armor Proficiency",
+        "race_absolutely_excluded": "Warforged",
+        "selected_query_race": "Human"
+      },
+      "finding": "The selected armor has a Sun slot and ML33. Its Warforged exclusion does not exclude the selected Human query. Full build eligibility is not newly certified."
+    },
+    {
+      "id": "skull-image-20261116",
+      "source_url": "https://ddowiki.com/page/File:The_Skull_of_the_Horned_King.png",
+      "revision_link": "https://ddowiki.com/index.php?title=File:The_Skull_of_the_Horned_King.png&oldid=714324",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:29:55.742Z",
+        "ended_at_utc": "2026-11-16T03:29:55.840Z"
+      },
+      "cache_notice": "(this is up to 18 hours old)",
+      "page_modified_display_prefix": "This page was last modified 16:29, September 16, 2026 (Update 81.3)",
+      "finding": "Visual inspection: the screenshot shows the unfinished Nearly Complete ability enchantment and empty ordinary/Sun sockets. No completed Constitution value appears. The image therefore does not settle 15 versus 16.",
+      "limit": "Wiki-hosted screenshot, not an authenticated new game capture. Screenshot bytes are not included in this report or evidence register."
+    },
+    {
+      "id": "nexus-skull-20261116",
+      "source_url": "https://ddonexus.com/Item/The_Skull_of_the_Horned_King",
+      "revision_link": null,
+      "body_observation": null,
+      "note_recorded_at_utc": "2026-11-16T03:30:40.492Z",
+      "finding": "The inspected own-item record lists the unfinished Nearly Complete ability enchantment and ML35; it supplies no numeric Constitution craft result.",
+      "limit": "Exact source-read interval was not separately timed; note_recorded_at_utc is note creation only. Nexus is an unaffiliated beta reference, not primary game verification."
+    },
+    {
+      "id": "nexus-forge-20261116",
+      "source_url": "https://ddonexus.com/Crafting/Duergar_Completion_Forge",
+      "revision_link": null,
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:30:53.766Z",
+        "ended_at_utc": "2026-11-16T03:30:54.688Z"
+      },
+      "additional_markup_observation": {
+        "started_at_utc": "2026-11-16T03:31:26.566Z",
+        "ended_at_utc": "2026-11-16T03:31:26.606Z"
+      },
+      "exact_fragments": [
+        "Constitution +",
+        "+ Enhancement bonus to Constitution"
+      ],
+      "exact_html_fragments": [
+        "<li class=\"recipe-mutation-known\" title=\"+ Enhancement bonus to Constitution\">Constitution +</li>"
+      ],
+      "context": {
+        "selected_row_tier": "Legendary",
+        "ingredients": {
+          "item": "Legendary Abyssal Gems",
+          "quantity": 25
+        },
+        "removed_enchantment": "Nearly Complete: Ability Score",
+        "generic_host_path": "/Item/Any_Legendary_item_with_Nearly_Complete:_Ability_Score/3F889"
+      },
+      "finding": "The Legendary recipe associates Constitution with Enhancement but omits its numeric parameter. It cannot decide between 15 and 16.",
+      "limit": "No per-recipe revision or client version was established. No missing numeric parameter was filled in."
+    },
+    {
+      "id": "sun-system-20261116",
+      "source_url": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+      "revision_link": "https://ddowiki.com/index.php?title=Lunar_and_Solar_Gems&oldid=707220",
+      "body_observation": {
+        "started_at_utc": "2026-11-16T03:33:55.511Z",
+        "ended_at_utc": "2026-11-16T03:33:57.629Z"
+      },
+      "additional_context_observation": {
+        "started_at_utc": "2026-11-16T03:34:30.069Z",
+        "ended_at_utc": "2026-11-16T03:34:30.085Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "page_modified_display_prefix": "This page was last modified 02:55, August 25, 2026 (Update 81.2)",
+      "exact_fragments": [
+        "Players can slot Lunar and Solar Gems into these slots to provide their bonuses."
+      ],
+      "context": {
+        "preceding_slots": "special Moon and Sun Augment Slots",
+        "Sun_equipment_slots": [
+          "Armor",
+          "Helm",
+          "Cloak",
+          "Goggles",
+          "Trinket"
+        ],
+        "legendary_gem_minimum_level": 30,
+        "same_type_caveat": "Multiple effects with the same bonus type do not stack; certain gems use other types, so own definitions matter."
+      },
+      "finding": "System context, the augment's own Sun type, and the armor's actual Sun slot jointly support this selected placement. The source does not supply an extra bonus or a general all-color compatibility rule."
+    }
+  ],
+  "search_supplement": [
+    {
+      "id": "builder-2.0.0.84-background",
+      "source_url": "https://github.com/Maetrim/DDOBuilderV2/releases/tag/2.0.0.84",
+      "retrieved_during_audit_date_utc": "2026-11-16",
+      "displayed_release_date": "24 Aug 22:45",
+      "revision": null,
+      "summary": "The release author reports changing generic Nearly Complete ability crafting from16 to15 after Lamannia, and in the same release lists six named items with16 crafting options. The Skull is not named in that list.",
+      "named_exceptions": [
+        "Legendary Webs of the Drow Penitent",
+        "Legendary Drow Priestess' Mantle",
+        "Legendary The Shadow King's Cruelty",
+        "Legendary Baphomet's Brutality",
+        "Legendary Planar Lariat",
+        "Legendary Crown of Ioun"
+      ],
+      "limit": "This documents a third-party builder change, not a direct observation of the selected Skull craft. Absence from the exception list, displayed chronology, and agreement with another model cannot establish Skull15 or eliminate Skull16. Both statements occur in the same release; they are not an ordered pair of separate releases."
+    }
+  ],
+  "integration_status": "Proposed only; owner approval required for the later bounded draft implementation.",
+  "reused_sources": [
+    {
+      "id": "globe-abilities-retained",
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "record_pointer": [
+        "captures",
+        "globe"
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "source_url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Globe_of_True_Imperial_Blood&oldid=643056",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:27Z",
+        "ended_at_utc": "2026-11-15T22:19:35Z"
+      },
+      "cache_notice": "(this is up to 11 hours old)",
+      "premise": "The own augment explicitly grants1 Exceptional to WIS and CON; ML25 Colorless; any ordinary color slot is permitted.",
+      "anchors": [
+        {
+          "pointer": [
+            "captures",
+            "globe",
+            "effect_visible_text"
+          ],
+          "exact_fragment": "+1 Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.",
+          "start_character": 56,
+          "length": 94
+        },
+        {
+          "pointer": [
+            "captures",
+            "globe",
+            "effect_visible_text"
+          ],
+          "exact_fragment": "any color Augment Slot",
+          "start_character": 174,
+          "length": 22
+        }
+      ],
+      "adoption_limit": "Newly reviewed use of an unchanged original observation. The old capture and its original adoption scope are not rewritten."
+    },
+    {
+      "id": "celestial-abilities-retained",
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "record_pointer": [
+        "captures",
+        "celestial-host"
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Celestial_Sapphire_Ring",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Celestial_Sapphire_Ring&oldid=631921",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:35Z",
+        "ended_at_utc": "2026-11-15T22:20:05Z"
+      },
+      "cache_notice": "(this is up to -4 hours old)",
+      "premise": "Native Profane Well Rounded grants2 Profane to all abilities; host ML29. Nearly Finished is deliberately unselected.",
+      "anchors": [
+        {
+          "pointer": [
+            "captures",
+            "celestial-host",
+            "profane_tooltip_html"
+          ],
+          "exact_fragment": "+2 <a href=\"/page/Profane_bonus\" title=\"Profane bonus\">Profane bonus</a> to all abilities.",
+          "start_character": 535,
+          "length": 90
+        }
+      ],
+      "adoption_limit": "Newly reviewed use of an unchanged original observation. The old capture and its original adoption scope are not rewritten."
+    },
+    {
+      "id": "calamitous-host-retained",
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "record_pointer": [
+        "captures",
+        "calamitous-host"
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Calamitous_Longbow",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Calamitous_Longbow&oldid=666359",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:27Z",
+        "ended_at_utc": "2026-11-15T22:19:35Z"
+      },
+      "cache_notice": "(this is up to 11 hours old)",
+      "premise": "The retained own-item observation establishes ML34 and the Purple slot; the pinned selection manifest places the Colorless Globe in that slot.",
+      "anchors": [],
+      "adoption_limit": "Newly reviewed use of an unchanged original observation. The old capture and its original adoption scope are not rewritten."
+    },
+    {
+      "id": "ability-membership-retained",
+      "path": "evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json",
+      "sha256": "32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830",
+      "record_pointer": [
+        "captures",
+        "ability"
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json",
+      "source_url": "https://ddowiki.com/page/Ability",
+      "revision_link": "https://ddowiki.com/index.php?title=Ability&oldid=524405",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T21:48:41Z",
+        "ended_at_utc": "2026-11-15T21:49:12Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "premise": "The ability category explicitly includes Wisdom and Constitution. This bridges the native all-abilities definition to the two new selected claims.",
+      "anchors": [
+        {
+          "pointer": [
+            "captures",
+            "ability",
+            "ability_members_visible_text"
+          ],
+          "exact_fragment": "Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA).",
+          "start_character": 72,
+          "length": 106
+        }
+      ],
+      "adoption_limit": "Newly reviewed use of an unchanged original observation. The old capture and its original adoption scope are not rewritten."
+    },
+    {
+      "id": "augment-placement-retained",
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "record_pointer": [
+        "captures",
+        "augment-slots"
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "source_url": "https://ddowiki.com/page/Augment_Slot",
+      "revision_link": "https://ddowiki.com/index.php?title=Augment_Slot&oldid=717357",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:20:20Z",
+        "ended_at_utc": "2026-11-15T22:20:49Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "premise": "Purple accepts Colorless. A slotted augment raises host ML only when its own requirement is higher; ML30 Solar therefore does not raise ML33 armor.",
+      "anchors": [],
+      "adoption_limit": "Newly reviewed use of an unchanged original observation. The old capture and its original adoption scope are not rewritten."
+    },
+    {
+      "id": "tip179-retained",
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "record_pointer": [
+        "captures",
+        "loading-screen-tips"
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "source_url": "https://ddowiki.com/page/Loading_screen_tips",
+      "revision_link": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:48:38.253Z",
+        "ended_at_utc": "2026-11-15T22:48:38.329Z"
+      },
+      "cache_notice": "(this is up to 4 hours old)",
+      "premise": "Affirmative different-type stacking premise, proposed only for the four named WIS/CON pairs in this register.",
+      "anchors": [
+        {
+          "pointer": [
+            "captures",
+            "loading-screen-tips",
+            "scoped_visible_text"
+          ],
+          "exact_fragment": "Different types of bonuses stack",
+          "start_character": 91,
+          "length": 32
+        }
+      ],
+      "adoption_limit": "Newly reviewed use of an unchanged original observation. The old capture and its original adoption scope are not rewritten.",
+      "contextual_caveat": {
+        "same_file_record_pointer": [
+          "captures",
+          "stack"
+        ],
+        "same_file_interpretation_pointer": [
+          "reviewed_interpretation",
+          "stack_caveat"
+        ],
+        "source_url": "https://ddowiki.com/page/Stack",
+        "revision_link": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+        "body_observation": {
+          "started_at_utc": "2026-11-15T22:48:14.783Z",
+          "ended_at_utc": "2026-11-15T22:48:14.806Z"
+        },
+        "carry_forward": "The retained Stack article contains a general same-family caveat. Preserve that evidence and its historical INT interpretation unchanged. The proposed four WIS/CON pairs are a new bounded interpretation of the affirmative different-type rule with exact qualified sources; they do not establish an exhaustive absence of exceptions."
+      }
+    },
+    {
+      "id": "artifact-positive-rule-retained",
+      "path": "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+      "sha256": "dfd4c246e04ace0dcf5ddcfad983f4e94fbbdd6192465237fd8ab083c0a90b6b",
+      "record_pointer": [
+        "source_receipts",
+        "artifact_competence_exceptional",
+        "sources",
+        0
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+      "source_url": "https://ddowiki.com/page/Artifact_bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Artifact_bonus&oldid=636950",
+      "observed_at_utc": "2026-11-02T05:38:21.810Z",
+      "anchors": [
+        {
+          "pointer": [
+            "source_receipts",
+            "artifact_competence_exceptional",
+            "sources",
+            0,
+            "exact_source_sections",
+            0,
+            "following_paragraph"
+          ],
+          "exact_fragment": "This bonus stacks with all other bonuses.",
+          "start_character": 0,
+          "length": 41
+        }
+      ],
+      "premise": "Existing affirmative rule for this bonus type, reused without changing the rule dictionary.",
+      "adoption_limit": "Relationship evidence is conditional on separately qualified components; it cannot qualify the conflicting Skull."
+    },
+    {
+      "id": "exceptional-positive-rule-retained",
+      "path": "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+      "sha256": "dfd4c246e04ace0dcf5ddcfad983f4e94fbbdd6192465237fd8ab083c0a90b6b",
+      "record_pointer": [
+        "source_receipts",
+        "artifact_competence_exceptional",
+        "sources",
+        2
+      ],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+      "source_url": "https://ddowiki.com/page/Exceptional_bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Exceptional_bonus&oldid=528196",
+      "observed_at_utc": "2026-11-02T05:39:18.510Z",
+      "anchors": [
+        {
+          "pointer": [
+            "source_receipts",
+            "artifact_competence_exceptional",
+            "sources",
+            2,
+            "exact_source_sections",
+            0,
+            "paragraph"
+          ],
+          "exact_fragment": "Exceptional bonuses stack with all other bonuses, but not with other exceptional bonuses.",
+          "start_character": 78,
+          "length": 89
+        }
+      ],
+      "premise": "Existing affirmative rule for this bonus type, reused without changing the rule dictionary.",
+      "adoption_limit": "Relationship evidence is conditional on separately qualified components; it cannot qualify the conflicting Skull."
+    },
+    {
+      "id": "lamordia-variant-match-retained",
+      "path": "tools/fixtures/lamordia-handling/viktranium-experiment-crafting.browser-capture.json",
+      "sha256": "e40935cdc1a352a7fa3dde5af1fd7a852e0a4e50f9d9ed3c44dfdb3cbbf5458e",
+      "record_pointer": [],
+      "repository_url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/blob/834b8c4cc648f9263ea19ac4203eedd872888f06/tools/fixtures/lamordia-handling/viktranium-experiment-crafting.browser-capture.json",
+      "source_url": "https://ddowiki.com/page/Viktranium_Experiment_crafting",
+      "revision_link": "https://ddowiki.com/index.php?title=Viktranium_Experiment_crafting&oldid=720728",
+      "observed_at_utc": "2026-11-03T18:14:55.744Z",
+      "anchors": [
+        {
+          "pointer": [
+            "visibleText"
+          ],
+          "exact_fragment": "Each augment type can only fit into an augment slot that exactly matches its type.",
+          "start_character": 6578,
+          "length": 82
+        }
+      ],
+      "premise": "Dolorous Accessory must match the host Dolorous Accessory slot. The source also corroborates Legendary Quality Constitution3.",
+      "adoption_limit": "Existing source bytes stay unchanged; no weapon/accessory/armor substitution or new crafting action is allowed."
+    }
+  ],
+  "components": [
+    {
+      "id": "claws-wisdom",
+      "stat": "Wisdom",
+      "amount_in_current_ledger": 15,
+      "bonus_type_in_current_ledger": "Enhancement",
+      "current_state": "unknown",
+      "current_source_binding": "claws-wisdom",
+      "host_in_current_ledger": "Legendary Burrowing Claws / Nearly Complete",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Enhancement",
+      "candidate_source_refs": [
+        "claws-wisdom-20261116",
+        "nearly-complete-20261116"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "celestial-profane-wisdom",
+      "stat": "Wisdom",
+      "amount_in_current_ledger": 2,
+      "bonus_type_in_current_ledger": "Profane",
+      "current_state": "unknown",
+      "current_source_binding": "",
+      "host_in_current_ledger": "Legendary Celestial Sapphire Ring",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Profane",
+      "candidate_source_refs": [
+        "celestial-abilities-retained",
+        "ability-membership-retained"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "globe-wisdom",
+      "stat": "Wisdom",
+      "amount_in_current_ledger": 1,
+      "bonus_type_in_current_ledger": "Exceptional",
+      "current_state": "unknown",
+      "current_source_binding": "globe",
+      "host_in_current_ledger": "Legendary Calamitous Longbow / Purple",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Exceptional",
+      "candidate_source_refs": [
+        "globe-abilities-retained",
+        "calamitous-host-retained",
+        "augment-placement-retained"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "skull-con",
+      "stat": "Constitution",
+      "amount_in_current_ledger": 16,
+      "bonus_type_in_current_ledger": "Enhancement",
+      "current_state": "conflicting",
+      "current_source_binding": "skull-con",
+      "host_in_current_ledger": "Helmet",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "conflicting",
+      "reviewed_type": "Enhancement",
+      "candidate_source_refs": [
+        "skull-own-20261116",
+        "nearly-complete-20261116",
+        "skull-image-20261116",
+        "nexus-skull-20261116",
+        "nexus-forge-20261116",
+        "builder-2.0.0.84-background"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "queen-insight-con",
+      "stat": "Constitution",
+      "amount_in_current_ledger": 7,
+      "bonus_type_in_current_ledger": "unknown",
+      "current_state": "unknown",
+      "current_source_binding": "",
+      "host_in_current_ledger": "Cloak Nearly Complete",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Insight",
+      "candidate_source_refs": [
+        "queen-con-20261116",
+        "nearly-complete-20261116"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "boots-quality-con",
+      "stat": "Constitution",
+      "amount_in_current_ledger": 3,
+      "bonus_type_in_current_ledger": "Quality",
+      "current_state": "unknown",
+      "current_source_binding": "viktranium",
+      "host_in_current_ledger": "Legendary Coldlight Runners / Dolorous",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Quality",
+      "candidate_source_refs": [
+        "dolorous-con-20261116",
+        "coldlight-host-20261116",
+        "lamordia-variant-match-retained"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "solar-con",
+      "stat": "Constitution",
+      "amount_in_current_ledger": 4,
+      "bonus_type_in_current_ledger": "Artifact",
+      "current_state": "unknown",
+      "current_source_binding": "",
+      "host_in_current_ledger": "Light Armor of the Warblade’s Reflection / Sun",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Artifact",
+      "candidate_source_refs": [
+        "solar-con-20261116",
+        "reflection-host-20261116",
+        "sun-system-20261116",
+        "augment-placement-retained"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "celestial-profane-constitution",
+      "stat": "Constitution",
+      "amount_in_current_ledger": 2,
+      "bonus_type_in_current_ledger": "Profane",
+      "current_state": "unknown",
+      "current_source_binding": "",
+      "host_in_current_ledger": "Legendary Celestial Sapphire Ring",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Profane",
+      "candidate_source_refs": [
+        "celestial-abilities-retained",
+        "ability-membership-retained"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    },
+    {
+      "id": "globe-constitution",
+      "stat": "Constitution",
+      "amount_in_current_ledger": 1,
+      "bonus_type_in_current_ledger": "Exceptional",
+      "current_state": "unknown",
+      "current_source_binding": "globe",
+      "host_in_current_ledger": "Legendary Calamitous Longbow / Purple",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "requires": [],
+      "documentary_finding": "supported_candidate",
+      "reviewed_type": "Exceptional",
+      "candidate_source_refs": [
+        "globe-abilities-retained",
+        "calamitous-host-retained",
+        "augment-placement-retained"
+      ],
+      "implementation_status": "unchanged; not integrated"
+    }
+  ],
+  "pair_inventory": [
+    {
+      "stat": "Wisdom",
+      "members": [
+        "celestial-profane-wisdom",
+        "claws-wisdom"
+      ],
+      "treatment": "proposed_exact_new_pair",
+      "source_ref": "tip179-retained"
+    },
+    {
+      "stat": "Wisdom",
+      "members": [
+        "claws-wisdom",
+        "globe-wisdom"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "exceptional-positive-rule-retained"
+    },
+    {
+      "stat": "Wisdom",
+      "members": [
+        "celestial-profane-wisdom",
+        "globe-wisdom"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "exceptional-positive-rule-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "queen-insight-con",
+        "skull-con"
+      ],
+      "treatment": "withheld_conflicting_member",
+      "source_ref": null
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "boots-quality-con",
+        "skull-con"
+      ],
+      "treatment": "withheld_conflicting_member",
+      "source_ref": null
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "skull-con",
+        "solar-con"
+      ],
+      "treatment": "withheld_conflicting_member",
+      "source_ref": null
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "celestial-profane-constitution",
+        "skull-con"
+      ],
+      "treatment": "withheld_conflicting_member",
+      "source_ref": null
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "globe-constitution",
+        "skull-con"
+      ],
+      "treatment": "withheld_conflicting_member",
+      "source_ref": null
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "boots-quality-con",
+        "queen-insight-con"
+      ],
+      "treatment": "proposed_exact_new_pair",
+      "source_ref": "tip179-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "queen-insight-con",
+        "solar-con"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "artifact-positive-rule-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "celestial-profane-constitution",
+        "queen-insight-con"
+      ],
+      "treatment": "proposed_exact_new_pair",
+      "source_ref": "tip179-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "globe-constitution",
+        "queen-insight-con"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "exceptional-positive-rule-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "boots-quality-con",
+        "solar-con"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "artifact-positive-rule-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "boots-quality-con",
+        "celestial-profane-constitution"
+      ],
+      "treatment": "proposed_exact_new_pair",
+      "source_ref": "tip179-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "boots-quality-con",
+        "globe-constitution"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "exceptional-positive-rule-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "celestial-profane-constitution",
+        "solar-con"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "artifact-positive-rule-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "globe-constitution",
+        "solar-con"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "artifact-positive-rule-retained"
+    },
+    {
+      "stat": "Constitution",
+      "members": [
+        "celestial-profane-constitution",
+        "globe-constitution"
+      ],
+      "treatment": "existing_rule_after_component_qualification",
+      "source_ref": "exceptional-positive-rule-retained"
+    }
+  ],
+  "arithmetic": {
+    "kind": "documentary derivation/proposed integration expectation; not new production calculator output",
+    "Wisdom": {
+      "members": [
+        "claws-wisdom",
+        "celestial-profane-wisdom",
+        "globe-wisdom"
+      ],
+      "terms": [
+        15,
+        2,
+        1
+      ],
+      "sum": 18,
+      "proposed_full_result": 18,
+      "proposed_complete": true
+    },
+    "Constitution_supported_subset": {
+      "members": [
+        "queen-insight-con",
+        "boots-quality-con",
+        "solar-con",
+        "celestial-profane-constitution",
+        "globe-constitution"
+      ],
+      "terms": [
+        7,
+        3,
+        4,
+        2,
+        1
+      ],
+      "sum": 17,
+      "proposed_full_result": null,
+      "proposed_complete": false,
+      "excluded": [
+        "skull-con"
+      ]
+    },
+    "Constitution_preserved_model_cases": {
+      "generic_craft": {
+        "Skull": 15,
+        "other_terms": 17,
+        "total": 32
+      },
+      "own_item_sensitivity": {
+        "Skull": 16,
+        "other_terms": 17,
+        "total": 33
+      }
+    },
+    "scope_limit": "Standing selected-gear contributions at the unchanged full-kit level36 floor, not full character ability scores. Bloodrage, other buffs, ranks, base abilities, tomes, feats, enhancements and filigrees are not newly calculated."
+  },
+  "recommended_implementation": {
+    "status": "proposed; not authorized by the read-only selection",
+    "qualified_definition_ids": [
+      "claws-wisdom",
+      "celestial-profane-wisdom",
+      "globe-wisdom",
+      "queen-insight-con",
+      "boots-quality-con",
+      "solar-con",
+      "celestial-profane-constitution",
+      "globe-constitution"
+    ],
+    "new_positive_pairs": [
+      [
+        "celestial-profane-wisdom",
+        "claws-wisdom"
+      ],
+      [
+        "boots-quality-con",
+        "queen-insight-con"
+      ],
+      [
+        "celestial-profane-constitution",
+        "queen-insight-con"
+      ],
+      [
+        "boots-quality-con",
+        "celestial-profane-constitution"
+      ]
+    ],
+    "full_family_guards": {
+      "Wisdom": [
+        "claws-wisdom",
+        "celestial-profane-wisdom",
+        "globe-wisdom"
+      ],
+      "Constitution": [
+        "skull-con",
+        "queen-insight-con",
+        "boots-quality-con",
+        "solar-con",
+        "celestial-profane-constitution",
+        "globe-constitution"
+      ]
+    },
+    "skull_treatment": "Retain the exact conflicting core and existing 15/16 model cases. In the proposed new profile, exclude Skull from counting and reject every public proof call involving Skull, including otherwise applicable generic Artifact or Exceptional routes.",
+    "required_boundaries": [
+      "Bind each of the eight definitions to exact source identity, revision/observation and actual source bytes plus selected host/craft/socket context.",
+      "Use an explicit bounded all-abilities-to-Wisdom/Constitution interpretation for the native Celestial definition; preserve historical adoption scopes and avoid a global stat alias.",
+      "Add only the four named positive pairs; preserve all 12 existing rule dictionaries and historical 7/9/10/12 profiles.",
+      "Use exact 3-member Wisdom and 6-member Constitution runtime families; deletion, duplication, renaming, stat/channel movement or substitution must not manufacture completeness.",
+      "Public subtotal/proof calls enforce the same bindings without relying on a preceding validation call; no conflict override flag.",
+      "Every public proof involving Skull must fail qualification in the proposed new profile, including generic Artifact/Exceptional routes; withholding is not limited to the four new pair contracts.",
+      "Carry forward the retained Stack same-family caveat with the affirmative Tip179 premise; preserve historical interpretations and limit the new interpretation to the four named WIS/CON pairs.",
+      "Preserve selected gear, 32 priorities,sole Minor Artifact Yeenoghu’s Reign,crafts/sockets,feats/AP,model cases,source grades,original captures,snapshots,Festive-only event exception and HA63 procurement-evidence exception.",
+      "Keep full-kit floor 36 and full Constitution result null while Skull is unresolved. Wisdom 18 and Constitution subset 17 are existing contributions with improved evidence, not additional character gains.",
+      "If approved, add an exact outer preservation layer, actual-current qualification/negative tests and full result comparisons; run the four documented builders and aggregate suite; update existing draft PR 47 and verify CI.",
+      "No merge,publication,new solve,crafting,purchase,whole-character score,HP/Spot/Will/DPS certificate or unrelated UI/architecture change."
+    ]
+  },
+  "verification": {
+    "source_review": "completed",
+    "independent_review": "three read-only subject reviews and final independent register review completed; source/selection separation, Stack contextual caveat, and all Skull proof boundaries clarified before freeze",
+    "report_content_review": "Root reviewed conclusions, all nine component findings, applicability, conflict, arithmetic, exact pair proposal, scope and provenance; independent reviewer checked register bindings and boundaries. Final prose-only clarity changes applied.",
+    "register_integrity": {
+      "new_observations": 12,
+      "reused_sources": 9,
+      "source_hashes_pointers_fragments": "all match retained originals",
+      "components": 9,
+      "supported_candidates": 8,
+      "unique_pairs": 18,
+      "pair_treatments": {
+        "proposed_exact_new_pair": 4,
+        "existing_rule_after_component_qualification": 9,
+        "withheld_conflicting_member": 5
+      },
+      "arithmetic": "Wisdom18; Constitution17 subset, fullnull"
+    },
+    "report_structure_and_palette": {
+      "bytes": 48736,
+      "title_and_single_h1": true,
+      "tables_with_captions": 6,
+      "header_scopes": true,
+      "unique_ids_and_internal_anchors": true,
+      "external_assets_or_script": false,
+      "primary_palette_contrast_ratios": {
+        "body": 15.01,
+        "muted": 7.5,
+        "supported label": 6.23,
+        "conflict label": 5.61,
+        "hero": 14.06
+      },
+      "browser_layout_or_print_pagination": "not performed"
+    },
+    "report_sha256": "adb2d7890fb2e9641fb169aed1c48da81c6ab715875447e3f803eb28dffc50ee",
+    "repository_unchanged_check": {
+      "observed_at_utc": "2026-11-16T03:42:58.384297+00:00",
+      "repository": "/workspace/scratch/f67d3d0dd89f/guide",
+      "baseline_record": "/workspace/scratch/92680a97b4fb/wiscon-evidence/baseline-state.json",
+      "tracked_file_count": 311,
+      "all_tracked_bytes_and_index_entries_unchanged": true,
+      "actual_blobs_match_index": true,
+      "local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+      "branch": "feat/wisdom-loadout-priorities",
+      "reviewed_staged_tree": "0b6263ca9bb201b5267774d6f8af198fe013d35e",
+      "index_sha256": "227ec8bfc9ffac6eb686bb0f7b73473e6fc8a2c04027e9460c86e7bae9ee4037",
+      "selection_sha256": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d",
+      "unstaged_paths": [],
+      "untracked_paths": []
+    },
+    "remote_pr_check": {
+      "url": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/pull/47",
+      "number": 47,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head_sha": "834b8c4cc648f9263ea19ac4203eedd872888f06",
+      "base_sha": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+      "head": "feat/wisdom-loadout-priorities",
+      "check_recorded_at_utc": "2026-11-16T03:42:58.536Z"
+    },
+    "new_engine_tests": "not run; no implementation changes",
+    "builders": "not run; no repository changes",
+    "live_game_test": "not performed",
+    "remote_update": "none",
+    "merge": "none",
+    "publication": "none",
+    "frozen_at_utc": "2026-11-16T03:47:00.163407+00:00"
+  }
+}
