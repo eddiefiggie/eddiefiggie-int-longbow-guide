@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "record_type": "seven-int-direct-source-integration",
+  "review_date": "2026-11-15",
+  "build": "11-15-26.5",
+  "record_created_at_utc": "2026-11-15T22:32:31Z",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "remote_head": "d05e7865da76a47a92741cb79029a35fbd0f7712",
+    "remote_and_initial_staged_tree": "c1b236d5cafc7695af9ec77410d329c7a0b9cc44",
+    "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "local_branch": "feat/wisdom-loadout-priorities",
+    "initial_staged_paths": 73,
+    "initial_unstaged_changes": false,
+    "initial_untracked_files": false,
+    "inspection_method": "Read-only local Git identity/status/write-tree and fresh connected GitHub PR/git-commit metadata; three independent reviewers checked the same local baseline.",
+    "gate_result": "Matched. Existing staged work exactly represented the remote draft tree despite the intentionally older local HEAD; preserved without reset, fetch or ref switching."
+  },
+  "scope": {
+    "purpose": "Owner selected option1: integrate seven supported INT definitions into the existing draft, record historical Spot corroboration without qualifying it, regenerate affected outputs, and test. No merge or publication.",
+    "promoted_component_ids": [
+      "boots-int",
+      "solar-int",
+      "lunar-int",
+      "festive-int",
+      "dimlight-int",
+      "globe-intelligence",
+      "celestial-profane-intelligence"
+    ],
+    "unqualified_component_ids": [
+      "chains-fortification",
+      "chains-spot"
+    ],
+    "existing_rules_changed": false,
+    "calculator_code_changed": false,
+    "recipe_proof_engine_changed": false,
+    "selected_recipe_changed": false,
+    "priorities_changed": false,
+    "numeric_core_tuples_changed": false,
+    "historical_claim_inventory_regraded": false,
+    "old_capture_metadata_repaired": false,
+    "new_optimizer_run": false,
+    "new_event_or_acquisition_exception": false,
+    "crafting_or_purchase": false,
+    "live_game_test": false,
+    "merge_or_publication": false
+  },
+  "source_packet": {
+    "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+    "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+    "wiki_captures": 15,
+    "historical_image_record": 1,
+    "source_observation_window_utc": {
+      "start": "2026-11-15T22:19:01Z",
+      "end": "2026-11-15T22:24:16Z"
+    },
+    "limit": "The prior read-only browser audit's actual observations are now preserved in a new packet. Item-specific grouped windows remain in each record; no original older capture is assigned these new dates. The historical external image has a separately labeled visual transcription, not a locally archived image or a current in-game observation."
+  },
+  "qualified_bindings": [
+    {
+      "component_id": "boots-int",
+      "source_id": "melancholic-int-live-20261115",
+      "capture": "melancholic-int",
+      "definition": "direct typed effect; unchanged existing validator",
+      "own_revision": "https://ddowiki.com/index.php?title=Item:Melancholic_Intelligence_(legendary)&oldid=702267",
+      "full_kit_ml": 36
+    },
+    {
+      "component_id": "solar-int",
+      "source_id": "solar-int-live-20261115",
+      "capture": "solar-int",
+      "definition": "direct typed effect; unchanged existing validator",
+      "own_revision": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Intelligence_(Legendary)&oldid=700860",
+      "full_kit_ml": 36
+    },
+    {
+      "component_id": "lunar-int",
+      "source_id": "lunar-int-live-20261115",
+      "capture": "lunar-int",
+      "definition": "direct typed effect; unchanged existing validator",
+      "own_revision": "https://ddowiki.com/index.php?title=Item:Lunar_Gem_of_Intelligence_(Legendary)&oldid=691752",
+      "full_kit_ml": 36
+    },
+    {
+      "component_id": "festive-int",
+      "source_id": "festive-int-live-20261115",
+      "capture": "festive-int",
+      "definition": "direct typed effect; unchanged existing validator",
+      "own_revision": "https://ddowiki.com/index.php?title=Item:Diamond_of_Festive_Intelligence_%2B2&oldid=720823",
+      "full_kit_ml": 36
+    },
+    {
+      "component_id": "dimlight-int",
+      "source_id": "dimlight-int-live-20261115",
+      "capture": "dimlight",
+      "definition": "direct typed effect; unchanged existing validator",
+      "own_revision": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+      "full_kit_ml": 36
+    },
+    {
+      "component_id": "globe-intelligence",
+      "source_id": "globe-int-live-20261115",
+      "capture": "globe",
+      "definition": "direct typed effect; unchanged existing validator",
+      "own_revision": "https://ddowiki.com/index.php?title=Item:Globe_of_True_Imperial_Blood&oldid=643056",
+      "full_kit_ml": 36
+    },
+    {
+      "component_id": "celestial-profane-intelligence",
+      "source_id": "celestial-profane-int-live-20261115",
+      "capture": "celestial-host",
+      "definition": "direct typed effect; unchanged existing validator",
+      "own_revision": "https://ddowiki.com/index.php?title=Item:Legendary_Celestial_Sapphire_Ring&oldid=631921",
+      "full_kit_ml": 36
+    }
+  ],
+  "result_delta": {
+    "baseline_build": "11-15-26.4",
+    "current_build": "11-15-26.5",
+    "comparison": "Real unchanged engine, complete result objects for38stat/channel pairs, each with inactive and force configurations.",
+    "changed_level36_records": 2,
+    "unchanged_level36_records": 74,
+    "unchanged_level35_records": 76,
+    "changed_keys": [
+      {
+        "stat": "Intelligence",
+        "channel": "gear",
+        "active": []
+      },
+      {
+        "stat": "Intelligence",
+        "channel": "gear",
+        "active": [
+          "force"
+        ]
+      }
+    ],
+    "intelligence": {
+      "counted": [
+        "boots-int",
+        "solar-int",
+        "lunar-int",
+        "festive-int",
+        "dimlight-int",
+        "glabrezu-insight-int",
+        "chains-quality-int"
+      ],
+      "suppressed": [
+        "celestial-profane-intelligence",
+        "globe-intelligence"
+      ],
+      "excluded": [],
+      "missing_interaction_count": 10,
+      "total": null,
+      "complete": false,
+      "model_only_bonus": 37,
+      "model_limit": "Model-only highest-type bucket sum, not a new increase, complete gear certification, whole-character INT or DPS."
+    }
+  },
+  "unresolved": {
+    "chains_fortification": "Current142% recipe magnitude supported, but selected Prefix membership in the general standard-Fortification class remains unproved.",
+    "chains_spot": "Current20 recipe/Skills membership supported; Wiki-linked Legendary Five Rings image shows22Competence and an August19,2016 page date. Present-day continuity is an exposed inference; no qualification.",
+    "fortification_total": "Queen and Chains inputs remain excluded; existing Enhancement/Insight rule source still lacks observed provenance. Empty current interaction list is not proof of rule completeness.",
+    "spot_total": "Chains, Heroism and GoodLuck remain excluded; Competence/Morale/Luck positive interactions remain unsupported here. Wisdom-derived character Spot is separate.",
+    "other_release_gaps": [
+      "Skull CON15/16 discrepancy",
+      "Remaining Queen/Claws/Yeenoghu provenance",
+      "Character overlaps, filigrees and eligibility",
+      "Damage applicability, attack rates, procs, critical mechanics and sustained DPS",
+      "Guide desktop/mobile/keyboard/print QA"
+    ]
+  },
+  "preservation": {
+    "module": "tools/wisdom_int_evidence_preservation.py",
+    "scope_fixture": "tools/fixtures/wisdom-int-evidence/scope.json",
+    "restored_checkpoint": "d05e7865da76a47a92741cb79029a35fbd0f7712",
+    "production_files": 7,
+    "unique_hunks": 27,
+    "protected_records": 61,
+    "method": "Strict exact-current-byte hashes plus unique bidirectional reversal contexts restore .4 before the untouched earlier scopes and historical assertions. Historical renderers use explicit checkpoint dependencies; new tests and generic-engine negatives exercise actual current files. No old hash, source, selection, rule, engine byte or snapshot is weakened."
+  },
+  "verification": {
+    "baseline_full_suite": {
+      "tests": 359,
+      "seconds": 54.689,
+      "exit_code": 0,
+      "method": "Isolated archive of exact starting tree c1b236d5cafc7695af9ec77410d329c7a0b9cc44."
+    },
+    "focused_preservation": {
+      "tests": 59,
+      "seconds": 7.124,
+      "exit_code": 0
+    },
+    "legacy_chain_regression": {
+      "tests": 120,
+      "seconds": 16.182,
+      "exit_code": 0
+    },
+    "four_builders": "passed: Wisdom recipe/priorities, stacking audit/excerpts, print reference, path-rebased new snapshot",
+    "root_readonly_result_comparison": "passed: exact2/74level36 and76unchangedlevel35; null INT with10gaps; Fortification/Spot unchanged",
+    "current_input_tests": {
+      "tests": 23,
+      "seconds": 2.441,
+      "exit_code": 0,
+      "filtered_or_skipped": false
+    },
+    "full_current_suite": {
+      "tests": 395,
+      "seconds": 58.822,
+      "exit_code": 0,
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "checkpoint": "Full local run before this receipt reconciliation. The final receipt and documentation are checked again before commit; exact-head remote CI is reported separately."
+    },
+    "documentation_links": {
+      "local_link_occurrences": 84,
+      "fragment_occurrences": 5,
+      "failed": 0,
+      "whitespace": "Incremental changed-file check passed."
+    },
+    "browser_qa": "Not performed in this integration. Source browser reads do not establish guide desktop/mobile layout, keyboard behavior or print pagination. Prior preview limitation remains unverified.",
+    "early_test_failures": "An initial preservation command omitted PYTHONPATH and failed imports before tests ran; corrected command passed. Current-input test drafts initially overrequired full-tooltip quote equality, verified status on suppressed rows, and AssertionError rather than existing ValueError; expectations were corrected to the actual approved behavior, without changing source gates or production to make those drafts pass.",
+    "independent_final_review": {
+      "tests": 69,
+      "seconds": 9.614,
+      "exit_code": 0,
+      "blocking_findings": 0,
+      "additional_checks": "Seven exact restored production files independently matched Git index .4 bytes; all107 previous source dictionaries, engines, rules and selection unchanged. Live tests remain separate from historical renderer views."
+    },
+    "local_change_inventory": {
+      "incremental_paths": 27,
+      "new_paths": 7,
+      "prior_staged_paths": 73,
+      "projected_total_pr_paths": 80,
+      "sha256_excludes_self": true,
+      "files": [
+        {
+          "path": "AUDITS.md",
+          "bytes": 40027,
+          "sha256": "d5f2679d4c9afc65bf17fb21aa57636293a77fd33f7655d10eb6f9d80d314ce7",
+          "git_blob": "fb8b2bc6f97f0b34201b786cb7be874a0217d8d1"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 48603,
+          "sha256": "64e6d8e65c55ad3b3613026659a1daa0ac7649fff6c5da592ac65d56f19f58b0",
+          "git_blob": "fdeac376ddb537cd05d8adf8083ed41ae6cc6fa9"
+        },
+        {
+          "path": "docs/knowledge-base/DECISIONS.md",
+          "bytes": 6584,
+          "sha256": "af39ba76ac46bb4f2ac3060ed2cce1cdb27d6ab6dcd1ec157a2b8a7aa73483a7",
+          "git_blob": "f403e96a5d48d073fd80eca97d9d2d7fe5cd0469"
+        },
+        {
+          "path": "docs/knowledge-base/MAINTENANCE.md",
+          "bytes": 14210,
+          "sha256": "0797e92a8f134aa8ec27329ae78cd9e4000d6b0601de645b3efdcac8818ef7c0",
+          "git_blob": "94eebdf4625a4a2c2cf30bb59d9499773777296c"
+        },
+        {
+          "path": "docs/knowledge-base/MECHANICS.md",
+          "bytes": 7486,
+          "sha256": "d4cb84bf9c5e9b7407770dc73ddcd6b308c3de90f12e54631351180b68efdcb2",
+          "git_blob": "b8c9a0a9578afef084286e2a0184f0bda92e3a05"
+        },
+        {
+          "path": "docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md",
+          "bytes": 12930,
+          "sha256": "bf8c04138867ca134b6573c17a9757312fd38f4c64b17fb5281479810c4930b1",
+          "git_blob": "38261e9605a0050b47ac0cd64ee8031a66d2db8c"
+        },
+        {
+          "path": "endgame-stacking-audit.html",
+          "bytes": 401005,
+          "sha256": "378e4b0b49babdebdaba9936cae698a9d3b7e26f5e330d7eeef39a7a9711fc21",
+          "git_blob": "1cf11f6ebd4aaf3c19812e3c0242959475088d2f"
+        },
+        {
+          "path": "evidence/endgame-stacking/source-excerpts.json",
+          "bytes": 297468,
+          "sha256": "97cc5f6708ac4102de2f53f5d4a63f8465478001c46c276d91034eb9b129eebd",
+          "git_blob": "81d2e6198be4bcdb86461c1587f438a70477a2df"
+        },
+        {
+          "path": "evidence/wisdom-loadout/README.md",
+          "bytes": 17847,
+          "sha256": "85dd44856eacd975cc27c4f63e86dfe71d789278d9ab4df6a0f4a24e0242b4ff",
+          "git_blob": "7af396fb7f77264951b51d15f8f45d9dcd8e3f7e"
+        },
+        {
+          "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+          "bytes": 22404,
+          "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+          "git_blob": "fd82c3e48927def64a45185e58f7f17f8ccacef3"
+        },
+        {
+          "path": "heroic-crafting-print.html",
+          "bytes": 4604,
+          "sha256": "ecc1d8b185b3fd40100fd5f61dca85fe432bb0bdb0f6bb5a0d26d5937de99f17",
+          "git_blob": "20b4fb79fd10483e97f0ee1d83ffb3d061893411"
+        },
+        {
+          "path": "index.html",
+          "bytes": 398279,
+          "sha256": "335c4ec217ed0585a3bb82447ea2cbae2650aaa423e32e6015b0963cc7a32c3e",
+          "git_blob": "679d27efd24ff4b38e52e984963835a3d54e62b7"
+        },
+        {
+          "path": "tools/build_stacking_audit.py",
+          "bytes": 27078,
+          "sha256": "53fada9f8ba6ec4f8d75bd26270fb9432492d8ac0998312c1a37a1f93a52fec3",
+          "git_blob": "9c096fd21ca231f6dd5fb659fa37c26c2c934dff"
+        },
+        {
+          "path": "tools/fixtures/endgame-stacking/ledger.json",
+          "bytes": 391674,
+          "sha256": "5447ec7baafd3f91f7db47290a5fec022625561ffff8cd3a1d38eaa9863b24bf",
+          "git_blob": "bf41e52f5d36aeea1b3b20484f304bdb4d73c7bf"
+        },
+        {
+          "path": "tools/fixtures/wisdom-int-evidence/scope.json",
+          "bytes": 102911,
+          "sha256": "1cd61728af40a9569d1fa5339ba71b2b8d168b0bc68aa33c6b38780e1bbe7bdf",
+          "git_blob": "ef136fc6b220be5f341a19aca9413f7a4c302b7c"
+        },
+        {
+          "path": "tools/test_feat_summary_routing.py",
+          "bytes": 3876,
+          "sha256": "e61d708013fe542a2fa589b2249b0bdbe13e5a9b40801035452ec12d15f3bf0b",
+          "git_blob": "f21decfd935657a677cb86e314cb38438c21ff7f"
+        },
+        {
+          "path": "tools/test_recipe_proofs.py",
+          "bytes": 20050,
+          "sha256": "d757f53441a15f4ef8955751c2f0feb05548c9208b82558a8c9a0db902fb1e49",
+          "git_blob": "a1fd754d913e7ddbb29b787055238d221525c39f"
+        },
+        {
+          "path": "tools/test_wisdom_int_evidence.py",
+          "bytes": 29665,
+          "sha256": "3cc38c3935cbaf8f7ef31f865d1abc0e2a8b05e642fdc1290899a0aeda712ad8",
+          "git_blob": "94f8dbc5a5158020578610dfb32ffda8202611d9"
+        },
+        {
+          "path": "tools/test_wisdom_int_evidence_preservation.py",
+          "bytes": 10886,
+          "sha256": "cc751fa62ee07c76082ba470d36a4c2474cdcf0f42b976cd1905391da80ba5b8",
+          "git_blob": "245cd249368e6c94f71ed5db27137bc6864af556"
+        },
+        {
+          "path": "tools/test_wisdom_recipe_integration.py",
+          "bytes": 14018,
+          "sha256": "4a40f4a92a79f28be5c4dcad2fd2dfbb8e498216636f31b5b3ebd13de2600fb5",
+          "git_blob": "1879c4358270a42f6531f7f425bc7bc1a2dfd6a1"
+        },
+        {
+          "path": "tools/test_wisdom_recipe_proof_preservation.py",
+          "bytes": 15788,
+          "sha256": "7a803460bd2622d21867a5f6e1704f1f3af4e36873b9544409b4484804c2fd89",
+          "git_blob": "dd523089d6d0fc4683cb2ffc0b3fe45f8ee0b0a9"
+        },
+        {
+          "path": "tools/wisdom_int_evidence_preservation.py",
+          "bytes": 6542,
+          "sha256": "18c93a718f3cd41d0980b3c077cc21431375449879d1c33228fd07e10230282f",
+          "git_blob": "a3a6df97e951021b54315fec79a981f29dd65ce6"
+        },
+        {
+          "path": "tools/wisdom_loadout.py",
+          "bytes": 44717,
+          "sha256": "4b65c2f883c20fff4383b9cdaa2f86786e34064b491cff2e85cf0260a53bf000",
+          "git_blob": "438ac3a08027978ec5948f7e0ed4b0e325688f1c"
+        },
+        {
+          "path": "tools/wisdom_preservation.py",
+          "bytes": 8125,
+          "sha256": "b04775210b117248174cf9e059733106bf43b219b4431500ca1f5bc71d951178",
+          "git_blob": "a798d3ad0f0d6b7061b735d14a94fc990861ef48"
+        },
+        {
+          "path": "tools/wisdom_recipe_proof_preservation.py",
+          "bytes": 7288,
+          "sha256": "4e5b3585a06ca15e41b8530a020fc44a3ec9644296d463135bab64ec7b221c46",
+          "git_blob": "a72bd77399f1f8d05357b15fcb26c4dd270704f3"
+        },
+        {
+          "path": "versions/11-15-26.5.html",
+          "bytes": 398423,
+          "sha256": "3080c79e40f907cf7111c78610fd831e14192f8ad2064f890441c4c18827fe8b",
+          "git_blob": "97ec44aff999e2ac6a87bf50dd188a454681b544"
+        }
+      ]
+    }
+  },
+  "release": {
+    "state": "pre-commit verified draft-candidate receipt",
+    "pull_request": 47,
+    "remote_base": "d05e7865da76a47a92741cb79029a35fbd0f7712",
+    "merged": false,
+    "published": false,
+    "ci": "Not yet run for a new commit at this dated pre-commit checkpoint. The exact new commit, remote CI and current draft status are reported separately in PR47; an old-head pass is not substituted.",
+    "status_limit": "This immutable pre-commit receipt is not a live deployment dashboard or a claim that later approved draft upload has not occurred."
+  }
+}

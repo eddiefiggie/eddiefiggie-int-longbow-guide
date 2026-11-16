@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "record_type": "bounded-fortification-spot-integration",
+  "build": "11-15-26.8",
+  "date_local": "2026-11-15",
+  "timezone": "America/Los_Angeles",
+  "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+  "pull_request": 47,
+  "branch": "feat/wisdom-loadout-priorities",
+  "parent_head": "72db151c4f881c08844d273caee2914ddc736641",
+  "base_sha": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+  "startup": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "repository_path": "/workspace/scratch/f67d3d0dd89f/guide",
+    "allowed_branch": "feat/wisdom-loadout-priorities",
+    "immutable_remote_start_head": "72db151c4f881c08844d273caee2914ddc736641",
+    "base_sha": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "actual_initial_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "actual_initial_staged_tree": "573c0b26ac30dce65a3d4fcf6107a38dc5c8058d",
+    "initial_unstaged": [],
+    "initial_untracked": [],
+    "gate": "pass: intentional base HEAD with staged tree matching remote draft, consistent with prior verified workflow",
+    "inspection": "local git branch/rev-parse/write-tree/diff/ls-files and connected PR metadata before edits",
+    "approved_scope": "Three supported definitions, one named Heroism-Luck Spot pair, exact Fortification/Spot family completeness safeguards; draft PR only; preserve Chains exclusions and complete null totals"
+  },
+  "approval": "Owner selected option1 after completed read-only Fortification/Spot report: exactly three definitions, one named Spot pair, exact Fortification/Spot family completeness safeguards; existing draft only.",
+  "source_register": {
+    "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+    "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+    "records": 16,
+    "integrity": "Literal copy of the independently reviewed read-only register. Its original no-promotion fields describe that earlier investigation; this separate receipt records the later approved integration.",
+    "limits": [
+      "Scoped exact excerpts/DOM fragments, not a full raw DOM/HTTP archive or authenticated capture.",
+      "Displayed revision links were retained, not independently reopened.",
+      "Original page modification, observation time and later integration are distinct.",
+      "Cache null means unrecorded, not cache-free.",
+      "No live-game test."
+    ]
+  },
+  "definitions": [
+    {
+      "id": "queen-fortification",
+      "amount": 84,
+      "bonus_type": "Insight",
+      "proof": "Same own-item popup label, numeric value and typed description; fields remain separate."
+    },
+    {
+      "id": "heroism-spot",
+      "amount": 4,
+      "bonus_type": "Morale",
+      "proof": "Own augment Skill Checks clause, explicit Skill/Spot membership, selected pendant Green socket and level compatibility."
+    },
+    {
+      "id": "luck-spot",
+      "amount": 3,
+      "bonus_type": "Luck",
+      "proof": "Own augment Skill Checks clause, explicit Skill/Spot membership, selected artifact Blue socket and level compatibility."
+    }
+  ],
+  "added_rule": {
+    "id": "spot-heroism-luck",
+    "pairs": [
+      [
+        "heroism-spot",
+        "luck-spot"
+      ]
+    ],
+    "stat": "Spot",
+    "channel": "gear",
+    "positive_source": "Tip179; original nine rule dictionaries unchanged; no Competence pair."
+  },
+  "added_family_guards": {
+    "Fortification": [
+      "queen-fortification",
+      "chains-fortification"
+    ],
+    "Spot": [
+      "chains-spot",
+      "heroism-spot",
+      "luck-spot"
+    ],
+    "runtime": "Reject missing, duplicated, replaced or moved members and changed source/selection bytes through direct subtotal/proof calls; preserve existing INT guard."
+  },
+  "remaining_excluded": {
+    "Fortification": [
+      "chains-fortification"
+    ],
+    "Spot": [
+      "chains-spot"
+    ]
+  },
+  "results": {
+    "Fortification": {
+      "supported_input": 84,
+      "complete_total": null,
+      "complete": false
+    },
+    "Spot": {
+      "supported_subset": 7,
+      "complete_total": null,
+      "complete": false
+    },
+    "Intelligence": {
+      "total": 37,
+      "complete": true
+    },
+    "full_kit_minimum_level": 36
+  },
+  "boundaries": [
+    "84 and7 are existing supported gear contributions, not additional gains or whole-character scores.",
+    "226 Fortification and27 direct Spot stay conditional on unresolved Chains type/classification and required interactions.",
+    "Other Queen/augment effects, old source records and claim grades are not promoted.",
+    "Wisdom selection, one Minor Artifact Yeenoghu, all32 priorities, feats/AP/crafts/sockets, Festive-only event exception and narrow HA63 acquisition-evidence exception remain unchanged.",
+    "No new optimizer solve, crafting, purchase, merge or publication."
+  ],
+  "verification": {
+    "status": "precommit_passed",
+    "initial_actual_engine_checks": "validate passed; intended counted/excluded lists and null complete totals observed; INT37 and level35 gates unchanged.",
+    "old_input_results": "Independent focused check reproduced all152 complete .7 result objects through the actual new engine.",
+    "aggregate_suite": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "passed": 503,
+      "seconds": 142.921,
+      "exit_code": 0,
+      "log_sha256": "67320537f5ef6929c424f014a5929ecae4c02bdbe88fc8cb9c53dd9af34eb7e8"
+    },
+    "builders": {
+      "status": "passed",
+      "commands": [
+        "python3 tools/build_wisdom_loadout.py",
+        "python3 tools/build_stacking_audit.py",
+        "python3 tools/build_crafting_sheet.py",
+        "python3 tools/build_snapshot.py"
+      ],
+      "snapshot": "versions/11-15-26.8.html"
+    },
+    "independent_final_review": {
+      "status": "passed",
+      "remaining_blockers": [],
+      "fixed_finding": "A new source could be borrowed by an unrelated generic component. Exact and aliased bounded source records are now rejected outside the approved definition/rule routes, including non-total effects.",
+      "scope": "Actual helper, engine, ledger, renderers, generated explanations, source and selection preservation; not live-game or browser layout review."
+    },
+    "ci": "Pending at this precommit checkpoint. Exact subsequent draft-head CI result is recorded in PR47 completion history.",
+    "focused_functional_tests": {
+      "passed": 25,
+      "seconds": 7.286,
+      "exit_code": 0
+    },
+    "focused_preservation_tests": {
+      "passed": 84,
+      "seconds": 32.101,
+      "exit_code": 0
+    },
+    "documentation_local_links": {
+      "checked": 126,
+      "missing": 0
+    },
+    "preservation": {
+      "production_paths": 8,
+      "exact_hunks": 33,
+      "protected_prior_files": 197,
+      "protected_evidence_files": 51,
+      "protected_fixture_files": 71,
+      "protected_snapshots": 73,
+      "bow_cases": 39,
+      "complete_old_input_results": 152,
+      "old_input_changed_results": 0,
+      "current_changed_results_at_level36": 4,
+      "current_unchanged_results_at_level36": 72,
+      "current_unchanged_results_at_level35": 76,
+      "only_changed_families": [
+        "Fortification",
+        "Spot"
+      ],
+      "baseline_result_sha256": "ed85fe5c80a8e708d1866707020352556c136283b0601fadc0776fefd9bfee8a"
+    },
+    "incremental_whitespace": "passed"
+  },
+  "layout": "Guide desktop/mobile layout, keyboard and print checks remain unverified; prior report Chromium launch was blocked by the environment and was not retried.",
+  "release": "Precommit draft integration record. No merge/publication. Later exact-head CI belongs in PR completion history, not invented here."
+}

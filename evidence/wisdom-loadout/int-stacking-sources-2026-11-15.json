@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "record_type": "scoped-browser-stacking-audit-observations",
+  "review_date": "2026-11-15",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "remote_head": "b83e6a9251d743ecae39d0301d177a08de54f93c",
+    "remote_tree": "b1b39ce3a38017c67ffd4ea39a9965175c88a243",
+    "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "local_branch": "feat/wisdom-loadout-priorities"
+  },
+  "method": {
+    "surface": "Hosted Chrome public DDO Wiki inspection during the preceding read-only audit; original in-memory captures were retrieved for this integration.",
+    "capture_kind": "Scoped verbatim visible DOM excerpts, with separately labeled visual image transcriptions. Excerpts remain separate source records; no joined item tooltip is invented.",
+    "observation_clock": "Original browser-runtime UTC timestamps recorded around each DOM extraction in the preceding audit. Image observation notes were recorded after visual inspection. These are not page modification dates, exact screenshot capture times, raw HTTP archive timestamps or later file-creation times.",
+    "retention": "This additive packet preserves the actual preceding audit observations and does not repair older source packets or missing observations.",
+    "revision_limit": "Each revision_link is the Permanent link exposed by the live cached article. Historical revision endpoints were not independently reloaded; an observation on 15 November 2026 does not make the underlying text newly revised or prove live-game behavior.",
+    "source_authority": "DDO Wiki is a community-maintained secondary source required by this project. Publisher release notes below provide separately labeled historical corroboration only.",
+    "license": "DDO Wiki text: CC BY-SA 2.5, attributed through the source article and revision links. External images and publisher excerpts retain their own attribution; they are not relicensed as Wiki text.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "public_redaction": {
+      "original_packet_sha256": "457b0b2324c5c84383c10d65164cebf9a18b5df4d40bd90c1cfc83dff7508df8",
+      "omitted": "Editor names and anonymous-editor network identifiers from the nine page-modification footer suffixes only.",
+      "preserved": "Original page-modification date/update prefixes, cache notices, article/revision identities, observation windows, mechanics excerpts, historical image transcriptions and stated limits are unchanged.",
+      "handling": "The unredacted transient packet is retained outside the public repository during this review. This record makes no claim of a permanent public or private archive."
+    }
+  },
+  "captures": {
+    "loading-screen-tips": {
+      "source_url": "https://ddowiki.com/page/Loading_screen_tips",
+      "source_title": "Loading screen tips",
+      "revision_link": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:48:38.253Z",
+        "ended_at_utc": "2026-11-15T22:48:38.329Z"
+      },
+      "page_modified_display": "This page was last modified 04:07, April 19, 2022 (Update 53.1)",
+      "cache_notice": "(this is up to 4 hours old)",
+      "scoped_visible_text": "Tip #179: Most beneficial effects have a bonus type, such as enhancement, morale, or luck. Different types of bonuses stack, but usually the same types of bonus do not, with the exception of dodge bonuses, most circumstance bonuses, and racial bonuses."
+    },
+    "fortification": {
+      "source_url": "https://ddowiki.com/page/Fortification",
+      "source_title": "Fortification",
+      "revision_link": "https://ddowiki.com/index.php?title=Fortification&oldid=723727",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:49:28.036Z",
+        "ended_at_utc": "2026-11-15T22:49:28.137Z"
+      },
+      "page_modified_display": "This page was last modified 10:54, October 24, 2026 (Update 82.0.1)",
+      "cache_notice": "(this is up to 12 hours old)",
+      "scoped_visible_text": "Items are the primary source of fortification for most player characters. Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus). Item effects fully stack with the racial fortification, enhancements, or epic destiny perks."
+    },
+    "stack": {
+      "source_url": "https://ddowiki.com/page/Stack",
+      "source_title": "Stack",
+      "revision_link": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:48:14.783Z",
+        "ended_at_utc": "2026-11-15T22:48:14.806Z"
+      },
+      "page_modified_display": "This page was last modified 16:01, December 12, 2025 (Update 77)",
+      "cache_notice": "(this is up to 6 hours old)",
+      "scoped_visible_text": "Stacking follows a few predictable general rules:\n\nBonuses of the same type do not stack:\nAn enhancement bonus to AC from armor is an Armor bonus. The enhancement bonus to AC from a shield is a shield bonus. In this case, the two bonuses to AC do stack.\nWhen an armor bonus to AC is granted by something other than armor or a docent (such as Black Widow Bracers), it does not stack with an actual armor.\nWhen a Shield bonus to AC comes from something other than a shield (such as the Shield (spell)), it does not stack with an actual shield.\nUntyped bonuses stack. Note that a bonus without a keyword isn't necessarily an untyped bonus, the description might just be lacking.\nPenalties always stack.\nFeat bonuses stack. A character with Lightning Reflexes (+2 bonus to Reflex saves) and Luck of Heroes (+1 bonus to all saves) will have a +3 Reflex save.\nBonuses from character Enhancements that don't mention a specific bonus almost always stack. They are not automatically \"enhancement bonuses.\"\nNote: Character enhancements with exactly the same name do not stack, other than the T3 & T4 Ability score enhancements.\nBenefits from the same family, like Fortification or False Life, do not stack.\nDamage Reduction does not stack (e.g. Stoneskin), except for the added DR that comes from active blocking (therefore it's not a waste to use it together with Barkskin which grants an increase to AC, i.e. an unrelated modifier)."
+    },
+    "enhancement": {
+      "source_url": "https://ddowiki.com/page/Enhancement_bonus",
+      "source_title": "Enhancement bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Enhancement_bonus&oldid=699462",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:48:27.044Z",
+        "ended_at_utc": "2026-11-15T22:48:27.069Z"
+      },
+      "page_modified_display": "This page was last modified 20:13, July 23, 2026 (Update 81)",
+      "cache_notice": "(this is up to 9 hours old)",
+      "scoped_visible_text": "An enhancement bonus represents a magical increase in the effectiveness of an item. Multiple enhancement bonuses of the same type do not stack. Also, enhancement bonuses that cover many areas do not stack with a specific type. For example, Speed which provides an enhancement bonus to move speed does not stack with Striding. Only the highest enhancement bonus applies for each type. Therefore, only an item or a spell is necessary to get the best bonus, so as you begin equipping items that provide bonuses like Acid Resistance, casting Resist Energy becomes unnecessary. Many types of Enhancement bonuses exist."
+    },
+    "insight": {
+      "source_url": "https://ddowiki.com/page/Insight_bonus",
+      "source_title": "Insight bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Insight_bonus&oldid=689072",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:48:27.513Z",
+        "ended_at_utc": "2026-11-15T22:48:27.547Z"
+      },
+      "page_modified_display": "This page was last modified 12:15, June 18, 2026 (Update 80)",
+      "cache_notice": "(this is up to 13 hours old)",
+      "scoped_visible_text": "An insight bonus improves performance of a given activity by granting the character an almost precognitive knowledge of what might occur. Multiple insight bonuses do not stack, only the highest applies.\n\nGenerally, item enchantments that grant an Insight bonus to a particular stat have a value equal to half that of an equivalent level enchantment giving an Enhancement or Equipment bonus to the same stat, rounding down."
+    },
+    "quality": {
+      "source_url": "https://ddowiki.com/page/Quality_bonus",
+      "source_title": "Quality bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Quality_bonus&oldid=364683",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:48:28.006Z",
+        "ended_at_utc": "2026-11-15T22:48:28.041Z"
+      },
+      "page_modified_display": "This page was last modified 11:16, July 27, 2017 (Update 36.1)",
+      "cache_notice": "(this is up to 12 hours old)",
+      "scoped_visible_text": "A quality bonus makes a character better at an action through sheer good workmanship of the item in question. Like most bonus types, multiple quality bonuses do not stack, only the greatest bonus applies."
+    },
+    "profane": {
+      "source_url": "https://ddowiki.com/page/Profane_bonus",
+      "source_title": "Profane bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Profane_bonus&oldid=613196",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:49:00.675Z",
+        "ended_at_utc": "2026-11-15T22:49:00.751Z"
+      },
+      "page_modified_display": "This page was last modified 06:16, January 7, 2025 (Update 71.1)",
+      "cache_notice": "(this is up to 4 hours old)",
+      "scoped_visible_text": "A profane bonus (or penalty) stems from the power of evil. Multiple profane bonuses on the same character or object do not stack. Only the highest profane bonus applies.\n\nSome of the most common sources of profane bonuses include:\n\nSeveral named item sets\nLunar Gems\nProfane Well Rounded items\nProfane Spell Focus Mastery items"
+    },
+    "festive": {
+      "source_url": "https://ddowiki.com/page/Festive_bonus",
+      "source_title": "Festive bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Festive_bonus&oldid=291826",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:49:01.092Z",
+        "ended_at_utc": "2026-11-15T22:49:01.150Z"
+      },
+      "page_modified_display": "This page was last modified 20:35, February 29, 2016 (Update 30)",
+      "cache_notice": "(this is up to 2 hours old)",
+      "scoped_visible_text": "When the Festive bonus was originally introduced in Update 28 Patch 1 it was known as a Spooky bonus. It was renamed in Update 30 to support being used on non-scary things.\n\nSome of the reward items from The Night Revels special event grant this unique bonus. Multiple effects with the same bonus type don't stack, only the highest applies."
+    },
+    "slavers": {
+      "source_url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "source_title": "Slave Lords Crafting",
+      "revision_link": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:49:33.160Z",
+        "ended_at_utc": "2026-11-15T22:49:33.218Z"
+      },
+      "page_modified_display": "This page was last modified 10:46, September 18, 2026 (Update 81.3)",
+      "cache_notice": "(this is up to 13 hours old)",
+      "scoped_visible_text": "Here are the effects possible for each slot:\n\nGroup\tEnchantment name\tEnchantment value\tIngredient cost\nHeroic\nML 8\tLegendary\nML 28\tHeroic\tLegendary\nPrefix\n\tAttributes\t+5\t+13\t\n50   Broken Shackles\n\t\n100   Legendary Broken Shackles\n\nFalse Life\t+18\t+50\nFortification\t+70%\t+142%\nSheltering\t+12\t+33\nWizardry\t+96\t+269\nSuffix\n\tAccuracy\t+8\t+20\t\n50   Chain Links\n\t\n100   Legendary Chain Links\n\nArmor Piercing\t+8\t+20\nDamage Guards (don't stack with each other)\t+2d8\t+8d8\nDeadly\t+4\t+10\nDeception (no bluff effect)\t+3\t+10\nResistance\t+4\t+10\nSeeker\t+5\t+13\nSpell Lore (single type) (Equipment Bonus)\t+10\t+21\nSpell Power (single type) (Equipment Bonus)\t+70\t+142\nExtra\n\tSkills (except UMD)\t+10\t+20\t\n50   Broken Collars\n\t\n100   Legendary Broken Collars\n\nUMD (note: barter displays incorrect values.)\t+1\t+5\nShatter\t+6\t+15\nSpell Focus Mastery\t+2\t+6\nSpell Penetration\t+3\t+8\nStunning\t+6\t+15\nTendon Slice\t+4\t+10\nVertigo\t+6\t+15\nBonus\n\n\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\n\n\tQuality Attributes\t+1\t+3\t\n20   Frayed Leathers\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Frayed Leathers\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nQuality False Life\t+4\t+12\nQuality Fortification\t+17%\t+35%\nQuality MRR\t+2\t+8\nQuality PRR\t+2\t+8\nQuality Skills\t+2\t+5\n"
+    }
+  },
+  "historical_images": [
+    {
+      "source_url": "https://imgur.com/UfcFfFP",
+      "linked_from": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "link_href": "https://i.imgur.com/UfcFfFP.png",
+      "observation_note_recorded_at": "2026-11-15T22:50:19.650Z",
+      "method": "Visual inspection; not DOM item text, no local image archive. The note timestamp follows the visual inspection, not an asserted exact image-load or in-game capture time.",
+      "page_displayed_date": "August 19 2016",
+      "item": "Five Rings",
+      "minimum_level": 8,
+      "spot_visual_transcription": "Spot +10: +10 Competence bonus to Spot.",
+      "fortification_visible": false,
+      "current_component_qualified": false
+    },
+    {
+      "source_url": "https://imgur.com/vrK75CU",
+      "linked_from": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "link_href": "http://i.imgur.com/vrK75CU.png",
+      "observation_note_recorded_at": "2026-11-15T22:51:00.227Z",
+      "method": "Visual inspection; not DOM item text, no local image archive. The note timestamp follows the visual inspection, not an asserted exact image-load or in-game capture time.",
+      "page_displayed_date": "August 19 2016",
+      "item": "Legendary Five Rings",
+      "minimum_level": 28,
+      "spot_visual_transcription": "Spot +22: +22 Competence bonus to Spot.",
+      "fortification_visible": false,
+      "current_component_qualified": false
+    }
+  ],
+  "historical_corroboration": [
+    {
+      "source_url": "https://www.ddo.com/update-notes/ddo-update-32-release-notes",
+      "retrieval_date": "2026-11-15",
+      "method": "Publisher page retrieved through web research during preceding audit; no exact per-page access timestamp asserted.",
+      "release_date": "2016-09-13",
+      "finding": "Against the Slave Lords release date postdates the image-page dates. An image-page date does not establish the exact in-game capture date; preview/Lamannia provenance is plausible but unverified."
+    },
+    {
+      "source_url": "https://www.ddo.com/update-notes/ddo-update-50-release-notes",
+      "retrieval_date": "2026-11-15",
+      "method": "Publisher page retrieved through web research during preceding audit; no exact per-page access timestamp asserted.",
+      "release_date": "2021-08-04",
+      "finding": "The publisher explicitly included Slavers crafted effects in in-place Legendary item normalization. It did not explicitly guarantee current Slavers Spot bonus-type continuity or the exact 22-to-20 mapping. Separate set spell-crit type corrections in these notes prevent a universal claim that only numbers changed."
+    }
+  ],
+  "reviewed_interpretation": {
+    "int": "The affirmative Tip 179 clause supports exactly ten unordered selected-gear Intelligence pairs among Enhancement, Insight, Quality, Profane and Festive. It is not the converse of same-type nonstacking. Each selected component remains independently qualified; same-type suppression, Artifact and Exceptional rules remain separate.",
+    "scope_limit": "No universal all-stat/all-type default. No adoption of adjacent loading tips, historical dodge/circumstance/racial exceptions, or new character/DPS/crit conclusions. The rule page was last modified in 2022 despite its 2026 observation.",
+    "stack_caveat": "The Stack article's general same-family bullet is retained, not hidden. Reading it as banning every differently typed bonus to one stat conflicts with the specific Fortification Enhancement/Insight combination. No INT-specific contrary exception was established in this bounded review; this is not exhaustive absence proof.",
+    "fortification": "The fresh standard-item/Insightful paragraph supports the existing Enhancement/Insight interaction prospectively. It does not classify the selected Chains Prefix, qualify Queen, or establish complete Fortification.",
+    "spot": "Current Skills +20 recipe magnitude is supported, but the two older Five Rings images do not qualify current Chains Spot +20. No Spot mixed-type rule is introduced."
+  }
+}

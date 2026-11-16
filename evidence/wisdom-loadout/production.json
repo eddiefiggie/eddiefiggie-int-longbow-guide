@@ -1,0 +1,2386 @@
+{
+  "schema": "wisdom-production-record-v1",
+  "origin": {
+    "file": "analysis_v3/artifact-wisdom.json",
+    "sha256": "6cba0f33765b8c24b19179716e3240147dae98ac047fc53effbecc18470ce6bd"
+  },
+  "record_kind": "Lossless query plus selected-output extraction; original full output remains identified by SHA256. Not a fresh solver invocation.",
+  "name": "../analysis_v3/artifact-wisdom",
+  "status": "optimal",
+  "optimizer_commit": "01e17c1675363458aee46f3765ed6f1b811eb8e3",
+  "guide_commit": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+  "dataset_sha256": "b779480ade9e41de8f0c1eeb554a7bd09060a300c8ceb67f6a80c5abfcad08cf",
+  "passes": 45,
+  "elapsed_seconds": 271.998,
+  "independent_audit_origin": {
+    "file": "analysis_v3/artifact-wisdom-independent-review.json",
+    "sha256": "c256becab28223cd35345af60e212ac709fd2a8e7331b011dfbc2a47ef0159ea",
+    "scope": "Independent arithmetic over the retained completed result; no additional solver invocation or game-mechanics certification"
+  },
+  "independent_raw_totals": {
+    "Armor Class": 56,
+    "Enhancement Bonus (Armor)": 15,
+    "Accuracy": 33,
+    "Deadly": 20,
+    "Armor-Piercing": 76,
+    "Doublestrike": 36,
+    "Doubleshot": 35,
+    "Melee Alacrity": 15,
+    "Ranged Alacrity": 20,
+    "Seeker": 29,
+    "Action Boost Charges": 3,
+    "Physical Sheltering": 133,
+    "Magical Sheltering": 73,
+    "Fortitude Save": 24,
+    "Reflex Save": 23,
+    "Will Save": 23,
+    "Fortification": 226,
+    "Improved Deception": 5,
+    "Dodge": 16,
+    "Strength": 3,
+    "Dexterity": 6,
+    "Constitution": 34,
+    "Intelligence": 37,
+    "Wisdom": 18,
+    "Charisma": 3,
+    "Distant Diversion": 22,
+    "Max Filigree Slots": 5,
+    "Major Anger": 5,
+    "Enhancement Bonus (Weapon)": 15,
+    "False Life": 108,
+    "Balance": 4,
+    "Bluff": 4,
+    "Concentration": 4,
+    "Diplomacy": 4,
+    "Disable Device": 4,
+    "Haggle": 4,
+    "Heal": 4,
+    "Hide": 4,
+    "Intimidate": 4,
+    "Jump": 4,
+    "Listen": 4,
+    "Move Silently": 4,
+    "Open Lock": 4,
+    "Perform": 4,
+    "Repair": 4,
+    "Search": 4,
+    "Spellcraft": 4,
+    "Spot": 4,
+    "Swim": 4,
+    "Tumble": 4,
+    "Use Magic Device": 4,
+    "Healing Amplification": 63,
+    "Imbue Dice": 1,
+    "Ranged Power": 44,
+    "Stunning": 11,
+    "Vertigo": 11,
+    "Shatter": 11,
+    "Sneak Attack Damage": 3,
+    "Combustion": 142,
+    "Melee Power": 15,
+    "Sneak Attack Dice": 3
+  },
+  "chosen": [
+    {
+      "slot": "Armor",
+      "id": "Light Armor of the Warblade's Reflection",
+      "base_ml": 33,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Armor Class",
+          "type": "Armor",
+          "value": 50
+        },
+        {
+          "stat": "Enhancement Bonus (Armor)",
+          "type": "Enhancement",
+          "value": 15
+        },
+        {
+          "stat": "Accuracy",
+          "type": "Competence",
+          "value": 24
+        },
+        {
+          "stat": "Deadly",
+          "type": "Competence",
+          "value": 12
+        },
+        {
+          "stat": "Shadow Striker",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Armor-Piercing",
+          "type": "Legendary",
+          "value": 5
+        },
+        {
+          "stat": "Doublestrike",
+          "type": "Profane",
+          "value": 3
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Profane",
+          "value": 3
+        },
+        {
+          "stat": "Melee Alacrity",
+          "type": "Enhancement",
+          "value": 15
+        },
+        {
+          "stat": "Ranged Alacrity",
+          "type": "Enhancement",
+          "value": 20
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Helmet",
+      "id": "The Skull of the Horned King",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Relentless Fury",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Armor-Piercing",
+          "type": "Enhancement",
+          "value": 25
+        },
+        {
+          "stat": "Doublestrike",
+          "type": "Enhancement",
+          "value": 18
+        },
+        {
+          "stat": "Bloodrage",
+          "type": "Bool",
+          "value": 1
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Yellow"
+      ]
+    },
+    {
+      "slot": "Goggles",
+      "id": "Legendary Goggles of the Archer",
+      "base_ml": 33,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Doubleshot",
+          "type": "Enhancement",
+          "value": 9
+        },
+        {
+          "stat": "Sight Beyond Sight",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Greater Marksmanship",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Armor-Piercing",
+          "type": "Insight",
+          "value": 11
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Necklace",
+      "id": "Legendary Glabrezu Claw Pendant",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Accuracy",
+          "type": "Quality",
+          "value": 5
+        },
+        {
+          "stat": "Seeker",
+          "type": "Quality",
+          "value": 3
+        },
+        {
+          "stat": "Action Boost Charges",
+          "type": "Enhancement",
+          "value": 3
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Trinket",
+      "id": "Legendary Abyssal Compass",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Insight",
+          "value": 21,
+          "via": "Insightful Sheltering"
+        },
+        {
+          "stat": "Magical Sheltering",
+          "type": "Insight",
+          "value": 21,
+          "via": "Insightful Sheltering"
+        },
+        {
+          "stat": "Physical Sheltering",
+          "type": "Quality",
+          "value": 11,
+          "via": "Quality Sheltering"
+        },
+        {
+          "stat": "Magical Sheltering",
+          "type": "Quality",
+          "value": 11,
+          "via": "Quality Sheltering"
+        },
+        {
+          "stat": "Legendary Demonic Shield",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Insight",
+          "value": 7
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Cloak",
+      "id": "The Queen of Rot",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Enhancement",
+          "value": 41,
+          "via": "Sheltering"
+        },
+        {
+          "stat": "Magical Sheltering",
+          "type": "Enhancement",
+          "value": 41,
+          "via": "Sheltering"
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Resistance",
+          "value": 13,
+          "via": "Resistance"
+        },
+        {
+          "stat": "Reflex Save",
+          "type": "Resistance",
+          "value": 13,
+          "via": "Resistance"
+        },
+        {
+          "stat": "Will Save",
+          "type": "Resistance",
+          "value": 13,
+          "via": "Resistance"
+        },
+        {
+          "stat": "Fortification",
+          "type": "Insight",
+          "value": 84
+        },
+        {
+          "stat": "Freedom of Movement",
+          "type": "Bool",
+          "value": 1
+        }
+      ],
+      "sockets": [
+        "Sun",
+        "Green",
+        "Yellow"
+      ]
+    },
+    {
+      "slot": "Belt",
+      "id": "Legendary Chains",
+      "base_ml": 28,
+      "artifact": false,
+      "affixes": [],
+      "sockets": [
+        "Green"
+      ]
+    },
+    {
+      "slot": "Ring",
+      "id": "Legendary Celestial Sapphire Ring",
+      "base_ml": 29,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Improved Deception",
+          "type": "Enhancement",
+          "value": 5
+        },
+        {
+          "stat": "Dodge",
+          "type": "Enhancement",
+          "value": 13
+        },
+        {
+          "stat": "Strength",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Dexterity",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Constitution",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Intelligence",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Wisdom",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        },
+        {
+          "stat": "Charisma",
+          "type": "Profane",
+          "value": 2,
+          "via": "Profane Well Rounded"
+        }
+      ],
+      "sockets": [
+        "Yellow"
+      ]
+    },
+    {
+      "slot": "Ring",
+      "id": "Legendary Ring of Unnatural Accuracy",
+      "base_ml": 32,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Dexterity",
+          "type": "Quality",
+          "value": 3
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Quality",
+          "value": 3
+        },
+        {
+          "stat": "Greater Marksmanship",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Distant Diversion",
+          "type": "Enhancement",
+          "value": 22
+        }
+      ],
+      "sockets": [
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Gloves",
+      "id": "Legendary Burrowing Claws",
+      "base_ml": 35,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Armor-Piercing",
+          "type": "Quality",
+          "value": 5
+        },
+        {
+          "stat": "Seeker",
+          "type": "Enhancement",
+          "value": 15
+        },
+        {
+          "stat": "Seeker",
+          "type": "Insight",
+          "value": 7
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Boots",
+      "id": "Legendary Coldlight Runners",
+      "base_ml": 34,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Greater Marksmanship",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Insight",
+          "value": 5
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Colorless"
+      ]
+    },
+    {
+      "slot": "Bracers",
+      "id": "Yeenoghu's Reign",
+      "base_ml": 35,
+      "artifact": true,
+      "affixes": [
+        {
+          "stat": "Max Filigree Slots",
+          "type": "Untyped",
+          "value": 5
+        },
+        {
+          "stat": "Bloodrage",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Ram's Might",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Major Anger",
+          "type": "Enhancement",
+          "value": 5
+        },
+        {
+          "stat": "Deadly",
+          "type": "Quality",
+          "value": 4
+        }
+      ],
+      "sockets": [
+        "Moon",
+        "Green",
+        "Yellow",
+        "Blue"
+      ]
+    },
+    {
+      "slot": "Quiver",
+      "id": "Epic Purifying Quiver",
+      "base_ml": 29,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Burning Ammunition - 1d8",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Blunted Ammunition",
+          "type": "Bool",
+          "value": 1
+        }
+      ],
+      "sockets": []
+    },
+    {
+      "slot": "Main Hand",
+      "id": "Legendary Calamitous Longbow",
+      "base_ml": 34,
+      "artifact": false,
+      "affixes": [
+        {
+          "stat": "Enhancement Bonus (Weapon)",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ],
+      "sockets": [
+        "Orange",
+        "Purple"
+      ]
+    }
+  ],
+  "crafts": [
+    {
+      "host": "The Skull of the Horned King",
+      "family": "Nearly Complete",
+      "slot": "Ability Score",
+      "pool": null,
+      "category": "Ability Score",
+      "tier": "legendary",
+      "name": "Constitution",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "host": "Legendary Glabrezu Claw Pendant",
+      "family": "Nearly Complete",
+      "slot": "Insightful Ability Score",
+      "pool": null,
+      "category": "Insightful Ability Score",
+      "tier": "legendary",
+      "name": "Constitution",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Insight",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "host": "The Queen of Rot",
+      "family": "Nearly Complete",
+      "slot": "Insightful Ability Score",
+      "pool": null,
+      "category": "Insightful Ability Score",
+      "tier": "legendary",
+      "name": "Intelligence",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Insight",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "host": "Legendary Burrowing Claws",
+      "family": "Nearly Complete",
+      "slot": "Ability Score",
+      "pool": null,
+      "category": "Ability Score",
+      "tier": "legendary",
+      "name": "Intelligence",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "host": "Legendary Coldlight Runners",
+      "family": "Viktranium",
+      "slot": "Dolorous",
+      "pool": null,
+      "category": "Accessory",
+      "tier": "legendary",
+      "name": "Dolorous Quality Intelligence (legendary)",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Quality",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "host": "Legendary Coldlight Runners",
+      "family": "Viktranium",
+      "slot": "Melancholic",
+      "pool": null,
+      "category": "Accessory",
+      "tier": "legendary",
+      "name": "Melancholic Wisdom (legendary)",
+      "affixes": [
+        {
+          "stat": "Wisdom",
+          "type": "Enhancement",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Dolorous",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Dolorous Flames (legendary)",
+      "affixes": [
+        {
+          "stat": "Good Aligned",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Alchemical Fire Attunement",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Melancholic",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Melancholic Flames (legendary)",
+      "affixes": [
+        {
+          "stat": "Adamantine",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Fiery",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Miserable",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Miserable Dimlight (legendary)",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Exceptional",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "host": "Legendary Calamitous Longbow",
+      "family": "Viktranium",
+      "slot": "Woeful",
+      "pool": null,
+      "category": "Weapon",
+      "tier": "legendary",
+      "name": "Woeful Salt",
+      "affixes": [
+        {
+          "stat": "Legendary Salt",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "host": "Legendary Chains",
+      "family": "Slave Lords",
+      "slot": "Prefix",
+      "pool": null,
+      "category": null,
+      "tier": "legendary",
+      "name": "Fortification +142 (Enhancement)",
+      "affixes": [
+        {
+          "stat": "Fortification",
+          "type": "Enhancement",
+          "value": 142
+        }
+      ]
+    },
+    {
+      "host": "Legendary Chains",
+      "family": "Slave Lords",
+      "slot": "Suffix",
+      "pool": null,
+      "category": null,
+      "tier": "legendary",
+      "name": "Combustion +142 (Equipment)",
+      "affixes": [
+        {
+          "stat": "Combustion",
+          "type": "Equipment",
+          "value": 142
+        }
+      ]
+    },
+    {
+      "host": "Legendary Chains",
+      "family": "Slave Lords",
+      "slot": "Bonus",
+      "pool": null,
+      "category": null,
+      "tier": "legendary",
+      "name": "Constitution +3 (Quality)",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Quality",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "augments": [
+    {
+      "id": "Legendary Sapphire of Riposte",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Armor Class",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        },
+        {
+          "stat": "Reflex Save",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        },
+        {
+          "stat": "Will Save",
+          "type": "Insight",
+          "value": 6,
+          "via": "Riposte"
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of Dodge +16%",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Dodge",
+          "type": "Enhancement",
+          "value": 16
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of False Life +60",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "False Life",
+          "type": "Enhancement",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of Greater Heroism",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Greater Heroism",
+          "type": "Bool",
+          "value": 1
+        },
+        {
+          "stat": "Accuracy",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Fortitude Save",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Reflex Save",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Will Save",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Balance",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Bluff",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Concentration",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Diplomacy",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Disable Device",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Haggle",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Heal",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Hide",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Intimidate",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Jump",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Listen",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Move Silently",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Open Lock",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Perform",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Repair",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Search",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Spellcraft",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Spot",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Swim",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Tumble",
+          "type": "Morale",
+          "value": 4
+        },
+        {
+          "stat": "Use Magic Device",
+          "type": "Morale",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Sapphire of Healing Amplification +63",
+      "color": "Blue",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Healing Amplification",
+          "type": "Competence",
+          "value": 63
+        }
+      ]
+    },
+    {
+      "id": "Diamond of Festive Constitution +2",
+      "color": "Colorless",
+      "slot_color": "Blue",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Festive",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "Diamond of Festive Intelligence +2",
+      "color": "Colorless",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Festive",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "Globe of True Imperial Blood",
+      "color": "Colorless",
+      "slot_color": "Purple",
+      "affixes": [
+        {
+          "stat": "Strength",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Dexterity",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Constitution",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Intelligence",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Wisdom",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        },
+        {
+          "stat": "Charisma",
+          "type": "Exceptional",
+          "value": 1,
+          "via": "Exceptional Well Rounded"
+        }
+      ]
+    },
+    {
+      "id": "Ravil's Book of Legendary Recipes",
+      "color": "Colorless",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "False Life",
+          "type": "Vitality",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "id": "Emerald of Arcane Empowerment",
+      "color": "Green",
+      "slot_color": "Green",
+      "affixes": [
+        {
+          "stat": "Imbue Dice",
+          "type": "Enhancement",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Intelligence (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Profane",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Physical Protection (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Profane",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Ranged Power (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Ranged Power",
+          "type": "Profane",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "Lunar Gem of Weapon Damage (Legendary)",
+      "color": "Moon",
+      "slot_color": "Moon",
+      "affixes": [
+        {
+          "stat": "Deadly",
+          "type": "Profane",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "A Treatise on Battle",
+      "color": "Orange",
+      "slot_color": "Orange",
+      "affixes": [
+        {
+          "stat": "Stunning",
+          "type": "Enhancement",
+          "value": 11,
+          "via": "Enhancement Combat Mastery"
+        },
+        {
+          "stat": "Vertigo",
+          "type": "Enhancement",
+          "value": 11,
+          "via": "Enhancement Combat Mastery"
+        },
+        {
+          "stat": "Shatter",
+          "type": "Enhancement",
+          "value": 11,
+          "via": "Enhancement Combat Mastery"
+        },
+        {
+          "stat": "Immunity to Fear",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Constitution (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Constitution",
+          "type": "Artifact",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Critical Confirmation (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Seeker",
+          "type": "Artifact",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Fortification Bypass (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Armor-Piercing",
+          "type": "Artifact",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Intelligence (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Intelligence",
+          "type": "Artifact",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "Solar Gem of Sneak Attack Damage (Legendary)",
+      "color": "Sun",
+      "slot_color": "Sun",
+      "affixes": [
+        {
+          "stat": "Sneak Attack Damage",
+          "type": "Artifact",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "Topaz of Blindness Immunity",
+      "color": "Yellow",
+      "slot_color": "Yellow",
+      "affixes": [
+        {
+          "stat": "Blindness Immunity",
+          "type": "Bool",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Topaz of Ranged Power +14",
+      "color": "Yellow",
+      "slot_color": "Yellow",
+      "affixes": [
+        {
+          "stat": "Ranged Power",
+          "type": "Enhancement",
+          "value": 14
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "name": "Dusk Raider",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Melee Power",
+          "type": "Artifact",
+          "value": 15
+        },
+        {
+          "stat": "Ranged Power",
+          "type": "Artifact",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Perfect Silence",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Sneak Attack Dice",
+          "type": "Artifact",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Quickblade",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Doublestrike",
+          "type": "Artifact",
+          "value": 15
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Artifact",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Tough Shields",
+      "threshold": 3,
+      "effects": [
+        {
+          "stat": "Physical Sheltering",
+          "type": "Artifact",
+          "value": 30
+        }
+      ]
+    }
+  ],
+  "set_placements": [
+    {
+      "name": "Dusk Raider",
+      "host": "The Skull of the Horned King",
+      "color": "Green"
+    },
+    {
+      "name": "Dusk Raider",
+      "host": "The Queen of Rot",
+      "color": "Yellow"
+    },
+    {
+      "name": "Dusk Raider",
+      "host": "Legendary Celestial Sapphire Ring",
+      "color": "Yellow"
+    },
+    {
+      "name": "Perfect Silence",
+      "host": "Legendary Goggles of the Archer",
+      "color": "Colorless"
+    },
+    {
+      "name": "Perfect Silence",
+      "host": "Legendary Abyssal Compass",
+      "color": "Colorless"
+    },
+    {
+      "name": "Perfect Silence",
+      "host": "Legendary Coldlight Runners",
+      "color": "Colorless"
+    },
+    {
+      "name": "Quickblade",
+      "host": "Light Armor of the Warblade's Reflection",
+      "color": "Colorless"
+    },
+    {
+      "name": "Quickblade",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "color": "Colorless"
+    },
+    {
+      "name": "Quickblade",
+      "host": "Legendary Chains",
+      "color": "Green"
+    },
+    {
+      "name": "Tough Shields",
+      "host": "Legendary Ring of Unnatural Accuracy",
+      "color": "Colorless"
+    },
+    {
+      "name": "Tough Shields",
+      "host": "Legendary Burrowing Claws",
+      "color": "Colorless"
+    },
+    {
+      "name": "Tough Shields",
+      "host": "Yeenoghu's Reign",
+      "color": "Green"
+    }
+  ],
+  "per_target": {
+    "Greater Marksmanship": 1,
+    "Sight Beyond Sight": 1,
+    "Relentless Fury": 1,
+    "Bloodrage": 1,
+    "Alchemical Fire Attunement": 1,
+    "Fiery": 1,
+    "Legendary Salt": 1,
+    "Improved Deception": 1,
+    "Ranged Alacrity": 20,
+    "Doubleshot": 35,
+    "Ranged Power": 44,
+    "Intelligence": 37,
+    "Seeker": 29,
+    "Armor-Piercing": 76,
+    "Deadly": 20,
+    "Imbue Dice": 1,
+    "Sneak Attack Dice": 3,
+    "Sneak Attack Damage": 3,
+    "Constitution": 34,
+    "Physical Sheltering": 133,
+    "Magical Sheltering": 73,
+    "Fortification": 226,
+    "False Life": 108,
+    "Healing Amplification": 63,
+    "Dodge": 16,
+    "Reflex Save": 23,
+    "Fortitude Save": 24,
+    "Will Save": 23,
+    "Wisdom": 18,
+    "Accuracy": 33,
+    "Combustion": 142,
+    "Damage to helpless enemies": 0
+  },
+  "manual_derivation": null,
+  "query": {
+    "mlCap": 36,
+    "mlFloor": null,
+    "augCeiling": null,
+    "targets": [
+      "Greater Marksmanship",
+      "Sight Beyond Sight",
+      "Relentless Fury",
+      "Bloodrage",
+      "Alchemical Fire Attunement",
+      "Fiery",
+      "Legendary Salt",
+      "Improved Deception",
+      "Ranged Alacrity",
+      "Doubleshot",
+      "Ranged Power",
+      "Intelligence",
+      "Seeker",
+      "Armor-Piercing",
+      "Deadly",
+      "Imbue Dice",
+      "Sneak Attack Dice",
+      "Sneak Attack Damage",
+      "Constitution",
+      "Physical Sheltering",
+      "Magical Sheltering",
+      "Fortification",
+      "False Life",
+      "Healing Amplification",
+      "Dodge",
+      "Reflex Save",
+      "Fortitude Save",
+      "Will Save",
+      "Wisdom",
+      "Accuracy",
+      "Combustion",
+      "Damage to helpless enemies"
+    ],
+    "armorType": "light",
+    "armorTypes": [
+      "light"
+    ],
+    "oath": null,
+    "style": "ranged",
+    "weaponTypes": [
+      "Long Bows"
+    ],
+    "offHand": [],
+    "offHandWeapons": [],
+    "twoWeaponFighting": false,
+    "race": "Human",
+    "alignment": null,
+    "includeArtifact": true,
+    "craftingRung": "everything",
+    "blocklist": [
+      "+1 Intimidating Dagger of Acid",
+      "+1 Starter Heavy Steel Shield",
+      "+1 Starter Heavy Wooden Shield",
+      "+1 Vorpal Sickle of Haggling",
+      "+2 Intimidating Dagger of Paralyzing Acid",
+      "Admiral's Tricorne",
+      "Amulet of Natural Armor",
+      "Artemist's Aegis (level 10)",
+      "Artemist's Aegis (level 15)",
+      "Artemist's Aegis (level 20)",
+      "Artemist's Aegis (level 25)",
+      "Artemist's Aegis (level 30)",
+      "Artemist's Aegis (level 5)",
+      "Battleworn Shield of Cyre",
+      "Bold Trinket",
+      "Boots of Minor Striding",
+      "Bottled Fear",
+      "Bouquet of Flowers",
+      "Brawling Gloves (level 12)",
+      "Brawling Gloves (level 16)",
+      "Brawling Gloves (level 4)",
+      "Brawling Gloves (level 8)",
+      "Brigand's Cutlass (legacy) (level 12)",
+      "Brigand's Cutlass (legacy) (level 16)",
+      "Brigand's Cutlass (legacy) (level 4)",
+      "Brigand's Cutlass (legacy) (level 8)",
+      "Brigand's Cutlass (level 12)",
+      "Brigand's Cutlass (level 16)",
+      "Brigand's Cutlass (level 4)",
+      "Brigand's Cutlass (level 8)",
+      "Broccoli Bashers",
+      "Broken Oar (level 12)",
+      "Broken Oar (level 16)",
+      "Broken Oar (level 4)",
+      "Broken Oar (level 8)",
+      "Bronze Ingot Arcanum (historic)",
+      "Brooch of Waterbreathing",
+      "Brussel Sprout Beater",
+      "Brutish Cuirass (historic)",
+      "Bulwark of the Storm's Fist (historic)",
+      "Captain's Chapeau",
+      "Captain's Cutter (level 12)",
+      "Captain's Cutter (level 16)",
+      "Captain's Cutter (level 4)",
+      "Captain's Cutter (level 8)",
+      "Cataclysmic Buckler",
+      "Cataclysmic Large Shield",
+      "Cataclysmic Small Shield",
+      "Cataclysmic Tower Shield",
+      "Caustic Forum Post (level 10)",
+      "Caustic Forum Post (level 15)",
+      "Caustic Forum Post (level 20)",
+      "Caustic Forum Post (level 25)",
+      "Caustic Forum Post (level 30)",
+      "Caustic Forum Post (level 5)",
+      "Cavalry Plate (legacy) (level 12)",
+      "Cavalry Plate (legacy) (level 16)",
+      "Cavalry Plate (legacy) (level 4)",
+      "Cavalry Plate (legacy) (level 8)",
+      "Cavalry Plate (level 12)",
+      "Cavalry Plate (level 16)",
+      "Cavalry Plate (level 4)",
+      "Cavalry Plate (level 8)",
+      "Chain Shirt of Toppling (level 12)",
+      "Chain Shirt of Toppling (level 16)",
+      "Chain Shirt of Toppling (level 20)",
+      "Chain Shirt of Toppling (level 24)",
+      "Chain Shirt of Toppling (level 28)",
+      "Chain Shirt of Toppling (level 32)",
+      "Chain Shirt of Toppling (level 36)",
+      "Chain Shirt of Toppling (level 4)",
+      "Chain Shirt of Toppling (level 8)",
+      "Charming Festival Mask",
+      "Charoush's Inferno (historic)",
+      "Cheap Shot (level 10)",
+      "Cheap Shot (level 15)",
+      "Cheap Shot (level 20)",
+      "Cheap Shot (level 25)",
+      "Cheap Shot (level 30)",
+      "Cheap Shot (level 5)",
+      "Clamorous Forum Post (level 10)",
+      "Clamorous Forum Post (level 15)",
+      "Clamorous Forum Post (level 20)",
+      "Clamorous Forum Post (level 25)",
+      "Clamorous Forum Post (level 30)",
+      "Clamorous Forum Post (level 5)",
+      "Cloak of Night (level 12)",
+      "Cloak of Night (level 16)",
+      "Cloak of Night (level 4)",
+      "Cloak of Night (level 8)",
+      "Cloak of Summer's End (level 12)",
+      "Cloak of Summer's End (level 16)",
+      "Cloak of Summer's End (level 20)",
+      "Cloak of Summer's End (level 24)",
+      "Cloak of Summer's End (level 28)",
+      "Cloak of Summer's End (level 32)",
+      "Cloak of Summer's End (level 36)",
+      "Cloak of Summer's End (level 4)",
+      "Cloak of Summer's End (level 8)",
+      "Cloak of Winter's End (level 12)",
+      "Cloak of Winter's End (level 16)",
+      "Cloak of Winter's End (level 20)",
+      "Cloak of Winter's End (level 24)",
+      "Cloak of Winter's End (level 28)",
+      "Cloak of Winter's End (level 32)",
+      "Cloak of Winter's End (level 36)",
+      "Cloak of Winter's End (level 4)",
+      "Cloak of Winter's End (level 8)",
+      "Cloak of the Mimic (level 12)",
+      "Cloak of the Mimic (level 16)",
+      "Cloak of the Mimic (level 20)",
+      "Cloak of the Mimic (level 24)",
+      "Cloak of the Mimic (level 28)",
+      "Cloak of the Mimic (level 4)",
+      "Cloak of the Mimic (level 8)",
+      "Coat of the Wanderer (level 12)",
+      "Coat of the Wanderer (level 16)",
+      "Coat of the Wanderer (level 20)",
+      "Coat of the Wanderer (level 24)",
+      "Coat of the Wanderer (level 28)",
+      "Coat of the Wanderer (level 32)",
+      "Coat of the Wanderer (level 36)",
+      "Coat of the Wanderer (level 4)",
+      "Coat of the Wanderer (level 8)",
+      "Copper Dwarven War Axe",
+      "Copper Ingot Arcanum (historic)",
+      "Coronach (historic)",
+      "Corsair's Skullcap",
+      "Crystalline Frostaxe",
+      "Crystallized Eternity (level 12)",
+      "Crystallized Eternity (level 16)",
+      "Crystallized Eternity (level 20)",
+      "Crystallized Eternity (level 24)",
+      "Crystallized Eternity (level 28)",
+      "Crystallized Eternity (level 32)",
+      "Crystallized Eternity (level 36)",
+      "Crystallized Eternity (level 4)",
+      "Crystallized Eternity (level 8)",
+      "Cunning Trinket",
+      "Cutthroat's Smallblade (legacy) (level 12)",
+      "Cutthroat's Smallblade (legacy) (level 16)",
+      "Cutthroat's Smallblade (legacy) (level 4)",
+      "Cutthroat's Smallblade (legacy) (level 8)",
+      "Cutthroat's Smallblade (level 12)",
+      "Cutthroat's Smallblade (level 16)",
+      "Cutthroat's Smallblade (level 4)",
+      "Cutthroat's Smallblade (level 8)",
+      "Death's Smile",
+      "Delighter's Docent",
+      "Docent of Shadow (level 12)",
+      "Docent of Shadow (level 16)",
+      "Docent of Shadow (level 4)",
+      "Docent of Shadow (level 8)",
+      "Dragonsoul Vestments (level 12)",
+      "Dragonsoul Vestments (level 16)",
+      "Dragonsoul Vestments (level 20)",
+      "Dragonsoul Vestments (level 24)",
+      "Dragonsoul Vestments (level 28)",
+      "Dragonsoul Vestments (level 32)",
+      "Dragonsoul Vestments (level 36)",
+      "Dragonsoul Vestments (level 4)",
+      "Dragonsoul Vestments (level 8)",
+      "Dread Admiral's Tricorne",
+      "Dread Pirate's Cloak (level 12)",
+      "Dread Pirate's Cloak (level 16)",
+      "Dread Pirate's Cloak (level 20)",
+      "Dread Pirate's Cloak (level 24)",
+      "Dread Pirate's Cloak (level 28)",
+      "Dread Pirate's Cloak (level 32)",
+      "Dread Pirate's Cloak (level 36)",
+      "Dread Pirate's Cloak (level 4)",
+      "Dread Pirate's Cloak (level 8)",
+      "Duelist's Leathers (legacy) (level 12)",
+      "Duelist's Leathers (legacy) (level 16)",
+      "Duelist's Leathers (legacy) (level 4)",
+      "Duelist's Leathers (legacy) (level 8)",
+      "Duelist's Leathers (level 12)",
+      "Duelist's Leathers (level 16)",
+      "Duelist's Leathers (level 4)",
+      "Duelist's Leathers (level 8)",
+      "Enchanted Chocolates by Fabiano & Zelda",
+      "Eon, the Poisoned Reign",
+      "Epic Brawling Gloves (level 20)",
+      "Epic Brawling Gloves (level 24)",
+      "Epic Brawling Gloves (level 28)",
+      "Epic Brigand's Cutlass (legacy) (level 20)",
+      "Epic Brigand's Cutlass (legacy) (level 24)",
+      "Epic Brigand's Cutlass (level 20)",
+      "Epic Brigand's Cutlass (level 24)",
+      "Epic Brigand's Cutlass (level 28)",
+      "Epic Broken Oar (level 20)",
+      "Epic Broken Oar (level 24)",
+      "Epic Broken Oar (level 28)",
+      "Epic Captain's Cutter (level 20)",
+      "Epic Captain's Cutter (level 24)",
+      "Epic Captain's Cutter (level 28)",
+      "Epic Cavalry Plate (legacy) (level 20)",
+      "Epic Cavalry Plate (legacy) (level 24)",
+      "Epic Cavalry Plate (level 20)",
+      "Epic Cavalry Plate (level 24)",
+      "Epic Cavalry Plate (level 28)",
+      "Epic Cloak of Night (level 20)",
+      "Epic Cloak of Night (level 24)",
+      "Epic Cloak of Night (level 28)",
+      "Epic Cutthroat's Smallblade (legacy) (level 20)",
+      "Epic Cutthroat's Smallblade (legacy) (level 24)",
+      "Epic Cutthroat's Smallblade (level 20)",
+      "Epic Cutthroat's Smallblade (level 24)",
+      "Epic Cutthroat's Smallblade (level 28)",
+      "Epic Docent of Shadow (level 20)",
+      "Epic Docent of Shadow (level 24)",
+      "Epic Docent of Shadow (level 28)",
+      "Epic Duelist's Leathers (legacy) (level 20)",
+      "Epic Duelist's Leathers (legacy) (level 24)",
+      "Epic Duelist's Leathers (level 20)",
+      "Epic Duelist's Leathers (level 24)",
+      "Epic Duelist's Leathers (level 28)",
+      "Epic Flotsam (level 20)",
+      "Epic Flotsam (level 24)",
+      "Epic Flotsam (level 28)",
+      "Epic Hull-Melter's Mace (level 20)",
+      "Epic Hull-Melter's Mace (level 24)",
+      "Epic Hull-Melter's Mace (level 28)",
+      "Epic Hull-Wrecker's Hammer (level 20)",
+      "Epic Hull-Wrecker's Hammer (level 24)",
+      "Epic Hull-Wrecker's Hammer (level 28)",
+      "Epic Ornamented Dagger (legacy) (level 20)",
+      "Epic Ornamented Dagger (legacy) (level 24)",
+      "Epic Ornamented Dagger (level 20)",
+      "Epic Ornamented Dagger (level 24)",
+      "Epic Ornamented Dagger (level 28)",
+      "Epic Ratkiller (legacy) (level 20)",
+      "Epic Ratkiller (legacy) (level 24)",
+      "Epic Ratkiller (level 20)",
+      "Epic Ratkiller (level 24)",
+      "Epic Ratkiller (level 28)",
+      "Epic Ring of the Buccaneer (level 20)",
+      "Epic Ring of the Buccaneer (level 24)",
+      "Epic Ring of the Buccaneer (level 28)",
+      "Epic Robe of Shadow (level 20)",
+      "Epic Robe of Shadow (level 24)",
+      "Epic Robe of Shadow (level 28)",
+      "Epic Ship-Chaplain's Sidearm (level 20)",
+      "Epic Ship-Chaplain's Sidearm (level 24)",
+      "Epic Ship-Chaplain's Sidearm (level 28)",
+      "Epic Ship-Siege Bow (level 20)",
+      "Epic Ship-Siege Bow (level 24)",
+      "Epic Ship-Siege Bow (level 28)",
+      "Epic Spectre Deflector (level 20)",
+      "Epic Spectre Deflector (level 24)",
+      "Epic Spectre Deflector (level 28)",
+      "Epic Swashbuckler (legacy) (level 20)",
+      "Epic Swashbuckler (legacy) (level 24)",
+      "Epic Swashbuckler (level 20)",
+      "Epic Swashbuckler (level 24)",
+      "Epic Swashbuckler (level 28)",
+      "Epic The Drowned (level 20)",
+      "Epic The Drowned (level 24)",
+      "Epic The Drowned (level 28)",
+      "Epic Treasure Hunter's Spyglass (level 20)",
+      "Epic Treasure Hunter's Spyglass (level 24)",
+      "Epic Treasure Hunter's Spyglass (level 28)",
+      "Epic Wraps of Endless Light (level 20)",
+      "Epic Wraps of Endless Light (level 24)",
+      "Epic Wraps of Endless Light (level 28)",
+      "Festival Luck Charms",
+      "First Light (level 10)",
+      "First Light (level 15)",
+      "First Light (level 20)",
+      "First Light (level 25)",
+      "First Light (level 30)",
+      "First Light (level 5)",
+      "Flaming Forum Post (level 10)",
+      "Flaming Forum Post (level 15)",
+      "Flaming Forum Post (level 20)",
+      "Flaming Forum Post (level 25)",
+      "Flaming Forum Post (level 30)",
+      "Flaming Forum Post (level 5)",
+      "Flotsam (level 12)",
+      "Flotsam (level 16)",
+      "Flotsam (level 4)",
+      "Flotsam (level 8)",
+      "Founder's Helm",
+      "Freebooter's Bandana",
+      "Glass Cannon",
+      "Glass Cannon (legacy) (tier 1)",
+      "Glass Cannon (legacy) (tier 2)",
+      "Glass Cannon (legacy) (tier 3)",
+      "Grand Ringmaster's Plate (level 12)",
+      "Grand Ringmaster's Plate (level 16)",
+      "Grand Ringmaster's Plate (level 20)",
+      "Grand Ringmaster's Plate (level 24)",
+      "Grand Ringmaster's Plate (level 28)",
+      "Grand Ringmaster's Plate (level 32)",
+      "Grand Ringmaster's Plate (level 36)",
+      "Grand Ringmaster's Plate (level 4)",
+      "Grand Ringmaster's Plate (level 8)",
+      "Great Axe of the Chained Soldier (historic)",
+      "Greater Bold Trinket",
+      "Greater Cunning Trinket",
+      "Greater Nimble Trinket",
+      "Greater Stalwart Trinket",
+      "Greater Vial of Seafog",
+      "Green Steel Greatclub",
+      "Green Steel Light Hammer",
+      "Hammer of the Leaden Clouds (historic)",
+      "Hat of the Night Hag",
+      "Hood of Unrest",
+      "Hull-Melter's Mace (level 12)",
+      "Hull-Melter's Mace (level 16)",
+      "Hull-Melter's Mace (level 4)",
+      "Hull-Melter's Mace (level 8)",
+      "Hull-Wrecker's Hammer (level 12)",
+      "Hull-Wrecker's Hammer (level 16)",
+      "Hull-Wrecker's Hammer (level 4)",
+      "Hull-Wrecker's Hammer (level 8)",
+      "Icy Forum Post (level 10)",
+      "Icy Forum Post (level 15)",
+      "Icy Forum Post (level 20)",
+      "Icy Forum Post (level 25)",
+      "Icy Forum Post (level 30)",
+      "Icy Forum Post (level 5)",
+      "Indomitable Wrappings (level 12)",
+      "Indomitable Wrappings (level 16)",
+      "Indomitable Wrappings (level 20)",
+      "Indomitable Wrappings (level 24)",
+      "Indomitable Wrappings (level 28)",
+      "Indomitable Wrappings (level 4)",
+      "Indomitable Wrappings (level 8)",
+      "Jolly Roger Bomb",
+      "Kookie Kutter (level 10)",
+      "Kookie Kutter (level 15)",
+      "Kookie Kutter (level 20)",
+      "Kookie Kutter (level 25)",
+      "Kookie Kutter (level 30)",
+      "Kookie Kutter (level 5)",
+      "Lawrence's Robe of Trivial Knowledge",
+      "Legendary Brawling Gloves (level 32)",
+      "Legendary Brawling Gloves (level 36)",
+      "Legendary Brigand's Cutlass (level 32)",
+      "Legendary Brigand's Cutlass (level 36)",
+      "Legendary Broken Oar (level 32)",
+      "Legendary Broken Oar (level 36)",
+      "Legendary Captain's Cutter (level 32)",
+      "Legendary Captain's Cutter (level 36)",
+      "Legendary Cavalry Plate (level 32)",
+      "Legendary Cavalry Plate (level 36)",
+      "Legendary Cloak of Night (level 32)",
+      "Legendary Cloak of Night (level 36)",
+      "Legendary Cutthroat's Smallblade (level 32)",
+      "Legendary Cutthroat's Smallblade (level 36)",
+      "Legendary Docent of Shadow (level 32)",
+      "Legendary Docent of Shadow (level 36)",
+      "Legendary Duelist's Leathers (level 32)",
+      "Legendary Duelist's Leathers (level 36)",
+      "Legendary Flotsam (level 32)",
+      "Legendary Flotsam (level 36)",
+      "Legendary Hull-Melter's Mace (level 32)",
+      "Legendary Hull-Melter's Mace (level 36)",
+      "Legendary Hull-Wrecker's Hammer (level 32)",
+      "Legendary Hull-Wrecker's Hammer (level 36)",
+      "Legendary Ornamented Dagger (level 32)",
+      "Legendary Ornamented Dagger (level 36)",
+      "Legendary Ratkiller (level 32)",
+      "Legendary Ratkiller (level 36)",
+      "Legendary Ring of the Buccaneer (level 32)",
+      "Legendary Ring of the Buccaneer (level 36)",
+      "Legendary Robe of Shadow (level 32)",
+      "Legendary Robe of Shadow (level 36)",
+      "Legendary Ship-Chaplain's Sidearm (level 32)",
+      "Legendary Ship-Chaplain's Sidearm (level 36)",
+      "Legendary Ship-Siege Bow (level 32)",
+      "Legendary Ship-Siege Bow (level 36)",
+      "Legendary Spectre Deflector (level 32)",
+      "Legendary Spectre Deflector (level 36)",
+      "Legendary Swashbuckler (level 32)",
+      "Legendary Swashbuckler (level 36)",
+      "Legendary The Drowned (level 32)",
+      "Legendary The Drowned (level 36)",
+      "Legendary Treasure Hunter's Spyglass (level 32)",
+      "Legendary Treasure Hunter's Spyglass (level 36)",
+      "Lesser Bold Trinket",
+      "Lesser Cunning Trinket",
+      "Lesser Nimble Trinket",
+      "Lesser Stalwart Trinket",
+      "Lesser Vial of Seafog",
+      "Lesser Whirlwind Armor",
+      "Lomizir's To-Do List",
+      "Long Broom of Mystery",
+      "Lousy Chain Docent?",
+      "Lousy Chainshirt",
+      "Lucky Hat",
+      "Lump of Coal",
+      "Lynnabel's Bug Killer (level 10)",
+      "Lynnabel's Bug Killer (level 15)",
+      "Lynnabel's Bug Killer (level 20)",
+      "Lynnabel's Bug Killer (level 25)",
+      "Lynnabel's Bug Killer (level 30)",
+      "Lynnabel's Bug Killer (level 5)",
+      "Malicia's Crown (level 12)",
+      "Malicia's Crown (level 16)",
+      "Malicia's Crown (level 20)",
+      "Malicia's Crown (level 24)",
+      "Malicia's Crown (level 28)",
+      "Malicia's Crown (level 32)",
+      "Malicia's Crown (level 36)",
+      "Malicia's Crown (level 4)",
+      "Malicia's Crown (level 8)",
+      "Minos Lorica (level 12)",
+      "Minos Lorica (level 16)",
+      "Minos Lorica (level 20)",
+      "Minos Lorica (level 24)",
+      "Minos Lorica (level 28)",
+      "Minos Lorica (level 32)",
+      "Minos Lorica (level 36)",
+      "Minos Lorica (level 4)",
+      "Minos Lorica (level 8)",
+      "Mysterious Bracers (level 14)",
+      "Mysterious Bracers (level 21)",
+      "Mysterious Bracers (level 7)",
+      "Mysterious Cloak (level 14)",
+      "Mysterious Cloak (level 21)",
+      "Mysterious Cloak (level 7)",
+      "Necklace of Glib Tongue (level 12)",
+      "Necklace of Glib Tongue (level 16)",
+      "Necklace of Glib Tongue (level 20)",
+      "Necklace of Glib Tongue (level 24)",
+      "Necklace of Glib Tongue (level 28)",
+      "Necklace of Glib Tongue (level 4)",
+      "Necklace of Glib Tongue (level 8)",
+      "Necrotic Forum Post (level 10)",
+      "Necrotic Forum Post (level 15)",
+      "Necrotic Forum Post (level 20)",
+      "Necrotic Forum Post (level 25)",
+      "Necrotic Forum Post (level 30)",
+      "Necrotic Forum Post (level 5)",
+      "Nimble Trinket",
+      "No Worries (level 10)",
+      "No Worries (level 15)",
+      "No Worries (level 20)",
+      "No Worries (level 25)",
+      "No Worries (level 30)",
+      "No Worries (level 5)",
+      "Official Risia Ice Games Ice Skates",
+      "Orb of Many Charts",
+      "Ornamented Dagger (legacy) (level 12)",
+      "Ornamented Dagger (legacy) (level 16)",
+      "Ornamented Dagger (legacy) (level 4)",
+      "Ornamented Dagger (legacy) (level 8)",
+      "Ornamented Dagger (level 12)",
+      "Ornamented Dagger (level 16)",
+      "Ornamented Dagger (level 4)",
+      "Ornamented Dagger (level 8)",
+      "Pick of Endless Light (level 12)",
+      "Pick of Endless Light (level 16)",
+      "Pick of Endless Light (level 20)",
+      "Pick of Endless Light (level 24)",
+      "Pick of Endless Light (level 28)",
+      "Pick of Endless Light (level 32)",
+      "Pick of Endless Light (level 36)",
+      "Pick of Endless Light (level 4)",
+      "Pick of Endless Light (level 8)",
+      "Pirate's Bandana",
+      "Power Evidence",
+      "Pumpkin Head",
+      "Quorforged Docent of Victory (level 12)",
+      "Quorforged Docent of Victory (level 16)",
+      "Quorforged Docent of Victory (level 20)",
+      "Quorforged Docent of Victory (level 24)",
+      "Quorforged Docent of Victory (level 28)",
+      "Quorforged Docent of Victory (level 32)",
+      "Quorforged Docent of Victory (level 36)",
+      "Quorforged Docent of Victory (level 4)",
+      "Quorforged Docent of Victory (level 8)",
+      "Ratkiller (legacy) (level 12)",
+      "Ratkiller (legacy) (level 16)",
+      "Ratkiller (legacy) (level 4)",
+      "Ratkiller (legacy) (level 8)",
+      "Ratkiller (level 12)",
+      "Ratkiller (level 16)",
+      "Ratkiller (level 4)",
+      "Ratkiller (level 8)",
+      "Reveler's Regalia",
+      "Ring of the Buccaneer (level 12)",
+      "Ring of the Buccaneer (level 16)",
+      "Ring of the Buccaneer (level 4)",
+      "Ring of the Buccaneer (level 8)",
+      "Robe of Resonance (level 12)",
+      "Robe of Resonance (level 16)",
+      "Robe of Resonance (level 20)",
+      "Robe of Resonance (level 24)",
+      "Robe of Resonance (level 28)",
+      "Robe of Resonance (level 32)",
+      "Robe of Resonance (level 36)",
+      "Robe of Resonance (level 4)",
+      "Robe of Resonance (level 8)",
+      "Robe of Shadow (level 12)",
+      "Robe of Shadow (level 16)",
+      "Robe of Shadow (level 4)",
+      "Robe of Shadow (level 8)",
+      "Rod of Teleport",
+      "Rose Colored Goggles",
+      "Royal Scimitar (historic)",
+      "Scary Festival Mask",
+      "Scepter of Siberys",
+      "Seeker Tap of Spellsight",
+      "Severlin's Iron Fists (level 10)",
+      "Severlin's Iron Fists (level 15)",
+      "Severlin's Iron Fists (level 20)",
+      "Severlin's Iron Fists (level 25)",
+      "Severlin's Iron Fists (level 30)",
+      "Severlin's Iron Fists (level 5)",
+      "Severlin's Leaden Boots (level 10)",
+      "Severlin's Leaden Boots (level 15)",
+      "Severlin's Leaden Boots (level 20)",
+      "Severlin's Leaden Boots (level 25)",
+      "Severlin's Leaden Boots (level 30)",
+      "Severlin's Leaden Boots (level 5)",
+      "Shen's Robe",
+      "Ship-Chaplain's Sidearm (level 12)",
+      "Ship-Chaplain's Sidearm (level 16)",
+      "Ship-Chaplain's Sidearm (level 4)",
+      "Ship-Chaplain's Sidearm (level 8)",
+      "Ship-Siege Bow (level 12)",
+      "Ship-Siege Bow (level 16)",
+      "Ship-Siege Bow (level 4)",
+      "Ship-Siege Bow (level 8)",
+      "Shocking Forum Post (level 10)",
+      "Shocking Forum Post (level 15)",
+      "Shocking Forum Post (level 20)",
+      "Shocking Forum Post (level 25)",
+      "Shocking Forum Post (level 30)",
+      "Shocking Forum Post (level 5)",
+      "Short Broom of Mystery",
+      "Silence of the Tasty Hams",
+      "Silver Ingot Arcanum (historic)",
+      "Skull Head",
+      "Skullsmasher (historic)",
+      "Skyvault Shield (historic)",
+      "Snowball",
+      "Spectral Dagger (level 12)",
+      "Spectral Dagger (level 16)",
+      "Spectral Dagger (level 20)",
+      "Spectral Dagger (level 24)",
+      "Spectral Dagger (level 28)",
+      "Spectral Dagger (level 32)",
+      "Spectral Dagger (level 36)",
+      "Spectral Dagger (level 4)",
+      "Spectral Dagger (level 8)",
+      "Spectral Great Axe (level 12)",
+      "Spectral Great Axe (level 16)",
+      "Spectral Great Axe (level 20)",
+      "Spectral Great Axe (level 24)",
+      "Spectral Great Axe (level 28)",
+      "Spectral Great Axe (level 4)",
+      "Spectral Great Axe (level 8)",
+      "Spectral Great Crossbow (level 12)",
+      "Spectral Great Crossbow (level 16)",
+      "Spectral Great Crossbow (level 20)",
+      "Spectral Great Crossbow (level 24)",
+      "Spectral Great Crossbow (level 28)",
+      "Spectral Great Crossbow (level 4)",
+      "Spectral Great Crossbow (level 8)",
+      "Spectral Longbow (level 12)",
+      "Spectral Longbow (level 16)",
+      "Spectral Longbow (level 20)",
+      "Spectral Longbow (level 24)",
+      "Spectral Longbow (level 28)",
+      "Spectral Longbow (level 32)",
+      "Spectral Longbow (level 36)",
+      "Spectral Longbow (level 4)",
+      "Spectral Longbow (level 8)",
+      "Spectral Throwing Dagger (level 12)",
+      "Spectral Throwing Dagger (level 16)",
+      "Spectral Throwing Dagger (level 20)",
+      "Spectral Throwing Dagger (level 24)",
+      "Spectral Throwing Dagger (level 28)",
+      "Spectral Throwing Dagger (level 32)",
+      "Spectral Throwing Dagger (level 36)",
+      "Spectral Throwing Dagger (level 4)",
+      "Spectral Throwing Dagger (level 8)",
+      "Spectral Warhammer (level 12)",
+      "Spectral Warhammer (level 16)",
+      "Spectral Warhammer (level 20)",
+      "Spectral Warhammer (level 24)",
+      "Spectral Warhammer (level 28)",
+      "Spectral Warhammer (level 4)",
+      "Spectral Warhammer (level 8)",
+      "Spectre Deflector (level 12)",
+      "Spectre Deflector (level 16)",
+      "Spectre Deflector (level 4)",
+      "Spectre Deflector (level 8)",
+      "Spooky Festival Mask",
+      "Squid Smasher",
+      "Stalwart Trinket",
+      "Star of Endless Night (level 12)",
+      "Star of Endless Night (level 16)",
+      "Star of Endless Night (level 20)",
+      "Star of Endless Night (level 24)",
+      "Star of Endless Night (level 28)",
+      "Star of Endless Night (level 32)",
+      "Star of Endless Night (level 36)",
+      "Star of Endless Night (level 4)",
+      "Star of Endless Night (level 8)",
+      "Swabby's Kerchief",
+      "Swashbuckler (legacy) (level 12)",
+      "Swashbuckler (legacy) (level 16)",
+      "Swashbuckler (legacy) (level 4)",
+      "Swashbuckler (legacy) (level 8)",
+      "Swashbuckler (level 12)",
+      "Swashbuckler (level 16)",
+      "Swashbuckler (level 4)",
+      "Swashbuckler (level 8)",
+      "Tainted Helm of Mystery",
+      "Tchurvul's Kukri",
+      "The Admiral of Bling",
+      "The Astral Projector",
+      "The Balance Bat",
+      "The Balance Beam",
+      "The Banhammer",
+      "The Commander of Bling (level 12)",
+      "The Commander of Bling (level 16)",
+      "The Commander of Bling (level 20)",
+      "The Commander of Bling (level 24)",
+      "The Commander of Bling (level 28)",
+      "The Commander of Bling (level 32)",
+      "The Commander of Bling (level 36)",
+      "The Commander of Bling (level 4)",
+      "The Commander of Bling (level 8)",
+      "The Darkwood Skull",
+      "The Diplomancer (level 10)",
+      "The Diplomancer (level 15)",
+      "The Diplomancer (level 20)",
+      "The Diplomancer (level 25)",
+      "The Diplomancer (level 30)",
+      "The Diplomancer (level 5)",
+      "The Drowned (level 12)",
+      "The Drowned (level 16)",
+      "The Drowned (level 4)",
+      "The Drowned (level 8)",
+      "The Epic Astral Projector",
+      "The Frozen Skull",
+      "The Ice Dragon's Tooth",
+      "The Mother Board (level 10)",
+      "The Mother Board (level 15)",
+      "The Mother Board (level 20)",
+      "The Mother Board (level 25)",
+      "The Mother Board (level 30)",
+      "The Mother Board (level 5)",
+      "The Only Exception (level 10)",
+      "The Only Exception (level 15)",
+      "The Only Exception (level 20)",
+      "The Only Exception (level 25)",
+      "The Only Exception (level 30)",
+      "The Only Exception (level 5)",
+      "The Sword of Snow",
+      "Thick Skin (level 10)",
+      "Thick Skin (level 15)",
+      "Thick Skin (level 20)",
+      "Thick Skin (level 25)",
+      "Thick Skin (level 30)",
+      "Thick Skin (level 5)",
+      "Tortured Livewood Bow (historic)",
+      "Treasure Hunter's Spyglass (level 12)",
+      "Treasure Hunter's Spyglass (level 16)",
+      "Treasure Hunter's Spyglass (level 4)",
+      "Treasure Hunter's Spyglass (level 8)",
+      "Vial of Seafog",
+      "Wayfinder's Scepter",
+      "Wraps of Endless Light (level 12)",
+      "Wraps of Endless Light (level 16)",
+      "Wraps of Endless Light (level 32)",
+      "Wraps of Endless Light (level 36)",
+      "Wraps of Endless Light (level 4)",
+      "Wraps of Endless Light (level 8)",
+      "Spectral Great Axe (level 32)",
+      "Spectral Great Axe (level 36)",
+      "Spectral Great Crossbow (level 32)",
+      "Spectral Great Crossbow (level 36)",
+      "Spectral Warhammer (level 32)",
+      "Spectral Warhammer (level 36)",
+      "Sapphire of Snowpeaks Speed",
+      "Ruby of Ghostbane",
+      "Ruby of the Adamantine Blessing",
+      "Ruby of the Endless Night",
+      "Ruby of the Iron Hand",
+      "Ruby of the Snowpeaks",
+      "Ruby of the Surging Tide",
+      "Ruby of the Vampire Slayer",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Acid (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Acid (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Acid (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Acid (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Cold (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Cold (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Electric (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Electric (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Fire (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Fire (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Force (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Force (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Light (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Light (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Negative (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Negative (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Positive (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Positive (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Repair (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Repair (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Sonic (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Arcana: Sonic (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Chill (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Chill (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Dimlight",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Flames (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Focus (heroic)",
+      "craft:viktranium:Dolorous|Weapon|qs:Dolorous Focus (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Focus (legendary)",
+      "craft:viktranium:Dolorous|Weapon|qs:Dolorous Focus (legendary)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Shadows",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Sparks (heroic)",
+      "craft:viktranium:Dolorous|Weapon:Dolorous Sparks (legendary)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Acid (heroic)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Acid (legendary)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Arcana (heroic)",
+      "craft:viktranium:Melancholic|Weapon|qs:Melancholic Arcana (heroic)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Arcana (legendary)",
+      "craft:viktranium:Melancholic|Weapon|qs:Melancholic Arcana (legendary)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Chill (heroic)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Chill (legendary)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Dimlight (heroic)",
+      "craft:viktranium:Melancholic|Weapon|qs:Melancholic Dimlight (heroic)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Dimlight (legendary)",
+      "craft:viktranium:Melancholic|Weapon|qs:Melancholic Dimlight (legendary)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Flames (heroic)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Shadows (heroic)",
+      "craft:viktranium:Melancholic|Weapon|qs:Melancholic Shadows (heroic)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Shadows (legendary)",
+      "craft:viktranium:Melancholic|Weapon|qs:Melancholic Shadows (legendary)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Sparks (heroic)",
+      "craft:viktranium:Melancholic|Weapon:Melancholic Sparks (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Acid (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Acid (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Acid (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Acid (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Cold (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Cold (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Electric (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Electric (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Fire (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Fire (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Force (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Force (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Light (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Light (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Negative (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Negative (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Positive (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Positive (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Repair (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Repair (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Sonic (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Arcana: Sonic (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Armor-Piercing (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Armor-Piercing (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Chill (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Chill (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Destruction",
+      "craft:viktranium:Miserable|Weapon:Miserable Dimlight (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Flames (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Flames (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Humanoid Bane (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Humanoid Bane (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Improved Destruction",
+      "craft:viktranium:Miserable|Weapon:Miserable Maiming (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Maiming (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Metalline",
+      "craft:viktranium:Miserable|Weapon:Miserable Monstrous Humanoid Bane (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Monstrous Humanoid Bane (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Planar",
+      "craft:viktranium:Miserable|Weapon:Miserable Shadows (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Shadows (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Sparks (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Sparks (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Undead Bane (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Undead Bane (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable Vermin Bane (heroic)",
+      "craft:viktranium:Miserable|Weapon:Miserable Vermin Bane (legendary)",
+      "craft:viktranium:Miserable|Weapon:Miserable: Acid Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Cold Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Electric Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Fire Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Force Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Light Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Negative Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Positive Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Repair Spell Crit Chance",
+      "craft:viktranium:Miserable|Weapon:Miserable: Sonic Spell Crit Chance",
+      "craft:viktranium:Woeful|Weapon:Woeful Acid",
+      "craft:viktranium:Woeful|Weapon:Woeful Acidburn",
+      "craft:viktranium:Woeful|Weapon:Woeful Chill",
+      "craft:viktranium:Woeful|Weapon:Woeful Dimlight",
+      "craft:viktranium:Woeful|Weapon:Woeful Echoes",
+      "craft:viktranium:Woeful|Weapon:Woeful Energy",
+      "craft:viktranium:Woeful|Weapon:Woeful Flames",
+      "craft:viktranium:Woeful|Weapon:Woeful Frostbite",
+      "craft:viktranium:Woeful|Weapon:Woeful Lightning",
+      "craft:viktranium:Woeful|Weapon:Woeful Magma",
+      "craft:viktranium:Woeful|Weapon:Woeful Shadow",
+      "craft:viktranium:Woeful|Weapon:Woeful Shadows",
+      "craft:viktranium:Woeful|Weapon:Woeful Sparks",
+      "craft:viktranium:Woeful|Weapon:Woeful Venom",
+      "craft:viktranium:Woeful|Weapon:Woeful: Exceptional Spell Focus Mastery",
+      "Diamond of Insightful Charisma +5",
+      "Diamond of Insightful Constitution +5",
+      "Diamond of Insightful Dexterity +5",
+      "Diamond of Insightful Intelligence +5",
+      "Diamond of Insightful Strength +5",
+      "Diamond of Insightful Wisdom +5",
+      "Diamond of Spot +22",
+      "craft:viktranium:Dolorous|Accessory:Dolorous Quality Damage (legendary)"
+    ],
+    "ownedPacks": null,
+    "pinnedSets": [],
+    "pinnedAugments": [],
+    "excludedSets": [
+      "Frenzied Berserker"
+    ],
+    "ownedSetAugments": [
+      "Alluring Elocution",
+      "Arcane Barrier",
+      "Arcane Guardian",
+      "Bold Tactician",
+      "Brutal Blows",
+      "Cruel Cut",
+      "Cunning Impact",
+      "Dusk Raider",
+      "Esoterica",
+      "Imbued Infusion",
+      "Legendary Bulwark",
+      "Paragon Guard",
+      "Perfect Silence",
+      "Piercing Mind",
+      "Quickblade",
+      "Subtle Blade",
+      "Touch of Power",
+      "Tough Shields",
+      "Truthful Blow",
+      "Visions of the Beyond",
+      "Wild Fortitude"
+    ],
+    "slotConstraints": {
+      "Main Hand": {
+        "type": "pin",
+        "variant_id": "Legendary Calamitous Longbow"
+      },
+      "Armor": {
+        "type": "pin",
+        "variant_id": "Light Armor of the Warblade's Reflection"
+      },
+      "Helmet": {
+        "type": "pin",
+        "variant_id": "The Skull of the Horned King"
+      },
+      "Goggles": {
+        "type": "pin",
+        "variant_id": "Legendary Goggles of the Archer"
+      },
+      "Trinket": {
+        "type": "pin",
+        "variant_id": "Legendary Abyssal Compass"
+      },
+      "Cloak": {
+        "type": "pin",
+        "variant_id": "The Queen of Rot"
+      },
+      "Gloves": {
+        "type": "pin",
+        "variant_id": "Legendary Burrowing Claws"
+      },
+      "Boots": {
+        "type": "pin",
+        "variant_id": "Legendary Coldlight Runners"
+      },
+      "Bracers": {
+        "type": "pin",
+        "variant_id": "Yeenoghu's Reign"
+      },
+      "Quiver": {
+        "type": "pin",
+        "variant_id": "Epic Purifying Quiver"
+      }
+    },
+    "targetCaps": {
+      "Greater Marksmanship": 1,
+      "Sight Beyond Sight": 1,
+      "Relentless Fury": 1,
+      "Bloodrage": 1,
+      "Alchemical Fire Attunement": 1,
+      "Fiery": 1,
+      "Legendary Salt": 1,
+      "Ranged Alacrity": 20,
+      "Doubleshot": 35,
+      "Ranged Power": 44,
+      "Intelligence": 37,
+      "Seeker": 29,
+      "Armor-Piercing": 76,
+      "Deadly": 20,
+      "Imbue Dice": 1,
+      "Sneak Attack Dice": 3,
+      "Improved Deception": 1
+    },
+    "targetFloors": {
+      "Constitution": 32,
+      "Physical Sheltering": 133,
+      "Magical Sheltering": 73,
+      "Fortification": 200,
+      "Freedom of Movement": 1,
+      "Immunity to Fear": 1,
+      "Blindness Immunity": 1,
+      "Improved Deception": 1
+    },
+    "declaredCredits": {},
+    "excludedTypes": {
+      "Deadly||Insight": {
+        "stat": "Deadly",
+        "bonus_type": "Insight"
+      }
+    },
+    "overrides": []
+  }
+}
+

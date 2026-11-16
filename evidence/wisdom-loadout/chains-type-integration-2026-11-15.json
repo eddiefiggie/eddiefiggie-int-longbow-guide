@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "build": "11-15-26.9",
+  "status": "precommit verification complete; subsequent commit and CI results are recorded in draft PR47",
+  "startup": {
+    "approved_scope": "Option 1: integrate exactly two Chains definitions and two Spot interactions in existing draft PR #47; regenerate and validate. Merge/publication excluded.",
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "source_ref": "feat/wisdom-loadout-priorities",
+    "immutable_remote_base_sha": "30ce02c4e823ae92a1cd2dde4db99fa60ad825d9",
+    "allowed_working_branch": "feat/wisdom-loadout-priorities",
+    "actual_local_repository": "/workspace/scratch/f67d3d0dd89f/guide",
+    "initial_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "initial_local_branch": "feat/wisdom-loadout-priorities",
+    "initial_staged_tree": "21b6dcfe104cf357877e8e5c8a4335d9547f99c7",
+    "initial_unstaged_paths": [],
+    "initial_untracked_paths": [],
+    "inspection_method": "Read-only local git status/rev-parse/write-tree and current connected GitHub PR #47 metadata. Reused intentional staged mirror; current remote head unchanged from previously tree-verified .8 checkpoint.",
+    "gate_result": "passed: expected local mirror HEAD/branch/tree match and remote PR head is unchanged",
+    "captured_at_utc": "2026-11-16T02:44:50.182370+00:00",
+    "baseline_files": 302
+  },
+  "source_register": {
+    "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+    "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+    "original_investigation_bytes_preserved": true,
+    "scope": "Two exact Legendary Nexus type descriptions plus separately pinned Wiki value, host, category and skill premises. No filled numeric placeholder, source revision or client version invented."
+  },
+  "verification": {
+    "full_suite": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "exit_code": 0,
+      "tests": 531,
+      "seconds": 214.123,
+      "log_sha256": "45e11d6ed708a88076ea7825c3995b6572e86281d8121534a154e316e60b4a45"
+    },
+    "initial_full_suite": {
+      "exit_code": 1,
+      "tests": 531,
+      "seconds": 207.696,
+      "failures": 1,
+      "failure": "Old production-only assertion expected exactly two recipe proofs and both Chains inputs unknown.",
+      "resolution": "The original assertions now test exact restored .8 input data through the actual current engine/proof modules; current .9 tests separately require all four selected recipe proofs and the new complete totals."
+    },
+    "focused_current_tests": {
+      "passed": 14,
+      "seconds": 9.498,
+      "scope": "New definitions, full families, exact pairs, source/manifest tampering, detached arguments, source aliases, lower-level applicability and render boundaries. Final full suite includes the later explicit four-proof membership assertion."
+    },
+    "preservation_focused_tests": {
+      "initial_passed": 49,
+      "initial_seconds": 22.306,
+      "final_passed": 14,
+      "final_seconds": 12.334
+    },
+    "compatibility_followup": {
+      "initial_tests": 116,
+      "initial_failures": 1,
+      "cause": "Current-output test still expected .8 build and snapshot.",
+      "resolution": "Advanced those current-output references to .9 while retaining exact .8 history checks. Final focused and aggregate runs passed."
+    },
+    "builders": [
+      {
+        "builder": "build_wisdom_loadout.py",
+        "exit_code": 0,
+        "seconds": 1.359,
+        "output": "Rendered Wisdom loadout blocks: 14 items, 1 artifact, 34 sockets. No mechanics certification implied.\n"
+      },
+      {
+        "builder": "build_stacking_audit.py",
+        "exit_code": 0,
+        "seconds": 3.326,
+        "output": ""
+      },
+      {
+        "builder": "build_crafting_sheet.py",
+        "exit_code": 0,
+        "seconds": 0.08,
+        "output": ""
+      },
+      {
+        "builder": "build_snapshot.py",
+        "exit_code": 0,
+        "seconds": 0.091,
+        "output": "/workspace/scratch/f67d3d0dd89f/guide/versions/11-15-26.9.html\n"
+      }
+    ],
+    "documentation_links": {
+      "links_checked": 141,
+      "fragments_checked": 5,
+      "errors": []
+    },
+    "independent_review": {
+      "status": "no remaining functional blocker",
+      "scope": "Actual production/source/rendering-code diff and in-memory adversarial checks; independent complete baseline comparisons.",
+      "negative_probes": {
+        "component_family_rule_mutants": 57,
+        "initial_source_aliases": 6,
+        "semantic_recipe_mutants": 11
+      },
+      "resolved_finding": "A www.ddonexus.com alias could previously escape the exact-host exclusion. The guard now excludes the Nexus origin and its subdomains, normalizes trailing dots, and has durable public-entry regression coverage. Exact source admission remains limited to pinned records."
+    },
+    "github_ci": "Not run at this precommit checkpoint; inspect the new commit-specific PR run and record its result in the PR.",
+    "browser_ui": {
+      "status": "unverified",
+      "attempt": "Internal cloud browser opening the local index.html candidate",
+      "observed_result": "Browser URL policy rejected file: protocol; only http: and https: are allowed. No bypass or indirect workaround was attempted."
+    },
+    "keyboard_and_print_pagination": "not verified",
+    "live_game": "not performed"
+  },
+  "release": {
+    "pull_request": 47,
+    "draft": true,
+    "merged": false,
+    "published": false
+  },
+  "recorded_at_utc": "2026-11-16T03:09:57.284974+00:00",
+  "approved_components": {
+    "chains-fortification": {
+      "amount": 142,
+      "unit": "percent",
+      "bonus_type": "Enhancement"
+    },
+    "chains-spot": {
+      "amount": 20,
+      "unit": "skill points",
+      "bonus_type": "Competence"
+    }
+  },
+  "added_rules": [
+    "spot-chains-heroism",
+    "spot-chains-luck"
+  ],
+  "source_contract": {
+    "name": "slave-lords-selected-types-v1",
+    "helper": "tools/chains_type_proofs.py",
+    "new_source_records": 3,
+    "nexus_type_records": 2,
+    "wiki_shared_host_record": 1,
+    "unchanged_legacy_source_provenance": true,
+    "recipe_values": "Retained Wiki Legendary columns, separate from Nexus type markup",
+    "spot_variant": "0x7002C66B",
+    "nexus_revision": null,
+    "nexus_client_version": null,
+    "nexus_numeric_parameters": null,
+    "source_accuracy_limit": "Third-party beta recipe metadata, not an authenticated live-game observation. Underlying recipe-data origin and client version were not established."
+  },
+  "preservation": {
+    "outer_scope": "tools/fixtures/wisdom-chains-type/scope.json",
+    "scope_sha256": "ead2766834e69ca5a60aa631a5cc082c2c5f0fc0a0fb4e5af1b1da51fffd3159",
+    "reversed_production_paths": 10,
+    "unique_reversal_contexts": 97,
+    "literal_preserved_files": 201,
+    "literal_preserved_categories": {
+      "evidence": 53,
+      "fixtures": 73,
+      "snapshots": 74,
+      "bow_model": 1
+    },
+    "baseline_results_path": "tools/fixtures/wisdom-chains-type/baseline-results.json",
+    "baseline_results_sha256": "cb7f9f0998c2b8f11c418a44ecc0e4b1b6a7c2df5b87c945790155c7cdb3eb17",
+    "complete_bow_cases_preserved": 39,
+    "complete_old_input_calculator_objects_preserved": 152,
+    "current_level36_objects_changed": 4,
+    "current_level36_objects_unchanged": 72,
+    "current_level35_objects_unchanged": 76,
+    "previous_rule_dictionaries_preserved": 10,
+    "other_component_cores_preserved": true,
+    "selected_manifest_unchanged": true,
+    "priority_count": 32,
+    "minor_artifact": "Yeenoghu's Reign",
+    "exceptions": "Existing Festive-only event exception and narrow owner-accepted HA63 acquisition-evidence exception unchanged"
+  },
+  "observed_selected_gear_results": {
+    "Fortification": {
+      "stat": "Fortification",
+      "channel": "gear",
+      "total": 226,
+      "counted": [
+        "queen-fortification",
+        "chains-fortification"
+      ],
+      "suppressed": [],
+      "excluded": [],
+      "missing_interactions": [],
+      "proofs": [
+        [
+          "queen-fortification",
+          "chains-fortification",
+          "fort-enh-insight-observed"
+        ]
+      ],
+      "complete": true
+    },
+    "Spot": {
+      "stat": "Spot",
+      "channel": "gear",
+      "total": 27,
+      "counted": [
+        "chains-spot",
+        "heroism-spot",
+        "luck-spot"
+      ],
+      "suppressed": [],
+      "excluded": [],
+      "missing_interactions": [],
+      "proofs": [
+        [
+          "chains-spot",
+          "heroism-spot",
+          "spot-chains-heroism"
+        ],
+        [
+          "chains-spot",
+          "luck-spot",
+          "spot-chains-luck"
+        ],
+        [
+          "heroism-spot",
+          "luck-spot",
+          "spot-heroism-luck"
+        ]
+      ],
+      "complete": true
+    },
+    "Intelligence": {
+      "stat": "Intelligence",
+      "channel": "gear",
+      "total": 37,
+      "counted": [
+        "boots-int",
+        "solar-int",
+        "lunar-int",
+        "festive-int",
+        "dimlight-int",
+        "glabrezu-insight-int",
+        "chains-quality-int"
+      ],
+      "suppressed": [
+        "celestial-profane-intelligence",
+        "globe-intelligence"
+      ],
+      "excluded": [],
+      "missing_interactions": [],
+      "proofs": [
+        [
+          "lunar-int",
+          "celestial-profane-intelligence",
+          "same-type-best"
+        ],
+        [
+          "dimlight-int",
+          "globe-intelligence",
+          "same-type-best"
+        ],
+        [
+          "boots-int",
+          "solar-int",
+          "artifact-other-types"
+        ],
+        [
+          "boots-int",
+          "lunar-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "boots-int",
+          "festive-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "boots-int",
+          "dimlight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "boots-int",
+          "glabrezu-insight-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "boots-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "solar-int",
+          "lunar-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "festive-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "dimlight-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "glabrezu-insight-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "chains-quality-int",
+          "artifact-other-types"
+        ],
+        [
+          "lunar-int",
+          "festive-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "lunar-int",
+          "dimlight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "lunar-int",
+          "glabrezu-insight-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "lunar-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "festive-int",
+          "dimlight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "festive-int",
+          "glabrezu-insight-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "festive-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "dimlight-int",
+          "glabrezu-insight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "dimlight-int",
+          "chains-quality-int",
+          "exceptional-other-types"
+        ],
+        [
+          "glabrezu-insight-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ]
+      ],
+      "complete": true
+    }
+  },
+  "delivery": {
+    "authorized_destination": "existing draft PR47 on feat/wisdom-loadout-priorities",
+    "expected_parent": "30ce02c4e823ae92a1cd2dde4db99fa60ad825d9",
+    "gate": "Only advance the branch if expected parent still matches; report resulting commit and CI in PR metadata.",
+    "merge_and_publication": "outside this approval"
+  }
+}

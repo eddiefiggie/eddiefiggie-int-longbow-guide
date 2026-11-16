@@ -1,18 +1,33 @@
 """Behavioral regressions for source-bound arithmetic and evidence boundaries.
 
-These checks test what the supplied evidence is allowed to establish, not live DDO.
+These checks preserve the full pre-Wisdom evidence engine regression corpus on
+the exact-restored predecessor.  test_wisdom_loadout separately exercises the
+current production ledger and renderer.  Neither set certifies live DDO.
 """
 import copy
 import json
 import unittest
 from pathlib import Path
 import stacking_audit as audit
-from build_stacking_audit import detail, summary, validate_guide
+from wisdom_preservation import (historical_renderer, predecessor_index,
+                                predecessor_ledger, predecessor_file_text)
+
+
+def detail(data):
+    return historical_renderer().detail(data)
+
+
+def summary(data):
+    return historical_renderer().summary(data)
+
+
+def validate_guide(html, data):
+    return historical_renderer().validate_guide(html, data)
 
 
 class StackingAuditTests(unittest.TestCase):
     def setUp(self):
-        self.data=audit.load()
+        self.data=predecessor_ledger()
 
     def component(self,data,cid):
         return next(c for c in data['components'] if c['id']==cid)
@@ -107,7 +122,7 @@ class StackingAuditTests(unittest.TestCase):
                 result=audit.subtotal(data,'MRR')
                 self.assertIn('defense-mrr',result['excluded'])
                 self.assertFalse(result['complete'])
-                with self.assertRaises(AssertionError):validate_guide((audit.ROOT/'index.html').read_text(),data)
+                with self.assertRaises(AssertionError):validate_guide(predecessor_index(),data)
 
     def test_interaction_rule_provenance_is_required_even_when_quote_is_real(self):
         for field, pointer in [('revision', 'revision_pointer'), ('observed', 'observed_pointer')]:
@@ -121,7 +136,7 @@ class StackingAuditTests(unittest.TestCase):
                 self.assertIsNone(result['total'])
                 self.assertTrue(result['missing_interactions'])
                 self.assertIn('Unverified provenance: excluded from calculations',detail(data))
-                with self.assertRaises(AssertionError):validate_guide((audit.ROOT/'index.html').read_text(),data)
+                with self.assertRaises(AssertionError):validate_guide(predecessor_index(),data)
 
     def test_fixed_factual_clauses_require_source_provenance(self):
         for sid in ['augment-min-level','augment-values','skull-con','nearly-complete','cut-to-soul-fresh','marksmanship-rule']:
@@ -159,7 +174,7 @@ class StackingAuditTests(unittest.TestCase):
                 with self.assertRaises(AssertionError):detail(data)
 
     def test_live_body_contributions_match_derived_totals_and_do_not_restore_fortification(self):
-        html=(audit.ROOT/'index.html').read_text()
+        html=predecessor_index()
         for old,new in [('unverified gear PRR (modeled raw 133)','133 gear PRR'),('unverified gear MRR (modeled raw 73, before caps)','73 gear MRR'),('Combined Fortification remains unverified','Fortification is 100% from one augment'),('Your own comes from items.','Item fortification is an enhancement bonus that stacks with Insightful Fortification. Your own comes from items.')]:
             with self.subTest(claim=old),self.assertRaises(AssertionError):
                 validate_guide(html.replace(old,new),self.data)
@@ -182,14 +197,14 @@ class StackingAuditTests(unittest.TestCase):
         with self.assertRaises(AssertionError):audit.validate(data)
 
     def test_summary_changes_when_component_qualification_is_downgraded(self):
-        html=(audit.ROOT/'index.html').read_text()
+        html=predecessor_index()
         for cid in ['goggles-ds','solar-sneak','ring-threat','healing-amp']:
             data=copy.deepcopy(self.data);self.component(data,cid)['state']='unknown'
             audit.validate(data)
             with self.subTest(component=cid),self.assertRaises(AssertionError):validate_guide(html,data)
 
     def test_summary_hidden_ancestor_is_rejected(self):
-        html=(audit.ROOT/'index.html').read_text();block=summary(self.data)
+        html=predecessor_index();block=summary(self.data)
         for wrapper in ['div hidden','template','details']:
             mutated=html.replace(block,'<'+wrapper+'>'+block+'</'+wrapper.split()[0]+'>')
             with self.subTest(wrapper=wrapper),self.assertRaises(AssertionError):validate_guide(mutated,self.data)
@@ -259,12 +274,12 @@ class StackingAuditTests(unittest.TestCase):
         with self.assertRaises(AssertionError):audit.doubleshot_effective(-1)
 
     def test_rendered_guide_and_detail_are_current_calculated_results(self):
-        html=(audit.ROOT/'index.html').read_text()
+        html=predecessor_index()
         self.assertTrue(validate_guide(html,self.data))
-        self.assertEqual((audit.ROOT/'endgame-stacking-audit.html').read_text(),detail(self.data))
+        self.assertEqual(predecessor_file_text('endgame-stacking-audit.html'),detail(self.data))
 
     def test_summary_hidden_removed_stale_or_duplicate_is_rejected(self):
-        html=(audit.ROOT/'index.html').read_text();block=summary(self.data)
+        html=predecessor_index();block=summary(self.data)
         mutants=[html.replace(block,''),html.replace(block,block+block),
                  html.replace('id="selected-stacking-summary"','hidden id="selected-stacking-summary"'),
                  html.replace('<td>108</td>','<td>109</td>')]
@@ -272,7 +287,7 @@ class StackingAuditTests(unittest.TestCase):
             with self.assertRaises(AssertionError):validate_guide(mutated,self.data)
 
     def test_unsupported_historical_claims_remain_in_qualified_log(self):
-        html=(audit.ROOT/'index.html').read_text()
+        html=predecessor_index()
         self.assertTrue(validate_guide(html,self.data))
         from test_lamordia_handling import Document
         old=[n for n in Document(html).root.nodes('details') if n.attrs.get('id')=='endgame-historical-notes'][0]

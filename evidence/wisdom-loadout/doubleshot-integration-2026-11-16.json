@@ -1,0 +1,611 @@
+{
+  "schema_version": 1,
+  "build": "11-16-26.2",
+  "status": "Completed bounded implementation with passing precommit checks; delivered commit and exact-head CI are recorded separately in draft PR47.",
+  "recorded_at_utc": "2026-11-16T07:06:13.325399+00:00",
+  "report_timezone": "America/Los_Angeles",
+  "report_local_date": "2026-11-15",
+  "build_label_note": "Continues the existing 11-16-26.1 technical build sequence; the visible update date uses America/Los_Angeles.",
+  "startup": {
+    "schema_version": 1,
+    "started_at_utc": "2026-11-16T06:02:47.163280+00:00",
+    "ended_at_utc": "2026-11-16T06:02:47.375994+00:00",
+    "repository": "/workspace/scratch/f67d3d0dd89f/guide",
+    "remote_repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "approved_source_ref": "feat/wisdom-loadout-priorities",
+    "immutable_source_sha": "dca599357207c5861d2819358f7d011bba5d6dd0",
+    "immutable_source_tree": "239b0303b28572df40cda9d9838d76cde2365d0c",
+    "approved_option": 1,
+    "approved_scope": "Qualify selected Quickblade Doubleshot; add exactly six non-Artifact gear-Doubleshot pairs under a17-rule successor; preserve old profiles/results and all selections; builders/full tests/CI; update draft PR47; no merge/publication.",
+    "actual_initial_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "actual_initial_branch": "feat/wisdom-loadout-priorities",
+    "local_mirror_explanation": "Pre-existing intentional staged mirror: local HEAD remains5ded base; index/all320tracked bytes match approved dca commit. Do not fetch/reset/switch refs or silently alter this state.",
+    "git_index_sha256": "c9d6418b72056ae15cbea236cd12948298396df48005c9cc86f84a9526270c08",
+    "initial_staged_paths": 129,
+    "inspection_method": "Read-only actual file hashes and Git index entry/byte comparison to audited immutable commit with GIT_OPTIONAL_LOCKS=0.",
+    "checks": {
+      "files_match_audited_commit": true,
+      "index_bytes_match_audited_state": true,
+      "index_entries_match_audited_commit": true,
+      "local_head_is_expected_intentional_mirror_base": true,
+      "branch_matches": true,
+      "no_unstaged": true,
+      "no_untracked": true
+    },
+    "gate_result": "PASS",
+    "remote_gate": {
+      "head_sha": "dca599357207c5861d2819358f7d011bba5d6dd0",
+      "tree_sha": "239b0303b28572df40cda9d9838d76cde2365d0c",
+      "draft": true,
+      "state": "open",
+      "merged": false,
+      "method": "Independent GitHub PR metadata and Git commit resource fetched during startup; exact head/tree equal approved audited checkpoint."
+    }
+  },
+  "source_register": {
+    "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+    "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+    "bytes": 59007,
+    "scope": "12 scoped observations across 11 Wiki pages plus separately identified retained source, host and selection context; original observation times are not refreshed.",
+    "pre_freeze_provenance_correction": {
+      "recorded_at_utc": "2026-11-16T06:13:10.595712+00:00",
+      "before_sha256": "39fd3dff3338b14ebb0f7b0a8bab9181c684e1eab2d42766fa4facf6920d690b",
+      "after_sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "reason": "Before proof/code freeze, retain the completed audit_interpretation exactly, including its original implementation_authorized=false. Record later owner authorization only under integration_provenance. No source observation or mechanic changed.",
+      "original_audit_interpretation_equal": true,
+      "all_original_observations_equal": true
+    }
+  },
+  "approved_components": [
+    "quickblade-ds"
+  ],
+  "existing_native_definitions_preserved": [
+    "goggles-ds",
+    "ring-ds",
+    "boots-ds",
+    "armor-ds"
+  ],
+  "added_rules": [
+    "doubleshot-selected-six-pairs"
+  ],
+  "approved_positive_pairs": [
+    [
+      "goggles-ds",
+      "ring-ds"
+    ],
+    [
+      "goggles-ds",
+      "boots-ds"
+    ],
+    [
+      "goggles-ds",
+      "armor-ds"
+    ],
+    [
+      "ring-ds",
+      "boots-ds"
+    ],
+    [
+      "ring-ds",
+      "armor-ds"
+    ],
+    [
+      "boots-ds",
+      "armor-ds"
+    ]
+  ],
+  "existing_artifact_rule_reuses": [
+    [
+      "quickblade-ds",
+      "goggles-ds"
+    ],
+    [
+      "quickblade-ds",
+      "ring-ds"
+    ],
+    [
+      "quickblade-ds",
+      "boots-ds"
+    ],
+    [
+      "quickblade-ds",
+      "armor-ds"
+    ]
+  ],
+  "source_contract": {
+    "contract": "selected-gear-doubleshot-v1",
+    "new_profile_rules": 17,
+    "old_profiles_retained": [
+      7,
+      9,
+      10,
+      12,
+      16
+    ],
+    "boundary": "Exact selected five-member gear-Doubleshot family; three distinct equipped Quickblade hosts, ordinary Colorless/Green compatibility, one crafted Chains Green slot, full-kit ML36, exact actual source bytes and original metadata; every direct proof and subtotal checks its own context."
+  },
+  "preservation": {
+    "baseline_commit": "dca599357207c5861d2819358f7d011bba5d6dd0",
+    "baseline_tree": "239b0303b28572df40cda9d9838d76cde2365d0c",
+    "baseline_results_sha256": "153b654bfa877a1a8e9578ae044f788d481a27c991a3c239b6181a767cb94dd2",
+    "expected_current_result_changes": 2,
+    "expected_unchanged_current_results": 150,
+    "complete_bow_cases_to_preserve": 39,
+    "status": "PASS",
+    "old_input_full_result_objects_preserved": 152,
+    "current_result_objects_changed": 2,
+    "current_result_objects_unchanged": 150,
+    "level35_result_objects_unchanged": 76,
+    "complete_bow_cases_preserved": 39,
+    "protected_files_unchanged": 215,
+    "prior_scope_fixtures_unchanged": 18,
+    "exact_reversible_production_files": 8,
+    "exact_reversal_hunks": 46,
+    "scope_path": "tools/fixtures/wisdom-doubleshot/scope.json",
+    "scope_sha256": "1f6b666547467e17c2d5f19ea4820f0697e074fa71eec1d2e4f5b016b0d9d841",
+    "scope_bytes": 604510,
+    "preserved_manifest_sha256": "f5fbec7f8490243fc0c70823903f982db494e4392ad452381044c122292f3c39",
+    "actual_current_old_profiles_tested": [
+      7,
+      9,
+      10,
+      12,
+      16
+    ],
+    "current_rule_profile": 17,
+    "limits": "Complete result objects include counted, excluded, suppressed and missing-interaction fields and every proof; preservation is software evidence, not live-game validation."
+  },
+  "verification": {
+    "builders": {
+      "status": "PASS",
+      "runs": [
+        {
+          "command": [
+            "python3",
+            "tools/build_wisdom_loadout.py"
+          ],
+          "started_at_utc": "2026-11-16T06:22:20.053257+00:00",
+          "ended_at_utc": "2026-11-16T06:22:28.275179+00:00",
+          "seconds": 8.221923607001372,
+          "exit_code": 0,
+          "status": "PASS",
+          "log_sha256": "42c4c97f128468e3a34c4d3936a8d388c52ae7b940ae4da4bca23b939d8e4c33",
+          "changed_paths_during_command": [
+            "index.html"
+          ]
+        },
+        {
+          "command": [
+            "python3",
+            "tools/build_stacking_audit.py"
+          ],
+          "started_at_utc": "2026-11-16T06:22:34.135438+00:00",
+          "ended_at_utc": "2026-11-16T06:22:55.629237+00:00",
+          "seconds": 21.493803152996406,
+          "exit_code": 0,
+          "status": "PASS",
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "changed_paths_during_command": [
+            "endgame-stacking-audit.html",
+            "evidence/endgame-stacking/source-excerpts.json",
+            "index.html"
+          ]
+        },
+        {
+          "command": [
+            "python3",
+            "tools/build_crafting_sheet.py"
+          ],
+          "started_at_utc": "2026-11-16T06:23:12.990845+00:00",
+          "ended_at_utc": "2026-11-16T06:23:13.187369+00:00",
+          "seconds": 0.1965232750007999,
+          "exit_code": 0,
+          "status": "PASS",
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "changed_paths_during_command": [
+            "heroic-crafting-print.html"
+          ]
+        },
+        {
+          "command": [
+            "python3",
+            "tools/build_snapshot.py"
+          ],
+          "started_at_utc": "2026-11-16T06:23:15.943777+00:00",
+          "ended_at_utc": "2026-11-16T06:23:16.173230+00:00",
+          "seconds": 0.22945243600406684,
+          "exit_code": 0,
+          "status": "PASS",
+          "log_sha256": "e2590d0775e1ae5fab67003130b1dc74ee6d947f471a1d1bd190ac72a4051615",
+          "changed_paths_during_command": [
+            "versions/11-16-26.2.html"
+          ]
+        }
+      ]
+    },
+    "focused_tests": {
+      "status": "PASS after disclosed test-harness corrections",
+      "new_runtime": {
+        "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_wisdom_doubleshot.py' -v",
+        "test_count": 24,
+        "duration_seconds": 37.976,
+        "failures": 0,
+        "errors": 0,
+        "run_count": 1,
+        "files": {
+          "tools/stacking_audit.py": "fe36a1e65d177af89577e3d1fd7968b3e4e5037878e60d5806fff8906daf96da",
+          "tools/wisdom_doubleshot_proofs.py": "feebe0ec8b39391260474c1f27d5a40fbc52d6f4d067da80a5ee1a978a49ab41",
+          "tools/fixtures/endgame-stacking/ledger.json": "775a7d5a4dec1794b2f070f9fb0fb055ad8025e366886bbdd1d802e8f01cb3c0",
+          "tools/test_wisdom_doubleshot.py": "ac27d0afe1b6df44bcf211d3cb26039a9e072cfef0b89c06610f61ac92e66054"
+        }
+      },
+      "current_content": {
+        "attempts": [
+          {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools",
+              "-p",
+              "test_wisdom_doubleshot_content.py",
+              "-v"
+            ],
+            "started_at_utc": "2026-11-16T06:23:27.615225+00:00",
+            "ended_at_utc": "2026-11-16T06:23:43.485699+00:00",
+            "seconds": 15.87047614799667,
+            "exit_code": 1,
+            "status": "FAIL",
+            "log_sha256": "9312bb2e32ce9685cc852308c6b467764ae654f85530fc326a69bdcc45974d56",
+            "changed_paths_during_command": [],
+            "test_count": 3,
+            "unittest_duration_seconds": 15.535
+          },
+          {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools",
+              "-p",
+              "test_wisdom_doubleshot_content.py",
+              "-v"
+            ],
+            "started_at_utc": "2026-11-16T06:24:33.256852+00:00",
+            "ended_at_utc": "2026-11-16T06:24:50.033279+00:00",
+            "seconds": 16.77642970699526,
+            "exit_code": 1,
+            "status": "FAIL",
+            "log_sha256": "cf2f3b28ac54f4f703478106a508ae1667b7de2eefc5ea2db0470f35bc2d02f5",
+            "changed_paths_during_command": [],
+            "test_count": 3,
+            "unittest_duration_seconds": 16.387
+          },
+          {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools",
+              "-p",
+              "test_wisdom_doubleshot_content.py",
+              "-v"
+            ],
+            "started_at_utc": "2026-11-16T06:26:03.483686+00:00",
+            "ended_at_utc": "2026-11-16T06:26:20.393511+00:00",
+            "seconds": 16.90982505500142,
+            "exit_code": 0,
+            "status": "PASS",
+            "log_sha256": "0d8b782a9a00f3e618a0c3f3587672ac11198711012c8db6dafa4a2bdebd3be4",
+            "changed_paths_during_command": [],
+            "test_count": 3,
+            "unittest_duration_seconds": 16.558
+          }
+        ],
+        "resolved_findings": [
+          "The first attempt expected AssertionError where the existing recipe renderer uses ValueError to withhold invalid claims. The new test now checks the established exception type.",
+          "The second attempt over-specified the failure message: a missing complete rule profile can trip the earlier required INT guard. The new test checks that rendering raises ValueError and withholds output, without requiring a particular guard order."
+        ],
+        "production_changes_from_corrections": false
+      },
+      "preservation_and_legacy_routes": {
+        "initial_focused_run": {
+          "lane": "Doubleshot exact outer preservation and minimal legacy routing",
+          "scope": "focused only; no builders, full aggregate, Git or remote writes",
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-m",
+            "unittest",
+            "-v",
+            "test_wisdom_doubleshot_preservation",
+            "test_wisdom_ability_preservation",
+            "test_wisdom_abilities",
+            "test_feat_summary_routing",
+            "test_roadmap_scroll_cue",
+            "test_wisdom_offense"
+          ],
+          "cwd": "/workspace/scratch/f67d3d0dd89f/guide/tools",
+          "log": "/workspace/scratch/92680a97b4fb/doubleshot-integration/preservation-focused-initial.log",
+          "started_at_utc": "2026-11-16T06:23:42.792568+00:00",
+          "input_count": 249,
+          "ended_at_utc": "2026-11-16T06:28:19.846377+00:00",
+          "wall_duration_seconds": 277.0538150680004,
+          "exit_code": 1,
+          "input_drift": [],
+          "test_count": 67,
+          "unittest_duration_seconds": 276.733,
+          "outcome": "failed"
+        },
+        "initial_passes": 63,
+        "initial_failures": [
+          "test_actual_new_packet_bytes_cannot_be_blessed_by_rehashing_caller_metadata",
+          "test_actual_reused_and_conflict_source_bytes_are_checked_after_prior_success",
+          "test_actual_selection_host_socket_and_prerequisite_bytes_are_pinned",
+          "test_prior_sources_rules_unrelated_components_and_skull_core_remain_literal"
+        ],
+        "corrections": [
+          {
+            "file": "tools/test_wisdom_abilities.py",
+            "change": "Add only literal evidence/wisdom-loadout/loadout.json to the isolated source fixture, so the actual current DS prerequisites pass before WIS/CON mutation controls."
+          },
+          {
+            "file": "tools/test_wisdom_abilities.py",
+            "change": "Pin literal old and new Tip179 source-role text and allow only that exact single old-role change; every old source dictionary and other role remains exact."
+          }
+        ],
+        "corrected_tests_run": {
+          "lane": "Doubleshot exact outer preservation and minimal legacy routing",
+          "scope": "focused only; no builders, full aggregate, Git or remote writes",
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-m",
+            "unittest",
+            "-v",
+            "test_wisdom_abilities.CurrentAbilityTests.test_actual_new_packet_bytes_cannot_be_blessed_by_rehashing_caller_metadata",
+            "test_wisdom_abilities.CurrentAbilityTests.test_actual_reused_and_conflict_source_bytes_are_checked_after_prior_success",
+            "test_wisdom_abilities.CurrentAbilityTests.test_actual_selection_host_socket_and_prerequisite_bytes_are_pinned",
+            "test_wisdom_abilities.CurrentAbilityTests.test_prior_sources_rules_unrelated_components_and_skull_core_remain_literal"
+          ],
+          "cwd": "/workspace/scratch/f67d3d0dd89f/guide/tools",
+          "log": "/workspace/scratch/92680a97b4fb/doubleshot-integration/preservation-focused-corrections-final.log",
+          "started_at_utc": "2026-11-16T06:29:02.627415+00:00",
+          "input_count": 249,
+          "ended_at_utc": "2026-11-16T06:29:10.741207+00:00",
+          "wall_duration_seconds": 8.113799924998602,
+          "exit_code": 0,
+          "input_drift": [],
+          "test_count": 4,
+          "unittest_duration_seconds": 7.871,
+          "outcome": "passed"
+        },
+        "coverage_conclusion": "63 unaffected initial passes plus all four corrected tests passing; the full 67 were not rerun as a group. Required full aggregate is parent-owned and pending.",
+        "result_invariants_verified": [
+          "All 152 complete literal .1 input results match on actual current engine.",
+          "Only current level36 gear Doubleshot default/force objects change; result35, ten proofs, no exclusions or missing pairs.",
+          "Other150 complete current results unchanged, including all76 level35 results.",
+          "All39 complete historical bow inputs, layers and result tuples remain literal.",
+          "Exact seven/nine/ten/twelve/sixteen historical profiles remain accepted by actual current engine; actual current profile17.",
+          "Actual-current WIS18, CON17 subset/fullnull and all Skull exclusion controls retained.",
+          "All215 protected paths remain byte-identical and eight production paths reverse to fixed approved .1 hashes."
+        ]
+      },
+      "current_loadout_test_followup": {
+        "record_sha256": "152f61fb839c2118f3eb64d3a665ce7f70ec5d2b68376f989e01b4aabce5350a",
+        "targeted_test_count": 2,
+        "unittest_duration_seconds": 9.714,
+        "status": "PASS",
+        "input_drift": [],
+        "scope": "Only two outdated current-loadout assertions changed. Other sets remain unknown, historical promotion negatives remain literal, and damaged-family validation/subtotal/direct-proof/rendering rejection remains required."
+      }
+    },
+    "aggregate_tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "started_at_utc": "2026-11-16T06:49:06.565474+00:00",
+      "ended_at_utc": "2026-11-16T07:06:06.711079+00:00",
+      "seconds": 1020.1456053189977,
+      "exit_code": 0,
+      "status": "PASS",
+      "log_sha256": "85a5707770a7f138362f208068e7c229ba990d4652c4f739dd7e9e1ca76b42c1",
+      "changed_paths_during_command": [],
+      "test_count": 608,
+      "unittest_duration_seconds": 1019.271,
+      "initial_failed_attempt": {
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tools",
+          "-p",
+          "test_*.py",
+          "-v"
+        ],
+        "started_at_utc": "2026-11-16T06:29:48.954797+00:00",
+        "ended_at_utc": "2026-11-16T06:47:18.157565+00:00",
+        "seconds": 1049.2027696060031,
+        "exit_code": 1,
+        "status": "FAIL",
+        "log_sha256": "7235d52883d94335bfa6371d6c2d870b4f8cbae675c47d261c7b0c0854c882fc",
+        "changed_paths_during_command": [],
+        "test_count": 608,
+        "unittest_duration_seconds": 1048.289
+      },
+      "initial_failure_resolution": {
+        "failure_count": 2,
+        "findings": [
+          "The old actual-current set test still expected Quickblade to be unknown. It now checks only the approved source-bound Quickblade qualification and retains the other sets as unknown/excluded.",
+          "The old current-summary test expected an altered goggles definition to remain valid. The new complete-family contract rejects it; the corrected test requires validation, subtotal, both Artifact-proof directions and rendering to withhold that claim."
+        ],
+        "changed_path": "tools/test_wisdom_loadout.py",
+        "production_or_evidence_changed": false,
+        "targeted_followup": "Two affected tests passed before the full documented suite was rerun."
+      },
+      "input_note": "Every repository file remained byte-identical during this run. Only this verification receipt is finalized afterward; code, tests, source packets, fixtures and generated outputs remain frozen. Exact delivered-head CI is recorded in PR47."
+    },
+    "independent_review": {
+      "status": "PASS; no remaining blocking findings",
+      "source_and_content": {
+        "record_sha256": "4f4bc007e3ce45ab2a046676c90e6e510416edd24ca340b83718e4fbcdf0030f",
+        "checks": 11,
+        "blocking_findings": 0,
+        "scope": "Literal source observations, retained bindings and current documentation/static renderer scope.",
+        "authorship_disclosure": "Reviewer previously authored the approved documentation additions. This pass independently checks the final packet, root changes to documentation and root renderer changes against original source/audit records; it is not independent authorship review of all documentation."
+      },
+      "runtime_and_generated_content": {
+        "record_sha256": "6ac8a98a8f9c52d4878c4d22064b3ab393e0b79e342787a2881bb4eaba0a2b0d",
+        "runtime_probes_passed": 35,
+        "runtime_probe_count": 35,
+        "runtime_seconds": 6.274114,
+        "static_generated_checks_passed": 21,
+        "blocking_findings": 0,
+        "scope": "Independent public-API adversarial probes and static generated output/source-link checks, separate from browser or live-game checks."
+      },
+      "complete_diff_and_preservation": {
+        "record_sha256": "5e6b677b95ac1bd16676502c03bd565fa6091e51ef49c2bb74c332a775731b54",
+        "checks_passed": 30,
+        "blocking_findings": 0,
+        "modified_paths": 24,
+        "added_paths": 10,
+        "deleted_paths": 0,
+        "authorship_disclosure": "This reviewer authored the new Doubleshot proof helper, engine/ledger changes and functional tests. This is a read-only delta/preservation review, not independent review of those authored implementations. Preservation machinery, historical compatibility adapters, documentation and renderers were authored by other agents."
+      }
+    },
+    "ci": {
+      "status": "Precommit receipt: the delivered commit SHA and its GitHub Guide checks result are recorded in draft PR47 after delivery. This file does not claim an unrun CI pass.",
+      "postcommit_record": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/pull/47"
+    },
+    "browser_layout": {
+      "status": "not run"
+    },
+    "accessibility_and_keyboard": {
+      "status": "not run"
+    },
+    "print_pagination": {
+      "status": "not run"
+    },
+    "live_game": {
+      "status": "not performed"
+    },
+    "new_optimizer_solve": {
+      "status": "not performed"
+    }
+  },
+  "release": {
+    "merge_authorized": false,
+    "publication_authorized": false,
+    "pr": 47,
+    "draft": true
+  },
+  "delivery": {
+    "authorized_destination": "Existing draft PR47 on feat/wisdom-loadout-priorities",
+    "expected_parent": "dca599357207c5861d2819358f7d011bba5d6dd0",
+    "gate": "Verify the expected parent still matches before advancing the branch without force; record the resulting head and CI in PR metadata.",
+    "postcommit_record": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide/pull/47"
+  },
+  "prepared_at_utc": "2026-11-16T06:11:37.818467+00:00",
+  "verified_selected_gear_outcomes": {
+    "level36_Doubleshot": {
+      "total": 35,
+      "complete": true,
+      "contribution_count": 5,
+      "pair_proofs": 10
+    },
+    "level35_Doubleshot": {
+      "total": null,
+      "complete": false
+    },
+    "unchanged": {
+      "Intelligence": 37,
+      "Fortification": 226,
+      "Spot": 27,
+      "Wisdom": 18,
+      "Constitution_subset": 17,
+      "Constitution_full": null
+    },
+    "full_level36_result": {
+      "stat": "Doubleshot",
+      "channel": "gear",
+      "total": 35,
+      "counted": [
+        "goggles-ds",
+        "ring-ds",
+        "boots-ds",
+        "armor-ds",
+        "quickblade-ds"
+      ],
+      "suppressed": [],
+      "excluded": [],
+      "missing_interactions": [],
+      "proofs": [
+        [
+          "goggles-ds",
+          "ring-ds",
+          "doubleshot-selected-six-pairs"
+        ],
+        [
+          "goggles-ds",
+          "boots-ds",
+          "doubleshot-selected-six-pairs"
+        ],
+        [
+          "goggles-ds",
+          "armor-ds",
+          "doubleshot-selected-six-pairs"
+        ],
+        [
+          "goggles-ds",
+          "quickblade-ds",
+          "artifact-other-types"
+        ],
+        [
+          "ring-ds",
+          "boots-ds",
+          "doubleshot-selected-six-pairs"
+        ],
+        [
+          "ring-ds",
+          "armor-ds",
+          "doubleshot-selected-six-pairs"
+        ],
+        [
+          "ring-ds",
+          "quickblade-ds",
+          "artifact-other-types"
+        ],
+        [
+          "boots-ds",
+          "armor-ds",
+          "doubleshot-selected-six-pairs"
+        ],
+        [
+          "boots-ds",
+          "quickblade-ds",
+          "artifact-other-types"
+        ],
+        [
+          "armor-ds",
+          "quickblade-ds",
+          "artifact-other-types"
+        ]
+      ],
+      "complete": true
+    }
+  }
+}

@@ -1,0 +1,1311 @@
+{
+  "schema_version": 1,
+  "record_type": "scoped_browser_source_observations",
+  "task": "INTiana Guide selected-gear Doubleshot read-only audit",
+  "report_local_date": "2026-11-15",
+  "report_timezone": "America/Los_Angeles",
+  "method": "Scoped text and metadata transcribed from the internal browser's returned accessibility and read-only rendered-DOM observations. These are excerpts, not raw HTTP responses, a complete page archive, historical-revision byte authentication, or live-game observations. Timestamps are the actual browser-read intervals; report compilation occurs later.",
+  "wiki_attribution": {
+    "publisher": "DDO wiki and its contributors",
+    "license_observed_on_source_pages": "Attribution-ShareAlike 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "derivative_notice": "The scoped excerpts below are attributed to their individual source URLs. Excerpt selection and audit annotations are additions; original source wording is retained where labeled exact."
+  },
+  "common_limits": [
+    "Anonymous cached Wiki pages were observed. Literal cache notices are retained, including the anomalous negative value on Augment Slot; they do not establish cache freshness independently.",
+    "Displayed Permanent link URLs identify page metadata. Their historical endpoints were not independently reopened or compared byte-for-byte.",
+    "Normal page text and transcluded tooltip/template text can have different maintenance histories; a displayed item-page revision does not freeze every transclusion.",
+    "The item tooltip parentheticals describing an additional hit are outside this audit's adoption. Only the stated Doubleshot amounts and bonus types are used; existing damage-resolution wording is unchanged.",
+    "The evidence supports a conditional selected configuration. It does not establish ownership, completed crafting, equipped activation, or live combat behavior.",
+    "Quickblade's Doublestrike text is retained as source context but no new Doublestrike calculator qualification is proposed."
+  ],
+  "observations": [
+    {
+      "id": "augment-system",
+      "started_at_utc": "2026-11-16T05:04:12.273Z",
+      "ended_at_utc": "2026-11-16T05:04:14.556Z",
+      "source_url": "https://ddowiki.com/page/Augment_Slot#Augment_Slot",
+      "title": "Augment Slot - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Augment_Slot&oldid=717357",
+      "footer_exact": "This page was last modified 20:30, September 22, 2026 (Update 81.3) by Zav. Based on work by others.",
+      "cache_notice_exact_fragment": "(this is up to -4 hours old)",
+      "exact_excerpts": {
+        "ordinary_colorless": "Note: The on-screen description of Augment Slots neglect to mention that Colorless augments can be used anywhere. It's good to mentally add the words \"...and Colorless\" to the description. For instance, \"This item has a Purple Augment Slot. It can be combined with a Blue, Red, or Colorless Augment.\"",
+        "minimum_level": "Every augment has an associated minimum level requirement to use it. Slotting any augment also increases the slotted item’s minimum level to the level of the slotted augment for as long as that augment is slotted, unless the item's minimum level is already equal or higher.",
+        "set_augment_rules": "These level 30 Set augments can be slotted in any augment color slot. The item into which they are slotted becomes part of a unique three-piece item set. They can be crafted in the Hut from Beyond (lower north harbor) in the Cauldron of Cadence. Be aware that slotting a Set Augment into an item with any existing sets will suppress those sets while the Set Augment is slotted, so you should avoid slotting set augments into items that are part of sets you intend to complete.",
+        "expanded_quickblade_row": "Set Augment: Quickblade\tColorless\t30\t\nThread of Fate x 50\nEmpty Soul Vessel\nGuided Sight\n\t3 Pieces Equipped: +15% Artifact bonus to Doublestrike and Doubleshot\tRiding the Storm Out"
+      },
+      "scope": "Ordinary Colorless/Green slots and selected Quickblade only. No inference for Sun, Moon, filigree or other special slots. The set table was expanded before the Quickblade row was read."
+    },
+    {
+      "id": "quickblade-own-item",
+      "started_at_utc": "2026-11-16T05:06:23.132Z",
+      "ended_at_utc": "2026-11-16T05:06:23.156Z",
+      "source_url": "https://ddowiki.com/page/Item:Set_Augment:_Quickblade",
+      "title": "I:Set Augment: Quickblade - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Item:Set_Augment:_Quickblade&oldid=643217",
+      "footer_exact": "This page was last modified 17:51, June 1, 2025 (Update 73.3) by The Sneaky One. Based on work by others.",
+      "cache_notice_exact_fragment": "(this is up to 5 hours old)",
+      "exact_item_fields": {
+        "Minimum Level": "30",
+        "Augment Type": "Colorless",
+        "Description": "Slotting this Augment in any Augment Slot will override its Set Bonus to the Quickblade set.\n\nQuickblade:\n\n3 pieces equipped: +15% Artifact bonus to Doublestrike and Doubleshot",
+        "Locations": "Cauldron of Cadence, The Hut from Beyond\n(50) I:Thread of Fate\n(1) I:Empty Soul Vessel\n(1) I:Guided Sight",
+        "Enhancements": "Quickblade"
+      },
+      "observed_set_link": "https://ddowiki.com/page/Named_item_sets#Quickblade",
+      "scope": "Own definition for one 15 Artifact Doubleshot reward at three equipped pieces. Inventory maximum stack size is not an equipped-set multiplier. No procurement or game action performed."
+    },
+    {
+      "id": "set-augment-table-direct",
+      "started_at_utc": "2026-11-16T05:06:46.834Z",
+      "ended_at_utc": "2026-11-16T05:06:48.404Z",
+      "source_url": "https://ddowiki.com/page/Augment_Slot/Set_Augment",
+      "title": "Augment Slot/Set Augment - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Augment_Slot/Set_Augment&oldid=726131",
+      "footer_exact": "This page was last modified 06:52, October 30, 2026 (Update 82.0.1) by DDO wiki user Ulfo. Based on work by others.",
+      "cache_notice_exact_fragment_from_accessibility": "(this is up to 12 hours old)",
+      "headers": [
+        "Set Augment",
+        "Color",
+        "ML",
+        "Items to Consume",
+        "Set bonus effect",
+        "Item drop sites"
+      ],
+      "exact_quickblade_row": "Set Augment: Quickblade\tColorless\t30\t\nThread of Fate x 50\nEmpty Soul Vessel\nGuided Sight\n\t3 Pieces Equipped: +15% Artifact bonus to Doublestrike and Doubleshot\tRiding the Storm Out",
+      "observed_row_display": "table-row",
+      "scope": "The direct subpage was expanded and the actual Quickblade row read. Other set rows are outside the qualification. This and the parent transclusion are not independent authorities."
+    },
+    {
+      "id": "named-sets-quickblade-context",
+      "started_at_utc": "2026-11-16T05:07:35.550Z",
+      "ended_at_utc": "2026-11-16T05:07:40.967Z",
+      "source_url": "https://ddowiki.com/page/Named_item_sets#Quickblade",
+      "title": "Named item sets - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Named_item_sets&oldid=730838#Quickblade",
+      "footer_exact": "This page was last modified 16:49, November 12, 2026 (Update 82.1) by ShoeMaker. Based on work by others.",
+      "cache_notice": null,
+      "cache_limit": "Not captured in the scoped observation; no fresh cache value is invented.",
+      "exact_excerpts": {
+        "activation": "A set bonus provides additional effects when the appropriate number of items in that same \"set\" are worn together.",
+        "deactivation": "Set bonuses are lost if the number of items worn falls below the minimum, and return when the correct number is met again, allowing a character to gear-swap in the middle of a quest and then swap back.",
+        "no_extra_reward": "Wearing more than the listed number of items does not give additional bonuses unless the set bonus states such (see next).",
+        "augment_sets": "Collect 3 of the same BtC raid loot across your account. Take them to the Cauldron of Cadence in the Hut from Beyond and combine them with 50 Threads of Fate and an Empty Soul Vessel each, to forge BtA Colorless Augments. Then slot them into 3 items across equipment slots of one character to gain 3 piece Set Bonueses listed below. Be aware that slotting a Set Augment into an item with any existing sets will suppress those sets while the Set Augment is slotted. For the list of other Essence Augments see Augment Slot#Essence augments."
+      },
+      "quickblade_anchor_observed": "Quickblade",
+      "scope": "Three items across equipment slots, equipped threshold, and existing-set suppression. The anchor alone is not the numeric reward source."
+    },
+    {
+      "id": "goggles-host-and-definition",
+      "started_at_utc": "2026-11-16T05:09:47.770Z",
+      "ended_at_utc": "2026-11-16T05:09:48.797Z",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "title": "I:Legendary Goggles of the Archer - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "footer_exact": "This page was last modified 08:13, May 6, 2026 (Update 79.0.1) by The Sneaky One. Based on work by Thomas Barker.",
+      "cache_notice_exact_fragment_from_accessibility": "(this is up to 8 hours old)",
+      "exact_item_fields": {
+        "Minimum level": "33",
+        "Item Type": "Jewelry / Goggles",
+        "Slot": "Eye"
+      },
+      "observed_slot_labels": [
+        "Green Augment Slot",
+        "Colorless Augment Slot",
+        "Sun Augment Slot"
+      ],
+      "exact_doubleshot_clause": "Passive: 9% Enhancement bonus to Doubleshot.",
+      "exact_slot_tooltips": [
+        "Blue, Green, Yellow, and/or Colorless",
+        "Colorless"
+      ],
+      "scope": "Base item and ordinary Colorless host slot; one native 9 Enhancement definition. The displayed amount/type clause is read from the tooltip DOM, not inferred from the effect label alone."
+    },
+    {
+      "id": "chains-host",
+      "started_at_utc": "2026-11-16T05:11:05.432Z",
+      "ended_at_utc": "2026-11-16T05:11:06.418Z",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "title": "I:Legendary Chains - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "footer_exact": "This page was last modified 19:30, April 21, 2025 (Update 73.1) by The Sneaky One. Based on work by others.",
+      "cache_notice_exact_fragment": "(this is up to 5 hours old)",
+      "exact_item_fields": {
+        "Minimum level": "28",
+        "Item Type": "Jewelry / Necklace",
+        "Slot": "Neck",
+        "Upgradeable?": "Slave Lords Crafting"
+      },
+      "exact_excerpts": {
+        "equip_choice": "This unusual item can be worn in the Neck slot or the Waist slot - it will default to the Neck if both slots are empty when you equip it. The item is always damaged when found.",
+        "augment_channel": "Legendary Slaver's Augment Slot: Apply a Slaver's shard to this item.",
+        "optional_set_channel": "Against the Slave Lords Set Bonus: An Against the Slave Lords Set Bonus can be applied to this item."
+      },
+      "scope": "The base page provides a Slaver's crafting channel, not a pre-existing ordinary Green socket. The selected Waist placement is supported; the Green upgrade is a separate construction premise."
+    },
+    {
+      "id": "yeenoghu-host",
+      "started_at_utc": "2026-11-16T05:11:06.418Z",
+      "ended_at_utc": "2026-11-16T05:11:07.083Z",
+      "source_url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "title": "I:Yeenoghu's Reign - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "footer_exact": "This page was last modified 20:38, July 25, 2026 (Update 81.0.1) by Zav. Based on work by Thomas Barker.",
+      "cache_notice_exact_fragment": "(this is up to 14 hours old)",
+      "exact_item_fields": {
+        "Minimum level": "35",
+        "Item Type": "Jewelry / Bracers",
+        "Slot": "Wrist"
+      },
+      "observed_slot_labels": [
+        "Green Augment Slot",
+        "Yellow Augment Slot",
+        "Blue Augment Slot",
+        "Moon Augment Slot"
+      ],
+      "exact_green_tooltip": "Blue, Green, Yellow, and/or Colorless",
+      "exact_minor_artifact_tip": "This Minor Artifact has a maximum of 5 filigree slots.",
+      "scope": "Native Green host socket and Minor Artifact classification. No additional native Doubleshot, filigree contribution, or Bloodrage behavior is adopted."
+    },
+    {
+      "id": "ring-doubleshot-definition",
+      "started_at_utc": "2026-11-16T05:11:48.670Z",
+      "ended_at_utc": "2026-11-16T05:11:49.552Z",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "title": "I:Legendary Ring of Unnatural Accuracy - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "footer_exact": "This page was last modified 20:27, April 21, 2025 (Update 73.1) by The Sneaky One. Based on work by Thomas Barker and Derek McGoey.",
+      "cache_notice_exact_fragment": "(this is up to 12 hours old)",
+      "exact_item_fields": {
+        "Minimum level": "32",
+        "Item Type": "Jewelry / Ring",
+        "Slot": "Finger"
+      },
+      "exact_doubleshot_clause": "Quality Doubleshot 3%: Passive: 3% Quality bonus to Doubleshot.",
+      "scope": "One native 3 Quality definition, independently corroborating the retained qualified source."
+    },
+    {
+      "id": "boots-doubleshot-definition",
+      "started_at_utc": "2026-11-16T05:11:49.552Z",
+      "ended_at_utc": "2026-11-16T05:11:50.410Z",
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "title": "I:Legendary Coldlight Runners - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "footer_exact": "This page was last modified 08:12, May 6, 2026 (Update 79.0.1) by The Sneaky One. Based on work by Thomas Barker.",
+      "cache_notice_exact_fragment": "(this is up to 16 hours old)",
+      "exact_item_fields": {
+        "Minimum level": "34",
+        "Item Type": "Clothing / Boots",
+        "Slot": "Feet"
+      },
+      "exact_doubleshot_clause": "Insightful Doubleshot 5%: Passive: 5% Insight bonus to Doubleshot.",
+      "scope": "One native 5 Insight definition, independently corroborating the retained qualified source."
+    },
+    {
+      "id": "armor-doubleshot-definition",
+      "started_at_utc": "2026-11-16T05:11:50.410Z",
+      "ended_at_utc": "2026-11-16T05:11:51.181Z",
+      "source_url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "title": "I:Light Armor of the Warblade's Reflection - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "footer_exact": "This page was last modified 08:17, May 6, 2026 (Update 79.0.1) by The Sneaky One. Based on work by ShoeMaker and DDO wiki user BugTime.",
+      "cache_notice_exact_fragment": "(this is up to 6 hours old)",
+      "exact_item_fields": {
+        "Minimum Level": "33",
+        "Armor Type": "Light Armor"
+      },
+      "exact_doubleshot_clause": "Shadow Striker: Passive: +3% Profane bonus to Doublestrike and Doubleshot.",
+      "scope": "One native 3 Profane Doubleshot definition. Adjacent attack-speed clauses and Doublestrike remain outside this adoption."
+    },
+    {
+      "id": "slave-lords-crafted-green-slot",
+      "started_at_utc": "2026-11-16T05:14:35.225Z",
+      "ended_at_utc": "2026-11-16T05:14:51.536Z",
+      "source_url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "title": "Slave Lords Crafting - DDO wiki",
+      "displayed_permalink": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "headers": [
+        "Group",
+        "Enchantment name",
+        "Enchantment value",
+        "Ingredient cost",
+        "Heroic\nML 8",
+        "Legendary\nML 28",
+        "Heroic",
+        "Legendary"
+      ],
+      "exact_excerpts": {
+        "crafting_channels": "The next step is to speak to a barter NPC to exchange the basic ingredients for \"gems\" of different sorts (see below), which will be used to give you the effects on your items. Each of the 3 common and 3 uncommon ingredients allows a different kind of effect on the item, and there are 6 possible to create for each item you will create - prefix, suffix, bonus, extra, augment slot (clear, yellow, blue, or green), and set bonus (your choice of 3 possible). Tables below show what sort of effects can go into each of these.",
+        "green_recipe_row": "Green Augment Slot\t\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars"
+      },
+      "derived_legendary_recipe": {
+        "Legendary Staff Splinters": 100,
+        "Legendary Broken Shackles": 50,
+        "Legendary Chain Links": 50,
+        "Legendary Broken Collars": 50
+      },
+      "metadata_supplement_id": "slave-lords-metadata-supplement",
+      "scope": "The headed Legendary recipe is the cost for one crafted Green slot. It does not create a second socket or prove the owned item has already been upgraded."
+    },
+    {
+      "id": "slave-lords-metadata-supplement",
+      "started_at_utc": "2026-11-16T05:15:00.324Z",
+      "ended_at_utc": "2026-11-16T05:15:00.346Z",
+      "source_url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "footer_exact": "This page was last modified 10:46, September 18, 2026 (Update 81.3) by ShoeMaker. Based on work by others.",
+      "cache_notice_exact_fragment": "(this is up to 16 hours old)",
+      "green_row_dom_observation": "The scoped Green-row HTML was read, with the first ingredient TD containing Heroic 30/20/20/20 and the second TD containing Legendary 100/50/50/50; the Green-slot tooltip explicitly lists Colorless among accepted ordinary colors.",
+      "exact_green_slot_tooltip": "Blue, Green, Yellow, and/or Colorless",
+      "scope": "Separate actual observation interval for metadata and HTML-row structure. Not backdated into the earlier recipe observation."
+    }
+  ],
+  "audit_interpretation": {
+    "new_definition_supported": "quickblade-ds: one 15 Artifact Doubleshot set contribution",
+    "activation_conditions": [
+      "Three distinct selected host items are equipped together",
+      "One Quickblade Colorless ML30 augment occupies each selected ordinary slot",
+      "Legendary Chains has its Green-slot upgrade completed first",
+      "The selected full kit is used at level36 or above"
+    ],
+    "set_suppression": "Any existing host named-set membership is suppressed while its set augment is slotted. Repository inspection found no competing selected set augment or credited native named set on these three hosts; that is a statement about this selection, not unknown owned gear.",
+    "arithmetic_if_bounded_rules_adopted": "9 + 3 + 5 + 3 + 15 = 35 selected-gear Doubleshot percentage points",
+    "current_runtime_promoted": false,
+    "implementation_authorized": false
+  },
+  "integration_provenance": {
+    "source_observations_from": "Completed read-only selected-Doubleshot audit; copied without refreshing source timestamps.",
+    "original_browser_record_sha256": "c60a7e13176dfdd92831b0e179e8cb0bd6ce55f2967edd8a7da1d8a2eb23b6bb",
+    "integration_prepared_at_utc": "2026-11-16T06:03:23.724248+00:00",
+    "approved_source_commit": "dca599357207c5861d2819358f7d011bba5d6dd0",
+    "approved_rule_scope": "One selected Quickblade definition; six exact gear-Doubleshot pairs.",
+    "live_game_test": false,
+    "implementation_authorized": true,
+    "authorization_note": "Owner selected option1 approving this bounded integration after the audit; original observation intervals and completed audit files remain unchanged."
+  },
+  "retained_source_bindings": {
+    "tip179-live-20261115": {
+      "ledger_source_id": "tip179-live-20261115",
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "metadata_fingerprint": "1a69280033c40da1478ebf5380e8b3be50a9369026eee721ecaeb7ea771a1355",
+      "record_pointer": [
+        "captures",
+        "loading-screen-tips"
+      ],
+      "quote_pointer": [
+        "captures",
+        "loading-screen-tips",
+        "scoped_visible_text"
+      ],
+      "exact_fragment": "Different types of bonuses stack",
+      "fragment_start_character": 91,
+      "source_url": "https://ddowiki.com/page/Loading_screen_tips",
+      "url_key": "source_url",
+      "revision": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed": "2026-11-15T22:48:38.253Z",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "freshness_limit": "Original hosted-browser DOM observation 2026-11-15T22:48:38.253Z through 2026-11-15T22:48:38.329Z, retained from the preceding read-only audit. Literal cache notice: (this is up to 4 hours old). Displayed modification date/update prefix: This page was last modified 04:07, April 19, 2022 (Update 53.1). Editor metadata is omitted in this public derivative. The Permanent link was observed, not independently reloaded. This is a source observation, not live-game validation; older source records are unchanged.",
+      "read_only_binding_checks": {
+        "file_sha256": true,
+        "quote_leaf": true,
+        "normal_url": true,
+        "revision": true,
+        "observed": true
+      }
+    },
+    "artifact": {
+      "ledger_source_id": "artifact",
+      "path": "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json",
+      "sha256": "dfd4c246e04ace0dcf5ddcfad983f4e94fbbdd6192465237fd8ab083c0a90b6b",
+      "metadata_fingerprint": "baacef6765852862f63a7d5427fbbf2b2e0159bd2d47f14d4b154c7a80bedfa5",
+      "record_pointer": [
+        "source_receipts",
+        "artifact_competence_exceptional",
+        "sources",
+        0
+      ],
+      "quote_pointer": [
+        "source_receipts",
+        "artifact_competence_exceptional",
+        "sources",
+        0,
+        "exact_source_sections",
+        0,
+        "following_paragraph"
+      ],
+      "exact_fragment": "This bonus stacks with all other bonuses.",
+      "fragment_start_character": 0,
+      "source_url": "https://ddowiki.com/page/Artifact_bonus",
+      "url_key": "observed_normal_url",
+      "revision": "https://ddowiki.com/index.php?title=Artifact_bonus&oldid=636950",
+      "revision_pointer": [
+        "revision_metadata",
+        "permanent_link"
+      ],
+      "observed": "2026-11-02T05:38:21.810Z",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
+      "read_only_binding_checks": {
+        "file_sha256": true,
+        "quote_leaf": true,
+        "normal_url": true,
+        "revision": true,
+        "observed": true
+      }
+    },
+    "stack": {
+      "ledger_source_id": "stack",
+      "path": "evidence/endgame-stacking/stack-live.json",
+      "sha256": "86b1ed2b3f3853d7642b67a52e77e1ce202e62db932998394254ad2d5d4f45c9",
+      "metadata_fingerprint": "5d2bc6dc5301356455e78de391d1756c2947fb050d4121f490a50222a594b2b0",
+      "record_pointer": [],
+      "quote_pointer": [
+        "text"
+      ],
+      "exact_fragment": "Benefits from the same family, like Fortification or False Life, do not stack.",
+      "fragment_start_character": 1869,
+      "source_url": "https://ddowiki.com/page/Stack",
+      "url_key": "url",
+      "revision": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+      "revision_pointer": [
+        "permanentLink"
+      ],
+      "observed": "2026-11-07T19:27:42.604Z",
+      "observed_pointer": [
+        "capturedAt"
+      ],
+      "freshness_limit": "Exact selected visible-DOM excerpt from the stated source observation; not raw response bytes or a live-game test. Anonymous Wiki cache may lag up to five hours. Original receipt identity and capture context are retained.",
+      "read_only_binding_checks": {
+        "file_sha256": true,
+        "quote_leaf": true,
+        "normal_url": true,
+        "revision": true,
+        "observed": true
+      }
+    },
+    "goggles-ds": {
+      "ledger_source_id": "goggles-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "metadata_fingerprint": "eb28b5740eed5f58979ba29fdad50c2bbd92435e2585635485273d13bbcfc259",
+      "record_pointer": [
+        "records",
+        6
+      ],
+      "quote_pointer": [
+        "records",
+        6,
+        "tooltips",
+        0
+      ],
+      "exact_fragment": " Doubleshot 9% Doubleshot 9%: Passive: 9% Enhancement bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+      "fragment_start_character": 0,
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "url_key": "url",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "revision_pointer": [
+        "permanentLink"
+      ],
+      "observed": "2026-11-07T20:08:30.460Z",
+      "observed_pointer": [
+        "capturedAt"
+      ],
+      "freshness_limit": "Exact selected visible-DOM excerpt from the stated source observation; not raw response bytes or a live-game test. Anonymous Wiki cache may lag up to five hours. Original receipt identity and capture context are retained.",
+      "read_only_binding_checks": {
+        "file_sha256": true,
+        "quote_leaf": true,
+        "normal_url": true,
+        "revision": true,
+        "observed": true
+      }
+    },
+    "ring-ds": {
+      "ledger_source_id": "ring-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "metadata_fingerprint": "8a7e9188cc421a7f0202665f495aac65d4e28d47447586f5df41e2b516b785d8",
+      "record_pointer": [
+        "records",
+        5
+      ],
+      "quote_pointer": [
+        "records",
+        5,
+        "tooltips",
+        0
+      ],
+      "exact_fragment": "Quality Doubleshot 3%Quality Doubleshot 3%: Passive: 3% Quality bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+      "fragment_start_character": 0,
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "url_key": "url",
+      "revision": "/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "revision_pointer": [
+        "permanentLink"
+      ],
+      "observed": "2026-11-07T20:08:30.015Z",
+      "observed_pointer": [
+        "capturedAt"
+      ],
+      "freshness_limit": "Exact selected visible-DOM excerpt from the stated source observation; not raw response bytes or a live-game test. Anonymous Wiki cache may lag up to five hours. Original receipt identity and capture context are retained.",
+      "read_only_binding_checks": {
+        "file_sha256": true,
+        "quote_leaf": true,
+        "normal_url": true,
+        "revision": true,
+        "observed": true
+      }
+    },
+    "boots-ds": {
+      "ledger_source_id": "boots-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "metadata_fingerprint": "a4481ec46e0542b5addad4633c25ab10e1f0d31b3025d1675e4096b96b104128",
+      "record_pointer": [
+        "records",
+        7
+      ],
+      "quote_pointer": [
+        "records",
+        7,
+        "tooltips",
+        1
+      ],
+      "exact_fragment": "Insightful Doubleshot 5%Insightful Doubleshot 5%: Passive: 5% Insight bonus to Doubleshot. (Doubleshot is a chance to score an additional hit with a ranged attack.)",
+      "fragment_start_character": 0,
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "url_key": "url",
+      "revision": "/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "revision_pointer": [
+        "permanentLink"
+      ],
+      "observed": "2026-11-07T20:08:30.889Z",
+      "observed_pointer": [
+        "capturedAt"
+      ],
+      "freshness_limit": "Exact selected visible-DOM excerpt from the stated source observation; not raw response bytes or a live-game test. Anonymous Wiki cache may lag up to five hours. Original receipt identity and capture context are retained.",
+      "read_only_binding_checks": {
+        "file_sha256": true,
+        "quote_leaf": true,
+        "normal_url": true,
+        "revision": true,
+        "observed": true
+      }
+    },
+    "armor-ds": {
+      "ledger_source_id": "armor-ds",
+      "path": "evidence/endgame-stacking/final-provenance-receipts.json",
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537",
+      "metadata_fingerprint": "aba1dbe426bd07384184bfa8a94dcc72259fd4d2a9131da182f193032dc8d69a",
+      "record_pointer": [
+        "records",
+        8
+      ],
+      "quote_pointer": [
+        "records",
+        8,
+        "tooltips",
+        2
+      ],
+      "exact_fragment": "Shadow StrikerShadow Striker: Passive: +3% Profane bonus to Doublestrike and Doubleshot. (Doublestrike/Doubleshot is a chance to score an additional hit with a melee/ranged attack.) +15% Enhancement Bonus to Melee Attack Speed. +20% Enhancement Bonus to Ranged Attack Speed.",
+      "fragment_start_character": 0,
+      "source_url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "url_key": "url",
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "revision_pointer": [
+        "permanentLink"
+      ],
+      "observed": "2026-11-07T20:08:31.322Z",
+      "observed_pointer": [
+        "capturedAt"
+      ],
+      "freshness_limit": "Exact selected visible-DOM excerpt from the stated source observation; not raw response bytes or a live-game test. Anonymous Wiki cache may lag up to five hours. Original receipt identity and capture context are retained.",
+      "read_only_binding_checks": {
+        "file_sha256": true,
+        "quote_leaf": true,
+        "normal_url": true,
+        "revision": true,
+        "observed": true
+      }
+    }
+  },
+  "retained_stack_context": {
+    "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+    "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+    "record_pointer": [
+      "captures",
+      "stack"
+    ],
+    "source_url": "https://ddowiki.com/page/Stack",
+    "revision_link": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+    "body_observation": {
+      "started_at_utc": "2026-11-15T22:48:14.783Z",
+      "ended_at_utc": "2026-11-15T22:48:14.806Z"
+    },
+    "page_modified_display": "This page was last modified 16:01, December 12, 2025 (Update 77)",
+    "cache_notice": "(this is up to 6 hours old)",
+    "quote_pointer": [
+      "captures",
+      "stack",
+      "scoped_visible_text"
+    ],
+    "exact_fragment": "Benefits from the same family, like Fortification or False Life, do not stack.",
+    "historical_interpretation_pointer": [
+      "reviewed_interpretation",
+      "stack_caveat"
+    ],
+    "historical_interpretation": "The Stack article's general same-family bullet is retained, not hidden. Reading it as banning every differently typed bonus to one stat conflicts with the specific Fortification Enhancement/Insight combination. No INT-specific contrary exception was established in this bounded review; this is not exhaustive absence proof.",
+    "scope_boundary": "Preserve the original INT interpretation as history; document any new Doubleshot interpretation separately. Do not treat the older legacy stack source timestamp as this later observation or manufacture a 2026-11-16 refresh."
+  },
+  "retained_tip179_context": {
+    "body_observation": {
+      "started_at_utc": "2026-11-15T22:48:38.253Z",
+      "ended_at_utc": "2026-11-15T22:48:38.329Z"
+    },
+    "page_modified_display": "This page was last modified 04:07, April 19, 2022 (Update 53.1)",
+    "cache_notice": "(this is up to 4 hours old)",
+    "historical_adoption": "The affirmative Tip 179 clause supports exactly ten unordered selected-gear Intelligence pairs among Enhancement, Insight, Quality, Profane and Festive. It is not the converse of same-type nonstacking. Each selected component remains independently qualified; same-type suppression, Artifact and Exceptional rules remain separate.",
+    "original_scope_limit": "No universal all-stat/all-type default. No adoption of adjacent loading tips, historical dodge/circumstance/racial exceptions, or new character/DPS/crit conclusions. The rule page was last modified in 2022 despite its 2026 observation.",
+    "permalink_limit": "Observed Permanent link; not independently reopened. Observation date, page modification date and current interpretation date are separate."
+  },
+  "retained_artifact_context": {
+    "body_observation": {
+      "started_at_utc": "2026-11-02T05:38:21.810Z",
+      "completed_at_utc": "2026-11-02T05:38:24.913Z",
+      "heading_verified": "Artifact bonus",
+      "article_content_verified": true,
+      "scope": "Complete substantive introduction and its current stacking sentence; complete surrounding History prose. Embedded historical forum quotation is partial because one exposed accessibility text node ends mid-word; the visible quotation is retained with that limit."
+    },
+    "revision_metadata": {
+      "permanent_link": "https://ddowiki.com/index.php?title=Artifact_bonus&oldid=636950",
+      "oldid": "636950",
+      "observation_interval_utc": [
+        "2026-11-02T05:38:21.810Z",
+        "2026-11-02T05:38:24.913Z"
+      ],
+      "method": "Complete Permanent link href exposed in the same normal-page capture as the body; no copy action or historical navigation.",
+      "footer_exact_visible_prefix_with_author": "This page was last modified 01:37, April 24, 2025 (Update 73.1) [editor metadata omitted; see source history].",
+      "historical_endpoint_read": false,
+      "historical_byte_identity_independently_verified": false
+    },
+    "history_paragraph": "With Update 17, many previously untyped bonuses have been typed as artifact bonus and thus they no longer stack with each other. This change was retroactive and affected existing items.",
+    "unknowns_and_limits": [
+      "One embedded historical forum paragraph is visibly clipped. The primary introduction, positive rule, surrounding negative-history rule and final guild-amenity paragraph are complete in the capture.",
+      "No general rule that all distinct bonus types stack with one another is supplied by the Artifact-only statement.",
+      "No new rule concerning the selected Resistance/Insight/Morale/Luck save combination is established where no Artifact component is involved.",
+      "No linked Stack, item-set, gem-system, guild or forum page was reread by this receipt writer."
+    ],
+    "scope_boundary": "Different-type pairs involving the one qualified Artifact member only. Same-Artifact values are not added, and the statement supplies no general non-Artifact interaction rule."
+  },
+  "retained_applicability_references": [
+    {
+      "id": "chains-own-slot-and-waist",
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "record_pointer": [
+        "captures",
+        "chains"
+      ],
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T20:44:23Z",
+        "ended_at_utc": "2026-11-15T20:44:30Z"
+      },
+      "cache_hours": 5,
+      "pointers": [
+        [
+          "captures",
+          "chains",
+          "item_table_visible_text"
+        ],
+        [
+          "captures",
+          "chains",
+          "slot_tooltip_text",
+          "Legendary Slaver's Augment Slot"
+        ]
+      ],
+      "supported": "Own Legendary Chains ML28; Legendary Slaver Augment Slot accepts a Slaver shard; item can occupy Neck or Waist. Selected Waist leaves Glabrezu pendant at Neck.",
+      "limit": "Uncrafted own page does not prove an already-unlocked Green socket or finished set activation."
+    },
+    {
+      "id": "chains-legendary-green-upgrade",
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "record_pointer": [
+        "captures",
+        "slave_lords"
+      ],
+      "source_url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision_link": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T20:44:30Z",
+        "ended_at_utc": "2026-11-15T20:45:26Z"
+      },
+      "cache_hours": 8,
+      "recipe_pointer": [
+        "captures",
+        "slave_lords",
+        "recipe_table_visible_text"
+      ],
+      "recipe_exact_substring": "Blue Augment Slot\nYellow Augment Slot\nGreen Augment Slot\t\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\n",
+      "header_pointer": [
+        "captures",
+        "slave_lords",
+        "recipe_table_headers"
+      ],
+      "capability_pointer": [
+        "captures",
+        "slave_lords",
+        "gem_slot_rule_visible_text"
+      ],
+      "capability_exact_text": "The next step is to speak to a barter NPC to exchange the basic ingredients for \"gems\" of different sorts (see below), which will be used to give you the effects on your items. Each of the 3 common and 3 uncommon ingredients allows a different kind of effect on the item, and there are 6 possible to create for each item you will create - prefix, suffix, bonus, extra, augment slot (clear, yellow, blue, or green), and set bonus (your choice of 3 possible). Tables below show what sort of effects can go into each of these.",
+      "base_item_pointer": [
+        "captures",
+        "slave_lords",
+        "base_item_table_visible_text"
+      ],
+      "supported": "Retained Wiki directly lists Blue/Yellow/Green augment-slot addition and headed Legendary cost100 Staff Splinters plus50 each Broken Shackles, Chain Links and Broken Collars. Separate host/category text supports the proposed Chains upgrade route.",
+      "limit": "Stronger documentary premise than the older community-only construction summary, but not an implemented Quickblade proof or evidence of an already-crafted item; preserve older source grades unchanged."
+    },
+    {
+      "id": "ordinary-colorless-green-and-level-rule",
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "record_pointer": [
+        "captures",
+        "augment-slots"
+      ],
+      "source_url": "https://ddowiki.com/page/Augment_Slot",
+      "revision_link": "https://ddowiki.com/index.php?title=Augment_Slot&oldid=717357",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:20:20Z",
+        "ended_at_utc": "2026-11-15T22:20:49Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "green_row_pointer": [
+        "captures",
+        "augment-slots",
+        "selected_rows_visible_text",
+        1
+      ],
+      "green_row_exact_text": "Green Augment Slot\t✘\t✔\t✔\t✘\t✘\t✔\t✔\tAccessory items or named Armor, Robes, or Outfits",
+      "header_pointer": [
+        "captures",
+        "augment-slots",
+        "compatibility_headers_visible_text"
+      ],
+      "level_rule_pointer": [
+        "captures",
+        "augment-slots",
+        "level_rule_visible_text"
+      ],
+      "level_rule_exact_text": "Every augment has an associated minimum level requirement to use it. Slotting any augment also increases the slotted item’s minimum level to the level of the slotted augment for as long as that augment is slotted, unless the item's minimum level is already equal or higher.",
+      "limit": "Green-row compatibility applies only after the proposed Quickblade is source-classified as an ordinary Colorless augment. No Sun/Moon or special-slot inference; retained rows do not capture an ordinary Colorless-slot row."
+    }
+  ],
+  "selected_occupancy": {
+    "selection_set_pointer": [
+      "augment_sets",
+      2
+    ],
+    "selected_set_record": {
+      "name": "Quickblade",
+      "threshold": 3,
+      "placements": [
+        {
+          "host": "Legendary Goggles of the Archer",
+          "color": "Colorless"
+        },
+        {
+          "host": "Legendary Chains",
+          "color": "Green"
+        },
+        {
+          "host": "Yeenoghu's Reign",
+          "color": "Green"
+        }
+      ],
+      "effects": [
+        {
+          "stat": "Doublestrike",
+          "type": "Artifact",
+          "value": 15
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Artifact",
+          "value": 15
+        }
+      ],
+      "evidence_status": "retained-source supported; combined totals remain subject to the current ledger gates"
+    },
+    "placements": [
+      {
+        "selection_item_pointer": [
+          "items",
+          2
+        ],
+        "socket_pointer": [
+          "items",
+          2,
+          "sockets",
+          2
+        ],
+        "host": "Legendary Goggles of the Archer",
+        "equip_slot": "Goggles",
+        "base_ml": 33,
+        "filled_ml": 36,
+        "minor_artifact": false,
+        "wiki_url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+        "socket_index": 2,
+        "socket_color": "Colorless",
+        "selected_fill": {
+          "kind": "set-augment",
+          "id": "Quickblade",
+          "color": "Colorless",
+          "ml": 30,
+          "affixes": []
+        },
+        "other_socket_occupancy": [
+          {
+            "socket_index": 0,
+            "socket_color": "Sun",
+            "fill_id": "Solar Gem of Fortification Bypass (Legendary)",
+            "fill_kind": "augment",
+            "fill_ml": 30
+          },
+          {
+            "socket_index": 1,
+            "socket_color": "Green",
+            "fill_id": "Sapphire of False Life +60",
+            "fill_kind": "augment",
+            "fill_ml": 36
+          }
+        ],
+        "evidence_class": "Selected occupancy and modeled level metadata; not an observed equipped item or mechanics source."
+      },
+      {
+        "selection_item_pointer": [
+          "items",
+          6
+        ],
+        "socket_pointer": [
+          "items",
+          6,
+          "sockets",
+          0
+        ],
+        "host": "Legendary Chains",
+        "equip_slot": "Belt",
+        "base_ml": 28,
+        "filled_ml": 30,
+        "minor_artifact": false,
+        "wiki_url": "https://ddowiki.com/page/Item:Legendary_Chains",
+        "socket_index": 0,
+        "socket_color": "Green",
+        "selected_fill": {
+          "kind": "set-augment",
+          "id": "Quickblade",
+          "color": "Colorless",
+          "ml": 30,
+          "affixes": []
+        },
+        "other_socket_occupancy": [],
+        "evidence_class": "Selected occupancy and modeled level metadata; not an observed equipped item or mechanics source."
+      },
+      {
+        "selection_item_pointer": [
+          "items",
+          11
+        ],
+        "socket_pointer": [
+          "items",
+          11,
+          "sockets",
+          1
+        ],
+        "host": "Yeenoghu's Reign",
+        "equip_slot": "Bracers",
+        "base_ml": 35,
+        "filled_ml": 36,
+        "minor_artifact": true,
+        "wiki_url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+        "socket_index": 1,
+        "socket_color": "Green",
+        "selected_fill": {
+          "kind": "set-augment",
+          "id": "Quickblade",
+          "color": "Colorless",
+          "ml": 30,
+          "affixes": []
+        },
+        "other_socket_occupancy": [
+          {
+            "socket_index": 0,
+            "socket_color": "Moon",
+            "fill_id": "Lunar Gem of Weapon Damage (Legendary)",
+            "fill_kind": "augment",
+            "fill_ml": 30
+          },
+          {
+            "socket_index": 2,
+            "socket_color": "Yellow",
+            "fill_id": "Topaz of Ranged Power +14",
+            "fill_kind": "augment",
+            "fill_ml": 36
+          },
+          {
+            "socket_index": 3,
+            "socket_color": "Blue",
+            "fill_id": "Sapphire of Good Luck +3",
+            "fill_kind": "augment",
+            "fill_ml": 28
+          }
+        ],
+        "evidence_class": "Selected occupancy and modeled level metadata; not an observed equipped item or mechanics source."
+      }
+    ],
+    "three_distinct_host_ids": true,
+    "copies": 3,
+    "selected_full_kit_ml": 36,
+    "construction_prerequisite_pointer": [
+      "construction_prerequisites",
+      0
+    ],
+    "construction_prerequisite": {
+      "host": "Legendary Chains",
+      "requirement": "Add the Legendary Slaver's Green Augment Slot upgrade before placing the Quickblade set augment.",
+      "slotAccounting": "The catalog already represents this crafted state with one Green socket; do not add a second socket.",
+      "communityCorroboratedIngredients": {
+        "Legendary Staff Splinters": 100,
+        "Legendary Broken Shackles": 50,
+        "Legendary Chain Links": 50,
+        "Legendary Broken Collars": 50
+      },
+      "urls": [
+        "https://ddonexus.com/Item/Legendary_Chains",
+        "https://ddonexus.com/Item/Legendary_Slavers_Green_Augment_Slot"
+      ],
+      "evidenceCaution": "Independent community recipe corroboration, not a new in-game observation; no ownership or unlocked-state claim."
+    },
+    "limits": [
+      "The manifest records intended occupancy, not ownership, completed crafting or live equipped activation.",
+      "Each host has one selected Quickblade copy. The contribution is modeled once at threshold; three selected copies do not by themselves source-prove45 or any total.",
+      "Goggles filledML36 is driven by the selected False Life60 augment, and Yeenoghu filledML36 by selected Ranged Power14; both Quickblade copies themselves are modeledML30.",
+      "Chains modeledML30 follows base28 plus selectedML30 Quickblade. Its Green slot is a prerequisite craft, not an additional automatic socket."
+    ]
+  },
+  "selected_set_suppression": {
+    "recorded_at_utc": "2026-11-16T05:13:13.902540+00:00",
+    "scope": "Additional bounded read-only check for competing selected set augments and native named-set credit on the three selected Quickblade hosts.",
+    "conclusion": "No Quickblade host receives another selected set augment, and no native named-set bonus is credited on any of those three hosts in the selected model. This is a statement about the exact selected records and modeled inputs, not proof that every possible or owned instance lacks native set membership.",
+    "hosts": [
+      {
+        "host": "Legendary Goggles of the Archer",
+        "selection_pointer": [
+          "items",
+          2
+        ],
+        "selected_set_augments": [
+          {
+            "socket_pointer": [
+              "items",
+              2,
+              "sockets",
+              2
+            ],
+            "socket_index": 2,
+            "color": "Colorless",
+            "selected_set": "Quickblade"
+          }
+        ],
+        "other_selected_set_augments": [],
+        "set_summary_memberships": [
+          {
+            "set_pointer": [
+              "augment_sets",
+              2
+            ],
+            "name": "Quickblade",
+            "placement_pointer": [
+              "augment_sets",
+              2,
+              "placements",
+              0
+            ]
+          }
+        ],
+        "catalog_native_sets_pointer": [
+          "catalog_metadata",
+          "items",
+          2,
+          "native_sets"
+        ],
+        "catalog_native_sets": [],
+        "catalog_scope": "Selected catalog extraction, not independent game evidence. Actual source status is joined from claims.json.",
+        "native_affix_pointer": [
+          "items",
+          2,
+          "native_affixes"
+        ],
+        "model_affix_pointer": [
+          "items",
+          2,
+          "model_affixes"
+        ],
+        "native_named_set_bonus_credited": false
+      },
+      {
+        "host": "Legendary Chains",
+        "selection_pointer": [
+          "items",
+          6
+        ],
+        "selected_set_augments": [
+          {
+            "socket_pointer": [
+              "items",
+              6,
+              "sockets",
+              0
+            ],
+            "socket_index": 0,
+            "color": "Green",
+            "selected_set": "Quickblade"
+          }
+        ],
+        "other_selected_set_augments": [],
+        "set_summary_memberships": [
+          {
+            "set_pointer": [
+              "augment_sets",
+              2
+            ],
+            "name": "Quickblade",
+            "placement_pointer": [
+              "augment_sets",
+              2,
+              "placements",
+              1
+            ]
+          }
+        ],
+        "catalog_native_sets_pointer": [
+          "catalog_metadata",
+          "items",
+          6,
+          "native_sets"
+        ],
+        "catalog_native_sets": [],
+        "catalog_scope": "Selected catalog extraction, not independent game evidence. Actual source status is joined from claims.json.",
+        "native_affix_pointer": [
+          "items",
+          6,
+          "native_affixes"
+        ],
+        "model_affix_pointer": [
+          "items",
+          6,
+          "model_affixes"
+        ],
+        "native_named_set_bonus_credited": false
+      },
+      {
+        "host": "Yeenoghu's Reign",
+        "selection_pointer": [
+          "items",
+          11
+        ],
+        "selected_set_augments": [
+          {
+            "socket_pointer": [
+              "items",
+              11,
+              "sockets",
+              1
+            ],
+            "socket_index": 1,
+            "color": "Green",
+            "selected_set": "Quickblade"
+          }
+        ],
+        "other_selected_set_augments": [],
+        "set_summary_memberships": [
+          {
+            "set_pointer": [
+              "augment_sets",
+              2
+            ],
+            "name": "Quickblade",
+            "placement_pointer": [
+              "augment_sets",
+              2,
+              "placements",
+              2
+            ]
+          }
+        ],
+        "catalog_native_sets_pointer": [
+          "catalog_metadata",
+          "items",
+          11,
+          "native_sets"
+        ],
+        "catalog_native_sets": [],
+        "catalog_scope": "Selected catalog extraction, not independent game evidence. Actual source status is joined from claims.json.",
+        "native_affix_pointer": [
+          "items",
+          11,
+          "native_affixes"
+        ],
+        "model_affix_pointer": [
+          "items",
+          11,
+          "model_affixes"
+        ],
+        "native_named_set_bonus_credited": false
+      }
+    ],
+    "all_selected_set_placements": {
+      "count": 12,
+      "distinct_hosts": 12,
+      "each_host_at_most_one_selected_set_augment": true,
+      "selected_set_names": [
+        "Dusk Raider",
+        "Perfect Silence",
+        "Quickblade",
+        "Tough Shields"
+      ],
+      "selection_pointer": [
+        "augment_sets"
+      ],
+      "loadout_pointers": [
+        [
+          "sets"
+        ],
+        [
+          "set_placements"
+        ]
+      ]
+    },
+    "chains_optional_set_choice": {
+      "selection_crafts_pointer": [
+        "items",
+        6,
+        "crafts"
+      ],
+      "selected_craft_slots": [
+        "Prefix",
+        "Suffix",
+        "Bonus",
+        "Extra"
+      ],
+      "selected_crafts": [
+        {
+          "host": "Legendary Chains",
+          "family": "Slave Lords",
+          "slot": "Prefix",
+          "pool": null,
+          "category": null,
+          "tier": "legendary",
+          "name": "Fortification +142 (Enhancement)",
+          "affixes": [
+            {
+              "stat": "Fortification",
+              "type": "Enhancement",
+              "value": 142
+            }
+          ]
+        },
+        {
+          "host": "Legendary Chains",
+          "family": "Slave Lords",
+          "slot": "Suffix",
+          "pool": null,
+          "category": null,
+          "tier": "legendary",
+          "name": "Combustion +142 (Equipment)",
+          "affixes": [
+            {
+              "stat": "Combustion",
+              "type": "Equipment",
+              "value": 142
+            }
+          ]
+        },
+        {
+          "host": "Legendary Chains",
+          "family": "Slave Lords",
+          "slot": "Bonus",
+          "pool": null,
+          "category": null,
+          "tier": "legendary",
+          "name": "Intelligence +3 (Quality)",
+          "affixes": [
+            {
+              "stat": "Intelligence",
+              "type": "Quality",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "host": "Legendary Chains",
+          "family": "Slave Lords",
+          "slot": "Extra",
+          "pool": null,
+          "category": null,
+          "tier": "legendary",
+          "name": "Spot +20 (Competence)",
+          "affixes": [
+            {
+              "stat": "Spot",
+              "type": "Competence",
+              "value": 20
+            }
+          ]
+        }
+      ],
+      "selected_slavers_set_craft": null,
+      "selection_native_affixes_pointer": [
+        "items",
+        6,
+        "native_affixes"
+      ],
+      "selection_native_affixes": [],
+      "selection_model_affixes_pointer": [
+        "items",
+        6,
+        "model_affixes"
+      ],
+      "selection_model_affixes": [],
+      "loadout_chosen_pointer": [
+        "chosen",
+        6
+      ],
+      "loadout_chosen_affixes": [],
+      "loadout_craft_pointers": [
+        [
+          "crafts",
+          10
+        ],
+        [
+          "crafts",
+          11
+        ],
+        [
+          "crafts",
+          12
+        ],
+        [
+          "crafts",
+          13
+        ]
+      ],
+      "native_named_set_credit": null,
+      "ambiguity": "The manifest has no explicit selected:false record for the optional Against the Slave Lords set-bonus choice; empty_craft_slots is empty. Nevertheless, its exhaustive selected craft list contains only Prefix/Suffix/Bonus/Extra, catalog native_sets is explicitly empty, native/model affixes are empty, and the only credited set effects are the four separately listed augment sets. Say no selected/credited native Slavers set, not that an already-owned Chains can never have one."
+    },
+    "model_credit_trace": {
+      "selection_type_bucket_pointer": [
+        "model",
+        "type_buckets"
+      ],
+      "doubleshot_buckets": [
+        {
+          "stat": "Doubleshot",
+          "type": "Profane",
+          "value": 3,
+          "sources": [
+            "Light Armor of the Warblade's Reflection"
+          ]
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Enhancement",
+          "value": 9,
+          "sources": [
+            "Legendary Goggles of the Archer"
+          ]
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Quality",
+          "value": 3,
+          "sources": [
+            "Legendary Ring of Unnatural Accuracy"
+          ]
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Insight",
+          "value": 5,
+          "sources": [
+            "Legendary Coldlight Runners"
+          ]
+        },
+        {
+          "stat": "Doubleshot",
+          "type": "Artifact",
+          "value": 15,
+          "sources": [
+            "Quickblade"
+          ]
+        }
+      ],
+      "selected_set_effects_pointer": [
+        "augment_sets"
+      ],
+      "loadout_set_effects_pointer": [
+        "sets"
+      ],
+      "calculator_code_path": "tools/wisdom_loadout.py",
+      "aggregate_lines": [
+        64,
+        74
+      ],
+      "aggregate_input_scope": "Model affixes, selected craft affixes, ordinary augment affixes, and the explicitly enumerated augment_sets.effects only. There is no additional native-set-effect input.",
+      "existing_structural_guards": {
+        "native_set_catalog_guard_line": 161,
+        "one_set_augment_per_host_guard_line": 179,
+        "distinct_three_host_set_guard_line": 201
+      },
+      "guard_limit": "Code and catalog flags document what this model credits and rejects; they are not independent Wiki proof or live-game suppression verification."
+    },
+    "unchanged_selected_file_hashes": {
+      "tools/fixtures/wisdom-loadout/selection.json": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d",
+      "evidence/wisdom-loadout/loadout.json": "20f5bca4573d803a196695aa999f4acc07e71db077e3b66fde51a560b6da0843",
+      "tools/wisdom_loadout.py": "404ad0bde93b1c87a8e5895bc91dfbc30fbfca6358d77f5393f5a47636f8c123"
+    },
+    "limitations": [
+      "The four selected augment sets remain Dusk Raider, Perfect Silence, Quickblade and Tough Shields, each on disjoint three-host groups.",
+      "Goggles native9 Enhancement Doubleshot is an individual selected item affix, not a selected named-set reward; this inventory does not broaden the externally observed suppression rule to individual affixes.",
+      "No separate crafting, ownership, live equipped-state, destructive replacement or new game-source claim is established by this inventory.",
+      "No repository/index/source/rule/selection edits, tests, builders, solve or browser work occurred."
+    ]
+  },
+  "explicit_slot_mapping": {
+    "Legendary Goggles of the Archer": {
+      "source": "Eye",
+      "selection": "Goggles"
+    },
+    "Legendary Chains": {
+      "source": "Waist",
+      "selection": "Belt"
+    },
+    "Yeenoghu's Reign": {
+      "source": "Wrist",
+      "selection": "Bracers"
+    }
+  }
+}

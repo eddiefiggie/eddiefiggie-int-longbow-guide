@@ -7,6 +7,7 @@ A concise maintenance map for the Intelligence-based longbow/trapper reincarnati
 | Preserve the build's identity | [Principles](PRINCIPLES.md) |
 | Separate evidence from inference | [Mechanics](MECHANICS.md) |
 | Distinguish selected choices from open proposals | [Decisions](DECISIONS.md) |
+| Trace the current provisional endgame recipe and exact ranked affixes | [Wisdom artifact loadout](WISDOM-ARTIFACT-LOADOUT.md) |
 | Validate a change | [Maintenance](MAINTENANCE.md) |
 | Find the dated release checkpoint | [Status](STATUS.md) |
 

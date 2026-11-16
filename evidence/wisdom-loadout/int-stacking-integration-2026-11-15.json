@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "record_type": "bounded-selected-int-stacking-integration",
+  "review_date": "2026-11-15",
+  "build": "11-15-26.6",
+  "status": "Completed bounded integration candidate for draft PR47; precommit verification recorded below. Merge/publication are not authorized.",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "branch": "feat/wisdom-loadout-priorities",
+    "remote_head": "b83e6a9251d743ecae39d0301d177a08de54f93c",
+    "remote_tree": "b1b39ce3a38017c67ffd4ea39a9965175c88a243",
+    "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "initial_staged_paths": 80,
+    "initial_unstaged_paths": 0,
+    "initial_untracked_paths": 0,
+    "verification": "Local branch/HEAD/staged tree and connected GitHub PR+commit records matched before edits. Existing staging was preserved; no reset, fetch, branch switch or local HEAD advancement.",
+    "baseline_suite": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "source_tree": "b1b39ce3a38017c67ffd4ea39a9965175c88a243",
+      "tests": 395,
+      "seconds": 69.451,
+      "exit_code": 0,
+      "completion_observed_utc": "2026-11-15T23:00:56Z",
+      "runtime": {
+        "python": "3.12.14",
+        "node": "v24.22.1"
+      }
+    }
+  },
+  "approval": "Owner selected option 1: integrate the audited ten-pair INT rule and separately observed Fortification interaction in draft PR47; preserve Chains exclusions, regenerate affected outputs and run checks. No merge/publication.",
+  "scope": {
+    "new_optimizer_solve": false,
+    "gear_changed": false,
+    "priorities_changed": false,
+    "core_numeric_tuples_changed": false,
+    "original_claim_grades_changed": false,
+    "old_source_records_changed": false,
+    "exceptions_changed": false,
+    "minor_artifact_count": 1,
+    "full_kit_minimum_level": 36,
+    "crafting_performed": false,
+    "purchases": false,
+    "merged": false,
+    "published": false,
+    "live_game_test": false
+  },
+  "source_packet": {
+    "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+    "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+    "observations": "Original nine scoped browser observations from the preceding audit, retrieved from the persistent capture state for this integration. No new dates assigned to old captures. The public derivative omits unnecessary editor identifiers from nine modification-footer suffixes only; all dates, update prefixes, mechanics excerpts, revision links, cache notices and observation windows are unchanged.",
+    "limits": [
+      "Tip179 was last modified in2022 despite its2026 observation.",
+      "Displayed Permanent links were observed; oldid endpoints were not independently reloaded.",
+      "General Stack same-family caveat is retained alongside the specific Fortification combination.",
+      "No contrary INT-specific exception was established in this bounded review; not exhaustive absence proof.",
+      "Historical Five Rings Spot10/22 Competence and release-note normalization do not establish current Chains20 type continuity."
+    ]
+  },
+  "new_rule_ids": [
+    "int-selected-ten-pairs",
+    "fort-enh-insight-observed"
+  ],
+  "new_rules": [
+    {
+      "id": "int-selected-ten-pairs",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Enhancement",
+        "Insight",
+        "Quality",
+        "Profane",
+        "Festive"
+      ],
+      "stats": [
+        "Intelligence"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "boots-int",
+          "glabrezu-insight-int"
+        ],
+        [
+          "boots-int",
+          "chains-quality-int"
+        ],
+        [
+          "boots-int",
+          "lunar-int"
+        ],
+        [
+          "boots-int",
+          "festive-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "chains-quality-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "lunar-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "festive-int"
+        ],
+        [
+          "chains-quality-int",
+          "lunar-int"
+        ],
+        [
+          "chains-quality-int",
+          "festive-int"
+        ],
+        [
+          "lunar-int",
+          "festive-int"
+        ]
+      ]
+    },
+    {
+      "id": "fort-enh-insight-observed",
+      "source": "fort-rule-live-20261115",
+      "quote": "Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus).",
+      "kind": "pair",
+      "types": [
+        "Enhancement",
+        "Insight"
+      ],
+      "stats": [
+        "Fortification"
+      ],
+      "channel": "gear"
+    }
+  ],
+  "runtime_boundary": {
+    "profiles": "Exactly the original seven or the complete approved nine. Duplicates, partial additions, renamed rules and widened contracts fail validation.",
+    "positive_int_scope": "Five exact selected IDs and ten unordered gear-Intelligence pairs. No wildcard, all-stat, type-only or transitive new rule.",
+    "complete_int_scope": "All nine unchanged selected INT definitions, including suppressed inputs, are pinned by core-field and source-binding fingerprints. Exact family membership and actual source bytes are rechecked at public subtotal/proof entrypoints, independent of calling validate first.",
+    "preservation": "The original seven rules and original source dictionaries remain literal. Historic seven-rule inputs keep their original behavior under the real new engine.",
+    "issue_found_and_fixed": "Independent review found unsupported complete totals after changing/removing Solar, Dimlight or Globe when only the five new-pair members were pinned. The current guard binds all nine existing definitions and rejects missing/extra/replaced families. New interaction coverage remains exactly ten pairs.",
+    "source_observation": "New metadata fingerprints independently pin path, packet hash, identity, revision, quote/context pointers and original observation fields; reread packet bytes reject caller-supplied rehashes.",
+    "no_input_promotion": "Fresh Fortification interaction evidence supplies no Chains standard-item classification, Queen qualification or Spot type. It does not repair the old unobserved Fortification source."
+  },
+  "result": {
+    "intelligence": {
+      "stat": "Intelligence",
+      "channel": "gear",
+      "total": 37,
+      "counted": [
+        "boots-int",
+        "solar-int",
+        "lunar-int",
+        "festive-int",
+        "dimlight-int",
+        "glabrezu-insight-int",
+        "chains-quality-int"
+      ],
+      "suppressed": [
+        "celestial-profane-intelligence",
+        "globe-intelligence"
+      ],
+      "excluded": [],
+      "missing_interactions": [],
+      "proofs": [
+        [
+          "lunar-int",
+          "celestial-profane-intelligence",
+          "same-type-best"
+        ],
+        [
+          "dimlight-int",
+          "globe-intelligence",
+          "same-type-best"
+        ],
+        [
+          "boots-int",
+          "solar-int",
+          "artifact-other-types"
+        ],
+        [
+          "boots-int",
+          "lunar-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "boots-int",
+          "festive-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "boots-int",
+          "dimlight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "boots-int",
+          "glabrezu-insight-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "boots-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "solar-int",
+          "lunar-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "festive-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "dimlight-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "glabrezu-insight-int",
+          "artifact-other-types"
+        ],
+        [
+          "solar-int",
+          "chains-quality-int",
+          "artifact-other-types"
+        ],
+        [
+          "lunar-int",
+          "festive-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "lunar-int",
+          "dimlight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "lunar-int",
+          "glabrezu-insight-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "lunar-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "festive-int",
+          "dimlight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "festive-int",
+          "glabrezu-insight-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "festive-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ],
+        [
+          "dimlight-int",
+          "glabrezu-insight-int",
+          "exceptional-other-types"
+        ],
+        [
+          "dimlight-int",
+          "chains-quality-int",
+          "exceptional-other-types"
+        ],
+        [
+          "glabrezu-insight-int",
+          "chains-quality-int",
+          "int-selected-ten-pairs"
+        ]
+      ],
+      "complete": true
+    },
+    "old_intelligence": {
+      "total": null,
+      "complete": false,
+      "counted": 7,
+      "suppressed": 2,
+      "excluded": 0,
+      "missing_interactions": 10
+    },
+    "meaning": "The existing +37 selected-gear INT sum now has bounded documentary interaction support. It is not extra INT, a character score, measured damage, a critical-profile result or a global optimality claim.",
+    "old_input_full_results_preserved": 152,
+    "level36_result_count": 76,
+    "level36_changed_results": 2,
+    "level36_unchanged_results": 74,
+    "level35_result_count": 76,
+    "level35_changed_results": 0,
+    "baseline_canonical_result_sha256": {
+      "35": "0d60701f94ebf9e064e7c594be45c3afa44d27c40a71b8076c514cc4845913e8",
+      "36": "fe3ce7df6aae2ac225c1715af8afe18a01c4c7555e6937dd85982065817414ef"
+    }
+  },
+  "remaining_excluded": {
+    "Fortification": [
+      "queen-fortification",
+      "chains-fortification"
+    ],
+    "Spot": [
+      "chains-spot",
+      "heroism-spot",
+      "luck-spot"
+    ]
+  },
+  "preservation": {
+    "scope_file": "tools/fixtures/wisdom-int-stacking/scope.json",
+    "reviewed_production_paths": [
+      "index.html",
+      "tools/fixtures/endgame-stacking/ledger.json",
+      "evidence/endgame-stacking/source-excerpts.json",
+      "endgame-stacking-audit.html",
+      "heroic-crafting-print.html",
+      "tools/wisdom_loadout.py",
+      "tools/build_stacking_audit.py",
+      "tools/stacking_audit.py"
+    ],
+    "protected_previous_files": 187,
+    "protected_manifest_sha256": "d341ef5ad2f3f864692220f8dea687b8ad27a6a3f1738d11171da8bf7a2d67c5",
+    "inventory_limit": "All baseline evidence/fixture/snapshot files except the two reviewed generated ledger/excerpt files and the mutable current evidence README index; additionally bowmodel.py and recipe_proofs.py. New .6 artifacts are not misclassified as old files.",
+    "historical_tests": "Exact .6-to-.5 reversal precedes .5-to-.4 and earlier layers. Original historical engine hashes, rule/gap assertions, scopes and receipts remain literal; actual new-engine compatibility and current-source negative tests run separately.",
+    "reviewed_hunks": 29,
+    "scope_sha256": "dd11d051b8cfef5508309dc9b60a338b254c188c11f66e17e20084bc8e4ca77f",
+    "scope_bytes": 402350
+  },
+  "implementation_hashes": {
+    "tools/stacking_audit.py": "92a32e9d4d2fd78e55640ec16834b3c7ec97d8501e4daa03adbf28f81c7e1998",
+    "tools/recipe_proofs.py": "b4c2b4fd95a0a9de4b5f8155245ba8934a8f1ae89c3e2f1d7e8eac545bb627ec",
+    "tools/fixtures/wisdom-loadout/selection.json": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d",
+    "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d"
+  },
+  "verification": {
+    "focused_sources": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python3 -m unittest test_wisdom_int_stacking.CurrentScopedIntSourceTests -v",
+      "tests": 21,
+      "seconds": 7.691,
+      "exit_code": 0,
+      "limit": "Initial 21-test source pass before the privacy-only public derivative; final current tests below include the new privacy regression."
+    },
+    "independent_review": {
+      "status": "reviewed completeness fix passed",
+      "positive_and_adversarial_checks": 248,
+      "old_input_comparisons": 152,
+      "old_input_differences": 0,
+      "reviewed_engine_sha256": "f52849bb50be39de500306b037663c593acd9442029f21a5d9d5d689fafe28a2",
+      "later_change": "Current-profile same-ID proof guard added after the248-check pass; independently reviewed on the final engine and covered by the passed persistent source suite.",
+      "final_engine_sha256": "92a32e9d4d2fd78e55640ec16834b3c7ec97d8501e4daa03adbf28f81c7e1998",
+      "final_review": "Privacy revision independently verified as exactly nine footer-prefix redactions plus disclosure, two source-metadata pin updates only, no mechanics text or observation change. Both legacy/current ledgers validate; all152 legacy full results unchanged and only the two level36 INT results differ. Same-ID current guard and legacy behavior remain reviewed; no blocker found.",
+      "preprivacy_engine_sha256": "d77598a7af292f9386798cfa2b73519ae148ee83dd4320ccf529759777146f3e"
+    },
+    "presentation_subset": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python3 -m unittest test_wisdom_int_stacking.CurrentScopedIntPresentationTests -v",
+      "tests": 4,
+      "seconds": 4.884,
+      "exit_code": 0,
+      "limit": "After one-page distinction and correct ValueError expectation, before privacy-only packet redaction. Final current tests below cover the same renderer."
+    },
+    "prior_preprivacy_aggregate": {
+      "tests": 442,
+      "seconds": 104.758,
+      "exit_code": 0,
+      "completion_observed_utc": "2026-11-15T23:20:08Z",
+      "limit": "Passed before the new public-packet metadata redaction and added privacy test. Not substituted for the final current-byte aggregate."
+    },
+    "full_suite": {
+      "status": "passed",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "tests": 443,
+      "seconds": 106.558,
+      "exit_code": 0,
+      "completion_observed_utc": "2026-11-15T23:24:21Z",
+      "limit": "Executed on the final production, code, source and fixture bytes after privacy correction. This receipt's verification fields were reconciled afterward; exact committed-head CI is verified separately."
+    },
+    "generators": {
+      "status": "passed; deterministic final rerun",
+      "commands": [
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_wisdom_loadout.py",
+          "exit_code": 0
+        },
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_stacking_audit.py",
+          "exit_code": 0
+        },
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_crafting_sheet.py",
+          "exit_code": 0
+        },
+        {
+          "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/build_snapshot.py",
+          "exit_code": 0
+        }
+      ],
+      "unchanged_frozen_production_paths": 8
+    },
+    "diff_check": {
+      "status": "passed working-delta whitespace and seven new-file whitespace checks",
+      "staged_delta": "Must also be rechecked before branch update; result recorded with PR metadata."
+    },
+    "post_commit_ci": {
+      "status": "not run at precommit receipt time",
+      "limit": "The exact new commit and its workflow run cannot be certified before creation. Verify and record them separately in draft PR47 metadata and the completion report; this precommit receipt does not assert a future CI result."
+    },
+    "browser_qa": {
+      "status": "not performed; prior local-guide permission blocker retained",
+      "not_covered": [
+        "desktop/mobile rendered layout",
+        "keyboard navigation",
+        "screen-reader accessibility",
+        "print pagination"
+      ],
+      "limit": "Successful public Wiki inspection and structural tests are not local-guide browser QA. No blocked browser workflow was retried or bypassed."
+    },
+    "live_mechanics": {
+      "status": "not measured in game",
+      "not_certified": [
+        "full-character abilities and Spot",
+        "current Chains Fortification/Spot types",
+        "full damage channels and imbue applicability",
+        "proc uptime",
+        "critical range/multiplier and attack timing",
+        "all optimizer claims or global optimum"
+      ]
+    },
+    "final_current_tests": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python3 -m unittest test_wisdom_int_stacking.CurrentScopedIntSourceTests test_wisdom_int_stacking.CurrentScopedIntPresentationTests -v",
+      "tests": 26,
+      "seconds": 12.883,
+      "exit_code": 0
+    },
+    "preservation_focused_initial": {
+      "tests": 110,
+      "seconds": 39.949,
+      "exit_code": 0,
+      "limit": "Seven-module pass before public-packet privacy correction; the same baseline contracts remain unchanged."
+    },
+    "preservation_focused_final": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python3 -m unittest test_wisdom_int_stacking_preservation -v",
+      "tests": 17,
+      "seconds": 2.896,
+      "exit_code": 0,
+      "scope_sha256": "dd11d051b8cfef5508309dc9b60a338b254c188c11f66e17e20084bc8e4ca77f"
+    },
+    "documentation_links": {
+      "documents": 8,
+      "relative_links": 100,
+      "fragments": 5,
+      "missing": 0,
+      "limit": "Local target/heading validation only; external URLs were not re-fetched."
+    },
+    "structure_review": {
+      "status": "passed on all four HTML outputs",
+      "checks": [
+        "unique IDs",
+        "same-page fragment targets",
+        "aria-labelledby targets",
+        "nonempty visible link labels",
+        "visible current qualification blocks"
+      ],
+      "limit": "Not browser, screen-reader, mobile, contrast or print-pagination QA."
+    }
+  }
+}

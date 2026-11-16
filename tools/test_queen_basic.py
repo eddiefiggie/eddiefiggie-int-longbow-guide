@@ -1,4 +1,8 @@
-"""A-074 selection/model boundaries and exact scope; not a source or game test."""
+"""A-074 historical boundaries on the exact-restored pre-Wisdom release.
+
+The new recipe is tested independently in test_wisdom_loadout.  None of these
+older hashes, recipe expectations or mutation checks is redefined as Wisdom.
+"""
 import copy
 import hashlib
 import json
@@ -8,6 +12,7 @@ import unittest
 
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 import stacking_audit as audit
+from wisdom_preservation import predecessor_index, predecessor_ledger, predecessor_file_text
 
 ROOT = Path(__file__).resolve().parents[1]
 SCOPE = json.loads((ROOT/'tools/fixtures/queen-basic/scope.json').read_text())
@@ -145,7 +150,7 @@ def validate_reflection(html, data, enhancement):
 class QueenBasicTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.html = (ROOT/'index.html').read_text()
+        cls.html = predecessor_index()
 
     def test_complete_recipe_and_exact_predecessor_reconstruction(self):
         validate_current(self.html)
@@ -200,13 +205,13 @@ class QueenBasicTests(unittest.TestCase):
         self.assertEqual(min(raw_mrr+50,100),100)
         self.assertEqual((15+7+3+4+2+1,16+7+3+4+2+1),(32,33))
         self.assertEqual(60+48,108)
-        data = audit.load()
+        data = predecessor_ledger()
         for stat in ('PRR','MRR','Fortification','Constitution','Will','Reflex','Fortitude','Spot','Doubleshot','Intelligence','Ranged Power'):
             self.assertIsNone(audit.subtotal(data,stat)['total'],stat)
         self.assertEqual(audit.subtotal(data,'HP')['total'],108)
 
     def test_replaced_effects_absent_and_new_inputs_cannot_be_force_verified(self):
-        data = audit.load()
+        data = predecessor_ledger()
         by_id = {c['id']:c for c in data['components']}
         self.assertFalse({'cloak-ds','cloak-con','cloak-insight-con'} & by_id.keys())
         self.assertFalse(any(e['id']=='light-absorption' for e in data['non_total_effects']))
@@ -243,10 +248,10 @@ class QueenBasicTests(unittest.TestCase):
         path = ROOT/'evidence/endgame-stacking/retained-selected.json'
         self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),
                          'eed0083b8454a40a249acf5b0c3b93714e68ee496a857e889c724bc0e278dc78')
-        validate_reflection(self.html,audit.load(),json.loads(path.read_text())[2])
+        validate_reflection(self.html,predecessor_ledger(),json.loads(path.read_text())[2])
 
     def test_reflection_overclaims_and_rule_loss_are_rejected(self):
-        data = audit.load()
+        data = predecessor_ledger()
         enhancement = json.loads((ROOT/'evidence/endgame-stacking/retained-selected.json').read_text())[2]
         for before,after in (
             ('18 Doubleshot percentage points from these two sources','18% DPS from these two sources'),
@@ -279,7 +284,7 @@ class QueenBasicTests(unittest.TestCase):
             self.assertIn(claim,text)
         self.assertIn('Historical Summer’s End kit rationale and scenarios',self.html)
         self.assertIn('lost Freedom of Movement are not the current recipe',self.html)
-        detail = (ROOT/'endgame-stacking-audit.html').read_text()
+        detail = predecessor_file_text('endgame-stacking-audit.html')
         self.assertNotIn('Cloak Doubleshot 10% suppresses goggles 9%',detail)
         headings = [n for n in Document(detail).root.nodes('h3')
                     if n.attrs.get('id') == 'gap-whole-build-doubleshot']

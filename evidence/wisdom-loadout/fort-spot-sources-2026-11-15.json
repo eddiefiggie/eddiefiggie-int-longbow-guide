@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "record_type": "read-only-fortification-spot-browser-observations",
+  "review_date_local": "2026-11-15",
+  "review_timezone": "America/Los_Angeles",
+  "observation_date_utc": "2026-11-16",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "head": "72db151c4f881c08844d273caee2914ddc736641",
+    "tree": "573c0b26ac30dce65a3d4fcf6107a38dc5c8058d",
+    "build": "11-15-26.7",
+    "branch": "feat/wisdom-loadout-priorities",
+    "local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "initial_unstaged": [],
+    "initial_untracked": []
+  },
+  "scope": "Read-only investigation selected as option2; no repository, calculator, rule, model, selection, priority, draft, merge or publication changes.",
+  "method": {
+    "surface": "User-authorized internal Chrome; public anonymous DDO Wiki pages, item tooltip DOM and one linked item image.",
+    "retention": "Exact selected text/markup fragments copied from actual browser tool returns, with separately labeled context and visual observations. This is a scoped excerpt register, not a complete raw DOM/HTTP archive or cryptographically authenticated browser capture.",
+    "clock": "Original browser-runtime timestamp immediately before each extraction. Page modification, displayed revision, observation and later report creation are distinct.",
+    "revision": "Permanent links were read from current anonymous cached pages; historical revision endpoints were not independently reopened.",
+    "cache": "Null means not recorded for that page, not fresh/no cache. Queen/Slavers/Chains/image notices were separately observed in accessibility output.",
+    "redaction": "Page-modification footer editor names and anonymous-editor network identifiers omitted. Excerpts exclude unrelated advertisements; no mechanics wording is rewritten.",
+    "license": "DDO Wiki text CC BY-SA2.5; article and displayed revision attribution retained. Item image inspected but not copied into the deliverable.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "live_game_test": false,
+    "formal_ledger_promotion": false
+  },
+  "observations": [
+    {
+      "id": "queen",
+      "observed_utc": "2026-11-16T01:05:25.602Z",
+      "url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:The_Queen_of_Rot&oldid=715898",
+      "page_modified_display": "08:40, September 19, 2026 (Update 81.3)",
+      "cache_notice": "(this is up to 10 hours old)",
+      "revision_endpoint_independently_reopened": false,
+      "exact_dom_markup": "<span class=\"popup has_tooltip with-icon basic\"><a href=\"/page/Fortification\" title=\"Fortification\">Insightful Fortification  +84%</a><span class=\"mw-valign-super\" typeof=\"mw:File\"><span><img src=\"https://images.ddowiki.com/thumb/Icon_tooltip.png/10px-Icon_tooltip.png\" decoding=\"async\" width=\"10\" height=\"8\" class=\"mw-file-element\" srcset=\"https://images.ddowiki.com/Icon_tooltip.png 1.5x\"></span></span><span class=\"popup tooltip wide left below\" style=\"text-align: center ;\"><b><a href=\"/page/Fortification\" title=\"Fortification\">Insightful Fortification  +84%</a>:</b> +84% <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to reduced chance of taking critical damage on a critical hit.</span></span>",
+      "exact_excerpts": [
+        "Insightful Fortification  +84%",
+        "+84% Insight bonus to reduced chance of taking critical damage on a critical hit."
+      ],
+      "context": "The label and tooltip belong to the same own-item popup span. Minimum level35 was separately visible in the item table. Excerpts remain separate; no reordered combined numeric clause is asserted."
+    },
+    {
+      "id": "slavers",
+      "observed_utc": "2026-11-16T01:06:35.325Z",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision_link": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "page_modified_display": "10:46, September 18, 2026 (Update 81.3)",
+      "cache_notice": "(this is up to 15 hours old)",
+      "revision_endpoint_independently_reopened": false,
+      "exact_fortification_row_html": "<tr>\n<td><a href=\"/page/Fortification\" title=\"Fortification\">Fortification</a></td>\n<td>+70%</td>\n<td>+142%\n</td></tr>",
+      "exact_extra_cells_html": "<td><a href=\"/page/Skills\" class=\"mw-redirect\" title=\"Skills\">Skills</a> (except UMD)</td>\n<td>+10</td>\n<td>+20\n</td>",
+      "context": "Read the full rendered table, including Heroic ML8 / Legendary ML28 headers and Prefix/Extra group labels. These are scoped cell fragments, not a complete DOM export. The Fortification link is plain; no typed popup exists in that row. Skills links to Skills/Skill without a craft-specific Competence clause."
+    },
+    {
+      "id": "chains",
+      "observed_utc": "2026-11-16T01:07:12.037Z",
+      "url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "page_modified_display": "19:30, April 21, 2025 (Update 73.1)",
+      "cache_notice": "(this is up to 5 hours old)",
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Legendary Slaver's Prefix Slot",
+        "Legendary Slaver's Extra Slot",
+        "Apply a Slaver's shard to this item."
+      ],
+      "context": "Own-item Prefix and Extra popup definitions each use the quoted instruction. Base ML28 and Neck/Waist applicability were observed. No completed Fortification or Spot effect appeared in the inspected fields."
+    },
+    {
+      "id": "chains-image",
+      "observed_utc": "2026-11-16T01:07:22.177Z",
+      "url": "https://ddowiki.com/page/File:Legendary_Chains.png",
+      "revision_link": "https://ddowiki.com/index.php?title=File:Legendary_Chains.png&oldid=583065",
+      "page_modified_display": "04:30, June 15, 2024 (Update 68)",
+      "cache_notice": "(this is up to 17 hours old)",
+      "revision_endpoint_independently_reopened": false,
+      "image_url": "https://images.ddowiki.com/Legendary_Chains.png",
+      "visual_observation": "The 464x407 image shows Legendary Chains ML28 and empty Prefix, Suffix, Extra, Bonus, Augment and set slots; no filled Fortification142 or Spot20 tooltip. Visual inspection occurred immediately after this file-page metadata observation. No exact image screenshot time or original in-game capture time is asserted.",
+      "image_archive_saved": false
+    },
+    {
+      "id": "heroism",
+      "observed_utc": "2026-11-16T01:09:07.734Z",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Greater_Heroism",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Greater_Heroism&oldid=709967",
+      "page_modified_display": "03:53, September 3, 2026 (Update 81.2)",
+      "cache_notice": "(this is up to 7 hours old)",
+      "revision_endpoint_independently_reopened": false,
+      "exact_item_text": "Sapphire of Greater Heroism\nMinimum Level\t28\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +4 Morale Bonus to Attack Rolls, Saving Throws, and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nImmortality Lessons, end chest and Sweet Granny's chest\n\nEnhancements\t\nGreater Heroism\n\nMaximum stack size\t5"
+    },
+    {
+      "id": "good-luck",
+      "observed_utc": "2026-11-16T01:09:37.578Z",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Good_Luck_%2B3&oldid=718411",
+      "page_modified_display": "10:57, September 30, 2026 (Update 81.3)",
+      "cache_notice": "(this is up to 9 hours old)",
+      "revision_endpoint_independently_reopened": false,
+      "exact_item_text": "Sapphire of Good Luck +3\nMinimum Level\t28\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +3 Luck bonus to Saving Throws and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nThe Haunting of Saltmarsh, end chest\n\nEnhancements\t\nGood Luck +3\n\nMaximum stack size\t5"
+    },
+    {
+      "id": "skill",
+      "observed_utc": "2026-11-16T01:09:56.532Z",
+      "url": "https://ddowiki.com/page/Skill",
+      "revision_link": "https://ddowiki.com/index.php?title=Skill&oldid=701579",
+      "page_modified_display": "19:51, July 28, 2026 (Update 81.0.1)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_spot_row": "\tSpot\tYes\tWisdom\tPassive\tEagle\tAllows you to sense nearby hidden doors, traps, objects, and stealthed enemies. Except for the enemies, the exact locations will be unknown until a search check is successfully made.",
+      "exact_miscellaneous_sources": "Enhancements\nFeats\nSpells\nRace\nEquipment"
+    },
+    {
+      "id": "spot",
+      "observed_utc": "2026-11-16T01:11:01.629Z",
+      "url": "https://ddowiki.com/page/Spot",
+      "revision_link": "https://ddowiki.com/index.php?title=Spot&oldid=674283",
+      "page_modified_display": "15:58, February 5, 2026 (Update 77.2)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        " Spot (Wisdom)",
+        "The Spot skill enables you to sense secret doors, hidden enemies, and possibly traps.",
+        "With a successful Spot check you'll get a \"danger\" alert message when you are near a trap."
+      ],
+      "context": "The Spot page explicitly describes Spot as a skill and discusses Spot checks. Its passive/no-die-roll condition is retained as context; these observations are not a trap-success or DC certificate."
+    },
+    {
+      "id": "luck-rule",
+      "observed_utc": "2026-11-16T01:11:11.360Z",
+      "url": "https://ddowiki.com/page/Luck_bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Luck_bonus&oldid=606272",
+      "page_modified_display": "09:29, October 29, 2024 (Update 70)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Multiple luck bonuses on the same character or object do not stack. Only the highest luck bonus applies.",
+        "Item enchantments: Good Luck, Greater Luck, Major Luck"
+      ]
+    },
+    {
+      "id": "morale-rule",
+      "observed_utc": "2026-11-16T01:11:29.079Z",
+      "url": "https://ddowiki.com/page/Morale_bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Morale_bonus&oldid=256257",
+      "page_modified_display": "15:52, May 11, 2015 (Update 25.3)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Multiple morale bonuses on the same character do not stack. Only the highest morale bonus applies."
+      ]
+    },
+    {
+      "id": "competence-rule",
+      "observed_utc": "2026-11-16T01:12:15.736Z",
+      "url": "https://ddowiki.com/page/Competence_bonus",
+      "revision_link": "https://ddowiki.com/index.php?title=Competence_bonus&oldid=682593",
+      "page_modified_display": "14:50, April 8, 2026 (Update 79)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Other common types of bonuses to skills are enhancement bonuses and morale bonuses.",
+        "Multiple competence bonuses don't stack, only the highest bonus applies.",
+        "Sources of competence bonus to skills[edit]\nNamed or randomly generated items\nEssence Crafting\nColorless Augments"
+      ],
+      "context": "The examples do not state that every named/crafted skill effect is Competence. No selected Slavers/Chains classification was found in the inspected article."
+    },
+    {
+      "id": "tip179",
+      "observed_utc": "2026-11-16T01:12:43.234Z",
+      "url": "https://ddowiki.com/page/Loading_screen_tips",
+      "revision_link": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "page_modified_display": "04:07, April 19, 2022 (Update 53.1)",
+      "cache_notice": "(this is up to 4 hours old)",
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Tip #179: Most beneficial effects have a bonus type, such as enhancement, morale, or luck. Different types of bonuses stack, but usually the same types of bonus do not, with the exception of dodge bonuses, most circumstance bonuses, and racial bonuses."
+      ]
+    },
+    {
+      "id": "stack",
+      "observed_utc": "2026-11-16T01:13:10.175Z",
+      "url": "https://ddowiki.com/page/Stack",
+      "revision_link": "https://ddowiki.com/index.php?title=Stack&oldid=669682",
+      "page_modified_display": "16:01, December 12, 2025 (Update 77)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Benefits from the same family, like Fortification or False Life, do not stack.",
+        "Untyped bonuses stack. Note that a bonus without a keyword isn't necessarily an untyped bonus, the description might just be lacking."
+      ],
+      "context": "Read the complete current main text. Retain the broad same-family caveat alongside the specific Fortification combination and positive Tip179 sentence; do not convert a same-type prohibition into positive evidence."
+    },
+    {
+      "id": "fortification-rule",
+      "observed_utc": "2026-11-16T01:14:01.636Z",
+      "url": "https://ddowiki.com/page/Fortification",
+      "revision_link": "https://ddowiki.com/index.php?title=Fortification&oldid=723727",
+      "page_modified_display": "10:54, October 24, 2026 (Update 82.0.1)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Items are the primary source of fortification for most player characters. Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus). Item effects fully stack with the racial fortification, enhancements, or epic destiny perks."
+      ]
+    },
+    {
+      "id": "pendant-host",
+      "observed_utc": "2026-11-16T01:14:26.094Z",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "page_modified_display": "03:07, August 25, 2026 (Update 81.2)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Legendary Glabrezu Claw Pendant",
+        "Minimum level\t35\t",
+        "Green Augment Slot"
+      ]
+    },
+    {
+      "id": "artifact-host",
+      "observed_utc": "2026-11-16T01:15:14.309Z",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "page_modified_display": "20:38, July 25, 2026 (Update 81.0.1)",
+      "cache_notice": null,
+      "revision_endpoint_independently_reopened": false,
+      "exact_excerpts": [
+        "Yeenoghu's Reign",
+        "Minimum level\t35\t",
+        "Blue Augment Slot"
+      ]
+    }
+  ],
+  "bounded_search": {
+    "query": "Legendary Slaver Fortification",
+    "observed_utc": "2026-11-16T01:08:57.594Z",
+    "url": "https://ddowiki.com/index.php?search=Legendary+Slaver+Fortification&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1&ns1=1&ns2=1&ns3=1&ns4=1&ns5=1&ns6=1&ns7=1&ns8=1&ns9=1&ns10=1&ns11=1&ns200=1&ns201=1&ns500=1&ns501=1",
+    "results": [
+      "Slave Lords Crafting",
+      "User talk:Cru121",
+      "Update77 Release Notes"
+    ],
+    "limit": "No exact gem article in this result set; not proof no page or evidence exists elsewhere."
+  }
+}

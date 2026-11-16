@@ -1,4 +1,8 @@
-"""Check the score explanation against actual CLI normalization/formatting."""
+"""Retain the .6 score-note contract and actual historical CLI formatting.
+
+The .7 current score units and limits are tested in test_wisdom_offense; only
+the obsolete exact prose assertions below use the strict outer-restored view.
+"""
 import contextlib
 import io
 from html.parser import HTMLParser
@@ -8,6 +12,7 @@ import runpy
 import unittest
 
 import bowmodel
+import wisdom_offense_preservation as offense
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT = ('Reading the scores: each comparison sets its highest modeled result to 100. '
@@ -73,7 +78,7 @@ def check_note(html):
 
 class ScoreExplanationTests(unittest.TestCase):
     def test_visible_explanation_and_semantic_faults(self):
-        html = (ROOT / 'index.html').read_text()
+        html = offense.checkpoint_file_text('index.html')
         check_note(html)
         for old, new in [('to 100', 'to 1000'), ('same row', 'all rows'),
                          ('three quarters', 'one quarter'), ('one decimal place', 'two decimal places'),
@@ -85,7 +90,7 @@ class ScoreExplanationTests(unittest.TestCase):
                     check_note(html.replace(old, new))
 
     def test_inert_or_misplaced_note_is_rejected(self):
-        html = (ROOT / 'index.html').read_text()
+        html = offense.checkpoint_file_text('index.html')
         note = re.search(r'<p id="bow-model-score-scale">.*?</p>', html, re.S)[0]
         without = html.replace(note, '')
         table_end = without.index('</table>', without.index('<h3 id="bow-damage-model">')) + len('</table>')

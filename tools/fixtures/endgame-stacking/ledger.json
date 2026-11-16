@@ -2,8 +2,290 @@
   "schema": 1,
   "base_commit": "86b096bfaf274b5050b384ece53b9c14e0ae476b",
   "base_index_sha256": "5b7b42d61e952939c67ca95259655370216ff6d5272078a10bd9d4d69068de92",
-  "scope": "Current A-074 Queen of Rot BASIC, fully filled character-level36. Calamitous/Salt is the component-audit reference; Sinew changes only the bow and loses net1 modeled gear INT. Arithmetic is asserted only when every counted component and required interaction has direct Wiki support. Queen and Spot additions are relayed observations/model inputs without original source bytes; their components remain unknown. Historical Summer cloak evidence is preserved separately and does not apply to the current kit.",
+  "scope": "Current primary Wisdom-priority loadout, fully filled character level 36, Calamitous/Salt. The recorded 45-stage production solve is followed by explicit manual refinements, not a new optimizer run. Optional Celestial Sapphire Ring Dexterity +13 is not selected. This ledger asserts arithmetic only when every selected component and every counted pair has qualified exact source support. Retained-source support and modeled arithmetic are separate from certification; new unresolved inputs remain visible and excluded. Sources no longer used by this selection are retained as historical/background context, never as current equipped components.",
   "sources": {
+    "tip179-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "pointer": [
+        "captures",
+        "loading-screen-tips",
+        "scoped_visible_text"
+      ],
+      "quote": "Tip #179: Most beneficial effects have a bonus type, such as enhancement, morale, or luck. Different types of bonuses stack, but usually the same types of bonus do not, with the exception of dodge bonuses, most circumstance bonuses, and racial bonuses.",
+      "url": "https://ddowiki.com/page/Loading_screen_tips",
+      "revision": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "observed": "2026-11-15T22:48:38.253Z",
+      "freshness_limit": "Original hosted-browser DOM observation 2026-11-15T22:48:38.253Z through 2026-11-15T22:48:38.329Z, retained from the preceding read-only audit. Literal cache notice: (this is up to 4 hours old). Displayed modification date/update prefix: This page was last modified 04:07, April 19, 2022 (Update 53.1). Editor metadata is omitted in this public derivative. The Permanent link was observed, not independently reloaded. This is a source observation, not live-game validation; older source records are unchanged.",
+      "record_pointer": [
+        "captures",
+        "loading-screen-tips"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "fort-rule-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json",
+      "sha256": "765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d",
+      "pointer": [
+        "captures",
+        "fortification",
+        "scoped_visible_text"
+      ],
+      "quote": "Items are the primary source of fortification for most player characters. Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus). Item effects fully stack with the racial fortification, enhancements, or epic destiny perks.",
+      "url": "https://ddowiki.com/page/Fortification",
+      "revision": "https://ddowiki.com/index.php?title=Fortification&oldid=723727",
+      "observed": "2026-11-15T22:49:28.036Z",
+      "freshness_limit": "Original hosted-browser DOM observation 2026-11-15T22:49:28.036Z through 2026-11-15T22:49:28.137Z, retained from the preceding read-only audit. Literal cache notice: (this is up to 12 hours old). Displayed modification date/update prefix: This page was last modified 10:54, October 24, 2026 (Update 82.0.1). Editor metadata is omitted in this public derivative. The Permanent link was observed, not independently reloaded. This is a source observation, not live-game validation; older source records are unchanged.",
+      "record_pointer": [
+        "captures",
+        "fortification"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "melancholic-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "melancholic-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +15 Enhancement bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Melancholic_Intelligence_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Melancholic_Intelligence_(legendary)&oldid=702267",
+      "observed": "2026-11-15T22:19:01Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:01Z through 2026-11-15T22:19:27Z. Literal cache notice: (this is up to 13 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "melancholic-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "solar-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "solar-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +4 Artifact Bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Intelligence_(Legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Intelligence_(Legendary)&oldid=700860",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to 17 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "solar-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "lunar-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "lunar-int",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +4 Profane Bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Intelligence_(Legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Lunar_Gem_of_Intelligence_(Legendary)&oldid=691752",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to 4 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "lunar-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "festive-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "festive-int",
+        "effect_visible_text"
+      ],
+      "quote": "Drag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2",
+      "revision": "https://ddowiki.com/index.php?title=Item:Diamond_of_Festive_Intelligence_%2B2&oldid=720823",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to an hour old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "festive-int"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "dimlight-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "dimlight",
+        "effect_visible_text"
+      ],
+      "quote": "Slotted Effect: +2 Exceptional bonus to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Miserable_Dimlight_(legendary)",
+      "revision": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+      "observed": "2026-11-15T22:19:27Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:27Z through 2026-11-15T22:19:35Z. Literal cache notice: (this is up to 0 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "dimlight"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "globe-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "globe",
+        "effect_visible_text"
+      ],
+      "quote": "Drag this augment into a slot to upgrade an item with a +1 Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. This augment can go in any color Augment Slot.",
+      "url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+      "revision": "https://ddowiki.com/index.php?title=Item:Globe_of_True_Imperial_Blood&oldid=643056",
+      "observed": "2026-11-15T22:19:27Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:27Z through 2026-11-15T22:19:35Z. Literal cache notice: (this is up to 11 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "globe"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "celestial-profane-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json",
+      "sha256": "0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2",
+      "pointer": [
+        "captures",
+        "celestial-host",
+        "profane_tooltip_html"
+      ],
+      "quote": "+2 <a href=\"/page/Profane_bonus\" title=\"Profane bonus\">Profane bonus</a> to all abilities.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Celestial_Sapphire_Ring",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Celestial_Sapphire_Ring&oldid=631921",
+      "observed": "2026-11-15T22:19:35Z",
+      "freshness_limit": "Scoped hosted-browser observation during 2026-11-15T22:19:35Z through 2026-11-15T22:20:05Z. Literal cache notice: (this is up to -4 hours old). The displayed Permanent link was read, not independently reloaded. This new record retains the prior read-only audit observation; it does not repair older captures or certify live-game behavior. Item/slot compatibility is recorded separately in the same new packet.",
+      "record_pointer": [
+        "captures",
+        "celestial-host"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "glabrezu-insight-int-live-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "glabrezu",
+        "selected_option_html"
+      ],
+      "quote": "This item focuses the power of the wearer's mind, granting a +7 <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to Intelligence.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "observed": "2026-11-15T20:43:29Z",
+      "freshness_limit": "New hosted-browser DOM extraction observed 2026-11-15T20:43:29Z through 2026-11-15T20:43:33Z; the page warned logged-out content may lag up to 18 hours. Scoped tooltip HTML, not a raw HTTP response or live-game test. The Permanent link was read from that page, not independently loaded. Source modification time and previous missing capture metadata are distinct.",
+      "record_pointer": [
+        "captures",
+        "glabrezu"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "claws-wisdom": {
+      "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+      "pointer": [
+        3,
+        "tooltips",
+        11
+      ],
+      "quote": " Wisdom +15: This item makes the wearer more in tune with her surroundings, granting a +15 Enhancement bonus to Wisdom.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "observed": null,
+      "freshness_limit": "Source observation only; no live-game test. Missing timestamp or revision stays missing; anonymous Wiki caching and source-specific capture limits apply.",
+      "record_pointer": [
+        3
+      ],
+      "url_key": "requested",
+      "observed_pointer": null,
+      "revision_pointer": [
+        "permanent"
+      ]
+    },
     "stack": {
       "path": "evidence/endgame-stacking/stack-live.json",
       "sha256": "86b1ed2b3f3853d7642b67a52e77e1ce202e62db932998394254ad2d5d4f45c9",
@@ -2490,6 +2772,931 @@
       "observed_pointer": [
         "capturedAt"
       ]
+    },
+    "chains-host-recipe-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "chains",
+        "item_table_visible_text"
+      ],
+      "quote": "Minimum level\t28\t\nItem Type\tJewelry / Necklace\nSlot\tNeck\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t290\nMaterial\tGold\nHardness\t38\nBase Value\t11,220pp \nWeight\t0.1 lbs\nLocation\tSlave Pits of the Undercity, Small chest\nEnchantments\t\nLegendary Slaver's Prefix Slot\nLegendary Slaver's Suffix Slot\nLegendary Slaver's Extra Slot\nLegendary Slaver's Bonus Slot\nAgainst the Slave Lords Set Bonus\nLegendary Slaver's Augment Slot\nMythic Neck Boost +1 or +3\n\t\nUpgradeable?\tSlave Lords Crafting\nDescription\tOppression will always fail, just as chains will always be broken.\nTips\t\n\nThis unusual item can be worn in the Neck slot or the Waist slot - it will default to the Neck if both slots are empty when you equip it. The item is always damaged when found.",
+      "url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "observed": "2026-11-15T20:44:23Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T20:44:23Z through 2026-11-15T20:44:30Z; logged-out cache notice: up to 5 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "chains"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "chains-legendary-recipe-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "slave_lords",
+        "recipe_table_visible_text"
+      ],
+      "quote": "Group\tEnchantment name\tEnchantment value\tIngredient cost\nHeroic\nML 8\tLegendary\nML 28\tHeroic\tLegendary\nPrefix\n\tAttributes\t+5\t+13\t\n50   Broken Shackles\n\t\n100   Legendary Broken Shackles\n\nFalse Life\t+18\t+50\nFortification\t+70%\t+142%\nSheltering\t+12\t+33\nWizardry\t+96\t+269\nSuffix\n\tAccuracy\t+8\t+20\t\n50   Chain Links\n\t\n100   Legendary Chain Links\n\nArmor Piercing\t+8\t+20\nDamage Guards (don't stack with each other)\t+2d8\t+8d8\nDeadly\t+4\t+10\nDeception (no bluff effect)\t+3\t+10\nResistance\t+4\t+10\nSeeker\t+5\t+13\nSpell Lore (single type) (Equipment Bonus)\t+10\t+21\nSpell Power (single type) (Equipment Bonus)\t+70\t+142\nExtra\n\tSkills (except UMD)\t+10\t+20\t\n50   Broken Collars\n\t\n100   Legendary Broken Collars\n\nUMD (note: barter displays incorrect values.)\t+1\t+5\nShatter\t+6\t+15\nSpell Focus Mastery\t+2\t+6\nSpell Penetration\t+3\t+8\nStunning\t+6\t+15\nTendon Slice\t+4\t+10\nVertigo\t+6\t+15\nBonus\n\n\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\n\n\tQuality Attributes\t+1\t+3\t\n20   Frayed Leathers\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Frayed Leathers\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nQuality False Life\t+4\t+12\nQuality Fortification\t+17%\t+35%\nQuality MRR\t+2\t+8\nQuality PRR\t+2\t+8\nQuality Skills\t+2\t+5\nAugment Slot addition\n\tColorless Augment Slot\n\nTIP: Don't make a Colorless slot; make a Blue or Yellow slot instead. All three can accept Colorless augments, and the cost is the same. If you slot a Colorless augment in a Blue or Yellow slot, you have the option later to replace it with a Blue or Yellow augment.\t\n20   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nBlue Augment Slot\nYellow Augment Slot\nGreen Augment Slot\t\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSet bonus addition\n\tSlave Lord's Might\t\n20   Shattered Symbols of the Slave Lords\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n50   Legendary Shattered Symbols of Slave Lords\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSlave Lord's Sorcery\nSlaver's Endurance\nMythic upgrades\tMythic Boost\t+1\t+1\t*1   Statuette of the Gods\t*1   Legendary Statuette of the Gods\nMythic Boost\t+3\t+3\t*1   Slave Master's Bust\t*1   Legendary Slave Master's Bust",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "observed": "2026-11-15T20:44:30Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T20:44:30Z through 2026-11-15T20:45:26Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "slave_lords"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "chains-combustion-membership-20261115": {
+      "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+      "pointer": [
+        "captures",
+        "spell_power",
+        "selected_row_html"
+      ],
+      "quote": "<tr>\n<td><a href=\"/page/Combustion\" title=\"Combustion\">Combustion</a></td>\n<td><a href=\"/page/Inferno\" title=\"Inferno\">Inferno</a></td>\n<td><a href=\"/page/Category:Fire_spells\" title=\"Category:Fire spells\">Fire Spells</a>\n</td></tr>",
+      "url": "https://ddowiki.com/page/Spell_Power",
+      "revision": "https://ddowiki.com/index.php?title=Spell_Power&oldid=695517",
+      "observed": "2026-11-15T20:49:00Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T20:49:00Z through 2026-11-15T20:49:05Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "spell_power"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "chains-intelligence-membership-20261115": {
+      "path": "evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json",
+      "sha256": "32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830",
+      "pointer": [
+        "captures",
+        "ability",
+        "ability_members_visible_text"
+      ],
+      "quote": "Almost everything a Player Character does is affected by his abilities: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). Play Tabletop RPGs",
+      "url": "https://ddowiki.com/page/Ability",
+      "revision": "https://ddowiki.com/index.php?title=Ability&oldid=524405",
+      "observed": "2026-11-15T21:48:41Z",
+      "freshness_limit": "Hosted-browser scoped DOM context observed 2026-11-15T21:48:41Z through 2026-11-15T21:49:12Z; logged-out cache notice: up to 12 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.",
+      "record_pointer": [
+        "captures",
+        "ability"
+      ],
+      "url_key": "source_url",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ]
+    },
+    "fort-spot-queen-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        0,
+        "exact_dom_markup"
+      ],
+      "quote": "<span class=\"popup has_tooltip with-icon basic\"><a href=\"/page/Fortification\" title=\"Fortification\">Insightful Fortification  +84%</a><span class=\"mw-valign-super\" typeof=\"mw:File\"><span><img src=\"https://images.ddowiki.com/thumb/Icon_tooltip.png/10px-Icon_tooltip.png\" decoding=\"async\" width=\"10\" height=\"8\" class=\"mw-file-element\" srcset=\"https://images.ddowiki.com/Icon_tooltip.png 1.5x\"></span></span><span class=\"popup tooltip wide left below\" style=\"text-align: center ;\"><b><a href=\"/page/Fortification\" title=\"Fortification\">Insightful Fortification  +84%</a>:</b> +84% <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to reduced chance of taking critical damage on a critical hit.</span></span>",
+      "record_pointer": [
+        "observations",
+        0
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:The_Queen_of_Rot&oldid=715898",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:05:25.602Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 10 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-heroism-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        4,
+        "exact_item_text"
+      ],
+      "quote": "Sapphire of Greater Heroism\nMinimum Level\t28\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +4 Morale Bonus to Attack Rolls, Saving Throws, and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nImmortality Lessons, end chest and Sweet Granny's chest\n\nEnhancements\t\nGreater Heroism\n\nMaximum stack size\t5",
+      "record_pointer": [
+        "observations",
+        4
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Greater_Heroism",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Greater_Heroism&oldid=709967",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:09:07.734Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 7 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-luck-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        5,
+        "exact_item_text"
+      ],
+      "quote": "Sapphire of Good Luck +3\nMinimum Level\t28\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tBlue\nDescription\tDrag this augment into a slot to upgrade an item to provide a +3 Luck bonus to Saving Throws and Skill Checks. This augment can go in a Blue, Green, or Purple Augment Slot.\nBase Value\t500 pp\nWeight\t0.01 lbs\nLocations\t\nThe Haunting of Saltmarsh, end chest\n\nEnhancements\t\nGood Luck +3\n\nMaximum stack size\t5",
+      "record_pointer": [
+        "observations",
+        5
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Sapphire_of_Good_Luck_%2B3",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Sapphire_of_Good_Luck_%2B3&oldid=718411",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:09:37.578Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 9 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-skill-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        6,
+        "exact_spot_row"
+      ],
+      "quote": "\tSpot\tYes\tWisdom\tPassive\tEagle\tAllows you to sense nearby hidden doors, traps, objects, and stealthed enemies. Except for the enemies, the exact locations will be unknown until a search check is successfully made.",
+      "record_pointer": [
+        "observations",
+        6
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Skill",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Skill&oldid=701579",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:09:56.532Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-spot-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        7,
+        "exact_excerpts",
+        1
+      ],
+      "quote": "The Spot skill enables you to sense secret doors, hidden enemies, and possibly traps.",
+      "record_pointer": [
+        "observations",
+        7
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Spot",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Spot&oldid=674283",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:11:01.629Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-luck-type-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        8,
+        "exact_excerpts",
+        0
+      ],
+      "quote": "Multiple luck bonuses on the same character or object do not stack. Only the highest luck bonus applies.",
+      "record_pointer": [
+        "observations",
+        8
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Luck_bonus",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Luck_bonus&oldid=606272",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:11:11.360Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-morale-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        9,
+        "exact_excerpts",
+        0
+      ],
+      "quote": "Multiple morale bonuses on the same character do not stack. Only the highest morale bonus applies.",
+      "record_pointer": [
+        "observations",
+        9
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Morale_bonus",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Morale_bonus&oldid=256257",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:11:29.079Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-tip179-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        11,
+        "exact_excerpts",
+        0
+      ],
+      "quote": "Tip #179: Most beneficial effects have a bonus type, such as enhancement, morale, or luck. Different types of bonuses stack, but usually the same types of bonus do not, with the exception of dodge bonuses, most circumstance bonuses, and racial bonuses.",
+      "record_pointer": [
+        "observations",
+        11
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Loading_screen_tips",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Loading_screen_tips&oldid=514316",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:12:43.234Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Displayed cache notice: (this is up to 4 hours old). The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-pendant-host-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        14,
+        "exact_excerpts",
+        2
+      ],
+      "quote": "Green Augment Slot",
+      "record_pointer": [
+        "observations",
+        14
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:14:26.094Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-pendant-level-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        14,
+        "exact_excerpts",
+        1
+      ],
+      "quote": "Minimum level\t35\t",
+      "record_pointer": [
+        "observations",
+        14
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:14:26.094Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-artifact-host-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        15,
+        "exact_excerpts",
+        2
+      ],
+      "quote": "Blue Augment Slot",
+      "record_pointer": [
+        "observations",
+        15
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:15:14.309Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "fort-spot-artifact-level-20261115": {
+      "path": "evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "pointer": [
+        "observations",
+        15,
+        "exact_excerpts",
+        1
+      ],
+      "quote": "Minimum level\t35\t",
+      "record_pointer": [
+        "observations",
+        15
+      ],
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "observed_pointer": [
+        "observed_utc"
+      ],
+      "observed": "2026-11-16T01:15:14.309Z",
+      "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "chains-types-shared-host-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        0
+      ],
+      "pointer": [
+        "sources",
+        0,
+        "shared_host_statement_exact"
+      ],
+      "quote": "All base items may use all ingredients.",
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision_pointer": [
+        "permalink_href"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:13:24.476Z",
+      "freshness_limit": "This recipe table supplies magnitude and applicability. Its plain Fortification and Skills links do not themselves supply the two bonus-type clauses. Anonymous Wiki cache up to 16 hours old. Displayed permanent link was not reopened. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "chains-types-fortification-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        2
+      ],
+      "pointer": [
+        "sources",
+        2,
+        "application",
+        "added_effect_markup_exact"
+      ],
+      "quote": "<li class=\"recipe-mutation-known\" title=\"+% Enhancement bonus to the reduced chance of taking bonus damage on a critical hit.\">Fortification +%</li>",
+      "url_key": "url",
+      "url": "https://ddonexus.com/Item/Legendary_Slaver_Fortification",
+      "revision_pointer": null,
+      "revision": null,
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:19:36.690Z",
+      "freshness_limit": "Number missing in the rendered effect. The type is attached to this exact Legendary recipe. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "chains-types-spot-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        3
+      ],
+      "pointer": [
+        "sources",
+        3,
+        "application",
+        "added_effect_markup_exact"
+      ],
+      "quote": "<li class=\"recipe-mutation-known\" title=\"+ Competence bonus to Spot.\">Spot +</li>",
+      "url_key": "url",
+      "url": "https://ddonexus.com/Item/Legendary_Slavers_Spot/2C66B",
+      "revision_pointer": null,
+      "revision": null,
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:21:13.157Z",
+      "freshness_limit": "Number missing in the rendered effect. Preserve the exact variant and Extra-slot association. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "wiscon-nearly-complete-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        1,
+        "exact_fragments",
+        2
+      ],
+      "quote": "Wisdom +15",
+      "record_pointer": [
+        "observations",
+        1
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Nearly_Complete",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Nearly_Complete&oldid=705751",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:13.149Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:13.149Z through 2026-11-16T03:27:13.171Z. Literal cache notice: (this is up to 5 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-claws-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        2,
+        "exact_fragments",
+        0
+      ],
+      "quote": "granting a +15 Enhancement bonus to Wisdom.",
+      "record_pointer": [
+        "observations",
+        2
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Burrowing_Claws&oldid=707232",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:27.449Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:27.449Z through 2026-11-16T03:27:27.481Z. Literal cache notice: (this is up to 17 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-queen-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        3,
+        "exact_fragments",
+        0
+      ],
+      "quote": "granting a +7 Insight bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        3
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:The_Queen_of_Rot&oldid=715898",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:27:48.675Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:27:48.675Z through 2026-11-16T03:27:48.698Z. Literal cache notice: (this is up to 17 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-solar-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        4,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Slotted Effect: +4 Artifact Bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        4
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Solar_Gem_of_Constitution_(Legendary)",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Constitution_(Legendary)&oldid=691768",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:06.959Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:06.959Z through 2026-11-16T03:28:06.980Z. Literal cache notice: (this is up to 10 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-dolorous-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        5,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Slotted Effect: +3 Quality bonus to Constitution.",
+      "record_pointer": [
+        "observations",
+        5
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Dolorous_Quality_Constitution_(legendary)",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Dolorous_Quality_Constitution_(legendary)&oldid=702234",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:34.938Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:34.938Z through 2026-11-16T03:28:34.957Z. Literal cache notice: (this is up to 15 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-coldlight-host-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        6,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Lamordia: Dolorous Slot (Accessory)",
+      "record_pointer": [
+        "observations",
+        6
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:28:57.431Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:28:57.431Z through 2026-11-16T03:28:57.450Z. Literal cache notice: (this is up to 16 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-reflection-host-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        7,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Sun Augment Slot",
+      "record_pointer": [
+        "observations",
+        7
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Light_Armor_of_the_Warblade%27s_Reflection&oldid=685449",
+      "observed_pointer": [
+        "additional_slot_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:30:06.826Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original explicit Sun-slot browser observation 2026-11-16T03:30:06.826Z through 2026-11-16T03:30:06.875Z; the item-context observation is separately retained at 2026-11-16T03:29:42.853Z through 2026-11-16T03:29:42.871Z. Literal cache notice: (this is up to 6 hours old). Exact short fragments and separately labelled context are retained, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "wiscon-sun-system-20261116": {
+      "path": "evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json",
+      "sha256": "fae2de021955cdc4112c0f78f6ab3cbb77045375923d92f1c9f5a8cb95060d9d",
+      "pointer": [
+        "observations",
+        11,
+        "exact_fragments",
+        0
+      ],
+      "quote": "Players can slot Lunar and Solar Gems into these slots to provide their bonuses.",
+      "record_pointer": [
+        "observations",
+        11
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Lunar_and_Solar_Gems",
+      "revision_pointer": [
+        "revision_link"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Lunar_and_Solar_Gems&oldid=707220",
+      "observed_pointer": [
+        "body_observation",
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T03:33:55.511Z",
+      "source_contract": "selected-wisdom-constitution-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T03:33:55.511Z through 2026-11-16T03:33:57.629Z. Literal cache notice: (this is up to 12 hours old). The register preserves exact short fragments and separately labelled context, not a complete raw DOM archive. Displayed permalink was observed, not independently reopened. Later integration does not change the original audit status or older evidence."
+    },
+    "ds-augment-system-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        0,
+        "exact_excerpts",
+        "set_augment_rules"
+      ],
+      "quote": "These level 30 Set augments can be slotted in any augment color slot. The item into which they are slotted becomes part of a unique three-piece item set. They can be crafted in the Hut from Beyond (lower north harbor) in the Cauldron of Cadence. Be aware that slotting a Set Augment into an item with any existing sets will suppress those sets while the Set Augment is slotted, so you should avoid slotting set augments into items that are part of sets you intend to complete.",
+      "record_pointer": [
+        "observations",
+        0
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Augment_Slot#Augment_Slot",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Augment_Slot&oldid=717357",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:04:12.273Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:04:12.273Z through 2026-11-16T05:04:14.556Z. Literal cache notice: (this is up to -4 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-quickblade-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        1,
+        "exact_item_fields",
+        "Description"
+      ],
+      "quote": "Slotting this Augment in any Augment Slot will override its Set Bonus to the Quickblade set.\n\nQuickblade:\n\n3 pieces equipped: +15% Artifact bonus to Doublestrike and Doubleshot",
+      "record_pointer": [
+        "observations",
+        1
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Set_Augment:_Quickblade",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Set_Augment:_Quickblade&oldid=643217",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:06:23.132Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:06:23.132Z through 2026-11-16T05:06:23.156Z. Literal cache notice: (this is up to 5 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-set-table-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        2,
+        "exact_quickblade_row"
+      ],
+      "quote": "Set Augment: Quickblade\tColorless\t30\t\nThread of Fate x 50\nEmpty Soul Vessel\nGuided Sight\n\t3 Pieces Equipped: +15% Artifact bonus to Doublestrike and Doubleshot\tRiding the Storm Out",
+      "record_pointer": [
+        "observations",
+        2
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Augment_Slot/Set_Augment",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Augment_Slot/Set_Augment&oldid=726131",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:06:46.834Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:06:46.834Z through 2026-11-16T05:06:48.404Z. Literal cache notice: (this is up to 12 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-set-rules-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        3,
+        "exact_excerpts",
+        "augment_sets"
+      ],
+      "quote": "Collect 3 of the same BtC raid loot across your account. Take them to the Cauldron of Cadence in the Hut from Beyond and combine them with 50 Threads of Fate and an Empty Soul Vessel each, to forge BtA Colorless Augments. Then slot them into 3 items across equipment slots of one character to gain 3 piece Set Bonueses listed below. Be aware that slotting a Set Augment into an item with any existing sets will suppress those sets while the Set Augment is slotted. For the list of other Essence Augments see Augment Slot#Essence augments.",
+      "record_pointer": [
+        "observations",
+        3
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Named_item_sets#Quickblade",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Named_item_sets&oldid=730838#Quickblade",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:07:35.550Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:07:35.550Z through 2026-11-16T05:07:40.967Z. Cache notice is absent from this scoped observation; no value is inferred. The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-goggles-host-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        4,
+        "exact_doubleshot_clause"
+      ],
+      "quote": "Passive: 9% Enhancement bonus to Doubleshot.",
+      "record_pointer": [
+        "observations",
+        4
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Goggles_of_the_Archer&oldid=685336",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:09:47.770Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:09:47.770Z through 2026-11-16T05:09:48.797Z. Literal cache notice: (this is up to 8 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-chains-host-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        5,
+        "exact_excerpts",
+        "augment_channel"
+      ],
+      "quote": "Legendary Slaver's Augment Slot: Apply a Slaver's shard to this item.",
+      "record_pointer": [
+        "observations",
+        5
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Legendary_Chains",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:11:05.432Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:11:05.432Z through 2026-11-16T05:11:06.418Z. Literal cache notice: (this is up to 5 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-yeenoghu-host-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        6,
+        "exact_green_tooltip"
+      ],
+      "quote": "Blue, Green, Yellow, and/or Colorless",
+      "record_pointer": [
+        "observations",
+        6
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Item:Yeenoghu%27s_Reign",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Item:Yeenoghu%27s_Reign&oldid=700306",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:11:06.418Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:11:06.418Z through 2026-11-16T05:11:07.083Z. Literal cache notice: (this is up to 14 hours old). The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
+    },
+    "ds-green-recipe-20261116": {
+      "path": "evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json",
+      "sha256": "49798b85597ad45f027d52754388336325cde0441484bbee5de90c0bf4d59ed5",
+      "pointer": [
+        "observations",
+        10,
+        "exact_excerpts",
+        "green_recipe_row"
+      ],
+      "quote": "Green Augment Slot\t\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n\t\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars",
+      "record_pointer": [
+        "observations",
+        10
+      ],
+      "url_key": "source_url",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision_pointer": [
+        "displayed_permalink"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "observed_pointer": [
+        "started_at_utc"
+      ],
+      "observed": "2026-11-16T05:14:35.225Z",
+      "source_contract": "selected-gear-doubleshot-v1",
+      "freshness_limit": "Original scoped browser observation 2026-11-16T05:14:35.225Z through 2026-11-16T05:14:51.536Z. Cache notice is absent from this scoped observation; no value is inferred. The record is an attributed transcription, not complete DOM/HTTP bytes or live-game verification. Displayed permalink was observed, not independently reopened; transcluded tooltips may have separate revision histories. The separately timed Slave Lords metadata supplement remains linked context, never a backdated standalone source. Later adoption does not refresh original observations or prior evidence grades."
     }
   },
   "rules": [
@@ -2577,6 +3784,261 @@
       "stats": [
         "Fortification"
       ]
+    },
+    {
+      "id": "int-selected-ten-pairs",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Enhancement",
+        "Insight",
+        "Quality",
+        "Profane",
+        "Festive"
+      ],
+      "stats": [
+        "Intelligence"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "boots-int",
+          "glabrezu-insight-int"
+        ],
+        [
+          "boots-int",
+          "chains-quality-int"
+        ],
+        [
+          "boots-int",
+          "lunar-int"
+        ],
+        [
+          "boots-int",
+          "festive-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "chains-quality-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "lunar-int"
+        ],
+        [
+          "glabrezu-insight-int",
+          "festive-int"
+        ],
+        [
+          "chains-quality-int",
+          "lunar-int"
+        ],
+        [
+          "chains-quality-int",
+          "festive-int"
+        ],
+        [
+          "lunar-int",
+          "festive-int"
+        ]
+      ]
+    },
+    {
+      "id": "fort-enh-insight-observed",
+      "source": "fort-rule-live-20261115",
+      "quote": "Standard fortification items provide enhancement bonuses to fortification. Multiple effects do not stack with each other. You can combine them with rarer Insightful Fortification items (insight bonus).",
+      "kind": "pair",
+      "types": [
+        "Enhancement",
+        "Insight"
+      ],
+      "stats": [
+        "Fortification"
+      ],
+      "channel": "gear"
+    },
+    {
+      "id": "spot-heroism-luck",
+      "source": "fort-spot-tip179-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Morale",
+        "Luck"
+      ],
+      "stats": [
+        "Spot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "heroism-spot",
+          "luck-spot"
+        ]
+      ]
+    },
+    {
+      "id": "spot-chains-heroism",
+      "source": "fort-spot-tip179-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Competence",
+        "Morale"
+      ],
+      "stats": [
+        "Spot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "chains-spot",
+          "heroism-spot"
+        ]
+      ]
+    },
+    {
+      "id": "spot-chains-luck",
+      "source": "fort-spot-tip179-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Competence",
+        "Luck"
+      ],
+      "stats": [
+        "Spot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "chains-spot",
+          "luck-spot"
+        ]
+      ]
+    },
+    {
+      "id": "wisdom-claws-celestial",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Enhancement",
+        "Profane"
+      ],
+      "stats": [
+        "Wisdom"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "claws-wisdom",
+          "celestial-profane-wisdom"
+        ]
+      ]
+    },
+    {
+      "id": "constitution-queen-boots",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Insight",
+        "Quality"
+      ],
+      "stats": [
+        "Constitution"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "queen-insight-con",
+          "boots-quality-con"
+        ]
+      ]
+    },
+    {
+      "id": "constitution-queen-celestial",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Insight",
+        "Profane"
+      ],
+      "stats": [
+        "Constitution"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "queen-insight-con",
+          "celestial-profane-constitution"
+        ]
+      ]
+    },
+    {
+      "id": "constitution-boots-celestial",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Quality",
+        "Profane"
+      ],
+      "stats": [
+        "Constitution"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "boots-quality-con",
+          "celestial-profane-constitution"
+        ]
+      ]
+    },
+    {
+      "id": "doubleshot-selected-six-pairs",
+      "source": "tip179-live-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Enhancement",
+        "Quality",
+        "Insight",
+        "Profane"
+      ],
+      "stats": [
+        "Doubleshot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "goggles-ds",
+          "ring-ds"
+        ],
+        [
+          "goggles-ds",
+          "boots-ds"
+        ],
+        [
+          "goggles-ds",
+          "armor-ds"
+        ],
+        [
+          "ring-ds",
+          "boots-ds"
+        ],
+        [
+          "ring-ds",
+          "armor-ds"
+        ],
+        [
+          "boots-ds",
+          "armor-ds"
+        ]
+      ]
     }
   ],
   "components": [
@@ -2585,7 +4047,7 @@
       "stat": "Ranged Power",
       "amount": 14,
       "bonus_type": "Enhancement",
-      "host": "Bracers",
+      "host": "Yeenoghu’s Reign / Yellow",
       "source": "rp-topaz",
       "value_pattern": "\\+(?P<value>14) Enhancement bonus to your Ranged Power",
       "type_evidence": "Enhancement bonus to your Ranged Power",
@@ -2600,43 +4062,13 @@
       "stat": "Ranged Power",
       "amount": 15,
       "bonus_type": "Profane",
-      "host": "Bracers",
+      "host": "Legendary Coldlight Runners / Moon",
       "source": "rp-lunar",
       "value_pattern": "\\+(?P<value>15) Profane Bonus to Ranged Power",
       "type_evidence": "Profane Bonus to Ranged Power",
       "state": "unknown",
       "requires": [],
       "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "monolith-rp",
-      "stat": "Ranged Power",
-      "amount": 15,
-      "bonus_type": "Artifact",
-      "host": "Necklace + Ring 2",
-      "source": "monolith",
-      "value_pattern": "★\\+(?P<value>15) Artifact Bonus to Melee and Ranged Power",
-      "type_evidence": "Artifact Bonus to Melee and Ranged Power",
-      "state": "verified",
-      "requires": [],
-      "note": "Two selected Legendary set members: Pendant and Earth and Sky; requires both equipped. The same set contributes once, not once per member.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "monolith-prr",
-      "stat": "PRR",
-      "amount": 30,
-      "bonus_type": "Artifact",
-      "host": "Necklace + Ring 2",
-      "source": "monolith",
-      "value_pattern": "★\\+(?P<value>30) Artifact Bonus to Physical Resistance Rating",
-      "type_evidence": "Artifact Bonus to Physical Resistance Rating",
-      "state": "verified",
-      "requires": [],
-      "note": "Two selected Legendary set members; one two-piece set contribution.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -2660,7 +4092,7 @@
       "stat": "Doubleshot",
       "amount": 3,
       "bonus_type": "Quality",
-      "host": "Ring 1",
+      "host": "Legendary Ring of Unnatural Accuracy",
       "source": "ring-ds",
       "value_pattern": "(?P<value>3)% Quality bonus",
       "type_evidence": "Quality bonus to Doubleshot",
@@ -2679,21 +4111,6 @@
       "source": "boots-ds",
       "value_pattern": "(?P<value>5)% Insight bonus",
       "type_evidence": "Insight bonus to Doubleshot",
-      "state": "verified",
-      "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "solar-ds",
-      "stat": "Doubleshot",
-      "amount": 15,
-      "bonus_type": "Artifact",
-      "host": "Helmet",
-      "source": "solar-ds",
-      "value_pattern": "\\+(?P<value>15)% Artifact Bonus to Doubleshot",
-      "type_evidence": "Artifact Bonus to Doubleshot",
       "state": "verified",
       "requires": [],
       "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
@@ -2806,26 +4223,11 @@
       "kit_min_level": 36
     },
     {
-      "id": "belt-seeker",
-      "stat": "Seeker",
-      "amount": 3,
-      "bonus_type": "Quality",
-      "host": "Belt",
-      "source": "belt-seeker",
-      "value_pattern": "\\+(?P<value>3) Quality bonus",
-      "type_evidence": "Quality bonus",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Woeful accessory craft; binding propagation remains unverified, not a numerical stacking input.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
       "id": "solar-seeker",
       "stat": "Seeker",
       "amount": 4,
       "bonus_type": "Artifact",
-      "host": "Armor",
+      "host": "The Skull of the Horned King / Sun",
       "source": "solar-seeker",
       "value_pattern": "\\+(?P<value>4) Artifact Bonus",
       "type_evidence": "Artifact Bonus to Critical Confirmation and Damage",
@@ -2881,77 +4283,17 @@
       "kit_min_level": 36
     },
     {
-      "id": "pendant-ap",
-      "stat": "Armor-Piercing",
-      "amount": 21,
-      "bonus_type": "Enhancement",
-      "host": "Necklace",
-      "source": "pendant-armor-piercing",
-      "value_pattern": "\\+(?P<value>21)% Enhancement bonus",
-      "type_evidence": "Enhancement bonus to Fortification Bypass",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "pendant-accuracy",
-      "stat": "Accuracy",
-      "amount": 5,
-      "bonus_type": "Quality",
-      "host": "Necklace",
-      "source": "pendant-quality-accuracy",
-      "value_pattern": "\\+(?P<value>5) Quality bonus",
-      "type_evidence": "Quality bonus to attack rolls",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
       "id": "boots-int",
       "stat": "Intelligence",
       "amount": 15,
       "bonus_type": "Enhancement",
       "host": "Boots",
-      "source": "viktranium",
-      "value_pattern": "Melancholic Intelligence[\\s\\S]*?\\+(?P<value>15) Enhancement bonus to Intelligence",
+      "source": "melancholic-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Enhancement bonus to Intelligence",
       "type_evidence": "Enhancement bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Legendary accessory column of selected Melancholic/Dolorous craft, not the heroic value.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "boots-quality-int",
-      "stat": "Intelligence",
-      "amount": 3,
-      "bonus_type": "Quality",
-      "host": "Boots",
-      "source": "viktranium",
-      "value_pattern": "Dolorous Quality Intelligence[\\s\\S]*?\\+(?P<value>3) Quality bonus to Intelligence",
-      "type_evidence": "Quality bonus to Intelligence",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Legendary accessory column of selected Melancholic/Dolorous craft, not the heroic value.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "bracers-int",
-      "stat": "Intelligence",
-      "amount": 7,
-      "bonus_type": "Insight",
-      "host": "Bracers",
-      "source": "bracers-int",
-      "value_pattern": "\\+(?P<value>7) Insight bonus to Intelligence",
-      "type_evidence": "Insight bonus to Intelligence",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +15 Enhancement Intelligence, ML34, Melancholic Accessory. The selected Coldlight Runners offer the matching Accessory socket. Only this INT definition qualifies; other ability inputs and positive interaction edges are separate. Full-kit applicability remains ML36.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -2960,13 +4302,13 @@
       "stat": "Intelligence",
       "amount": 4,
       "bonus_type": "Artifact",
-      "host": "Trinket",
-      "source": "solar-int",
-      "value_pattern": "\\+(?P<value>4) Artifact Bonus to Intelligence",
+      "host": "Legendary Abyssal Compass / Sun",
+      "source": "solar-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Artifact Bonus to Intelligence",
       "type_evidence": "Artifact Bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +4 Artifact Intelligence, ML30, Sun. The selected Abyssal Compass offers Sun; its base ML35 and filled ML36 are distinct from the gem level. Existing Artifact interactions are retained; no new rule or complete INT total is inferred from this definition alone. The separate bounded .6 interaction contract supplies the remaining selected INT edges.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -2975,13 +4317,13 @@
       "stat": "Intelligence",
       "amount": 4,
       "bonus_type": "Profane",
-      "host": "Gloves",
-      "source": "lunar-int",
-      "value_pattern": "\\+(?P<value>4) Profane Bonus to Intelligence",
+      "host": "Legendary Glabrezu Claw Pendant / Moon",
+      "source": "lunar-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Profane Bonus to Intelligence",
       "type_evidence": "Profane Bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +4 Profane Intelligence, ML30, Moon, in the selected Glabrezu Moon socket. This is the higher INT Profane input; Celestial's native +2 INT is suppressed under the existing same-type rule, not added. Other type interactions remain separate.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -2990,28 +4332,13 @@
       "stat": "Intelligence",
       "amount": 2,
       "bonus_type": "Festive",
-      "host": "Belt",
-      "source": "festive-int",
-      "value_pattern": "\\+(?P<value>2) Festive bonus to Intelligence",
+      "host": "Legendary Ring of Unnatural Accuracy / Green",
+      "source": "festive-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Festive bonus to Intelligence",
       "type_evidence": "Festive bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "festive-con",
-      "stat": "Constitution",
-      "amount": 2,
-      "bonus_type": "Festive",
-      "host": "Armor",
-      "source": "festive-con",
-      "value_pattern": "\\+(?P<value>2) Festive bonus to Constitution",
-      "type_evidence": "Festive bonus to Constitution",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +2 Festive Intelligence, ML22, Colorless, in the selected Unnatural Accuracy Green socket. Covered only by the existing owner-approved Festive exception; auction stock is not established. Spooky is its historical naming, not an additional selected type. Build 11-15-26.6 adds a separate, bounded positive interaction rule for the ten selected Enhancement/Insight/Quality/Profane/Festive INT pairs; it does not change this definition.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3021,12 +4348,12 @@
       "amount": 2,
       "bonus_type": "Exceptional",
       "host": "Weapon",
-      "source": "dimlight",
-      "value_pattern": "\\+(?P<value>2) Exceptional bonus to Intelligence",
+      "source": "dimlight-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Exceptional bonus to Intelligence",
       "type_evidence": "Exceptional bonus to Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Fresh own-augment definition: +2 Exceptional Intelligence, ML34, Miserable Weapon, in Calamitous's matching slot. This is not the separate Melancholic caster augment and no quarterstaff condition is imported. Globe's +1 INT is suppressed by the existing same-type maximum; no new INT or DPS gain.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3035,13 +4362,13 @@
       "stat": "Intelligence",
       "amount": 1,
       "bonus_type": "Exceptional",
-      "host": "Gloves",
-      "source": "globe",
-      "value_pattern": "\\+(?P<value>1) Exceptional Bonus",
+      "host": "Legendary Calamitous Longbow / Purple",
+      "source": "globe-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) Exceptional Bonus",
       "type_evidence": "Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. One selected Globe; Intelligence is suppressed by Exceptional2 Dimlight, Constitution is not.",
+      "note": "Fresh own-augment definition explicitly includes Intelligence in its +1 Exceptional abilities effect, ML25, Colorless; the page permits any ordinary-color socket. The selected bow Purple placement is supported. This INT input is suppressed by Dimlight +2, not added; other Globe ability inputs retain their independent evidence status.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3050,45 +4377,22 @@
       "stat": "Constitution",
       "amount": 1,
       "bonus_type": "Exceptional",
-      "host": "Gloves",
-      "source": "globe",
-      "value_pattern": "\\+(?P<value>1) Exceptional Bonus",
-      "type_evidence": "Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. One selected Globe; Intelligence is suppressed by Exceptional2 Dimlight, Constitution is not.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "litany-intelligence",
-      "stat": "Intelligence",
-      "amount": 2,
-      "bonus_type": "Profane",
-      "host": "Ring 2",
-      "source": "litany-typed",
-      "value_pattern": "\\+(?P<value>2) Profane bonus",
-      "type_evidence": "Profane bonus to all Abilities",
+      "host": "Legendary Calamitous Longbow / Purple",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
       "state": "verified",
       "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
       "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "litany-constitution",
-      "stat": "Constitution",
-      "amount": 2,
-      "bonus_type": "Profane",
-      "host": "Ring 2",
-      "source": "litany-typed",
-      "value_pattern": "\\+(?P<value>2) Profane bonus",
-      "type_evidence": "Profane bonus to all Abilities",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
-      "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-colorless-all-abilities",
+        "sources": {
+          "item": "globe-int-live-20261115"
+        }
+      },
+      "note": "The selected Colorless Globe explicitly grants +1 Exceptional Constitution. Its unchanged original observation, ML25, Calamitous ML34 Purple socket1 and retained ordinary-slot compatibility are separately bound. Skull remains excluded from the full Constitution result."
     },
     {
       "id": "skull-con",
@@ -3101,7 +4405,7 @@
       "type_evidence": "Enhancement bonus to Constitution",
       "state": "conflicting",
       "requires": [],
-      "note": "Item-specific Skull revision 714102 lists 16 Enhancement, but generic Nearly Complete revision 705751 lists Legendary ability 15. No explicit exception is established. Selected Constitution craft stays unchanged; 16 is excluded from asserted totals pending resolution. Historical solver 32 and listed recipe 33 are separate, unverified records.",
+      "note": "Selected Constitution craft is unchanged. The exact Skull own-page definition gives +16 Enhancement while the generic craft/model uses +15. Neither case is certified; the manifest reports model CON 32 and the own-page sensitivity CON 33 separately.",
       "channel": "gear",
       "kit_min_level": 36,
       "related_sources": [
@@ -3109,71 +4413,11 @@
       ]
     },
     {
-      "id": "belt-con",
-      "stat": "Constitution",
-      "amount": 3,
-      "bonus_type": "Quality",
-      "host": "Belt",
-      "source": "belt-con",
-      "value_pattern": "\\+(?P<value>3) Quality bonus to Constitution",
-      "type_evidence": "Quality bonus to Constitution",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "lunar-con",
-      "stat": "Constitution",
-      "amount": 4,
-      "bonus_type": "Profane",
-      "host": "Belt",
-      "source": "lunar-con",
-      "value_pattern": "\\+(?P<value>4) Profane Bonus to Constitution",
-      "type_evidence": "Profane Bonus to Constitution",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "defense-prr",
-      "stat": "PRR",
-      "amount": 40,
-      "bonus_type": "Enhancement",
-      "host": "Weapon",
-      "source": "defense",
-      "value_pattern": "\\+(?P<value>40) Enhancement bonus",
-      "type_evidence": "Enhancement bonus to your Physical Resistance Rating and Magical Resistance Rating",
-      "state": "verified",
-      "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks. Retained BASIC fill; modeled Queen Sheltering41 would supersede40, but Queen type/provenance is unverified so the combined current subtotal is withheld.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "defense-mrr",
-      "stat": "MRR",
-      "amount": 40,
-      "bonus_type": "Enhancement",
-      "host": "Weapon",
-      "source": "defense",
-      "value_pattern": "\\+(?P<value>40) Enhancement bonus",
-      "type_evidence": "Enhancement bonus to your Physical Resistance Rating and Magical Resistance Rating",
-      "state": "verified",
-      "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks. Retained BASIC fill; modeled Queen Sheltering41 would supersede40, but Queen type/provenance is unverified so the combined current subtotal is withheld.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
       "id": "lunar-prr",
       "stat": "PRR",
       "amount": 30,
       "bonus_type": "Profane",
-      "host": "Boots",
+      "host": "Legendary Burrowing Claws / Moon",
       "source": "lunar-prr",
       "value_pattern": "\\+(?P<value>30) Profane Bonus",
       "type_evidence": "Profane Bonus to Physical Resistance Rating",
@@ -3244,62 +4488,17 @@
       "kit_min_level": 36
     },
     {
-      "id": "fort-enh",
-      "stat": "Fortification",
-      "amount": 162,
-      "bonus_type": "Enhancement",
-      "host": "Bracers",
-      "source": "fort-enh",
-      "value_pattern": "\\+(?P<value>162)% Enhancement bonus",
-      "type_evidence": "Enhancement bonus",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "fort-insight",
-      "stat": "Fortification",
-      "amount": 81,
-      "bonus_type": "Insight",
-      "host": "Bracers",
-      "source": "fort-insight",
-      "value_pattern": "\\+(?P<value>81)% Insight bonus",
-      "type_evidence": "Insight bonus",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks. Modeled Queen Insightful Fortification84 would supersede81; Queen provenance is missing.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "fort-quality",
-      "stat": "Fortification",
-      "amount": 40,
-      "bonus_type": "Quality",
-      "host": "Bracers",
-      "source": "fort-quality",
-      "value_pattern": "\\+(?P<value>40)% Quality bonus",
-      "type_evidence": "Quality bonus",
-      "state": "unknown",
-      "requires": [],
-      "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
       "id": "false-life",
       "stat": "HP",
       "amount": 60,
       "bonus_type": "Enhancement",
-      "host": "Goggles",
+      "host": "Legendary Goggles of the Archer / Green",
       "source": "hp-false-life",
       "value_pattern": "\\+(?P<value>60) Enhancement bonus",
       "type_evidence": "Enhancement bonus to your maximum Hit Points",
       "state": "verified",
       "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Exact selected augment is still present in the current Wisdom recipe at this host. The original qualified definition and applicable Vitality interaction are retained; this is flat maximum HP only, not CON-derived or temporary HP.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3308,13 +4507,13 @@
       "stat": "HP",
       "amount": 48,
       "bonus_type": "Vitality",
-      "host": "Helmet",
+      "host": "Legendary Burrowing Claws / Green",
       "source": "hp-vitality",
       "value_pattern": "\\+(?P<value>48) Vitality bonus",
       "type_evidence": "Vitality bonus to Maximum HP",
       "state": "verified",
       "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "Exact selected augment is still present in the current Wisdom recipe at this host. The original qualified definition and applicable Vitality interaction are retained; this is flat maximum HP only, not CON-derived or temporary HP.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3323,13 +4522,13 @@
       "stat": "Healing Amplification",
       "amount": 63,
       "bonus_type": "Competence",
-      "host": "Belt",
+      "host": "Legendary Abyssal Compass / Green",
       "source": "ha",
       "value_pattern": "\\+(?P<value>63) Competence bonus",
       "type_evidence": "Competence bonus to your Healing Amplification",
       "state": "verified",
       "requires": [],
-      "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
+      "note": "The same selected Sapphire of Healing Amplification +63 moved to the Compass Green socket. Its qualified typed effect receipt is preserved; effect support does not independently certify acquisition availability.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3353,7 +4552,7 @@
       "stat": "Fortitude",
       "amount": 4,
       "bonus_type": "Morale",
-      "host": "Trinket",
+      "host": "Legendary Glabrezu Claw Pendant / Green",
       "source": "heroism",
       "value_pattern": "\\+(?P<value>4) Morale Bonus",
       "type_evidence": "Morale Bonus to Attack Rolls, Saving Throws",
@@ -3368,28 +4567,13 @@
       "stat": "Fortitude",
       "amount": 3,
       "bonus_type": "Luck",
-      "host": "Necklace",
+      "host": "Yeenoghu’s Reign / Blue",
       "source": "good-luck",
       "value_pattern": "\\+(?P<value>3) Luck bonus",
       "type_evidence": "Luck bonus to Saving Throws",
       "state": "unknown",
       "requires": [],
       "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "resistance-fortitude",
-      "stat": "Fortitude",
-      "amount": 12,
-      "bonus_type": "Resistance",
-      "host": "Cloak",
-      "source": "resistance-item",
-      "value_pattern": "\\+(?P<value>12) Resistance bonus",
-      "type_evidence": "Resistance bonus to your Saving Throws",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule. Retained BASIC fill; modeled Queen Resistance13 would supersede12, but Queen type/provenance is unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3413,7 +4597,7 @@
       "stat": "Reflex",
       "amount": 4,
       "bonus_type": "Morale",
-      "host": "Trinket",
+      "host": "Legendary Glabrezu Claw Pendant / Green",
       "source": "heroism",
       "value_pattern": "\\+(?P<value>4) Morale Bonus",
       "type_evidence": "Morale Bonus to Attack Rolls, Saving Throws",
@@ -3428,28 +4612,13 @@
       "stat": "Reflex",
       "amount": 3,
       "bonus_type": "Luck",
-      "host": "Necklace",
+      "host": "Yeenoghu’s Reign / Blue",
       "source": "good-luck",
       "value_pattern": "\\+(?P<value>3) Luck bonus",
       "type_evidence": "Luck bonus to Saving Throws",
       "state": "unknown",
       "requires": [],
       "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "resistance-reflex",
-      "stat": "Reflex",
-      "amount": 12,
-      "bonus_type": "Resistance",
-      "host": "Cloak",
-      "source": "resistance-item",
-      "value_pattern": "\\+(?P<value>12) Resistance bonus",
-      "type_evidence": "Resistance bonus to your Saving Throws",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule. Retained BASIC fill; modeled Queen Resistance13 would supersede12, but Queen type/provenance is unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3473,7 +4642,7 @@
       "stat": "Will",
       "amount": 4,
       "bonus_type": "Morale",
-      "host": "Trinket",
+      "host": "Legendary Glabrezu Claw Pendant / Green",
       "source": "heroism",
       "value_pattern": "\\+(?P<value>4) Morale Bonus",
       "type_evidence": "Morale Bonus to Attack Rolls, Saving Throws",
@@ -3488,28 +4657,13 @@
       "stat": "Will",
       "amount": 3,
       "bonus_type": "Luck",
-      "host": "Necklace",
+      "host": "Yeenoghu’s Reign / Blue",
       "source": "good-luck",
       "value_pattern": "\\+(?P<value>3) Luck bonus",
       "type_evidence": "Luck bonus to Saving Throws",
       "state": "unknown",
       "requires": [],
       "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "resistance-will",
-      "stat": "Will",
-      "amount": 12,
-      "bonus_type": "Resistance",
-      "host": "Cloak",
-      "source": "resistance-item",
-      "value_pattern": "\\+(?P<value>12) Resistance bonus",
-      "type_evidence": "Resistance bonus to your Saving Throws",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule. Retained BASIC fill; modeled Queen Resistance13 would supersede12, but Queen type/provenance is unverified.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3533,28 +4687,13 @@
       "stat": "Ranged threat reduction",
       "amount": 22,
       "bonus_type": "Enhancement",
-      "host": "Ring 1",
+      "host": "Legendary Ring of Unnatural Accuracy",
       "source": "ring-threat",
       "value_pattern": "\\+(?P<value>22)% Enhancement bonus",
       "type_evidence": "Enhancement bonus to decreased threat generated from ranged damage",
       "state": "verified",
       "requires": [],
       "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "pendant-threat",
-      "stat": "Ranged threat reduction",
-      "amount": 21,
-      "bonus_type": "Enhancement",
-      "host": "Necklace",
-      "source": "pendant-diversion",
-      "value_pattern": "\\+(?P<value>21)% Enhancement bonus",
-      "type_evidence": "Enhancement bonus to decreased threat generated from ranged damage",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3593,7 +4732,7 @@
       "stat": "Greater Marksmanship damage",
       "amount": 2,
       "bonus_type": "Competence",
-      "host": "Ring 1",
+      "host": "Legendary Ring of Unnatural Accuracy",
       "source": "marksmanship-ring1",
       "value_pattern": "\\+(?P<value>2) Competence Bonus to Ranged Damage",
       "type_evidence": "Competence Bonus to Ranged Damage",
@@ -3608,7 +4747,7 @@
       "stat": "Greater Marksmanship attack",
       "amount": 3,
       "bonus_type": "Competence",
-      "host": "Ring 1",
+      "host": "Legendary Ring of Unnatural Accuracy",
       "source": "marksmanship-ring1",
       "value_pattern": "\\+(?P<value>3) Competence Bonus to Ranged Attack",
       "type_evidence": "Competence Bonus to Ranged Attack",
@@ -3645,21 +4784,6 @@
       "state": "verified",
       "requires": [],
       "note": "Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "solar-sneak",
-      "stat": "Sneak dice",
-      "amount": 3,
-      "bonus_type": "Artifact",
-      "host": "Cloak",
-      "source": "solar-sneak",
-      "value_pattern": "\\+(?P<value>3) Artifact Bonus",
-      "type_evidence": "Artifact Bonus to Sneak Attack Dice",
-      "state": "verified",
-      "requires": [],
-      "note": "Direct own-effect tooltip verifies value and type; combined total still needs every applicable interaction rule.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3863,28 +4987,13 @@
       "stat": "Accuracy",
       "amount": 4,
       "bonus_type": "Morale",
-      "host": "Trinket",
+      "host": "Legendary Glabrezu Claw Pendant / Green",
       "source": "heroism",
       "value_pattern": "\\+(?P<value>4) Morale Bonus",
       "type_evidence": "Morale Bonus to Attack Rolls",
       "state": "unknown",
       "requires": [],
       "note": "Retained source text is logged, but its exact revision or genuine observation context is incomplete. This input is excluded pending provenance repair. Selected filled item at cap; source and interaction evidence are separate checks.",
-      "channel": "gear",
-      "kit_min_level": 36
-    },
-    {
-      "id": "earth-sky-prr",
-      "stat": "PRR",
-      "amount": 17,
-      "bonus_type": "Insight",
-      "host": "Ring 2",
-      "source": "earth-sky-insight",
-      "value_pattern": "\\+(?P<value>17) Insight bonus",
-      "type_evidence": "Insight bonus to Physical Resistance Rating",
-      "state": "verified",
-      "requires": [],
-      "note": "Suppressed by selected Compass Insight21. Tempest is a separate two-piece set, not a second active Monolith bonus.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3899,7 +5008,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Modeled Enhancement Sheltering41 supersedes Defense 40; exact own-tooltip type and original source identity are not retained.",
+      "note": "Retained Queen input in the current Wisdom loadout; source evidence does not meet this ledger’s exact revision/observation/type gate. Its modeled value is not certified. The prior Defense augment, Resistance augment and Battlerager are absent, so their historical overlap is not a current input. Sheltering is modeled as Enhancement; the exact qualified own-tooltip type remains unresolved.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3914,7 +5023,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Modeled Enhancement Sheltering41 supersedes Defense 40; exact own-tooltip type and original source identity are not retained. Apply armor cap to whole-character MRR.",
+      "note": "Retained Queen input in the current Wisdom loadout; source evidence does not meet this ledger’s exact revision/observation/type gate. Its modeled value is not certified. The prior Defense augment, Resistance augment and Battlerager are absent, so their historical overlap is not a current input. Sheltering is modeled as Enhancement; the exact qualified own-tooltip type remains unresolved.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3922,31 +5031,46 @@
       "id": "queen-insight-con",
       "stat": "Constitution",
       "amount": 7,
-      "bonus_type": "unknown",
+      "bonus_type": "Insight",
       "host": "Cloak Nearly Complete",
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Explicit Insightful Constitution7 option relayed; selected craft replaces prior cloak Insight7. No captured exact tooltip/revision is available.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-nearly-complete",
+        "sources": {
+          "item": "wiscon-queen-20261116",
+          "craft": "wiscon-nearly-complete-20261116"
+        }
+      },
+      "note": "Selected Nearly Complete Insightful Constitution craft. The fresh own-item +7 Insight clause and generic Legendary craft context qualify this definition independently of Queen Fortification; other Queen effects retain their own evidence limits."
     },
     {
       "id": "queen-fortification",
       "stat": "Fortification",
       "amount": 84,
-      "bonus_type": "unknown",
+      "bonus_type": "Insight",
       "host": "Cloak",
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Modeled Insight84 supersedes Battlerager Insight 81; exact source bytes/type evidence and Quality positive interactions remain missing.",
+      "note": "Source-supported same-item field association: the own Queen popup binds its Fortification +84% label to the +84% Insight description. The exact fields remain separate; no combined tooltip is invented. This qualifies only the selected Queen Fortification contribution in the full level-36 kit. The separately supported Chains 142 Enhancement recipe and observed interaction now complete 226 selected-gear Fortification at level 36. Other Queen effects and the historical relay retain their original limits.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-fort-spot-v1",
+        "method": "same-item-popup",
+        "sources": {
+          "item": "fort-spot-queen-20261115"
+        }
+      }
     },
     {
       "id": "queen-fortitude",
@@ -3959,7 +5083,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Modeled Resistance 13 supersedes the retained augment12; no additional13+12 sum.",
+      "note": "Retained Queen input in the current Wisdom loadout; source evidence does not meet this ledger’s exact revision/observation/type gate. Its modeled value is not certified. The prior Defense augment, Resistance augment and Battlerager are absent, so their historical overlap is not a current input.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3974,7 +5098,7 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Modeled Resistance 13 supersedes the retained augment12; no additional13+12 sum.",
+      "note": "Retained Queen input in the current Wisdom loadout; source evidence does not meet this ledger’s exact revision/observation/type gate. Its modeled value is not certified. The prior Defense augment, Resistance augment and Battlerager are absent, so their historical overlap is not a current input.",
       "channel": "gear",
       "kit_min_level": 36
     },
@@ -3989,22 +5113,637 @@
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "A-074 relayed model input, excluded from certified totals. Modeled Resistance 13 supersedes the retained augment12; no additional13+12 sum.",
+      "note": "Retained Queen input in the current Wisdom loadout; source evidence does not meet this ledger’s exact revision/observation/type gate. Its modeled value is not certified. The prior Defense augment, Resistance augment and Battlerager are absent, so their historical overlap is not a current input.",
       "channel": "gear",
       "kit_min_level": 36
     },
     {
-      "id": "spot-diamond",
-      "stat": "Spot",
-      "amount": 22,
-      "bonus_type": "Competence",
-      "host": "Ring 1 Green (Colorless augment)",
+      "id": "dusk-raider-rp",
+      "stat": "Ranged Power",
+      "amount": 15,
+      "bonus_type": "Artifact",
+      "host": "Dusk Raider: Pendant Colorless / Queen Green / Unnatural Accuracy Colorless",
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
       "state": "unknown",
       "requires": [],
-      "note": "Selected ML36 Diamond of Spot +22: Competence per transmitted own-item excerpt (recorded oldid 703902); original bytes and observation context unavailable here. State remains unknown and excluded from certified totals; acquisition unknown. Not a guaranteed final +22 skill change.",
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Requires three distinct equipped hosts. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "tough-shields-prr",
+      "stat": "PRR",
+      "amount": 30,
+      "bonus_type": "Artifact",
+      "host": "Tough Shields: Armor Colorless / Compass Colorless / Celestial Sapphire Yellow",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Requires three distinct equipped hosts. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "quickblade-ds",
+      "stat": "Doubleshot",
+      "amount": 15,
+      "bonus_type": "Artifact",
+      "host": "Quickblade: Goggles Colorless / Chains Green / Yeenoghu Green",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "note": "Source-supported selected Quickblade contribution: one +15 Artifact Doubleshot reward from three Colorless ML30 augments on three distinct equipped hosts (Goggles Colorless, crafted Chains Green, Yeenoghu Green). The Chains slot upgrade is a prerequisite, not a second socket. Source/type, ordinary-slot compatibility, distinct-host threshold, once-only reward and original observation contexts are separately bound. Full filled-kit applicability remains level36. This documentary selected-kit result does not establish ownership, completed crafting, live activation, whole-character Doubleshot or DPS.",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-gear-doubleshot-v1",
+        "method": "three-selected-equipped-hosts",
+        "sources": {
+          "system": "ds-augment-system-20261116",
+          "item": "ds-quickblade-20261116",
+          "table": "ds-set-table-20261116",
+          "set_rules": "ds-set-rules-20261116",
+          "goggles_host": "ds-goggles-host-20261116",
+          "chains_host": "ds-chains-host-20261116",
+          "artifact_host": "ds-yeenoghu-host-20261116",
+          "green_recipe": "ds-green-recipe-20261116"
+        }
+      }
+    },
+    {
+      "id": "perfect-silence-sneak",
+      "stat": "Sneak dice",
+      "amount": 3,
+      "bonus_type": "Artifact",
+      "host": "Perfect Silence: Skull Yellow / Claws Colorless / Coldlight Colorless",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Three set augments replace the old Solar sneak-dice gem; do not confuse dice with the selected flat-damage Solar gem. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "glabrezu-quality-accuracy",
+      "stat": "Accuracy",
+      "amount": 5,
+      "bonus_type": "Quality",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. The old Pendant of Subtle Pain receipt does not certify a different item. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "glabrezu-quality-seeker",
+      "stat": "Seeker",
+      "amount": 3,
+      "bonus_type": "Quality",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. The old Unbreakable Cord receipt does not certify a different item. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "glabrezu-insight-int",
+      "stat": "Intelligence",
+      "amount": 7,
+      "bonus_type": "Insight",
+      "host": "Legendary Glabrezu Claw Pendant / Nearly Complete",
+      "source": "glabrezu-insight-int-live-20261115",
+      "value_pattern": "granting a \\+(?P<value>\\d+) <a href=\"/page/Insight_bonus\" title=\"Insight bonus\">Insight bonus</a> to Intelligence\\.",
+      "type_evidence": "Insight bonus",
+      "state": "verified",
+      "requires": [],
+      "note": "The retained exact Legendary item lists the selected Nearly Complete Insightful Intelligence +7 option and its Insight bonus tooltip. This qualifies this crafted-item input only. Build 11-15-26.6 separately supports the ten selected mixed-type INT pairs, including Insight/Quality; ownership, character ability totals and DPS remain separate. Base item ML35; the unchanged filled-kit applicability floor is ML36. Original claim-inventory grades and historical captures are preserved.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "yeenoghu-quality-deadly",
+      "stat": "Deadly",
+      "amount": 4,
+      "bonus_type": "Quality",
+      "host": "Yeenoghu’s Reign",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Retained own-item support is not a qualified revision-plus-observation effect receipt. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "lunar-deadly",
+      "stat": "Deadly",
+      "amount": 4,
+      "bonus_type": "Profane",
+      "host": "Yeenoghu’s Reign / Moon",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Lunar Gem of Weapon Damage (Legendary); independent corroboration is not certification. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "chains-fortification",
+      "stat": "Fortification",
+      "amount": 142,
+      "bonus_type": "Enhancement",
+      "host": "Legendary Chains / Prefix",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "note": "Source-supported recipe derivation: the pinned Wiki supplies Legendary Prefix Fortification 142 and Chains host/slot applicability; Nexus explicitly supplies Enhancement on the corresponding Legendary recipe with 100 Legendary Broken Shackles and Prefix-slot removal. Nexus displays Fortification +% with the number absent; no combined numeric tooltip, client version or game capture is invented. The existing observed Enhancement/Insight rule supports 226 selected-gear Fortification at the full-kit level 36 with Queen 84. This is not universal damage reduction; other character sources and enemy bypass remain separate.",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "recipe_proof": {
+        "contract": "slave-lords-selected-types-v1",
+        "sources": {
+          "host": "chains-host-recipe-20261115",
+          "recipe": "chains-legendary-recipe-20261115",
+          "shared_host": "chains-types-shared-host-20261115",
+          "type": "chains-types-fortification-20261115"
+        }
+      }
+    },
+    {
+      "id": "chains-combustion",
+      "stat": "Combustion",
+      "amount": 142,
+      "bonus_type": "Equipment",
+      "host": "Legendary Chains / Suffix",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "note": "Source-supported recipe derivation: the selected Legendary host offers Suffix; the recipe offers single-type Equipment Spell Power +142 in its Legendary column; the sourced definition maps continuous Combustion to Fire Spell Power. The three real contexts are bound separately, not presented as one finished tooltip. This qualifies only the 142 selected-gear contribution at the full-kit floor, not weapon damage, established Fire-imbue applicability, full-character Spell Power or measured ranged DPS.",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "recipe_proof": {
+        "contract": "slave-lords-selected-v1",
+        "sources": {
+          "host": "chains-host-recipe-20261115",
+          "recipe": "chains-legendary-recipe-20261115",
+          "membership": "chains-combustion-membership-20261115"
+        }
+      }
+    },
+    {
+      "id": "chains-quality-int",
+      "stat": "Intelligence",
+      "amount": 3,
+      "bonus_type": "Quality",
+      "host": "Legendary Chains / Bonus",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "note": "Source-supported recipe derivation: the selected Legendary host offers Bonus; its recipe offers Quality Attributes +3 in the Legendary column; the sourced Ability definition includes Intelligence and identifies abilities as attributes. This qualifies the one selected Bonus input, not a finished-item tooltip. Build 11-15-26.6 separately adds exactly ten selected mixed-type INT interactions. All nine selected definitions qualify; seven count and two same-type duplicates are suppressed, deriving +37 gear INT at level36. This is not a character total or a DPS result.",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "recipe_proof": {
+        "contract": "slave-lords-selected-v1",
+        "sources": {
+          "host": "chains-host-recipe-20261115",
+          "recipe": "chains-legendary-recipe-20261115",
+          "membership": "chains-intelligence-membership-20261115"
+        }
+      }
+    },
+    {
+      "id": "chains-spot",
+      "stat": "Spot",
+      "amount": 20,
+      "bonus_type": "Competence",
+      "host": "Legendary Chains / Extra",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "note": "Source-supported recipe derivation: the pinned Wiki supplies Legendary Extra Skills-except-UMD +20, explicit Spot membership and Chains host/slot applicability. Nexus variant 0x7002C66B uses 100 Legendary Broken Collars, removes the Extra slot and describes Competence. Its Spot + numeric placeholder remains empty. Two separately bounded Chains–Heroism and Chains–Luck interactions complete 27 direct selected-gear Spot at level 36; this is not whole-character Spot, a Wisdom modifier or a trap-success guarantee. The same-name Bonus variant is not admitted; data-version and source-accuracy limits remain.",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "recipe_proof": {
+        "contract": "slave-lords-selected-types-v1",
+        "sources": {
+          "host": "chains-host-recipe-20261115",
+          "recipe": "chains-legendary-recipe-20261115",
+          "shared_host": "chains-types-shared-host-20261115",
+          "type": "chains-types-spot-20261115",
+          "skill": "fort-spot-skill-20261115",
+          "spot": "fort-spot-spot-20261115"
+        }
+      }
+    },
+    {
+      "id": "boots-quality-con",
+      "stat": "Constitution",
+      "amount": 3,
+      "bonus_type": "Quality",
+      "host": "Legendary Coldlight Runners / Dolorous",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-lamordia-accessory",
+        "sources": {
+          "item": "wiscon-dolorous-20261116",
+          "host": "wiscon-coldlight-host-20261116"
+        }
+      },
+      "note": "Selected Legendary Dolorous Quality Constitution +3 in Coldlight Runners. Its own Quality clause, ML34 and exact Accessory variant match the host slot and retained Lamordia rule; no other Dolorous effect is inferred."
+    },
+    {
+      "id": "solar-con",
+      "stat": "Constitution",
+      "amount": 4,
+      "bonus_type": "Artifact",
+      "host": "Light Armor of the Warblade’s Reflection / Sun",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-sun-socket",
+        "sources": {
+          "item": "wiscon-solar-20261116",
+          "host": "wiscon-reflection-host-20261116",
+          "slot_rule": "wiscon-sun-system-20261116"
+        }
+      },
+      "note": "Selected Legendary Solar Constitution +4 Artifact in Reflection armor Sun socket0. The own gem, actual host Sun link, special-slot system and retained minimum-level rule support this placement; ML30 does not raise the ML33 host. Complete kit remains level36."
+    },
+    {
+      "id": "claws-wisdom",
+      "stat": "Wisdom",
+      "amount": 15,
+      "bonus_type": "Enhancement",
+      "host": "Legendary Burrowing Claws / Nearly Complete",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-nearly-complete",
+        "sources": {
+          "item": "wiscon-claws-20261116",
+          "craft": "wiscon-nearly-complete-20261116"
+        }
+      },
+      "note": "Selected Nearly Complete Wisdom craft. Fresh own-item typed clause and generic Legendary craft context qualify +15 Enhancement at the unchanged full-kit level36 floor. The older Claws source remains unmodified; the optional ring craft is not selected."
+    },
+    {
+      "id": "ring-quality-dex",
+      "stat": "Dexterity",
+      "amount": 3,
+      "bonus_type": "Quality",
+      "host": "Legendary Ring of Unnatural Accuracy",
+      "source": "ring-quality-dex",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Retained own-effect support is visible but does not meet the complete source gate. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "celestial-profane-strength",
+      "stat": "Strength",
+      "amount": 2,
+      "bonus_type": "Profane",
+      "host": "Legendary Celestial Sapphire Ring",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Profane Well Rounded is corroborated, not an original qualified typed receipt; the ring Nearly Finished slot is unselected. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "celestial-profane-dexterity",
+      "stat": "Dexterity",
+      "amount": 2,
+      "bonus_type": "Profane",
+      "host": "Legendary Celestial Sapphire Ring",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Profane Well Rounded is corroborated, not an original qualified typed receipt; the ring Nearly Finished slot is unselected. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "celestial-profane-constitution",
+      "stat": "Constitution",
+      "amount": 2,
+      "bonus_type": "Profane",
+      "host": "Legendary Celestial Sapphire Ring",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-all-ability-membership",
+        "sources": {
+          "item": "celestial-profane-int-live-20261115",
+          "membership": "chains-intelligence-membership-20261115"
+        }
+      },
+      "note": "Native Celestial Profane Well Rounded +2, with explicit retained Constitution ability membership. This is a bounded CON definition using unchanged original observations; Nearly Finished remains empty. The full Constitution result is withheld while Skull remains conflicting."
+    },
+    {
+      "id": "celestial-profane-intelligence",
+      "stat": "Intelligence",
+      "amount": 2,
+      "bonus_type": "Profane",
+      "host": "Legendary Celestial Sapphire Ring",
+      "source": "celestial-profane-int-live-20261115",
+      "value_pattern": "\\+(?P<value>\\d+) <a href=\"/page/Profane_bonus\" title=\"Profane bonus\">Profane bonus</a> to all abilities\\.",
+      "type_evidence": "Profane bonus",
+      "state": "verified",
+      "requires": [],
+      "note": "Fresh own-item native Profane Well Rounded tooltip gives +2 Profane to all abilities, including INT under the existing direct-source contract. The Nearly Finished craft remains unselected. Lunar +4 suppresses this INT +2; other ring effects and abilities are not automatically qualified. The page's negative cache-age display is retained as an anomaly.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "celestial-profane-wisdom",
+      "stat": "Wisdom",
+      "amount": 2,
+      "bonus_type": "Profane",
+      "host": "Legendary Celestial Sapphire Ring",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-all-ability-membership",
+        "sources": {
+          "item": "celestial-profane-int-live-20261115",
+          "membership": "chains-intelligence-membership-20261115"
+        }
+      },
+      "note": "Native Celestial Profane Well Rounded +2, with explicit retained Wisdom ability membership. This is a bounded WIS definition using unchanged original observations; Nearly Finished remains empty. INT suppression does not suppress this separate Wisdom contribution."
+    },
+    {
+      "id": "celestial-profane-charisma",
+      "stat": "Charisma",
+      "amount": 2,
+      "bonus_type": "Profane",
+      "host": "Legendary Celestial Sapphire Ring",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Profane Well Rounded is corroborated, not an original qualified typed receipt; the ring Nearly Finished slot is unselected. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "globe-strength",
+      "stat": "Strength",
+      "amount": 1,
+      "bonus_type": "Exceptional",
+      "host": "Legendary Calamitous Longbow / Purple",
+      "source": "globe",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Retained Globe all-ability definition lacks complete capture provenance. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "globe-dexterity",
+      "stat": "Dexterity",
+      "amount": 1,
+      "bonus_type": "Exceptional",
+      "host": "Legendary Calamitous Longbow / Purple",
+      "source": "globe",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Retained Globe all-ability definition lacks complete capture provenance. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "globe-wisdom",
+      "stat": "Wisdom",
+      "amount": 1,
+      "bonus_type": "Exceptional",
+      "host": "Legendary Calamitous Longbow / Purple",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-wisdom-constitution-v1",
+        "method": "selected-colorless-all-abilities",
+        "sources": {
+          "item": "globe-int-live-20261115"
+        }
+      },
+      "note": "The selected Colorless Globe explicitly grants +1 Exceptional Wisdom. Its unchanged original observation, ML25, Calamitous ML34 Purple socket1 and retained ordinary-slot compatibility are separately bound. Higher Exceptional INT does not suppress this separate Wisdom contribution."
+    },
+    {
+      "id": "globe-charisma",
+      "stat": "Charisma",
+      "amount": 1,
+      "bonus_type": "Exceptional",
+      "host": "Legendary Calamitous Longbow / Purple",
+      "source": "globe",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Retained Globe all-ability definition lacks complete capture provenance. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "celestial-dodge",
+      "stat": "Dodge",
+      "amount": 13,
+      "bonus_type": "Enhancement",
+      "host": "Legendary Celestial Sapphire Ring",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. The model takes the same-type maximum with the selected Dodge +16 augment. This unresolved selected input remains visible, so a falsely complete 16 subtotal is not asserted. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "emerald-imbue",
+      "stat": "Imbue dice",
+      "amount": 1,
+      "bonus_type": "Enhancement",
+      "host": "Legendary Coldlight Runners / Green",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Emerald of Arcane Empowerment; imbue activation/scaling is separate. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "solar-sneak-damage",
+      "stat": "Sneak flat damage",
+      "amount": 3,
+      "bonus_type": "Artifact",
+      "host": "The Queen of Rot / Sun",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Selected model input, not a qualified component under this ledger’s source gate. Solar Gem of Sneak Attack Damage (Legendary): modeled flat +3, not +3 sneak dice. Sneak eligibility is required. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "heroism-spot",
+      "stat": "Spot",
+      "amount": 4,
+      "bonus_type": "Morale",
+      "host": "Legendary Glabrezu Claw Pendant / Green",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "note": "Source-supported category derivation: the own augment gives +4 Morale to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Glabrezu Green socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level 36. Only this Spot component qualifies. The exact Heroism/Luck pair still supports the +7 subset; the separately qualified Chains 20 and two additional named pairs complete 27 direct selected-gear Spot at level 36. This is not a character Spot total, additional gain over overlapping Morale/Luck buffs, or proof of the full Greater Heroism spell.",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-fort-spot-v1",
+        "method": "skill-check-membership",
+        "sources": {
+          "item": "fort-spot-heroism-20261115",
+          "skill": "fort-spot-skill-20261115",
+          "spot": "fort-spot-spot-20261115",
+          "host": "fort-spot-pendant-host-20261115",
+          "host_level": "fort-spot-pendant-level-20261115"
+        }
+      }
+    },
+    {
+      "id": "luck-spot",
+      "stat": "Spot",
+      "amount": 3,
+      "bonus_type": "Luck",
+      "host": "Yeenoghu’s Reign / Blue",
+      "source": "",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "verified",
+      "requires": [],
+      "note": "Source-supported category derivation: the own augment gives +3 Luck to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Yeenoghu Blue socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level 36. Only this Spot component qualifies. The exact Heroism/Luck pair still supports a +7 subset; separately qualified Chains 20 and two additional named pairs complete 27 direct selected-gear Spot at level 36. Existing same-type Luck overlaps still apply.",
+      "channel": "gear",
+      "kit_min_level": 36,
+      "definition_proof": {
+        "contract": "selected-fort-spot-v1",
+        "method": "skill-check-membership",
+        "sources": {
+          "item": "fort-spot-luck-20261115",
+          "skill": "fort-spot-skill-20261115",
+          "spot": "fort-spot-spot-20261115",
+          "host": "fort-spot-artifact-host-20261115",
+          "host_level": "fort-spot-artifact-level-20261115"
+        }
+      }
+    },
+    {
+      "id": "heroism-listen",
+      "stat": "Listen",
+      "amount": 4,
+      "bonus_type": "Morale",
+      "host": "Legendary Glabrezu Claw Pendant / Green",
+      "source": "heroism",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Greater Heroism skill bonus is a selected direct-skill input, separate from any Wisdom modifier. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
+      "channel": "gear",
+      "kit_min_level": 36
+    },
+    {
+      "id": "luck-listen",
+      "stat": "Listen",
+      "amount": 3,
+      "bonus_type": "Luck",
+      "host": "Yeenoghu’s Reign / Blue",
+      "source": "good-luck",
+      "value_pattern": "",
+      "type_evidence": "",
+      "state": "unknown",
+      "requires": [],
+      "note": "Good Luck skill bonus is a selected direct-skill input, separate from any Wisdom modifier. See the current selection manifest and claim inventory; no new source capture metadata or positive stacking edge is inferred.",
       "channel": "gear",
       "kit_min_level": 36
     }
@@ -4014,7 +5753,7 @@
       "id": "whole-build-doubleshot",
       "state": "unknown",
       "claim": "Whole-build Doubleshot: current combination unverified",
-      "detail": "Existing Guide claims under audit (not asserted totals): Arithmetic-only scenario: Manyshot54 conditional on BAB36; feat10; Harbinger2; Phase Double6; Pierce Deception5; Shadowstriker5; Improved Archer Focus10; current modeled gear35 (old Summer cloak36 is historical); optional Primal9, Reaper Strike30 for20s, two four-piece filigree sets10. Distinct applicable feats have a positive rule, but the entire acquisition/stance/tree/gear combination has not been established. Watchful Eye grant is conflicting; no whole-build total is asserted. Hidden Dark Imbuement2 is separately unresolved, not silently assumed absent.",
+      "detail": "Existing Guide claims under audit (not asserted totals): Arithmetic-only scenario: Manyshot54 conditional on BAB36; feat10; Harbinger2; Phase Double6; Pierce Deception5; Shadowstriker5; Improved Archer Focus10; current modeled gear 35 (including Quickblade’s unresolved Artifact 15; old Summer cloak 36 is historical); optional Primal9, Reaper Strike30 for20s, two four-piece filigree sets10. Distinct applicable feats have a positive rule, but the entire acquisition/stance/tree/gear combination has not been established. Watchful Eye grant is conflicting; no whole-build total is asserted. Hidden Dark Imbuement2 is separately unresolved, not silently assumed absent.",
       "sources": [
         "doubleshot-rule",
         "stack",
@@ -4040,13 +5779,12 @@
     {
       "id": "sneak-whole-build",
       "state": "conditional",
-      "claim": "Listed twelve class/tree dice plus selected Solar3",
-      "detail": "Existing Guide claims under audit (not asserted totals): Rogue1 gives1; DWS Far Shot1, Sneak Attack core1, Stealthy3 ranks1; Shadowdancer four cores4, Dance in Dark3 and hidden Bring Darkness1 = listed12. Eligibility, hidden effect and interactions are not fully established;15 is not asserted. Bring Darkness vulnerability has a retained bug warning. Bypass does not eliminate separate sneak immunity.",
+      "claim": "Listed class/tree dice, Perfect Silence dice and separate Solar flat damage",
+      "detail": "Existing Guide claims under audit (not asserted totals): Rogue1 gives1; DWS Far Shot1, Sneak Attack core1, Stealthy3 ranks1; Shadowdancer four cores4, Dance in Dark3 and hidden Bring Darkness1 = listed12. Eligibility, hidden effect and interactions are not fully established;15 is not asserted. Bring Darkness vulnerability has a retained bug warning. Bypass does not eliminate separate sneak immunity. Current gear models three Artifact sneak dice from the three-host Perfect Silence set plus a different Solar augment’s flat three sneak damage. These are distinct channels, not six sneak dice, and neither source completeness nor a whole-build total is certified.",
       "sources": [
         "fortification-rule",
         "deepwood",
-        "shadowdancer",
-        "solar-sneak"
+        "shadowdancer"
       ]
     },
     {
@@ -4077,7 +5815,7 @@
       "id": "riders-imbue",
       "state": "unknown",
       "claim": "Flames, quiver and Flaming Arrows",
-      "detail": "Existing Guide claims under audit (not asserted totals): Selected Melancholic Flames16d6 static fire, Dolorous Flames proc, Quiver Burning1d8 and Flaming Arrows base1d6 plus bonus imbue dice are distinct channels. Static weapon riders do not scale with RP; sneak uses150% RP; Flaming Arrows uses fire spellpower. Bow/ammo same-category rule prevents treating every listed rider as additive. Proc chance/ICD and actual interactions remain unknown; no expected-DPS addition.",
+      "detail": "Existing Guide claims under audit (not asserted totals): Selected Melancholic Flames16d6 static fire, Dolorous Flames proc, Quiver Burning1d8 and Flaming Arrows base1d6 plus bonus imbue dice are distinct channels. Static weapon riders do not scale with RP; sneak uses150% RP; Flaming Arrows uses fire spellpower. Bow/ammo same-category rule prevents treating every listed rider as additive. Proc chance/ICD and actual interactions remain unknown; no expected-DPS addition. Current modeled Emerald +1 imbue die and Chains Combustion 142 require their own source and fire-imbue applicability checks; neither proves an expected DPS percentage.",
       "sources": [
         "rp-rule",
         "stack",
@@ -4088,12 +5826,11 @@
       "id": "procs",
       "state": "conditional",
       "claim": "Relentless Fury, Enhanced Bloodrage, Improved Deception and Salt",
-      "detail": "Existing Guide claims under audit (not asserted totals): Fury5% Enhancement damage only after a killing-blow proc for30s; lower chance on weak enemies. Bloodrage is a chance on damage taken/kill (+10 Melee Power is not RP), not standing. Improved Deception has proc/target eligibility requirements. Salt has chance, short internal cooldown and boss exclusion; does not establish0 DPS opportunity cost.",
+      "detail": "Existing Guide claims under audit (not asserted totals): Fury5% Enhancement damage only after a killing-blow proc for30s; lower chance on weak enemies. Bloodrage is a chance on damage taken/kill (+10 Melee Power is not RP), not standing. Improved Deception has proc/target eligibility requirements. Salt has chance, short internal cooldown and boss exclusion; does not establish0 DPS opportunity cost. The current ring, not the removed Pendant of Subtle Pain, carries the Improved Deception claim. The shared proc name does not establish equivalent uptime. Yeenoghu Bloodrage and Ram’s Might are excluded from standing totals.",
       "sources": [
         "bloodrage",
         "fury",
         "viktranium",
-        "pendant",
         "stack"
       ]
     },
@@ -4131,22 +5868,21 @@
       "id": "minimum-level",
       "state": "verified",
       "claim": "Full selected fills require character level36",
-      "detail": "Direct Augment rule raises host minimum level to the slotted augment level. Defense40, False Life60, RP14 and Dodge16 have ML36. The full filled kit is not legal at35. A-074 additionally selects ML36 Spot22; both filled bow alternatives and the outfit remain ML36. Historical model outputs stay frozen and are not asserted for this full selected loadout.",
+      "detail": "The qualified Augment rule raises the host minimum level to its slotted augment level. The current recipe still selects False Life +60, Ranged Power +14 and Dodge +16, requiring the fully filled level-36 context. Defense +40 and Spot +22 are absent, so their old minimum-level inputs are not needed. Base-item minimum levels do not certify every fill or recipe. Historical weapon-model outputs remain separate.",
       "sources": [
         "augment-min-level",
         "augment-values",
-        "defense",
         "rp-topaz",
         "hp-false-life",
-        "defense-min-level",
-        "false-life-min-level"
+        "false-life-min-level",
+        "dodge-item"
       ]
     },
     {
       "id": "skull-craft",
       "state": "conflicting",
       "claim": "Skull item 16 versus generic craft 15",
-      "detail": "Item-specific Skull revision 714102 lists 16 Enhancement, but generic Nearly Complete revision 705751 lists Legendary ability 15. No explicit exception is established. Selected Constitution craft stays unchanged; 16 is excluded from asserted totals pending resolution. Historical solver 32 and listed recipe 33 are separate, unverified records.",
+      "detail": "Item-specific Skull revision 714102 lists +16 Enhancement, while generic Nearly Complete revision 705751 lists Legendary ability +15. The selected Constitution option is unchanged. The manifest keeps modeled CON 32 and source-sensitivity CON 33 distinct; neither is certified. This is an unresolved source conflict, not a license to replace 15 silently with 16.",
       "sources": [
         "skull-con",
         "nearly-complete"
@@ -4156,32 +5892,36 @@
       "id": "provenance-gaps",
       "state": "unknown",
       "claim": "Retained definitions with incomplete capture provenance",
-      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages.",
+      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification. Build 11-15-26.8 separately qualifies Queen Fortification and the two selected Spot augment components from a new register; none of the older source dictionaries listed here is repaired. Build 11-15-26.9 separately admits the two exact Legendary Nexus recipe-type observations through a closed source contract and combines them with pinned Wiki values and applicability. The Nexus numeric parameters and client versions remain absent; no Wiki-style revision or missing legacy metadata is fabricated. Build11-16-26.1 uses a separate frozen Wisdom/Constitution register for fresh selected observations and explicitly reuses unchanged original ability/placement records. Eight exact definitions qualify; none of the legacy dictionaries or missing observations listed here is repaired. The Skull conflict stays unresolved.",
       "sources": [
-        "belt-con",
-        "belt-seeker",
-        "bracers-int",
+        "arcane-archer",
+        "armor",
         "claws-ap",
         "claws-insight-seeker",
         "claws-seeker",
+        "claws-wisdom",
+        "deepwood",
         "dimlight",
         "dolorous-flames",
-        "festive-con",
+        "doubleshot-rule",
         "festive-int",
-        "fort-enh",
-        "fort-insight",
-        "fort-quality",
         "fortification-rule",
         "globe",
         "good-luck",
+        "harper",
         "heroism",
-        "lunar-con",
+        "horizon",
+        "improved-precise-shot",
         "lunar-int",
         "melancholic-flames",
+        "ring-quality-dex",
         "riposte",
         "rp-lunar",
+        "rp-rule",
         "rp-topaz",
         "salt",
+        "shadowdancer",
+        "shiradi",
         "solar-ap",
         "solar-int",
         "solar-seeker",
@@ -4190,51 +5930,32 @@
       ]
     },
     {
-      "id": "queen-basic-relay",
+      "id": "wisdom-selection",
       "state": "unknown",
-      "claim": "Queen BASIC source and model limits",
-      "detail": "The current selection replaces Summer’s End with Queen InsightfulCON7 and fills Ring1 Green with Spot 22. Model-only deltas: DS36→35, raw PRR 132→133, raw MRR 72→73, Fortification 283→286, Will/Reflex/Fortitude 25/25/26→26/26/27. CON32 generic/33 Skull-item case and flat HP 108 unchanged. Freedom of Movement gained; Light Absorption24 lost. Objective cap 132 is not rawPRR. Queen original source bytes/revision and complete bonus types are not retained. Unknown components cannot be promoted from relayed study metadata. Sun/Moon and other positive interaction gaps stay open.",
+      "claim": "Whole-character Wisdom effects and optional ring branch",
+      "detail": "The selected three-input gear Wisdom family now derives18 at level36 through separately qualified Claws15, native Celestial2 and Globe1 definitions and all three positive pairs. This does not regrade the original model/inventory or calculate a character ability score. Standing Constitution has five supported inputs summing17; its full result stays null because the required Skull15/16 conflict remains. Optional ring Dexterity13 remains unselected and model-only. Wisdom modifiers, Spot/Listen, Will and HP require complete character sources, parity and same-type overlap checks.",
+      "sources": [
+        "wiscon-claws-20261116",
+        "celestial-profane-int-live-20261115",
+        "globe-int-live-20261115"
+      ]
+    },
+    {
+      "id": "source-classification",
+      "state": "unknown",
+      "claim": "Independent source grades are not guide certification",
+      "detail": "The selected claim inventory distinguishes retained-source support, independent corroboration, unresolved conflict, conditional/unvalued effects and model-only claims. It does not automatically supply this calculator’s exact original revision, genuine source observation, typed numeric clause and positive pairwise evidence. The complete inventory and derivation are linked from evidence/wisdom-loadout/README.md; no unsupported input is silently dropped to make a subtotal look complete.",
+      "sources": []
+    },
+    {
+      "id": "acquisition-and-construction",
+      "state": "unknown",
+      "claim": "No event gear except Festive ability diamonds; construction limits",
+      "detail": "Exactly one Minor Artifact is selected. The no-event/no-limited screen allows only Festive ability diamonds as the exception; the current primary selects Festive Intelligence +2. Insightful ability +5 diamonds and Spot +22 are quarantined for unresolved acquisition, not falsely labeled known event-only. Legendary Chains needs its Green socket upgrade and four distinct Prefix/Suffix/Bonus/Extra choices; its named set bonus is unselected. Four augment sets require three distinct equipped hosts apiece. Ordinary acquisition routes and construction checks do not certify effect magnitude or every live source.",
       "sources": []
     }
   ],
   "non_total_effects": [
-    {
-      "id": "dex-components",
-      "host": "Gloves / Ring 1 / Goggles",
-      "claim": "Dexterity: listed15 Enhancement,3 Quality,5 Insight,2 Festive,1 Exceptional,2 Profane",
-      "state": "unknown",
-      "sources": [
-        "gloves-dex",
-        "ring-quality-dex",
-        "festive-dex",
-        "globe",
-        "litany-typed"
-      ],
-      "note": "Exact own-effects for15/3/2/1/2 are retained. Selected Diamond Insightful Dexterity5 own-effect receipt has not been joined here; complete combination is not asserted."
-    },
-    {
-      "id": "other-abilities",
-      "host": "Gloves / Ring 2",
-      "claim": "Strength, Wisdom and Charisma: Globe1 Exceptional and Litany2 Profane per ability",
-      "state": "unknown",
-      "sources": [
-        "globe",
-        "litany-typed",
-        "exceptional"
-      ],
-      "note": "Retained source definition is unverified because revision or genuine observation context is incomplete. It is excluded from supported effects pending provenance repair. Direct all-ability scope; Exceptional rule covers its cross-type edge. No whole-character ability score is calculated."
-    },
-    {
-      "id": "acid-electric-resistance",
-      "host": "Ring 2",
-      "claim": "53 Enhancement Acid Resistance and53 Enhancement Electric Resistance",
-      "state": "verified",
-      "sources": [
-        "acid-resistance",
-        "electric-resistance"
-      ],
-      "note": "Separate element channels, not106 to one element. Does not establish universal resistance or absorption."
-    },
     {
       "id": "demonic-shield",
       "host": "Trinket",
@@ -4244,36 +5965,6 @@
         "demonic-shield"
       ],
       "note": "Temporary proc pool, excluded from flat maximumHP108 and standing survivability."
-    },
-    {
-      "id": "earthen-guard",
-      "host": "Ring 2",
-      "claim": "15% chance when successfully attacked to cast Stoneskin",
-      "state": "conditional",
-      "sources": [
-        "earthen-guard"
-      ],
-      "note": "No permanent DR or proc uptime assumed; incoming-attack condition remains."
-    },
-    {
-      "id": "improved-deception",
-      "host": "Necklace",
-      "claim": "21 Enhancement Bluff plus a chance to make the target sneak-vulnerable",
-      "state": "conditional",
-      "sources": [
-        "improved-deception"
-      ],
-      "note": "21 is Bluff, not21 damage or21% guaranteed proc. Target eligibility/uptime remain separate."
-    },
-    {
-      "id": "set-spellpower",
-      "host": "Necklace / Ring 2",
-      "claim": "Monolith30 Artifact Acid Spell Power at two pieces",
-      "state": "verified",
-      "sources": [
-        "monolith"
-      ],
-      "note": "Two selected members activate one Monolith set. Tempest is not activated merely by a second tooltip on the ring. Acid spellpower is not Fire imbue scaling."
     },
     {
       "id": "armor-ac-mdb",
@@ -4297,7 +5988,7 @@
     },
     {
       "id": "blindness-immunity",
-      "host": "Boots Green",
+      "host": "The Queen of Rot / Yellow",
       "claim": "Topaz of Blindness Immunity",
       "state": "unknown",
       "sources": [],
@@ -4383,25 +6074,15 @@
       "note": "Melee channel; excluded from bow Doubleshot. No melee total is needed or asserted."
     },
     {
-      "id": "mythic",
-      "host": "Items with optional Mythic lines",
-      "claim": "Optional/rare Mythic boosts",
-      "state": "conditional",
-      "sources": [
-        "pendant"
-      ],
-      "note": "Not every drop carries them. No Mythic value is assumed in the selected guaranteed recipe."
-    },
-    {
       "id": "filigrees",
-      "host": "Weapon",
+      "host": "Legendary Calamitous Longbow / Yeenoghu’s Reign",
       "claim": "Suggested sets and unspecified pieces",
       "state": "unknown",
       "sources": [
         "rp-rule",
         "doubleshot-rule"
       ],
-      "note": "The guide lists candidate sets, not an exact filled selected jewel. Explicit untyped filigree rules do not establish owned pieces, active thresholds or a final count; excluded."
+      "note": "Yeenoghu is the one selected Minor Artifact; its stated capacity does not establish an owned filled jewel, exact filigree pieces or active thresholds. No filigree bonuses are added to the modeled or certified totals."
     },
     {
       "id": "ability-modifier",
@@ -4428,9 +6109,249 @@
       "claim": "Freedom of Movement",
       "state": "unknown",
       "sources": [],
-      "note": "Relayed Queen item observation; original exact effect text/revision not retained. Selected named utility, not a numerical defense total. The former Light Absorption24 effect is absent from BASIC."
+      "note": "Selected Queen utility remains a corroborated/relayed effect, not a qualified original receipt here. No numerical defense total is derived. Prior cloak effects are not selected."
+    },
+    {
+      "id": "celestial-improved-deception",
+      "host": "Legendary Celestial Sapphire Ring",
+      "claim": "Improved Deception +5: Bluff plus conditional sneak-vulnerability proc",
+      "state": "unknown",
+      "sources": [],
+      "note": "Current item has independently corroborated Improved Deception. Its +5 is a Bluff-related input, not five damage or a five-percent guaranteed proc. Exact live uptime is not certified or assumed equal to the removed pendant."
+    },
+    {
+      "id": "yeenoghu-procs",
+      "host": "Yeenoghu’s Reign",
+      "claim": "Bloodrage — conditional proc",
+      "state": "unknown",
+      "sources": [],
+      "note": "The retained item tooltip describes a conditional Bloodrage effect, not permanent Ranged Power. Its observation receipt remains unqualified; no proc ability, damage, Melee Power or AC changes are counted in standing ranged totals. Ram’s Might is recorded separately as permanent while equipped."
+    },
+    {
+      "id": "yeenoghu-rams-might",
+      "host": "Yeenoghu’s Reign",
+      "claim": "Ram’s Might — permanent while equipped",
+      "state": "unknown",
+      "sources": [],
+      "note": "The retained own-item tooltip says the wearer permanently benefits from Ram’s Might; it is not a Bloodrage proc. Missing observation context remains unresolved. Ranged applicability and overlap with an existing Ram’s Might spell/effect must be checked before crediting incremental damage; none is added here."
+    },
+    {
+      "id": "yeenoghu-actions",
+      "host": "Yeenoghu’s Reign",
+      "claim": "Major Anger +5 Rage uses after resting",
+      "state": "unknown",
+      "sources": [],
+      "note": "The retained own-item tooltip grants five additional Rage uses after resting, not Action Boost uses. This does not establish an available Rage ability on every life, a Ranged Power increase or a standing damage bonus. Missing observation context and exact interactions remain unresolved."
+    },
+    {
+      "id": "glabrezu-actions",
+      "host": "Legendary Glabrezu Claw Pendant",
+      "claim": "Action Boost Enhancement +3 uses after resting",
+      "state": "unknown",
+      "sources": [],
+      "note": "These are Action Boost uses, a different resource from Yeenoghu’s Major Anger Rage uses. Applicable Action Boost capacity interactions remain unverified; do not convert uses into standing damage."
+    },
+    {
+      "id": "current-augment-sets",
+      "host": "Four sets on twelve distinct placements",
+      "claim": "Dusk Raider / Tough Shields / Quickblade / Perfect Silence",
+      "state": "unknown",
+      "sources": [],
+      "note": "Each requires three distinct equipped hosts. These are separate activations, not the removed Monolith set. The exact selected placement manifest records the construction; its model effects remain unknown in this strict ledger."
+    },
+    {
+      "id": "chains-construction",
+      "host": "Legendary Chains worn as Belt",
+      "claim": "Prefix Fortification / Suffix Combustion / Bonus Intelligence / Extra Spot; Green socket upgrade",
+      "state": "unknown",
+      "sources": [],
+      "note": "The retained host supports Waist/Belt wear and separate Legendary Prefix, Suffix, Extra and Bonus channels. The bounded multi-source proof qualifies only Suffix Combustion and Bonus Quality Intelligence; Prefix Fortification and Extra Spot remain unknown/excluded. Component qualification creates no positive stacking edge. The Green socket must actually be unlocked and applied effects are locked; no Slavers set bonus is selected, no crafting performed, and no ownership or materials assumed."
+    },
+    {
+      "id": "ring-nearly-finished",
+      "host": "Legendary Celestial Sapphire Ring",
+      "claim": "Nearly Finished slot deliberately empty in the primary recipe",
+      "state": "unknown",
+      "sources": [],
+      "note": "Optional Dexterity +13 is not part of current components or totals. It stays a separate model-only scenario; no silent extra craft is inserted."
+    },
+    {
+      "id": "heroism-other-skills",
+      "host": "Legendary Glabrezu Claw Pendant / Green",
+      "claim": "Greater Heroism +4 Morale to other skills; fear immunity",
+      "state": "unknown",
+      "sources": [
+        "heroism"
+      ],
+      "note": "The selected Spot/Listen contributions are logged separately. Other skills are not character totals, and the original source provenance remains incomplete."
+    },
+    {
+      "id": "luck-other-skills",
+      "host": "Yeenoghu’s Reign / Blue",
+      "claim": "Good Luck +3 Luck to other skills",
+      "state": "unknown",
+      "sources": [
+        "good-luck"
+      ],
+      "note": "The selected saves and Spot/Listen contributions are logged separately. No inferred whole-character skill or spell-specific save total."
     }
   ],
-  "selection_base_commit": "dbc4dc349173ce61ba2b6818e7cd270735dca0d7",
-  "selection_record": "docs/knowledge-base/A-074-QUEEN-BASIC.md"
+  "selection_base_commit": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+  "selection_record": "tools/fixtures/wisdom-loadout/selection.json",
+  "selection_sha256": "37e612b60744e9fb104fdfdc39295c88973568ba3affbd0646c8fe1eb6e73a4d",
+  "selection_evidence": "evidence/wisdom-loadout/README.md",
+  "predecessor_selection": {
+    "record": "docs/knowledge-base/A-074-QUEEN-BASIC.md",
+    "ledger": "tools/fixtures/wisdom-loadout/predecessor-ledger.json",
+    "status": "historical, not the current selected loadout"
+  },
+  "source_roles": {
+    "tip179-live-20261115": "current positive premise for exactly ten selected INT pairs, four separately named Wisdom/Constitution pairs and six selected Doubleshot pairs; original observation and Stack caveat preserved; no generic different-type default",
+    "fort-rule-live-20261115": "fresh Enhancement/Insight Fortification interaction only; does not qualify Chains or Queen components",
+    "melancholic-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "solar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "lunar-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "festive-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "dimlight-int-live-20261115": "current selected INT definition; source-qualified in build 11-15-26.5",
+    "globe-int-live-20261115": "current selected Globe INT definition and bounded Wisdom/Constitution reuse; original observed all-ability clause and historical INT-only adoption scope preserved",
+    "celestial-profane-int-live-20261115": "current selected native Celestial INT definition and bounded Wisdom/Constitution membership derivations; optional Nearly Finished remains unselected and original capture/adoption scope is preserved",
+    "glabrezu-insight-int-live-20261115": "current component, rule, effect or unresolved context",
+    "stack": "current component, rule, effect or unresolved context",
+    "artifact": "current component, rule, effect or unresolved context",
+    "exceptional": "current component, rule, effect or unresolved context",
+    "prr-rule": "current component, rule, effect or unresolved context",
+    "mrr-rule": "current component, rule, effect or unresolved context",
+    "vitality-rule": "current component, rule, effect or unresolved context",
+    "fortification-rule": "current component, rule, effect or unresolved context",
+    "doubleshot-rule": "current component, rule, effect or unresolved context",
+    "rp-rule": "current component, rule, effect or unresolved context",
+    "rp-topaz": "current component, rule, effect or unresolved context",
+    "rp-lunar": "current component, rule, effect or unresolved context",
+    "monolith": "historical/background only — not a current equipped input",
+    "goggles-ds": "current component, rule, effect or unresolved context",
+    "ring-ds": "current component, rule, effect or unresolved context",
+    "boots-ds": "current component, rule, effect or unresolved context",
+    "solar-ds": "historical/background only — not a current equipped input",
+    "armor": "current component, rule, effect or unresolved context",
+    "claws-seeker": "current component, rule, effect or unresolved context",
+    "claws-insight-seeker": "current component, rule, effect or unresolved context",
+    "claws-ap": "current component, rule, effect or unresolved context",
+    "belt-seeker": "historical/background only — not a current equipped input",
+    "solar-seeker": "current component, rule, effect or unresolved context",
+    "skull-ap": "current component, rule, effect or unresolved context",
+    "goggles-ap": "current component, rule, effect or unresolved context",
+    "solar-ap": "current component, rule, effect or unresolved context",
+    "pendant": "historical/background only — not a current equipped input",
+    "viktranium": "current component, rule, effect or unresolved context",
+    "bracers-int": "historical/background only — not a current equipped input",
+    "solar-int": "current component, rule, effect or unresolved context",
+    "lunar-int": "current component, rule, effect or unresolved context",
+    "festive-int": "current component, rule, effect or unresolved context",
+    "festive-con": "historical/background only — not a current equipped input",
+    "dimlight": "current component, rule, effect or unresolved context",
+    "globe": "current component, rule, effect or unresolved context",
+    "litany": "historical/background only — not a current equipped input",
+    "skull-con": "current component, rule, effect or unresolved context",
+    "belt-con": "historical/background only — not a current equipped input",
+    "lunar-con": "historical/background only — not a current equipped input",
+    "defense": "historical/background only — not a current equipped input",
+    "lunar-prr": "current component, rule, effect or unresolved context",
+    "compass": "historical/background only — not a current equipped input",
+    "fort-enh": "historical/background only — not a current equipped input",
+    "fort-insight": "historical/background only — not a current equipped input",
+    "fort-quality": "historical/background only — not a current equipped input",
+    "hp-false-life": "current component, rule, effect or unresolved context",
+    "hp-vitality": "current component, rule, effect or unresolved context",
+    "ha": "current component, rule, effect or unresolved context",
+    "riposte": "current component, rule, effect or unresolved context",
+    "heroism": "current component, rule, effect or unresolved context",
+    "good-luck": "current component, rule, effect or unresolved context",
+    "ring-threat": "current component, rule, effect or unresolved context",
+    "marksmanship-goggles": "current component, rule, effect or unresolved context",
+    "marksmanship-ring1": "current component, rule, effect or unresolved context",
+    "marksmanship-boots": "current component, rule, effect or unresolved context",
+    "compass-insight": "current component, rule, effect or unresolved context",
+    "compass-quality": "current component, rule, effect or unresolved context",
+    "compass-fort": "current component, rule, effect or unresolved context",
+    "pendant-quality-accuracy": "historical/background only — not a current equipped input",
+    "pendant-diversion": "historical/background only — not a current equipped input",
+    "pendant-armor-piercing": "historical/background only — not a current equipped input",
+    "solar-sneak": "historical/background only — not a current equipped input",
+    "litany-typed": "historical/background only — not a current equipped input",
+    "augment-min-level": "current component, rule, effect or unresolved context",
+    "augment-values": "current component, rule, effect or unresolved context",
+    "dodge-rule": "current component, rule, effect or unresolved context",
+    "dodge-cap": "current component, rule, effect or unresolved context",
+    "arcane-archer": "current component, rule, effect or unresolved context",
+    "harper": "current component, rule, effect or unresolved context",
+    "horizon": "current component, rule, effect or unresolved context",
+    "shiradi": "current component, rule, effect or unresolved context",
+    "shadowdancer": "current component, rule, effect or unresolved context",
+    "deepwood": "current component, rule, effect or unresolved context",
+    "improved-precise-shot": "current component, rule, effect or unresolved context",
+    "dodge-item": "current component, rule, effect or unresolved context",
+    "resistance-item": "historical/background only — not a current equipped input",
+    "goggles-dodge-bypass": "current component, rule, effect or unresolved context",
+    "bloodrage": "current component, rule, effect or unresolved context",
+    "fury": "current component, rule, effect or unresolved context",
+    "marksmanship-rule": "historical/background only — not a current equipped input",
+    "earth-sky-insight": "historical/background only — not a current equipped input",
+    "gloves-dex": "historical/background only — not a current equipped input",
+    "ring-quality-dex": "current component, rule, effect or unresolved context",
+    "festive-dex": "historical/background only — not a current equipped input",
+    "melancholic-flames": "current component, rule, effect or unresolved context",
+    "dolorous-flames": "current component, rule, effect or unresolved context",
+    "salt": "current component, rule, effect or unresolved context",
+    "treatise": "current component, rule, effect or unresolved context",
+    "demonic-shield": "current component, rule, effect or unresolved context",
+    "improved-deception": "historical/background only — not a current equipped input",
+    "acid-resistance": "historical/background only — not a current equipped input",
+    "electric-resistance": "historical/background only — not a current equipped input",
+    "earthen-guard": "historical/background only — not a current equipped input",
+    "nearly-complete": "current component, rule, effect or unresolved context",
+    "defense-min-level": "historical/background only — not a current equipped input",
+    "false-life-min-level": "current component, rule, effect or unresolved context",
+    "armor-accuracy": "current component, rule, effect or unresolved context",
+    "armor-deadly": "current component, rule, effect or unresolved context",
+    "armor-ds": "current component, rule, effect or unresolved context",
+    "armor-alacrity": "current component, rule, effect or unresolved context",
+    "armor-ap": "current component, rule, effect or unresolved context",
+    "cut-to-soul-fresh": "current component, rule, effect or unresolved context",
+    "claws-wisdom": "current component, rule, effect or unresolved context",
+    "chains-host-recipe-20261115": "recipe proof: selected Legendary host, Waist placement and distinct crafting channels",
+    "chains-legendary-recipe-20261115": "recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule",
+    "chains-combustion-membership-20261115": "recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage",
+    "chains-intelligence-membership-20261115": "current selected Chains INT category premise and bounded native Celestial Wisdom/Constitution membership reuse; original observed ability list and historical INT recipe interpretation preserved",
+    "fort-spot-queen-20261115": "current selected definition support",
+    "fort-spot-heroism-20261115": "current selected definition support",
+    "fort-spot-luck-20261115": "current selected definition support",
+    "fort-spot-skill-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-spot-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-luck-type-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-morale-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-tip179-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-pendant-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-pendant-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-artifact-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "chains-types-shared-host-20261115": "bounded recipe applicability: explicit shared base-item crafting statement",
+    "chains-types-fortification-20261115": "bounded Legendary recipe type only: exact Prefix Fortification; numeric parameter and client version absent",
+    "chains-types-spot-20261115": "bounded Legendary recipe type only: exact Extra Spot variant 0x7002C66B; numeric parameter and client version absent",
+    "wiscon-nearly-complete-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-claws-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-queen-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-solar-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-dolorous-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-coldlight-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-reflection-host-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "wiscon-sun-system-20261116": "current selected Wisdom/Constitution definition or applicability premise; bounded contract only",
+    "ds-augment-system-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-quickblade-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-set-table-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-set-rules-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-goggles-host-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-chains-host-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-yeenoghu-host-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained",
+    "ds-green-recipe-20261116": "bounded selected Quickblade definition, equipped-set applicability or host/slot construction support; original scoped observation retained"
+  }
 }

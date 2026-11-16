@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "record_type": "bounded-crafting-source-integration",
+  "review_date": "2026-11-15",
+  "build": "11-15-26.3",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "remote_head": "fbb1c5ed9aca2c1c360147732ac3ba61c77c435e",
+    "remote_and_initial_staged_tree": "df677f8c9d2cd113b55d0418dd765729924895c6",
+    "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "local_branch": "feat/wisdom-loadout-priorities",
+    "verified_at_utc": "2026-11-15T21:10:28Z",
+    "initial_staged_paths": 57,
+    "initial_unstaged_changes": false,
+    "checkout_note": "The existing staged tree represented the remote draft despite the older local HEAD. Final exact Git base-to-tree comparison establishes 57 changed paths; the earlier working count of 56 was a clerical error, not a different tree. No reset, ref switch or historical snapshot overwrite was performed."
+  },
+  "scope": {
+    "purpose": "Owner-selected option 1: targeted Chains checks, then integrate only supported source bindings and reconcile generated labels in draft PR 47.",
+    "promoted_component_ids": ["glabrezu-insight-int"],
+    "unqualified_component_ids": ["chains-fortification", "chains-combustion", "chains-quality-int", "chains-spot"],
+    "selection_changed": false,
+    "priorities_changed": false,
+    "positive_interaction_rules_changed": false,
+    "calculator_code_changed": false,
+    "historical_claim_inventory_regraded": false,
+    "old_capture_metadata_repaired": false,
+    "new_optimizer_run": false,
+    "live_game_test": false,
+    "guide_rendering_qa_completed": false,
+    "new_acquisition_or_event_exception": false,
+    "merge_or_publication": false
+  },
+  "source_packet": {
+    "path": "evidence/wisdom-loadout/crafting-browser-2026-11-15.json",
+    "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01",
+    "limit": "The original packet remains byte-identical. Its not-yet-integrated status is historical checkpoint metadata, not the status of this later integration."
+  },
+  "qualified_component": {
+    "id": "glabrezu-insight-int",
+    "source_id": "glabrezu-insight-int-live-20261115",
+    "stat": "Intelligence",
+    "amount": 7,
+    "bonus_type": "Insight",
+    "source_pointer": ["captures", "glabrezu", "selected_option_html"],
+    "record_pointer": ["captures", "glabrezu"],
+    "revision": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+    "body_observation": {"started_at_utc": "2026-11-15T20:43:29Z", "ended_at_utc": "2026-11-15T20:43:33Z"},
+    "host_base_ml": 35,
+    "filled_kit_applicability_ml": 36,
+    "result": "Only the exact selected Insight INT +7 component is source-qualified. The complete Intelligence combination remains unverified; no new positive interaction is established."
+  },
+  "chains_findings": [
+    {
+      "id": "chains-fortification",
+      "recipe_support": "Legendary Prefix Fortification +142% is explicit in the captured recipe table.",
+      "remaining": "Enhancement is a separate general standard-item rule, not a contiguous finished Chains typed-numeric effect clause. The component stays unknown and excluded."
+    },
+    {
+      "id": "chains-combustion",
+      "recipe_support": "The Legendary Suffix table states single-type Equipment Spell Power +142; a separate table maps Combustion to Fire Spells.",
+      "remaining": "The cross-page mapping is not a finished Chains Combustion tooltip. Selected imbue applicability is also separate. No +142 weapon damage or measured ranged DPS is inferred; the component stays unknown and excluded."
+    },
+    {
+      "id": "chains-quality-int",
+      "recipe_support": "Legendary Bonus Quality Attributes +3 supports the chosen attribute-category magnitude.",
+      "remaining": "Intelligence is the selected category mapping, not an exact captured typed-numeric Intelligence clause. The component stays unknown and excluded."
+    },
+    {
+      "id": "chains-spot",
+      "recipe_support": "Legendary Extra Skills except UMD +20 supports the chosen skill-category magnitude.",
+      "remaining": "The generic Spot +20 Competence tooltip captured on another named item does not bind the selected Chains craft. Exact selected type/applicability remains unqualified; the component stays unknown and excluded."
+    }
+  ],
+  "targeted_followup": {
+    "method": "Read-only hosted-browser DOM inspection and one focused Wiki search; no login, wiki edit, crafting, purchase or game test.",
+    "observation_clock": "Trusted clock-tool bounds around actual DOM readings. The category interval includes intervening inspection and context-handling time, not continuous reading. No original timestamp is reconstructed.",
+    "spot_category": {
+      "source_url": "https://ddowiki.com/page/Category:Spot_items",
+      "source_title": "Category:Spot items - DDO wiki",
+      "revision_link": "https://ddowiki.com/index.php?title=Category:Spot_items&oldid=480765",
+      "body_observation": {"started_at_utc": "2026-11-15T21:11:30Z", "ended_at_utc": "2026-11-15T21:13:29Z"},
+      "page_modified_display": "12:03, March 23, 2021 (Update 48.4.3)",
+      "cache_notice_literal": "(this is up to -3 hours old)",
+      "cache_limit": "The anomalous negative cache-age display is retained literally, not normalized into a freshness guarantee. A category revision date does not independently date all transcluded item data.",
+      "generic_other_host": "Legendary Keylock Ring",
+      "row_visible_text": "Legendary Keylock Ring (edit)\tRing\t\nDisable Device +20\nOpen Lock +20\nSearch +20\nSpot +20\nBlue Augment Slot\nAdherent of the Mists Set (Legendary)\n\t29\tBound to Account on Acquire\tDeath House, End chest",
+      "spot_option_html": "<span class=\"popup has_tooltip with-icon basic\"><a href=\"/page/Spot\" title=\"Spot\">Spot +20</a><span class=\"mw-valign-super\" typeof=\"mw:File\"><span><img src=\"https://images.ddowiki.com/thumb/Icon_tooltip.png/10px-Icon_tooltip.png\" decoding=\"async\" width=\"10\" height=\"8\" class=\"mw-file-element\" srcset=\"https://images.ddowiki.com/Icon_tooltip.png 1.5x\"></span></span><span class=\"popup tooltip wide left below\" style=\"text-align: center ;\"><b><a href=\"/page/Spot\" title=\"Spot\">Spot +20</a>:</b> Passive: +20 <a href=\"/page/Competence_bonus\" title=\"Competence bonus\">Competence bonus</a> to the <a href=\"/page/Spot\" title=\"Spot\">Spot</a> skill.</span></span>",
+      "exact_named_chains_link_count": 0,
+      "limit": "This is another item's generic tooltip, not the selected finished Chains craft. The zero link count is a scoped observation, not proof that no relevant source exists. No calculator source or selection is taken from this row."
+    },
+    "focused_search": {
+      "source_url": "https://ddowiki.com/index.php?search=%22Slave+Lords%22+%22Competence%22&title=Special%3ASearch&go=Go",
+      "source_title": "Search results for \"\"Slave Lords\" \"Competence\"\" - DDO wiki",
+      "query": "\"Slave Lords\" \"Competence\"",
+      "body_observation": {"started_at_utc": "2026-11-15T21:13:38Z", "ended_at_utc": "2026-11-15T21:13:43Z"},
+      "result_summary": "Results 1 – 18 of 18",
+      "result_titles": ["Named item sets    ", "Wisdom    ", "Update 39 Release Notes    ", "Dexterity    ", "Strength    ", "Update 42 Patch 4 Release Notes    ", "Constitution    ", "Augment Slot    ", "Charisma    ", "Update 36 Release Notes    ", "Update 58 Release Notes    ", "Dinosaur Bone crafting    ", "Ranged Power    ", "Deadly    ", "U:Clemeit/Characters    ", "Update 46 Patch 2 Release Notes    ", "Accuracy    ", "Mimic Hunt    "],
+      "assessment": "The displayed result snippets did not establish the selected Chains Spot type. No unrelated result was promoted into a finished-item claim. This bounded search is not evidence that the Wiki or game lacks the effect."
+    },
+    "revision_limit": "The category permanent link was read from the displayed page, not independently loaded. Search results are not an immutable revision. These extracts are not complete raw HTTP archives.",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/"
+  },
+  "expected_calculator_delta": {
+    "scope": "All 38 stat/channel families in standing and force-active configurations at the filled-kit level: 76 complete result objects.",
+    "changed_results": ["gear Intelligence standing", "gear Intelligence force-active"],
+    "change": "glabrezu-insight-int moves from excluded to counted; the other eight Intelligence exclusions remain. total stays null and complete stays false. suppressed, proofs and missing_interactions remain empty.",
+    "unchanged_results": 74,
+    "level_35_intelligence": "Unchanged: the selected filled-kit floor remains 36.",
+    "limit": "This describes the bounded software result, not complete Intelligence, stacking, crit range or sustained DPS certification. Tests must independently verify it."
+  },
+  "remaining_release_boundaries": [
+    "Four Chains component bindings remain unqualified; recipe support is not the current typed-numeric-clause contract.",
+    "Claws WIS observation provenance, Skull CON15/16, Queen relay limits and other source/applicability/interaction gaps remain visible.",
+    "HA63 procurement remains independently unverified but accepted under the owner's existing acquisition-evidence exception; no new event exception is created.",
+    "Local guide browser QA remains separate and incomplete; successful public Wiki access does not resolve the earlier preview permission limitation.",
+    "PR review, merge, Pages deployment and post-deployment verification are separate; this record does not claim any of them."
+  ]
+}

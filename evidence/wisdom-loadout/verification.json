@@ -1,0 +1,78 @@
+{
+  "schema": "wisdom-implementation-verification-v1",
+  "date": "2026-11-15",
+  "scope": "Local implementation and static/regression validation. Not live-game mechanics certification, browser-render validation, a merge, or deployment evidence.",
+  "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+  "baseline_commit": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+  "working_branch": "feat/wisdom-loadout-priorities",
+  "build": "11-15-26.1",
+  "tested_sha256": {
+    "index.html": "ac66f2ca703abdc6ddb820ae05d0f30e5b9dc337837c509c5c9771108947cf0d",
+    "endgame-stacking-audit.html": "fd8ed376175c465122d4ca37df7d1aad01ae0973ffd4b2cf760bebf4fa80b13c",
+    "heroic-crafting-print.html": "c913ad13fc3f44437adf42cb4faff75a3f7224c6054a27e65f546b5ca175969d",
+    "versions/11-15-26.1.html": "9dcc34e46b405d9917a713d14fb3b63f4b5b10c72284a9d516a95486df4cd17f",
+    "tools/wisdom_loadout.py": "71268b7b401865652074a006e6b8208d5b7a05620dd8df167a39f9761e3a79c6",
+    "tools/build_wisdom_loadout.py": "42fa3c30dd5208814aaf9236dc3a85f8bd42a82f6a14f9bf9fb3e11003f8c3e1",
+    "tools/build_stacking_audit.py": "699bba973b9f08b2df57e2728534a341935e8390e8be641599b695c75ddee49f",
+    "tools/fixtures/endgame-stacking/ledger.json": "e9a2864f23e8fb033fbada0e3813a9f77bd09c6bf9da05b9b60cf3113009c533",
+    "tools/fixtures/wisdom-loadout/selection.json": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d",
+    "tools/fixtures/wisdom-loadout/scope.json": "3a3d34bc5cb2524bf611bfa2128605daf9f3dd554d458a50928f099d80933bd0"
+  },
+  "baseline_tests": {
+    "passed": true,
+    "tests": 229,
+    "seconds": 29.255
+  },
+  "final_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+    "exit_code": 0,
+    "passed": true,
+    "tests": 258,
+    "seconds": 37.437,
+    "new_tests": 29,
+    "limits": "Software fidelity, construction, arithmetic, evidence-gate and regression checks only; not game-mechanics certification."
+  },
+  "resolved_test_failures": {
+    "initial_full_run": "256 tests, five failures in retired-layout/historical-preservation test boundaries.",
+    "repair": "Preserved prior exact hashes and assertions; applied the explicit outer reversal to historical hash checks; kept current Fatesinger/Shadowstrike semantic checks live; added current Dimlight recipe/table controls. A no-op snapshot mutation was also retargeted to real current WIS 18 / DEX 6 text.",
+    "production_content_changed_for_these_repairs": false
+  },
+  "other_checks": {
+    "builders": [
+      "tools/build_wisdom_loadout.py",
+      "tools/build_stacking_audit.py",
+      "tools/build_crafting_sheet.py",
+      "tools/build_snapshot.py"
+    ],
+    "all_builders_passed": true,
+    "wisdom_builder_read_only_freshness_check": "passed",
+    "git_diff_check": "passed",
+    "reviewed_local_links_and_anchors": 498,
+    "local_links_passed": true,
+    "prior_snapshot_blobs_preserved": 66,
+    "reviewed_exact_reversal_hunks": 116,
+    "reviewed_exact_reversal_files": 5,
+    "historical_calculator_sha256": "97432b1a37543645986a343ec0c6d3c8d58b77c4089e03307dfdf2840d3c606d",
+    "historical_bow_model_sha256": "7d9e0843939310214d73b00e7e936ca4e842bf7bf0fc3f8da1b849e8c8faf236",
+    "original_source_entries_and_rules": "All 101 prior source entries and seven rules preserved; one observation-null Claws Wisdom source added without certification.",
+    "existing_inline_scripts_and_styles": "byte-identical"
+  },
+  "browser_qa": {
+    "status": "blocked_before_browser_start",
+    "intended_viewport_widths": [1440, 390, 320],
+    "environment_error": "Chromium process singleton socket() failed: Operation not permitted (1).",
+    "pages_rendered": 0,
+    "screenshots_taken": 0,
+    "desktop_rendering_verified": false,
+    "mobile_rendering_verified": false,
+    "physical_iphone_tested": false,
+    "print_pagination_verified": false,
+    "permission_workaround_attempted": false
+  },
+  "release_state_at_receipt": "Local tested candidate. Remote PR/CI status must be checked separately; no merge, Pages deployment or observed live-content claim.",
+  "release_gates_remaining": [
+    "Browser layout and accessibility interaction checks in an authorized environment, including narrow viewport overflow and keyboard table scrolling.",
+    "Review the explicit source, crafting, acquisition and interaction gaps; do not describe this recipe as fully mechanics-validated.",
+    "Exact PR-head CI and release review, followed by explicit publication authority and independent deployment/live verification."
+  ]
+}

@@ -1,0 +1,1478 @@
+{
+  "schema_version": 1,
+  "record_type": "scoped-offensive-mechanics-claim-inventory",
+  "review_boundary": {
+    "repository": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "branch": "feat/wisdom-loadout-priorities",
+    "reviewed_remote_head": "cdb39fe7cdfbcbb2d2143c49c88979b008158c28",
+    "reviewed_tree": "11b6e905e2174ea9bcae0ad77c7aaf224e999701",
+    "review_date_local": "2026-11-15",
+    "review_timezone": "America/Los_Angeles",
+    "location_basis": "Repository locations retained from the completed audit refer to the reviewed head/tree, before current text integration; line numbers are not promised to remain current."
+  },
+  "provenance": {
+    "origin": "Completed reconciled audit identified in the companion source register.",
+    "original_review_fields_preserved": [
+      "id",
+      "review_group",
+      "status",
+      "decision",
+      "related_section",
+      "repository_locations"
+    ],
+    "added_fields_kind": "Scoped paraphrases, source bindings, applicability, limitations and text dispositions; not exact source quotations.",
+    "original_limit": "Manually transcribed observation register and reconciled review records; not a full raw DOM export. Original specialist reports remain temporary working notes; their final decisions are fully represented here.",
+    "raw_dom_capture_included": false,
+    "exact_quotation_claimed": false,
+    "repository_location_limit": "Repository locations retained from the completed audit refer to the reviewed head/tree, before current text integration; line numbers are not promised to remain current.",
+    "implementation_note_limit": "CRIT-05 adds a separately labeled code-to-label eligibility limitation from the same frozen model; it is not a new external source observation."
+  },
+  "source_packet": {
+    "path": "evidence/wisdom-loadout/offensive-sources-2026-11-15.json",
+    "hash_scope": "Companion JSON identity only; not raw browser-capture authentication.",
+    "sha256": "58479bff309e52e0227f92631a9ce178cfd23a38659ddbcf466b804dc77a7dcd"
+  },
+  "coverage": {
+    "wiki_observation_records": 27,
+    "publisher_source_records": 8,
+    "reconciled_review_records": 37,
+    "review_groups": {
+      "critical": 13,
+      "speed": 12,
+      "damage": 12
+    },
+    "all_completed_audit_records_retained": true,
+    "records_are_unique_proven_errors": false,
+    "full_guide_mechanics_inventory_complete": false,
+    "full_dps_validated": false,
+    "whole_character_totals_certified": false,
+    "limit": "The 37 overlapping review records include supported existing statements, conditional arithmetic, current corrections, historical limitations and unresolved questions. Their retention is not 100% mechanics validation."
+  },
+  "claims": [
+    {
+      "id": "CRIT-01",
+      "review_group": "critical",
+      "status": "Supported",
+      "decision": "Printed Calamitous fields supported; final character profile remains conditional.",
+      "related_section": "criticals",
+      "repository_locations": [
+        "index.html:1063",
+        "index.html:1091",
+        "tools/fixtures/wisdom-loadout/selection.json"
+      ],
+      "source_ids": [
+        "calamitous",
+        "repo-selection"
+      ],
+      "evidence_kind": "source-supported printed fields",
+      "assertion": "Legendary Calamitous Longbow is printed 20/x3 with 5.80[1d8+2]+15 and minimum level 34.",
+      "applicability": [
+        "Exact legendary weapon and selected recipe identity."
+      ],
+      "limitations": [
+        "Printed weapon statistics are distinct from the character's final critical profile or DPS."
+      ],
+      "disposition": "Retain printed fields and qualify any derived character profile.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-02",
+      "review_group": "critical",
+      "status": "Supported increment",
+      "decision": "Fresh Elasticity closes the earlier source gap: multiplier on 19/20, no added threat range.",
+      "related_section": "criticals",
+      "repository_locations": [
+        "index.html:1025",
+        "index.html:1092",
+        "index.html:1095"
+      ],
+      "source_ids": [
+        "demogorgon-sinew",
+        "elasticity",
+        "critical-hit",
+        "repo-corrections"
+      ],
+      "evidence_kind": "source-supported conditional increment",
+      "assertion": "Sinew's Elasticity increases the multiplier for qualifying natural 19/20 ranged criticals; it does not widen threat range.",
+      "applicability": [
+        "Correct weapon equipped; qualifying critical not negated by applicable target defenses."
+      ],
+      "limitations": [
+        "No guaranteed extra damage on one tenth of all attacks; no full comparison follows."
+      ],
+      "disposition": "Retain the multiplier distinction with critical conditions.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-03",
+      "review_group": "critical",
+      "status": "Conditional",
+      "decision": "Named increments fit the stated ordinary profile; interactions and eligibility are not a complete character certification.",
+      "related_section": "criticals",
+      "repository_locations": [
+        "index.html:948",
+        "index.html:954-965"
+      ],
+      "source_ids": [
+        "threat-range",
+        "combat-archery",
+        "horizon-walker",
+        "patience",
+        "overwhelming-critical",
+        "shiradi",
+        "critical-hit",
+        "repo-guide"
+      ],
+      "evidence_kind": "conditional build arithmetic",
+      "assertion": "The named increments fit the stated ordinary 16–18/x6 and 19–20/x8 profile; qualifying Elasticity high rolls become x9 under the same assumptions.",
+      "applicability": [
+        "Named feats and enhancement ranks acquired, applicable bow equipped, ordinary attack case and critical gates satisfied."
+      ],
+      "limitations": [
+        "No complete prerequisite, interaction, character-state or global-maximum certification."
+      ],
+      "disposition": "Keep the profile explicitly conditional; do not promote it to a verified total.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-04",
+      "review_group": "critical",
+      "status": "Correct current timing",
+      "decision": "Selected AP schedule buys Feywild at15. Stored model has no level14 case, so no changed stored score is demonstrated.",
+      "related_section": "criticals",
+      "repository_locations": [
+        "index.html:957",
+        "index.html:745-746",
+        "index.html:786-787",
+        "index.html:795",
+        "tools/bowmodel.py:21"
+      ],
+      "source_ids": [
+        "horizon-walker",
+        "repo-guide",
+        "repo-bowmodel"
+      ],
+      "evidence_kind": "source requirement plus selected progression",
+      "assertion": "The selected schedule has 29 Horizon Walker AP at level 14 and buys Scattershot then Feywild Attunement at level 15.",
+      "applicability": [
+        "Selected AP roadmap and the tier-five spending gate."
+      ],
+      "limitations": [
+        "The frozen model activates Feywild at 14, but stored levels skip from 12 to 15; this finding alone shows no changed stored score."
+      ],
+      "disposition": "Correct the current timing label to 15; preserve the selected schedule and historical engine.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-05",
+      "review_group": "critical",
+      "status": "Correct labels",
+      "decision": "Use representative evaluated levels or split transition labels; preserve frozen results.",
+      "related_section": "criticals",
+      "repository_locations": [
+        "index.html:1052-1055",
+        "index.html:433-437",
+        "index.html:758",
+        "tools/bowmodel.py:53-91"
+      ],
+      "source_ids": [
+        "horizon-walker",
+        "combat-archery",
+        "patience",
+        "shiradi",
+        "repo-guide",
+        "repo-bowmodel"
+      ],
+      "evidence_kind": "historical-label and eligibility boundary",
+      "assertion": "Historical critical bands hide transitions at selected Feywild 15, Combat Archery 21, Patience 27 and Lore of the Hunt 30.",
+      "applicability": [
+        "Describe each actual representative evaluated level or separately label the transition."
+      ],
+      "limitations": [
+        "A band does not certify one profile throughout its span.",
+        "Stored evaluation level does not establish every bow's equip eligibility: BANDS[35] labels Legendary Ship-Siege Bow as L36. This is a repository-only observation, not a new Wiki capture."
+      ],
+      "disposition": "Clarify current historical labels and actual item-level requirements without changing results.",
+      "implementation_note": {
+        "kind": "repository-only clarification after the completed audit",
+        "source_id": "repo-bowmodel",
+        "scope": "BANDS[35] includes a bow explicitly labeled L36; no independent item-page revalidation or new score is claimed."
+      },
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-06",
+      "review_group": "critical",
+      "status": "Supported",
+      "decision": "Current special-attack increments and shared cooldown supported; no simultaneous stacking of separate attacks inferred.",
+      "related_section": "criticals",
+      "repository_locations": [
+        "index.html:396",
+        "index.html:506",
+        "index.html:962",
+        "index.html:1268"
+      ],
+      "source_ids": [
+        "manyshot",
+        "horizon-walker",
+        "u814",
+        "u82",
+        "repo-guide"
+      ],
+      "evidence_kind": "source-supported special-attack behavior",
+      "assertion": "Current Manyshot and Scattershot each have attack-specific +2 threat range and +2 multiplier and share an 8-second cooldown.",
+      "applicability": [
+        "The relevant special attack is used and its prerequisites are met."
+      ],
+      "limitations": [
+        "Separate special attacks are not simultaneous critical bonuses on one shot."
+      ],
+      "disposition": "Retain current attack-specific descriptions; do not revive the old charge system.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-07",
+      "review_group": "critical",
+      "status": "Qualify wording",
+      "decision": "Ability wording does not independently prove a bypass of every hit, confirmation and fortification gate.",
+      "related_section": "criticals",
+      "repository_locations": [
+        "index.html:645",
+        "index.html:1271",
+        "index.html:1308"
+      ],
+      "source_ids": [
+        "shiradi",
+        "critical-hit",
+        "repo-corrections",
+        "repo-guide"
+      ],
+      "evidence_kind": "qualification of ability wording",
+      "assertion": "Hunt's End automatic-critical wording alone does not prove bypass of every hit, confirmation or fortification gate.",
+      "applicability": [
+        "Relevant ability, attack and target conditions."
+      ],
+      "limitations": [
+        "The dated Critical hit article does not resolve the previously recorded natural-one confirmation conflict."
+      ],
+      "disposition": "Qualify the wording and leave unresolved hit/confirmation interactions visible.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-08",
+      "review_group": "critical",
+      "status": "Definition only",
+      "decision": "Seeker is not threat range; current multi-type total and full scaling remain separate.",
+      "related_section": "limits",
+      "repository_locations": [
+        "index.html:1119",
+        "index.html:1420",
+        "index.html:1441"
+      ],
+      "source_ids": [
+        "critical-hit",
+        "repo-critical-retained",
+        "repo-selection"
+      ],
+      "evidence_kind": "source definition with aggregate withheld",
+      "assertion": "Seeker concerns confirmation and critical damage, not threat-range width.",
+      "applicability": [
+        "A qualifying critical and the particular Seeker source's conditions."
+      ],
+      "limitations": [
+        "The four-type Seeker 29 catalog objective and full Ranged Power scaling are not certified by this definition."
+      ],
+      "disposition": "Retain the definition; keep the modeled aggregate and current total separate.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-09",
+      "review_group": "critical",
+      "status": "Model limitation",
+      "decision": "Seeker and Combat Archery’s additional weapon die are absent as explicit inputs; no replacement ranking derived.",
+      "related_section": "model",
+      "repository_locations": [
+        "tools/bowmodel.py:28-50",
+        "tools/bowmodel.py:52-91",
+        "index.html:1009",
+        "index.html:1054"
+      ],
+      "source_ids": [
+        "combat-archery",
+        "repo-bowmodel",
+        "repo-guide"
+      ],
+      "evidence_kind": "repository model limitation",
+      "assertion": "The historical formula has no explicit Seeker input or Combat Archery +1[W] term; it models Combat Archery's critical increments only.",
+      "applicability": [
+        "Read-only inspection of the frozen input tuple and formula."
+      ],
+      "limitations": [
+        "A shared FLAT cannot exactly replace an additional weapon die for all different weapon dice.",
+        "No corrected score or replacement bow ranking is derived."
+      ],
+      "disposition": "Disclose the omissions; preserve engine, fixtures and results.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-10",
+      "review_group": "critical",
+      "status": "Correct description",
+      "decision": "Historical return includes speed and omits defenses; do not call it calibrated DPS or a full per-attack expectation.",
+      "related_section": "model",
+      "repository_locations": [
+        "tools/bowmodel.py:38-50",
+        "index.html:1042-1044"
+      ],
+      "source_ids": [
+        "repo-bowmodel",
+        "repo-guide"
+      ],
+      "evidence_kind": "repository description correction",
+      "assertion": "The returned historical value includes a speed ratio and Doubleshot factor and omits a complete hit/defense model.",
+      "applicability": [
+        "Frozen formula and assumed per-opportunity damage."
+      ],
+      "limitations": [
+        "Nonthreat d20 outcomes, including natural 1, receive full base in that simplified loop.",
+        "The return is neither calibrated DPS nor a complete per-attack expectation."
+      ],
+      "disposition": "Use historical speed-adjusted comparison score; keep numerical results frozen.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-11",
+      "review_group": "critical",
+      "status": "Existing boundary correct",
+      "decision": "Historical Cataclysmic/Shadow scenario is distinct from current Calamitous/Salt/Dimlight.",
+      "related_section": "model",
+      "repository_locations": [
+        "index.html:1060",
+        "index.html:1089-1097",
+        "README.md:15",
+        "tools/bowmodel.py:83-91"
+      ],
+      "source_ids": [
+        "repo-bowmodel",
+        "repo-selection",
+        "repo-guide"
+      ],
+      "evidence_kind": "historical/current selection boundary",
+      "assertion": "Stored level-35 Cataclysmic/Woeful Shadow is distinct from selected Calamitous/Woeful Salt/Miserable Dimlight.",
+      "applicability": [
+        "Identify the exact weapon and crafts before applying a historical comparison."
+      ],
+      "limitations": [
+        "The older scenario does not rank the current loadout."
+      ],
+      "disposition": "Retain the existing scenario boundary and current selected recipe.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-12",
+      "review_group": "critical",
+      "status": "Conditional approximation",
+      "decision": "Roughly four is not proved wrong: damage-only arithmetic is3.4 per opportunity or about3.58 per landed hit under a particular miss assumption.",
+      "related_section": "limits",
+      "repository_locations": [
+        "index.html:417",
+        "index.html:423"
+      ],
+      "source_ids": [
+        "repo-critical-retained",
+        "repo-guide"
+      ],
+      "evidence_kind": "conditional arithmetic only",
+      "assertion": "Under the cited x6/x8 profile, a +2 pre-multiplier term gives 3.4 per d20 opportunity or about 3.58 per landed hit if only natural 1 misses.",
+      "applicability": [
+        "Damage-only arithmetic: 2 × (3 × 6 + 2 × 8) / 20; stated miss assumption for the landed-hit conversion."
+      ],
+      "limitations": [
+        "Actual Power Critical page was not freshly inspected.",
+        "Confirmation, fortification, power and other benefits/gates remain separate; roughly four is not proved numerically false."
+      ],
+      "disposition": "Qualify the approximation instead of presenting a proven numerical correction.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "CRIT-13",
+      "review_group": "critical",
+      "status": "Unresolved",
+      "decision": "No global maximum threat range established; the qualified current prose is not a newly discovered false maximum claim.",
+      "related_section": "limits",
+      "repository_locations": [
+        "index.html:948-969",
+        "index.html:1426",
+        "index.html:1489"
+      ],
+      "source_ids": [
+        "calamitous",
+        "demogorgon-sinew",
+        "threat-range",
+        "repo-guide"
+      ],
+      "evidence_kind": "unresolved maximum claim",
+      "assertion": "This review does not establish a globally maximum threat range.",
+      "applicability": [
+        "Only the named build/weapon cases were reviewed."
+      ],
+      "limitations": [
+        "No exhaustive legal-bow, chassis, feat, active-attack or interaction search.",
+        "Qualified current prose is not a newly discovered false maximum claim."
+      ],
+      "disposition": "Keep the unresolved maximum boundary; do not derive one from optimizer values.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-01",
+      "review_group": "speed",
+      "status": "Correct description",
+      "decision": "Use historical speed-adjusted comparison score; preserve result bytes.",
+      "related_section": "model",
+      "repository_locations": [
+        {
+          "path": "tools/bowmodel.py",
+          "lines": [
+            47,
+            48,
+            49,
+            50
+          ]
+        },
+        {
+          "path": "index.html",
+          "lines": [
+            1042,
+            1043,
+            1044
+          ]
+        }
+      ],
+      "source_ids": [
+        "repo-bowmodel",
+        "repo-guide"
+      ],
+      "evidence_kind": "repository description correction",
+      "assertion": "The historical return is a speed-adjusted comparison score.",
+      "applicability": [
+        "Stored speed and Doubleshot assumptions."
+      ],
+      "limitations": [
+        "No calibrated attacks-per-second input or current-kit DPS validation."
+      ],
+      "disposition": "Correct the current description; preserve result bytes.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-02",
+      "review_group": "speed",
+      "status": "Current overlap supported",
+      "decision": "Fresh armor → Shadow Striker → alacrity chain confirms duplicate20-percent Enhancement speed adds nothing in the equipped kit.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "tools/fixtures/endgame-stacking/ledger.json",
+          "component_id": "armor-alacrity"
+        },
+        {
+          "path": "index.html",
+          "lines": [
+            971,
+            1072
+          ]
+        }
+      ],
+      "source_ids": [
+        "warblade-armor",
+        "shadow-striker",
+        "ranged-alacrity",
+        "haste",
+        "repo-selection",
+        "repo-ledger"
+      ],
+      "evidence_kind": "source-supported equipped overlap",
+      "assertion": "The selected armor supplies Shadow Striker, including 20% Enhancement ranged alacrity; another 20% Enhancement source adds no speed while it is equipped.",
+      "applicability": [
+        "Exact selected armor equipped; same speed bonus type and magnitude."
+      ],
+      "limitations": [
+        "Haste's other benefits remain separate.",
+        "No absolute bow attack rate or new formal ledger qualification is established."
+      ],
+      "disposition": "State the current overlap, without applying the historical speed gain to this equipped kit.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-03",
+      "review_group": "speed",
+      "status": "Arithmetic only",
+      "decision": "4.35 percent is the historical assumed ratio, not measured current attack rate.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "tools/bowmodel.py",
+          "lines": [
+            7,
+            48
+          ]
+        },
+        {
+          "path": "index.html",
+          "lines": [
+            971,
+            1043
+          ]
+        }
+      ],
+      "source_ids": [
+        "u814",
+        "repo-bowmodel",
+        "repo-guide"
+      ],
+      "evidence_kind": "historical arithmetic only",
+      "assertion": "1.20 / 1.15 − 1 is about 4.35% under the frozen speed premise.",
+      "applicability": [
+        "Historical assumed 15% versus 20% comparison."
+      ],
+      "limitations": [
+        "Not a measured current attack-rate gain; the current armor already supplies 20%.",
+        "Current BAB, animations, boosts, Patience and the U81.4 speed curve require their own timing treatment."
+      ],
+      "disposition": "Label the ratio historical; do not revise stored values or imply current rate calibration.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-04",
+      "review_group": "speed",
+      "status": "Supported",
+      "decision": "Damage multiplication does not imply new independent attack or proc rolls.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/Doubleshot.json"
+        },
+        {
+          "path": "evidence/wisdom-loadout/corrections.json",
+          "record_id": "doubleshot"
+        }
+      ],
+      "source_ids": [
+        "doubleshot",
+        "u49",
+        "u63",
+        "repo-corrections"
+      ],
+      "evidence_kind": "source-supported damage interpretation",
+      "assertion": "Doubleshot multiplies eligible damage associated with the original attack.",
+      "applicability": [
+        "Channel eligibility and current Doubleshot rules."
+      ],
+      "limitations": [
+        "Damage multiplication does not create an independent fresh attack roll or automatically reroll every proc.",
+        "Manyshot's actual three arrows are a separate mechanic."
+      ],
+      "disposition": "Use eligible-damage wording and keep proc eligibility separate.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-05",
+      "review_group": "speed",
+      "status": "Correct wording",
+      "decision": "109-to115 gives about2.87 percent expected eligible damage under that historical pool; do not call it more shots.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "index.html",
+          "lines": [
+            699
+          ]
+        }
+      ],
+      "source_ids": [
+        "doubleshot",
+        "repo-guide"
+      ],
+      "evidence_kind": "conditional arithmetic",
+      "assertion": "The historical 109% to 115% pool comparison gives about 2.87% more expected Doubleshot-eligible damage.",
+      "applicability": [
+        "Below-threshold formula and the assumed pool: 2.15 / 2.09 − 1."
+      ],
+      "limitations": [
+        "Not more total shots, a certified current pool or a whole-build DPS percentage."
+      ],
+      "disposition": "Correct the current comparison wording; preserve its historical numeric scenario.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-06",
+      "review_group": "speed",
+      "status": "Bounded formula",
+      "decision": "Linear expected-damage multiplier is usable below200 percent; the variable name alone is not a numerical failure.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "tools/bowmodel.py",
+          "lines": [
+            13,
+            49,
+            50
+          ],
+          "additional_range": "BANDS definitions, lines53–92"
+        }
+      ],
+      "source_ids": [
+        "doubleshot",
+        "repo-bowmodel"
+      ],
+      "evidence_kind": "bounded formula applicability",
+      "assertion": "For eligible damage below the current 200% threshold, the linear expected Doubleshot factor is usable.",
+      "applicability": [
+        "Nonnegative pool within the below-threshold range and eligible damage channel."
+      ],
+      "limitations": [
+        "All stored cases remain below 200%.",
+        "The variable name shots does not alone prove a numerical failure."
+      ],
+      "disposition": "Explain the expected-damage interpretation; leave frozen code and outputs unchanged.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-07",
+      "review_group": "speed",
+      "status": "Generalization limit",
+      "decision": "Above200-percent rule needed for extension; all stored cases are below that threshold.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "tools/bowmodel.py",
+          "lines": [
+            49
+          ]
+        }
+      ],
+      "source_ids": [
+        "doubleshot",
+        "u814",
+        "repo-bowmodel"
+      ],
+      "evidence_kind": "current extension boundary",
+      "assertion": "For nonnegative D in percentage points, the eligible-damage factor is 1 + [min(D,200) + 0.5 × max(D−200,0)] / 100.",
+      "applicability": [
+        "Current Doubleshot rule and channel eligibility."
+      ],
+      "limitations": [
+        "The historical linear code lacks the above-200 branch; none of its stored cases crosses that boundary."
+      ],
+      "disposition": "Record the generalization limit without manufacturing a changed existing result.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-08",
+      "review_group": "speed",
+      "status": "Supported",
+      "decision": "Keep current Manyshot/Scattershot cooldown and bonuses.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "index.html",
+          "lines": [
+            396,
+            1268,
+            1299,
+            1300,
+            1492
+          ]
+        }
+      ],
+      "source_ids": [
+        "manyshot",
+        "horizon-walker",
+        "u814",
+        "u82",
+        "repo-guide"
+      ],
+      "evidence_kind": "source-supported current attack system",
+      "assertion": "Manyshot and Scattershot retain the shared 8-second cooldown, current bonuses and replacement of the old charge system.",
+      "applicability": [
+        "Selected feat/enhancement and relevant active attack."
+      ],
+      "limitations": [
+        "No sustained rotation, proc throughput or current DPS is calculated."
+      ],
+      "disposition": "Keep the current supported descriptions.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-09",
+      "review_group": "speed",
+      "status": "Conditional contribution",
+      "decision": "Fresh Rapid Shot now corroborated. Fifty-four requires the stated BAB36 and qualifying feats/bow; whole-character totals remain unqualified.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "tools/fixtures/endgame-stacking/ledger.json",
+          "component_ids": [
+            "manyshot-ds",
+            "rapid-shot-rp"
+          ]
+        },
+        {
+          "path": "index.html",
+          "lines": [
+            1184,
+            1185,
+            1195,
+            1196
+          ]
+        }
+      ],
+      "source_ids": [
+        "manyshot",
+        "rapid-shot",
+        "repo-guide",
+        "repo-ledger"
+      ],
+      "evidence_kind": "conditional source contribution",
+      "assertion": "Manyshot provides 1.5 × BAB Doubleshot and Rapid Shot provides 1.5 × BAB Ranged Power for the qualifying bow case; BAB 36 gives 54 each.",
+      "applicability": [
+        "Actual BAB 36, appropriate bow and the relevant acquired feats."
+      ],
+      "limitations": [
+        "Character level 36 is not by itself a proof of the assumed BAB.",
+        "No certified standing/boosted whole-character total; selected modeled gear Doubleshot 35 still has unresolved set qualification.",
+        "Historical 36/128/177 scenarios remain historical."
+      ],
+      "disposition": "Retain conditional contributions; do not promote full totals or ledger components.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-10",
+      "review_group": "speed",
+      "status": "Supported",
+      "decision": "Fresh Shot on the Run now corroborated; no extra bow speed credited.",
+      "related_section": "speed",
+      "repository_locations": [
+        {
+          "path": "index.html",
+          "lines": [
+            422
+          ]
+        }
+      ],
+      "source_ids": [
+        "shot-on-run",
+        "repo-guide"
+      ],
+      "evidence_kind": "source-supported feat distinction",
+      "assertion": "Shot on the Run supplies its movement-attack treatment and six Ranged Power, not an additional bow-speed source.",
+      "applicability": [
+        "Feat acquired and applicable ranged context."
+      ],
+      "limitations": [
+        "No calibrated attack-rate gain follows."
+      ],
+      "disposition": "Retain the supported effect and no extra speed credit.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-11",
+      "review_group": "speed",
+      "status": "Clarify assumption",
+      "decision": "Historical level8 Haste needs an outside source because the selected SLA arrives at10.",
+      "related_section": "limits",
+      "repository_locations": [
+        {
+          "path": "tools/bowmodel.py",
+          "lines": [
+            7
+          ]
+        },
+        {
+          "path": "index.html",
+          "lines": [
+            741,
+            782,
+            1043
+          ]
+        }
+      ],
+      "source_ids": [
+        "horizon-walker",
+        "haste",
+        "repo-guide",
+        "repo-bowmodel"
+      ],
+      "evidence_kind": "historical assumption clarification",
+      "assertion": "The historical level-8 Haste premise needs an outside source because the selected Horizon Walker SLA arrives at level 10.",
+      "applicability": [
+        "The specific selected progression and stated historical assumption."
+      ],
+      "limitations": [
+        "An external Haste source and its uptime are assumptions, not demonstrated access at level 8."
+      ],
+      "disposition": "Clarify the historical source assumption without changing the selected purchase or model.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "SPD-12",
+      "review_group": "speed",
+      "status": "Low-priority clarification",
+      "decision": "Optional Vistani’s one-third statement does not follow from20s/30s; sustainable use also depends on charges and rotation.",
+      "related_section": "limits",
+      "repository_locations": [
+        {
+          "path": "index.html",
+          "lines": [
+            562,
+            565,
+            567
+          ]
+        }
+      ],
+      "source_ids": [
+        "repo-guide"
+      ],
+      "evidence_kind": "internal arithmetic of unselected alternative",
+      "assertion": "A stated 20-second duration over 30-second cooldown implies an available-use fraction of two thirds, not one third.",
+      "applicability": [
+        "Arithmetic on the existing optional Vistani description only."
+      ],
+      "limitations": [
+        "No fresh Vistani tooltip validation.",
+        "Sustainable encounter or quest uptime still depends on charges and rotation; two thirds is not a proven sustained result."
+      ],
+      "disposition": "Remove unsupported one-third wording; keep the alternative unselected.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-01",
+      "review_group": "damage",
+      "status": "Supported applicability",
+      "decision": "Selected Harper choices allow INT for missile attack and damage; no whole-character stat certified.",
+      "related_section": "ability",
+      "repository_locations": [
+        "index.html:100",
+        "index.html:213",
+        "index.html:527-541"
+      ],
+      "source_ids": [
+        "harper",
+        "repo-guide"
+      ],
+      "evidence_kind": "source-supported selected applicability",
+      "assertion": "Selected Strategic Combat I and II permit INT for missile attack and damage.",
+      "applicability": [
+        "The selected Harper enhancements are acquired and their attack conditions apply."
+      ],
+      "limitations": [
+        "No whole-character INT, attack bonus or complete damage total is certified."
+      ],
+      "disposition": "Retain the selected INT basis with its prerequisites.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-02",
+      "review_group": "damage",
+      "status": "Correct current rationale",
+      "decision": "Two passive feats give2× once both acquired. Current295/357 are targets;1440/1468 are archived and must be preserved.",
+      "related_section": "ability",
+      "repository_locations": [
+        "tools/bowmodel.py:5",
+        "index.html:295",
+        "index.html:357",
+        "index.html:398",
+        "index.html:1440",
+        "index.html:1468"
+      ],
+      "source_ids": [
+        "harper",
+        "precise-shot",
+        "improved-precise-shot",
+        "u734",
+        "u76",
+        "repo-guide",
+        "repo-bowmodel"
+      ],
+      "evidence_kind": "source-supported increments and derived factor",
+      "assertion": "Once both feats are acquired, Precise Shot and Improved Precise Shot give an ordinary bow ability contribution of (1 + 0.5 + 0.5) × INT modifier = 2 × INT modifier.",
+      "applicability": [
+        "Selected Harper INT-to-damage and both passive feats; the additional IPS passive does not require its stance to be active."
+      ],
+      "limitations": [
+        "Precision is a different feat.",
+        "Know the Angles is separate; no rounding or full damage calculation is supplied.",
+        "Frozen FLAT values are selected constants, not a computed character ability modifier."
+      ],
+      "disposition": "Correct current 1.5× rationale; preserve archived experiment text and frozen model comments/results.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-03",
+      "review_group": "damage",
+      "status": "Existing caution supported",
+      "decision": "Keep Know the Angles separate and avoid adding it to another Insight damage bonus.",
+      "related_section": "ability",
+      "repository_locations": [
+        "index.html:537",
+        "index.html:1256",
+        "index.html:1426",
+        "index.html:1485"
+      ],
+      "source_ids": [
+        "harper",
+        "u45",
+        "repo-guide",
+        "repo-corrections"
+      ],
+      "evidence_kind": "source-supported active bonus distinction",
+      "assertion": "Know the Angles is a separate active Insight damage bonus based on half the INT modifier.",
+      "applicability": [
+        "Ability active, required resources and rank, and applicable damage context; its other-trance restriction remains."
+      ],
+      "limitations": [
+        "Do not double it through the bow ability factor or add another Insight damage source such as Insightful Deadly unconditionally.",
+        "Rounding and full buffed damage remain outside the audit."
+      ],
+      "disposition": "Retain the separate-bonus and overlap cautions.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-04",
+      "review_group": "damage",
+      "status": "Supported; conflict resolved",
+      "decision": "Keep d6/100-percent Flaming; old d8 history is superseded.",
+      "related_section": "imbue",
+      "repository_locations": [
+        "index.html:554",
+        "index.html:558",
+        "index.html:736",
+        "index.html:1257"
+      ],
+      "source_ids": [
+        "arcane-archer",
+        "imbue-dice",
+        "u62",
+        "u63",
+        "repo-guide"
+      ],
+      "evidence_kind": "source-supported rule with historical conflict resolved",
+      "assertion": "The selected Arcane Archer Flaming toggle uses a 1d6 Fire base die at 100% Fire Spell Power scaling.",
+      "applicability": [
+        "Selected Flaming toggle active and a qualifying attack connects."
+      ],
+      "limitations": [
+        "U62's historical 1d8 at 75% was superseded by U63's 1d6 at 100%; no current 1d8 correction is warranted."
+      ],
+      "disposition": "Retain d6 and 100% Fire Spell Power; record the resolved update sequence.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-05",
+      "review_group": "damage",
+      "status": "Applicability supported",
+      "decision": "Chains Fire Spell Power applies to selected Flaming; numeric marginal benefit and formal integration remain separate.",
+      "related_section": "channels",
+      "repository_locations": [
+        "index.html:1138-1139",
+        "index.html:1148",
+        "index.html:1152",
+        "docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md:128-135"
+      ],
+      "source_ids": [
+        "arcane-archer",
+        "repo-chains-proof",
+        "repo-selection"
+      ],
+      "evidence_kind": "source-supported applicability composition",
+      "assertion": "Already-qualified Chains Combustion 142 Equipment Fire Spell Power applies to the selected Flaming imbue.",
+      "applicability": [
+        "Exact selected Chains Suffix, active Flaming and the applicable Fire Spell Power stack."
+      ],
+      "limitations": [
+        "142 is a selected-gear Spell Power contribution, not weapon damage, total character Fire Spell Power or a 142% overall DPS gain.",
+        "Same-type overlap, total power, dice and target defenses determine marginal damage.",
+        "No new formal source/rule/component qualification is made."
+      ],
+      "disposition": "Promote only the supported current applicability wording; leave numerical ledger results unchanged.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-06",
+      "review_group": "damage",
+      "status": "Correct cap accounting",
+      "decision": "Named equipped subtotal5d6/3d6. Level30 feat baseline remains4d6/2d6; Emerald host isML34. Historical1207 is preserved.",
+      "related_section": "imbue",
+      "repository_locations": [
+        "index.html:558",
+        "index.html:736",
+        "index.html:1207",
+        "index.html:1257",
+        "tools/fixtures/wisdom-loadout/selection.json:items[Legendary Coldlight Runners].sockets[1]",
+        "index.html:1295",
+        "index.html:646",
+        "index.html:1483"
+      ],
+      "source_ids": [
+        "arcane-archer",
+        "emerald-imbue",
+        "scion-arborea",
+        "harbinger-chaos",
+        "imbue-dice",
+        "shiradi",
+        "repo-selection",
+        "repo-coldlight-host",
+        "repo-guide"
+      ],
+      "evidence_kind": "named-source conditional subtotal",
+      "assertion": "Named sources give 4d6 while Chaotic / 2d6 otherwise at level 30, and 5d6 / 3d6 with the selected Emerald-bearing ML34 boots equipped.",
+      "applicability": [
+        "Base Flaming die, Scion acquired at 30, Harbinger's two dice only for Chaotic alignment, and Emerald equipped for the equipped subtotal.",
+        "Emerald has its own ML28 but the selected Coldlight Runners host requires 34; the complete outfit requires 36.",
+        "Selected Crooked Touch is Whirling Wrists 3, not Flickering Fingers."
+      ],
+      "limitations": [
+        "Same-type Emerald variants do not add.",
+        "Named-source subtotal only; unspecified filigrees, buffs and life-specific grants are excluded.",
+        "The historical Summer's End row is not a current-kit claim."
+      ],
+      "disposition": "Correct current cap accounting; retain level-30 baseline and explicitly archived history.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-07",
+      "review_group": "damage",
+      "status": "Qualify wording",
+      "decision": "Toggle, hit, alignment, spell power and target defenses prevent an unconditional fixed-damage claim.",
+      "related_section": "imbue",
+      "repository_locations": [
+        "index.html:558-559",
+        "index.html:1257",
+        "index.html:1295"
+      ],
+      "source_ids": [
+        "arcane-archer",
+        "harbinger-chaos",
+        "imbue-dice",
+        "doubleshot",
+        "repo-guide"
+      ],
+      "evidence_kind": "conditional realized damage",
+      "assertion": "A fixed about-24 damage on every arrow and every target is not established for the current kit.",
+      "applicability": [
+        "Toggle state, qualifying successful hit, alignment, total Fire Spell Power, enemy resistance/immunity and applicable damage multiplication."
+      ],
+      "limitations": [
+        "A die subtotal is not target damage or a measured full-character total.",
+        "Bow imbues do not inherit a spell-triggered imbue's spell-critical rules merely because both are imbues."
+      ],
+      "disposition": "Replace unconditional fixed-damage language with the actual conditions.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-08",
+      "review_group": "damage",
+      "status": "Separate channels",
+      "decision": "Four crafts coexist. Fresh crafting rows support selected effects, not universal Spell Power or proc scaling.",
+      "related_section": "channels",
+      "repository_locations": [
+        "tools/fixtures/wisdom-loadout/selection.json:items[Legendary Calamitous Longbow].crafts",
+        "index.html:1153",
+        "tools/bowmodel.py:6",
+        "tools/bowmodel.py:50-51"
+      ],
+      "source_ids": [
+        "calamitous",
+        "viktranium-weapons",
+        "arcane-archer",
+        "doubleshot",
+        "repo-selection",
+        "repo-bowmodel"
+      ],
+      "evidence_kind": "source-supported channels with scaling limits",
+      "assertion": "Selected Dolorous Flames, Melancholic Flames, Miserable Dimlight and Woeful Salt occupy four separate craft slots; Dimlight does not displace Dolorous.",
+      "applicability": [
+        "Exact selected legendary weapon and slot-specific crafts."
+      ],
+      "limitations": [
+        "Melancholic's 16d6 Fire rider, Dolorous's conditional fire effect and AA Flaming are separate channels.",
+        "Shared Fire type does not transfer Spell Power, critical, proc chance or timing rules between channels.",
+        "The historical equal-Ranged-Power-factor assumption needs a channel-specific audit before current-kit use; no categorical reversal of every historical ordering follows."
+      ],
+      "disposition": "Retain the recipe and separate channel descriptions; do not add a proc or DPS model.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-09",
+      "review_group": "damage",
+      "status": "Existing caution supported",
+      "decision": "Numeric Bluff bonus is not proc chance or guaranteed sneak uptime.",
+      "related_section": "channels",
+      "repository_locations": [
+        "index.html:1153",
+        "evidence/wisdom-loadout/claims.json:Legendary Celestial Sapphire Ring Improved Deception"
+      ],
+      "source_ids": [
+        "u63",
+        "repo-affix-claims",
+        "repo-selection",
+        "repo-guide"
+      ],
+      "evidence_kind": "retained distinction with publisher corroboration",
+      "assertion": "Improved Deception's numeric Bluff bonus is neither a proc percentage nor guaranteed sneak-attack uptime.",
+      "applicability": [
+        "The actual ring/effect, target eligibility, range and proc/uptime conditions."
+      ],
+      "limitations": [
+        "No current sneak-attack total, proc probability or sustained uptime is certified."
+      ],
+      "disposition": "Keep the existing caution and scenario-dependent sneak damage.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-10",
+      "review_group": "damage",
+      "status": "Retained evidence only",
+      "decision": "Preserve distinctions for Ram’s Might, Bloodrage and Rage uses; no fresh full validation claimed.",
+      "related_section": "limits",
+      "repository_locations": [
+        "evidence/wisdom-loadout/corrections.json:claims[rams-might]",
+        "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json:[5]",
+        "index.html:1420"
+      ],
+      "source_ids": [
+        "repo-corrections",
+        "repo-artifact-retained"
+      ],
+      "evidence_kind": "retained evidence only",
+      "assertion": "Permanent Ram's Might while equipped, conditional Enhanced Bloodrage and Major Anger's extra Rage uses are distinct effects.",
+      "applicability": [
+        "Selected artifact equipped; Bloodrage trigger and uptime conditions; additional Rage uses apply after rest."
+      ],
+      "limitations": [
+        "These sources were not independently refreshed in the offensive audit.",
+        "Original missing observation metadata remains missing.",
+        "No standing Ranged Power, Action Boost uses, incremental ranged damage or new counted bonus is inferred."
+      ],
+      "disposition": "Preserve prior distinctions and qualification limits.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-11",
+      "review_group": "damage",
+      "status": "Correct reasoning",
+      "decision": "Common mitigation alone does not erase relative gains from eligible flat damage; priorities remain unchanged.",
+      "related_section": "reaper",
+      "repository_locations": [
+        "index.html:270",
+        "index.html:274",
+        "index.html:357",
+        "index.html:1221",
+        "index.html:1228"
+      ],
+      "source_ids": [
+        "repo-guide"
+      ],
+      "evidence_kind": "algebraic reasoning correction",
+      "assertion": "A common positive mitigation factor does not by itself erase the relative gain from eligible flat damage: r(D+d)/(rD) = (D+d)/D.",
+      "applicability": [
+        "Positive baseline D and common positive multiplier r applied to the compared channel."
+      ],
+      "limitations": [
+        "This tests the guide's premise; it does not validate exact Reaper reduction, rounding or universal channel treatment.",
+        "Marginal value still depends on opportunity cost, baseline, target and channel."
+      ],
+      "disposition": "Correct current rationale without changing the 32 approved priorities.",
+      "new_formal_ledger_qualification": false
+    },
+    {
+      "id": "DMG-12",
+      "review_group": "damage",
+      "status": "Unresolved comparison",
+      "decision": "No current DPS winner follows from the historical model or optimizer priority tuple.",
+      "related_section": "limits",
+      "repository_locations": [
+        "tools/bowmodel.py:1-51",
+        "tools/bowmodel.py:83-93",
+        "index.html:221",
+        "index.html:1153",
+        "docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md:57-71"
+      ],
+      "source_ids": [
+        "repo-bowmodel",
+        "repo-selection",
+        "repo-loadout-note",
+        "arcane-archer",
+        "doubleshot"
+      ],
+      "evidence_kind": "unresolved current comparison",
+      "assertion": "Neither the historical bow score nor the optimizer priority tuple establishes a current Calamitous-versus-Sinew DPS winner.",
+      "applicability": [
+        "A valid comparison needs exact life/class/alignment, equipped and buffed stats, filigrees, channel rules, target defenses and timed attack rotation."
+      ],
+      "limitations": [
+        "Whole-character INT, Doubleshot, Seeker, Fire Spell Power and sustained DPS remain unqualified.",
+        "No new ranking, optimizer solve or live-game measurement is supplied."
+      ],
+      "disposition": "Keep current selection and unresolved DPS boundary; do not convert priorities into measured damage.",
+      "new_formal_ledger_qualification": false
+    }
+  ],
+  "named_imbue_scenarios": {
+    "claim_id": "DMG-06",
+    "damage_type": "Fire",
+    "die_size": 6,
+    "toggle": "Arcane Archer Flaming",
+    "source_ids": [
+      "arcane-archer",
+      "emerald-imbue",
+      "scion-arborea",
+      "harbinger-chaos",
+      "imbue-dice",
+      "shiradi",
+      "repo-selection",
+      "repo-coldlight-host",
+      "repo-guide"
+    ],
+    "contributions": [
+      {
+        "id": "aa-flaming-base",
+        "dice": 1,
+        "source_ids": [
+          "arcane-archer",
+          "imbue-dice"
+        ],
+        "condition": "Selected toggle active and qualifying hit."
+      },
+      {
+        "id": "scion-arborea",
+        "dice": 1,
+        "selected_acquisition_level": 30,
+        "source_ids": [
+          "scion-arborea",
+          "repo-guide"
+        ],
+        "condition": "Feat acquired in the selected progression."
+      },
+      {
+        "id": "harbinger-chaos",
+        "dice": 2,
+        "selected_acquisition_level": 28,
+        "source_ids": [
+          "harbinger-chaos",
+          "repo-guide"
+        ],
+        "condition": "Feat acquired and alignment Chaotic."
+      },
+      {
+        "id": "emerald-equipped",
+        "dice": 1,
+        "bonus_type": "Enhancement",
+        "augment_minimum_level": 28,
+        "host": "Legendary Coldlight Runners",
+        "host_minimum_level": 34,
+        "socket_index": 1,
+        "socket_color": "Green",
+        "source_ids": [
+          "emerald-imbue",
+          "imbue-dice",
+          "repo-selection",
+          "repo-coldlight-host"
+        ],
+        "condition": "Selected Emerald-bearing host equipped; same-type Emerald variants do not add."
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "level-30-feat-and-tree",
+        "level": 30,
+        "emerald_equipped": false,
+        "chaotic_dice": 4,
+        "nonchaotic_dice": 2,
+        "formula": "1 base + 1 Scion + (2 Harbinger if Chaotic)",
+        "label": "Level-30 named feat-and-tree subtotal."
+      },
+      {
+        "id": "selected-emerald-equipped",
+        "minimum_host_level": 34,
+        "emerald_equipped": true,
+        "chaotic_dice": 5,
+        "nonchaotic_dice": 3,
+        "formula": "1 base + 1 Scion + (2 Harbinger if Chaotic) + 1 equipped Emerald",
+        "label": "Named equipped subtotal; complete selected outfit separately requires level 36."
+      }
+    ],
+    "full_selected_outfit_minimum_level": 36,
+    "selected_crooked_touch": "Whirling Wrists 3",
+    "unselected_alternative_not_counted": "Flickering Fingers",
+    "scope": "Named selected sources only; no unspecified filigrees, buffs, other grants, full-character total or realized target damage."
+  },
+  "current_text_contract": {
+    "ability_damage": {
+      "claim_ids": [
+        "DMG-01",
+        "DMG-02",
+        "DMG-03"
+      ],
+      "source_ids": [
+        "harper",
+        "precise-shot",
+        "improved-precise-shot",
+        "u734",
+        "u76",
+        "u45"
+      ],
+      "ordinary_ability_modifier_factor_after_both_feats": 2,
+      "arithmetic_terms": [
+        1,
+        0.5,
+        0.5
+      ],
+      "required_feats": [
+        "Precise Shot",
+        "Improved Precise Shot"
+      ],
+      "required_selected_stat_override": "Harper Strategic Combat II",
+      "active_ips_stance_required_for_passive_increment": false,
+      "know_the_angles_is_separate": true,
+      "whole_character_damage_certified": false
+    },
+    "imbue": {
+      "claim_ids": [
+        "DMG-04",
+        "DMG-06",
+        "DMG-07"
+      ],
+      "source_ids": [
+        "arcane-archer",
+        "emerald-imbue",
+        "scion-arborea",
+        "harbinger-chaos",
+        "imbue-dice",
+        "u62",
+        "u63",
+        "repo-coldlight-host"
+      ],
+      "base_die": "1d6",
+      "power": "Fire Spell Power",
+      "power_scaling_percent": 100,
+      "scenario_ids": [
+        "level-30-feat-and-tree",
+        "selected-emerald-equipped"
+      ],
+      "unconditional_fixed_damage_per_arrow_supported": false
+    },
+    "combustion_applicability": {
+      "claim_id": "DMG-05",
+      "source_ids": [
+        "arcane-archer",
+        "repo-chains-proof",
+        "repo-selection"
+      ],
+      "selected_gear_amount": 142,
+      "bonus_type": "Equipment",
+      "power": "Fire Spell Power",
+      "applies_to_selected_flaming": true,
+      "full_character_spell_power_or_dps_certified": false,
+      "formal_ledger_qualification_changed": false
+    },
+    "historical_model": {
+      "claim_ids": [
+        "CRIT-05",
+        "CRIT-09",
+        "CRIT-10",
+        "CRIT-11",
+        "SPD-01",
+        "DMG-12"
+      ],
+      "source_ids": [
+        "repo-bowmodel",
+        "repo-selection",
+        "combat-archery"
+      ],
+      "label": "historical speed-adjusted comparison score",
+      "calibrated_dps": false,
+      "current_loadout_simulation": false,
+      "item_level_eligibility_certified": false,
+      "replacement_ranking_derived": false
+    },
+    "feywild_timing": {
+      "claim_id": "CRIT-04",
+      "source_ids": [
+        "horizon-walker",
+        "repo-guide",
+        "repo-bowmodel"
+      ],
+      "selected_purchase_level": 15,
+      "historical_engine_activation_level": 14,
+      "stored_level_14_case_exists": false,
+      "historical_engine_changed": false
+    },
+    "doubleshot": {
+      "claim_ids": [
+        "SPD-04",
+        "SPD-05",
+        "SPD-06",
+        "SPD-07",
+        "SPD-09"
+      ],
+      "source_ids": [
+        "doubleshot",
+        "manyshot",
+        "rapid-shot",
+        "u49",
+        "u814"
+      ],
+      "interpretation": "expected eligible-damage multiplication, not independent attacks or automatic extra proc rolls",
+      "current_factor_for_nonnegative_percentage_D": "1 + (min(D, 200) + 0.5 * max(D - 200, 0)) / 100",
+      "historical_109_to_115_expected_eligible_damage_gain_percent_rounded": 2.87,
+      "whole_character_total_certified": false
+    },
+    "current_alacrity": {
+      "claim_id": "SPD-02",
+      "source_ids": [
+        "warblade-armor",
+        "shadow-striker",
+        "ranged-alacrity",
+        "haste"
+      ],
+      "selected_armor_bonus_percent": 20,
+      "bonus_type": "Enhancement",
+      "additional_same_type_20_percent_source_gain": 0,
+      "absolute_attack_rate_certified": false
+    },
+    "reaper_rationale": {
+      "claim_id": "DMG-11",
+      "source_ids": [
+        "repo-guide"
+      ],
+      "reasoning": "A common positive multiplier preserves the relative gain from eligible added flat damage.",
+      "exact_reaper_mitigation_certified": false,
+      "priority_order_changed": false
+    }
+  },
+  "preservation_boundary": {
+    "purpose": "Owner-selected bounded source/text integration into draft PR47.",
+    "formal_component_or_rule_qualification_changed": false,
+    "ledger_numeric_inputs_changed": false,
+    "selected_items_crafts_sockets_feats_or_ap_schedule_changed": false,
+    "priority_order_changed": false,
+    "historical_engine_or_results_change_authorized": false,
+    "previous_snapshot_or_evidence_rewrite_authorized": false,
+    "new_optimizer_run": false,
+    "live_game_measurement": false,
+    "current_dps_winner_established": false,
+    "historical_sections_to_preserve": [
+      "Archived rankings and optimizer experiments (#optimizer-historical-notes)",
+      "Superseded Summer's End notes"
+    ],
+    "open_limits": [
+      "Whole-character damage and critical eligibility",
+      "Target-specific defense and proc behavior",
+      "Existing set and component qualification gaps",
+      "Original missing source observations",
+      "Separate procurement and acquisition limits"
+    ],
+    "verification_scope": "This inventory is documentary evidence, not a test, build, optimizer, browser-layout, in-game or release receipt. Actual integration verification is recorded separately."
+  }
+}

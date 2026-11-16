@@ -8,6 +8,7 @@ import unittest
 
 from test_early_xp import visible_nodes, visible_text
 from test_lamordia_handling import Document, norm
+from wisdom_preservation import predecessor_index
 
 ROOT = Path(__file__).resolve().parents[1]
 RECORD = ROOT / 'evidence/shadowstrike-save/source.json'
@@ -172,20 +173,23 @@ class ShadowstrikeSaveTests(unittest.TestCase):
 
     def test_original_build_hash_accepts_only_exact_reviewed_correction(self):
         from test_endgame_evidence import validate_preservation
-        validate_preservation(self.html)
+        # The original hash/negative controls are evaluated after the explicit
+        # outer Wisdom reversal; all actual-current curse tests remain above.
+        predecessor = predecessor_index()
+        validate_preservation(predecessor)
         for old, new in [
             ('Dance in the Dark 3, Lithe 2, Epic Strike:',
              'Dance in the Dark 2, Lithe 2, Epic Strike:'),
             ('AoE ranged strike with +30% damage', 'AoE ranged strike with +40% damage')]:
-            changed = self.html.replace(old, new)
-            self.assertNotEqual(changed, self.html)
+            changed = predecessor.replace(old, new)
+            self.assertNotEqual(changed, predecessor)
             with self.assertRaises(AssertionError):
                 validate_preservation(changed)
 
     def test_preservation_reversal_cannot_mask_missing_save(self):
         from test_endgame_evidence import validate_preservation
         with self.assertRaisesRegex(AssertionError, 'A-019 exact reviewed correction'):
-            validate_preservation(self.html.replace(CONDITION, 'on every hit', 1))
+            validate_preservation(predecessor_index().replace(CONDITION, 'on every hit', 1))
 
     def test_source_mutation_cannot_be_blessed_by_recomputed_receipt_hash(self):
         for old, new in [('Fortitude', 'Reflex'), ('highest ability score', 'highest ability modifier'),

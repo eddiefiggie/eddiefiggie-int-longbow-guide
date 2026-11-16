@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "record_type": "scoped-browser-source-observations",
+  "review_date": "2026-11-15",
+  "baseline": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "pull_request": 47,
+    "remote_head": "d05e7865da76a47a92741cb79029a35fbd0f7712",
+    "remote_tree": "c1b236d5cafc7695af9ec77410d329c7a0b9cc44",
+    "actual_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "local_branch": "feat/wisdom-loadout-priorities"
+  },
+  "method": {
+    "surface": "Hosted Chrome; direct public DDO Wiki DOM inspection during the preceding read-only audit, plus visual inspection of its linked historical item example.",
+    "capture_kind": "Scoped verbatim DOM text and tooltip HTML, with a separately labeled visual transcription. Excerpts from separate table locations remain separate fields; no joined finished-item quote is invented.",
+    "observation_clock": "Genuine observation intervals bounded by clock__curr_time calls around the preceding browser reads. These grouped access windows are not individual page-load timestamps, source modification times, or the later integration/write time.",
+    "retention": "The preceding read-only audit kept its observations in the browser session. This new file now preserves those actual observations; it does not repair older source packets or change their missing metadata.",
+    "revision_limit": "Each Wiki revision_link is the Permanent link exposed by the inspected article. Historical revision endpoints were not independently reloaded; displayed metadata is not a raw HTTP archive or freshness guarantee.",
+    "source_authority": "DDO Wiki is a community-maintained secondary source. Exact source support does not certify current live-game behavior or all interactions.",
+    "license": "DDO Wiki text: CC BY-SA 2.5; attribution through each article and revision link. The externally hosted historical item image is cited separately, not relicensed as Wiki text.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/"
+  },
+  "captures": {
+    "melancholic-int": {
+      "source_url": "https://ddowiki.com/page/Item:Melancholic_Intelligence_(legendary)",
+      "source_title": "Item:Melancholic Intelligence (legendary)",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Melancholic_Intelligence_(legendary)&oldid=702267",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:01Z",
+        "ended_at_utc": "2026-11-15T22:19:27Z"
+      },
+      "cache_notice": "(this is up to 13 hours old)",
+      "page_modified_display": "This page was last modified 09:04, July 31, 2026 (Update 81.0.1) by Thomas Barker.",
+      "item_header_visible_text": "Melancholic Intelligence\nMinimum Level\t34\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tLamordia: Melancholic (Accessory)",
+      "effect_visible_text": "Slotted Effect: +15 Enhancement bonus to Intelligence.",
+      "location_visible_text": "Legendary Viktranium Experiment Crafting, Ludendorf City Hall"
+    },
+    "dimlight": {
+      "source_url": "https://ddowiki.com/page/Item:Miserable_Dimlight_(legendary)",
+      "source_title": "Item:Miserable Dimlight (legendary)",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Miserable_Dimlight_(legendary)&oldid=702294",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:27Z",
+        "ended_at_utc": "2026-11-15T22:19:35Z"
+      },
+      "cache_notice": "(this is up to 0 hours old)",
+      "page_modified_display": "This page was last modified 09:08, July 31, 2026 (Update 81.0.1) by Thomas Barker.",
+      "item_header_visible_text": "Miserable Dimlight\nMinimum Level\t34\t\n\nRarity\tNamed\nBind status\tBound to Account on Acquire\nAugment Type\tLamordia: Miserable (Weapon)",
+      "effect_visible_text": "Slotted Effect: +2 Exceptional bonus to Intelligence.",
+      "location_visible_text": "Legendary Viktranium Experiment Crafting, Ludendorf City Hall"
+    },
+    "globe": {
+      "source_url": "https://ddowiki.com/page/Item:Globe_of_True_Imperial_Blood",
+      "source_title": "Item:Globe of True Imperial Blood",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Globe_of_True_Imperial_Blood&oldid=643056",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:27Z",
+        "ended_at_utc": "2026-11-15T22:19:35Z"
+      },
+      "cache_notice": "(this is up to 11 hours old)",
+      "page_modified_display": "This page was last modified 17:43, June 1, 2025 (Update 73.3) by ShoeMaker. Based on work by others.",
+      "item_header_visible_text": "Globe of True Imperial Blood\nMinimum Level\t25\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tColorless",
+      "effect_visible_text": "Drag this augment into a slot to upgrade an item with a +1 Exceptional Bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. This augment can go in any color Augment Slot.",
+      "location_visible_text": "Return to Gianthold Tor, Black Dragon (Epic Elite or higher) optional chest"
+    },
+    "solar-int": {
+      "source_url": "https://ddowiki.com/page/Item:Solar_Gem_of_Intelligence_(Legendary)",
+      "source_title": "Item:Solar Gem of Intelligence (Legendary)",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Solar_Gem_of_Intelligence_(Legendary)&oldid=700860",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:35Z",
+        "ended_at_utc": "2026-11-15T22:20:05Z"
+      },
+      "cache_notice": "(this is up to 17 hours old)",
+      "page_modified_display": "This page was last modified 19:11, July 27, 2026 (Update 81.0.1) by Thomas Barker. Based on work by others.",
+      "item_header_visible_text": "Solar Gem of Intelligence (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tSun",
+      "effect_visible_text": "Slotted Effect: +4 Artifact Bonus to Intelligence.",
+      "location_visible_text": "Oghma's Song, end chest\nSnowfall and Sunlight, end chest\nFlocked Together, end chest"
+    },
+    "lunar-int": {
+      "source_url": "https://ddowiki.com/page/Item:Lunar_Gem_of_Intelligence_(Legendary)",
+      "source_title": "Item:Lunar Gem of Intelligence (Legendary)",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Lunar_Gem_of_Intelligence_(Legendary)&oldid=691752",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:35Z",
+        "ended_at_utc": "2026-11-15T22:20:05Z"
+      },
+      "cache_notice": "(this is up to 4 hours old)",
+      "page_modified_display": "This page was last modified 16:45, July 3, 2026 (Update 80.0.1) by Thomas Barker. Based on work by others.",
+      "item_header_visible_text": "Lunar Gem of Intelligence (Legendary)\nMinimum Level\t30\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tMoon",
+      "effect_visible_text": "Slotted Effect: +4 Profane Bonus to Intelligence.",
+      "location_visible_text": "The House of Gems, end chest\nRats in a Cage, end chest\nThe Wizard's Labyrinth, end chest\nLocked Away (Part Two), end chest\nTower of Vengeance, end chest"
+    },
+    "festive-int": {
+      "source_url": "https://ddowiki.com/page/Item:Diamond_of_Festive_Intelligence_%2B2",
+      "source_title": "Item:Diamond of Festive Intelligence +2",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Diamond_of_Festive_Intelligence_%2B2&oldid=720823",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:35Z",
+        "ended_at_utc": "2026-11-15T22:20:05Z"
+      },
+      "cache_notice": "(this is up to an hour old)",
+      "page_modified_display": "This page was last modified 14:13, October 13, 2026 (Update 81.4) by ShoeMaker. Based on work by others.",
+      "item_header_visible_text": "Diamond of Festive Intelligence +2\nMinimum Level\t22\t\n\nRarity\tNamed\nBind status\tUnbound\nAugment Type\tColorless",
+      "effect_visible_text": "Drag this augment into a slot to upgrade an item to provide a +2 Festive bonus to Intelligence.",
+      "location_visible_text": "Joe Candymaker, Turn in 80 Pieces of Darkest Chocolate, 60 Spooky Almonds, 60 Black Apples, 60 Shadowy Caramels, 60 Pinches of Sinister Cinnamon",
+      "notes_visible_text": "This was released as a Diamond of Spooky Intelligence +2 (providing a Spooky bonus) in 2015, but the type of enhancement changed and the augment was renamed in 2016, as the bonus may be applied to other event items. Diamonds in TR caches may still show as \"Spooky\".",
+      "scope_limit": "Permitted under the owner's existing Festive exception only. No auction-stock or price claim; Spooky is historical naming, not another selected bonus type."
+    },
+    "celestial-host": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Celestial_Sapphire_Ring",
+      "source_title": "Item:Legendary Celestial Sapphire Ring",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Celestial_Sapphire_Ring&oldid=631921",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:35Z",
+        "ended_at_utc": "2026-11-15T22:20:05Z"
+      },
+      "cache_notice": "(this is up to -4 hours old)",
+      "page_modified_display": "This page was last modified 19:30, April 21, 2025 (Update 73.1) by The Sneaky One. Based on work by others.",
+      "item_table_visible_text": "Legendary Celestial Sapphire Ring\nMinimum level\t29\t\nItem Type\tJewelry / Ring\nSlot\tFinger\nRace Absolutely Required\tNone\nBinding\tBound to Account on Acquire\nDurability\t390\nMaterial\tGem\nHardness\t49\nBase Value\t11,601pp \nWeight\t0.10 lbs\nLocation\tBlown Deadline, End Chest\nEnchantments\t\nNearly Finished\n\nOne of the following:\nConstitution +13\nDexterity +13\nIntelligence +13\nImproved Deception\nDodge +13%\nProfane Well Rounded +2\nYellow Augment Slot\nMythic Ring Boost +1 or +3\n\t\nUpgradeable?\tNearly Finished\nDescription\tA blazing sapphire is embedded into the ring.\nTips\t\n\n\n",
+      "profane_tooltip_html": "<span class=\"popup has_tooltip with-icon basic\"><a href=\"/page/Ability\" title=\"Ability\">Profane Well Rounded +2</a><span class=\"mw-valign-super\" typeof=\"mw:File\"><span><img src=\"https://images.ddowiki.com/thumb/Icon_tooltip.png/10px-Icon_tooltip.png\" decoding=\"async\" width=\"10\" height=\"8\" class=\"mw-file-element\" srcset=\"https://images.ddowiki.com/Icon_tooltip.png 1.5x\"></span></span><span class=\"popup tooltip wide left below\" style=\"text-align: center ;\"><b><a href=\"/page/Ability\" title=\"Ability\">Profane Well Rounded +2</a></b>: +2 <a href=\"/page/Profane_bonus\" title=\"Profane bonus\">Profane bonus</a> to all abilities.</span></span>",
+      "scope_limit": "Only the native Profane INT definition is newly qualified. Nearly Finished remains deliberately empty. The negative cache-age display is preserved literally, not interpreted as a freshness guarantee."
+    },
+    "coldlight-host": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "source_title": "Item:Legendary Coldlight Runners",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Coldlight_Runners&oldid=685297",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:01Z",
+        "ended_at_utc": "2026-11-15T22:19:27Z"
+      },
+      "cache_notice": "(this is up to 13 hours old)",
+      "page_modified_display": "This page was last modified 08:12, May 6, 2026 (Update 79.0.1) by The Sneaky One. Based on work by Thomas Barker.",
+      "item_header_visible_text": "Legendary Coldlight Runners\nMinimum level\t34\t\nItem Type\tClothing / Boots\nSlot\tFeet",
+      "slots_visible_text": "Lamordia: Melancholic Slot (Accessory)\nLamordia: Dolorous Slot (Accessory)\nGreen Augment Slot\nColorless Augment Slot\nMoon Augment Slot"
+    },
+    "calamitous-host": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Calamitous_Longbow",
+      "source_title": "Item:Legendary Calamitous Longbow",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Calamitous_Longbow&oldid=666359",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:19:27Z",
+        "ended_at_utc": "2026-11-15T22:19:35Z"
+      },
+      "cache_notice": "(this is up to 11 hours old)",
+      "page_modified_display": "This page was last modified 11:17, November 19, 2025 (Update 76) by Thomas Barker. Based on work by The Sneaky One.",
+      "item_level_visible_text": "Minimum Level\t34",
+      "slots_visible_text": "Lamordia: Melancholic Slot (Weapon)\nLamordia: Dolorous Slot (Weapon)\nLamordia: Miserable Slot (Weapon)\nLamordia: Woeful Slot (Weapon)\nOrange Augment Slot\nPurple Augment Slot",
+      "scope_limit": "Only host identity, source ML and relevant sockets are used. This capture does not establish the finished critical profile or DPS."
+    },
+    "compass-host": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "source_title": "Item:Legendary Abyssal Compass",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Abyssal_Compass&oldid=699719",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:20:05Z",
+        "ended_at_utc": "2026-11-15T22:20:20Z"
+      },
+      "cache_notice": "(this is up to 5 hours old)",
+      "page_modified_display": "This page was last modified 11:56, July 24, 2026 (Update 81.0.1) by Zav. Based on work by Thomas Barker.",
+      "item_header_visible_text": "Legendary Abyssal Compass\nMinimum level\t35\t\nItem Type\tJewelry / Trinket\nSlot\tTrinket",
+      "slots_visible_text": "Green Augment Slot\nColorless Augment Slot\nSun Augment Slot"
+    },
+    "unnatural-host": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "source_title": "Item:Legendary Ring of Unnatural Accuracy",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Ring_of_Unnatural_Accuracy&oldid=632763",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:20:05Z",
+        "ended_at_utc": "2026-11-15T22:20:20Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "page_modified_display": "This page was last modified 20:27, April 21, 2025 (Update 73.1) by The Sneaky One. Based on work by Thomas Barker and Derek McGoey.",
+      "item_header_visible_text": "Legendary Ring of Unnatural Accuracy\nMinimum level\t32\t\nItem Type\tJewelry / Ring\nSlot\tFinger",
+      "slots_visible_text": "Green Augment Slot\nColorless Augment Slot"
+    },
+    "glabrezu-host": {
+      "source_url": "https://ddowiki.com/page/Item:Legendary_Glabrezu_Claw_Pendant",
+      "source_title": "Item:Legendary Glabrezu Claw Pendant",
+      "revision_link": "https://ddowiki.com/index.php?title=Item:Legendary_Glabrezu_Claw_Pendant&oldid=707320",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:20:05Z",
+        "ended_at_utc": "2026-11-15T22:20:20Z"
+      },
+      "cache_notice": "(this is up to 18 hours old)",
+      "page_modified_display": "This page was last modified 03:07, August 25, 2026 (Update 81.2) by Zav. Based on work by Thomas Barker.",
+      "item_header_visible_text": "Legendary Glabrezu Claw Pendant\nMinimum level\t35\t\nItem Type\tJewelry / Necklace\nSlot\tNeck",
+      "slots_visible_text": "Green Augment Slot\nColorless Augment Slot\nMoon Augment Slot"
+    },
+    "augment-slots": {
+      "source_url": "https://ddowiki.com/page/Augment_Slot",
+      "source_title": "Augment Slot",
+      "revision_link": "https://ddowiki.com/index.php?title=Augment_Slot&oldid=717357",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:20:20Z",
+        "ended_at_utc": "2026-11-15T22:20:49Z"
+      },
+      "cache_notice": "(this is up to 12 hours old)",
+      "page_modified_display": "This page was last modified 20:30, September 22, 2026 (Update 81.3) by Zav. Based on work by others.",
+      "compatibility_headers_visible_text": "\tRed Augment\tBlue Augment\tYellow Augment\tPurple Augment\tOrange Augment\tGreen Augment\tColorless Augment\tFound in:",
+      "selected_rows_visible_text": [
+        "Purple Augment Slot\t✔\t✔\t✘\t✔\t✘\t✘\t✔\tNamed Weapons, Shields, or other hand-held items",
+        "Green Augment Slot\t✘\t✔\t✔\t✘\t✘\t✔\t✔\tAccessory items or named Armor, Robes, or Outfits"
+      ],
+      "level_rule_visible_text": "Every augment has an associated minimum level requirement to use it. Slotting any augment also increases the slotted item’s minimum level to the level of the slotted augment for as long as that augment is slotted, unless the item's minimum level is already equal or higher.",
+      "unique_augments_visible_text": "Certain crafting systems use special Augment Slots unique to that system, which cannot accept normal augments. The augments used in these systems, in turn, can only be used in those slots. Examples include Heroic and Legendary Green Steel items from The Vale of Twilight, Slave Lords Crafting items from Against the Slave Lords, and Dinosaur Bone Crafting items from The Isle of Dread.",
+      "standard_rule_visible_text": "Most augment bonuses, unless otherwise specified, are an Enhancement Bonus.\nSkill augments are a Competence Bonus.\nSpell Power augments are an Equipment Bonus.\nNamed augments are not on the list below; see this list.",
+      "scope_limit": "The ordinary-color compatibility table supports Colorless in Green/Purple. Standard-augment type rules are not transferred automatically to special Slavers crafting gems."
+    },
+    "slavers": {
+      "source_url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "source_title": "Slave Lords Crafting",
+      "revision_link": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:21:11Z",
+        "ended_at_utc": "2026-11-15T22:24:16Z"
+      },
+      "cache_notice": "(this is up to 13 hours old)",
+      "page_modified_display": "This page was last modified 10:46, September 18, 2026 (Update 81.3) by ShoeMaker. Based on work by others.",
+      "selected_rows_visible_text": [
+        "Chains / Legendary\t\tNeck/Waist\t 8 28\tBtA\tSlave Pits of the Undercity (Part 1)\tBroken Shackle",
+        "Fortification\t+70%\t+142%",
+        "\tSkills (except UMD)\t+10\t+20\t"
+      ],
+      "link_cells_html": [
+        "<td><a href=\"/page/Fortification\" title=\"Fortification\">Fortification</a></td>",
+        "<td><a href=\"/page/Skills\" class=\"mw-redirect\" title=\"Skills\">Skills</a> (except UMD)</td>"
+      ],
+      "historical_example_link": {
+        "anchor_visible_text": "example level 28 finished item: [2]",
+        "href": "http://i.imgur.com/vrK75CU.png",
+        "observed_redirect": "https://imgur.com/vrK75CU"
+      },
+      "scope_limit": "Separate selected rows, not a joined finished effect. The prior full Legendary table/headers remain in the immutable crafting-browser packet. These current rows do not state the selected Fortification or Spot bonus type."
+    },
+    "skill": {
+      "source_url": "https://ddowiki.com/page/Skill",
+      "source_title": "Skill",
+      "revision_link": "https://ddowiki.com/index.php?title=Skill&oldid=701579",
+      "body_observation": {
+        "started_at_utc": "2026-11-15T22:21:11Z",
+        "ended_at_utc": "2026-11-15T22:24:16Z"
+      },
+      "cache_notice": "(this is up to 13 hours old)",
+      "page_modified_display": "This page was last modified 19:51, July 28, 2026 (Update 81.0.1) by DDO wiki user Hysterix. Based on work by others.",
+      "spot_row_visible_text": "\tSpot\tYes\tWisdom\tPassive\tEagle\tAllows you to sense nearby hidden doors, traps, objects, and stealthed enemies. Except for the enemies, the exact locations will be unknown until a search check is successfully made.",
+      "scope_limit": "Supports Spot membership in Skills and Wisdom association only; supplies no selected craft bonus type."
+    }
+  },
+  "historical_spot_example": {
+    "source_url": "https://imgur.com/vrK75CU",
+    "linked_from": "https://ddowiki.com/page/Slave_Lords_Crafting",
+    "link_href": "http://i.imgur.com/vrK75CU.png",
+    "body_observation": {
+      "started_at_utc": "2026-11-15T22:21:11Z",
+      "ended_at_utc": "2026-11-15T22:24:16Z"
+    },
+    "method": "Visual inspection of the image rendered on the externally hosted page. The page-displayed date is not claimed to be the exact in-game capture date; no local image archive is retained in this packet.",
+    "page_displayed_date": "August 19 2016",
+    "item_identity_visible_text": "Legendary Five Rings",
+    "minimum_level_visible_text": "Minimum Level: 28",
+    "effect_visual_transcription": "Spot +22: +22 Competence bonus to Spot.",
+    "other_observed_values": {
+      "intelligence_enhancement": 17,
+      "intelligence_quality": 4
+    },
+    "assessment": "Relevant historical Slave Lords crafting-family corroboration for Competence, not direct current +20 Chains proof. Applying the type today requires a continuity premise across intervening changes. No Fortification effect is shown.",
+    "current_component_qualified": false
+  },
+  "findings": {
+    "seven_int_definitions": "Exact selected values and types agree with the model. These observations support only the seven named INT components; other abilities or item effects are not automatically qualified.",
+    "host_applicability": "The six augments fit their selected host sockets; Celestial is native. Source minimum levels are distinct from the unchanged full-kit floor of36.",
+    "same_type_overlap": "Existing retained rules suppress Globe INT1 beneath Dimlight INT2 and Celestial INT2 beneath Lunar INT4. No added INT or DPS is claimed.",
+    "chains_fortification": "Current142% recipe magnitude supported; specific standard-Fortification-class applicability remains unproved.",
+    "chains_spot": "Current20 magnitude supported by recipe/Skills membership; Competence has relevant historical Slavers corroboration only. Unknown/excluded status remains.",
+    "not_established": [
+      "Ten remaining INT cross-type interactions",
+      "Complete INT, Spot or Fortification totals",
+      "Character/filigree overlaps",
+      "Damage applicability, sustained DPS or critical range",
+      "Current auction stock, acquisition or actual crafting",
+      "Guide browser layout or publication"
+    ]
+  }
+}

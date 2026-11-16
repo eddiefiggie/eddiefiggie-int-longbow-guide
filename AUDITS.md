@@ -2,6 +2,568 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded Wisdom/Constitution integration — build 11-16-26.1 — 16 November 2026
+
+The owner selected option 1 after the read-only audit: integrate eight exact
+definitions and four named positive pairs, preserve the Skull conflict, add
+three-member Wisdom and six-member Constitution safeguards, verify the result
+and update **draft PR #47**. Merge, publication and selection changes are excluded.
+Startup matched approved remote head `834b8c4cc648f9263ea19ac4203eedd872888f06`
+and source tree `0b6263ca9bb201b5267774d6f8af198fe013d35e`. The intentional
+local HEAD remained `5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`. Independent documentation-lane inspection
+matched all 311 tracked file hashes and index entries, with no unstaged or
+untracked paths. The exact .9 baseline was captured before mutations.
+
+The [source register](evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json)
+is the frozen completed audit record: 12 new source records, nine reused-source
+references, nine reviewed inputs and all 18 within-family pairs. Its original
+read-only/proposed status describes that investigation. This integration has a
+separate receipt; it does not rewrite the original observations, timestamps,
+source grades or earlier INT-only adoption scopes. The register is a scoped
+transcription, not a complete DOM/HTTP archive or authenticated game capture.
+Displayed Wiki revision endpoints were not separately reopened. The untimed
+Nexus Skull read retains that limitation; its note time is not a source-read time.
+
+The new definition bindings cover Claws Wisdom 15 Enhancement; native Celestial
+2 Profane and Globe 1 Exceptional for each ability; Queen Constitution 7 Insight;
+Dolorous Constitution 3 Quality; and Solar Constitution 4 Artifact. Celestial's
+all-abilities wording is joined to explicit ability membership only for these
+selected claims. Solar's own Sun type, the armor's Sun slot and the specific
+Sun/Moon system support placement; the pinned selection supplies occupancy.
+Dolorous Accessory matches the boots' Accessory slot. Host/augment levels and
+the full-kit level-36 floor remain distinct.
+
+Only four positive pairs are added: Claws/Celestial Wisdom, Queen/boots
+Constitution, Queen/Celestial Constitution and boots/Celestial Constitution.
+The retained affirmative Tip 179 premise is accompanied by the Stack same-family
+caveat; this is a bounded interpretation, not exhaustive absence of exceptions.
+All twelve prior rule dictionaries and historical profiles remain literal.
+Every public proof involving the Skull must be withheld in the new profile,
+including generic Artifact/Exceptional routes. Deleting, duplicating, renaming,
+moving or substituting a family member cannot manufacture completeness.
+
+At level 36 the intended current outcomes are **Wisdom 18 complete** and
+**Constitution subset 17, full result `null`**. Skull's item page still says
+16 while generic Nearly Complete says 15. An unfinished image, an unparameterized
+Nexus recipe and the builder's same-release generic correction/six named
+exceptions do not resolve the Skull. Model CON 32/33 remains unchanged, and
+Bloodrage remains excluded from standing sums. Existing INT 37, Fortification
+226 and direct Spot 27 are preserved; full-kit results at 35 remain incomplete.
+
+Selected gear, sole Minor Artifact, all 32 priorities, crafts/sockets, feats/AP,
+historical model results, original evidence and approved exceptions remain fixed.
+**Precommit verification is pending at this documentation checkpoint.** The
+[integration receipt](evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json)
+records actual preservation, builder, suite, review, draft-update and CI results.
+No whole-character score, HP/Spot/Will/DPS certificate, live-game test, new solve,
+crafting, purchase, merge or publication follows from this change.
+
+## Bounded Chains type integration — build 11-15-26.9 — 15 November 2026
+
+The owner selected option 1 after the Chains type investigation: qualify exactly
+`chains-fortification` and `chains-spot`, add only their reviewed Spot pairs
+with Heroism and Luck, regenerate outputs and verify **draft PR #47**.
+Startup matched remote head `30ce02c4e823ae92a1cd2dde4db99fa60ad825d9` and staged
+tree `21b6dcfe104cf357877e8e5c8a4335d9547f99c7`, with no unstaged or untracked
+paths. Local HEAD remained the intentional base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on `feat/wisdom-loadout-priorities`.
+
+The [new source register](evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
+is the exact frozen investigation record. Its five principal source observations
+run from **02:13:24.476 to 02:22:20.282 UTC on 16 November 2026**. It retains the
+original read-only scope and implementation-pending findings; the separate
+integration receipt records this later approved change. The selected browser
+text, accessibility observations and recipe-associated DOM title attributes
+form a curated record, not a complete DOM/HTTP archive. Screenshots were
+inspected but not saved as artifacts. Displayed Wiki/Compendium permanent links
+were not independently reopened; missing Nexus revisions or client versions
+are not invented.
+
+| Selected definition | Exact type evidence | Independently retained value/applicability |
+| --- | --- | --- |
+| Chains 142 Enhancement Fortification | Nexus `Legendary_Slaver_Fortification`: Legendary Prefix removal, Fortification effect and 100 Legendary-tier broken shackles. | Wiki Legendary Prefix value 142, shared base-item applicability and Chains host slots. |
+| Chains 20 Competence Spot | Nexus `Legendary_Slavers_Spot/2C66B`, variant `0x7002C66B`: Legendary Extra removal, Spot effect and 100 Legendary-tier broken collars. | Wiki Legendary Extra skills-except-UMD value 20, explicit Spot membership and Chains host slots. |
+
+The Nexus effects omit their numeric parameters. The numbers above are derived
+from the separate Wiki recipe records, never inserted into a claimed Nexus
+quotation. The exact Spot variant matters: another same-named Legendary entry
+belongs to the Bonus recipe. DDO Nexus identifies itself as an unaffiliated beta
+reference with potentially incomplete or incorrect data; the recipe metadata's
+origin and client version were not established. Collector's version fields do
+not establish a version for these recipe records. Heroic Compendium +70/+10
+types remain corroboration only; no Heroic-to-Legendary continuity is assumed.
+
+The existing Enhancement/Insight Fortification interaction and Heroism/Luck
+Spot pair remain. Only `chains-spot` ↔ `heroism-spot` and `chains-spot` ↔
+`luck-spot` are added, using the retained positive stacking premise and exact
+qualified definitions. At level 36 the complete selected-gear families derive
+**142 + 84 = 226% Fortification** and **20 + 4 + 3 = +27 direct Spot**.
+Selected-gear INT remains **+37**; the full-kit results at level 35 remain
+incomplete. All family guards remain, and no global type rule is introduced.
+These are existing gear contributions. Fortification is not a damage-reduction
+percentage, and direct Spot excludes ranks, the modifier from total Wisdom
+and other character sources; no trap-success threshold is established.
+
+Earlier .8 exclusions and source limitations remain dated historical findings.
+Selected equipment, sole Minor Artifact, all 32 priorities, crafts, sockets,
+feats/AP, historical model results, original claim grades and existing
+exceptions are unchanged. **Precommit verification passed: 531 tests in 214.123 seconds, all four documented builders, 141 local documentation links (including five fragments), and independent review with no remaining functional blocker.** The initial full run had one obsolete two-proof production assertion; its unchanged historical expectations now run on the exact .8 inputs through the current engine, alongside separate .9 acceptance checks. Internal-browser preview of the local candidate was rejected by the browser URL policy; visual rendering, keyboard behavior and print pagination remain unverified. The
+[integration receipt](evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
+records actual checks and draft-update state. No primary client test, new solve,
+crafting, purchase, merge or publication is included.
+
+## Bounded Fortification and Spot integration — 15 November 2026
+
+The owner selected option 1 after the completed read-only Fortification/Spot
+review: integrate exactly three component definitions and one named Spot pair
+into **draft PR #47**, preserve both Chains exclusions, add exact-family
+completeness safeguards, regenerate required outputs and verify the result.
+Startup matched remote head `72db151c4f881c08844d273caee2914ddc736641` and staged
+tree `573c0b26ac30dce65a3d4fcf6107a38dc5c8058d`, with no unstaged or untracked
+paths. Local HEAD remained the intentional base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on the approved feature branch.
+
+The [source register](evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
+is the exact frozen 16-record browser register from that investigation. Its
+observations run from **01:05:25.602 to 01:15:14.309 UTC on 16 November 2026**,
+corresponding to the 15 November Pacific review date. Actual selected DOM/text
+fragments, separately labeled context, displayed revisions and recorded cache
+notices are retained. This is neither a complete raw DOM/HTTP archive nor a
+cryptographically authenticated browser capture. Permanent revision endpoints
+were not independently reopened; the linked Chains image was inspected but
+not archived. The original register's read-only/no-promotion metadata describes
+the investigation; the separate integration receipt describes this later change.
+Old captures, missing observations and claim grades are not repaired.
+
+| Selected component | Bounded support integrated | Remaining boundary |
+| --- | --- | --- |
+| `queen-fortification` | The Queen's own-item popup associates the Fortification label with its separate +84 Insight description. | The fragments stay separate; this qualifies only that effect, not the Queen's other relayed effects or a complete Fortification total. |
+| `heroism-spot` | The own Sapphire of Greater Heroism definition supplies +4 Morale to skill checks; Skill and Spot records establish Spot membership. | An explicit category derivation, not a reconstructed Spot-named tooltip or every benefit of the Greater Heroism spell. |
+| `luck-spot` | The own Sapphire of Good Luck +3 definition supplies +3 Luck to skill checks, with the same separately retained Spot membership. | Selected host/socket and level conditions remain required; existing same-type bonuses can affect a character's marginal gain. |
+
+The only added positive interaction is the exact `heroism-spot` ↔ `luck-spot`
+pair, supported by the fresh affirmative Tip 179 observation together with
+those definitions. The nine earlier rules, including ten closed INT pairs and
+the existing Enhancement/Insight Fortification interaction, remain literal.
+Two-ID Fortification and three-ID Spot family guards prevent removal, renaming
+or mutation of an unresolved member from manufacturing a complete result;
+the prior nine-definition INT safeguard remains intact.
+
+At the selected level-36 floor, the supported subsets are **84 Fortification**
+and **4 + 3 = 7 direct Spot**. Both complete selected-family totals remain
+`null`. Chains' current recipe magnitudes 142 and 20 have support, but their
+selected-craft bonus types remain unresolved and both IDs stay excluded.
+Conditional 226 Fortification and 27 direct Spot remain modeled combinations,
+not demonstrated full results. The older Five Rings examples, item-normalization
+history and blank Chains image do not supply either missing type. Whole-character
+Spot also needs ranks, total equipped/buffed Wisdom and other applicable sources;
+gear Wisdom 18 is not the character's Wisdom score.
+
+Build 11-15-26.8 preserves the Wisdom selection, sole Minor Artifact, 32 priorities,
+crafts, sockets, feats/AP, all historical model results and existing exceptions.
+**Precommit verification passed: 503 tests in 142.921 seconds, all four documented builders, 126 local documentation links and independent review with no remaining blocker.** The
+[integration receipt](evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json)
+records actual preservation, builder, suite and draft-update results separately.
+Source support and software checks do not certify live-game behavior, browser
+layout, accessibility, print pagination, item ownership or acquisition. No new
+solve, crafting, purchase, merge or publication is included.
+
+## Scoped offensive-mechanics integration — 15 November 2026
+
+The owner selected option 1 after the completed read-only offensive audit:
+integrate supported source records and current explanatory corrections into
+draft PR 47, regenerate required outputs and verify the result. Startup matched
+remote head `cdb39fe7cdfbcbb2d2143c49c88979b008158c28`, staged tree
+`11b6e905e2174ea9bcae0ad77c7aaf224e999701` and the existing approved feature branch,
+with no unstaged or untracked paths. Local HEAD remained the known base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328`; no checkout/reset/fetch was used.
+
+The [source register](evidence/wisdom-loadout/offensive-sources-2026-11-15.json)
+records 27 browser-observed Wiki pages with displayed revisions, original
+observation windows and paraphrased scope. These are transcribed observations,
+not an exported complete raw DOM packet or independently reopened historical
+revision bodies. The date is 15 November Pacific; the observations occurred
+16 November UTC. Cached article ages, old modification dates and the dated
+Critical hit confirmation conflict remain explicit. No old observation or source
+grade is repaired, and no component is newly admitted to the calculator.
+
+The [reconciled inventory](evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json)
+distinguishes current corrections from historical records. The selected two
+bow ability passives give 2× the operative modifier once acquired, with Know the
+Angles separate. U63's d6/100% normalization supersedes U62's intermediate
+imbue rule. Named sources give 4d6/2d6 at 30, or 5d6/3d6 with the Emerald-bearing
+ML34 boots equipped; the complete kit remains ML36. The independent review
+caught the host-level gate and protected the archived 1440/1468 and superseded 1207
+passages from being counted as current errors.
+
+Feywild's chosen purchase is15; no stored level 14 model case changes. The
+historical table now identifies its evaluated levels. Its returned score
+includes speed, omits important offensive/defense inputs and does not simulate
+the current recipe. Current armor 20% Enhancement alacrity duplicates an equal
+bow bonus; Doubleshot scales eligible damage rather than creating independent
+attacks or proc opportunities. Common Reaper mitigation does not itself remove
+the relative value of eligible flat damage. None of these findings establishes
+a current DPS winner or permits silent priority/gear changes.
+
+Build 11-15-26.7 reconciles current prose and generated explanations, while the
+ledger, selected data, engine, full historical model results and earlier source
+records remain literal. Source-supported Flaming applicability does not transfer
+to every Fire rider/proc or certify whole-character Spell Power/damage. The
+[integration receipt](evidence/wisdom-loadout/offensive-integration-2026-11-15.json)
+records actual preservation, test, builder and draft-update results. Browser
+layout/accessibility/print QA and live-game validation remain separate. No new
+optimizer solve, crafting, purchase, merge or publication is included.
+
+## Bounded ten-pair INT rule and fresh Fortification interaction — 15 November 2026
+
+The owner selected option 1 after the read-only stacking/type audit: integrate
+the ten selected INT interactions and separately observed Fortification rule in
+**draft PR #47**, retain Chains exclusions, regenerate outputs and run checks.
+Startup matched remote head `b83e6a9251d743ecae39d0301d177a08de54f93c` and staged
+tree `b1b39ce3a38017c67ffd4ea39a9965175c88a243`, with 80 staged paths and no
+unstaged/untracked changes. Local HEAD remained
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on the approved feature branch.
+The exact baseline archive passed **395 tests in 69.451 seconds**, exit 0.
+No reset, ref switch, fetch or local HEAD advancement was used.
+
+The [additive source packet](evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json)
+retains the preceding browser audit's actual nine scoped observations and original
+millisecond timestamps. Its public derivative omits only unnecessary editor
+identifiers from modification footers, retaining the original date/update text,
+mechanics excerpts, cache notices, revision links and observation windows.
+Tip 179 supplies an affirmative different-types statement;
+the implementation does not infer its converse from same-type nonstacking. That
+page's displayed modification date is in 2022 despite its 2026 observation.
+The Stack article's general same-family caveat is retained, not hidden; the
+specific Fortification article explicitly allows its Enhancement/Insight pair.
+No INT-specific contrary exception was established in this bounded review;
+that is not exhaustive absence proof or a live-game test.
+
+Build **11-15-26.6** appends exactly two rules while preserving the original seven
+and every old source dictionary. The new INT rule covers only the ten pairs
+among the selected Enhancement15, Insight7, Quality3, Profane4 and Festive2
+components. Artifact, Exceptional and same-type handling retain their existing
+rules. Seven inputs count; Globe INT is suppressed by Dimlight and Celestial
+INT by Lunar. The derived selected-gear result is **+37 at level36**, not an
+additional bonus, character ability score, DPS estimate or critical profile.
+
+Independent review exposed a false-completeness path when only those five
+members were pinned: edits/removal of Solar, Dimlight or Globe could still
+produce a complete total. The corrected current-profile guard binds the entire
+nine-definition INT family and all source records at runtime, including
+suppressed inputs. It does not widen the ten-pair interaction scope. The reviewed
+fix passed 248 meaningful positive/adversarial checks; 152 complete old-input
+results remained identical. Current inputs change exactly two level36 INT
+records; all other level36 and all level35 records are unchanged. The repository
+suite and exact-head CI are separate verification stages recorded in the
+[integration receipt](evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json).
+
+The fresh Fortification rule supports only the Enhancement/Insight relationship.
+It does not classify Chains' selected Prefix as standard Enhancement Fortification
+or qualify Queen. Chains Fortification and Spot remain unknown/excluded.
+Two Wiki-linked Five Rings images show Spot10/22 Competence and image-page dates
+before the published Slave Lords release; exact in-game capture dates and
+preview provenance are not established. The publisher's later Legendary item
+normalization includes Slavers but does not prove current Spot type continuity.
+No missing type is supplied from those historical examples.
+
+The exact .6-to-.5 layer preserves earlier source packets, receipts, snapshots,
+scopes and test assertions. Equipment, the Minor Artifact, priorities, modeled
+amounts, acquisition exceptions and original claim grades are unchanged.
+Guide browser/keyboard/print QA and full mechanics validation remain outstanding.
+No new optimizer solve, crafting, purchase, merge or publication is included.
+
+## Seven selected INT definitions — 15 November 2026
+
+The owner selected the bounded integration option after a read-only batch audit:
+record seven supported INT definitions in draft PR #47, retain historical Slavers
+Spot corroboration without qualifying it, regenerate affected outputs and test.
+Startup checks matched remote head
+`d05e7865da76a47a92741cb79029a35fbd0f7712` and staged tree
+`c1b236d5cafc7695af9ec77410d329c7a0b9cc44`; the existing 73 staged paths had no
+unstaged or untracked changes. Local HEAD remained the approved older base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`. No reset, fetch or branch switch was used.
+
+The [new source packet](evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json)
+retains the browser observations separately from earlier captures. Exact own-item
+clauses support Melancholic INT +15 Enhancement, Solar INT +4 Artifact, Lunar INT
++4 Profane, Festive INT +2, Dimlight INT +2 Exceptional, Globe INT +1 Exceptional,
+and Celestial Sapphire's native +2 Profane to all abilities. Host/socket and level
+checks retain their separate scope. These are public Wiki observations with
+displayed revision metadata, not in-game tests or historical-endpoint byte checks.
+
+Build 11-15-26.5 binds only those seven selected INT components through the
+unchanged direct-source validator. The existing highest-of-type rule suppresses
+Globe's INT beneath Dimlight and Celestial's INT beneath Lunar. No interaction
+rule is added, and the complete INT total remains withheld. The model-only +37
+does not become a certified gear total, character score or DPS result.
+
+The current Slavers recipe supports Fortification +142% and Skills except UMD
++20. Its linked Legendary Five Rings image explicitly shows Spot +22 Competence,
+but the image page displays 19 August 2016 and the item has older values. This is
+crafting-family-specific historical corroboration, not a current Chains +20
+tooltip or proof that its type persisted through later changes. Chains Spot and
+Fortification remain unknown/excluded; the latter still lacks a supported
+selected-Prefix classification premise. Search results do not establish absence.
+
+The [integration receipt](evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json)
+separates actual verification from source support and release status. Prior source
+records, claim grades, selected gear, priorities, numeric/core tuples, interaction
+rules, exceptions and snapshots are preserved. No new solve, crafting, purchase,
+merge or publication is included. Guide rendering and complete mechanics/DPS
+validation remain separate.
+
+## Bounded multi-source recipe proofs — 15 November 2026
+
+After design review, the owner selected implementation option 1 for exactly four
+selected Chains IDs in draft PR #47. Startup checks matched remote head
+`6d978f48fc3eeb807f4560e75ac27e6639af35f4` and initial staged tree
+`b636b6463a2978410ed4dca75ee5c8fc18c763a1`; 63 staged paths, no unstaged or
+untracked changes. Local HEAD remained the approved older base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on the existing feature branch.
+A fresh aggregate run in an exact archive of that tree passed 315 tests in
+43.528 seconds. No reset, fetch, ref switch or history rewrite occurred.
+
+The new hosted-browser [source addendum](evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json)
+records the recipe's Attributes link and the Ability definition, revision 524405,
+which explicitly includes Intelligence and identifies abilities as attributes.
+The existing Legendary recipe and Spell Power records retain their original
+observation windows and bytes. Fresh Fortification and focused Spot checks do
+not establish the missing selected-craft premises; search failure is not proof
+that relevant evidence is absent elsewhere.
+
+Build 11-15-26.4's bounded proof engine admits **Combustion 142 Equipment** and
+**Quality Intelligence +3** from separate real host, recipe and membership
+contexts. It never presents a joined finished-item quote. The independent review
+identified a possible missing-proof fallback to legacy direct provenance; all
+four fixed Chains IDs now require their bounded proof whenever counting is
+attempted, even if a caller removes or empties the proof. Negative tests also
+cover stale/corrupt sources, headers, tiers, categories, duplicate IDs, changed
+selection, asserted success and hybrid bindings.
+
+The real new engine reproduced all 76 old-input result objects before integration.
+After the two qualifications, exactly four level36 objects change and 72 stay
+identical; all 76 level-35 results are unchanged. Combustion is 142 selected-gear
+Fire Spell Power only, not weapon/imbue damage or measured DPS. INT remains
+incomplete/null with seven excluded inputs and the newly visible missing
+Glabrezu Insight/Chains Quality interaction. Fortification and Spot remain
+unknown/excluded. No new stacking rule is inferred.
+
+The [integration receipt](evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json)
+separates source proof, software checks, browser limitations and release status.
+The eight-file exact outer reversal preserves the .3 checkpoint and 55 protected
+records; historical tests remain distinct from real-new-engine legacy negatives
+and current renderer tests. Gear, priorities, numeric/core tuples, original source
+grades, seven interaction rules, acquisition exceptions and previous snapshots
+are unchanged. No optimizer solve, game test, crafting, purchase, merge or
+publication occurred.
+
+## Bounded crafting qualification integration — 15 November 2026
+
+Owner-selected option 1 authorized targeted Chains checks and evidence
+integration into draft PR #47, not a merge or publication. The startup check
+confirmed remote head `fbb1c5ed9aca2c1c360147732ac3ba61c77c435e` and tree
+`df677f8c9d2cd113b55d0418dd765729924895c6`; the 57 staged paths matched that tree
+with no unstaged changes. Local HEAD remained the older base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`. The starting suite passed 288 tests in 41.404
+seconds. No checkout reset or branch switch occurred.
+
+The final exact base-to-tree comparison corrected an earlier working path count
+of 56 to 57. The tree identity was correct throughout; this is a receipt-count
+correction, not an added or omitted source, selection or code change.
+
+The [new integration record](evidence/wisdom-loadout/crafting-integration-2026-11-15.json)
+binds only Glabrezu's exact Insight INT +7 tooltip, revision 707320 and genuine
+20:43:29–20:43:33 UTC observation from the unchanged earlier source addendum.
+The strict calculator code, existing sources and positive-interaction rules
+are not broadened. Only the Glabrezu input moves from excluded to counted in
+the two INT result configurations; the complete total remains null/incomplete.
+
+The targeted hosted-browser follow-up captured a generic Spot +20 Competence
+tooltip under Legendary Keylock Ring in Category:Spot items, not a selected
+Chains finished effect. The single focused Slave Lords/Competence search
+returned 18 results but did not establish that binding. The category's anomalous
+negative cache-age display is retained literally, not treated as a freshness
+guarantee. These observations are bounded, not an absence-of-evidence proof.
+All four Chains recipe magnitudes retain their supporting evidence and their
+remaining exact type/category/applicability limits; all four inputs stay excluded.
+
+Build 11-15-26.3 reconciles the generated evidence labels and source ledger
+together. The new outer layer restores the exact preceding checkpoint before
+historical assertions; separate current tests guard the one qualified component
+and prevent promotion of the unresolved inputs. Original source packet, claim
+grades, selection, priorities, all modeled numbers and prior snapshots remain
+unchanged. Successful source access is not local-guide layout QA or live-game
+verification. No optimizer rerun, new exception, crafting, purchase, merge or
+publication was performed.
+
+## Fresh hosted-browser crafting evidence — 15 November 2026
+
+The owner requested the internal browser for the bounded crafting pass. Direct
+hosted-browser reads succeeded. The [new addendum](evidence/wisdom-loadout/crafting-browser-2026-11-15.json)
+retains six scoped DOM captures with displayed revision links and contemporaneous
+new reading windows between 20:43 and 20:49 UTC; it does not retrofit old capture
+metadata or claim a raw HTTP archive/in-game test.
+
+Glabrezu's exact item tooltip supports Insightful Intelligence +7, corroborated
+by Nearly Complete's Legendary column. Legendary Chains and the Slave Lords
+table support the four selected craft magnitudes and distinct channels. Their
+evidence is not equally complete: Fortification's Enhancement classification is
+a general-rule inference, Quality INT and Spot are selected category mappings,
+and Spot's exact bonus type is unresolved. The spell-power table maps Combustion
+to Fire; +142 Equipment Spell Power is not +142 ranged weapon damage. No finished
+Chains tooltip or positive-interaction rule is invented.
+
+This additive checkpoint starts from PR #47 head
+`3133c86f54fb21cbe9b8fa3b9551a9ba61525750`, tree
+`e107a09dd6a11f3a4e441c9c9d445915c6b8019c`. The actual local HEAD remained
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`; the 54 staged paths matched the remote tree,
+with no unstaged edits before this pass. No reset or ref switch occurred.
+
+**Findings recorded; calculator qualification not integrated.** New evidence
+notes supersede the earlier lack-of-magnitude-evidence statement, not the
+historical claim grades. Guide/audit/print bytes, recipe, priorities, source
+gates, totals, previous JSON packets and snapshots remain unchanged. The new
+tests check source fidelity and this preservation boundary, not live-game truth.
+Next integration must reconcile ledger and generated labels together while
+retaining unresolved types, mappings and interaction gates. Public Wiki access
+does not resolve the separate local-guide browser-QA limitation. No merge,
+publication, crafting, new event exception or new optimizer solve was performed.
+
+## Owner-approved HA63 acquisition-evidence exception — 15 November 2026
+
+The owner reported that Randall Lyric appears to offer Sapphire of Healing
+Amplification +63 (ML36) and accepted the absent independent acquisition evidence
+as a scoped exception. The [decision](docs/knowledge-base/DECISIONS.md#approved-acquisition-evidence-exception--15-november-2026)
+removes that one procurement question as a blocker to retaining the augment;
+it does not claim independent vendor verification or close the factual gap.
+No vendor location, price, current stock or original observation is invented.
+The Wiki's missing acquisition entry is not treated as proof of event-only
+status or a demonstrated error.
+
+This documentation-only follow-up starts from draft PR #47 head
+`222733d49839fd4dfc12ba61a8bd8c4ef23cc721`. Before edits, the actual local HEAD
+remained `5ded199eadbade29dcdb0c1eccfad4758a65c328` on
+`feat/wisdom-loadout-priorities`; its 54 staged paths and tree
+`6e41c0af3cc36920ff0b13b76983ffc45783ea78` matched that existing remote draft,
+with no unstaged changes. No checkout reset or ref switch was performed.
+
+The exception changes risk acceptance only. The selected loadout, event rule
+with its Festive exception, all source grades, counted totals, original receipts,
+generated guide/audit/print files, build stamp and snapshots remain unchanged.
+Five exact craft values, Skull CON15/16, source-provenance gaps, full-character
+and DPS validation, and browser QA remain open. No new optimizer solve, browser
+attempt, merge or publication is authorized by this decision. Earlier dated
+entries below retain their original evidence conclusions; this entry supersedes
+only the requirement to resolve HA63 acquisition before retaining that augment.
+
+## Bounded Wisdom-draft mechanics corrections — 15 November 2026
+
+Owner-approved code-only follow-up to draft PR #47 at
+`564d5259f715962851fd1a4fcbc62820785f4d56`. The starting 258-test suite passed;
+that did not prevent the prior audit from finding substantive explanatory errors.
+The [correction record](evidence/wisdom-loadout/corrections.json) inventories the
+affected claims, retained source pointers, publisher corroboration and limits.
+
+The current ledger now distinguishes Major Anger's Rage uses from Glabrezu's
+Action Boost uses and permanent Ram's Might from conditional Bloodrage. Those
+annotations remain unknown under the unchanged provenance gate; no additional
+damage, abilities, filigrees or stacking edges are counted. Starting Wisdom is
+no longer treated as the final equipped score for Ranger casting or Will.
+Removing the unsupported exclusion is not certification of a usable spell or
+healing rotation. Quicken remains unselected.
+
+Doubleshot is described as eligible-hit damage multiplication rather than an
+independent arrow. Retained Wiki revision 719351 and publisher U49/U81.4 support
+that correction. Critical-profile arithmetic is conditional; Elasticity's extra
+critical damage requires a qualifying confirmed critical not negated by
+fortification. The alacrity summary retains its historical Haste-always-up model
+assumption rather than claiming measured attack rate or DPS. No new global
+optimality or equal-DPS conclusion is established.
+
+All original source bytes, the selection manifest, numeric components,
+interaction rules, calculator/model and prior snapshots remain protected. The
+previous exact Wisdom scope is not rewritten: a separate strict outer reversal
+restores this correction to the PR's original draft before historical checks
+run. Current semantic and negative tests exercise the corrected files directly.
+
+The earlier browser review could not connect to the local preview and a later
+inspection was blocked by browser security policy. This code-only pass does not
+retry it. Desktop/mobile rendering, keyboard behavior and print pagination remain
+unverified. Five exact craft claims, Skull CON15/16, source-provenance gaps, exact
+non-event Healing Amplification +63 procurement and whole-character/DPS validation
+remain open. No merge, Pages dispatch or live-site verification is implied.
+
+Local correction verification: **275 tests passed in 41.989 seconds, exit 0**,
+including 17 added tests. An initial historical feat-section hash failure was
+resolved by the exact correction reversal without changing the old hash or
+selected schedule; current Quicken and routing checks remain separate. All four
+builders and freshness checks passed. Independent review confirmed all 67 prior
+snapshots, 38 complete calculator results and 39 complete historical bow-model
+tuples unchanged. The five-file, 21-hunk correction reversal restores the exact
+prior PR tree. All 36 reviewed relative Markdown targets exist. These are local
+results; GitHub CI and publication are reported against their own exact heads.
+
+## Wisdom artifact loadout integration — 15 November 2026
+
+The owner requested the current guide and prioritized affixes be updated from
+the completed Wisdom loadout. Local and connected remote guide main matched
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` before editing; the exact startup gate is
+in [the implementation receipt](evidence/wisdom-loadout/startup.json).
+
+The actual production query changed only Dexterity to Wisdom at its existing
+rank and completed 45 stages in 271.998 seconds. The selected practical recipe is
+an explicitly manual derivative (equal typed craft rotations, Spot craft and
+Good Luck replacing Festive CON), not another optimal solve. One shared record
+now drives the current gear, ranked affixes and quick summary; source/evidence
+grades remain separate from model arithmetic and achieved query targets.
+
+The [source map](evidence/wisdom-loadout/README.md) retains own-item support for
+Claws WIS +15, the ring ability-menu corroboration and exact DEX +13 gap, the typed
+WIS/DEX overlap conditions, crafting prerequisites and inherited numerical gaps.
+No fresh Wiki access succeeded during that comparison; missing exact revisions
+or genuine source-observation metadata were not invented. The 93 retained-source
+supported claims out of 130 are not 93 certified inputs under the stricter ledger.
+
+The current component ledger is retargeted to actual equipment and set-augment
+sources. Absent Monolith, old pendant/belt/bracers and obsolete gem contributions
+cannot remain current merely because an aggregate number matches. Newly unknown
+inputs are included and excluded by the unchanged source gates, rather than
+omitted to create falsely complete totals. Original source bytes/rules remain
+unchanged. The old Queen BASIC reflection/Solar proof does not certify Quickblade.
+
+The update also corrects the earlier comparison prose: the guide's Coldlight
+Quality INT +3 becomes practical Quality CON +3; Chains supplies practical Quality INT +3.
+The new Globe/Treatise bow fill removes Defense +40's level-36 requirement from the
+bow itself, but the full outfit remains ML36. Sinew is retained as an existing
+conditional alternate, not silently treated as a second optimizer run.
+
+The baseline 229-test suite passed before editing. New exact reversal contracts
+preserve historical expectations and snapshots, while separate current tests
+check the new selection, ordering, source exclusions and generated data flow.
+Final tests, rendering, PR, merge and deployment are reported separately; this
+entry is not proof that publication or full game-mechanics certification occurred.
+
+Local implementation verification subsequently completed: **258 tests passed in
+37.437 seconds, exit 0**, versus the 229-test starting baseline. The 29 added
+tests exercise the current recipe and its preservation boundary. Five initial
+historical-layout/hash-boundary failures were repaired without changing current
+production content or weakening prior assertions; separate current checks remain
+active. All 66 earlier snapshots are unchanged, and all 498 reviewed local links
+and anchors resolve. Builder freshness and `git diff --check` pass.
+
+Browser QA **did not run**: Chromium was denied permission to create its process
+singleton socket before any page or screenshot was loaded. Desktop/mobile
+rendering, keyboard interaction and print pagination therefore remain unverified;
+no permission workaround was attempted. The
+[verification receipt](evidence/wisdom-loadout/verification.json) binds the tested
+files and records these limits. Preparing a draft PR does not authorize merging
+or publishing while release gates remain open.
+
 | Date | Scope | Checked | Found and corrected |
 |---|---|---|---|
 | 29 Oct 2026 | Enhancements and epic destinies | Every AP/DP cost, rank count, progression gate and prerequisite on the Horizon Walker, Deepwood Stalker, Harper Agent, Arcane Archer, Shiradi Champion, Shadowdancer and Fatesinger pages against every tree table, gate table and by-level table | Deepwood Stalker had 4 AP below its 5-AP gates (tier 2 and the Sneak Attack core); fixed with Favored Defense 1 in place of Thrill of the Hunt rank 3, and the AP-by-level table re-sequenced. All other costs matched. Builder point counters that disagree with the wiki cropped from the tree images |
@@ -174,3 +736,48 @@ Only the current A-074 explanations are reconciled; historical study records,
 source bodies and snapshots remain unchanged. Exact reversal contracts preserve
 the prior Guide and ledger, alongside positive and negative regressions for type,
 variant, scope, source qualifications and withheld results.
+
+## Bounded selected-gear Doubleshot integration — build 11-16-26.2 — 15 November 2026
+
+The owner approved option 1 after the completed read-only audit: qualify one
+Quickblade 15 Artifact contribution, add exactly six native Doubleshot pairs,
+verify preservation and update draft PR #47 with CI. The displayed date is
+November 15 in America/Los_Angeles; source/adoption records use November 16 UTC.
+Merge, publication, a new solve and selection changes are outside this approval.
+
+Startup verified source `dca599357207c5861d2819358f7d011bba5d6dd0`, tree
+`239b0303b28572df40cda9d9838d76cde2365d0c`, all 320 tracked working/index files
+and the intentional 129-path staged mirror. Actual local HEAD remained
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on `feat/wisdom-loadout-priorities`.
+Independent documentation-lane inspection matched all eight owned file hashes
+to the startup gate before edits. The exact .1 baseline was retained separately.
+
+The [source packet](evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json)
+contains 12 scoped observations across 11 Wiki pages and retained premises.
+One ML30 Colorless Quickblade goes in each of the goggles' Colorless, Chains'
+crafted Green and Yeenoghu's Green sockets. Three distinct hosts must be equipped;
+one set grants one reward. Chains requires its one Legendary Green-slot upgrade
+(100 Staff Splinters plus 50 each Broken Shackles, Chain Links and Broken Collars).
+Other fills impose the unchanged full-kit floor of 36. No native named-set
+reward is credited on these selected hosts; owned-item state is not inferred.
+
+The existing native definitions remain 9 Enhancement, 3 Quality, 5 Insight and
+3 Profane. Six exact pairs use Tip 179 with the Stack caveat; four other pairs
+reuse the existing Artifact rule. The 17-rule successor derives **35 gear
+Doubleshot at 36**, retaining level-35 incompleteness. Public five-member guards
+and actual source-byte checks prevent omitted or altered inputs from creating a
+false complete result. Old source grades, timestamps and revision strings stay
+literal; the Wiki observations are not live-client verification.
+
+Preservation requires only two of 152 current result objects to change, with
+the other 150, all old-input results and all 39 complete bow cases unchanged.
+INT 37, WIS 18, CON subset 17/full `null` with Skull excluded, Fortification 226,
+direct Spot 27, selected gear, sole Minor Artifact, all 32 priorities, crafts,
+sockets, feats/AP and Festive-only/HA63 exceptions remain fixed. Existing
+Doubleshot damage wording and full-character/DPS limitations remain intact.
+
+The [integration receipt](evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json)
+records actual precommit preservation, builder, suite and independent-review
+outcomes. Draft PR #47 records the delivered head and its CI outcome. The
+read-only audit ran no tests, builders or solver; that
+historical fact is separate from this later authorized implementation.

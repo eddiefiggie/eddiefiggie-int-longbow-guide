@@ -1,0 +1,490 @@
+{
+  "schema": "wisdom-recipe-proof-exact-reversal-v1",
+  "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+  "baseline_commit": "6d978f48fc3eeb807f4560e75ac27e6639af35f4",
+  "baseline_tree": "b636b6463a2978410ed4dca75ee5c8fc18c763a1",
+  "approved_branch": "feat/wisdom-loadout-priorities",
+  "baseline_build": "11-15-26.3",
+  "current_build": "11-15-26.4",
+  "purpose": "Exactly reverse the bounded recipe-proof integration to the approved .3 checkpoint before unchanged historical contracts run. Actual-new-engine qualification and current renderers require independent tests. No game or publication certification is implied.",
+  "files": {
+    "index.html": {
+      "baseline_bytes": 396014,
+      "baseline_sha256": "b3fb5d8f3b41980fa51cb2ba79efd004da58bc870a8a2cb6b36173aca23ef121",
+      "current_bytes": 396989,
+      "current_sha256": "c38907cefa72151a10b30795860d9ef80c1dcb03dfb60435ff4a27987e1d5c70",
+      "reviewed_replacements": [
+        {
+          "before": "11-15-26.3</span></p>\n<p class=\"cover\"><img alt=\"Cover art: an Intelligence ",
+          "after": "11-15-26.4</span></p>\n<p class=\"cover\"><img alt=\"Cover art: an Intelligence "
+        },
+        {
+          "before": "promoted by passing arithmetic.</p>\n<p class=\"note\" data-crafting-qualification=\"glabrezu-only\"><strong>Crafting evidence integrated:</strong> the selected Pendant Insight INT +7 is now source-qualified from its exact item tooltip. The complete Intelligence combination is still withheld. The four Chains recipe magnitudes have supporting evidence, but their exact type/applicability bindings remain unqualified and excluded from certified totals. No equipment, priorities, modeled amounts or stacking rules changed. <a href=\"evidence/wisdom-loadout/crafting-integration-2026-11-15.json\">Integration record and targeted Spot check</a> · <a href=\"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\">Exact source captures</a>.</p><p class=\"note\">Wide table: focus this region ",
+          "after": "promoted by passing arithmetic.</p>\n<p class=\"note\" data-crafting-qualification=\"bounded-recipe-proof\"><strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its direct item-tooltip support. Chains Equipment Combustion +142 and Quality INT +3 are now <strong>source-supported recipe derivations</strong>: separate host, Legendary recipe and category-definition records, not invented finished-item tooltips. The 142 is a selected-gear Fire Spell Power contribution, not weapon damage, established imbue scaling, full-character Spell Power or DPS. The Intelligence total is still withheld: seven other inputs and the Pendant Insight–Chains Quality interaction remain unqualified. Chains Fortification and Spot remain excluded. No equipment, priorities, modeled amounts or stacking rules changed. <a href=\"evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json\">Bounded integration record</a> · <a href=\"evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json\">New category evidence and remaining gaps</a> · <a href=\"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\">Original host and recipe captures</a>.</p><p class=\"note\">Wide table: focus this region "
+        },
+        {
+          "before": "scope=\"col\">Evidence boundary</th></tr></thead><tbody><tr><th scope=\"row\">Pendant · Insight INT +7</th><td><strong>SOURCE-QUALIFIED INPUT</strong></td><td>Own-item typed tooltip; other INT inputs ",
+          "after": "scope=\"col\">Evidence boundary</th></tr></thead><tbody><tr><th scope=\"row\">Pendant · Insight INT +7</th><td><strong>DIRECT SOURCE-QUALIFIED INPUT</strong></td><td>Own-item typed tooltip; other INT inputs "
+        },
+        {
+          "before": "SUPPORTED · INPUT WITHHELD</strong></td><td>Legendary value is explicit; Enhancement is a separate general-rule inference, not a finished Chains tooltip.</td></tr><tr><th scope=\"row\">Chains · Suffix Combustion +142</th><td><strong>RECIPE SUPPORTED · INPUT WITHHELD</strong></td><td>Equipment Spell Power +142 plus a separate Fire/Combustion mapping. Selected imbue applicability remains separate; this is not weapon damage or measured DPS.</td></tr><tr><th scope=\"row\">Chains · Bonus Quality INT +3</th><td><strong>RECIPE SUPPORTED · INPUT WITHHELD</strong></td><td>Quality Attributes +3 is explicit; Intelligence is the selected category mapping, not an exact finished-effect clause.</td></tr><tr><th scope=\"row\">Chains · Extra Spot +20</th><td><strong>RECIPE SUPPORTED ",
+          "after": "SUPPORTED · INPUT WITHHELD</strong></td><td>Legendary value is explicit. The general standard-item Enhancement rule lacks a supported premise classifying this selected Slavers Prefix as standard.</td></tr><tr><th scope=\"row\">Chains · Suffix Combustion +142</th><td><strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong></td><td>Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power only; selected imbue applicability and DPS remain separate.</td></tr><tr><th scope=\"row\">Chains · Bonus Quality INT +3</th><td><strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong></td><td>Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input, but no Insight/Quality stacking edge or complete INT total is established.</td></tr><tr><th scope=\"row\">Chains · Extra Spot +20</th><td><strong>RECIPE SUPPORTED "
+        },
+        {
+          "before": "to the primary kit.</p>\n<p class=\"note\" data-crafting-qualification=\"glabrezu-only\"><strong>Crafting evidence integrated:</strong> the selected Pendant Insight INT +7 is now source-qualified from its exact item tooltip. The complete Intelligence combination is still withheld. The four Chains recipe magnitudes have supporting evidence, but their exact type/applicability bindings remain unqualified and excluded from certified totals. No equipment, priorities, modeled amounts or stacking rules changed. <a href=\"evidence/wisdom-loadout/crafting-integration-2026-11-15.json\">Integration record and targeted Spot check</a> · <a href=\"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\">Exact source ",
+          "after": "to the primary kit.</p>\n<p class=\"note\" data-crafting-qualification=\"bounded-recipe-proof\"><strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its direct item-tooltip support. Chains Equipment Combustion +142 and Quality INT +3 are now <strong>source-supported recipe derivations</strong>: separate host, Legendary recipe and category-definition records, not invented finished-item tooltips. The 142 is a selected-gear Fire Spell Power contribution, not weapon damage, established imbue scaling, full-character Spell Power or DPS. The Intelligence total is still withheld: seven other inputs and the Pendant Insight–Chains Quality interaction remain unqualified. Chains Fortification and Spot remain excluded. No equipment, priorities, modeled amounts or stacking rules changed. <a href=\"evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json\">Bounded integration record</a> · <a href=\"evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json\">New category evidence and remaining gaps</a> · <a href=\"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\">Original host and recipe "
+        }
+      ]
+    },
+    "tools/fixtures/endgame-stacking/ledger.json": {
+      "baseline_bytes": 369741,
+      "baseline_sha256": "1bdd704625d8790b475429cd81fa48636a42ceedb677c0e2d5ff1bae46f330c3",
+      "current_bytes": 380535,
+      "current_sha256": "f0f22a13abdec97d1faa571f37b9016d5d3da571f6759714f570baac7e051318",
+      "reviewed_replacements": [
+        {
+          "before": "}\n  },\n  \"rules\": [\n    {\n      \"id\": ",
+          "after": "},\n    \"chains-host-recipe-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        \"chains\",\n        \"item_table_visible_text\"\n      ],\n      \"quote\": \"Minimum level\\t28\\t\\nItem Type\\tJewelry / Necklace\\nSlot\\tNeck\\nRace Absolutely Required\\tNone\\nBinding\\tBound to Account on Acquire\\nDurability\\t290\\nMaterial\\tGold\\nHardness\\t38\\nBase Value\\t11,220pp \\nWeight\\t0.1 lbs\\nLocation\\tSlave Pits of the Undercity, Small chest\\nEnchantments\\t\\nLegendary Slaver's Prefix Slot\\nLegendary Slaver's Suffix Slot\\nLegendary Slaver's Extra Slot\\nLegendary Slaver's Bonus Slot\\nAgainst the Slave Lords Set Bonus\\nLegendary Slaver's Augment Slot\\nMythic Neck Boost +1 or +3\\n\\t\\nUpgradeable?\\tSlave Lords Crafting\\nDescription\\tOppression will always fail, just as chains will always be broken.\\nTips\\t\\n\\nThis unusual item can be worn in the Neck slot or the Waist slot - it will default to the Neck if both slots are empty when you equip it. The item is always damaged when found.\",\n      \"url\": \"https://ddowiki.com/page/Item:Legendary_Chains\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926\",\n      \"observed\": \"2026-11-15T20:44:23Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T20:44:23Z through 2026-11-15T20:44:30Z; logged-out cache notice: up to 5 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"chains\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    },\n    \"chains-legendary-recipe-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        \"slave_lords\",\n        \"recipe_table_visible_text\"\n      ],\n      \"quote\": \"Group\\tEnchantment name\\tEnchantment value\\tIngredient cost\\nHeroic\\nML 8\\tLegendary\\nML 28\\tHeroic\\tLegendary\\nPrefix\\n\\tAttributes\\t+5\\t+13\\t\\n50   Broken Shackles\\n\\t\\n100   Legendary Broken Shackles\\n\\nFalse Life\\t+18\\t+50\\nFortification\\t+70%\\t+142%\\nSheltering\\t+12\\t+33\\nWizardry\\t+96\\t+269\\nSuffix\\n\\tAccuracy\\t+8\\t+20\\t\\n50   Chain Links\\n\\t\\n100   Legendary Chain Links\\n\\nArmor Piercing\\t+8\\t+20\\nDamage Guards (don't stack with each other)\\t+2d8\\t+8d8\\nDeadly\\t+4\\t+10\\nDeception (no bluff effect)\\t+3\\t+10\\nResistance\\t+4\\t+10\\nSeeker\\t+5\\t+13\\nSpell Lore (single type) (Equipment Bonus)\\t+10\\t+21\\nSpell Power (single type) (Equipment Bonus)\\t+70\\t+142\\nExtra\\n\\tSkills (except UMD)\\t+10\\t+20\\t\\n50   Broken Collars\\n\\t\\n100   Legendary Broken Collars\\n\\nUMD (note: barter displays incorrect values.)\\t+1\\t+5\\nShatter\\t+6\\t+15\\nSpell Focus Mastery\\t+2\\t+6\\nSpell Penetration\\t+3\\t+8\\nStunning\\t+6\\t+15\\nTendon Slice\\t+4\\t+10\\nVertigo\\t+6\\t+15\\nBonus\\n\\n\\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\\n\\n\\tQuality Attributes\\t+1\\t+3\\t\\n20   Frayed Leathers\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n50   Legendary Frayed Leathers\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nQuality False Life\\t+4\\t+12\\nQuality Fortification\\t+17%\\t+35%\\nQuality MRR\\t+2\\t+8\\nQuality PRR\\t+2\\t+8\\nQuality Skills\\t+2\\t+5\\nAugment Slot addition\\n\\tColorless Augment Slot\\n\\nTIP: Don't make a Colorless slot; make a Blue or Yellow slot instead. All three can accept Colorless augments, and the cost is the same. If you slot a Colorless augment in a Blue or Yellow slot, you have the option later to replace it with a Blue or Yellow augment.\\t\\n20   Staff Splinters\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n50   Legendary Staff Splinters\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nBlue Augment Slot\\nYellow Augment Slot\\nGreen Augment Slot\\t\\n30   Staff Splinters\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n100   Legendary Staff Splinters\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nSet bonus addition\\n\\tSlave Lord's Might\\t\\n20   Shattered Symbols of the Slave Lords\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n50   Legendary Shattered Symbols of Slave Lords\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nSlave Lord's Sorcery\\nSlaver's Endurance\\nMythic upgrades\\tMythic Boost\\t+1\\t+1\\t*1   Statuette of the Gods\\t*1   Legendary Statuette of the Gods\\nMythic Boost\\t+3\\t+3\\t*1   Slave Master's Bust\\t*1   Legendary Slave Master's Bust\",\n      \"url\": \"https://ddowiki.com/page/Slave_Lords_Crafting\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666\",\n      \"observed\": \"2026-11-15T20:44:30Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T20:44:30Z through 2026-11-15T20:45:26Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"slave_lords\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    },\n    \"chains-combustion-membership-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        \"spell_power\",\n        \"selected_row_html\"\n      ],\n      \"quote\": \"<tr>\\n<td><a href=\\\"/page/Combustion\\\" title=\\\"Combustion\\\">Combustion</a></td>\\n<td><a href=\\\"/page/Inferno\\\" title=\\\"Inferno\\\">Inferno</a></td>\\n<td><a href=\\\"/page/Category:Fire_spells\\\" title=\\\"Category:Fire spells\\\">Fire Spells</a>\\n</td></tr>\",\n      \"url\": \"https://ddowiki.com/page/Spell_Power\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Spell_Power&oldid=695517\",\n      \"observed\": \"2026-11-15T20:49:00Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T20:49:00Z through 2026-11-15T20:49:05Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"spell_power\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    },\n    \"chains-intelligence-membership-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json\",\n      \"sha256\": \"32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830\",\n      \"pointer\": [\n        \"captures\",\n        \"ability\",\n        \"ability_members_visible_text\"\n      ],\n      \"quote\": \"Almost everything a Player Character does is affected by his abilities: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). Play Tabletop RPGs\",\n      \"url\": \"https://ddowiki.com/page/Ability\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Ability&oldid=524405\",\n      \"observed\": \"2026-11-15T21:48:41Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T21:48:41Z through 2026-11-15T21:49:12Z; logged-out cache notice: up to 12 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"ability\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    }\n  },\n  \"rules\": [\n    {\n      \"id\": "
+        },
+        {
+          "before": "Prefix recipe explicitly lists +142% Fortification. Enhancement is supported by a general standard-item rule, not an exact selected finished-effect binding. This component remains unknown under the unchanged typed-clause gate; no Queen-plus-Chains total is certified. The former Battlerager Enhancement 162/Insight 81/Quality 40 ",
+          "after": "Prefix recipe explicitly lists +142% Fortification. The general rule assigns Enhancement to standard Fortification items, but no reviewed premise establishes that this selected Slavers Prefix belongs to that class. The bounded recipe proof therefore remains incomplete and this input stays unknown/excluded. No Queen-plus-Chains total is certified; the former Battlerager Enhancement 162/Insight 81/Quality 40 "
+        },
+        {
+          "before": "\"\",\n      \"value_pattern\": \"\",\n      \"type_evidence\": \"\",\n      \"state\": \"unknown\",\n      \"requires\": [],\n      \"note\": \"The retained Legendary Suffix table supplies +142 single-type Equipment Spell Power; a separate Spell Power table maps Combustion to Fire. This cross-page mapping is not a single typed numeric clause, so the component remains unknown. It is not 142 weapon damage, an established Fire-imbue benefit, or measured ranged DPS.\",\n      \"channel\": \"gear\",\n      \"kit_min_level\": 36\n    },\n    {\n      \"id\": \"chains-quality-int\",\n      \"stat\": \"Intelligence\",\n      ",
+          "after": "\"\",\n      \"value_pattern\": \"\",\n      \"type_evidence\": \"\",\n      \"state\": \"verified\",\n      \"requires\": [],\n      \"note\": \"Source-supported recipe derivation: the selected Legendary host offers Suffix; the recipe offers single-type Equipment Spell Power +142 in its Legendary column; the sourced definition maps continuous Combustion to Fire Spell Power. The three real contexts are bound separately, not presented as one finished tooltip. This qualifies only the 142 selected-gear contribution at the full-kit floor, not weapon damage, established Fire-imbue applicability, full-character Spell Power or measured ranged DPS.\",\n      \"channel\": \"gear\",\n      \"kit_min_level\": 36,\n      \"recipe_proof\": {\n        \"contract\": \"slave-lords-selected-v1\",\n        \"sources\": {\n          \"host\": \"chains-host-recipe-20261115\",\n          \"recipe\": \"chains-legendary-recipe-20261115\",\n          \"membership\": \"chains-combustion-membership-20261115\"\n        }\n      }\n    },\n    {\n      \"id\": \"chains-quality-int\",\n      \"stat\": \"Intelligence\",\n      "
+        },
+        {
+          "before": "\"\",\n      \"value_pattern\": \"\",\n      \"type_evidence\": \"\",\n      \"state\": \"unknown\",\n      \"requires\": [],\n      \"note\": \"The retained Legendary Bonus table gives Quality Attributes +3. Applying that category to the selected Intelligence craft is an explicit mapping, not a captured finished-effect typed numeric clause. This component remains unknown and is the one selected Bonus option; no complete Intelligence or damage total is certified.\",\n      \"channel\": \"gear\",\n      \"kit_min_level\": 36\n    },\n    {\n      \"id\": \"chains-spot\",\n      \"stat\": \"Spot\",\n      ",
+          "after": "\"\",\n      \"value_pattern\": \"\",\n      \"type_evidence\": \"\",\n      \"state\": \"verified\",\n      \"requires\": [],\n      \"note\": \"Source-supported recipe derivation: the selected Legendary host offers Bonus; its recipe offers Quality Attributes +3 in the Legendary column; the sourced Ability definition includes Intelligence and identifies abilities as attributes. This qualifies the one selected Bonus input, not a finished-item tooltip or a stacking edge. The Insight/Quality interaction with Glabrezu remains unproved, seven other INT inputs remain excluded, and the complete Intelligence total remains withheld.\",\n      \"channel\": \"gear\",\n      \"kit_min_level\": 36,\n      \"recipe_proof\": {\n        \"contract\": \"slave-lords-selected-v1\",\n        \"sources\": {\n          \"host\": \"chains-host-recipe-20261115\",\n          \"recipe\": \"chains-legendary-recipe-20261115\",\n          \"membership\": \"chains-intelligence-membership-20261115\"\n        }\n      }\n    },\n    {\n      \"id\": \"chains-spot\",\n      \"stat\": \"Spot\",\n      "
+        },
+        {
+          "before": "Prefix, Suffix, Extra and Bonus channels. Recipe rows support the selected magnitudes, with cross-page/general/category mappings explicitly distinguished from component qualification. All four Chains inputs remain unknown in this ledger. The Green socket must actually be ",
+          "after": "Prefix, Suffix, Extra and Bonus channels. The bounded multi-source proof qualifies only Suffix Combustion and Bonus Quality Intelligence; Prefix Fortification and Extra Spot remain unknown/excluded. Component qualification creates no positive stacking edge. The Green socket must actually be "
+        },
+        {
+          "before": "\"current component, rule, effect or unresolved context\"\n  ",
+          "after": "\"current component, rule, effect or unresolved context\",\n    \"chains-host-recipe-20261115\": \"recipe proof: selected Legendary host, Waist placement and distinct crafting channels\",\n    \"chains-legendary-recipe-20261115\": \"recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule\",\n    \"chains-combustion-membership-20261115\": \"recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage\",\n    \"chains-intelligence-membership-20261115\": \"recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement\"\n  "
+        }
+      ]
+    },
+    "evidence/endgame-stacking/source-excerpts.json": {
+      "baseline_bytes": 277576,
+      "baseline_sha256": "11b40559d7e78d3000008d80f0294ac7f555ebce767aa5975acc832e6779f3e7",
+      "current_bytes": 287361,
+      "current_sha256": "d57c27ef815eccd2876a13f73ca3ebb27c027c86e699d9b58adb6170b3c18b05",
+      "reviewed_replacements": [
+        {
+          "before": "context\"\n  },\n  \"sources\": {\n    \"glabrezu-insight-int-live-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        ",
+          "after": "context\",\n    \"chains-host-recipe-20261115\": \"recipe proof: selected Legendary host, Waist placement and distinct crafting channels\",\n    \"chains-legendary-recipe-20261115\": \"recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule\",\n    \"chains-combustion-membership-20261115\": \"recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage\",\n    \"chains-intelligence-membership-20261115\": \"recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement\"\n  },\n  \"sources\": {\n    \"glabrezu-insight-int-live-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        "
+        },
+        {
+          "before": "9\n      ],\n      \"url_key\": \"url\",\n      \"revision_pointer\": [\n        \"permanentLink\"\n      ],\n      \"observed_pointer\": [\n        \"capturedAt\"\n      ]\n    ",
+          "after": "9\n      ],\n      \"url_key\": \"url\",\n      \"revision_pointer\": [\n        \"permanentLink\"\n      ],\n      \"observed_pointer\": [\n        \"capturedAt\"\n      ]\n    },\n    \"chains-host-recipe-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        \"chains\",\n        \"item_table_visible_text\"\n      ],\n      \"quote\": \"Minimum level\\t28\\t\\nItem Type\\tJewelry / Necklace\\nSlot\\tNeck\\nRace Absolutely Required\\tNone\\nBinding\\tBound to Account on Acquire\\nDurability\\t290\\nMaterial\\tGold\\nHardness\\t38\\nBase Value\\t11,220pp \\nWeight\\t0.1 lbs\\nLocation\\tSlave Pits of the Undercity, Small chest\\nEnchantments\\t\\nLegendary Slaver's Prefix Slot\\nLegendary Slaver's Suffix Slot\\nLegendary Slaver's Extra Slot\\nLegendary Slaver's Bonus Slot\\nAgainst the Slave Lords Set Bonus\\nLegendary Slaver's Augment Slot\\nMythic Neck Boost +1 or +3\\n\\t\\nUpgradeable?\\tSlave Lords Crafting\\nDescription\\tOppression will always fail, just as chains will always be broken.\\nTips\\t\\n\\nThis unusual item can be worn in the Neck slot or the Waist slot - it will default to the Neck if both slots are empty when you equip it. The item is always damaged when found.\",\n      \"url\": \"https://ddowiki.com/page/Item:Legendary_Chains\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Item:Legendary_Chains&oldid=631926\",\n      \"observed\": \"2026-11-15T20:44:23Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T20:44:23Z through 2026-11-15T20:44:30Z; logged-out cache notice: up to 5 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"chains\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    },\n    \"chains-legendary-recipe-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        \"slave_lords\",\n        \"recipe_table_visible_text\"\n      ],\n      \"quote\": \"Group\\tEnchantment name\\tEnchantment value\\tIngredient cost\\nHeroic\\nML 8\\tLegendary\\nML 28\\tHeroic\\tLegendary\\nPrefix\\n\\tAttributes\\t+5\\t+13\\t\\n50   Broken Shackles\\n\\t\\n100   Legendary Broken Shackles\\n\\nFalse Life\\t+18\\t+50\\nFortification\\t+70%\\t+142%\\nSheltering\\t+12\\t+33\\nWizardry\\t+96\\t+269\\nSuffix\\n\\tAccuracy\\t+8\\t+20\\t\\n50   Chain Links\\n\\t\\n100   Legendary Chain Links\\n\\nArmor Piercing\\t+8\\t+20\\nDamage Guards (don't stack with each other)\\t+2d8\\t+8d8\\nDeadly\\t+4\\t+10\\nDeception (no bluff effect)\\t+3\\t+10\\nResistance\\t+4\\t+10\\nSeeker\\t+5\\t+13\\nSpell Lore (single type) (Equipment Bonus)\\t+10\\t+21\\nSpell Power (single type) (Equipment Bonus)\\t+70\\t+142\\nExtra\\n\\tSkills (except UMD)\\t+10\\t+20\\t\\n50   Broken Collars\\n\\t\\n100   Legendary Broken Collars\\n\\nUMD (note: barter displays incorrect values.)\\t+1\\t+5\\nShatter\\t+6\\t+15\\nSpell Focus Mastery\\t+2\\t+6\\nSpell Penetration\\t+3\\t+8\\nStunning\\t+6\\t+15\\nTendon Slice\\t+4\\t+10\\nVertigo\\t+6\\t+15\\nBonus\\n\\n\\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\\n\\n\\tQuality Attributes\\t+1\\t+3\\t\\n20   Frayed Leathers\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n50   Legendary Frayed Leathers\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nQuality False Life\\t+4\\t+12\\nQuality Fortification\\t+17%\\t+35%\\nQuality MRR\\t+2\\t+8\\nQuality PRR\\t+2\\t+8\\nQuality Skills\\t+2\\t+5\\nAugment Slot addition\\n\\tColorless Augment Slot\\n\\nTIP: Don't make a Colorless slot; make a Blue or Yellow slot instead. All three can accept Colorless augments, and the cost is the same. If you slot a Colorless augment in a Blue or Yellow slot, you have the option later to replace it with a Blue or Yellow augment.\\t\\n20   Staff Splinters\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n50   Legendary Staff Splinters\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nBlue Augment Slot\\nYellow Augment Slot\\nGreen Augment Slot\\t\\n30   Staff Splinters\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n100   Legendary Staff Splinters\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nSet bonus addition\\n\\tSlave Lord's Might\\t\\n20   Shattered Symbols of the Slave Lords\\n20   Broken Shackles\\n20   Chain Links\\n20   Broken Collars\\n\\t\\n50   Legendary Shattered Symbols of Slave Lords\\n50   Legendary Broken Shackles\\n50   Legendary Chain Links\\n50   Legendary Broken Collars\\n\\nSlave Lord's Sorcery\\nSlaver's Endurance\\nMythic upgrades\\tMythic Boost\\t+1\\t+1\\t*1   Statuette of the Gods\\t*1   Legendary Statuette of the Gods\\nMythic Boost\\t+3\\t+3\\t*1   Slave Master's Bust\\t*1   Legendary Slave Master's Bust\",\n      \"url\": \"https://ddowiki.com/page/Slave_Lords_Crafting\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666\",\n      \"observed\": \"2026-11-15T20:44:30Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T20:44:30Z through 2026-11-15T20:45:26Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"slave_lords\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    },\n    \"chains-combustion-membership-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\",\n      \"sha256\": \"4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01\",\n      \"pointer\": [\n        \"captures\",\n        \"spell_power\",\n        \"selected_row_html\"\n      ],\n      \"quote\": \"<tr>\\n<td><a href=\\\"/page/Combustion\\\" title=\\\"Combustion\\\">Combustion</a></td>\\n<td><a href=\\\"/page/Inferno\\\" title=\\\"Inferno\\\">Inferno</a></td>\\n<td><a href=\\\"/page/Category:Fire_spells\\\" title=\\\"Category:Fire spells\\\">Fire Spells</a>\\n</td></tr>\",\n      \"url\": \"https://ddowiki.com/page/Spell_Power\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Spell_Power&oldid=695517\",\n      \"observed\": \"2026-11-15T20:49:00Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T20:49:00Z through 2026-11-15T20:49:05Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"spell_power\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    },\n    \"chains-intelligence-membership-20261115\": {\n      \"path\": \"evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json\",\n      \"sha256\": \"32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830\",\n      \"pointer\": [\n        \"captures\",\n        \"ability\",\n        \"ability_members_visible_text\"\n      ],\n      \"quote\": \"Almost everything a Player Character does is affected by his abilities: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). Play Tabletop RPGs\",\n      \"url\": \"https://ddowiki.com/page/Ability\",\n      \"revision\": \"https://ddowiki.com/index.php?title=Ability&oldid=524405\",\n      \"observed\": \"2026-11-15T21:48:41Z\",\n      \"freshness_limit\": \"Hosted-browser scoped DOM context observed 2026-11-15T21:48:41Z through 2026-11-15T21:49:12Z; logged-out cache notice: up to 12 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.\",\n      \"record_pointer\": [\n        \"captures\",\n        \"ability\"\n      ],\n      \"url_key\": \"source_url\",\n      \"revision_pointer\": [\n        \"revision_link\"\n      ],\n      \"observed_pointer\": [\n        \"body_observation\",\n        \"started_at_utc\"\n      ]\n    "
+        }
+      ]
+    },
+    "endgame-stacking-audit.html": {
+      "baseline_bytes": 377250,
+      "baseline_sha256": "fffadb76e7ff2cf2f24c1b320591027a72297bf681910044246f5b6ffa44b78f",
+      "current_bytes": 388453,
+      "current_sha256": "0421053e5a8fbb0e732302ffdcd41bee5f18acaf9e32aaad7f96e2252ea2a746",
+      "reviewed_replacements": [
+        {
+          "before": "definition or explicit ",
+          "after": "definition, explicitly labeled source-supported recipe derivation, or explicit "
+        },
+        {
+          "before": "is missing. A verified ",
+          "after": "is missing. A recipe derivation binds separate source contexts without inventing a finished-item tooltip. A verified "
+        },
+        {
+          "before": "<p class=\"note\" data-crafting-qualification=\"glabrezu-only\"><strong>Crafting evidence integrated:</strong> the selected Pendant Insight INT +7 is now source-qualified from its exact item tooltip. The complete Intelligence combination is still withheld. The four Chains recipe magnitudes have supporting evidence, but their exact type/applicability bindings remain unqualified and excluded from certified totals. No equipment, ",
+          "after": "<p class=\"note\" data-crafting-qualification=\"bounded-recipe-proof\"><strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its direct item-tooltip support. Chains Equipment Combustion +142 and Quality INT +3 are now <strong>source-supported recipe derivations</strong>: separate host, Legendary recipe and category-definition records, not invented finished-item tooltips. The 142 is a selected-gear Fire Spell Power contribution, not weapon damage, established imbue scaling, full-character Spell Power or DPS. The Intelligence total is still withheld: seven other inputs and the Pendant Insight–Chains Quality interaction remain unqualified. Chains Fortification and Spot remain excluded. No equipment, "
+        },
+        {
+          "before": "changed. <a href=\"evidence/wisdom-loadout/crafting-integration-2026-11-15.json\">Integration record and targeted Spot check</a> · <a href=\"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\">Exact source captures</a>.</p>\n<p><strong>Boundaries ",
+          "after": "changed. <a href=\"evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json\">Bounded integration record</a> · <a href=\"evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json\">New category evidence and remaining gaps</a> · <a href=\"evidence/wisdom-loadout/crafting-browser-2026-11-15.json\">Original host and recipe captures</a>.</p>\n<p><strong>Boundaries "
+        },
+        {
+          "before": "/ Bonus<br><small>chains-quality-int</small></td><td>3 Quality</td><td>unknown · source missing</td><td>The retained Legendary Bonus table gives Quality Attributes +3. Applying that category to the selected Intelligence craft is an explicit mapping, not a captured finished-effect typed numeric clause. This component remains unknown and is the one selected Bonus option; no complete Intelligence or damage total is certified.</td></tr><tr id=\"component-celestial-profane-intelligence\"><td>Legendary Celestial ",
+          "after": "/ Bonus<br><small>chains-quality-int</small></td><td>3 Quality</td><td>verified · source-supported recipe derivation · <a href=\"#source-chains-host-recipe-20261115\">host source</a> · <a href=\"#source-chains-legendary-recipe-20261115\">recipe source</a> · <a href=\"#source-chains-intelligence-membership-20261115\">membership source</a></td><td>Source-supported recipe derivation: the selected Legendary host offers Bonus; its recipe offers Quality Attributes +3 in the Legendary column; the sourced Ability definition includes Intelligence and identifies abilities as attributes. This qualifies the one selected Bonus input, not a finished-item tooltip or a stacking edge. The Insight/Quality interaction with Glabrezu remains unproved, seven other INT inputs remain excluded, and the complete Intelligence total remains withheld.</td></tr><tr id=\"component-celestial-profane-intelligence\"><td>Legendary Celestial "
+        },
+        {
+          "before": "edge is inferred.</td></tr></tbody></table></div><p><strong>Excluded inputs:</strong> boots-int, ",
+          "after": "edge is inferred.</td></tr></tbody></table></div><p><strong>Unverified pairwise interactions:</strong> glabrezu-insight-int + chains-quality-int. No combined total is asserted.</p><p><strong>Excluded inputs:</strong> boots-int, "
+        },
+        {
+          "before": "dimlight-int, globe-intelligence, chains-quality-int, celestial-profane-intelligence.</p><h3 id=\"stat-constitution\">Constitution</h3><p ",
+          "after": "dimlight-int, globe-intelligence, celestial-profane-intelligence.</p><h3 id=\"stat-constitution\">Constitution</h3><p "
+        },
+        {
+          "before": "+142% Fortification. Enhancement is supported by a general standard-item rule, not an exact selected finished-effect binding. This component remains unknown under the unchanged typed-clause gate; no Queen-plus-Chains total is certified. The former Battlerager ",
+          "after": "+142% Fortification. The general rule assigns Enhancement to standard Fortification items, but no reviewed premise establishes that this selected Slavers Prefix belongs to that class. The bounded recipe proof therefore remains incomplete and this input stays unknown/excluded. No Queen-plus-Chains total is certified; the former Battlerager "
+        },
+        {
+          "before": "inputs:</strong> perfect-silence-sneak.</p><h3 id=\"stat-combustion\">Combustion</h3><p class=\"unknown\"><strong>Combined total withheld.</strong> Missing components or interaction support are listed below; this is not a finding that the bonuses fail to stack in game.</p><div class=\"tw\"><table><thead><tr><th>Host / ",
+          "after": "inputs:</strong> perfect-silence-sneak.</p><h3 id=\"stat-combustion\">Combustion</h3><p><strong>Derived selected-gear subtotal: 142.</strong> This names the listed contribution family, not a whole-character roll or damage total.</p><div class=\"tw\"><table><thead><tr><th>Host / "
+        },
+        {
+          "before": "/ Suffix<br><small>chains-combustion</small></td><td>142 Equipment</td><td>unknown · source missing</td><td>The retained Legendary Suffix table supplies +142 single-type Equipment Spell Power; a separate Spell Power table maps Combustion to Fire. This cross-page mapping is not a single typed numeric clause, so the component remains unknown. It is not 142 weapon damage, an established Fire-imbue benefit, or measured ranged DPS.</td></tr></tbody></table></div><p><strong>Excluded inputs:</strong> chains-combustion.</p><h3 id=\"stat-spot\">Spot</h3><p class=\"unknown\"><strong>Combined ",
+          "after": "/ Suffix<br><small>chains-combustion</small></td><td>142 Equipment</td><td>verified · source-supported recipe derivation · <a href=\"#source-chains-host-recipe-20261115\">host source</a> · <a href=\"#source-chains-legendary-recipe-20261115\">recipe source</a> · <a href=\"#source-chains-combustion-membership-20261115\">membership source</a></td><td>Source-supported recipe derivation: the selected Legendary host offers Suffix; the recipe offers single-type Equipment Spell Power +142 in its Legendary column; the sourced definition maps continuous Combustion to Fire Spell Power. The three real contexts are bound separately, not presented as one finished tooltip. This qualifies only the 142 selected-gear contribution at the full-kit floor, not weapon damage, established Fire-imbue applicability, full-character Spell Power or measured ranged DPS.</td></tr></tbody></table></div><h3 id=\"stat-spot\">Spot</h3><p class=\"unknown\"><strong>Combined "
+        },
+        {
+          "before": "Bonus channels. Recipe rows support the selected magnitudes, with cross-page/general/category mappings explicitly distinguished from component qualification. All four Chains inputs remain unknown in this ledger. The Green ",
+          "after": "Bonus channels. The bounded multi-source proof qualifies only Suffix Combustion and Bonus Quality Intelligence; Prefix Fortification and Extra Spot remain unknown/excluded. Component qualification creates no positive stacking edge. The Green "
+        },
+        {
+          "before": "Max 3 stacks.</pre></details></body></html>\n",
+          "after": "Max 3 stacks.</pre></details><details id=\"source-chains-host-recipe-20261115\"><summary>chains-host-recipe-20261115 — recipe proof: selected Legendary host, Waist placement and distinct crafting channels</summary><p><a href=\"https://ddowiki.com/page/Item:Legendary_Chains\">Wiki article</a> · <a href=\"https://ddowiki.com/index.php?title=Item:Legendary_Chains&amp;oldid=631926\">Observed revision</a> · observed 2026-11-15T20:44:23Z</p><p>Hosted-browser scoped DOM context observed 2026-11-15T20:44:23Z through 2026-11-15T20:44:30Z; logged-out cache notice: up to 5 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.</p><p><a href=\"evidence/endgame-stacking/source-excerpts.json\">Retained source excerpts and role labels</a><br>Original capture: <code>evidence/wisdom-loadout/crafting-browser-2026-11-15.json</code><br>SHA-256: <code>4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01</code><br>JSON pointer: <code>[&#x27;captures&#x27;, &#x27;chains&#x27;, &#x27;item_table_visible_text&#x27;]</code></p><pre>Minimum level&#9;28&#9;\nItem Type&#9;Jewelry / Necklace\nSlot&#9;Neck\nRace Absolutely Required&#9;None\nBinding&#9;Bound to Account on Acquire\nDurability&#9;290\nMaterial&#9;Gold\nHardness&#9;38\nBase Value&#9;11,220pp \nWeight&#9;0.1 lbs\nLocation&#9;Slave Pits of the Undercity, Small chest\nEnchantments&#9;\nLegendary Slaver&#x27;s Prefix Slot\nLegendary Slaver&#x27;s Suffix Slot\nLegendary Slaver&#x27;s Extra Slot\nLegendary Slaver&#x27;s Bonus Slot\nAgainst the Slave Lords Set Bonus\nLegendary Slaver&#x27;s Augment Slot\nMythic Neck Boost +1 or +3\n&#9;\nUpgradeable?&#9;Slave Lords Crafting\nDescription&#9;Oppression will always fail, just as chains will always be broken.\nTips&#9;\n\nThis unusual item can be worn in the Neck slot or the Waist slot - it will default to the Neck if both slots are empty when you equip it. The item is always damaged when found.</pre></details><details id=\"source-chains-legendary-recipe-20261115\"><summary>chains-legendary-recipe-20261115 — recipe proof: offered category, channel and Legendary typed value; same-record headers and construction rule</summary><p><a href=\"https://ddowiki.com/page/Slave_Lords_Crafting\">Wiki article</a> · <a href=\"https://ddowiki.com/index.php?title=Slave_Lords_Crafting&amp;oldid=715666\">Observed revision</a> · observed 2026-11-15T20:44:30Z</p><p>Hosted-browser scoped DOM context observed 2026-11-15T20:44:30Z through 2026-11-15T20:45:26Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.</p><p><a href=\"evidence/endgame-stacking/source-excerpts.json\">Retained source excerpts and role labels</a><br>Original capture: <code>evidence/wisdom-loadout/crafting-browser-2026-11-15.json</code><br>SHA-256: <code>4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01</code><br>JSON pointer: <code>[&#x27;captures&#x27;, &#x27;slave_lords&#x27;, &#x27;recipe_table_visible_text&#x27;]</code></p><pre>Group&#9;Enchantment name&#9;Enchantment value&#9;Ingredient cost\nHeroic\nML 8&#9;Legendary\nML 28&#9;Heroic&#9;Legendary\nPrefix\n&#9;Attributes&#9;+5&#9;+13&#9;\n50   Broken Shackles\n&#9;\n100   Legendary Broken Shackles\n\nFalse Life&#9;+18&#9;+50\nFortification&#9;+70%&#9;+142%\nSheltering&#9;+12&#9;+33\nWizardry&#9;+96&#9;+269\nSuffix\n&#9;Accuracy&#9;+8&#9;+20&#9;\n50   Chain Links\n&#9;\n100   Legendary Chain Links\n\nArmor Piercing&#9;+8&#9;+20\nDamage Guards (don&#x27;t stack with each other)&#9;+2d8&#9;+8d8\nDeadly&#9;+4&#9;+10\nDeception (no bluff effect)&#9;+3&#9;+10\nResistance&#9;+4&#9;+10\nSeeker&#9;+5&#9;+13\nSpell Lore (single type) (Equipment Bonus)&#9;+10&#9;+21\nSpell Power (single type) (Equipment Bonus)&#9;+70&#9;+142\nExtra\n&#9;Skills (except UMD)&#9;+10&#9;+20&#9;\n50   Broken Collars\n&#9;\n100   Legendary Broken Collars\n\nUMD (note: barter displays incorrect values.)&#9;+1&#9;+5\nShatter&#9;+6&#9;+15\nSpell Focus Mastery&#9;+2&#9;+6\nSpell Penetration&#9;+3&#9;+8\nStunning&#9;+6&#9;+15\nTendon Slice&#9;+4&#9;+10\nVertigo&#9;+6&#9;+15\nBonus\n\n\nNote: In the Heroic version of the barter window, the values displayed are incorrect for Quality Attributes, Quality Fortification, and Quality False Life. These are the correct values.\n\n&#9;Quality Attributes&#9;+1&#9;+3&#9;\n20   Frayed Leathers\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n&#9;\n50   Legendary Frayed Leathers\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nQuality False Life&#9;+4&#9;+12\nQuality Fortification&#9;+17%&#9;+35%\nQuality MRR&#9;+2&#9;+8\nQuality PRR&#9;+2&#9;+8\nQuality Skills&#9;+2&#9;+5\nAugment Slot addition\n&#9;Colorless Augment Slot\n\nTIP: Don&#x27;t make a Colorless slot; make a Blue or Yellow slot instead. All three can accept Colorless augments, and the cost is the same. If you slot a Colorless augment in a Blue or Yellow slot, you have the option later to replace it with a Blue or Yellow augment.&#9;\n20   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n&#9;\n50   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nBlue Augment Slot\nYellow Augment Slot\nGreen Augment Slot&#9;\n30   Staff Splinters\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n&#9;\n100   Legendary Staff Splinters\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSet bonus addition\n&#9;Slave Lord&#x27;s Might&#9;\n20   Shattered Symbols of the Slave Lords\n20   Broken Shackles\n20   Chain Links\n20   Broken Collars\n&#9;\n50   Legendary Shattered Symbols of Slave Lords\n50   Legendary Broken Shackles\n50   Legendary Chain Links\n50   Legendary Broken Collars\n\nSlave Lord&#x27;s Sorcery\nSlaver&#x27;s Endurance\nMythic upgrades&#9;Mythic Boost&#9;+1&#9;+1&#9;*1   Statuette of the Gods&#9;*1   Legendary Statuette of the Gods\nMythic Boost&#9;+3&#9;+3&#9;*1   Slave Master&#x27;s Bust&#9;*1   Legendary Slave Master&#x27;s Bust</pre></details><details id=\"source-chains-combustion-membership-20261115\"><summary>chains-combustion-membership-20261115 — recipe proof: Combustion membership in continuous Equipment Fire Spell Power; not imbue or weapon damage</summary><p><a href=\"https://ddowiki.com/page/Spell_Power\">Wiki article</a> · <a href=\"https://ddowiki.com/index.php?title=Spell_Power&amp;oldid=695517\">Observed revision</a> · observed 2026-11-15T20:49:00Z</p><p>Hosted-browser scoped DOM context observed 2026-11-15T20:49:00Z through 2026-11-15T20:49:05Z; logged-out cache notice: up to 8 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.</p><p><a href=\"evidence/endgame-stacking/source-excerpts.json\">Retained source excerpts and role labels</a><br>Original capture: <code>evidence/wisdom-loadout/crafting-browser-2026-11-15.json</code><br>SHA-256: <code>4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01</code><br>JSON pointer: <code>[&#x27;captures&#x27;, &#x27;spell_power&#x27;, &#x27;selected_row_html&#x27;]</code></p><pre>&lt;tr&gt;\n&lt;td&gt;&lt;a href=&quot;/page/Combustion&quot; title=&quot;Combustion&quot;&gt;Combustion&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;&lt;a href=&quot;/page/Inferno&quot; title=&quot;Inferno&quot;&gt;Inferno&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;&lt;a href=&quot;/page/Category:Fire_spells&quot; title=&quot;Category:Fire spells&quot;&gt;Fire Spells&lt;/a&gt;\n&lt;/td&gt;&lt;/tr&gt;</pre></details><details id=\"source-chains-intelligence-membership-20261115\"><summary>chains-intelligence-membership-20261115 — recipe proof: Intelligence belongs to abilities/attributes; same-record terminology statement</summary><p><a href=\"https://ddowiki.com/page/Ability\">Wiki article</a> · <a href=\"https://ddowiki.com/index.php?title=Ability&amp;oldid=524405\">Observed revision</a> · observed 2026-11-15T21:48:41Z</p><p>Hosted-browser scoped DOM context observed 2026-11-15T21:48:41Z through 2026-11-15T21:49:12Z; logged-out cache notice: up to 12 hours old. The proof uses this exact field and relevant companion fields in the same hashed record. This is a source-supported recipe derivation, not a joined finished-item tooltip, raw HTTP archive, ownership observation or game test. The displayed Permanent link was read, not independently loaded; reuse does not refresh this observation.</p><p><a href=\"evidence/endgame-stacking/source-excerpts.json\">Retained source excerpts and role labels</a><br>Original capture: <code>evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json</code><br>SHA-256: <code>32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830</code><br>JSON pointer: <code>[&#x27;captures&#x27;, &#x27;ability&#x27;, &#x27;ability_members_visible_text&#x27;]</code></p><pre>Almost everything a Player Character does is affected by his abilities: Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA). Play Tabletop RPGs</pre></details></body></html>\n"
+        }
+      ]
+    },
+    "heroic-crafting-print.html": {
+      "baseline_bytes": 4604,
+      "baseline_sha256": "23a12a9bbfbe8f528f9aa8f5cdbc1de0b50e4d4b21a1122e7854f4dfc4342578",
+      "current_bytes": 4604,
+      "current_sha256": "77b7310277058efc5d655a49f46b0191e6c02cf5a11209d9fc929184d1a9c6e8",
+      "reviewed_replacements": [
+        {
+          "before": "11-15-26.3 ",
+          "after": "11-15-26.4 "
+        }
+      ]
+    },
+    "tools/wisdom_loadout.py": {
+      "baseline_bytes": 41607,
+      "baseline_sha256": "1cd1668d54d995c1da6b1fda1868a5f85dba42c2df513f034b6b32ee2ab3e501",
+      "current_bytes": 42925,
+      "current_sha256": "efd8dc5e3c1da287c27f212ecc2fdf4f33159576510ae0c05b9485c3f9217394",
+      "reviewed_replacements": [
+        {
+          "before": "The unchanged calculator validates the actual source binding. Recipe-table\n    support for the four Chains choices does not manufacture exact effect\n    tooltips, positive interaction edges or complete totals.\n    \"\"\"\n    ",
+          "after": "Direct tooltips and bounded multi-source derivations remain distinct.\n    Qualification of an input creates neither a finished-item tooltip nor a\n    positive interaction edge, imbue applicability or complete damage total.\n    \"\"\"\n    "
+        },
+        {
+          "before": "('chains-fortification', 'chains-combustion',\n                  'chains-quality-int', 'chains-spot')\n    ",
+          "after": "('chains-fortification', 'chains-spot')\n    "
+        },
+        {
+          "before": "components[cid]['source']\n                 for ",
+          "after": "components[cid]['source']\n                 and 'recipe_proof' not in components[cid]\n                 for "
+        },
+        {
+          "before": "qualification')\n    _require(not subtotal(ledger, 'Intelligence')['complete'],\n             'Unreviewed complete Intelligence combination')\n    paragraph ",
+          "after": "qualification')\n    intelligence = subtotal(ledger, 'Intelligence')\n    combustion = subtotal(ledger, 'Combustion')\n    _require(components['chains-combustion']['state'] == 'verified'\n             and components['chains-quality-int']['state'] == 'verified'\n             and combustion['complete'] and combustion['total'] == 142\n             and combustion['counted'] == ['chains-combustion']\n             and intelligence['counted'] == ['glabrezu-insight-int', 'chains-quality-int']\n             and len(intelligence['excluded']) == 7\n             and intelligence['missing_interactions'] == [\n                 ['glabrezu-insight-int', 'chains-quality-int']]\n             and intelligence['total'] is None and not intelligence['complete'],\n             'Current recipe qualification or unresolved interaction changed')\n    paragraph "
+        },
+        {
+          "before": "class=\"note\" data-crafting-qualification=\"glabrezu-only\">'\n        '<strong>Crafting ",
+          "after": "class=\"note\" data-crafting-qualification=\"bounded-recipe-proof\">'\n        '<strong>Crafting "
+        },
+        {
+          "before": "integrated:</strong> the selected Pendant ",
+          "after": "integrated:</strong> Pendant "
+        },
+        {
+          "before": "+7 '\n        'is now source-qualified from its exact item tooltip. The complete Intelligence '\n        'combination is still withheld. The four Chains recipe magnitudes have supporting '\n        'evidence, but their exact type/applicability bindings remain unqualified and excluded '\n        'from certified totals. No equipment, ",
+          "after": "+7 retains its '\n        'direct item-tooltip support. Chains Equipment Combustion +142 and Quality INT +3 '\n        'are now <strong>source-supported recipe derivations</strong>: separate host, '\n        'Legendary recipe and category-definition records, not invented finished-item tooltips. '\n        'The 142 is a selected-gear Fire Spell Power contribution, not weapon damage, '\n        'established imbue scaling, full-character Spell Power or DPS. The Intelligence total '\n        'is still withheld: seven other inputs and the Pendant Insight–Chains Quality '\n        'interaction remain unqualified. Chains Fortification and Spot remain excluded. '\n        'No equipment, "
+        },
+        {
+          "before": "+ _link('evidence/wisdom-loadout/crafting-integration-2026-11-15.json',\n                'Integration record and targeted Spot check') + ",
+          "after": "+ _link('evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json',\n                'Bounded integration record') + ' · '\n        + _link('evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json',\n                'New category evidence and remaining gaps') + "
+        },
+        {
+          "before": "_link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',\n                'Exact source captures') ",
+          "after": "_link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',\n                'Original host and recipe captures') "
+        },
+        {
+          "before": "+7', '<strong>SOURCE-QUALIFIED INPUT</strong>',\n                ",
+          "after": "+7', '<strong>DIRECT SOURCE-QUALIFIED INPUT</strong>',\n                "
+        },
+        {
+          "before": "is explicit; Enhancement is a separate general-rule inference, not a finished Chains tooltip.']),\n        _cells(['Chains ",
+          "after": "is explicit. The general standard-item Enhancement rule lacks a supported premise classifying this selected Slavers Prefix as standard.']),\n        _cells(['Chains "
+        },
+        {
+          "before": "+142', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',\n                'Equipment Spell Power +142 plus a separate Fire/Combustion mapping. Selected imbue applicability remains separate; this is not weapon damage or measured DPS.']),\n        _cells(['Chains ",
+          "after": "+142', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',\n                'Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power only; selected imbue applicability and DPS remain separate.']),\n        _cells(['Chains "
+        },
+        {
+          "before": "+3', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',\n                'Quality Attributes +3 is explicit; Intelligence is the selected category mapping, not an exact finished-effect clause.']),\n        ",
+          "after": "+3', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',\n                'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input, but no Insight/Quality stacking edge or complete INT total is established.']),\n        "
+        }
+      ]
+    },
+    "tools/build_stacking_audit.py": {
+      "baseline_bytes": 26573,
+      "baseline_sha256": "0580e2ead8977ffb86b8f743acd332dc0e7a23c0dd005936d471ae5f5425ecdb",
+      "current_bytes": 27062,
+      "current_sha256": "77cdeb37b969f0bceeea0e3cb4debe3d7c7dce1eafb6bbdc3a62c8a977b19956",
+      "reviewed_replacements": [
+        {
+          "before": "definition or ",
+          "after": "definition, explicitly labeled source-supported recipe derivation, or "
+        },
+        {
+          "before": "missing. A ",
+          "after": "missing. A recipe derivation binds separate source contexts without inventing a finished-item tooltip. A "
+        },
+        {
+          "before": "c['channel']=='gear']:\n            link=f'<a ",
+          "after": "c['channel']=='gear']:\n            if 'recipe_proof' in c:\n                link = ' · '.join(f'<a href=\"#source-{h(sid)}\">{h(role)} source</a>'\n                                  for role, sid in c['recipe_proof']['sources'].items())\n                status = 'verified · source-supported recipe derivation'\n            else:\n                link=f'<a "
+        },
+        {
+          "before": "'source missing'\n            for ",
+          "after": "'source missing'\n                status = c['state']\n            for "
+        },
+        {
+          "before": "else c['state']\n            ",
+          "after": "else status\n            "
+        }
+      ]
+    },
+    "tools/stacking_audit.py": {
+      "baseline_bytes": 11763,
+      "baseline_sha256": "97432b1a37543645986a343ec0c6d3c8d58b77c4089e03307dfdf2840d3c606d",
+      "current_bytes": 12585,
+      "current_sha256": "cd87217a2a49435f2caf2e84c9fa785a6d5462f43d829dca0212103861279d98",
+      "reviewed_replacements": [
+        {
+          "before": "urlparse\n\nROOT = ",
+          "after": "urlparse\nfrom recipe_proofs import BOUNDED_COMPONENT_IDS, validate_component as validate_recipe_component\n\nROOT = "
+        },
+        {
+          "before": "observation_context(source))\n\n\ndef validate(data, root=ROOT):\n    ",
+          "after": "observation_context(source))\n\n\ndef component_provenance(data, component, *, root=None):\n    \"\"\"Recheck bounded recipe proofs at every counting entrypoint.\n\n    The fixed Chains IDs cannot escape to legacy provenance by deleting a\n    proof. Unrelated direct-source components retain their original behavior.\n    \"\"\"\n    if component['id'] in BOUNDED_COMPONENT_IDS or 'recipe_proof' in component:\n        return validate_recipe_component(data, component, ROOT if root is None else root)\n    return source_provenance(data['sources'].get(component['source'], {}))\n\n\ndef validate(data, root=ROOT):\n    "
+        },
+        {
+          "before": "component['note']\n        if component['state'] in ",
+          "after": "component['note']\n        if ('recipe_proof' in component or\n                component['id'] in BOUNDED_COMPONENT_IDS and component['state'] in {'verified', 'conditional'}):\n            validate_recipe_component(data, component, root)\n        elif component['state'] in "
+        },
+        {
+          "before": "or not source_provenance(data['sources'].get(c['source'], {}))\n                ",
+          "after": "or not component_provenance(data, c)\n                "
+        }
+      ]
+    }
+  },
+  "preserved_files": {
+    "evidence/class-skill-costs/receipt.json": {
+      "bytes": 1046,
+      "sha256": "b2fa58022e9d8f93130139bf6150070bf97093f7dafdd9c57b36d8eb163adfc5"
+    },
+    "evidence/class-skill-costs/source-ledger.md": {
+      "bytes": 12204,
+      "sha256": "40321e74f4fa57542cb41b529284a9ae1c326064f4d26f5dc40fd5cb654b8eac"
+    },
+    "evidence/early-xp/claims.json": {
+      "bytes": 6391,
+      "sha256": "1dba312d1b68edf577165d9898a7fe165f3075e7d5fd6892ad4616d6a6a0e26a"
+    },
+    "evidence/early-xp/index.html": {
+      "bytes": 6559,
+      "sha256": "bc8131a676766c4a2c8e8921215d0b9a24430e9f689cb1c97af7780d87925a7d"
+    },
+    "evidence/endgame-bow-options/receipt.json": {
+      "bytes": 1006,
+      "sha256": "17fb0e8ba3ac4dfe32ec67c280ddc1c946999b4e31a002234f9d57dc44c44361"
+    },
+    "evidence/endgame-bow-options/source-ledger.md": {
+      "bytes": 7290,
+      "sha256": "98df0bd8dc0a73a242eda20b88bc96e459d81d13dee501283d573b86c3da2ecd"
+    },
+    "evidence/endgame-stacking/augments-and-dodge.json": {
+      "bytes": 4236,
+      "sha256": "f3cbf3d6cfa8acabb54c2008f019c933d467a1a040c5a30c16e86bf73889f9a1"
+    },
+    "evidence/endgame-stacking/earth-sky-633073.json": {
+      "bytes": 1665,
+      "sha256": "ca3f8a2a133c4644a57a57c52655f2cab4a2325813ae999f6eb7a3193e157712"
+    },
+    "evidence/endgame-stacking/final-provenance-receipts.json": {
+      "bytes": 8701,
+      "sha256": "97c65b837628c1cff12c6ea9a658b2ffbe2d8a1d8af0aaa3597b7382644e4537"
+    },
+    "evidence/endgame-stacking/fresh-2026-11-07.json": {
+      "bytes": 6099,
+      "sha256": "9d8c768606cf6f71b2d1be0016bf66bfb80c3c335b4d02e22d49d9a23eb2b5c7"
+    },
+    "evidence/endgame-stacking/nearly-complete-705751.json": {
+      "bytes": 2208,
+      "sha256": "8b1b40adb26c3f8c21f18f00146269983a64487dfe666d8523ab01a0b8b3faa9"
+    },
+    "evidence/endgame-stacking/retained-augment-descriptions.json": {
+      "bytes": 1887,
+      "sha256": "b9b1493eb2eea6f0b4e6a28414d49a9cbcd4f2b578cd970c4b5a396db8a1da54"
+    },
+    "evidence/endgame-stacking/retained-selected.json": {
+      "bytes": 14438,
+      "sha256": "eed0083b8454a40a249acf5b0c3b93714e68ee496a857e889c724bc0e278dc78"
+    },
+    "evidence/endgame-stacking/selected-tree-sources.json": {
+      "bytes": 78545,
+      "sha256": "ce899e31f59b192b75d3dd9e947b90dbb13a9e8c12e8b69903f741d6f1a92810"
+    },
+    "evidence/endgame-stacking/skull-714102.json": {
+      "bytes": 2283,
+      "sha256": "2f7221440d488a9ce93735e80d1327aeb8fbc863a6a3787926f8b4b3c5e14fc8"
+    },
+    "evidence/endgame-stacking/stack-live.json": {
+      "bytes": 2914,
+      "sha256": "86b1ed2b3f3853d7642b67a52e77e1ce202e62db932998394254ad2d5d4f45c9"
+    },
+    "evidence/endgame-stacking/tooltips-and-rules.json": {
+      "bytes": 5502,
+      "sha256": "2453c3003305a4dc5cbd415613cce4c3441d6b6df57758d86dd97798751fb3f4"
+    },
+    "evidence/legendary-trick-shot/Legendary_Trick_Shot.browser.json": {
+      "bytes": 13743,
+      "sha256": "3787c98e40d2be79e2efb6096c0db3362c2c95a5269f0d192ef071f0da9c84cf"
+    },
+    "evidence/legendary-trick-shot/classification.json": {
+      "bytes": 1857,
+      "sha256": "434217c8dfc9ef916d2e6c1e4cf87af5164cdfbbd802a7f237dfedd641dd8197"
+    },
+    "evidence/legendary-trick-shot/source.json": {
+      "bytes": 1981,
+      "sha256": "283d61fb8f363b049f37061f3472543dbe76332c037822a76e3cafb1297a402e"
+    },
+    "evidence/optional-mechanic/arcane-archer-supplement.md": {
+      "bytes": 1386,
+      "sha256": "c4155aa15b2ab85fc14deccf90879d7fc034ecff2f0fd6c3ed56d090645a618f"
+    },
+    "evidence/optional-mechanic/receipt.json": {
+      "bytes": 1616,
+      "sha256": "ecce3ac28eeb1faab4d093f95a1ecc4972d5d8af4a0ad0ccc757bb8d64b5a15f"
+    },
+    "evidence/optional-mechanic/source-ledger.md": {
+      "bytes": 5129,
+      "sha256": "b56ec211719b8940159ed7fc48e77564f2ee6f02af670c77b15e42e05d38bdd0"
+    },
+    "evidence/shadowstrike-save/source.json": {
+      "bytes": 3484,
+      "sha256": "d4b195e036101325ac79de2778157fe2a9ff1126131907fef537e2e2ba53446b"
+    },
+    "evidence/wisdom-loadout/claims.json": {
+      "bytes": 127263,
+      "sha256": "2de551db80e4d682da2cd0a3156b1a5e830927a833750b81d370b6c6bbedf1ad"
+    },
+    "evidence/wisdom-loadout/corrections.json": {
+      "bytes": 13844,
+      "sha256": "a6b318f5f71f1f9445e21c19d23a22fddf3ad20f7e4888858bf3ef5effdd591f"
+    },
+    "evidence/wisdom-loadout/crafting-browser-2026-11-15.json": {
+      "bytes": 26984,
+      "sha256": "4394f8f408d6d448a99f473ece71ce26248d3710e8e9243a0d98d532cbd77d01"
+    },
+    "evidence/wisdom-loadout/crafting-integration-2026-11-15.json": {
+      "bytes": 9750,
+      "sha256": "19349e4ce846045e11b945161d1504e2edb2319747e8aa6adde2e9aa0a6e14de"
+    },
+    "evidence/wisdom-loadout/derivation.json": {
+      "bytes": 97191,
+      "sha256": "215c66ae090b2d25142472634dd8e56c668e08526ed6bbaa6709116ecbc9da02"
+    },
+    "evidence/wisdom-loadout/loadout.json": {
+      "bytes": 56004,
+      "sha256": "20f5bca4573d803a196695aa999f4acc07e71db077e3b66fde51a560b6da0843"
+    },
+    "evidence/wisdom-loadout/production.json": {
+      "bytes": 70425,
+      "sha256": "684215235205fb59ba183cf11d9235661becb2973681afb7dfc6ae9e332413e2"
+    },
+    "evidence/wisdom-loadout/sources.json": {
+      "bytes": 123461,
+      "sha256": "cea672fa20445cfda89717a8e04af1a34c73f272ff82bf0ad86630713c1bd92a"
+    },
+    "evidence/wisdom-loadout/startup.json": {
+      "bytes": 2041,
+      "sha256": "f4ffd67f7ca1b55a3a44a6ed8e4e28b60d48a9acce4e7294983311adaf0207ef"
+    },
+    "evidence/wisdom-loadout/verification.json": {
+      "bytes": 4558,
+      "sha256": "a78f7205b9887f3ac5aa06ffc5f0a8acc446e9c8a9c2739314b510a7e1ee246b"
+    },
+    "tools/bowmodel.py": {
+      "bytes": 6035,
+      "sha256": "7d9e0843939310214d73b00e7e936ca4e842bf7bf0fc3f8da1b849e8c8faf236"
+    },
+    "tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json": {
+      "bytes": 281940,
+      "sha256": "e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6"
+    },
+    "tools/fixtures/endgame-evidence/retained/Doubleshot.json": {
+      "bytes": 8552,
+      "sha256": "20863a35f19021e4d23496d24170bab96947bc5ff2c11908425791d4dd7fc154"
+    },
+    "tools/fixtures/endgame-evidence/retained/Fortification.json": {
+      "bytes": 8179,
+      "sha256": "644f9aa29e5453c66566e381d6f8bae95e3d9b05c9fa3c00176fdfbada2716b2"
+    },
+    "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-bonus-rules-01-evidence.json": {
+      "bytes": 64245,
+      "sha256": "dfd4c246e04ace0dcf5ddcfad983f4e94fbbdd6192465237fd8ab083c0a90b6b"
+    },
+    "tools/fixtures/endgame-evidence/retained/Ranged_Power.json": {
+      "bytes": 6502,
+      "sha256": "8bf04593e315829f26032f36a89b5839d1888fb34b7421973a45ff58f745ed90"
+    },
+    "tools/fixtures/endgame-evidence/retained/festive-augments.browser.json": {
+      "bytes": 2296,
+      "sha256": "736f847ce10224ff714d775856a0da56c3b31eb42b221c949d15b73c5468ea32"
+    },
+    "tools/fixtures/endgame-evidence/retained/final-belt-crafts.browser.json": {
+      "bytes": 1153,
+      "sha256": "85b448203646a7915e3a0f18a0806b32cb500650803719e958a08fb6ed90dda3"
+    },
+    "tools/fixtures/endgame-evidence/retained/final-compromise-augments.browser.json": {
+      "bytes": 2016,
+      "sha256": "aac7d2d2461032d8f6867c954c66c3daca860da0b4000cee46405b96b7e815ba"
+    },
+    "tools/fixtures/endgame-evidence/retained/final-compromise-common-augments-2.browser.json": {
+      "bytes": 1309,
+      "sha256": "73ded9d2d7448a9ddb66704ed641270a4b5f06e7de504da74e09027c81f3354c"
+    },
+    "tools/fixtures/endgame-evidence/retained/final-compromise-named-gems.browser.json": {
+      "bytes": 3116,
+      "sha256": "ef0170dbb2048a36130ae781c4b8b15714173ebedf5c97221394ad46db9a1a16"
+    },
+    "tools/fixtures/endgame-evidence/retained/fresh-crafts.json": {
+      "bytes": 177894,
+      "sha256": "3ef2182d075a41fc608020bd8a796c3676e4100f53dbced6cd8f79f6f6758a05"
+    },
+    "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json": {
+      "bytes": 127172,
+      "sha256": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84"
+    },
+    "tools/fixtures/endgame-evidence/retained/initial-armor.raw.json": {
+      "bytes": 11621,
+      "sha256": "e365bd8253e6dfb7c81212efd88c768146374b7c1364f5b3d26a34ecbe71e95e"
+    },
+    "tools/fixtures/endgame-evidence/retained/named-augments-1.browser.json": {
+      "bytes": 1986,
+      "sha256": "af11958cf7ce58addcb141ef5288c6f804160f32753e0a244fe7a38741c4a142"
+    },
+    "tools/fixtures/endgame-evidence/retained/named-augments-2.browser.json": {
+      "bytes": 2441,
+      "sha256": "e5ce49d6743b5597f37a643f0d9a79b693c5a3aba105d4d4ae92496b8bb9775c"
+    },
+    "tools/fixtures/wisdom-corrections/scope.json": {
+      "bytes": 27015,
+      "sha256": "7a079fd078bf37bf9def7ddd4a67c647a2092206ef0a2ddbfb9823b3da3654ef"
+    },
+    "tools/fixtures/wisdom-crafting-integration/scope.json": {
+      "bytes": 32894,
+      "sha256": "3f10236d292373e4951fc249c69f6858ab59bb3537c54c416f147eb76b4ad996"
+    },
+    "tools/fixtures/wisdom-loadout/scope.json": {
+      "bytes": 568103,
+      "sha256": "3a3d34bc5cb2524bf611bfa2128605daf9f3dd554d458a50928f099d80933bd0"
+    },
+    "tools/fixtures/wisdom-loadout/selection.json": {
+      "bytes": 170414,
+      "sha256": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d"
+    },
+    "versions/11-15-26.3.html": {
+      "bytes": 396146,
+      "sha256": "f5a9352c7348e459c0b161a491b9edf91cef7ccd5f996cbdb76c5a6b50e2440f"
+    }
+  }
+}

@@ -3,12 +3,23 @@ import hashlib
 from pathlib import Path
 import re
 import unittest
+import wisdom_corrections as corrections
+import wisdom_crafting_integration as crafting
+import wisdom_recipe_proof_preservation as recipe_proofs
+import wisdom_int_evidence_preservation as int_evidence
+import wisdom_int_stacking_preservation as int_stacking
+import wisdom_offense_preservation as offense
+import wisdom_fort_spot_preservation as fort_spot
+import wisdom_chains_type_preservation as chains_type
+import wisdom_ability_preservation as abilities
+import wisdom_doubleshot_preservation as doubleshot
 
 ROOT = Path(__file__).resolve().parents[1]
 DETAIL_SHA = '47cccc7724c1ea271cf83f02a26d38822987a88d4159020b02afb51bb7b55321'
 
 
 def validate(html):
+    current_html = html
     html = re.sub(r'<!--.*?-->', '', html, flags=re.S)
     row = next(r for r in re.findall(r'<tr>.*?</tr>', html, re.S)
                if r.startswith('<tr><td><a href="#heroic-feats">Heroic feats</a>'))
@@ -19,8 +30,22 @@ def validate(html):
     assert 'Improved Precise Shot 12' not in row, 'no unconditional late schedule'
     target = '<p id="aasimar-scourge-feats"><strong>Aasimar Scourge lives, feat by feat.</strong>'
     assert html.count('id="aasimar-scourge-feats"') == 1 and target in html
-    detail = html.split('<h2 id="heroic-feats">',1)[1].split('<h2 ',1)[0]
-    # Pin the full pre-existing detailed section, normalizing only the added anchor.
+    # Routing above is checked on actual current content. Only the historical
+    # detailed-section hash uses the exact outer-restored PR47 view; current
+    # Quicken semantics are tested separately in test_wisdom_corrections.
+    point_one = doubleshot.restore_file('index.html', current_html)
+    point_nine = abilities.restore_file('index.html', point_one)
+    point_eight = chains_type.restore_file('index.html', point_nine)
+    point_seven = fort_spot.restore_file('index.html', point_eight)
+    point_six = offense.restore_file('index.html', point_seven)
+    point_five = int_stacking.restore_file('index.html', point_six)
+    point_four = int_evidence.restore_file('index.html', point_five)
+    predecessor = recipe_proofs.restore_file('index.html', point_four)
+    checkpoint = crafting.restore_file('index.html', predecessor)
+    original = corrections.restore_file('index.html', checkpoint)
+    original = re.sub(r'<!--.*?-->', '', original, flags=re.S)
+    detail = original.split('<h2 id="heroic-feats">',1)[1].split('<h2 ',1)[0]
+    # Keep the old hash and its sole anchor normalization unchanged.
     detail = detail.replace(target, '<p><strong>Aasimar Scourge lives, feat by feat.</strong>')
     assert hashlib.sha256(detail.encode()).hexdigest() == DETAIL_SHA, 'all detailed schedules, grant and alternatives preserved'
 

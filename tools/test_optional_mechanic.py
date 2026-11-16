@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import re
 import unittest
+from wisdom_preservation import predecessor_index
 
 from test_early_xp import visible_nodes, visible_text
 from test_lamordia_handling import Document, norm
@@ -93,7 +94,7 @@ def validate_note(html):
 class OptionalMechanicTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.html = (ROOT / 'index.html').read_text()
+        cls.html = predecessor_index()
 
     def reject(self, before, after, validator=validate_note):
         self.assertTrue(before in self.html, 'mutation must affect actual Guide: ' + before)

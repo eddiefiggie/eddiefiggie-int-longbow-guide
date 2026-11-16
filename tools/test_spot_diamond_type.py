@@ -6,7 +6,8 @@ from pathlib import Path
 import unittest
 
 import stacking_audit as audit
-from build_stacking_audit import detail, summary
+from wisdom_preservation import (historical_renderer, predecessor_index,
+                                predecessor_ledger, predecessor_file_text)
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,6 +19,14 @@ RULE_SHA = 'dfd4c246e04ace0dcf5ddcfad983f4e94fbbdd6192465237fd8ab083c0a90b6b'
 ITEM_SHA = '50945611f39c1a9008ab2804fb9ddcb42b677516d0eacc2d25d8d1f9fb3c1a1b'
 ITEM_QUOTE = 'Drag this augment into a slot to upgrade an item with a +22 Competence Bonus to the Spot skill. This augment can go in any color Augment Slot.'
 SPOT_NOTE = 'Selected ML36 Diamond of Spot +22: Competence per transmitted own-item excerpt (recorded oldid 703902); original bytes and observation context unavailable here. State remains unknown and excluded from certified totals; acquisition unknown. Not a guaranteed final +22 skill change.'
+
+
+def detail(data):
+    return historical_renderer().detail(data)
+
+
+def summary(data):
+    return historical_renderer().summary(data)
 
 
 def restore_spot_prose(html):
@@ -119,7 +128,7 @@ def validate_ledger(data):
 class SpotDiamondTypeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.html = (ROOT/'index.html').read_text()
+        cls.html = predecessor_index()
         cls.doc = (ROOT/'evidence/spot-diamond-type/README.md').read_text()
 
     def test_exact_variant_current_claims_and_prior_release_preserved(self):
@@ -163,7 +172,7 @@ class SpotDiamondTypeTests(unittest.TestCase):
             validate_sources(SCOPE['item_relay'], raw, self.doc.replace('not a local hash verification', 'locally verified original bytes'))
 
     def test_ledger_retains_unknown_gates_and_all_other_data(self):
-        data = audit.load()
+        data = predecessor_ledger()
         validate_ledger(data)
         spot = next(c for c in data['components'] if c['id'] == 'spot-diamond')
         for other_type in ('Morale', 'Luck'):
@@ -181,9 +190,9 @@ class SpotDiamondTypeTests(unittest.TestCase):
             validate_ledger(changed)
 
     def test_generated_current_audit_and_documentation_agree(self):
-        data = audit.load()
+        data = predecessor_ledger()
         rendered = detail(data)
-        self.assertEqual((ROOT/'endgame-stacking-audit.html').read_text(), rendered)
+        self.assertEqual(predecessor_file_text('endgame-stacking-audit.html'), rendered)
         self.assertIn('Spot +22 is a Competence source', summary(data))
         nodes = list(guide_content(Document(rendered).root))
         rows = [n for n in nodes if n.tag == 'tr' and n.attrs.get('id') == 'component-spot-diamond']

@@ -1,0 +1,317 @@
+{
+  "schema": "wisdom-draft-mechanics-corrections-v1",
+  "date": "2026-11-15",
+  "build": "11-15-26.2",
+  "scope": "Owner-approved code-only correction of draft PR47 mechanics explanations; no changed loadout, priority, numeric model, evidence qualification, browser retry, merge or publication.",
+  "startup": {
+    "repository": "eddiefiggie/eddiefiggie-int-longbow-guide",
+    "source_ref": "feat/wisdom-loadout-priorities",
+    "immutable_remote_parent_sha": "564d5259f715962851fd1a4fcbc62820785f4d56",
+    "immutable_remote_parent_tree": "91be55a45a88d76e80122a3fdaaf7d6d7bd565ab",
+    "actual_initial_local_head": "5ded199eadbade29dcdb0c1eccfad4758a65c328",
+    "actual_initial_local_branch": "feat/wisdom-loadout-priorities",
+    "actual_initial_staged_tree": "91be55a45a88d76e80122a3fdaaf7d6d7bd565ab",
+    "initial_staged_files": 49,
+    "initial_unstaged_changes": false,
+    "inspection": "Git status, branch, HEAD and write-tree; remote PR and commit metadata; working files compared with the immutable local tree. The remote commit object was not present locally; no fetch, switch or reset.",
+    "gate": "Resume the known staged PR tree, not a fresh delegated implementation checkout. Initial local HEAD is explicitly not the remote PR head. Main agent owns edits; delegated reviews are read-only.",
+    "allowed_branch": "feat/wisdom-loadout-priorities"
+  },
+  "baseline_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+    "tests": 258,
+    "seconds": 34.334,
+    "exit_code": 0
+  },
+  "local_verification": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+    "final_tests": 275,
+    "final_seconds": 41.989,
+    "final_exit_code": 0,
+    "added_tests": 17,
+    "focused_wisdom_tests": 44,
+    "focused_wisdom_exit_code": 0,
+    "resolved_failure": "Initial 275-test run had one historical feat-section hash failure from the approved Quicken correction. The original DETAIL_SHA was retained; actual-current routing checks still run, only the historical detail comparison uses the strict correction reversal. Separate current Quicken and outer-reversal negative tests remain active.",
+    "final_index_sha256": "281c8e4ce94f28d5d23c345f01d34bfcb0423f73ff90d871d82b7ecf8611f048",
+    "final_snapshot_sha256": "48e66b9bb02bc32c991545f6d660e66ea53fa7a4dbb1a5d44535e9bf7200cd67",
+    "all_four_documented_builders_passed": true,
+    "wisdom_builder_read_only_freshness": "passed",
+    "exact_reversal_files": 5,
+    "exact_reversal_hunks": 21,
+    "prior_snapshots_preserved": 67,
+    "complete_calculator_result_objects_unchanged": 38,
+    "complete_historical_bow_model_tuples_unchanged": 39,
+    "reviewed_markdown_relative_paths": 36,
+    "missing_reviewed_markdown_paths": 0,
+    "independent_review": "Read-only wording, invariant and preservation reviews completed; final wording qualification and feat-hash integration rechecked. No scope, selection, numeric output or provenance promotion.",
+    "limits": "Software fidelity, source-text consistency and structural checks only. Browser QA, missing mechanics/procurement evidence, remote exact-head CI, merge and deployment remain separate. This receipt does not certify live-game DPS."
+  },
+  "original_records_preserved": {
+    "tools/fixtures/wisdom-loadout/scope.json": {
+      "bytes": 568103,
+      "sha256": "3a3d34bc5cb2524bf611bfa2128605daf9f3dd554d458a50928f099d80933bd0"
+    },
+    "tools/fixtures/wisdom-loadout/selection.json": {
+      "bytes": 170414,
+      "sha256": "8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d"
+    },
+    "versions/11-15-26.1.html": {
+      "bytes": 390376,
+      "sha256": "9dcc34e46b405d9917a713d14fb3b63f4b5b10c72284a9d516a95486df4cd17f"
+    },
+    "tools/bowmodel.py": {
+      "bytes": 6035,
+      "sha256": "7d9e0843939310214d73b00e7e936ca4e842bf7bf0fc3f8da1b849e8c8faf236"
+    },
+    "tools/stacking_audit.py": {
+      "bytes": 11763,
+      "sha256": "97432b1a37543645986a343ec0c6d3c8d58b77c4089e03307dfdf2840d3c606d"
+    },
+    "evidence/wisdom-loadout/claims.json": {
+      "bytes": 127263,
+      "sha256": "2de551db80e4d682da2cd0a3156b1a5e830927a833750b81d370b6c6bbedf1ad"
+    },
+    "evidence/wisdom-loadout/loadout.json": {
+      "bytes": 56004,
+      "sha256": "20f5bca4573d803a196695aa999f4acc07e71db077e3b66fde51a560b6da0843"
+    },
+    "evidence/wisdom-loadout/production.json": {
+      "bytes": 70425,
+      "sha256": "684215235205fb59ba183cf11d9235661becb2973681afb7dfc6ae9e332413e2"
+    },
+    "evidence/wisdom-loadout/sources.json": {
+      "bytes": 123461,
+      "sha256": "cea672fa20445cfda89717a8e04af1a34c73f272ff82bf0ad86630713c1bd92a"
+    },
+    "evidence/wisdom-loadout/derivation.json": {
+      "bytes": 97191,
+      "sha256": "215c66ae090b2d25142472634dd8e56c668e08526ed6bbaa6709116ecbc9da02"
+    }
+  },
+  "retained_sources_sha256": {
+    "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json": "d25dde3dad8da5f1db1e00642099e554f0c3342a0bf06d533bf9178dbdb91b84",
+    "tools/fixtures/endgame-evidence/retained/Doubleshot.json": "20863a35f19021e4d23496d24170bab96947bc5ff2c11908425791d4dd7fc154",
+    "tools/fixtures/endgame-evidence/retained/Threat_range.json": "a4e836be9474093b6a3c116fc80e8b1a8f5df1083d74bead97eab3b3370204bd",
+    "evidence/endgame-stacking/selected-tree-sources.json": "ce899e31f59b192b75d3dd9e947b90dbb13a9e8c12e8b69903f741d6f1a92810",
+    "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-critical-power-rules-01-evidence.json": "b483b8d424216ad87fb19ab0cb8546e28c2b6b211b9a5305ff8b70a888a8e31c",
+    "tools/fixtures/sapphire-sting/source.json": "d27f77cfce9e95d741b49590ff437b1ab1f5cf97bd7fc5f8047f0cdff500d21f",
+    "evidence/endgame-stacking/retained-selected.json": "eed0083b8454a40a249acf5b0c3b93714e68ee496a857e889c724bc0e278dc78"
+  },
+  "claims": [
+    {
+      "id": "major-anger",
+      "correction": "Five additional Rage uses after resting, not Action Boost uses; no standing DPS or assumed Rage ability.",
+      "retained": [
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+          "pointer": [
+            5,
+            "tooltips",
+            4
+          ],
+          "revision": "700306",
+          "original_observation": null
+        }
+      ],
+      "classification": "Retained-tooltip correction; ledger state remains unknown."
+    },
+    {
+      "id": "rams-might",
+      "correction": "Permanent spell benefit while equipped, separate from conditional Bloodrage. Incremental ranged damage and spell overlap remain unvalued.",
+      "retained": [
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+          "pointer": [
+            5,
+            "tooltips",
+            3
+          ],
+          "revision": "700306",
+          "original_observation": null
+        },
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+          "pointer": [
+            5,
+            "tooltips",
+            2
+          ],
+          "revision": "700306",
+          "original_observation": null
+        }
+      ],
+      "classification": "Retained-tooltip distinction, not a new counted bonus."
+    },
+    {
+      "id": "glabrezu-resource",
+      "correction": "Its reported additional Action Boost uses are a different resource from Major Anger's Rages.",
+      "retained": [
+        {
+          "path": "evidence/wisdom-loadout/claims.json",
+          "pointer": [
+            "source_records",
+            16
+          ]
+        }
+      ],
+      "classification": "Existing corroborated-only claim retained; no type or capacity-interaction certification."
+    },
+    {
+      "id": "wisdom-casting",
+      "correction": "Remove starting-WIS8/tomes-only exclusion; evaluate actual class/Ranger level, total equipped Wisdom and prepared spells. Quicken remains unselected.",
+      "retained": [],
+      "classification": "Withdrawal of an unsupported absolute. No independently retained Ranger casting-threshold paragraph found; specific spell access, spell points and healing remain unverified."
+    },
+    {
+      "id": "wisdom-will",
+      "correction": "Starting WIS8 does not fix equipped modifier at minus one. Reconcile all class contributions and typed ability/save sources; no final Will total certified.",
+      "retained": [
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/fresh-endgame-b.json",
+          "pointer": [
+            3,
+            "tooltips",
+            11
+          ],
+          "revision": "707232",
+          "original_observation": null
+        }
+      ],
+      "classification": "Conditional whole-character calculation; selected gear and evidence exclusions unchanged."
+    },
+    {
+      "id": "doubleshot",
+      "correction": "Eligible-hit damage multiplication, not a full independent subsequent attack; additional proc rolls are not established. Scaling is reduced above200%.",
+      "retained": [
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/Doubleshot.json",
+          "pointer": [
+            "text"
+          ],
+          "revision": "719351",
+          "original_observation": null
+        }
+      ],
+      "publisher_sources": [
+        "u49",
+        "u81-4"
+      ],
+      "classification": "Retained Wiki description corroborated by publisher notes; not proc-specific DPS certification."
+    },
+    {
+      "id": "critical-conditions",
+      "correction": "Selected profile is conditional build arithmetic. Elasticity increases a qualifying natural19/20 confirmed critical's multiplier, not guaranteed damage on one tenth of attacks; target critical negation still applies.",
+      "retained": [
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/Threat_range.json",
+          "pointer": [
+            "text"
+          ],
+          "revision": "720167"
+        },
+        {
+          "path": "evidence/endgame-stacking/selected-tree-sources.json",
+          "pointer": [
+            2,
+            "text"
+          ],
+          "revision": "721857"
+        },
+        {
+          "path": "evidence/endgame-stacking/selected-tree-sources.json",
+          "pointer": [
+            3,
+            "text"
+          ],
+          "revision": "720961"
+        },
+        {
+          "path": "tools/fixtures/endgame-evidence/retained/INTiana-DDO-Wiki-critical-power-rules-01-evidence.json",
+          "pointer": [
+            "source_receipts",
+            "seeker_melee_power",
+            "sources",
+            0,
+            "exact_excerpts"
+          ],
+          "revision": "682718"
+        }
+      ],
+      "publisher_sources": [
+        "u81-4",
+        "u82"
+      ],
+      "classification": "Conditions added to existing arithmetic; not a full-build legality certificate, observed profile or new artifact threat-range gain."
+    },
+    {
+      "id": "alacrity",
+      "correction": "Retain1.20/1.15≈1.0435 only as historical Haste-always-up model arithmetic; no measured current shot-rate or sustained-DPS gain.",
+      "retained": [
+        {
+          "path": "tools/fixtures/sapphire-sting/source.json",
+          "pointer": [
+            "rendered_document_html"
+          ],
+          "revision": "700645"
+        },
+        {
+          "path": "evidence/endgame-stacking/retained-selected.json",
+          "pointer": [
+            2,
+            "text"
+          ],
+          "revision": "699462"
+        }
+      ],
+      "publisher_sources": [
+        "u81-4"
+      ],
+      "classification": "Retained same-type nonstacking, but no own-Haste15 capture found. Magnitude remains an existing model assumption."
+    },
+    {
+      "id": "ha63-procurement",
+      "correction": "Quick summary explicitly distinguishes search exclusion policy from unresolved exact non-event Healing Amplification63 acquisition.",
+      "retained": [
+        {
+          "path": "evidence/wisdom-loadout/sources.json",
+          "pointer": []
+        }
+      ],
+      "classification": "Existing procurement limitation made visible; effect amount/type grade and selected augment unchanged."
+    }
+  ],
+  "publisher_sources": {
+    "u49": {
+      "url": "https://www.ddo.com/update-notes/ddo-update-49-release-notes",
+      "reviewed_date": "2026-11-15",
+      "scope": "Doubleshot damage multiplication replaces subsequent attacks.",
+      "method": "Public page read through web retrieval; not a new Wiki observation."
+    },
+    "u81-4": {
+      "url": "https://www.ddo.com/update-notes/ddo-update-81-4-release-notes",
+      "reviewed_date": "2026-11-15",
+      "scope": "Reduced Doubleshot scaling above200%, bow speed rebuild, Combat Archery range and active critical changes.",
+      "method": "Public page read through web retrieval; not a new Wiki observation."
+    },
+    "u82": {
+      "url": "https://www.ddo.com/update-notes/ddo-update-82-release-notes",
+      "reviewed_date": "2026-11-15",
+      "scope": "Manyshot and Scattershot critical-bonus fixes.",
+      "method": "Public page read through web retrieval; not a new Wiki observation."
+    }
+  },
+  "release_limits": {
+    "browser_qa": "Previously blocked; no retry in this code-only pass. No rendered desktop/mobile, keyboard or print-pagination verification.",
+    "unresolved": [
+      "Glabrezu Insightful INT7 and Chains Fortification142, Combustion142, Quality INT3, Spot20 exact evidence.",
+      "Skull CON15/16 conflict; Queen, Claws and Yeenoghu provenance gaps.",
+      "Exact ordinary non-event Healing Amplification63 procurement.",
+      "Whole-character overlaps, filigrees, critical eligibility and sustained-DPS comparison."
+    ],
+    "new_optimizer_run": false,
+    "gear_or_priority_change": false,
+    "source_grade_promotion": false,
+    "merge_authorized": false,
+    "publication_authorized": false
+  }
+}

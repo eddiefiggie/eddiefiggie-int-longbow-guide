@@ -1,0 +1,708 @@
+"""One read-only source and static renderer for the selected Wisdom loadout.
+
+This validates a frozen, explicitly manual recipe and independently recomputes
+its catalog arithmetic. It is neither an optimizer nor a mechanics certifier.
+The older stacking ledger remains the authority for source-qualified subtotals.
+"""
+from collections import Counter, defaultdict
+from hashlib import sha256
+from html import escape
+import json
+from pathlib import Path
+import re
+
+ROOT = Path(__file__).resolve().parents[1]
+MANIFEST = ROOT / 'tools/fixtures/wisdom-loadout/selection.json'
+MARKERS = {
+    'recipe': ('<!-- wisdom-loadout-recipe:start -->', '<!-- wisdom-loadout-recipe:end -->'),
+    'priorities': ('<!-- wisdom-affix-priority:start -->', '<!-- wisdom-affix-priority:end -->'),
+    'onepage': ('<!-- wisdom-onepage-summary:start -->', '<!-- wisdom-onepage-summary:end -->'),
+}
+COLORS = {
+    'Colorless': {'Colorless'}, 'Red': {'Colorless', 'Red'},
+    'Blue': {'Colorless', 'Blue'}, 'Yellow': {'Colorless', 'Yellow'},
+    'Orange': {'Colorless', 'Red', 'Yellow', 'Orange'},
+    'Purple': {'Colorless', 'Red', 'Blue', 'Purple'},
+    'Green': {'Colorless', 'Blue', 'Yellow', 'Green'},
+    'Sun': {'Sun'}, 'Moon': {'Moon'},
+}
+TYPE_EQUIVALENTS = {'Insight Natural': 'Insight', 'Primal Natural': 'Primal', 'Profane Natural': 'Profane'}
+
+
+def load(path=None):
+    """Read the manifest without changing files or deriving new game facts."""
+    return json.loads(Path(path or MANIFEST).read_text(encoding='utf-8'))
+
+
+def _require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def _record(relative, expected_hash=None):
+    path = (ROOT / relative).resolve()
+    _require(path.is_relative_to(ROOT), 'Evidence record escapes the repository')
+    raw = path.read_bytes()
+    if expected_hash:
+        _require(sha256(raw).hexdigest() == expected_hash, 'Derived evidence hash mismatch: ' + relative)
+    return json.loads(raw)
+
+
+def _affix_tuple(affixes):
+    return sorted((a['stat'], a['type'], a['value']) for a in affixes)
+
+
+def _craft_tuple(craft):
+    return (craft['host'], craft['family'], craft['slot'], craft['pool'],
+            craft['category'], craft['tier'], craft['name'], tuple(_affix_tuple(craft['affixes'])))
+
+
+def aggregate(data):
+    """Independent highest-per-type arithmetic over this explicit recipe only.
+
+    Boolean/proc presence remains separate. No uptime, weapon profile, damage
+    simulation, filigree effect, ability modifier, armor cap or set suppression
+    rule is invented by this helper.
+    """
+    buckets, flags = {}, {}
+    inputs = []
+    for item in data['items']:
+        inputs.append((item['id'], item['model_affixes']))
+        inputs.extend((item['id'], craft['affixes']) for craft in item['crafts'])
+        inputs.extend((socket['fill']['id'], socket['fill']['affixes'])
+                      for socket in item['sockets'] if socket['fill']['kind'] == 'augment')
+    inputs.extend((aset['name'], aset['effects']) for aset in data['augment_sets'])
+    for source, affixes in inputs:
+        for affix in affixes:
+            stat, kind, value = affix['stat'], affix['type'], affix['value']
+            _require(isinstance(value, (int, float)) and not isinstance(value, bool), 'Non-numeric model affix')
+            if kind == 'Bool':
+                flags[stat] = max(flags.get(stat, 0), value)
+                continue
+            kind = TYPE_EQUIVALENTS.get(kind, kind)
+            names = ['Physical Sheltering', 'Magical Sheltering'] if stat == 'Sheltering' else [stat]
+            for name in names:
+                key = (name, kind)
+                old = buckets.get(key)
+                if old is None or value > old['value']:
+                    buckets[key] = {'stat': name, 'type': kind, 'value': value, 'sources': [source]}
+                elif value == old['value']:
+                    old['sources'].append(source)
+    totals = defaultdict(float)
+    for bucket in buckets.values():
+        totals[bucket['stat']] += bucket['value']
+    totals = {key: int(value) if value.is_integer() else value for key, value in totals.items()}
+    effective = {**totals, **flags}
+    exclusions = data['query'].get('excludedTypes', {})
+    exclusions = exclusions if isinstance(exclusions, list) else exclusions.values()
+    for bucket in buckets.values():
+        if any(row['stat'] == bucket['stat'] and row['bonus_type'] == bucket['type'] for row in exclusions):
+            effective[bucket['stat']] -= bucket['value']
+    effective['Combustion'] = totals.get('Combustion', 0) + totals.get('Universal Spell Power', 0)
+    return {'totals': totals, 'presence_flags': flags, 'effective': effective, 'buckets': list(buckets.values())}
+
+
+def validate(data):
+    """Reject drift from frozen recipe/query and invalid construction/math.
+
+    A pass says the authored guide is faithful to the retained analysis; it
+    cannot promote a source grade, certify the game, or declare optimal DPS.
+    Raises ValueError with the first failed invariant. Does not write files.
+    """
+    _require(data.get('schema') == 'wisdom-loadout-v1', 'Unsupported manifest schema')
+    provenance = data['provenance']
+    production = _record(provenance['production']['path'], provenance['production']['record_sha256'])
+    selected = _record(provenance['selected']['path'], provenance['selected']['record_sha256'])
+    startup = _record(provenance['startup_record'])
+    evidence = data['evidence']
+    claims = _record(evidence['claim_inventory'], evidence['record_sha256']['claims'])
+    derivation = _record(evidence['derivation'], evidence['record_sha256']['derivation'])
+    _record(evidence['sources'], evidence['record_sha256']['sources'])
+    _require(provenance['selected']['sha256'] == selected['origin']['sha256'] == startup['selected_loadout_sha256'], 'Selected original source SHA differs from startup')
+    _require(provenance['production']['sha256'] == production['origin']['sha256'], 'Production original source SHA mismatch')
+    _require(production['status'] == provenance['production']['status'] == 'optimal', 'Actual ancestor is not optimal')
+    _require(provenance['production']['passes'] == production['passes'] and provenance['production']['seconds'] == production['elapsed_seconds'], 'Actual run receipt drift')
+    _require(data['selection']['status'] == selected['status'] == 'manual-feasible', 'Manual derivative mislabeled as an actual solve')
+    _require(data['selection']['certified_mechanics'] is False, 'Model promoted to mechanics certification')
+    _require(data['query'] == production['query'], 'Exact original query, target order, caps, floors or pins changed')
+    _require(len(data['query']['targets']) == 32 and data['query']['targets'][28] == 'Wisdom', 'Wisdom is objective 29, not objective one')
+    _require(data['query']['mlCap'] == data['selection']['full_kit_ml'] == 36, 'Full-kit level drift')
+    _require(provenance['guide_commit'] == startup['immutable_base_sha'] == selected['guide_commit'], 'Guide base drift')
+    _require(provenance['optimizer_commit'] == production['optimizer_commit'] == selected['optimizer_commit'], 'Optimizer commit drift')
+    _require(provenance['dataset_sha256'] == production['dataset_sha256'] == selected['dataset_sha256'], 'Dataset identity drift')
+    items = data['items']
+    catalog = selected['catalog_metadata']
+    _require(catalog['origin']['sha256'] == provenance['dataset_sha256'], 'Selected catalog metadata identity drift')
+    native_items = {item['id']: item for item in catalog['items']}
+    native_gems = {gem['id']: gem for gem in catalog['augments']}
+    def native_grade(component, affix):
+        return next((claim['status'] for claim in claims['claims']
+                     if claim['kind'] == 'item' and claim['component'] == component
+                     and (claim['stat'], claim['type'], claim['value'])
+                     == (affix['stat'], affix['type'], affix['value'])), 'model-only')
+    _require([(i['slot'], i['id']) for i in items] == [(i['slot'], i['id']) for i in selected['chosen']], 'Selected item identity or slot changed')
+    _require(len(items) == len({i['id'] for i in items}) == 14, 'Fourteen distinct equipment items required')
+    artifacts = [i['id'] for i in items if i['minor_artifact']]
+    _require(artifacts == ["Yeenoghu's Reign"], 'Exactly the selected Yeenoghu minor artifact is required')
+    slots = Counter(i['slot'] for i in items)
+    _require(slots['Ring'] == 2 and all(n == (2 if k == 'Ring' else 1) for k, n in slots.items()) and not slots['Off Hand'], 'Equipment cardinality mismatch')
+    _require(data['selection']['primary_bow'] == 'Legendary Calamitous Longbow', 'Primary bow changed')
+    for slot, pin in data['query']['slotConstraints'].items():
+        if pin['type'] == 'pin':
+            _require(any(i['id'] == pin['variant_id'] and i['slot'] == slot for i in items), 'Pinned item missing: ' + slot)
+    ordinary, set_placements, physical = [], [], []
+    set_hosts = set()
+    for item, original in zip(items, selected['chosen']):
+        _require(item['base_ml'] == original['base_ml'] and item['minor_artifact'] == original['artifact'], 'Item level/artifact drift: ' + item['id'])
+        _require(item['model_affixes'] == original['affixes'], 'Selected item affix drift: ' + item['id'])
+        native = native_items[item['id']]
+        expected_native = [{**a, 'evidence_status': native_grade(item['id'], a)} for a in native['native_affixes']]
+        _require(item['native_affixes'] == expected_native, 'Visible native affix value or evidence grade changed: ' + item['id'])
+        _require(not native['native_sets'], 'A new native set requires an explicit suppression audit')
+        _require([s['color'] for s in item['sockets']] == original['sockets'], 'Physical socket list changed: ' + item['id'])
+        _require([s['index'] for s in item['sockets']] == list(range(len(item['sockets']))), 'Duplicate or reordered physical socket')
+        _require(item['id'] not in data['query']['blocklist'], 'Blocked item selected')
+        used_crafts = set()
+        for craft in item['crafts']:
+            _require(craft['host'] == item['id'], 'Craft moved to a wrong host')
+            key = (craft['family'], craft['pool'] or craft['slot'])
+            _require(key not in used_crafts, 'Duplicate craft choice on one slot')
+            used_crafts.add(key)
+        for socket in item['sockets']:
+            fill = socket['fill']
+            _require(fill['color'] in COLORS.get(socket['color'], set()), 'Augment color does not fit its host')
+            _require(isinstance(fill['ml'], int) and 0 <= fill['ml'] <= data['query']['mlCap'], 'Augment minimum level invalid')
+            _require(fill['id'] not in data['query']['blocklist'], 'Blocked augment selected')
+            physical.append(socket)
+            if fill['kind'] == 'set-augment':
+                _require(set(fill) == {'kind', 'id', 'color', 'ml', 'affixes'}, 'Undeclared set-fill metadata or source-grade promotion')
+                _require(item['id'] not in set_hosts and socket['color'] not in {'Sun', 'Moon'}, 'Two set augments on one host or nonstandard set socket')
+                _require(fill['color'] == 'Colorless' and fill['ml'] == 30 and not fill['affixes'], 'Set augment metadata drift')
+                set_hosts.add(item['id'])
+                set_placements.append({'name': fill['id'], 'host': item['id'], 'color': socket['color']})
+            else:
+                _require(fill['kind'] == 'augment', 'Unknown socket fill kind')
+                _require(set(fill) == {'kind', 'id', 'color', 'ml', 'wiki_url', 'affixes', 'native_affixes', 'festive_exception'}, 'Undeclared gem metadata or source-grade promotion')
+                _require(fill['id'] in native_gems, 'Gem not in frozen selected catalog extraction')
+                gem = native_gems[fill['id']]
+                _require(fill['ml'] == gem['ml'] and fill['color'] == gem['color'] and fill['native_affixes'] == gem['native_affixes'], 'Visible augment value, color or minimum level changed')
+                _require(fill['festive_exception'] == ('Festive' in fill['id']), 'Festive exception labeling changed')
+                ordinary.append({'id': fill['id'], 'color': fill['color'], 'slot_color': socket['color'], 'affixes': fill['affixes']})
+        _require(item['filled_ml'] == max([item['base_ml']] + [s['fill']['ml'] for s in item['sockets']]), 'Filled-host minimum level drift: ' + item['id'])
+    key = lambda x: json.dumps(x, sort_keys=True)
+    _require(sorted(map(_craft_tuple, (c for i in items for c in i['crafts']))) == sorted(map(_craft_tuple, selected['crafts'])), 'Exact craft host, family, slot, value or option changed')
+    _require(sorted(ordinary, key=key) == sorted(selected['augments'], key=key), 'Non-set augment recipe changed')
+    _require(len(ordinary) == len({x['id'] for x in ordinary}), 'Repeated non-set gem')
+    _require(sorted(set_placements, key=key) == sorted(selected['set_placements'], key=key), 'Selected set host allocation changed')
+    for aset, original in zip(data['augment_sets'], selected['sets']):
+        _require({k: aset[k] for k in ['name', 'threshold']} == {k: original[k] for k in ['name', 'threshold']}, 'Set identity/threshold drift')
+        _require(aset['effects'] == original['effects'], 'Set effect changed')
+        _require(aset['evidence_status'] == 'retained-source supported; combined totals remain subject to the current ledger gates', 'Set source grade promoted')
+        _require(len(aset['placements']) == aset['threshold'] == 3 and len({x['host'] for x in aset['placements']}) == 3, 'Set lacks three distinct hosts')
+        _require(sorted([{'name': aset['name'], **x} for x in aset['placements']], key=key) == sorted([x for x in set_placements if x['name'] == aset['name']], key=key), 'Set summary disagrees with physical placements')
+    _require(len(data['augment_sets']) == 4, 'Exactly four selected augment sets required')
+    counts = {'items': len(items), 'artifacts': len(artifacts), 'sockets': len(physical), 'occupied': len(physical), 'ordinary': sum(x['color'] not in {'Sun', 'Moon'} for x in physical), 'sun_moon': sum(x['color'] in {'Sun', 'Moon'} for x in physical), 'set_placements': len(set_placements), 'ordinary_augment_placements': len(ordinary)}
+    _require(counts == data['counts'], 'Socket/count summary drift')
+    _require(counts['sockets'] == 34 and counts['set_placements'] == 12, 'Primary capacity changed')
+    ring = next(i for i in items if i['id'] == 'Legendary Celestial Sapphire Ring')
+    _require(not ring['crafts'] and ring['empty_craft_slots'] == [{'family': 'Nearly Finished', 'slot': 'Nearly Finished', 'selected': False}], 'Optional ring craft leaked into primary')
+    _require(data['optional']['ring_dexterity_13']['selected'] is False and data['optional']['ring_dexterity_13']['evidence_status'] == 'model-only', 'Optional ring branch selected or source-promoted')
+    optional = data['optional']['ring_dexterity_13']
+    _require((optional['host'], optional['pool'], optional['stat'], optional['type'], optional['value']) == ('Legendary Celestial Sapphire Ring', 'Nearly Finished', 'Dexterity', 'Enhancement', 13), 'Optional ring identity or provisional magnitude changed')
+    _require(optional['gear_dexterity_if_selected'] == data['model']['totals']['Dexterity'] + optional['value'], 'Optional-only gear Dexterity arithmetic changed')
+    _require(data['optional']['sinew']['selected'] is False and data['optional']['sinew']['studied_by_this_run'] is False, 'Sinew falsely represented as a solved output')
+    calculated = aggregate(data)
+    model = data['model']
+    _require(model['raw_production_totals'] == production['independent_raw_totals'], 'Full raw production receipt changed')
+    _require(calculated['totals'] == model['totals'], 'Independent raw arithmetic mismatch')
+    _require(calculated['presence_flags'] == model['presence_flags'], 'Presence/proc flag mismatch')
+    _require(calculated['effective'] == model['objective_comparable_totals'], 'Objective exclusions or effective totals changed')
+    normalize = lambda rows: sorted((r['stat'], r['type'], r['value'], tuple(sorted(r['sources']))) for r in rows)
+    _require(normalize(calculated['buckets']) == normalize(model['type_buckets']), 'Typed maximum buckets/source identities changed')
+    for stat in data['query']['targets']:
+        achieved = min(calculated['effective'].get(stat, 0), data['query']['targetCaps'].get(stat, float('inf')))
+        _require(achieved == model['ranked'][stat] == selected['per_target'][stat], 'Capped target arithmetic mismatch: ' + stat)
+    for stat, minimum in data['query']['targetFloors'].items():
+        _require(calculated['effective'].get(stat, 0) >= minimum, 'Independent floor shortfall: ' + stat)
+    _require(model['totals']['Wisdom'] == 18 and model['totals']['Dexterity'] == 6, 'Primary WIS/DEX identity changed')
+    _require(model['raw_production_totals']['Constitution'] == 34 and model['totals']['Constitution'] == 32, 'Raw-versus-practical utility tradeoff hidden')
+    _require(model['independent_checks']['count'] == derivation['independent_review']['check_count'] == 373 and derivation['independent_review']['passed'], 'Original independent audit receipt drift')
+    _require(model['floor_checks'] == derivation['independent_review']['floors'], 'Original independent floor receipt drift')
+    _require(claims['coverage']['selectedAffixes'] == len(claims['claims']) == 130, 'Claim inventory coverage drift')
+    _require(dict(Counter(c['status'] for c in claims['claims'])) == claims['coverage']['byStatus'], 'Claim evidence-grade counts changed')
+    _require(data['manual_adjustments'] == selected['manual_derivation'], 'Manual provenance changed')
+    festive = [s['fill']['id'] for i in items for s in i['sockets'] if s['fill'].get('festive_exception')]
+    _require(data['policy']['primary_festive_items'] == festive == ['Diamond of Festive Intelligence +2'], 'Selected event exception changed')
+    _require(len(data['comparison']['guide_item_changes']) == 4, 'Old-guide equipment replacement count changed')
+    for row in data['comparison']['rows']:
+        for field, model_key in [('guide', 'guide_totals'), ('prior', 'prior_totals'), ('selected', 'totals')]:
+            _require(row[field] == model[model_key].get(row['stat'], 0), 'Three-way comparison drift')
+    for comparison in derivation['comparison']['comparisons']:
+        if comparison['from'] in {'guide-queen-basic', 'prior-artifact-luck'}:
+            source = model['guide_totals' if comparison['from'] == 'guide-queen-basic' else 'prior_totals']
+            for row in comparison['allNumericRows']:
+                _require(row['from'] == source.get(row['stat'], 0), 'Former-guide/prior model receipt changed')
+    return {'passed': True, 'items': len(items), 'artifacts': len(artifacts), 'sockets': len(physical), 'floors': len(data['query']['targetFloors']), 'claim_count': len(claims['claims']), 'certified_mechanics': False}
+
+
+def _h(value):
+    return escape(str(value), quote=True)
+
+
+def _link(url, label):
+    _require(not re.match(r'\s*(?:javascript|data):', url, re.I), 'Unsafe rendered URL')
+    return '<a href="' + _h(url) + '">' + _h(label) + '</a>'
+
+
+def _affix_text(affix):
+    if affix['stat'] == "Ram's Might":
+        return "Ram's Might — permanent while equipped; incremental ranged damage not credited"
+    if affix['stat'] == 'Major Anger':
+        return f"Major Anger — +{affix['value']} Rage uses after resting, not Action Boost uses; catalog type {affix['type']}"
+    if affix['type'] == 'Bool':
+        return affix['stat'] + ' — present; conditions apply'
+    if affix['stat'] == 'Improved Deception':
+        return 'Improved Deception — conditional proc; catalog +5 is Bluff, not proc chance'
+    return f"{affix['stat']} +{affix['value']} ({affix['type']})"
+
+
+def _list(lines):
+    return '<ul>' + ''.join('<li>' + line + '</li>' for line in lines) + '</ul>' if lines else 'None selected'
+
+
+def _table(identifier, caption, headers, rows):
+    return ('<p class="note">Wide table: focus this region and scroll horizontally if needed.</p>\n'
+            f'<div class="tw" tabindex="0" role="region" aria-labelledby="{identifier}">'
+            f'<table><caption id="{identifier}">{_h(caption)}</caption><thead><tr>'
+            + ''.join('<th scope="col">' + _h(x) + '</th>' for x in headers)
+            + '</tr></thead><tbody>' + ''.join(rows) + '</tbody></table></div>')
+
+
+def _cells(values):
+    return '<tr>' + ''.join(('<th scope="row">' if n == 0 else '<td>') + value + ('</th>' if n == 0 else '</td>') for n, value in enumerate(values)) + '</tr>'
+
+
+def _ability_results(ledger):
+    """Require the exact current ability outcomes before rendering their claims."""
+    from stacking_audit import subtotal
+
+    wisdom = subtotal(ledger, 'Wisdom')
+    constitution = subtotal(ledger, 'Constitution')
+    _require(wisdom['complete'] and wisdom['total'] == 18
+             and set(wisdom['counted']) == {'claws-wisdom', 'celestial-profane-wisdom', 'globe-wisdom'}
+             and not wisdom['excluded'] and not wisdom['suppressed'] and not wisdom['missing_interactions'],
+             'Current selected Wisdom derivation lost its complete source/pair family')
+    _require(not constitution['complete'] and constitution['total'] is None
+             and set(constitution['counted']) == {'queen-insight-con', 'boots-quality-con', 'solar-con',
+                                                 'celestial-profane-constitution', 'globe-constitution'}
+             and constitution['excluded'] == ['skull-con'] and not constitution['suppressed']
+             and not constitution['missing_interactions'],
+             'Current selected Constitution subset or Skull exclusion changed')
+    supported = sum(row['amount'] for row in ledger['components'] if row['id'] in constitution['counted'])
+    _require(supported == 17, 'Current supported Constitution subset changed')
+    return wisdom, constitution, supported
+
+
+def _doubleshot_result(ledger):
+    """Require the complete selected family before rendering its gear result."""
+    from stacking_audit import subtotal
+    from wisdom_doubleshot_proofs import RULE_ID
+
+    result = subtotal(ledger, 'Doubleshot')
+    _require(result['complete'] and result['total'] == 35
+             and result['counted'] == ['goggles-ds', 'ring-ds', 'boots-ds',
+                                       'armor-ds', 'quickblade-ds']
+             and not result['excluded'] and not result['suppressed']
+             and not result['missing_interactions']
+             and len(result['proofs']) == 10
+             and sum(edge[2] == RULE_ID for edge in result['proofs']) == 6
+             and sum(edge[2] == 'artifact-other-types' for edge in result['proofs']) == 4,
+             'Current Doubleshot claim lost its exact five-source calculation')
+    return result
+
+
+def render_doubleshot_qualification(ledger):
+    _doubleshot_result(ledger)
+    return (
+        '<p class="note" data-doubleshot-qualification="selected-five">'
+        '<strong>Derived selected-gear Doubleshot: 35 percentage points at level 36.</strong> '
+        'Goggles 9 Enhancement, ring 3 Quality, boots 5 Insight and armor 3 Profane '
+        'combine with one Quickblade 15 Artifact reward. Quickblade is a Colorless ML30 '
+        'augment: the selected goggles Colorless, Chains crafted Green and Yeenoghu Green '
+        'placements must belong to three distinct equipped hosts. Chains first needs its '
+        'one Legendary Green-slot upgrade: 100 Legendary Staff Splinters and 50 each '
+        'Legendary Broken Shackles, Chain Links and Broken Collars. Ordinary Colorless '
+        'compatibility applies to these sockets; the full filled kit remains ML36. '
+        'Set augments suppress existing host set membership; this selection credits no '
+        'competing native set on these hosts. Six exact native pairs use the retained '
+        'Tip 179 premise with its Stack caveat; four other pairs use the existing Artifact '
+        'rule. Every calculation rechecks the complete five-source family and its evidence. '
+        'This qualifies the already-modeled gear contribution. Ownership, completed crafting '
+        'and actual equipment state are not observed; nongear sources, whole-character '
+        'Doubleshot, damage resolution and DPS retain their separate limits. '
+        + _link('evidence/wisdom-loadout/doubleshot-sources-2026-11-16.json',
+                'Quickblade, host and stacking evidence') + ' · '
+        + _link('evidence/wisdom-loadout/doubleshot-integration-2026-11-16.json',
+                'Bounded integration and verification record') + '.</p>')
+
+
+def render_ability_qualification(ledger):
+    _ability_results(ledger)
+    return (
+        '<p class="note" data-wiscon-qualification="selected-definitions">'
+        '<strong>Derived selected-gear Wisdom: +18 at level 36.</strong> '
+        'Claws +15 Enhancement, native Celestial +2 Profane and Globe +1 Exceptional '
+        'have separately bound definitions and all three positive pair relationships. '
+        '<strong>Supported standing Constitution subset: +17; full total withheld.</strong> '
+        'Queen +7 Insight, Dolorous boots +3 Quality, Solar +4 Artifact, Celestial +2 Profane '
+        'and Globe +1 Exceptional have complete support within that five-input subset. '
+        'The sixth selected input, Skull Constitution, stays conflicting and excluded: '
+        'its own-item +16 and generic-craft +15 leave the full modeled 33 and 32 cases unresolved. '
+        'Fresh own-item observations and retained ability, slot and level evidence qualify only '
+        'these eight definitions. Four exact added pairs cover Claws/Celestial Wisdom and '
+        'Queen/boots, Queen/Celestial and boots/Celestial Constitution; the existing Artifact '
+        'and Exceptional rules supply the remaining supported relationships. '
+        'The complete three-input Wisdom and six-input Constitution families are required; '
+        'omitting the Skull cannot make +17 a complete Constitution result. '
+        'Every proof involving the Skull remains withheld, including otherwise applicable '
+        'Artifact or Exceptional combinations. The retained Stack caveat remains attached '
+        'to this bounded interpretation. Bloodrage is outside these standing sums. '
+        'These are existing gear contributions; whole-character ability scores, Wisdom modifiers, '
+        'HP, Spot and Will outcomes still require other sources and overlap checks. '
+        + _link('evidence/wisdom-loadout/wisdom-con-sources-2026-11-16.json',
+                'Wisdom/Constitution observations and retained-source bindings') + ' · '
+        + _link('evidence/wisdom-loadout/wisdom-con-integration-2026-11-16.json',
+                'Eight definitions, four pairs and verification limits') + '.</p>')
+
+
+def render_crafting_qualification(ledger=None, *, compact=False):
+    """Render the bounded current qualification, separately from frozen grades.
+
+    Direct tooltips and bounded multi-source derivations remain distinct.
+    Qualification of an input creates neither a finished-item tooltip nor a
+    positive interaction edge, imbue applicability or complete damage total.
+    """
+    from stacking_audit import load as load_ledger, validate as validate_ledger, subtotal
+
+    ledger = load_ledger() if ledger is None else ledger
+    validate_ledger(ledger)
+    components = {row['id']: row for row in ledger['components']}
+    glabrezu = components['glabrezu-insight-int']
+    _require(glabrezu['state'] == 'verified'
+             and glabrezu['source'] == 'glabrezu-insight-int-live-20261115'
+             and glabrezu['id'] in subtotal(ledger, 'Intelligence')['counted'],
+             'Current Glabrezu qualification lost its source gate')
+    chains_ids = ('chains-fortification', 'chains-spot')
+    _require(all(components[cid]['state'] == 'verified' and not components[cid]['source']
+                 and components[cid]['recipe_proof']['contract'] == 'slave-lords-selected-types-v1'
+                 for cid in chains_ids), 'Missing bounded Legendary type qualification')
+    intelligence = subtotal(ledger, 'Intelligence')
+    combustion = subtotal(ledger, 'Combustion')
+    int_sources = {
+        'boots-int': 'melancholic-int-live-20261115',
+        'solar-int': 'solar-int-live-20261115',
+        'lunar-int': 'lunar-int-live-20261115',
+        'festive-int': 'festive-int-live-20261115',
+        'dimlight-int': 'dimlight-int-live-20261115',
+        'globe-intelligence': 'globe-int-live-20261115',
+        'celestial-profane-intelligence': 'celestial-profane-int-live-20261115',
+    }
+    _require(all(components[cid]['state'] == 'verified'
+                 and components[cid]['source'] == sid
+                 for cid, sid in int_sources.items()),
+             'Current seven-INT qualification lost its selected source gate')
+    _require(components['chains-combustion']['state'] == 'verified'
+             and components['chains-quality-int']['state'] == 'verified'
+             and combustion['complete'] and combustion['total'] == 142
+             and combustion['counted'] == ['chains-combustion']
+             and intelligence['counted'] == [
+                 'boots-int', 'solar-int', 'lunar-int', 'festive-int',
+                 'dimlight-int', 'glabrezu-insight-int', 'chains-quality-int']
+             and intelligence['suppressed'] == [
+                 'celestial-profane-intelligence', 'globe-intelligence']
+             and intelligence['excluded'] == []
+             and intelligence['missing_interactions'] == []
+             and intelligence['total'] == 37 and intelligence['complete']
+             and len([edge for edge in intelligence['proofs']
+                      if edge[2] == 'int-selected-ten-pairs']) == 10
+             and ['glabrezu-insight-int', 'chains-quality-int', 'int-selected-ten-pairs']
+                 in intelligence['proofs'],
+             'Current recipe qualification or bounded INT interaction changed')
+    fortification = subtotal(ledger, 'Fortification')
+    spot = subtotal(ledger, 'Spot')
+    _require(fortification['counted'] == ['queen-fortification', 'chains-fortification']
+             and fortification['excluded'] == [] and fortification['missing_interactions'] == []
+             and fortification['complete'] and fortification['total'] == 226
+             and fortification['proofs'] == [
+                 ['queen-fortification', 'chains-fortification', 'fort-enh-insight-observed']]
+             and spot['counted'] == ['chains-spot', 'heroism-spot', 'luck-spot']
+             and spot['excluded'] == [] and spot['missing_interactions'] == []
+             and spot['proofs'] == [
+                 ['chains-spot', 'heroism-spot', 'spot-chains-heroism'],
+                 ['chains-spot', 'luck-spot', 'spot-chains-luck'],
+                 ['heroism-spot', 'luck-spot', 'spot-heroism-luck']]
+             and spot['complete'] and spot['total'] == 27,
+             'Current Fortification/Spot derivation or full-family boundary changed')
+    paragraph = (
+        '<p class="note" data-crafting-qualification="bounded-recipe-proof">'
+        '<strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its '
+        'direct item-tooltip support. Chains Equipment Combustion +142 and Quality INT +3 '
+        'are now <strong>source-supported recipe derivations</strong>: separate host, '
+        'Legendary recipe and category-definition records, not invented finished-item tooltips. '
+        'The 142 is a selected-gear Fire Spell Power contribution. The scoped offensive '
+        'audit supports its applicability to the selected Arcane Archer Flaming imbue '
+        'while active; overlapping Equipment Spell Power can reduce its marginal benefit. '
+        'It is not weapon damage, full-character Spell Power or DPS, and does not '
+        'establish scaling for Melancholic or Dolorous weapon effects. '
+        'Seven additional INT definitions now have direct source support: Melancholic +15 Enhancement, '
+        'Solar +4 Artifact, Lunar +4 Profane, Festive +2, Dimlight +2 Exceptional, '
+        'Globe +1 Exceptional and native Celestial +2 Profane. All nine selected INT definitions '
+        'qualify, but Globe INT +1 is suppressed by Dimlight +2 and Celestial INT +2 by Lunar +4. '
+        '<strong>Derived selected-gear INT: +37 at level 36.</strong> A separately pinned '
+        'positive rule now covers exactly the ten pairs among the selected Enhancement, '
+        'Insight, Quality, Profane and Festive INT components, including Pendant Insight–Chains Quality. '
+        'The existing Artifact, Exceptional and same-type rules supply the other interactions. '
+        'This supports the already-modeled sum; it is not additional INT, a character ability '
+        'score, a live-game measurement or a DPS/critical-range result. '
+        'The separate Fortification and Spot recipe definitions and interactions are described below. '
+        'Equipment, priorities, modeled amounts '
+        'and exceptions are unchanged; no universal different-type stacking rule is introduced. '
+        + _link('evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json',
+                'Scoped offensive findings, conditions and remaining limits') + ' · '
+        + _link('evidence/wisdom-loadout/int-stacking-integration-2026-11-15.json',
+                'Bounded ten-pair integration and remaining limits') + ' · '
+        + _link('evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json',
+                'Original stacking-rule observations and historical type limits') + ' · '
+        + _link('evidence/wisdom-loadout/int-evidence-integration-2026-11-15.json',
+                'Earlier seven-INT definition integration') + ' · '
+        + _link('evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json',
+                'New INT and historical Spot observations') + ' · '
+        + _link('evidence/wisdom-loadout/recipe-proof-integration-2026-11-15.json',
+                'Earlier bounded recipe integration') + ' · '
+        + _link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',
+                'Original host and recipe captures') + '.</p>'
+        '<p class="note" data-fort-spot-qualification="selected-definitions">'
+        '<strong>Derived selected-gear totals at full-kit level 36:</strong> '
+        '<strong>226% Fortification</strong> = Chains 142 Enhancement + Queen 84 Insight. '
+        '<strong>+27 direct Spot</strong> = Chains 20 Competence + Greater Heroism 4 Morale '
+        '+ Good Luck 3 Luck. The existing Fortification interaction and three exact '
+        'Spot pairs support these combinations. Both full families and their source '
+        'bindings are required; missing members or evidence withhold the result. '
+        'The Wiki supplies the Chains values and crafting applicability. DDO Nexus '
+        'explicitly supplies the corresponding Legendary recipe types, including the '
+        'specific Extra-slot Spot variant. Its displayed numeric parameters are empty '
+        'and its data is marked beta; the combined result is a source-supported recipe '
+        'derivation, not an authenticated game-client observation. Queen retains its '
+        'own-item field proof; both augments retain their skill-membership and socket proofs. '
+        'These are the already-selected gear contributions, not new bonuses. Whole-character '
+        'Spot also needs ranks, total Wisdom and other applicable sources. Existing '
+        'same-type effects may overlap; Fortification is not a percentage reduction of '
+        'all incoming damage. Other Queen and augment effects retain their own limits. '
+        + _link('evidence/wisdom-loadout/chains-type-sources-2026-11-15.json',
+                'Legendary recipe types and source limitations') + ' · '
+        + _link('evidence/wisdom-loadout/chains-type-integration-2026-11-15.json',
+                'Two Chains definitions and two added Spot pairs') + ' · '
+        + _link('evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json',
+                'Queen, augment and skill-membership observations') + '.</p>')
+    paragraph += render_ability_qualification(ledger)
+    paragraph += render_doubleshot_qualification(ledger)
+    if compact:
+        return paragraph
+    rows = [
+        _cells(['Pendant · Insight INT +7', '<strong>DIRECT SOURCE-QUALIFIED INPUT</strong>',
+                'Own-item typed tooltip. The separate ten-pair rule now supplies the selected mixed-type INT interactions; this item definition alone does not do so.']),
+        _cells(['Chains · Prefix Fortification +142%', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Wiki Legendary value and host Prefix + Nexus Legendary Enhancement type on the matching recipe requiring 100 Legendary Broken Shackles. The Nexus numeric placeholder remains empty. The separately observed Enhancement/Insight interaction combines this with Queen 84 for 226 selected-gear Fortification at level 36.']),
+        _cells(['Chains · Suffix Combustion +142', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power. The separate offensive audit supports selected Flaming applicability, not a full Spell Power stack, weapon-rider scaling or DPS result.']),
+        _cells(['Chains · Bonus Quality INT +3', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input; the separate bounded rule now supplies its selected mixed-type INT edges, including Insight/Quality.']),
+        _cells(['Chains · Extra Spot +20', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Wiki Legendary Skills-except-UMD +20, explicit Spot membership and host Extra + Nexus Competence type for variant 0x7002C66B, replacing Extra with 100 Legendary Broken Collars. Two exact added pairs combine this with Heroism 4 and Luck 3 for 27 direct gear Spot at level 36. Historical Five Rings images remain background evidence; the same-name Bonus variant is excluded.']),
+    ]
+    return paragraph + _table('wisdom-crafting-evidence',
+                             'Current crafting qualification — recipe evidence is not complete stacking',
+                             ['Selected craft', 'Current status', 'Evidence boundary'], rows)
+
+
+def render_recipe(data):
+    """Render the complete physical primary recipe, model context and limits."""
+    validate(data)
+    p = data['provenance']['production']
+    model, counts = data['model'], data['counts']
+    current, raw = model['totals'], model['raw_production_totals']
+    prior, guide = model['prior_totals'], model['guide_totals']
+    out = ['<section id="wisdom-loadout-selection" aria-labelledby="wisdom-loadout-title">',
+           '<h3 id="wisdom-loadout-title">' + _h(data['selection']['label']) + '</h3>',
+           '<p><span class="tag">PRIMARY RECIPE · MODEL-ONLY COMBINATIONS</span> '
+           f'{counts["items"]} items, exactly {counts["artifacts"]} Minor Artifact and {counts["occupied"]} occupied sockets. The fully filled kit requires level {data["selection"]["full_kit_ml"]}. '
+           'Base and filled minimum levels are shown separately below; Calamitous remains filled ML 34.</p>',
+           f'<p>The actual optimizer ancestor completed {_h(p["passes"])} stages in {_h(p["seconds"])} seconds. '
+           'The selected practical recipe is an independently checked <strong>manual derivative</strong>, not another solve or the unchanged lexicographic optimum. '
+           'Equal-type craft rotations, an unused Chains Spot slot and Good Luck replacing Festive Constitution restore utility: '
+           f'raw-run CON {raw["Constitution"]} becomes CON {current["Constitution"]}; direct Spot {raw["Spot"]} becomes Spot {current["Spot"]} and direct saves rise by {current["Will Save"] - raw["Will Save"]}. '
+           'The explicit query order below still describes the actual search, not this subsequent utility choice.</p>',
+           '<p>No event or limited-time gear is selected; the user-authorized Festive ability diamonds are the only exception. '
+           'The primary uses Festive Intelligence +2 only. Shard-auction availability and prices are not guaranteed. '
+           'No filigree loadout, proc uptime, total DPS improvement, critical-range increase or global optimum is established.</p>']
+    rows = []
+    for item in data['items']:
+        crafts = [_h(c['family'] + ' / ' + c['slot'] + ': ') + _h('; '.join(map(_affix_text, c['affixes']))) for c in item['crafts']]
+        crafts += [_h(c['family'] + ': explicitly unselected') for c in item['empty_craft_slots']]
+        gems = []
+        for socket in item['sockets']:
+            fill = socket['fill']
+            label = ('Set augment: ' if fill['kind'] == 'set-augment' else '') + fill['id']
+            gems.append('<strong>' + _h(socket['color']) + ':</strong> ' + _h(label) + ' (ML' + _h(fill['ml']) + ')')
+        notes = [('Historical inventory grade, retained in the original recipe: ' + x
+                  + ' See the current crafting qualification below.')
+                 if x == 'All four selected Slave Lords craft magnitudes remain model-only in the independent source inventory.'
+                 else x for x in item['notes']]
+        note = _list([_h(x) for x in notes]) if notes else ''
+        rows.append(_cells([_h(item['slot']), _link(item['wiki_url'], item['id']) + (' <span class="tag">MINOR ARTIFACT</span>' if item['minor_artifact'] else ''),
+                            _h(f"{item['base_ml']} → {item['filled_ml']}"), _list(crafts), _list(gems) + note]))
+    out.append(_table('wisdom-recipe-table', 'Exact selected equipment, crafting and every socket', ['Slot', 'Selected item', 'Base → filled ML', 'Selected crafting', 'Exact socket recipe and prerequisites'], rows))
+    out.append('<p class="note"><strong>Construction prerequisites:</strong> Chains requires the Legendary Slaver’s Green Augment Slot upgrade '
+               '(100 Legendary Staff Splinters and 50 each Legendary Broken Shackles, Chain Links and Broken Collars). '
+               'Claws Nearly Complete is irreversible: changing an already finished Dexterity pair to Wisdom requires a new pair. '
+               'Coldlight retains Melancholic Intelligence but changes the former guide’s Dolorous Quality Intelligence to Quality Constitution. '
+               'The Celestial Sapphire ring’s Nearly Finished slot is deliberately empty. No Slaver set membership or extra ordinary socket is invented.</p>')
+    set_rows = [_cells([_h(s['name']), _h('; '.join(map(_affix_text, s['effects']))), _list([_h(x['host'] + ' — ' + x['color']) for x in s['placements']])]) for s in data['augment_sets']]
+    out.append(_table('wisdom-set-table', 'Four augment sets — three distinct hosts each', ['Set', 'Catalog effects, not certified combined totals', 'Exact three hosts'], set_rows))
+    out.append('<p>Each set uses one ordinary socket on each of three distinct hosts; at most one set augment is placed on a host. '
+               'Set augments suppress their host’s native set membership, if any; the retained selected audit found no native set to suppress. '
+               f'The {counts["sockets"]} sockets are {counts["ordinary"]} ordinary-color positions plus {counts["sun_moon"]} Sun/Moon positions. '
+               f'{counts["set_placements"]} hold set augments; the remaining {counts["ordinary_augment_placements"]} hold non-set gems.</p>')
+    change_rows = [_cells([_h(x['slot']), _h(', '.join(x['before'])), _h(', '.join(x['after']))]) for x in data['comparison']['guide_item_changes']]
+    out.append(_table('wisdom-equipment-changes', 'Four equipment replacements from the former guide kit', ['Slot', 'Former guide', 'Selected Wisdom recipe'], change_rows))
+    rows = [_cells([_h(x['stat']), _h(x['guide']), _h(x['prior']), _h(x['selected'])]) for x in data['comparison']['rows']]
+    out.append(_table('wisdom-model-comparison', 'Modeled gear contributions only — not full character scores or certified totals', ['Stat / direct contribution', 'Former guide kit', 'Prior artifact kit', 'Primary Wisdom kit'], rows))
+    out.append('<p class="note"><strong>Tradeoffs remain visible:</strong> the primary keeps the prior artifact kit’s modeled offense and direct saves, '
+               f'but its DEX contribution falls {prior["Dexterity"]} → {current["Dexterity"]} as WIS rises {prior["Wisdom"]} → {current["Wisdom"]}. '
+               f'Against the former guide, Fortification falls {guide["Fortification"]} → {current["Fortification"]} and direct Spot {guide["Spot"]} → {current["Spot"]}; '
+               'the retained three-way record includes the other utility and resistance losses. This is not a dominance claim. '
+               'Whole-character ability changes require same-type overlap reconciliation: for each type, compare max(new gear, other source) '
+               'with max(old gear, other source). A +15 Enhancement WIS gear change can be partly or fully masked by another Enhancement source. '
+               'Only the no-overlap cases yield +7 or +8 to the Wisdom modifier. DEX-linked skills and AC require the same reconciliation; AC also depends on armor’s maximum Dexterity bonus. '
+               'Unchanged direct Reflex and INT preserve intended Reflex only while Insightful Reflexes uses INT in both kits.</p>')
+    out.append(f'<p><strong>Optional, not selected:</strong> the ring’s catalog Nearly Finished Dexterity +13 choice would make the modeled gear DEX contribution {data["optional"]["ring_dexterity_13"]["gear_dexterity_if_selected"]}. '
+               'Its exact magnitude remains independently unconfirmed; it is not silently included in any primary total. '
+               'Sinew remains the guide’s separate conditional bow alternate, not a result explored by this pinned-Calamitous run.</p>')
+    out.append('<details><summary>Selected native affixes and typed model contributors</summary><p>Catalog inputs below are inventory, not source-qualified totals. '
+               'Bloodrage is conditional and does not grant Ranged Power. Ram’s Might is permanent while equipped, not a Bloodrage proc; its incremental ranged damage and overlap with other Ram’s Might sources are not certified. '
+               'Major Anger grants additional Rage uses after resting, not Action Boost uses or an always-on ability increase. The retained item tooltip supports these distinctions but lacks original observation context. '
+               'Seeker is not critical threat range. See the separate component ledger for source-qualified evidence.</p>')
+    for item in data['items']:
+        out.append('<h4>' + _h(item['id']) + '</h4>' + _list([_h(_affix_text(a) + ' — ' + a['evidence_status']) for a in item['native_affixes']]))
+    bucket_rows = [_cells([_h(x['stat']), _h(x['type']), _h(x['value']), _h('; '.join(x['sources']))]) for x in data['model']['type_buckets']]
+    out.append(_table('wisdom-type-buckets', 'Highest-of-type catalog buckets — not certified stacking', ['Stat', 'Type', 'Modeled maximum', 'Source of maximum'], bucket_rows))
+    out.append('</details>')
+    claims = _record(data['evidence']['claim_inventory'], data['evidence']['record_sha256']['claims'])
+    grades = '; '.join(f'{n} {status}' for status, n in claims['coverage']['byStatus'].items())
+    out.append('<p class="note"><strong>Evidence coverage:</strong> ' + _h(grades) + '. These are independent inventory grades, not the current ledger’s certification decisions. '
+               'Those original grades are retained unchanged; the current crafting qualification below records the later source integration separately. '
+               'The original Queen inventory retains its A-074 relay limitations; later effect-specific qualifications are recorded below. Skull’s generic CON 15 versus item-page 16 conflict yields separate modeled 32 and own-page 33 cases; '
+               'the same Skull Constitution choice appears in the compared kits. No unresolved input is promoted by passing arithmetic.</p>')
+    out.append(render_crafting_qualification())
+    out.append('<p>' + _link('tools/fixtures/wisdom-loadout/selection.json', 'Shared selection manifest') + ' · '
+               + _link(data['provenance']['production']['path'], 'Actual-run receipt and exact query') + ' · '
+               + _link(data['evidence']['derivation'], 'Manual changes and three-way audit') + ' · '
+               + _link(data['evidence']['claim_inventory'], 'Complete claim inventory') + ' · '
+               + _link(data['evidence']['sources'], 'Source review and exclusion limits') + '. '
+               'Full source hashes are retained in these records. Derived analysis copies are not new browser captures.</p></section>')
+    return '\n'.join(out)
+
+
+def render_priorities(data):
+    """Render exact original lexicographic order, not a sorted stat wishlist."""
+    validate(data)
+    from stacking_audit import load as load_ledger
+    doubleshot = _doubleshot_result(load_ledger())
+    query, model = data['query'], data['model']
+    rows = []
+    for rank, stat in enumerate(query['targets'], 1):
+        cap, floor = query['targetCaps'].get(stat), query['targetFloors'].get(stat)
+        actual = model['objective_comparable_totals'].get(stat, 0)
+        achieved = 'Present — conditional effect held' if rank <= 8 else str(actual)
+        notes = 'Presence guard; no uptime or DPS credited' if rank <= 8 else 'Catalog arithmetic; not a full-character result'
+        if stat == 'Improved Deception':
+            notes = 'Presence guard. Catalog 5 is Bluff, not proc chance, damage or five effects.'
+        elif stat == 'Bloodrage':
+            notes = 'Conditional Melee Power effect held; not a Ranged Power contribution.'
+        elif stat == 'Seeker':
+            notes = 'Critical confirmation / damage input, not critical threat range.'
+        elif stat == 'Doubleshot':
+            notes = (f'Selected gear {doubleshot["total"]} has separate bounded source support at ML36; '
+                     'the search order and modeled target remain unchanged. Not whole-character Doubleshot or DPS.')
+        elif stat == 'Constitution':
+            notes = 'Raw solve 34; practical Good Luck derivative 32. Skull source conflict remains.'
+        elif stat == 'Wisdom':
+            notes = 'Replaces the previous Dexterity target at rank 29; not the first priority.'
+        elif stat == 'Deadly':
+            notes = 'Insight type excluded from objective because of Know the Angles; no proc DPS.'
+        elif stat in {'Physical Sheltering', 'Magical Sheltering', 'Dodge'}:
+            notes = 'Raw gear contribution, before whole-character adjustments and applicable game caps.'
+        elif stat == 'Sneak Attack Damage':
+            notes = 'Flat sneak damage; distinct from the preceding sneak dice target.'
+        body = ''.join('<td>' + _h(x) + '</td>' for x in [cap if cap is not None else 'None', floor if floor is not None else 'None', achieved, notes])
+        rows.append(f'<tr data-priority-rank="{rank}" data-stat="{_h(stat)}"><th scope="row">{rank}</th><td>{_h(stat)}</td>{body}</tr>')
+    out = ['<section id="current-affix-priority" aria-labelledby="current-affix-priority-title">',
+           '<h3 id="current-affix-priority-title">Affixes in the actual loadout search order</h3>',
+           '<p>This is the completed optimizer query’s exact 32-target lexicographic order: each earlier target is settled before the next. '
+           'The first eight are named-effect presence guards, not eight damage scores. Caps and floors are <strong>search settings</strong>, not the game’s stat caps. '
+           'Achieved values below belong to the selected practical manual recipe, not a claim that this derivative remains the raw optimum.</p>',
+           _table('wisdom-priority-table', 'Actual priority sequence with search caps, floors and selected modeled contributions', ['Rank', 'Exact optimizer target', 'Search cap', 'Search floor', 'Primary achieved / presence', 'Interpretation'], rows)]
+    floors = [_cells([_h(stat), _h(value), _h(model['objective_comparable_totals'].get(stat, 0)), 'Pass in independent arithmetic']) for stat, value in query['targetFloors'].items()]
+    out.append(_table('wisdom-floor-table', 'All independent search floors, including utility effects outside the ranked list', ['Constraint', 'Minimum', 'Selected modeled value / presence', 'Result'], floors))
+    out.append('<p class="note">Improved Deception’s floor/cap 1 tests presence only; its numeric 5 is a Bluff bonus, not a proc percentage. '
+               'The search pins ten items, including Calamitous and Yeenoghu, and searches the necklace, belt and rings. '
+               'It is not an unrestricted all-gear optimum. The query’s Human and null-alignment fields are search eligibility settings, not proof that every class, race, life or alignment qualifies. '
+               'The selected light-armor kit, weapon proficiency, feat/tree prerequisites, artifact unlocks and nongear contributions still need their own applicable checks.</p>')
+    pins = [_cells([_h(slot), _h(value['variant_id'])]) for slot, value in query['slotConstraints'].items() if value['type'] == 'pin']
+    out.append('<details><summary>Fixed equipment in this search</summary>' + _table('wisdom-query-pins', 'Exact ten equipment pins in the original query', ['Slot', 'Pinned item'], pins) + '</details>')
+    out.append('<p>The shared manifest preserves the complete query, including every exclusion, target order, type exclusion, pin, cap and floor. '
+               'Insight Deadly is not added on top of Know the Angles. Gear alone does not establish final critical range, critical damage, Doubleshot effectiveness, realized imbue damage or sustained DPS.</p></section>')
+    return '\n'.join(out)
+
+
+def render_onepage_rows(data):
+    validate(data)
+    from stacking_audit import load as load_ledger, subtotal
+
+    ledger = load_ledger()
+    intelligence = subtotal(ledger, 'Intelligence')
+    _require(intelligence['complete'] and intelligence['total'] == 37
+             and len([edge for edge in intelligence['proofs']
+                      if edge[2] == 'int-selected-ten-pairs']) == 10,
+             'One-page INT claim lost its bounded source calculation')
+    wisdom, constitution, con_subset = _ability_results(ledger)
+    doubleshot = _doubleshot_result(ledger)
+    direct_spot = subtotal(ledger, 'Spot')
+    _require(direct_spot['complete'] and direct_spot['total'] == 27,
+             'One-page direct Spot claim lost its bounded source calculation')
+    targets = data['query']['targets']
+    model, counts = data['model']['totals'], data['counts']
+    return ('<tr data-loadout-summary="priority"><th scope="row">Gear affixes, in order</th><td>'
+            '<a href="#current-affix-priority">Exact 32-target search order</a>: eight named-effect presence guards, then '
+            + _h(' → '.join(targets[8:])) + '. Wisdom replaces Dexterity at rank 29; caps/floors and conditions are explicit. '
+            'Practical Spot / Good Luck refinements are a manual utility tradeoff, not another optimal solve.</td></tr>\n'
+            '<tr data-loadout-summary="kit"><th scope="row">Kit</th><td>'
+            f'<a href="#wisdom-loadout-selection">Wisdom-priority artifact recipe</a>: full kit ML {data["selection"]["full_kit_ml"]}; {counts["items"]} items; Yeenoghu’s Reign is the sole Minor Artifact; '
+            f'{counts["occupied"]}/{counts["sockets"]} sockets. Claws selects WIS 15; ring Nearly Finished is empty. '
+            f'<a href="#selected-stacking-summary">Derived selected-gear INT +{intelligence["total"]}, WIS +{wisdom["total"]} and direct Spot +{direct_spot["total"]} at level 36</a>. '
+             f'<a href="#selected-stacking-summary">Selected gear Doubleshot contributes {doubleshot["total"]} percentage points</a>, including one three-host Quickblade reward. '
+            f'Standing CON has a supported +{con_subset} subset; the full total is withheld because Skull +15/+16 remains conflicting. '
+            f'Modeled full gear CON 32/33 and DEX {model["Dexterity"]} remain separate. These are gear contributions, not character scores or DPS gains. '
+            'Optional ring DEX 13 is separate and provisional. Search policy excludes event/limited gear except permitted Festive diamonds; exact non-event procurement of Healing Amplification +63 remains unverified.</td></tr>')
+
+
+def replace_blocks(html, data):
+    """Replace exactly the three named blocks; never touch unrelated HTML."""
+    validate(data)
+    renderers = {'recipe': render_recipe, 'priorities': render_priorities, 'onepage': render_onepage_rows}
+    for kind, (start, end) in MARKERS.items():
+        _require(html.count(start) == html.count(end) == 1, 'Expected one marker pair: ' + kind)
+        left, right = html.index(start), html.index(end)
+        _require(left < right, 'Reversed markers: ' + kind)
+        html = html[:left + len(start)] + '\n' + renderers[kind](data) + '\n' + html[right:]
+    return html
