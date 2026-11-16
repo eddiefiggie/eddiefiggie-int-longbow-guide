@@ -154,6 +154,33 @@ acquisition-evidence exception without extending either to other gaps. The
 records actual checks and draft status; approval and source review do not
 themselves establish successful tests or live-game behavior.
 
+## Approved bounded Chains type integration — 15 November 2026
+
+The owner selected option 1 after the next evidence investigation: qualify
+exactly `chains-fortification` as 142 Enhancement Fortification and
+`chains-spot` as 20 Competence Spot, plus the exact Chains/Heroism and
+Chains/Luck Spot pairs, in **draft PR #47**. Regeneration and verification are
+included; merge and publication remain outside this approval.
+
+The [frozen register](../../evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
+permits a bounded Wiki/Nexus derivation. Retain the exact Legendary recipe URLs,
+Spot Extra variant `0x7002C66B`, slot/ingredient associations, observed type
+markup, absent numeric/client-version fields and source limitations. The
+approval does not turn Nexus into an official client capture or permit a
+general stat/type inference. Earlier .8 findings retain their historical
+meaning; their source records and claim grades are unchanged.
+
+The selected level-36 gear families may now derive **226% Fortification** and
+**+27 direct Spot**. Existing **+37 gear INT**, all family guards, prior rules,
+selected gear, sole Minor Artifact, 32 priorities, crafts/sockets, feats/AP and
+historical model results remain unchanged. The level-35 full-kit results remain
+incomplete. The sums improve evidence for existing contributions, not character
+gain or a new solve. Preserve both the Festive-only event exception and the
+narrow HA63 acquisition-evidence exception. The
+[receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
+records actual checks and draft status separately from authorization and source
+support; purchases, crafting and primary client testing are not part of this work.
+
 ## Issue register
 
 The following repository issues were open at the [dated checkpoint](STATUS.md). Their existence does not mean their proposed mechanics or complete builds are validated, and an open documentation issue may include corrections already released.

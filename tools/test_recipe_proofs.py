@@ -12,6 +12,7 @@ from unittest.mock import patch
 import recipe_proofs as proofs
 import stacking_audit as audit
 import wisdom_int_evidence_preservation as int_evidence
+import wisdom_chains_type_preservation as chains_type
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -92,8 +93,9 @@ class BoundedRecipeProofTests(unittest.TestCase):
         self.assertEqual(intelligence['proofs'], [])
         self.assertEqual(len(intelligence['excluded']), 7)
 
-    def test_real_production_ledger_uses_only_two_complete_recipe_proofs(self):
-        current = audit.load()
+    def test_point_eight_ledger_keeps_two_complete_recipe_proofs_through_current_engine(self):
+        # Restore only the input; audit and proofs remain actual production imports.
+        current = json.loads(chains_type.checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
         bound = [c['id'] for c in current['components'] if 'recipe_proof' in c]
         self.assertEqual(bound, list(SUPPORTED))
         self.assertTrue(audit.validate(current))

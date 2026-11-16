@@ -300,9 +300,9 @@ def render_crafting_qualification(ledger=None, *, compact=False):
              and glabrezu['id'] in subtotal(ledger, 'Intelligence')['counted'],
              'Current Glabrezu qualification lost its source gate')
     chains_ids = ('chains-fortification', 'chains-spot')
-    _require(all(components[cid]['state'] == 'unknown' and not components[cid]['source']
-                 and 'recipe_proof' not in components[cid]
-                 for cid in chains_ids), 'Unreviewed Chains qualification')
+    _require(all(components[cid]['state'] == 'verified' and not components[cid]['source']
+                 and components[cid]['recipe_proof']['contract'] == 'slave-lords-selected-types-v1'
+                 for cid in chains_ids), 'Missing bounded Legendary type qualification')
     intelligence = subtotal(ledger, 'Intelligence')
     combustion = subtotal(ledger, 'Combustion')
     int_sources = {
@@ -337,15 +337,19 @@ def render_crafting_qualification(ledger=None, *, compact=False):
              'Current recipe qualification or bounded INT interaction changed')
     fortification = subtotal(ledger, 'Fortification')
     spot = subtotal(ledger, 'Spot')
-    _require(fortification['counted'] == ['queen-fortification']
-             and fortification['excluded'] == ['chains-fortification']
-             and not fortification['complete'] and fortification['total'] is None
-             and spot['counted'] == ['heroism-spot', 'luck-spot']
-             and spot['excluded'] == ['chains-spot']
-             and spot['proofs'] == [['heroism-spot', 'luck-spot', 'spot-heroism-luck']]
-             and not spot['missing_interactions']
-             and not spot['complete'] and spot['total'] is None,
-             'Current Fortification/Spot subset or full-family boundary changed')
+    _require(fortification['counted'] == ['queen-fortification', 'chains-fortification']
+             and fortification['excluded'] == [] and fortification['missing_interactions'] == []
+             and fortification['complete'] and fortification['total'] == 226
+             and fortification['proofs'] == [
+                 ['queen-fortification', 'chains-fortification', 'fort-enh-insight-observed']]
+             and spot['counted'] == ['chains-spot', 'heroism-spot', 'luck-spot']
+             and spot['excluded'] == [] and spot['missing_interactions'] == []
+             and spot['proofs'] == [
+                 ['chains-spot', 'heroism-spot', 'spot-chains-heroism'],
+                 ['chains-spot', 'luck-spot', 'spot-chains-luck'],
+                 ['heroism-spot', 'luck-spot', 'spot-heroism-luck']]
+             and spot['complete'] and spot['total'] == 27,
+             'Current Fortification/Spot derivation or full-family boundary changed')
     paragraph = (
         '<p class="note" data-crafting-qualification="bounded-recipe-proof">'
         '<strong>Crafting evidence integrated:</strong> Pendant Insight INT +7 retains its '
@@ -367,10 +371,8 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         'The existing Artifact, Exceptional and same-type rules supply the other interactions. '
         'This supports the already-modeled sum; it is not additional INT, a character ability '
         'score, a live-game measurement or a DPS/critical-range result. '
-        'A separate genuinely observed Fortification rule supports the Enhancement/Insight '
-        'relationship only; it does not classify the selected Chains Prefix. Queen’s '
-        'component now has separate own-item field support, described below. '
-        'Chains Fortification and Spot remain excluded. Equipment, priorities, modeled amounts '
+        'The separate Fortification and Spot recipe definitions and interactions are described below. '
+        'Equipment, priorities, modeled amounts '
         'and exceptions are unchanged; no universal different-type stacking rule is introduced. '
         + _link('evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json',
                 'Scoped offensive findings, conditions and remaining limits') + ' · '
@@ -387,38 +389,41 @@ def render_crafting_qualification(ledger=None, *, compact=False):
         + _link('evidence/wisdom-loadout/crafting-browser-2026-11-15.json',
                 'Original host and recipe captures') + '.</p>'
         '<p class="note" data-fort-spot-qualification="selected-definitions">'
-        '<strong>Supported inputs at full-kit level 36:</strong> Queen contributes '
-        '<strong>84% Insight Fortification</strong>, binding its actual Fortification '
-        'label and typed description within the same item popup. Greater Heroism '
-        '<strong>+4 Morale</strong> and Good Luck <strong>+3 Luck</strong> apply to Spot '
-        'through separately sourced skill/check membership and their selected sockets. '
-        'One positive rule covers only that named pair: <strong>supported two-augment '
-        'Spot subset +7</strong>. The exact two-member Fortification and three-member '
-        'Spot families remain required; omitting an unresolved member cannot complete a result. '
-        '<strong>Both complete selected totals remain withheld.</strong> Chains’ '
-        'Fortification +142% classification and Spot +20 type remain unresolved, so '
-        'the modeled 226% and +27 are conditional. These are existing gear contributions, '
-        'not newly gained bonuses or whole-character scores. Existing Morale/Luck '
-        'overlaps can reduce the marginal benefit; 84% Fortification is not an 84% '
-        'reduction in all incoming damage. Other Queen and augment effects retain '
-        'their own evidence limits. '
+        '<strong>Derived selected-gear totals at full-kit level 36:</strong> '
+        '<strong>226% Fortification</strong> = Chains 142 Enhancement + Queen 84 Insight. '
+        '<strong>+27 direct Spot</strong> = Chains 20 Competence + Greater Heroism 4 Morale '
+        '+ Good Luck 3 Luck. The existing Fortification interaction and three exact '
+        'Spot pairs support these combinations. Both full families and their source '
+        'bindings are required; missing members or evidence withhold the result. '
+        'The Wiki supplies the Chains values and crafting applicability. DDO Nexus '
+        'explicitly supplies the corresponding Legendary recipe types, including the '
+        'specific Extra-slot Spot variant. Its displayed numeric parameters are empty '
+        'and its data is marked beta; the combined result is a source-supported recipe '
+        'derivation, not an authenticated game-client observation. Queen retains its '
+        'own-item field proof; both augments retain their skill-membership and socket proofs. '
+        'These are the already-selected gear contributions, not new bonuses. Whole-character '
+        'Spot also needs ranks, total Wisdom and other applicable sources. Existing '
+        'same-type effects may overlap; Fortification is not a percentage reduction of '
+        'all incoming damage. Other Queen and augment effects retain their own limits. '
+        + _link('evidence/wisdom-loadout/chains-type-sources-2026-11-15.json',
+                'Legendary recipe types and source limitations') + ' · '
+        + _link('evidence/wisdom-loadout/chains-type-integration-2026-11-15.json',
+                'Two Chains definitions and two added Spot pairs') + ' · '
         + _link('evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json',
-                'Separate exact source fields, revisions and observations') + ' · '
-        + _link('evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json',
-                'Bounded definitions, one Spot pair and remaining gaps') + '.</p>')
+                'Queen, augment and skill-membership observations') + '.</p>')
     if compact:
         return paragraph
     rows = [
         _cells(['Pendant · Insight INT +7', '<strong>DIRECT SOURCE-QUALIFIED INPUT</strong>',
                 'Own-item typed tooltip. The separate ten-pair rule now supplies the selected mixed-type INT interactions; this item definition alone does not do so.']),
-        _cells(['Chains · Prefix Fortification +142%', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Legendary value is explicit. Fresh standard-item/Insightful interaction evidence still lacks a supported premise classifying this selected Slavers Prefix as standard Enhancement Fortification.']),
+        _cells(['Chains · Prefix Fortification +142%', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Wiki Legendary value and host Prefix + Nexus Legendary Enhancement type on the matching recipe requiring 100 Legendary Broken Shackles. The Nexus numeric placeholder remains empty. The separately observed Enhancement/Insight interaction combines this with Queen 84 for 226 selected-gear Fortification at level 36.']),
         _cells(['Chains · Suffix Combustion +142', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
                 'Host Suffix + Legendary Equipment Spell Power recipe + sourced Combustion/Fire definition. Counts 142 gear Fire Spell Power. The separate offensive audit supports selected Flaming applicability, not a full Spell Power stack, weapon-rider scaling or DPS result.']),
         _cells(['Chains · Bonus Quality INT +3', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
                 'Host Bonus + Legendary Quality Attributes recipe + sourced Intelligence membership. Counts one input; the separate bounded rule now supplies its selected mixed-type INT edges, including Insight/Quality.']),
-        _cells(['Chains · Extra Spot +20', '<strong>RECIPE SUPPORTED · INPUT WITHHELD</strong>',
-                'Current Skills except UMD +20 and Spot membership are supported. Wiki-linked Five Rings images show +10 and +22 Competence; their pages display 19 August 2016, before the published Slave Lords release date. Image-page dates do not establish in-game capture dates. Later item normalization does not prove present-day type continuity. Neither image qualifies current Chains Spot +20.']),
+        _cells(['Chains · Extra Spot +20', '<strong>SOURCE-SUPPORTED RECIPE DERIVATION</strong>',
+                'Wiki Legendary Skills-except-UMD +20, explicit Spot membership and host Extra + Nexus Competence type for variant 0x7002C66B, replacing Extra with 100 Legendary Broken Collars. Two exact added pairs combine this with Heroism 4 and Luck 3 for 27 direct gear Spot at level 36. Historical Five Rings images remain background evidence; the same-name Bonus variant is excluded.']),
     ]
     return paragraph + _table('wisdom-crafting-evidence',
                              'Current crafting qualification — recipe evidence is not complete stacking',

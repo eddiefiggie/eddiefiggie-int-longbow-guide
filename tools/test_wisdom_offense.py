@@ -14,6 +14,7 @@ import build_stacking_audit
 import stacking_audit as audit
 import wisdom_loadout
 import wisdom_offense_preservation as preservation
+import wisdom_chains_type_preservation as chains_type
 from build_snapshot import current_build, snapshot_html
 from test_editorial_consistency import GuideText
 from test_lamordia_handling import Document, norm
@@ -260,14 +261,14 @@ class CurrentOffensiveClaimsTests(unittest.TestCase):
         cls.html = (ROOT / 'index.html').read_text()
 
     def test_actual_outputs_match_current_generators_and_new_snapshot(self):
-        self.assertEqual(current_build(self.html), '11-15-26.8')
+        self.assertEqual(current_build(self.html), '11-15-26.9')
         self.assertEqual(Path(wisdom_loadout.__file__).resolve(), ROOT / 'tools/wisdom_loadout.py')
         self.assertEqual(Path(build_stacking_audit.__file__).resolve(), ROOT / 'tools/build_stacking_audit.py')
         data = wisdom_loadout.load()
         self.assertTrue(current_render_contract(self.html, data))
         self.assertTrue(build_stacking_audit.validate_guide(self.html, audit.load()))
         self.assertEqual((ROOT / 'endgame-stacking-audit.html').read_text(), build_stacking_audit.detail(audit.load()))
-        self.assertEqual((ROOT / 'versions/11-15-26.8.html').read_text(), snapshot_html(self.html))
+        self.assertEqual((ROOT / 'versions/11-15-26.9.html').read_text(), snapshot_html(self.html))
         self.assertEqual(wisdom_loadout.validate(data)['claim_count'], 130)
         self.assertEqual(len(data['query']['targets']), 32)
 
@@ -375,11 +376,14 @@ class CurrentOffensiveClaimsTests(unittest.TestCase):
         require_clauses(historical, ('level-8 case therefore requires an outside Haste source',
                                      'selected SLA arrives at 10'))
 
-    def test_generated_combustion_language_keeps_the_separate_damage_channels(self):
-        ledger = audit.load()
-        for html in (self.html, (ROOT / 'endgame-stacking-audit.html').read_text(),
-                     wisdom_loadout.render_crafting_qualification(ledger),
-                     build_stacking_audit.summary(ledger)):
+    def test_point_eight_combustion_language_keeps_the_separate_damage_channels(self):
+        calculator = chains_type.historical_calculator()
+        recipe = chains_type.historical_recipe_renderer()
+        renderer = chains_type.historical_audit_renderer()
+        ledger = calculator.load()
+        for html in (chains_type.checkpoint_file_text('index.html'),
+                     chains_type.checkpoint_file_text('endgame-stacking-audit.html'),
+                     recipe.render_crafting_qualification(ledger), renderer.summary(ledger)):
             text = norm(Document(html).root.text())
             require_clauses(text, ('142 is a selected-gear Fire Spell Power contribution',
                                    'applicability to the selected Arcane Archer Flaming imbue while active',
@@ -387,9 +391,24 @@ class CurrentOffensiveClaimsTests(unittest.TestCase):
                                    'not weapon damage, full-character Spell Power or DPS',
                                    'does not establish scaling for Melancholic or Dolorous weapon effects',
                                    'Chains Fortification and Spot remain excluded'))
+        self.assertEqual(calculator.subtotal(ledger, 'Combustion')['total'], 142)
+        self.assertEqual(calculator.subtotal(ledger, 'Intelligence')['total'], 37)
+        self.assertEqual(calculator.subtotal(ledger, 'Doubleshot')['total'], None)
+
+    def test_current_combustion_keeps_the_unchanged_damage_channel_limits(self):
+        ledger = audit.load()
+        for html in (self.html, (ROOT / 'endgame-stacking-audit.html').read_text(),
+                     wisdom_loadout.render_crafting_qualification(ledger),
+                     build_stacking_audit.summary(ledger)):
+            require_clauses(norm(Document(html).root.text()), (
+                '142 is a selected-gear Fire Spell Power contribution',
+                'applicability to the selected Arcane Archer Flaming imbue while active',
+                'overlapping Equipment Spell Power can reduce its marginal benefit',
+                'not weapon damage, full-character Spell Power or DPS',
+                'does not establish scaling for Melancholic or Dolorous weapon effects'))
         self.assertEqual(audit.subtotal(ledger, 'Combustion')['total'], 142)
         self.assertEqual(audit.subtotal(ledger, 'Intelligence')['total'], 37)
-        self.assertEqual(audit.subtotal(ledger, 'Doubleshot')['total'], None)
+        self.assertIsNone(audit.subtotal(ledger, 'Doubleshot')['total'])
 
     def test_reaper_reasoning_preserves_relative_gain_without_changing_priorities(self):
         current_flat_damage_reasoning(self.html)

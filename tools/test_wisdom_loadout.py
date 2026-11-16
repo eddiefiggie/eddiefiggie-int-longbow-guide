@@ -17,6 +17,7 @@ import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
 import wisdom_recipe_proof_preservation as recipe_proofs
 import wisdom_offense_preservation as offense
+import wisdom_chains_type_preservation as chains_type
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 
@@ -536,16 +537,17 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         import build_stacking_audit
         self.renderer = build_stacking_audit
 
-    def test_current_ledger_retains_old_sources_and_exactly_three_scoped_rule_additions(self):
+    def test_point_eight_ledger_retains_old_sources_and_exactly_three_scoped_rule_additions(self):
         self.assertTrue(audit.validate(self.data))
+        data = chains_type.historical_calculator().load()
         old = json.loads(preservation.frozen_ledger_bytes())
-        self.assertEqual(self.data['rules'][:len(old['rules'])], old['rules'])
-        self.assertEqual([r['id'] for r in self.data['rules'][len(old['rules']):]],
+        self.assertEqual(data['rules'][:len(old['rules'])], old['rules'])
+        self.assertEqual([r['id'] for r in data['rules'][len(old['rules']):]],
                          ['int-selected-ten-pairs', 'fort-enh-insight-observed', 'spot-heroism-luck'])
         for sid, source in old['sources'].items():
             with self.subTest(source=sid):
-                self.assertEqual(self.data['sources'][sid], source)
-        self.assertEqual(self.data['selection_base_commit'], preservation.BASE_COMMIT)
+                self.assertEqual(data['sources'][sid], source)
+        self.assertEqual(data['selection_base_commit'], preservation.BASE_COMMIT)
         self.assertEqual(preservation.sha(recipe_proofs.checkpoint_file_bytes('tools/stacking_audit.py')),
                          preservation.BASE_CALCULATOR_SHA)
 
@@ -586,12 +588,14 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         self.assertNotIn('pendant-ap', rows)
         self.assertNotIn('pendant-threat', rows)
 
-    def test_current_unproven_whole_combinations_stay_withheld(self):
+    def test_point_eight_unproven_whole_combinations_stay_withheld(self):
+        calculator = chains_type.historical_calculator()
+        data = calculator.load()
         for stat in ('Ranged Power', 'Doubleshot', 'Wisdom', 'Dexterity',
                      'Spot', 'Listen', 'PRR', 'MRR', 'Dodge', 'Fortification',
                      'Constitution', 'Seeker', 'Armor-Piercing', 'Deadly', 'Sneak dice'):
             with self.subTest(stat=stat):
-                result = audit.subtotal(self.data, stat)
+                result = calculator.subtotal(data, stat)
                 self.assertIsNone(result['total'])
                 self.assertFalse(result['complete'])
                 self.assertTrue(result['excluded'] or result['missing_interactions'])
@@ -600,7 +604,7 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
                                ('Greater Marksmanship damage', 2),
                                ('Greater Marksmanship attack', 3), ('Ranged alacrity', 20)):
             with self.subTest(stat=stat):
-                result = audit.subtotal(self.data, stat)
+                result = calculator.subtotal(data, stat)
                 self.assertTrue(result['complete'])
                 self.assertEqual(result['total'], expected)
 

@@ -4,7 +4,8 @@ This is a closed interpretation of one observed item popup and two observed
 skill-check clauses, not a generic stat alias or inference engine. Independent
 pins preserve the actual source fields, observation context and selected hosts.
 Every public check rereads source/selection bytes; successful checks are not
-cached across calls. Both unresolved Chains definitions remain in their families.
+cached across calls. The original unresolved Chains profile remains supported;
+the later exact Legendary-type contract has its own complete-family validation.
 """
 from hashlib import sha256
 from html.parser import HTMLParser
@@ -295,7 +296,10 @@ def validate_component(data, component, root=ROOT):
 
 
 def family_valid(data, stat, arguments=(), root=ROOT):
-    """Require exact members, including unknown Chains, before any completeness."""
+    """Require the complete reviewed .8 or .9 family before any completeness."""
+    import chains_type_proofs as chains_types
+    if chains_types.uses_contract(data):
+        return chains_types.family_valid(data, stat, arguments, root)
     try:
         expected = FAMILIES[stat]
         rows = data['components']

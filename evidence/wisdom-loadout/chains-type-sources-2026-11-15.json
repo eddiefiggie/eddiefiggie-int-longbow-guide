@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "title": "INTiana Guide — Chains bonus-type evidence",
+  "report_date_local": "2026-11-15",
+  "user_timezone": "America/Los_Angeles",
+  "prepared_at_utc": "2026-11-16T02:25:12Z",
+  "scope": "Read-only investigation. No repository, calculator, ledger, or PR changes.",
+  "method": {
+    "surface": "Internal cloud browser",
+    "capture": "Selected page text, accessibility observations, and recipe-associated DOM title attributes. Curated from observed browser output; not a full DOM or HTTP archive.",
+    "timestamps": "Browser-runtime UTC sampled immediately before each recorded extraction.",
+    "images": "Screenshots were inspected internally and are not included as saved artifacts.",
+    "previous_packet": {
+      "path": "/workspace/scratch/f67d3d0dd89f/guide/evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json",
+      "sha256": "a9b2ef77eb3ca10dc77ab93e22a201517920a709615c0905e3e21d77a1cc3456",
+      "role": "Retained current values, host slots, Spot skill membership, and previously qualified stacking premises."
+    }
+  },
+  "findings": [
+    {
+      "component": "chains-fortification",
+      "derived_value": 142,
+      "unit": "percent",
+      "bonus_type": "Enhancement",
+      "basis": "Wiki supplies the Legendary magnitude and host applicability; Nexus explicitly types the corresponding Legendary Prefix recipe.",
+      "status": "Source-supported recipe derivation; implementation pending"
+    },
+    {
+      "component": "chains-spot",
+      "derived_value": 20,
+      "unit": "skill points",
+      "bonus_type": "Competence",
+      "basis": "Wiki supplies the Legendary magnitude, skill membership, and host applicability; Nexus explicitly types variant 0x7002C66B as the Legendary Extra recipe.",
+      "status": "Source-supported recipe derivation; implementation pending"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-shared-recipe",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "observed_at_utc": "2026-11-16T02:13:24.476Z",
+      "permalink_href": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "permalink_reopened": false,
+      "cache_notice_hours": 16,
+      "shared_host_statement_exact": "All base items may use all ingredients.",
+      "recipe_values": {
+        "fortification": {
+          "channel": "Prefix",
+          "heroic": 70,
+          "legendary": 142,
+          "unit": "percent",
+          "legendary_ingredient_quantity": 100,
+          "ingredient": "broken shackles, Legendary tier"
+        },
+        "skills_except_umd": {
+          "channel": "Extra",
+          "heroic": 10,
+          "legendary": 20,
+          "unit": "skill points",
+          "legendary_ingredient_quantity": 100,
+          "ingredient": "broken collars, Legendary tier"
+        }
+      },
+      "limits": "This recipe table supplies magnitude and applicability. Its plain Fortification and Skills links do not themselves supply the two bonus-type clauses.",
+      "attribution": "DDO wiki contributors; Creative Commons Attribution-ShareAlike 2.5."
+    },
+    {
+      "id": "compendium-heroic-corroboration",
+      "url": "https://ddocompendium.com/w/Slave_Lords_Crafting",
+      "observed_at_utc": "2026-11-16T02:18:19.237Z",
+      "permalink_href": "https://ddocompendium.com/index.php?title=Slave_Lords_Crafting&oldid=123347",
+      "permalink_reopened": false,
+      "footer_edit_date": "8 October 2021, at 10:45; timezone not stated in inspected footer",
+      "rows": [
+        {
+          "name": "Slaver's Fortification",
+          "channel": "Prefix",
+          "clause_exact": "Passive: +70% Enhancement bonus to Fortification."
+        },
+        {
+          "name": "Slaver's Spot",
+          "channel": "Extra",
+          "clause_exact": "+10 Competence bonus to Spot."
+        }
+      ],
+      "limits": "Displayed values are Heroic. This is corroboration, not independent proof that types persist across tiers. The footer edit date does not authenticate the date of a game observation.",
+      "attribution": "DDO Compendium contributors; page identifies Creative Commons Attribution-ShareAlike licensing."
+    },
+    {
+      "id": "nexus-legendary-fortification",
+      "url": "https://ddonexus.com/Item/Legendary_Slaver_Fortification",
+      "observed_at_utc": "2026-11-16T02:19:36.690Z",
+      "item_name": "Legendary Slaver Fortification",
+      "found_recipe": {
+        "quantity": 100,
+        "ingredient": "broken shackles, Legendary tier"
+      },
+      "application": {
+        "target": "Generic craftable Slave Lords base of Legendary tier",
+        "removed_slot_exact": "Legendary Slaver's Prefix Slot",
+        "added_effect_markup_exact": "<li class=\"recipe-mutation-known\" title=\"+% Enhancement bonus to the reduced chance of taking bonus damage on a critical hit.\">Fortification +%</li>"
+      },
+      "numeric_parameter_observed": null,
+      "source_version_observed": null,
+      "limits": "Number missing in the rendered effect. The type is attached to this exact Legendary recipe. No authenticated in-game capture or per-item client build was established."
+    },
+    {
+      "id": "nexus-legendary-spot-extra",
+      "url": "https://ddonexus.com/Item/Legendary_Slavers_Spot/2C66B",
+      "observed_at_utc": "2026-11-16T02:21:13.157Z",
+      "item_name": "Legendary Slaver's Spot",
+      "variant": "0x7002C66B",
+      "found_recipe": {
+        "quantity": 100,
+        "ingredient": "broken collars, Legendary tier"
+      },
+      "application": {
+        "target": "Generic craftable Slave Lords base of Legendary tier",
+        "removed_slot_exact": "Legendary Slaver's Extra Slot",
+        "added_effect_markup_exact": "<li class=\"recipe-mutation-known\" title=\"+ Competence bonus to Spot.\">Spot +</li>"
+      },
+      "variant_selection": "Two Legendary entries share this name. The selected entry uses 100 Legendary-tier broken collars and replaces the Extra slot; the other recipe uses the additional ingredients associated with the Bonus channel.",
+      "numeric_parameter_observed": null,
+      "source_version_observed": null,
+      "limits": "Number missing in the rendered effect. Preserve the exact variant and Extra-slot association. No authenticated in-game capture or per-item client build was established."
+    },
+    {
+      "id": "nexus-provenance",
+      "url": "https://ddonexus.com/About",
+      "observed_at_utc": "2026-11-16T02:22:20.282Z",
+      "beta_notice_exact": "BETA — This site is under active development. Data may be incomplete or incorrect.",
+      "assessment": "Nexus describes itself as an unaffiliated fan reference. Its About page explains Collector world/quest observations and says inventory is excluded from that payload. It does not document the origin or client version of these recipe-effect metadata records.",
+      "limits": "Do not attribute Collector's version fields to these item recipes. The cause of the missing numbers is unknown."
+    }
+  ],
+  "identity_mapping": {
+    "fortification": "Legendary tier + Fortification effect + Prefix removal + 100 Legendary-tier broken shackles match the retained Wiki Prefix recipe.",
+    "spot": "Legendary tier + Spot effect + Extra removal + 100 Legendary-tier broken collars match the retained Wiki Skills-except-UMD recipe; retained Spot membership completes the skill mapping.",
+    "host": "Retained Legendary Chains Prefix/Extra slots and the shared base-item crafting statement establish applicability."
+  },
+  "independent_review": {
+    "task": "/root/review_int_evidence",
+    "scope": "Reviewed root's observed clauses and their correspondence to retained source premises; did not independently control the browser.",
+    "conclusion": "The missing Legendary classification premises are supplied. A bounded multi-source derivation is defensible. Remaining uncertainty is source accuracy/provenance, not an unsupported Heroic-to-Legendary type assumption.",
+    "requirement": "Retain exact variant, slot, ingredients, added markup, absent numeric parameters, and source limitations."
+  },
+  "proposed_integration": {
+    "status": "Not started or applied",
+    "changes": [
+      "Admit only the two captured Nexus recipe definitions through a bounded source contract; preserve their URLs and observations without inventing Wiki-style revisions.",
+      "Qualify the two selected Chains components through the retained Wiki values and host mapping.",
+      "Retain the existing Enhancement/Insight Fortification interaction.",
+      "Add only the two reviewed Spot interactions: Chains–Heroism and Chains–Luck, using the retained affirmative stacking premise."
+    ],
+    "selected_gear_targets": {
+      "fortification_percent": {
+        "expression": "142 + 84",
+        "result": 226
+      },
+      "spot_points": {
+        "expression": "20 + 4 + 3",
+        "result": 27
+      }
+    },
+    "target_limits": "Targets apply after approved implementation and unchanged full-kit level/completeness checks. They are selected-gear subtotals, not whole-character values or damage-reduction percentages."
+  },
+  "additional_inspections": [
+    {
+      "url": "https://ddowiki.com/page/File:Legendary_Shackles.png",
+      "observed_at_utc": "2026-11-16T02:13:50.478Z",
+      "outcome": "The current displayed image shows empty crafting slots."
+    },
+    {
+      "url": "https://ddowiki.com/index.php?search=Slaver+Spot&title=Special%3ASearch&go=Go",
+      "observed_at_utc": "2026-11-16T02:14:25.732Z",
+      "outcome": "Default search returned four unrelated results; no type proof."
+    },
+    {
+      "url": "https://ddowiki.com/index.php?search=Slaver&title=Special%3ASearch&profile=images&fulltext=1",
+      "observed_at_utc": "2026-11-16T02:15:04.837Z",
+      "outcome": "Eleven multimedia results concerned enemies or crossbow images; no selected craft proof."
+    },
+    {
+      "url": "https://ddowiki.com/page/Talk:Slave_Lords_Crafting",
+      "observed_at_utc": "2026-11-16T02:15:13.684Z",
+      "outcome": "Discussion concerned other topics; no relevant type statement."
+    },
+    {
+      "url": "https://ddowiki.com/page/Talk:Item_enchantments#Spot_(Competence)",
+      "observed_at_utc": "2026-11-16T02:15:36.902Z",
+      "outcome": "Lead referred to a removed 2012 demonstration table."
+    },
+    {
+      "url": "https://ddowiki.com/page/User_talk:Cru121",
+      "observed_at_utc": "2026-11-16T02:16:33.821Z",
+      "outcome": "Relevant passages concerned Wiki categorization/template maintenance; no selected craft type statement."
+    },
+    {
+      "url": "https://ddowiki.com/index.php?search=Update+77+Release+Notes&title=Special%3ASearch&go=Go",
+      "observed_at_utc": "2026-11-16T02:17:01.729Z",
+      "outcome": "Bare 403 on search and one reload. Release-note body not inspected; no bot cause established."
+    },
+    {
+      "url": "https://ddowiki.com/page/Fortification",
+      "observed_at_utc": "2026-11-16T02:17:43.170Z",
+      "outcome": "Generic standard/Insight types rechecked; does not itself classify this craft."
+    }
+  ],
+  "browser_limits": [
+    "One Google search presented a human-verification challenge. No CAPTCHA attempt was made.",
+    "Successful Wiki observations were anonymously cached; use recorded cache information where available.",
+    "No claim that all public evidence routes were exhausted."
+  ],
+  "live_result_url": "https://ddonexus.com/Item/Legendary_Slavers_Spot/2C66B"
+}
+

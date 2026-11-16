@@ -172,7 +172,7 @@ separates this source support from actual software verification and release
 status. The seven existing stacking rules, gear, priorities, numeric/core tuples
 and original claim grades remain unchanged.
 
-### Current .6 checkpoint: bounded selected-gear INT37
+### Historical .6 checkpoint: bounded selected-gear INT37
 
 The [stacking-source packet](../../evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json)
 adds the original audit's genuinely observed positive Tip179 clause and
@@ -213,6 +213,11 @@ also does not establish local-guide rendering QA. Source-qualified item
 definitions still require the current ledger's exact provenance and positive
 interaction gates before counting.
 
+**Historical recommendation:** The .6/.7 discussion below retains the then-open
+Fortification classification and Spot type work. The .9 Chains integration
+described later in this record supersedes those gear-family validation items.
+The complete offensive/DPS and critical-profile questions remain open.
+
 The subsequent [scoped offensive audit](../../evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json)
 supports the selected Flaming imbue's Fire Spell Power applicability and the
 Emerald's conditional named-source die contribution. Current prose distinguishes
@@ -236,7 +241,7 @@ remain unchanged. Current generated sections must pass fresh semantic tests;
 reversible predecessor tests preserve the prior records rather than certifying
 the new selection. Publication requires its own exact-head checks and review.
 
-## Current bounded Fortification/Spot evidence — build 11-15-26.8
+## Historical .8 checkpoint — bounded Fortification/Spot evidence
 
 The [fresh 16-observation register](../../evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
 narrows three of the preceding evidence gaps. Queen's own-item popup supports
@@ -275,3 +280,36 @@ not a new optimizer run or additional character gain. The next unresolved
 gear-evidence work is current selected-craft type support for both Chains rows
 and the remaining Spot pair proofs, alongside the other previously retained
 mechanics and acquisition gaps.
+
+## Current Chains evidence integration — build 11-15-26.9
+
+The [Chains type register](../../evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
+closes the two selected-craft classification gaps recorded above. Retained Wiki
+Legendary values, shared host applicability and Spot membership combine with
+Nexus's exact Legendary Prefix Enhancement and Extra Competence definitions.
+The Spot proof uses variant `0x7002C66B`, not the other same-named Bonus recipe.
+Nexus's numeric fields are absent; the values are separate Wiki premises.
+Its beta status and unestablished recipe-metadata origin/client version remain
+part of the proof's limits. This is a bounded source derivation, not an
+authenticated in-game item observation.
+
+| Selected family at level 36 | Current evidence-gated sum |
+| --- | --- |
+| Fortification | Chains 142 Enhancement + Queen 84 Insight = 226% |
+| Direct Spot | Chains 20 Competence + Heroism 4 Morale + Luck 3 Luck = +27 |
+| Intelligence | Existing +37 selected-gear derivation, unchanged |
+
+Only the two Chains/Heroism and Chains/Luck Spot interactions are added. The
+existing Fortification and Heroism/Luck premises and exact family guards remain.
+The complete kit still requires level 36; its level-35 results are incomplete.
+These sums describe the same gear contributions and do not establish a
+whole-character skill score, trap success, damage reduction or additional gain.
+
+The Wisdom selection, Yeenoghu as the sole Minor Artifact, all 32 priorities,
+crafts/sockets, feats/AP and historical model results are unchanged. Optional
+ring DEX remains unselected; Festive-only and HA63 exceptions retain their exact
+limits. Earlier captures, original claim grades, other Queen effects, Skull CON
+and the remaining mechanics/acquisition gaps are not regraded by this change.
+See the [integration receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
+for actual verification and draft status; no new solve, crafting, purchase,
+merge or publication is included.

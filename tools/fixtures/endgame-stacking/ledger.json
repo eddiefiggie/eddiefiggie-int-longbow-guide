@@ -3184,6 +3184,82 @@
       ],
       "observed": "2026-11-16T01:15:14.309Z",
       "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "chains-types-shared-host-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        0
+      ],
+      "pointer": [
+        "sources",
+        0,
+        "shared_host_statement_exact"
+      ],
+      "quote": "All base items may use all ingredients.",
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision_pointer": [
+        "permalink_href"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:13:24.476Z",
+      "freshness_limit": "This recipe table supplies magnitude and applicability. Its plain Fortification and Skills links do not themselves supply the two bonus-type clauses. Anonymous Wiki cache up to 16 hours old. Displayed permanent link was not reopened. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "chains-types-fortification-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        2
+      ],
+      "pointer": [
+        "sources",
+        2,
+        "application",
+        "added_effect_markup_exact"
+      ],
+      "quote": "<li class=\"recipe-mutation-known\" title=\"+% Enhancement bonus to the reduced chance of taking bonus damage on a critical hit.\">Fortification +%</li>",
+      "url_key": "url",
+      "url": "https://ddonexus.com/Item/Legendary_Slaver_Fortification",
+      "revision_pointer": null,
+      "revision": null,
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:19:36.690Z",
+      "freshness_limit": "Number missing in the rendered effect. The type is attached to this exact Legendary recipe. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "chains-types-spot-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        3
+      ],
+      "pointer": [
+        "sources",
+        3,
+        "application",
+        "added_effect_markup_exact"
+      ],
+      "quote": "<li class=\"recipe-mutation-known\" title=\"+ Competence bonus to Spot.\">Spot +</li>",
+      "url_key": "url",
+      "url": "https://ddonexus.com/Item/Legendary_Slavers_Spot/2C66B",
+      "revision_pointer": null,
+      "revision": null,
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:21:13.157Z",
+      "freshness_limit": "Number missing in the rendered effect. Preserve the exact variant and Extra-slot association. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
     }
   },
   "rules": [
@@ -3361,6 +3437,46 @@
       "component_pairs": [
         [
           "heroism-spot",
+          "luck-spot"
+        ]
+      ]
+    },
+    {
+      "id": "spot-chains-heroism",
+      "source": "fort-spot-tip179-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Competence",
+        "Morale"
+      ],
+      "stats": [
+        "Spot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "chains-spot",
+          "heroism-spot"
+        ]
+      ]
+    },
+    {
+      "id": "spot-chains-luck",
+      "source": "fort-spot-tip179-20261115",
+      "quote": "Different types of bonuses stack",
+      "kind": "selected_pairs",
+      "types": [
+        "Competence",
+        "Luck"
+      ],
+      "stats": [
+        "Spot"
+      ],
+      "channel": "gear",
+      "component_pairs": [
+        [
+          "chains-spot",
           "luck-spot"
         ]
       ]
@@ -4371,7 +4487,7 @@
       "type_evidence": "",
       "state": "verified",
       "requires": [],
-      "note": "Source-supported same-item field association: the own Queen popup binds its Fortification +84% label to the +84% Insight description. The exact fields remain separate; no combined tooltip is invented. This qualifies only the selected Queen Fortification contribution in the full level-36 kit. Chains remains excluded, so modeled Fortification 226 is not a complete supported total. Other Queen effects and the historical relay retain their original limits.",
+      "note": "Source-supported same-item field association: the own Queen popup binds its Fortification +84% label to the +84% Insight description. The exact fields remain separate; no combined tooltip is invented. This qualifies only the selected Queen Fortification contribution in the full level-36 kit. The separately supported Chains 142 Enhancement recipe and observed interaction now complete 226 selected-gear Fortification at level 36. Other Queen effects and the historical relay retain their original limits.",
       "channel": "gear",
       "kit_min_level": 36,
       "definition_proof": {
@@ -4571,11 +4687,20 @@
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "The retained Legendary Prefix recipe explicitly lists +142% Fortification. The general rule assigns Enhancement to standard Fortification items, but no reviewed premise establishes that this selected Slavers Prefix belongs to that class. The bounded recipe proof therefore remains incomplete and this input stays unknown/excluded. No Queen-plus-Chains total is certified; the former Battlerager Enhancement 162/Insight 81/Quality 40 contributions remain absent.",
+      "note": "Source-supported recipe derivation: the pinned Wiki supplies Legendary Prefix Fortification 142 and Chains host/slot applicability; Nexus explicitly supplies Enhancement on the corresponding Legendary recipe with 100 Legendary Broken Shackles and Prefix-slot removal. Nexus displays Fortification +% with the number absent; no combined numeric tooltip, client version or game capture is invented. The existing observed Enhancement/Insight rule supports 226 selected-gear Fortification at the full-kit level 36 with Queen 84. This is not universal damage reduction; other character sources and enemy bypass remain separate.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "recipe_proof": {
+        "contract": "slave-lords-selected-types-v1",
+        "sources": {
+          "host": "chains-host-recipe-20261115",
+          "recipe": "chains-legendary-recipe-20261115",
+          "shared_host": "chains-types-shared-host-20261115",
+          "type": "chains-types-fortification-20261115"
+        }
+      }
     },
     {
       "id": "chains-combustion",
@@ -4632,11 +4757,22 @@
       "source": "",
       "value_pattern": "",
       "type_evidence": "",
-      "state": "unknown",
+      "state": "verified",
       "requires": [],
-      "note": "The current Legendary Extra table lists Skills (except UMD) +20, and the Skill page explicitly includes Spot. A Wiki-linked historical Legendary Five Rings image displays Spot +22 Competence; its page date is August 19, 2016, not a current +20 Chains tooltip. Present-day type continuity remains inferred, so this component stays unknown/excluded. The Spot +22 diamond remains unselected; direct and Wisdom-derived Spot totals remain unverified.",
+      "note": "Source-supported recipe derivation: the pinned Wiki supplies Legendary Extra Skills-except-UMD +20, explicit Spot membership and Chains host/slot applicability. Nexus variant 0x7002C66B uses 100 Legendary Broken Collars, removes the Extra slot and describes Competence. Its Spot + numeric placeholder remains empty. Two separately bounded Chains–Heroism and Chains–Luck interactions complete 27 direct selected-gear Spot at level 36; this is not whole-character Spot, a Wisdom modifier or a trap-success guarantee. The same-name Bonus variant is not admitted; data-version and source-accuracy limits remain.",
       "channel": "gear",
-      "kit_min_level": 36
+      "kit_min_level": 36,
+      "recipe_proof": {
+        "contract": "slave-lords-selected-types-v1",
+        "sources": {
+          "host": "chains-host-recipe-20261115",
+          "recipe": "chains-legendary-recipe-20261115",
+          "shared_host": "chains-types-shared-host-20261115",
+          "type": "chains-types-spot-20261115",
+          "skill": "fort-spot-skill-20261115",
+          "spot": "fort-spot-spot-20261115"
+        }
+      }
     },
     {
       "id": "boots-quality-con",
@@ -4904,7 +5040,7 @@
       "type_evidence": "",
       "state": "verified",
       "requires": [],
-      "note": "Source-supported category derivation: the own augment gives +4 Morale to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Glabrezu Green socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level36. Only this Spot component qualifies. The exact Heroism/Luck pair supports a +7 subset, not a full selected or character Spot total, additional gain over overlapping Morale/Luck buffs, or proof of the full Greater Heroism spell.",
+      "note": "Source-supported category derivation: the own augment gives +4 Morale to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Glabrezu Green socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level 36. Only this Spot component qualifies. The exact Heroism/Luck pair still supports the +7 subset; the separately qualified Chains 20 and two additional named pairs complete 27 direct selected-gear Spot at level 36. This is not a character Spot total, additional gain over overlapping Morale/Luck buffs, or proof of the full Greater Heroism spell.",
       "channel": "gear",
       "kit_min_level": 36,
       "definition_proof": {
@@ -4930,7 +5066,7 @@
       "type_evidence": "",
       "state": "verified",
       "requires": [],
-      "note": "Source-supported category derivation: the own augment gives +3 Luck to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Yeenoghu Blue socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level36. Only this Spot component qualifies. Chains remains excluded; the exact Heroism/Luck pair supports a +7 subset while modeled direct Spot27 remains incomplete. Existing same-type Luck overlaps still apply.",
+      "note": "Source-supported category derivation: the own augment gives +3 Luck to Skill Checks; independent Skill/Spot records establish Spot membership and checks. Selected Yeenoghu Blue socket, Blue augment compatibility and base ML35/augment ML28 are bound separately; the full-kit gate remains level 36. Only this Spot component qualifies. The exact Heroism/Luck pair still supports a +7 subset; separately qualified Chains 20 and two additional named pairs complete 27 direct selected-gear Spot at level 36. Existing same-type Luck overlaps still apply.",
       "channel": "gear",
       "kit_min_level": 36,
       "definition_proof": {
@@ -5120,7 +5256,7 @@
       "id": "provenance-gaps",
       "state": "unknown",
       "claim": "Retained definitions with incomplete capture provenance",
-      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification. Build 11-15-26.8 separately qualifies Queen Fortification and the two selected Spot augment components from a new register; none of the older source dictionaries listed here is repaired. Chains Fortification and Spot remain excluded.",
+      "detail": "The sources below lack an exact revision or genuine source-bound observation context. Their retained wording is visible for follow-up but cannot certify a component, proc definition, interaction or total. Filenames, file times and later receipt-creation dates are not source observation evidence. Fresh selected receipts and two recovered original observation intervals qualify only their actual quoted contexts; they do not refresh the other retained pages. The seven newly qualified INT definitions use separate 15 November observations in int-evidence-sources-2026-11-15.json. The original sources listed here remain unchanged historical/background evidence or unresolved support for other effects; their old missing metadata has not been repaired. Build 11-15-26.6 adds a separate genuinely observed Fortification interaction source; the old fortification-rule record stays unobserved, and neither source supplies the missing Chains or Queen component qualification. Build 11-15-26.8 separately qualifies Queen Fortification and the two selected Spot augment components from a new register; none of the older source dictionaries listed here is repaired. Build 11-15-26.9 separately admits the two exact Legendary Nexus recipe-type observations through a closed source contract and combines them with pinned Wiki values and applicability. The Nexus numeric parameters and client versions remain absent; no Wiki-style revision or missing legacy metadata is fabricated.",
       "sources": [
         "arcane-archer",
         "armor",
@@ -5560,6 +5696,9 @@
     "fort-spot-pendant-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
     "fort-spot-pendant-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
     "fort-spot-artifact-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
-    "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support"
+    "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "chains-types-shared-host-20261115": "bounded recipe applicability: explicit shared base-item crafting statement",
+    "chains-types-fortification-20261115": "bounded Legendary recipe type only: exact Prefix Fortification; numeric parameter and client version absent",
+    "chains-types-spot-20261115": "bounded Legendary recipe type only: exact Extra Spot variant 0x7002C66B; numeric parameter and client version absent"
   }
 }

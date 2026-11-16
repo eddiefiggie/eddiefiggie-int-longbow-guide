@@ -1,0 +1,4892 @@
+{
+  "schema": "wisdom-chains-type-preserved-results-v1",
+  "baseline_commit": "30ce02c4e823ae92a1cd2dde4db99fa60ad825d9",
+  "baseline_tree": "21b6dcfe104cf357877e8e5c8a4335d9547f99c7",
+  "baseline_build": "11-15-26.8",
+  "scope": "Complete independently captured .8 bow inputs, layers, result tuples and normalized scores; all 152 full .8 calculator results over 38 stat/channel families at levels 35/36 and inactive/force states. Captured only from the immutable approved baseline, before the .9 restoration scope is generated.",
+  "bow_model_cases": [
+    {
+      "level": 8,
+      "name": "Silver Longbow (base 19-20)",
+      "input": [
+        1,
+        "1d10",
+        3,
+        "base19",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        2,
+        3,
+        0,
+        0
+      ],
+      "flat": 8,
+      "doubleshot_pool": 0.12,
+      "result": [
+        24.024,
+        0.15,
+        21.45
+      ],
+      "normalized_percent": 80.03731343283582
+    },
+    {
+      "level": 8,
+      "name": "Cheap Shot L5 (Keen, DS 3%)",
+      "input": [
+        1,
+        "1d8",
+        2,
+        "keen",
+        0,
+        0,
+        0,
+        0,
+        0.03
+      ],
+      "layers": [
+        2,
+        3,
+        0,
+        0
+      ],
+      "flat": 8,
+      "doubleshot_pool": 0.12,
+      "result": [
+        21.677500000000006,
+        0.15,
+        18.85
+      ],
+      "normalized_percent": 72.21981609808103
+    },
+    {
+      "level": 8,
+      "name": "Sapphire Sting (native 19-20, RA 10%)",
+      "input": [
+        1,
+        "1d8",
+        3,
+        "native19_unverified_ic",
+        0,
+        0,
+        0,
+        0.1,
+        0
+      ],
+      "layers": [
+        2,
+        3,
+        0,
+        0
+      ],
+      "flat": 8,
+      "doubleshot_pool": 0.12,
+      "result": [
+        22.568,
+        0.15,
+        20.15
+      ],
+      "normalized_percent": 75.1865671641791
+    },
+    {
+      "level": 8,
+      "name": "Calamitous Longbow + Melancholic 2d6",
+      "input": [
+        1,
+        "1d8",
+        4,
+        "none",
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        2,
+        3,
+        0,
+        0
+      ],
+      "flat": 8,
+      "doubleshot_pool": 0.12,
+      "result": [
+        30.016000000000005,
+        0.1,
+        26.8
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 12,
+      "name": "Thornlord (Piercing 3, DS 2%)",
+      "input": [
+        1,
+        "1d8+2",
+        5,
+        "none",
+        0,
+        10.5,
+        0,
+        0,
+        0.02
+      ],
+      "layers": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "flat": 12,
+      "doubleshot_pool": 0.17,
+      "result": [
+        48.84949999999999,
+        0.15,
+        41.05
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 12,
+      "name": "Silver Longbow (base 19-20)",
+      "input": [
+        1,
+        "1d10",
+        3,
+        "base19",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "flat": 12,
+      "doubleshot_pool": 0.17,
+      "result": [
+        33.579,
+        0.2,
+        28.7
+      ],
+      "normalized_percent": 68.73970050870533
+    },
+    {
+      "level": 12,
+      "name": "Duergarcraft Longbow (L11)",
+      "input": [
+        1.5,
+        "1d8",
+        5,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "flat": 12,
+      "doubleshot_pool": 0.17,
+      "result": [
+        36.12375,
+        0.15,
+        30.875
+      ],
+      "normalized_percent": 73.94906805596784
+    },
+    {
+      "level": 12,
+      "name": "Alchemical Longbow (L12)",
+      "input": [
+        3,
+        "1d8",
+        5,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "flat": 12,
+      "doubleshot_pool": 0.17,
+      "result": [
+        46.390499999999996,
+        0.15,
+        39.65
+      ],
+      "normalized_percent": 94.96617160871658
+    },
+    {
+      "level": 15,
+      "name": "Alchemical Longbow",
+      "input": [
+        3,
+        "1d8",
+        5,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "flat": 15,
+      "doubleshot_pool": 0.22,
+      "result": [
+        65.392,
+        0.2,
+        53.6
+      ],
+      "normalized_percent": 99.9068033550792
+    },
+    {
+      "level": 15,
+      "name": "Bow of Sinew (base 19-20, Elasticity)",
+      "input": [
+        2,
+        "1d8",
+        5,
+        "base19",
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "flat": 15,
+      "doubleshot_pool": 0.22,
+      "result": [
+        65.453,
+        0.25,
+        53.65
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 15,
+      "name": "Twisted Willow (Keen, Elasticity)",
+      "input": [
+        2,
+        "1d8",
+        5,
+        "keen",
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "flat": 15,
+      "doubleshot_pool": 0.22,
+      "result": [
+        60.145999999999994,
+        0.2,
+        49.3
+      ],
+      "normalized_percent": 91.89189189189187
+    },
+    {
+      "level": 18,
+      "name": "Alchemical Longbow",
+      "input": [
+        3,
+        "1d8",
+        5,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "flat": 18,
+      "doubleshot_pool": 0.27,
+      "result": [
+        74.16799999999999,
+        0.2,
+        58.4
+      ],
+      "normalized_percent": 98.64864864864862
+    },
+    {
+      "level": 18,
+      "name": "Shining Reliquary Longbow",
+      "input": [
+        2.6,
+        "1d8",
+        5,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "flat": 18,
+      "doubleshot_pool": 0.27,
+      "result": [
+        70.51039999999999,
+        0.2,
+        55.519999999999996
+      ],
+      "normalized_percent": 93.78378378378376
+    },
+    {
+      "level": 18,
+      "name": "Bow of Sinew (base 19-20, Elasticity)",
+      "input": [
+        2,
+        "1d8",
+        5,
+        "base19",
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "flat": 18,
+      "doubleshot_pool": 0.27,
+      "result": [
+        75.18400000000001,
+        0.25,
+        59.2
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 22,
+      "name": "Epic Thornlord (base 19-20, Piercing 4, DS 3%)",
+      "input": [
+        3,
+        "1d8+2",
+        6,
+        "base19",
+        0,
+        14,
+        0,
+        0,
+        0.03
+      ],
+      "layers": [
+        5,
+        5,
+        0,
+        1
+      ],
+      "flat": 28,
+      "doubleshot_pool": 0.45,
+      "result": [
+        194.91599999999997,
+        0.3,
+        131.7
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 22,
+      "name": "Thunder-Forged Alloy Longbow (L22)",
+      "input": [
+        4.6,
+        "1d8",
+        9,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        5,
+        0,
+        1
+      ],
+      "flat": 28,
+      "doubleshot_pool": 0.45,
+      "result": [
+        167.33,
+        0.25,
+        115.4
+      ],
+      "normalized_percent": 85.84723675839851
+    },
+    {
+      "level": 22,
+      "name": "Alchemical Longbow",
+      "input": [
+        3,
+        "1d8",
+        5,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        5,
+        0,
+        1
+      ],
+      "flat": 28,
+      "doubleshot_pool": 0.45,
+      "result": [
+        134.85,
+        0.25,
+        93.0
+      ],
+      "normalized_percent": 69.18364834082375
+    },
+    {
+      "level": 25,
+      "name": "Pinion (L23, base 19-20, RA 20%, Shrieking 2d6)",
+      "input": [
+        3.6,
+        "2d6",
+        7,
+        "base19",
+        0,
+        7,
+        0,
+        0.2,
+        0
+      ],
+      "layers": [
+        5,
+        5,
+        1,
+        1
+      ],
+      "flat": 35,
+      "doubleshot_pool": 0.6,
+      "result": [
+        269.7349565217391,
+        0.3,
+        161.56
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 25,
+      "name": "Thunder-Forged Alloy Longbow",
+      "input": [
+        4.6,
+        "1d8",
+        9,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        5,
+        1,
+        1
+      ],
+      "flat": 35,
+      "doubleshot_pool": 0.6,
+      "result": [
+        217.39200000000005,
+        0.25,
+        135.87000000000003
+      ],
+      "normalized_percent": 80.59467071057196
+    },
+    {
+      "level": 25,
+      "name": "Epic Thornlord (base 19-20, Piercing 4, DS 3%)",
+      "input": [
+        3,
+        "1d8+2",
+        6,
+        "base19",
+        0,
+        14,
+        0,
+        0,
+        0.03
+      ],
+      "layers": [
+        5,
+        5,
+        1,
+        1
+      ],
+      "flat": 35,
+      "doubleshot_pool": 0.6,
+      "result": [
+        249.63450000000003,
+        0.3,
+        153.15
+      ],
+      "normalized_percent": 92.54807134346376
+    },
+    {
+      "level": 29,
+      "name": "Aerania (Keen, RA 20%, Elasticity)",
+      "input": [
+        4.8,
+        "1d8+3",
+        15,
+        "keen",
+        1,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        1,
+        1
+      ],
+      "flat": 42,
+      "doubleshot_pool": 0.75,
+      "result": [
+        416.0739130434782,
+        0.25,
+        227.85
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 29,
+      "name": "Chaosbow (L28, RA 20%, Elasticity)",
+      "input": [
+        4.6,
+        "1d8+3",
+        15,
+        "none",
+        1,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        1,
+        1
+      ],
+      "flat": 42,
+      "doubleshot_pool": 0.75,
+      "result": [
+        409.36304347826086,
+        0.25,
+        224.175
+      ],
+      "normalized_percent": 98.38709677419355
+    },
+    {
+      "level": 29,
+      "name": "Pinion (base 19-20, RA 20%, Shrieking)",
+      "input": [
+        3.6,
+        "2d6",
+        7,
+        "base19",
+        0,
+        7,
+        0,
+        0.2,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        1,
+        1
+      ],
+      "flat": 42,
+      "doubleshot_pool": 0.75,
+      "result": [
+        365.07130434782607,
+        0.3,
+        199.92000000000002
+      ],
+      "normalized_percent": 87.74193548387098
+    },
+    {
+      "level": 29,
+      "name": "Thunder-Forged Alloy Longbow",
+      "input": [
+        4.6,
+        "1d8",
+        9,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        1,
+        1
+      ],
+      "flat": 42,
+      "doubleshot_pool": 0.75,
+      "result": [
+        294.86625000000004,
+        0.25,
+        168.49500000000003
+      ],
+      "normalized_percent": 70.868718455124
+    },
+    {
+      "level": 31,
+      "name": "Eon (Keen, RA 20%)",
+      "input": [
+        5.2,
+        "1d8+3",
+        15,
+        "keen",
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 45,
+      "doubleshot_pool": 0.85,
+      "result": [
+        468.22695652173917,
+        0.25,
+        242.55
+      ],
+      "normalized_percent": 85.78059724586105
+    },
+    {
+      "level": 31,
+      "name": "Legendary Thornlord (L30, Piercing 6, DS 4%)",
+      "input": [
+        5,
+        "1d8+2",
+        15,
+        "none",
+        0,
+        21,
+        0,
+        0,
+        0.04
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 45,
+      "doubleshot_pool": 0.85,
+      "result": [
+        468.01125,
+        0.25,
+        247.625
+      ],
+      "normalized_percent": 85.74107915744925
+    },
+    {
+      "level": 31,
+      "name": "Attuned Bone Longbow + Meltscale 15d6",
+      "input": [
+        5.2,
+        "1d8+3",
+        15,
+        "none",
+        0,
+        52.5,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 45,
+      "doubleshot_pool": 0.85,
+      "result": [
+        545.8425000000001,
+        0.25,
+        295.05
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 31,
+      "name": "Dinosaur Bone Longbow + Meltscale 15d6",
+      "input": [
+        5.2,
+        "1d8+2",
+        15,
+        "none",
+        0,
+        52.5,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 45,
+      "doubleshot_pool": 0.85,
+      "result": [
+        522.2735000000001,
+        0.25,
+        282.31000000000006
+      ],
+      "normalized_percent": 95.68208778173192
+    },
+    {
+      "level": 31,
+      "name": "Aerania (Keen, RA 20%, Elasticity)",
+      "input": [
+        4.8,
+        "1d8+3",
+        15,
+        "keen",
+        1,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 45,
+      "doubleshot_pool": 0.85,
+      "result": [
+        472.57043478260874,
+        0.25,
+        244.8
+      ],
+      "normalized_percent": 86.57633562476515
+    },
+    {
+      "level": 35,
+      "name": "Aeon, the Blazing Reign (L33, RA 20%, Elasticity)",
+      "input": [
+        5.6,
+        "1d8+3",
+        15,
+        "none",
+        1,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        622.8563478260869,
+        0.25,
+        285.6
+      ],
+      "normalized_percent": 84.2800241161529
+    },
+    {
+      "level": 35,
+      "name": "Legendary Cataclysmic + Woeful Shadow + Melancholic 16d6",
+      "input": [
+        5.8,
+        "1d8+3",
+        15,
+        "none",
+        0,
+        56,
+        0,
+        0.2,
+        0.03
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        739.0319999999998,
+        0.25,
+        334.075
+      ],
+      "normalized_percent": 100.0
+    },
+    {
+      "level": 35,
+      "name": "Legendary Cataclysmic + Woeful Shadow (no Melancholic)",
+      "input": [
+        5.8,
+        "1d8+3",
+        15,
+        "none",
+        0,
+        0,
+        0,
+        0.2,
+        0.03
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        615.150260869565,
+        0.25,
+        278.075
+      ],
+      "normalized_percent": 83.23729701414354
+    },
+    {
+      "level": 35,
+      "name": "Legendary Demon's Arc (L35, Elasticity, Revel in Blood 16d6 on crit)",
+      "input": [
+        6,
+        "1d8+3",
+        16,
+        "none",
+        1,
+        0,
+        56,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        647.482,
+        0.25,
+        309.8
+      ],
+      "normalized_percent": 87.6121737624352
+    },
+    {
+      "level": 35,
+      "name": "The Faceless Lord's Reach (L35, Elasticity, Revel in Blood)",
+      "input": [
+        6,
+        "1d8+3",
+        16,
+        "none",
+        1,
+        0,
+        56,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        647.482,
+        0.25,
+        309.8
+      ],
+      "normalized_percent": 87.6121737624352
+    },
+    {
+      "level": 35,
+      "name": "Legendary Demogorgon's Sinew (L35, Elasticity)",
+      "input": [
+        6,
+        "1d8+3",
+        16,
+        "none",
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        618.222,
+        0.25,
+        295.8
+      ],
+      "normalized_percent": 83.65294060338391
+    },
+    {
+      "level": 35,
+      "name": "Legendary Duergarcraft (L35, Piercing 7, Stabbing 16 on crit)",
+      "input": [
+        6,
+        "1d8+2",
+        16,
+        "none",
+        0,
+        24.5,
+        56,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        643.7199999999999,
+        0.25,
+        308.0
+      ],
+      "normalized_percent": 87.1031294991286
+    },
+    {
+      "level": 35,
+      "name": "Legendary Oozing Hunger (L35, Acidic 7)",
+      "input": [
+        6,
+        "1d8+3",
+        16,
+        "none",
+        0,
+        24.5,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        645.1829999999999,
+        0.25,
+        308.7
+      ],
+      "normalized_percent": 87.30109115708116
+    },
+    {
+      "level": 35,
+      "name": "Longbow of the Undying Age (L33)",
+      "input": [
+        6.1,
+        "1d8+3",
+        15,
+        "none",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        592.697875,
+        0.25,
+        283.5875
+      ],
+      "normalized_percent": 80.1992166780329
+    },
+    {
+      "level": 35,
+      "name": "Legendary Ship-Siege Bow (L36, Keen, Fiery 7)",
+      "input": [
+        6.2,
+        "1d8+2",
+        15,
+        "keen",
+        0,
+        24.5,
+        0,
+        0,
+        0
+      ],
+      "layers": [
+        5,
+        6,
+        2,
+        1
+      ],
+      "flat": 55,
+      "doubleshot_pool": 1.09,
+      "result": [
+        615.99615,
+        0.25,
+        294.735
+      ],
+      "normalized_percent": 83.3517560809275
+    }
+  ],
+  "ledger_cases": [
+    {
+      "level": 35,
+      "stat": "Accuracy",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Accuracy",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-accuracy",
+          "heroism-accuracy",
+          "glabrezu-quality-accuracy"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Accuracy",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Accuracy",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-accuracy",
+          "heroism-accuracy",
+          "glabrezu-quality-accuracy"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Armor-Piercing",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Armor-Piercing",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-ap",
+          "claws-ap",
+          "skull-ap",
+          "goggles-ap",
+          "solar-ap"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Armor-Piercing",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Armor-Piercing",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-ap",
+          "claws-ap",
+          "skull-ap",
+          "goggles-ap",
+          "solar-ap"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Charisma",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Charisma",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-charisma",
+          "globe-charisma"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Charisma",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Charisma",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-charisma",
+          "globe-charisma"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Combustion",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Combustion",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "chains-combustion"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Combustion",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Combustion",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "chains-combustion"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Constitution",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Constitution",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "globe-constitution",
+          "skull-con",
+          "queen-insight-con",
+          "boots-quality-con",
+          "solar-con",
+          "celestial-profane-constitution"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Constitution",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Constitution",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "globe-constitution",
+          "skull-con",
+          "queen-insight-con",
+          "boots-quality-con",
+          "solar-con",
+          "celestial-profane-constitution"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Deadly",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Deadly",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-deadly",
+          "yeenoghu-quality-deadly",
+          "lunar-deadly"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Deadly",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Deadly",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-deadly",
+          "yeenoghu-quality-deadly",
+          "lunar-deadly"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dexterity",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Dexterity",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "ring-quality-dex",
+          "celestial-profane-dexterity",
+          "globe-dexterity"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dexterity",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dexterity",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "ring-quality-dex",
+          "celestial-profane-dexterity",
+          "globe-dexterity"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dodge",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Dodge",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "dodge-gem",
+          "celestial-dodge"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dodge",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dodge",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "dodge-gem",
+          "celestial-dodge"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dodge bypass",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "cut-to-soul-bypass"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dodge bypass",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "cut-to-soul-bypass"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dodge bypass",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "sight-beyond-sight"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Dodge bypass",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "sight-beyond-sight"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Doubleshot",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "manyshot-ds",
+          "dark-imbuement-ds"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Doubleshot",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "manyshot-ds",
+          "dark-imbuement-ds"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Doubleshot",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "goggles-ds",
+          "ring-ds",
+          "boots-ds",
+          "armor-ds",
+          "quickblade-ds"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Doubleshot",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "goggles-ds",
+          "ring-ds",
+          "boots-ds",
+          "armor-ds",
+          "quickblade-ds"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Fortification",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Fortification",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "queen-fortification",
+          "chains-fortification"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Fortification",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Fortification",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "queen-fortification",
+          "chains-fortification"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Fortitude",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Fortitude",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-fortitude",
+          "heroism-fortitude",
+          "luck-fortitude",
+          "compass-fortitude",
+          "queen-fortitude"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Fortitude",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Fortitude",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-fortitude",
+          "heroism-fortitude",
+          "luck-fortitude",
+          "compass-fortitude",
+          "queen-fortitude"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Greater Marksmanship attack",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Greater Marksmanship attack",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "marksmanship-goggles-attack",
+          "marksmanship-ring1-attack",
+          "marksmanship-boots-attack"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Greater Marksmanship attack",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Greater Marksmanship attack",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "marksmanship-goggles-attack",
+          "marksmanship-ring1-attack",
+          "marksmanship-boots-attack"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Greater Marksmanship damage",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Greater Marksmanship damage",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "marksmanship-goggles-damage",
+          "marksmanship-ring1-damage",
+          "marksmanship-boots-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Greater Marksmanship damage",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Greater Marksmanship damage",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "marksmanship-goggles-damage",
+          "marksmanship-ring1-damage",
+          "marksmanship-boots-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "HP",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "HP",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "false-life",
+          "vitality"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "HP",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "HP",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "false-life",
+          "vitality"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Healing Amplification",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Healing Amplification",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "healing-amp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Healing Amplification",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Healing Amplification",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "healing-amp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Imbue dice",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Imbue dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "emerald-imbue"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Imbue dice",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Imbue dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "emerald-imbue"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Intelligence",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Intelligence",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "boots-int",
+          "solar-int",
+          "lunar-int",
+          "festive-int",
+          "dimlight-int",
+          "globe-intelligence",
+          "glabrezu-insight-int",
+          "chains-quality-int",
+          "celestial-profane-intelligence"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Intelligence",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Intelligence",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "boots-int",
+          "solar-int",
+          "lunar-int",
+          "festive-int",
+          "dimlight-int",
+          "globe-intelligence",
+          "glabrezu-insight-int",
+          "chains-quality-int",
+          "celestial-profane-intelligence"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Listen",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Listen",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "heroism-listen",
+          "luck-listen"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Listen",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Listen",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "heroism-listen",
+          "luck-listen"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "MRR",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "MRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "compass-insight-mrr",
+          "compass-quality-mrr",
+          "queen-mrr"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "MRR",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "MRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "compass-insight-mrr",
+          "compass-quality-mrr",
+          "queen-mrr"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "PRR",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "PRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "lunar-prr",
+          "compass-insight-prr",
+          "compass-quality-prr",
+          "queen-prr",
+          "tough-shields-prr"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "PRR",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "PRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "lunar-prr",
+          "compass-insight-prr",
+          "compass-quality-prr",
+          "queen-prr",
+          "tough-shields-prr"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged Power",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "rapid-shot-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged Power",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "rapid-shot-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged Power",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "topaz-rp",
+          "lunar-rp",
+          "dusk-raider-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged Power",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "topaz-rp",
+          "lunar-rp",
+          "dusk-raider-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged alacrity",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Ranged alacrity",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-alacrity"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged alacrity",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged alacrity",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "armor-alacrity"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged damage",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Ranged damage",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "harper-agent-damage",
+          "tenacious-damage",
+          "fey-countenance-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged damage",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged damage",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "harper-agent-damage",
+          "tenacious-damage",
+          "fey-countenance-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged threat reduction",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Ranged threat reduction",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "ring-threat"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Ranged threat reduction",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged threat reduction",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "ring-threat"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Reflex",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Reflex",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-reflex",
+          "heroism-reflex",
+          "luck-reflex",
+          "queen-reflex"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Reflex",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Reflex",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-reflex",
+          "heroism-reflex",
+          "luck-reflex",
+          "queen-reflex"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Seeker",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Seeker",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-seeker",
+          "claws-insight-seeker",
+          "solar-seeker",
+          "glabrezu-quality-seeker"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Seeker",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Seeker",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-seeker",
+          "claws-insight-seeker",
+          "solar-seeker",
+          "glabrezu-quality-seeker"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Sneak dice",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "bring-darkness-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Sneak dice",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "bring-darkness-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Sneak dice",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "perfect-silence-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Sneak dice",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "perfect-silence-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Sneak flat damage",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Sneak flat damage",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "solar-sneak-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Sneak flat damage",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Sneak flat damage",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "solar-sneak-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Spot",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Spot",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "chains-spot",
+          "heroism-spot",
+          "luck-spot"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Spot",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Spot",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "chains-spot",
+          "heroism-spot",
+          "luck-spot"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Strength",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Strength",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-strength",
+          "globe-strength"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Strength",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Strength",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-strength",
+          "globe-strength"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Weapon enhancement",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Weapon enhancement",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "aa-weapon-enhancement",
+          "harper-weapon-enhancement"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Weapon enhancement",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Weapon enhancement",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "aa-weapon-enhancement",
+          "harper-weapon-enhancement"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Will",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Will",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-will",
+          "heroism-will",
+          "luck-will",
+          "queen-will"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Will",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Will",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-will",
+          "heroism-will",
+          "luck-will",
+          "queen-will"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Wisdom",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Wisdom",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-wisdom",
+          "celestial-profane-wisdom",
+          "globe-wisdom"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 35,
+      "stat": "Wisdom",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Wisdom",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-wisdom",
+          "celestial-profane-wisdom",
+          "globe-wisdom"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Accuracy",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Accuracy",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "armor-accuracy"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "heroism-accuracy",
+          "glabrezu-quality-accuracy"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Accuracy",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Accuracy",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "armor-accuracy"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "heroism-accuracy",
+          "glabrezu-quality-accuracy"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Armor-Piercing",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Armor-Piercing",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "armor-ap",
+          "skull-ap",
+          "goggles-ap"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "claws-ap",
+          "solar-ap"
+        ],
+        "missing_interactions": [
+          [
+            "armor-ap",
+            "skull-ap"
+          ],
+          [
+            "armor-ap",
+            "goggles-ap"
+          ],
+          [
+            "skull-ap",
+            "goggles-ap"
+          ]
+        ],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Armor-Piercing",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Armor-Piercing",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "armor-ap",
+          "skull-ap",
+          "goggles-ap"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "claws-ap",
+          "solar-ap"
+        ],
+        "missing_interactions": [
+          [
+            "armor-ap",
+            "skull-ap"
+          ],
+          [
+            "armor-ap",
+            "goggles-ap"
+          ],
+          [
+            "skull-ap",
+            "goggles-ap"
+          ]
+        ],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Charisma",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Charisma",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-charisma",
+          "globe-charisma"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Charisma",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Charisma",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-charisma",
+          "globe-charisma"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Combustion",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Combustion",
+        "channel": "gear",
+        "total": 142,
+        "counted": [
+          "chains-combustion"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Combustion",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Combustion",
+        "channel": "gear",
+        "total": 142,
+        "counted": [
+          "chains-combustion"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Constitution",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Constitution",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "globe-constitution",
+          "skull-con",
+          "queen-insight-con",
+          "boots-quality-con",
+          "solar-con",
+          "celestial-profane-constitution"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Constitution",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Constitution",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "globe-constitution",
+          "skull-con",
+          "queen-insight-con",
+          "boots-quality-con",
+          "solar-con",
+          "celestial-profane-constitution"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Deadly",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Deadly",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "armor-deadly"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "yeenoghu-quality-deadly",
+          "lunar-deadly"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Deadly",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Deadly",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "armor-deadly"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "yeenoghu-quality-deadly",
+          "lunar-deadly"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dexterity",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Dexterity",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "ring-quality-dex",
+          "celestial-profane-dexterity",
+          "globe-dexterity"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dexterity",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dexterity",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "ring-quality-dex",
+          "celestial-profane-dexterity",
+          "globe-dexterity"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dodge",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Dodge",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "dodge-gem"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "celestial-dodge"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dodge",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dodge",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "dodge-gem"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "celestial-dodge"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dodge bypass",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "cut-to-soul-bypass"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dodge bypass",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "cut-to-soul-bypass"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dodge bypass",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "gear",
+        "total": 5,
+        "counted": [
+          "sight-beyond-sight"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Dodge bypass",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Dodge bypass",
+        "channel": "gear",
+        "total": 5,
+        "counted": [
+          "sight-beyond-sight"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Doubleshot",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "manyshot-ds",
+          "dark-imbuement-ds"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Doubleshot",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "manyshot-ds",
+          "dark-imbuement-ds"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Doubleshot",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "goggles-ds",
+          "ring-ds",
+          "boots-ds",
+          "armor-ds"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "quickblade-ds"
+        ],
+        "missing_interactions": [
+          [
+            "goggles-ds",
+            "ring-ds"
+          ],
+          [
+            "goggles-ds",
+            "boots-ds"
+          ],
+          [
+            "goggles-ds",
+            "armor-ds"
+          ],
+          [
+            "ring-ds",
+            "boots-ds"
+          ],
+          [
+            "ring-ds",
+            "armor-ds"
+          ],
+          [
+            "boots-ds",
+            "armor-ds"
+          ]
+        ],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Doubleshot",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Doubleshot",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "goggles-ds",
+          "ring-ds",
+          "boots-ds",
+          "armor-ds"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "quickblade-ds"
+        ],
+        "missing_interactions": [
+          [
+            "goggles-ds",
+            "ring-ds"
+          ],
+          [
+            "goggles-ds",
+            "boots-ds"
+          ],
+          [
+            "goggles-ds",
+            "armor-ds"
+          ],
+          [
+            "ring-ds",
+            "boots-ds"
+          ],
+          [
+            "ring-ds",
+            "armor-ds"
+          ],
+          [
+            "boots-ds",
+            "armor-ds"
+          ]
+        ],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Fortification",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Fortification",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "queen-fortification"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "chains-fortification"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Fortification",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Fortification",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "queen-fortification"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "chains-fortification"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Fortitude",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Fortitude",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "compass-fortitude"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "riposte-fortitude",
+          "heroism-fortitude",
+          "luck-fortitude",
+          "queen-fortitude"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Fortitude",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Fortitude",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "compass-fortitude"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "riposte-fortitude",
+          "heroism-fortitude",
+          "luck-fortitude",
+          "queen-fortitude"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Greater Marksmanship attack",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Greater Marksmanship attack",
+        "channel": "gear",
+        "total": 3,
+        "counted": [
+          "marksmanship-ring1-attack"
+        ],
+        "suppressed": [
+          "marksmanship-goggles-attack",
+          "marksmanship-boots-attack"
+        ],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "marksmanship-ring1-attack",
+            "marksmanship-goggles-attack",
+            "same-type-best"
+          ],
+          [
+            "marksmanship-ring1-attack",
+            "marksmanship-boots-attack",
+            "same-type-best"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Greater Marksmanship attack",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Greater Marksmanship attack",
+        "channel": "gear",
+        "total": 3,
+        "counted": [
+          "marksmanship-ring1-attack"
+        ],
+        "suppressed": [
+          "marksmanship-goggles-attack",
+          "marksmanship-boots-attack"
+        ],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "marksmanship-ring1-attack",
+            "marksmanship-goggles-attack",
+            "same-type-best"
+          ],
+          [
+            "marksmanship-ring1-attack",
+            "marksmanship-boots-attack",
+            "same-type-best"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Greater Marksmanship damage",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Greater Marksmanship damage",
+        "channel": "gear",
+        "total": 2,
+        "counted": [
+          "marksmanship-ring1-damage"
+        ],
+        "suppressed": [
+          "marksmanship-goggles-damage",
+          "marksmanship-boots-damage"
+        ],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "marksmanship-ring1-damage",
+            "marksmanship-goggles-damage",
+            "same-type-best"
+          ],
+          [
+            "marksmanship-ring1-damage",
+            "marksmanship-boots-damage",
+            "same-type-best"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Greater Marksmanship damage",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Greater Marksmanship damage",
+        "channel": "gear",
+        "total": 2,
+        "counted": [
+          "marksmanship-ring1-damage"
+        ],
+        "suppressed": [
+          "marksmanship-goggles-damage",
+          "marksmanship-boots-damage"
+        ],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "marksmanship-ring1-damage",
+            "marksmanship-goggles-damage",
+            "same-type-best"
+          ],
+          [
+            "marksmanship-ring1-damage",
+            "marksmanship-boots-damage",
+            "same-type-best"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "HP",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "HP",
+        "channel": "gear",
+        "total": 108,
+        "counted": [
+          "false-life",
+          "vitality"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "false-life",
+            "vitality",
+            "vitality-combination"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "HP",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "HP",
+        "channel": "gear",
+        "total": 108,
+        "counted": [
+          "false-life",
+          "vitality"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "false-life",
+            "vitality",
+            "vitality-combination"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Healing Amplification",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Healing Amplification",
+        "channel": "gear",
+        "total": 63,
+        "counted": [
+          "healing-amp"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Healing Amplification",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Healing Amplification",
+        "channel": "gear",
+        "total": 63,
+        "counted": [
+          "healing-amp"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Imbue dice",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Imbue dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "emerald-imbue"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Imbue dice",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Imbue dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "emerald-imbue"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Intelligence",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Intelligence",
+        "channel": "gear",
+        "total": 37,
+        "counted": [
+          "boots-int",
+          "solar-int",
+          "lunar-int",
+          "festive-int",
+          "dimlight-int",
+          "glabrezu-insight-int",
+          "chains-quality-int"
+        ],
+        "suppressed": [
+          "celestial-profane-intelligence",
+          "globe-intelligence"
+        ],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "lunar-int",
+            "celestial-profane-intelligence",
+            "same-type-best"
+          ],
+          [
+            "dimlight-int",
+            "globe-intelligence",
+            "same-type-best"
+          ],
+          [
+            "boots-int",
+            "solar-int",
+            "artifact-other-types"
+          ],
+          [
+            "boots-int",
+            "lunar-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "festive-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "boots-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "solar-int",
+            "lunar-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "festive-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "dimlight-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "glabrezu-insight-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "chains-quality-int",
+            "artifact-other-types"
+          ],
+          [
+            "lunar-int",
+            "festive-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "lunar-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "lunar-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "lunar-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "festive-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "festive-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "festive-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "dimlight-int",
+            "glabrezu-insight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "dimlight-int",
+            "chains-quality-int",
+            "exceptional-other-types"
+          ],
+          [
+            "glabrezu-insight-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Intelligence",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Intelligence",
+        "channel": "gear",
+        "total": 37,
+        "counted": [
+          "boots-int",
+          "solar-int",
+          "lunar-int",
+          "festive-int",
+          "dimlight-int",
+          "glabrezu-insight-int",
+          "chains-quality-int"
+        ],
+        "suppressed": [
+          "celestial-profane-intelligence",
+          "globe-intelligence"
+        ],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "lunar-int",
+            "celestial-profane-intelligence",
+            "same-type-best"
+          ],
+          [
+            "dimlight-int",
+            "globe-intelligence",
+            "same-type-best"
+          ],
+          [
+            "boots-int",
+            "solar-int",
+            "artifact-other-types"
+          ],
+          [
+            "boots-int",
+            "lunar-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "festive-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "boots-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "boots-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "solar-int",
+            "lunar-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "festive-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "dimlight-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "glabrezu-insight-int",
+            "artifact-other-types"
+          ],
+          [
+            "solar-int",
+            "chains-quality-int",
+            "artifact-other-types"
+          ],
+          [
+            "lunar-int",
+            "festive-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "lunar-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "lunar-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "lunar-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "festive-int",
+            "dimlight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "festive-int",
+            "glabrezu-insight-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "festive-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ],
+          [
+            "dimlight-int",
+            "glabrezu-insight-int",
+            "exceptional-other-types"
+          ],
+          [
+            "dimlight-int",
+            "chains-quality-int",
+            "exceptional-other-types"
+          ],
+          [
+            "glabrezu-insight-int",
+            "chains-quality-int",
+            "int-selected-ten-pairs"
+          ]
+        ],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Listen",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Listen",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "heroism-listen",
+          "luck-listen"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Listen",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Listen",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "heroism-listen",
+          "luck-listen"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "MRR",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "MRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "compass-insight-mrr",
+          "compass-quality-mrr"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "queen-mrr"
+        ],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "compass-insight-mrr",
+            "compass-quality-mrr",
+            "mrr-combination"
+          ]
+        ],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "MRR",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "MRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "compass-insight-mrr",
+          "compass-quality-mrr"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "queen-mrr"
+        ],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "compass-insight-mrr",
+            "compass-quality-mrr",
+            "mrr-combination"
+          ]
+        ],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "PRR",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "PRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "lunar-prr",
+          "compass-insight-prr",
+          "compass-quality-prr"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "queen-prr",
+          "tough-shields-prr"
+        ],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "lunar-prr",
+            "compass-insight-prr",
+            "prr-combination"
+          ],
+          [
+            "lunar-prr",
+            "compass-quality-prr",
+            "prr-combination"
+          ],
+          [
+            "compass-insight-prr",
+            "compass-quality-prr",
+            "prr-combination"
+          ]
+        ],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "PRR",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "PRR",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "lunar-prr",
+          "compass-insight-prr",
+          "compass-quality-prr"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "queen-prr",
+          "tough-shields-prr"
+        ],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "lunar-prr",
+            "compass-insight-prr",
+            "prr-combination"
+          ],
+          [
+            "lunar-prr",
+            "compass-quality-prr",
+            "prr-combination"
+          ],
+          [
+            "compass-insight-prr",
+            "compass-quality-prr",
+            "prr-combination"
+          ]
+        ],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged Power",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "rapid-shot-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged Power",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "rapid-shot-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged Power",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "topaz-rp",
+          "lunar-rp",
+          "dusk-raider-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged Power",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged Power",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "topaz-rp",
+          "lunar-rp",
+          "dusk-raider-rp"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged alacrity",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Ranged alacrity",
+        "channel": "gear",
+        "total": 20,
+        "counted": [
+          "armor-alacrity"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged alacrity",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged alacrity",
+        "channel": "gear",
+        "total": 20,
+        "counted": [
+          "armor-alacrity"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged damage",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Ranged damage",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "harper-agent-damage",
+          "tenacious-damage",
+          "fey-countenance-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged damage",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged damage",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "harper-agent-damage",
+          "tenacious-damage",
+          "fey-countenance-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged threat reduction",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Ranged threat reduction",
+        "channel": "gear",
+        "total": 22,
+        "counted": [
+          "ring-threat"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Ranged threat reduction",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Ranged threat reduction",
+        "channel": "gear",
+        "total": 22,
+        "counted": [
+          "ring-threat"
+        ],
+        "suppressed": [],
+        "excluded": [],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": true
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Reflex",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Reflex",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-reflex",
+          "heroism-reflex",
+          "luck-reflex",
+          "queen-reflex"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Reflex",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Reflex",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-reflex",
+          "heroism-reflex",
+          "luck-reflex",
+          "queen-reflex"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Seeker",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Seeker",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-seeker",
+          "claws-insight-seeker",
+          "solar-seeker",
+          "glabrezu-quality-seeker"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Seeker",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Seeker",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-seeker",
+          "claws-insight-seeker",
+          "solar-seeker",
+          "glabrezu-quality-seeker"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Sneak dice",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "bring-darkness-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Sneak dice",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "bring-darkness-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Sneak dice",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "perfect-silence-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Sneak dice",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Sneak dice",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "perfect-silence-sneak"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Sneak flat damage",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Sneak flat damage",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "solar-sneak-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Sneak flat damage",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Sneak flat damage",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "solar-sneak-damage"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Spot",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Spot",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "heroism-spot",
+          "luck-spot"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "chains-spot"
+        ],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "heroism-spot",
+            "luck-spot",
+            "spot-heroism-luck"
+          ]
+        ],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Spot",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Spot",
+        "channel": "gear",
+        "total": null,
+        "counted": [
+          "heroism-spot",
+          "luck-spot"
+        ],
+        "suppressed": [],
+        "excluded": [
+          "chains-spot"
+        ],
+        "missing_interactions": [],
+        "proofs": [
+          [
+            "heroism-spot",
+            "luck-spot",
+            "spot-heroism-luck"
+          ]
+        ],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Strength",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Strength",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-strength",
+          "globe-strength"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Strength",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Strength",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "celestial-profane-strength",
+          "globe-strength"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Weapon enhancement",
+      "channel": "build",
+      "active": [],
+      "result": {
+        "stat": "Weapon enhancement",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "aa-weapon-enhancement",
+          "harper-weapon-enhancement"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Weapon enhancement",
+      "channel": "build",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Weapon enhancement",
+        "channel": "build",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "aa-weapon-enhancement",
+          "harper-weapon-enhancement"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Will",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Will",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-will",
+          "heroism-will",
+          "luck-will",
+          "queen-will"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Will",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Will",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "riposte-will",
+          "heroism-will",
+          "luck-will",
+          "queen-will"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Wisdom",
+      "channel": "gear",
+      "active": [],
+      "result": {
+        "stat": "Wisdom",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-wisdom",
+          "celestial-profane-wisdom",
+          "globe-wisdom"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    },
+    {
+      "level": 36,
+      "stat": "Wisdom",
+      "channel": "gear",
+      "active": [
+        "force"
+      ],
+      "result": {
+        "stat": "Wisdom",
+        "channel": "gear",
+        "total": null,
+        "counted": [],
+        "suppressed": [],
+        "excluded": [
+          "claws-wisdom",
+          "celestial-profane-wisdom",
+          "globe-wisdom"
+        ],
+        "missing_interactions": [],
+        "proofs": [],
+        "complete": false
+      }
+    }
+  ]
+}

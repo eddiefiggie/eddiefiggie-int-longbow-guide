@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import types
+import wisdom_chains_type_preservation as chains_type
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,7 +78,7 @@ def restore_file(path, current, *, scope=None):
 
 def checkpoint_file_bytes(path):
     """Return exact .7 bytes while checking literal preserved inputs on disk."""
-    raw = (ROOT / path).read_bytes()
+    raw = chains_type.checkpoint_file_bytes(path)
     if path in REVIEWED_PATHS:
         return restore_file(path, raw).encode()
     preserved = load_scope()['preserved_files']
@@ -93,7 +94,7 @@ def checkpoint_file_text(path):
 
 def validate_preserved_files():
     for path, expected in load_scope()['preserved_files'].items():
-        raw = (ROOT / path).read_bytes()
+        raw = chains_type.checkpoint_file_bytes(path)
         assert (len(raw), sha(raw)) == (expected['bytes'], expected['sha256']), path
     return True
 
@@ -101,7 +102,7 @@ def validate_preserved_files():
 def validate_full_reversal():
     scope = load_scope()
     for path in REVIEWED_PATHS:
-        restore_file(path, (ROOT / path).read_bytes(), scope=scope)
+        restore_file(path, chains_type.checkpoint_file_bytes(path), scope=scope)
     return validate_preserved_files()
 
 
@@ -122,16 +123,18 @@ def _module(name, path, source, dependencies=None):
 
 
 @lru_cache(maxsize=1)
-def _calculator(source):
-    module = _module('_fort_spot_checkpoint_calculator', 'tools/stacking_audit.py', source)
+def _calculator(source, recipes):
+    module = _module('_fort_spot_checkpoint_calculator', 'tools/stacking_audit.py', source,
+                     {'recipe_proofs': recipes})
     module.load = lambda: json.loads(checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
     return module
 
 
 def historical_calculator():
-    # Validate literal dependencies before every access, including cache hits.
+    # Validate exact historical dependencies before every access, including cache hits.
     checkpoint_file_bytes('tools/recipe_proofs.py')
-    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'))
+    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'),
+                       chains_type.historical_recipe_proofs())
 
 
 @lru_cache(maxsize=1)

@@ -214,7 +214,8 @@ def _host_and_recipe(host, recipe, slot):
     _require(table.startswith('Group\tEnchantment name\tEnchantment value\tIngredient cost\n'
                               'Heroic\nML 8\tLegendary\nML 28\tHeroic\tLegendary\n'),
              'Recipe column roles are not the reviewed hierarchy')
-    next_group = {'Suffix': 'Extra', 'Bonus': 'Augment Slot addition'}[slot]
+    next_group = {'Prefix': 'Suffix', 'Suffix': 'Extra', 'Extra': 'Bonus',
+                  'Bonus': 'Augment Slot addition'}[slot]
     start, end = '\n' + slot + '\n', '\n' + next_group + '\n'
     _require(table.count(start) == table.count(end) == 1, 'Missing or duplicate recipe group')
     left, right = table.index(start) + len(start), table.index(end)
@@ -265,6 +266,13 @@ def validate_component(data, component, root=ROOT):
     try:
         cid = component['id']
         _require(cid in BOUNDED_COMPONENT_IDS, 'Recipe proof used on an unapproved component')
+        # Keep the original two derivations and unresolved historical profile
+        # intact. The later approval admits only two exact Legendary type proofs.
+        import chains_type_proofs as chains_types
+        if cid in chains_types.COMPONENT_IDS and chains_types.uses_contract(data):
+            _require(chains_types.validate_component(data, component, root),
+                     'Incomplete or unreviewed Legendary recipe-type proof')
+            return True
         matches = [c for c in data['components'] if c['id'] == cid]
         _require(len(matches) == 1 and matches[0] == component, 'Duplicate or detached proof component')
         proof = component['recipe_proof']

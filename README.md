@@ -17,6 +17,7 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `tools/fixtures/wisdom-loadout/selection.json` | Shared current endgame recipe, exact optimizer priorities/constraints and model-only achieved values |
 | `tools/build_wisdom_loadout.py` | Generates the current recipe, priority table and one-page rows from that record |
 | `tools/recipe_proofs.py` | Bounded, source-supported recipe proofs for the four selected Chains IDs; not a general inference or stacking engine |
+| `tools/chains_type_proofs.py` | Exact Wiki/Nexus recipe bindings for the two selected Chains type definitions, preserving missing numeric fields and source limits |
 | `tools/stacking_audit.py` | Source-gated gear arithmetic; the current draft adds a closed ten-pair INT rule, not a universal stacking default or DPS simulator |
 
 ## Related
@@ -46,7 +47,26 @@ Doubleshot corrections separately from preserved historical experiments. Its
 source register contains transcribed browser observations and paraphrases, not
 an exported raw DOM packet or new calculator-qualified component records.
 
-### Current draft: bounded Fortification and Spot evidence
+### Current draft: completed selected Fortification and Spot families
+
+Build **11-15-26.9** qualifies the existing Chains **142 Enhancement
+Fortification** and **20 Competence Spot** recipe contributions, using retained
+Wiki values/host evidence and two exact Legendary recipe type definitions from
+DDO Nexus. It adds only the Chains/Heroism and Chains/Luck Spot interactions.
+At the unchanged level-36 kit floor, the derived selected-gear totals are
+**226% Fortification** (`142 + 84`) and **+27 direct Spot** (`20 + 4 + 3`);
+**+37 selected-gear INT** is unchanged. The level-35 full-kit results remain
+incomplete. These are the existing gear sums, not additional character gains.
+
+The [Chains type register](evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
+retains the exact Nexus URLs, Spot Extra variant, observed markup and absent
+numeric/client-version fields. Nexus is an unaffiliated beta reference; this is
+a bounded multi-source derivation, not a primary client test or a universal
+stacking rule. Whole-character scores and other mechanics gaps remain separate.
+See the [integration receipt](evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
+for actual verification and draft status.
+
+### Historical .8 checkpoint: bounded Fortification and Spot evidence
 
 Build **11-15-26.8** binds three selected definitions: Queen's 84 Insight
 Fortification, Greater Heroism's 4 Morale Spot and Good Luck's 3 Luck Spot.

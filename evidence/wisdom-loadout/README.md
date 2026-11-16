@@ -185,7 +185,7 @@ These source definitions do not establish current stock, ownership, complete
 character scores, DPS or critical range. Public Wiki access is not guide layout,
 keyboard or print QA, and the draft remains unmerged and unpublished.
 
-### Current .6 integration: ten bounded INT pairs support the existing +37 sum
+### Historical .6 integration: ten bounded INT pairs support the existing +37 sum
 
 The [new source packet](int-stacking-sources-2026-11-15.json) preserves the preceding
 read-only audit's original observations, including millisecond timestamps. The
@@ -334,7 +334,7 @@ promote its ledger input, and supported Flaming applicability does not certify
 complete damage. Actual integration checks and draft-update state are recorded
 separately; these two records are not test, live-game or release receipts.
 
-## Bounded Fortification/Spot integration — 15 November 2026
+## Historical .8 checkpoint — Fortification/Spot integration — 15 November 2026
 
 The [new source register](fort-spot-sources-2026-11-15.json) is the exact frozen
 browser-observation file from the subsequent read-only investigation. Its
@@ -385,3 +385,42 @@ Five Rings examples and blank Chains image do not establish the missing
 selected types. Conditional 226 and 27 remain modeled combinations. No additional
 character bonus, full skill score, trap-success threshold, live-game validation,
 new solve, acquisition, merge or publication follows from this evidence change.
+
+## Current Chains type integration — build 11-15-26.9
+
+The [Chains type source register](chains-type-sources-2026-11-15.json) is the
+exact frozen investigation record: five principal sources, additional inspected
+routes, original observations and explicit limits. Principal observations span
+**2026-11-16T02:13:24.476Z through 2026-11-16T02:22:20.282Z**; the review date
+is 15 November Pacific. Selected text, accessibility observations and
+recipe-associated DOM title attributes were curated from browser output.
+This is not a complete DOM/HTTP archive; inspected screenshots were not retained
+as artifacts. Wiki/Compendium permanent links were displayed but not reopened.
+The original read-only and implementation-pending fields remain historical;
+the [integration receipt](chains-type-integration-2026-11-15.json) records the
+later approved change and actual verification/draft status.
+
+| Component | Newly supported premise | Separate retained premises |
+| --- | --- | --- |
+| `chains-fortification` | [Legendary Slaver Fortification](https://ddonexus.com/Item/Legendary_Slaver_Fortification): Enhancement effect attached to the Legendary Prefix recipe using 100 Legendary-tier broken shackles. | Wiki 142 Legendary magnitude, shared base-item applicability and Chains Prefix host slot. |
+| `chains-spot` | [Legendary Slaver's Spot, Extra variant](https://ddonexus.com/Item/Legendary_Slavers_Spot/2C66B), `0x7002C66B`: Competence effect attached to the Legendary Extra recipe using 100 Legendary-tier broken collars. | Wiki 20 Legendary skills-except-UMD magnitude, explicit Spot membership and Chains Extra host slot. |
+
+Both Nexus records retain `numeric_parameter_observed: null` and
+`source_version_observed: null`. Neither numeric amount is quoted from Nexus.
+Its exact Spot variant is essential because a same-named Legendary entry uses
+the Bonus recipe. Nexus identifies itself as an unaffiliated beta reference;
+the origin and client version of these recipe metadata were not established.
+The Collector documentation does not provide that missing provenance. Heroic
+Compendium +70/+10 types remain corroboration only; older Five Rings examples
+and original Wiki records keep their original scope and dates. No reconstructed
+numeric quotation, invented revision or primary client test is claimed.
+
+The integration qualifies only these two definitions and adds only the
+`chains-spot` ↔ `heroism-spot` and `chains-spot` ↔ `luck-spot` interactions,
+using the retained positive stacking premise. Earlier rules and all family
+guards remain. The unchanged level-36 kit now derives selected-gear **226%
+Fortification** and **+27 direct Spot**; **+37 gear INT** remains unchanged.
+The level-35 full-kit results stay incomplete. These are existing contributions
+with improved evidence, not new bonuses, whole-character scores, damage-reduction
+percentages or trap-success guarantees. All selected data, priorities, historical
+results, earlier source bytes and approved exceptions are preserved.

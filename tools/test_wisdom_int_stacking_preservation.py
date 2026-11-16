@@ -20,6 +20,7 @@ import wisdom_crafting_integration as crafting
 import wisdom_corrections as corrections
 import wisdom_preservation as wisdom
 import wisdom_offense_preservation as offense
+import wisdom_chains_type_preservation as chains_type
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,7 +66,8 @@ class IntelligenceStackingPreservationTests(unittest.TestCase):
                 'versions/11-15-26.5.html', 'tools/bowmodel.py', 'tools/recipe_proofs.py'):
             with self.subTest(path=path):
                 self.assertIn(path, preserved)
-                self.assertEqual(preservation.checkpoint_file_bytes(path), (ROOT / path).read_bytes())
+                self.assertEqual(preservation.checkpoint_file_bytes(path),
+                                 chains_type.checkpoint_file_bytes(path))
         self.assertNotIn('evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json', preserved)
         self.assertNotIn('versions/11-15-26.6.html', preserved)
         # The live evidence index is documentation, not an immutable receipt.

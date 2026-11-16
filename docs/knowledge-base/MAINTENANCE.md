@@ -239,7 +239,7 @@ Use all four documented builders and a new path-rebased snapshot. Report actual
 aggregate/CI results in the integration receipt; browser rendering, keyboard
 behavior, print pagination and live-game validation remain separate checks.
 
-### Bounded Fortification/Spot integration layer
+### Historical .8 Fortification/Spot integration layer
 
 Build 11-15-26.8 adds only the three reviewed definitions and the exact
 `heroism-spot` / `luck-spot` pair. Retain the
@@ -277,3 +277,40 @@ snapshot. Record actual builder, aggregate and draft-update results in the
 [receipt](../../evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json);
 do not reuse the preceding build's test count or treat source review as browser,
 accessibility, print, live-game or release verification.
+
+### Bounded Chains type integration layer
+
+Build 11-15-26.9 admits only the two reviewed Chains definitions through
+`tools/chains_type_proofs.py`. Preserve the exact
+[source register](../../evidence/wisdom-loadout/chains-type-sources-2026-11-15.json),
+including its original read-only/implementation-pending metadata. The later
+integration receipt supplies operational status. Retain actual Nexus URLs and
+observation times without fabricating revisions, numbers or a client version.
+Bind the Legendary tier, effect, removed Prefix/Extra slot, ingredient identity
+and quantity, and the Spot Extra variant `0x7002C66B`. The current numbers and
+host/membership premises remain separately bound to retained Wiki evidence.
+
+Reject the same-named Spot Bonus recipe, wrong channel/tier/ingredients, altered
+type markup, borrowed source identity, fabricated numeric clauses and stale or
+changed source bytes. Public proof/subtotal calls must enforce these bindings
+without depending on a prior validation call. Preserve the older contracts and
+their negative controls; only the complete new reviewed bindings may qualify
+these two IDs. Keep all previous rule dictionaries and add only the exact
+Chains/Heroism and Chains/Luck gear-Spot edges.
+
+The exact two-ID Fortification, three-ID Spot and INT family guards remain.
+Current level-36 complete results should derive 226 Fortification and 27 direct
+Spot with no excluded family input or missing interaction; gear INT37 is
+unchanged. Level-35 full-kit results remain incomplete. Compare complete result
+objects and all unaffected results across levels, preserving complete historical
+bow tuples/results and selected data. An ID deletion, rename, duplicate or
+binding mutation must not manufacture completeness.
+
+Use exact outer .9-to-.8 restoration before existing preservation layers,
+keeping earlier scopes/hashes and historical assertions intact. Actual-current
+tests must exercise real .9 production code and inputs independently. Run the
+four documented builders and create the path-rebased .9 snapshot without
+replacing prior snapshots. Record actual suite, builder, review and draft-update
+results in the [receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json).
+The .8 test count belongs to that checkpoint; source review and software checks
+do not establish primary client testing, browser QA or release permission.

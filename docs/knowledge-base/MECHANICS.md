@@ -178,7 +178,7 @@ interactions, the dated confirmation conflict, proc uptime, full-character
 totals and sustained DPS remain unresolved. The preserved historical archive
 is not rewritten into current guidance.
 
-## Bounded Fortification and Spot definitions — current draft build 11-15-26.8
+## Bounded Fortification and Spot definitions — historical .8 checkpoint
 
 The [fresh source register](../../evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json)
 supports three definitions through two narrowly scoped interpretation routes.
@@ -226,3 +226,44 @@ depends on ranks, actual total Wisdom and other sources; the gear contribution
 18 is not a final Wisdom score or a trap-success certificate. The
 [integration receipt](../../evidence/wisdom-loadout/fort-spot-integration-2026-11-15.json)
 separates these documentary derivations from software and live-game verification.
+
+## Complete selected Fortification/Spot families — current draft build 11-15-26.9
+
+The [Chains type register](../../evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
+supplies the two previously missing Legendary classification premises. Nexus
+explicitly attaches Enhancement to the Legendary Fortification Prefix recipe
+and Competence to the Legendary Spot Extra recipe, variant `0x7002C66B`.
+Legendary tier, effect, removed slot and 100 matching Legendary-tier ingredients
+bind those records to the retained Wiki recipe. The shared base-item statement,
+Chains' own Prefix/Extra slots and Spot skill membership supply applicability.
+The result is a source-supported multi-source recipe derivation.
+
+Nexus omits the numeric parameters in both rendered effects; **142** and **20**
+come from the separate Wiki Legendary rows. Keep those premises separate and
+retain the exact Spot Extra variant rather than the other same-named Bonus
+recipe. Nexus is an unaffiliated beta source; the origin and client version of
+these metadata were not established. No Wiki-style revision, missing number or
+primary client test is inferred. Heroic Compendium definitions and historical
+Five Rings images remain corroboration with their original tier/value limits.
+
+| Level-36 selected gear family | Qualified contributions | Derived total |
+| --- | --- | --- |
+| Fortification | Chains 142 Enhancement + Queen 84 Insight | 226% |
+| Direct Spot | Chains 20 Competence + Heroism 4 Morale + Luck 3 Luck | +27 |
+| Intelligence | Existing qualified and suppressed INT inputs, unchanged | +37 |
+
+The prior Enhancement/Insight Fortification interaction and Heroism/Luck Spot
+pair remain. The only added edges are `chains-spot` ↔ `heroism-spot` and
+`chains-spot` ↔ `luck-spot`, bound to the retained positive stacking premise.
+These exact selected families are complete at the level-36 kit floor; the
+level-35 full-kit results remain incomplete. The exact two-ID Fortification,
+three-ID Spot and existing INT guards continue to prevent false completeness.
+
+These totals describe the selected gear contributions. They add no equipment
+or new character bonus. Fortification is not a damage-reduction percentage;
+direct Spot excludes ranks, the modifier from actual total Wisdom and other
+sources. Same-type overlap still matters outside these selected families.
+No final character score, trap threshold, DPS result or wider stacking default
+is established. The
+[integration receipt](../../evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
+records actual verification separately from the source derivation and its limits.

@@ -2,6 +2,14 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-15-26.9 (draft Chains type-evidence candidate; not published)
+
+- Qualifies only Chains 142 Enhancement Fortification and 20 Competence Spot through exact Legendary Nexus recipe type records combined with retained Wiki values, host applicability and Spot membership. Preserves the Spot Extra variant `0x7002C66B`, absent Nexus numeric parameters/client versions and beta-source limitations.
+- Adds exactly Chains/Heroism and Chains/Luck Spot interactions. Preserves the prior Fortification and Heroism/Luck rules, bounded INT interactions and complete family safeguards; no general type default is introduced.
+- Derives the existing complete selected-gear sums at level 36: **226% Fortification** and **+27 direct Spot**, with **+37 INT** unchanged. Level-35 full-kit results remain incomplete. These are gear contributions, not new bonuses, whole-character scores, damage-reduction percentages or trap-success guarantees.
+- Preserves selected equipment, Yeenoghu as the sole Minor Artifact, 32 priorities, crafts/sockets, feats/AP, historical model results, prior evidence/snapshots and the Festive-only and HA63 exceptions. The .8 exclusions remain dated historical checkpoints.
+- Retains the exact source register and adds a separate integration receipt. Current outputs and the path-rebased .9 snapshot were generated; precommit verification passed: 531 tests in 214.123 seconds, all four builders, 141 documentation links and independent review. Local-browser preview was blocked by URL policy; visual QA remains unverified. See the [integration receipt](evidence/wisdom-loadout/chains-type-integration-2026-11-15.json) for actual verification and draft status. No primary client test, new solve, crafting, purchase, merge or publication.
+
 ## Build 11-15-26.8 (draft Fortification/Spot evidence candidate; not published)
 
 - Binds Queen's 84 Insight Fortification through its actual own-item label/popup association, preserving the separate source fragments and the limits on other Queen effects.

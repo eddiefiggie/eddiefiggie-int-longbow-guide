@@ -16,6 +16,7 @@ import stacking_audit as audit
 import wisdom_int_stacking_preservation as preservation
 import wisdom_offense_preservation as offense
 import wisdom_fort_spot_preservation as fort_spot
+import wisdom_chains_type_preservation as chains_type
 from test_lamordia_handling import Document, norm
 
 
@@ -428,27 +429,31 @@ class HistoricalInputScopedIntDeltaTests(unittest.TestCase):
         for path in ('tools/fixtures/wisdom-loadout/selection.json',
                      'evidence/wisdom-loadout/claims.json', 'evidence/wisdom-loadout/loadout.json',
                      'evidence/wisdom-loadout/production.json', 'tools/recipe_proofs.py', 'tools/bowmodel.py'):
-            self.assertEqual(preservation.checkpoint_file_bytes(path), (ROOT / path).read_bytes())
+            self.assertEqual(preservation.checkpoint_file_bytes(path),
+                             chains_type.checkpoint_file_bytes(path))
         self.assertEqual(digest((ROOT / 'tools/fixtures/wisdom-loadout/selection.json').read_bytes()),
                          '8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d')
 
 
-class CurrentScopedIntPresentationTests(unittest.TestCase):
+class HistoricalPointEightScopedIntPresentationTests(unittest.TestCase):
     def test_onepage_distinguishes_derived_int_from_other_modeled_values(self):
-        from wisdom_loadout import load, render_onepage_rows
+        recipe = chains_type.historical_recipe_renderer()
+        load, render_onepage_rows = recipe.load, recipe.render_onepage_rows
         text = norm(Document('<table>' + render_onepage_rows(load()) + '</table>').root.text())
         self.assertIn('Model-only gear WIS 18 / DEX 6 / CON 32 / direct Spot 27.', text)
         self.assertIn('Derived selected-gear INT +37 at level 36', text)
         self.assertNotIn('DEX 6 / INT 37', text)
-        changed = audit.load()
+        calculator = chains_type.historical_calculator()
+        changed = calculator.load()
         component(changed, 'solar-int')['amount'] = 999
-        with patch('stacking_audit.load', return_value=changed), self.assertRaises(ValueError):
+        with patch.object(calculator, 'load', return_value=changed), self.assertRaises(ValueError):
             render_onepage_rows(load())
 
-    def test_live_renderers_expose_derived_int_and_preserve_remaining_limits(self):
-        from build_stacking_audit import detail, summary
-        from wisdom_loadout import render_crafting_qualification
-        data = audit.load()
+    def test_point_eight_renderers_expose_derived_int_and_preserve_remaining_limits(self):
+        renderer = chains_type.historical_audit_renderer()
+        detail, summary = renderer.detail, renderer.summary
+        render_crafting_qualification = chains_type.historical_recipe_renderer().render_crafting_qualification
+        data = chains_type.historical_calculator().load()
         for html in (summary(data), detail(data), render_crafting_qualification(data)):
             text = norm(Document(html).root.text())
             self.assertIn('Derived selected-gear INT: +37 at level 36.', text)

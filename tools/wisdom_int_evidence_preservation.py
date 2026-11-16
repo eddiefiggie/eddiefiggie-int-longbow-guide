@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 import types
 import wisdom_int_stacking_preservation as int_stacking
+import wisdom_chains_type_preservation as chains_type
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -121,15 +122,17 @@ def _module(name, path, source, dependencies=None):
 
 
 @lru_cache(maxsize=1)
-def _calculator(source):
-    module = _module('_int_evidence_checkpoint_calculator', 'tools/stacking_audit.py', source)
+def _calculator(source, recipes):
+    module = _module('_int_evidence_checkpoint_calculator', 'tools/stacking_audit.py', source,
+                     {'recipe_proofs': recipes})
     module.load = lambda: json.loads(checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
     return module
 
 
 def historical_calculator():
     # Always revalidate actual bytes even if the compiled checkpoint is cached.
-    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'))
+    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'),
+                       chains_type.historical_recipe_proofs())
 
 
 @lru_cache(maxsize=1)

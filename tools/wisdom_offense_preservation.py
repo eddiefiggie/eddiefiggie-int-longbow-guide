@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 import types
 import wisdom_fort_spot_preservation as fort_spot
+import wisdom_chains_type_preservation as chains_type
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -119,8 +120,9 @@ def _module(name, path, source, dependencies=None):
 
 
 @lru_cache(maxsize=1)
-def _calculator(source):
-    module = _module('_offense_checkpoint_calculator', 'tools/stacking_audit.py', source)
+def _calculator(source, recipes):
+    module = _module('_offense_checkpoint_calculator', 'tools/stacking_audit.py', source,
+                     {'recipe_proofs': recipes})
     module.load = lambda: json.loads(checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
     return module
 
@@ -128,7 +130,8 @@ def _calculator(source):
 def historical_calculator():
     # Validate literal dependencies before every access, including cache hits.
     checkpoint_file_bytes('tools/recipe_proofs.py')
-    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'))
+    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'),
+                       chains_type.historical_recipe_proofs())
 
 
 @lru_cache(maxsize=1)

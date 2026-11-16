@@ -1,8 +1,8 @@
-"""Real .8 calculation routes: three definitions, one pair, incomplete families.
+"""Exact restored .8 routes: three definitions, one pair, incomplete families.
 
-The .7 checkpoint supplies independently pinned comparison inputs only. Runtime
-negative controls use the actual current engine and temporary source copies;
-they never replace production evidence or change a preserved qualification.
+The .9 outer contract restores the .8 engine, proof helpers and input bytes.
+All original .8 negative controls run against those matching dependencies and
+temporary source copies; separate Chains tests exercise actual .9 production.
 Passing these checks is not a live-game or complete-character certificate.
 """
 from contextlib import contextmanager
@@ -15,9 +15,12 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-import fort_spot_proofs as definitions
-import stacking_audit as audit
 import wisdom_fort_spot_preservation as preservation
+import wisdom_chains_type_preservation as chains_type
+
+
+audit = chains_type.historical_calculator()
+definitions = chains_type.historical_fort_spot_proofs()
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -101,8 +104,9 @@ def result_for(engine, data, case):
                            level=case['level'], active=case['active'])
 
 
-class CurrentFortSpotTests(unittest.TestCase):
+class HistoricalPointEightFortSpotTests(unittest.TestCase):
     def setUp(self):
+        self.assertIs(audit, chains_type.historical_calculator())
         self.data = audit.load()
 
     def assert_invalid(self, data):
@@ -140,7 +144,7 @@ class CurrentFortSpotTests(unittest.TestCase):
                                             component(self.data, 'luck-spot')), RULE)
                 yield root
 
-    def test_actual_engine_packet_and_fixed_selected_definitions(self):
+    def test_exact_point_eight_engine_packet_and_fixed_selected_definitions(self):
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / 'tools/stacking_audit.py')
         self.assertTrue(audit.validate(self.data))
         self.assertEqual(digest((ROOT / PACKET).read_bytes()), PACKET_SHA)
@@ -560,6 +564,7 @@ class FortSpotBaselineTests(unittest.TestCase):
         cls.results = json.loads(raw)
 
     def setUp(self):
+        self.assertIs(audit, chains_type.historical_calculator())
         self.data = audit.load()
 
     def test_exact_seven_nine_and_ten_rule_profiles_remain_distinct(self):
@@ -578,7 +583,7 @@ class FortSpotBaselineTests(unittest.TestCase):
             with self.subTest(seven_rule_case=(case['level'], case['stat'], case['active'])):
                 self.assertEqual(result_for(audit, seven, case), result_for(old_engine, seven, case))
 
-    def test_all_152_old_input_result_objects_survive_through_actual_new_engine(self):
+    def test_all_152_old_input_result_objects_survive_through_exact_point_eight_engine(self):
         self.assertEqual(self.results['baseline_commit'], '72db151c4f881c08844d273caee2914ddc736641')
         self.assertEqual(self.results['baseline_tree'], '573c0b26ac30dce65a3d4fcf6107a38dc5c8058d')
         self.assertEqual(len(self.results['ledger_cases']), 152)
@@ -587,7 +592,7 @@ class FortSpotBaselineTests(unittest.TestCase):
             with self.subTest(level=case['level'], stat=case['stat'], active=case['active']):
                 self.assertEqual(result_for(audit, self.previous, case), case['result'])
 
-    def test_production_changes_exactly_four_complete_objects_without_new_total(self):
+    def test_point_eight_changes_exactly_four_complete_objects_without_new_total(self):
         changed = []
         for case in self.results['ledger_cases']:
             actual = result_for(audit, self.data, case)
@@ -615,7 +620,7 @@ class FortSpotBaselineTests(unittest.TestCase):
         for cid in ('chains-fortification', 'chains-spot'):
             self.assertEqual(component(self.data, cid), component(self.previous, cid))
         self.assertEqual(digest((ROOT / MANIFEST).read_bytes()), MANIFEST_SHA)
-        self.assertEqual(digest((ROOT / 'tools/recipe_proofs.py').read_bytes()),
+        self.assertEqual(digest(chains_type.checkpoint_file_bytes('tools/recipe_proofs.py')),
                          'b4c2b4fd95a0a9de4b5f8155245ba8934a8f1ae89c3e2f1d7e8eac545bb627ec')
 
 

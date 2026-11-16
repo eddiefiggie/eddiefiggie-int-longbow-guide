@@ -128,7 +128,10 @@
     "fort-spot-pendant-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
     "fort-spot-pendant-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
     "fort-spot-artifact-host-20261115": "bounded Fortification/Spot interpretation or interaction support",
-    "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support"
+    "fort-spot-artifact-level-20261115": "bounded Fortification/Spot interpretation or interaction support",
+    "chains-types-shared-host-20261115": "bounded recipe applicability: explicit shared base-item crafting statement",
+    "chains-types-fortification-20261115": "bounded Legendary recipe type only: exact Prefix Fortification; numeric parameter and client version absent",
+    "chains-types-spot-20261115": "bounded Legendary recipe type only: exact Extra Spot variant 0x7002C66B; numeric parameter and client version absent"
   },
   "sources": {
     "tip179-live-20261115": {
@@ -3311,6 +3314,82 @@
       ],
       "observed": "2026-11-16T01:15:14.309Z",
       "freshness_limit": "Scoped excerpts copied from the user-authorized browser observation, not a complete DOM/HTTP archive or authenticated live-game capture. Cache age was not recorded; freshness is not inferred. The displayed permanent revision link was retained but not independently reopened. Original observation and page-modification dates are distinct; the copied read-only register does not itself record this later integration."
+    },
+    "chains-types-shared-host-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        0
+      ],
+      "pointer": [
+        "sources",
+        0,
+        "shared_host_statement_exact"
+      ],
+      "quote": "All base items may use all ingredients.",
+      "url_key": "url",
+      "url": "https://ddowiki.com/page/Slave_Lords_Crafting",
+      "revision_pointer": [
+        "permalink_href"
+      ],
+      "revision": "https://ddowiki.com/index.php?title=Slave_Lords_Crafting&oldid=715666",
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:13:24.476Z",
+      "freshness_limit": "This recipe table supplies magnitude and applicability. Its plain Fortification and Skills links do not themselves supply the two bonus-type clauses. Anonymous Wiki cache up to 16 hours old. Displayed permanent link was not reopened. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "chains-types-fortification-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        2
+      ],
+      "pointer": [
+        "sources",
+        2,
+        "application",
+        "added_effect_markup_exact"
+      ],
+      "quote": "<li class=\"recipe-mutation-known\" title=\"+% Enhancement bonus to the reduced chance of taking bonus damage on a critical hit.\">Fortification +%</li>",
+      "url_key": "url",
+      "url": "https://ddonexus.com/Item/Legendary_Slaver_Fortification",
+      "revision_pointer": null,
+      "revision": null,
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:19:36.690Z",
+      "freshness_limit": "Number missing in the rendered effect. The type is attached to this exact Legendary recipe. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
+    },
+    "chains-types-spot-20261115": {
+      "source_contract": "slave-lords-selected-types-v1",
+      "path": "evidence/wisdom-loadout/chains-type-sources-2026-11-15.json",
+      "sha256": "a949c385294d81804e6770632fdcb0277c4307bfefc6c1f5396eade2c3946c96",
+      "record_pointer": [
+        "sources",
+        3
+      ],
+      "pointer": [
+        "sources",
+        3,
+        "application",
+        "added_effect_markup_exact"
+      ],
+      "quote": "<li class=\"recipe-mutation-known\" title=\"+ Competence bonus to Spot.\">Spot +</li>",
+      "url_key": "url",
+      "url": "https://ddonexus.com/Item/Legendary_Slavers_Spot/2C66B",
+      "revision_pointer": null,
+      "revision": null,
+      "observed_pointer": [
+        "observed_at_utc"
+      ],
+      "observed": "2026-11-16T02:21:13.157Z",
+      "freshness_limit": "Number missing in the rendered effect. Preserve the exact variant and Extra-slot association. No authenticated in-game capture or per-item client build was established. Nexus identifies its data as beta and potentially incomplete or incorrect. The missing numeric parameter is preserved; its cause is unknown. Wiki supplies the magnitude separately. Curated selected browser observations, not a full DOM archive or authenticated game-client capture. The source packet retains its original read-only investigation metadata; later integration is recorded separately."
     }
   }
 }

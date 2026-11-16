@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 import types
 import wisdom_offense_preservation as offense
+import wisdom_chains_type_preservation as chains_type
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -122,17 +123,19 @@ def _module(name, path, source, dependencies=None):
 
 
 @lru_cache(maxsize=1)
-def _calculator(source):
-    module = _module('_int_stacking_checkpoint_calculator', 'tools/stacking_audit.py', source)
+def _calculator(source, recipes):
+    module = _module('_int_stacking_checkpoint_calculator', 'tools/stacking_audit.py', source,
+                     {'recipe_proofs': recipes})
     module.load = lambda: json.loads(checkpoint_file_text('tools/fixtures/endgame-stacking/ledger.json'))
     return module
 
 
 def historical_calculator():
-    # Revalidate real files before every cached access. Recipe proof support is
-    # still the literal .5 module, not an alternative current implementation.
+    # Revalidate real files before every cached access, including the strictly
+    # restored recipe helper whose bytes are unchanged between .5 and .8.
     checkpoint_file_bytes('tools/recipe_proofs.py')
-    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'))
+    return _calculator(checkpoint_file_bytes('tools/stacking_audit.py'),
+                       chains_type.historical_recipe_proofs())
 
 
 @lru_cache(maxsize=1)

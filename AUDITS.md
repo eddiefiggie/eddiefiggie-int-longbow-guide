@@ -2,6 +2,60 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+## Bounded Chains type integration — build 11-15-26.9 — 15 November 2026
+
+The owner selected option 1 after the Chains type investigation: qualify exactly
+`chains-fortification` and `chains-spot`, add only their reviewed Spot pairs
+with Heroism and Luck, regenerate outputs and verify **draft PR #47**.
+Startup matched remote head `30ce02c4e823ae92a1cd2dde4db99fa60ad825d9` and staged
+tree `21b6dcfe104cf357877e8e5c8a4335d9547f99c7`, with no unstaged or untracked
+paths. Local HEAD remained the intentional base
+`5ded199eadbade29dcdb0c1eccfad4758a65c328` on `feat/wisdom-loadout-priorities`.
+
+The [new source register](evidence/wisdom-loadout/chains-type-sources-2026-11-15.json)
+is the exact frozen investigation record. Its five principal source observations
+run from **02:13:24.476 to 02:22:20.282 UTC on 16 November 2026**. It retains the
+original read-only scope and implementation-pending findings; the separate
+integration receipt records this later approved change. The selected browser
+text, accessibility observations and recipe-associated DOM title attributes
+form a curated record, not a complete DOM/HTTP archive. Screenshots were
+inspected but not saved as artifacts. Displayed Wiki/Compendium permanent links
+were not independently reopened; missing Nexus revisions or client versions
+are not invented.
+
+| Selected definition | Exact type evidence | Independently retained value/applicability |
+| --- | --- | --- |
+| Chains 142 Enhancement Fortification | Nexus `Legendary_Slaver_Fortification`: Legendary Prefix removal, Fortification effect and 100 Legendary-tier broken shackles. | Wiki Legendary Prefix value 142, shared base-item applicability and Chains host slots. |
+| Chains 20 Competence Spot | Nexus `Legendary_Slavers_Spot/2C66B`, variant `0x7002C66B`: Legendary Extra removal, Spot effect and 100 Legendary-tier broken collars. | Wiki Legendary Extra skills-except-UMD value 20, explicit Spot membership and Chains host slots. |
+
+The Nexus effects omit their numeric parameters. The numbers above are derived
+from the separate Wiki recipe records, never inserted into a claimed Nexus
+quotation. The exact Spot variant matters: another same-named Legendary entry
+belongs to the Bonus recipe. DDO Nexus identifies itself as an unaffiliated beta
+reference with potentially incomplete or incorrect data; the recipe metadata's
+origin and client version were not established. Collector's version fields do
+not establish a version for these recipe records. Heroic Compendium +70/+10
+types remain corroboration only; no Heroic-to-Legendary continuity is assumed.
+
+The existing Enhancement/Insight Fortification interaction and Heroism/Luck
+Spot pair remain. Only `chains-spot` ↔ `heroism-spot` and `chains-spot` ↔
+`luck-spot` are added, using the retained positive stacking premise and exact
+qualified definitions. At level 36 the complete selected-gear families derive
+**142 + 84 = 226% Fortification** and **20 + 4 + 3 = +27 direct Spot**.
+Selected-gear INT remains **+37**; the full-kit results at level 35 remain
+incomplete. All family guards remain, and no global type rule is introduced.
+These are existing gear contributions. Fortification is not a damage-reduction
+percentage, and direct Spot excludes ranks, the modifier from total Wisdom
+and other character sources; no trap-success threshold is established.
+
+Earlier .8 exclusions and source limitations remain dated historical findings.
+Selected equipment, sole Minor Artifact, all 32 priorities, crafts, sockets,
+feats/AP, historical model results, original claim grades and existing
+exceptions are unchanged. **Precommit verification passed: 531 tests in 214.123 seconds, all four documented builders, 141 local documentation links (including five fragments), and independent review with no remaining functional blocker.** The initial full run had one obsolete two-proof production assertion; its unchanged historical expectations now run on the exact .8 inputs through the current engine, alongside separate .9 acceptance checks. Internal-browser preview of the local candidate was rejected by the browser URL policy; visual rendering, keyboard behavior and print pagination remain unverified. The
+[integration receipt](evidence/wisdom-loadout/chains-type-integration-2026-11-15.json)
+records actual checks and draft-update state. No primary client test, new solve,
+crafting, purchase, merge or publication is included.
+
 ## Bounded Fortification and Spot integration — 15 November 2026
 
 The owner selected option 1 after the completed read-only Fortification/Spot
