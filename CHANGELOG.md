@@ -2,6 +2,14 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-18-26.2 (draft review corrections; not published)
+
+- Reconciles all current Fortification callouts, trap-skill guidance, bow transition and armor-cap wording with the selected recipes.
+- Gives survivability, Doubleshot and synergy navigation current report-based summaries; preserves the former scenarios with explicit historical headings and separate anchors.
+- Removes the current Quickblade attribution; describes the selected Solar gem, Dodge placement, AP46, Rocard Deception and absent Salt/weapon crafts without transferring old mechanics proofs.
+- Recovers the report’s embedded complete query (8,112 excluded IDs) and 37 analysis cuts through supported Library read. Raw solver output, replay and independent mechanics certification remain unavailable.
+- Adds current-prose and negative regression checks and a new snapshot; prior snapshots and initial startup evidence remain preserved.
+
 ## Build 11-18-26.1 (selected recipe review draft; not released)
 
 - Replaces the level-15 and level-20 gear recommendations with the selected balanced Wallwatch and University recipes, exact crafting, sockets, finished levels and acquisition prerequisites.

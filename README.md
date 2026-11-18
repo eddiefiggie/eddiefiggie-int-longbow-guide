@@ -6,7 +6,7 @@ A complete plan for one Dungeons & Dragons Online character: an Intelligence-bas
 
 Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-only arithmetic, relayed observations and missing evidence are distinguished in the Guide and audit. Judgment calls are labelled *build decision*. Written for Update 82.0.1.
 
-The **11-18-26.1 review draft** updates the selected level-15, level-20 and Sinew–Rocard endgame recipes. Its current modeled endgame ledger is reconstructed from a companion report, not the original solver object or an archive replay. Previous source-qualified calculations below remain historical and do not certify the new selection. See the [source access and verification record](evidence/gear-recipes-2026-11-18.json).
+The **11-18-26.2 review draft** updates the selected level-15, level-20 and Sinew–Rocard endgame recipes. Its current modeled endgame ledger is reconstructed from a companion report, not the original solver object or an archive replay. Previous source-qualified calculations below remain historical and do not certify the new selection. See the [source access and verification record](evidence/gear-recipes-2026-11-18.json).
 
 ## Layout
 
@@ -27,7 +27,7 @@ The **11-18-26.1 review draft** updates the selected level-15, level-20 and Sine
 
 ## Related
 
-- [DDO Loadout Optimizer](https://eddiefiggie.github.io/ddo-loadout-optimizer/) — the gear solver; the previous exact query and practical manual refinements remain in the historical [Wisdom loadout record](docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md); the current report-derived recipe and recovered query summary are in [selection.json](tools/fixtures/wisdom-loadout/selection.json)
+- [DDO Loadout Optimizer](https://eddiefiggie.github.io/ddo-loadout-optimizer/) — the gear solver; the previous exact query and practical manual refinements remain in the historical [Wisdom loadout record](docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md); the current report-derived recipe, complete embedded query and 37 analysis cuts are in [selection.json](tools/fixtures/wisdom-loadout/selection.json)
 - [ddo-gear-planner](https://github.com/eddiefiggie/ddo-gear-planner) — item and crafting data
 
 ## Updating

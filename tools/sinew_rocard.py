@@ -9,11 +9,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = 'sinew-rocard-report-v1'
 SOURCE = 'evidence/sinew-rocard-report-extract-2026-11-18.json'
-SOURCE_SHA256 = '61c58eac3c6166b5f781a6ad153066263e37140495b84a1c9743b70a128eb9eb'
+SOURCE_SHA256 = '38c6297f1394f9647f047b4b57a0b9d4c8997430f0d284711a062bf5d4e60e81'
 
 AUDIT_STYLE = '\n:root{color-scheme:dark;background:#101722;color:#e4eaf2;font:17px/1.6 system-ui,sans-serif}body{max-width:1140px;margin:auto;padding:24px}a{color:#9ed1ff}h1,h2,h3{line-height:1.2}h2{margin-top:2.5rem;border-top:1px solid #465568;padding-top:1rem}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid #465568}th{background:#202d3e}.tw{overflow-x:auto}caption{text-align:left;font-weight:700;padding:12px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.5 ui-monospace,monospace}code{overflow-wrap:anywhere}details{border:1px solid #465568;border-radius:6px;padding:12px;margin:12px 0}summary{cursor:pointer;font-weight:700}.note{border-left:4px solid #e9bd6c;padding-left:14px}.unknown{color:#f2ce92}nav a{margin-right:16px}@media(max-width:600px){body{padding:16px}th,td{padding:8px}table{min-width:650px}}\n'
 AUDIT_NAV = '<a href="index.html#selected-stacking-summary">Back to the guide</a><a href="#components">Components</a><a href="#unverified">Unverified log</a><a href="#rules">Rules</a><a href="#sources">Source receipts</a>'
-LIMITATIONS = ['Not original solver JSON; complete exclusions and policy cuts were not recovered. No optimizer replay or global optimality claim.', 'No new source-qualified stacking proof is established; all report sums remain conditional modeled gear contributions.', 'Specific Skull INT +16 versus generic +15: gear INT37 versus36.', 'Specific Quality Deadly +4 versus generic +3: gear Deadly20 versus19 if applicable.', 'Healing Amplification +63 procurement remains conditional.', 'No event base gear or augment-set bonuses; explicitly selected Festive ability diamonds remain listed as the recipe exception.', 'Sinew Anarchic imposes one negative level on a Lawful wearer; the reported model uses Neutral alignment.']
+LIMITATIONS = ['The report’s embedded exact priority query, 8,112 exclusions and 37 analysis cuts were recovered. Original raw solver output remains unavailable; no optimizer replay or global optimality claim.', 'No new source-qualified stacking proof is established; all report sums remain conditional modeled gear contributions.', 'Specific Skull INT +16 versus generic +15: gear INT37 versus36.', 'Specific Quality Deadly +4 versus generic +3: gear Deadly20 versus19 if applicable.', 'Healing Amplification +63 procurement remains conditional.', 'No event base gear or augment-set bonuses; explicitly selected Festive ability diamonds remain listed as the recipe exception.', 'Sinew Anarchic imposes one negative level on a Lawful wearer; the reported model uses Neutral alignment.']
 
 def validate(data):
     if data.get('schema') != SCHEMA:
@@ -29,6 +29,11 @@ def validate(data):
     require(source['provenance']['version_id'] == '1' and source['provenance']['read_lines'] == [321, 544], 'Wrong report version/range')
     require(data['reported_ledger'] == source['ledger'], 'Report ledger drift')
     require(data['query_summary'] == source['settings_summary']['query_summary'], 'Report query summary drift')
+    embedded = source['embedded_priority_settings']
+    require(embedded['read_lines'] == [5650, 5718] and embedded['element'] == 'script#export-data' and embedded['key'] == 'priority', 'Wrong embedded query provenance')
+    require(data['query'] == embedded['query'] and data['analysis_cuts'] == embedded['analysisCuts'], 'Embedded exact query/cuts drift')
+    require(len(data['query']['blocklist']) == 8112 and len(data['analysis_cuts']) == 37, 'Incomplete embedded exclusions/cuts')
+    require({k: v for k, v in data['query'].items() if k != 'blocklist'} == data['query_summary'], 'Query summary disagrees with embedded query')
     require(data['augment_sets'] == [], 'Augment sets are prohibited')
     items = data['items']
     require(len(items) == len({i['id'] for i in items}) == 14, 'Fourteen distinct items required')
@@ -96,7 +101,7 @@ def render_priorities(data):
         if stat=='Intelligence':value='37 / 36 (Skull +16 / +15)'
         if stat=='Deadly':value='20 / 19 (Quality +4 / +3)'
         rows.append(cells([str(n),h(stat),h(str(q['targetCaps'].get(stat,'None'))),h(str(q['targetFloors'].get(stat,'None'))),h(value)]))
-    return '<section id="current-affix-priority"><h3 id="current-affix-priority-title">Reported priority order</h3><p>The source report retains these 32 priorities, then rogue utility. Caps and floors are search settings, not game caps. This is the displayed final-query summary: full exclusions and policy cuts were not recovered, and no optimizer run was replayed. Presence is not uptime or DPS. In particular Fiery and Legendary Salt are absent.</p>'+table('Reported priority settings and gear contributions',['Rank','Affix','Search cap','Search floor','Reported contribution'],rows)+'<p>Human, light armor, Neutral; reported base item floor 29 and cap 36. Reported final query pins this recipe. The saved model is finite and does not establish a global optimum. The normalized incumbent Armor-Piercing comparison is 76 versus this kit’s 46.</p></section>'
+    return '<section id="current-affix-priority"><h3 id="current-affix-priority-title">Reported priority order</h3><p>The source report retains these 32 priorities, then rogue utility. Caps and floors are search settings, not game caps. The report’s embedded exact priority query, 8,112 excluded identifiers and 37 analysis cuts are retained in the manifest and source transcription. The table summarizes those settings; original raw solver output remains unavailable and no optimizer run was replayed. Presence is not uptime or DPS. In particular Fiery and Legendary Salt are absent.</p>'+table('Reported priority settings and gear contributions',['Rank','Affix','Search cap','Search floor','Reported contribution'],rows)+'<p>Human, light armor, Neutral; reported base item floor 29 and cap 36. Reported final query pins this recipe. The saved model is finite and does not establish a global optimum. The normalized incumbent Armor-Piercing comparison is 76 versus this kit’s 46.</p></section>'
 
 
 def render_onepage_rows(data):

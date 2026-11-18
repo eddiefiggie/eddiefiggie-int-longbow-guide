@@ -30,6 +30,10 @@ class SinewRocardTests(unittest.TestCase):
             lambda d:d['selection'].update(certified_mechanics=True),
             lambda d:d['provenance'].update(sha256='0'*64),
             lambda d:d['query_summary']['targets'].reverse(),
+            lambda d:d['query']['blocklist'].pop(),
+            lambda d:d['analysis_cuts'].pop(),
+            lambda d:d['analysis_cuts'].__setitem__(0, {}),
+            lambda d:d['query']['targets'].reverse(),
             lambda d:d['limitations'].__setitem__(0, 'Independently certified'),
             lambda d:d['items'][11]['sockets'][-1].update(color='Green'),
         ]:

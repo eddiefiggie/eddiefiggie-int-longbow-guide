@@ -117,6 +117,42 @@
       "method": "Every test from unittest discovery in tools/test_*.py was selected once across four disjoint groups; each group ran python3 -m unittest -v with PYTHONDONTWRITEBYTECODE=1. No tests skipped.",
       "selection_sha256": "2172c2d4766644e835bd5059b8d496e130938083a1d3445f8ff5963c275ecfa9"
     },
-    "interrupted_runs": "Earlier development runs were interrupted and are not passes. The completed 619-test inventory and final 621-test grouped run are reported separately."
+    "interrupted_runs": "Earlier development runs were interrupted and are not passes. The completed 619-test inventory and final 621-test grouped run are reported separately.",
+    "verified_head": "da6dc632825adcb1822158981639a53d7ccfda9b"
+  },
+  "follow_up": {
+    "date": "2026-11-18",
+    "build": "11-18-26.2",
+    "reviewed_head": "da6dc632825adcb1822158981639a53d7ccfda9b",
+    "continuation_gate": {
+      "repository": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide.git",
+      "head": "da6dc632825adcb1822158981639a53d7ccfda9b",
+      "branch": "work",
+      "worktree": "clean",
+      "method": "git read-only HEAD/remote/branch/status inspection",
+      "result": "matches delivered PR48 head; original startup evidence retained"
+    },
+    "changes": [
+      "Three current Fortification references240; current DS35/AP46/Dodge armor socket/source boundaries",
+      "Current navigation targets separate from preserved historical survivability/synergy sections",
+      "Selected rogue-skill item guidance, level35/36 bow transition and armor-cap limitations",
+      "Embedded complete priority query with8112excluded IDs and37analysis cuts directly recovered from companion HTML v1 lines5650\u20135718"
+    ],
+    "verification": {
+      "targeted_suite": "39 tests passed in11.458s: current prose/recipes, guide integrity, snapshot, navigation, Optional Mechanic, Sapphire",
+      "final_guards": "12 tests passed in1.701s: source query/cut mutants, current prose and preservation",
+      "preservation_suite": "18 tests passed in1.350s; all six reviewed paths reverse exactly to original approved base",
+      "builders": "All four passed; new11-18-26.2 snapshot; prior11-18-26.1 unchanged",
+      "browser": "1440px and390px: all three current navigation targets visible, outside historical disclosure, no page overflow; mobile synergy screenshot visually reviewed",
+      "diff": "git diff --check passed",
+      "full_suite": "Prior621-test result belongs to prior head; not rerun in full for this follow-up",
+      "print": "Not rerun for this prose-only follow-up",
+      "ci": "New-head CI pending push; prior run44359022381 observed in_progress; timeout unchanged"
+    },
+    "limits": [
+      "Historical swap scenarios not recalculated for the new kit",
+      "Report totals do not certify live mechanics, complete character totals, proc uptime or usable Dodge",
+      "Original solver output and replay unavailable; source conflicts and HA63 procurement remain conditional"
+    ]
   }
 }

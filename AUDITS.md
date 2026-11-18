@@ -3,6 +3,28 @@
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
 
+## PR48 current-prose reconciliation — build 11-18-26.2
+
+Independent review identified remaining old-kit callouts. Three current
+Fortification occurrences now say modeled 240; current survivability/Doubleshot/
+synergy sections describe the selected source ledger and socket placements.
+The old scenarios remain historical, with separate anchors so navigation does
+not present them as the selected kit. Rogue-skill equipment, bow transition,
+Quickblade attribution and armor-cap assumptions were reconciled as well.
+
+Supported Library read of companion report version 1, lines 5650–5718, directly
+recovered the embedded priority query, 8,112 blocked IDs and 37 analysis cuts.
+The fixture now retains these; raw solver output and optimizer replay remain
+unavailable. This is still report fidelity, not independent game certification.
+Original startup evidence remains in the receipt; continuation began at clean
+PR48 head `da6dc632825adcb1822158981639a53d7ccfda9b` on `work` with the same remote.
+Follow-up checks passed: 39 targeted tests, 12 final source/prose/preservation
+guards and 18 preservation tests (overlapping groups). All four builders passed.
+At 1440px and 390px, all three current navigation targets are visible outside
+the historical disclosure without page overflow; mobile text was reviewed.
+The prior 621-test full result is for the prior head; full-suite and print checks
+were not repeated for this bounded follow-up. See the receipt for exact limits.
+
 ## Selected recipe review draft — build 11-18-26.1 — 18 November 2026
 
 The approved scope replaces only the selected level-15, level-20 and endgame gear
