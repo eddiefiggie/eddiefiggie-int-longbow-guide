@@ -154,5 +154,14 @@
       "Report totals do not certify live mechanics, complete character totals, proc uptime or usable Dodge",
       "Original solver output and replay unavailable; source conflicts and HA63 procurement remain conditional"
     ]
+  },
+  "mdb_wording_follow_up": {
+    "build": "11-18-26.3",
+    "starting_head": "9536be533ac18465190a1b5d912e8c661e8b0216",
+    "continuation": "Clean working tree and same repository confirmed read-only before editing; original startup evidence retained",
+    "change": "Current Reaper Dodge row now names one selected Reflection armor, removes former two-armor MDB arithmetic, and distinguishes reported gear Dodge16 from verified usable Dodge",
+    "checks": "23 targeted tests passed in1.927s; stale-wording mutation rejected; all four builders and diff check passed; six-file exact approved-base reversal retained",
+    "history": "Prior11-18-26.1 and11-18-26.2 snapshots unchanged; new11-18-26.3 snapshot generated",
+    "limits": "Full suite, browser and print not repeated for this wording correction; no new mechanics or cap certification; no CI-timeout change"
   }
 }

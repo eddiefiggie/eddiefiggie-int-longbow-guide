@@ -3,6 +3,16 @@
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
 
+## Residual armor wording — build 11-18-26.3
+
+The current Reaper Dodge row still referred to two kit armors. It now names
+the single selected Reflection armor and separates reported gear Dodge16 from
+verified usable Dodge and applicable cap modifiers. A stale-wording mutation
+was added to the current-content guard. All23 targeted tests, four builders
+and diff check passed; original startup evidence and prior snapshots remain
+unchanged. Full-suite, browser and print checks were not repeated for this
+wording-only correction. No mechanics certification or CI change.
+
 ## PR48 current-prose reconciliation — build 11-18-26.2
 
 Independent review identified remaining old-kit callouts. Three current

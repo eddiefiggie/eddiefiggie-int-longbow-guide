@@ -30,7 +30,7 @@ def validate(html):
         if n.tag in {'p','td','li'} and not n.nodes('details') and not n.nodes('section'):
             t=norm(n.text())
             for stale in ['no trap item after level 9','no Disable Device or Open Lock item after level 9',
-                          '20 on both armors','Legendary Demon’s Arc; ML35-36 kit']:
+                          '20 on both armors','Both kit armors','Legendary Demon’s Arc; ML35-36 kit']:
                 assert stale not in t,stale
     return True
 class CurrentSelectedProseTests(unittest.TestCase):
@@ -46,7 +46,8 @@ class CurrentSelectedProseTests(unittest.TestCase):
     def test_stale_current_claims_cannot_hide_behind_historical_allowance(self):
         text=(ROOT/'index.html').read_text()
         for before,after in [('Reported level-36 gear Fortification: 240%','Reported level-36 gear Fortification: 226%'),
-                             ('35 gear Doubleshot','36 gear Doubleshot'),('Armor-Piercing 46:','Armor-Piercing 76:'),
+                             ('35 gear Doubleshot','36 gear Doubleshot'),
+                             ('The selected endgame kit uses one armor:', 'Both kit armors have MDB 20;'),('Armor-Piercing 46:','Armor-Piercing 76:'),
                              ('Reflection armor’s Green socket','helmet’s Green socket'),
                              ('id="current-gear-reconciliation"','id="endgame-historical-notes"')]:
             self.assertIn(before,text)

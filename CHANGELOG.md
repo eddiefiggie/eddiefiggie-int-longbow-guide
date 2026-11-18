@@ -2,6 +2,10 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-18-26.3 (draft wording correction; not published)
+
+- Removes the residual current-facing “both kit armors” MDB comparison. Names the selected Reflection armor and keeps reported Dodge16 separate from verified usable Dodge. Adds a regression mutation for the stale wording.
+
 ## Build 11-18-26.2 (draft review corrections; not published)
 
 - Reconciles all current Fortification callouts, trap-skill guidance, bow transition and armor-cap wording with the selected recipes.
