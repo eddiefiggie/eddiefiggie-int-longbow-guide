@@ -6,7 +6,7 @@ A complete plan for one Dungeons & Dragons Online character: an Intelligence-bas
 
 Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-only arithmetic, relayed observations and missing evidence are distinguished in the Guide and audit. Judgment calls are labelled *build decision*. Written for Update 82.0.1.
 
-The **11-18-26.3 review draft** updates the selected level-15, level-20 and Sinew–Rocard endgame recipes. Its current modeled endgame ledger is reconstructed from a companion report, not the original solver object or an archive replay. Previous source-qualified calculations below remain historical and do not certify the new selection. See the [source access and verification record](evidence/gear-recipes-2026-11-18.json).
+The **11-18-26.4 review draft** updates the selected level-15, level-20 and Sinew–Rocard endgame recipes. Its current modeled endgame ledger is reconstructed from a companion report, not the original solver object or an archive replay. Previous source-qualified calculations below remain historical and do not certify the new selection. See the [source access and verification record](evidence/gear-recipes-2026-11-18.json).
 
 ## Layout
 

@@ -2,6 +2,11 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-18-26.4 (draft CI correction; not published)
+
+- Restores the Loupe’s retained ML3–9 Spot guidance beside the selected level-15/20 socket recipes. The early item rows and all existing early-gear assertions/mutation controls remain unchanged.
+- Records the actual prior CI failure (two early-gear failures, not a timeout) and generates a new snapshot.
+
 ## Build 11-18-26.3 (draft wording correction; not published)
 
 - Removes the residual current-facing “both kit armors” MDB comparison. Names the selected Reflection armor and keeps reported Dodge16 separate from verified usable Dodge. Adds a regression mutation for the stale wording.

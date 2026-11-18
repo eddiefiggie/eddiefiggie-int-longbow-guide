@@ -3,6 +3,19 @@
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
 
+## Early-gear CI repair — build 11-18-26.4
+
+Actual job135001628871 for run44360892651 at e36ae8b ran624 tests in829.333s
+and failed two early-gear tests; it did not time out. The level15/20 skill-prose
+rewrite had removed the accurate Loupe ML3–9 sentence while retaining its
+correct item rows. The mutation test also failed its prerequisite because that
+sentence was absent. The qualified early guidance is restored beside the new
+recipes. The early-gear test file, original table hash and mutation assertions
+are unchanged. All39 relevant tests and four builders passed; prior snapshots,
+startup evidence and CI configuration are preserved. Full suite, browser and
+print were not repeated locally for this sentence restoration. New-head CI
+remains separate from these local results.
+
 ## Residual armor wording — build 11-18-26.3
 
 The current Reaper Dodge row still referred to two kit armors. It now names

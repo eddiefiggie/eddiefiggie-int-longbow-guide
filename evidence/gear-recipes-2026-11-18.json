@@ -163,5 +163,28 @@
     "checks": "23 targeted tests passed in1.927s; stale-wording mutation rejected; all four builders and diff check passed; six-file exact approved-base reversal retained",
     "history": "Prior11-18-26.1 and11-18-26.2 snapshots unchanged; new11-18-26.3 snapshot generated",
     "limits": "Full suite, browser and print not repeated for this wording correction; no new mechanics or cap certification; no CI-timeout change"
+  },
+  "early_gear_ci_follow_up": {
+    "build": "11-18-26.4",
+    "starting_head": "e36ae8bd22f4d12297009eaa77d54af5b6e16600",
+    "continuation": "Same repository and clean delivered head confirmed by read-only git inspection before edits; original startup evidence retained",
+    "ci_observed": {
+      "run": 44360892651,
+      "job": 135001628871,
+      "head": "e36ae8bd22f4d12297009eaa77d54af5b6e16600",
+      "conclusion": "failure, not timeout",
+      "tests": 624,
+      "seconds": 829.333,
+      "failures": 2,
+      "inspection": "Actual decoded GitHub job log and run metadata inspected",
+      "failed_tests": [
+        "test_early_gear_coverage.test_repeated_instructions_and_preserved_rows",
+        "test_early_gear_coverage.test_contradictions_and_overclaim_are_rejected: Loupe timing subtest"
+      ]
+    },
+    "diagnosis": "Level15/20 skill-prose rewrite removed accurate early Loupe ML3\u20139 sentence; retained item rows still correctly list ML3 and Spot6. Mutation failed its prerequisite because the expected sentence was absent.",
+    "repair": "Restore qualified early guidance adjacent to the new selected recipes. Existing early-gear test file, table hash and all mutation expectations unchanged.",
+    "checks": "39 focused/relevant tests passed in10.083s including both CI failures and mutation controls; four builders passed; six-file exact approved-base reversal passed; diff check passed. Prior snapshots and CI workflow unchanged.",
+    "limits": "Full suite, browser and print not repeated locally for this sentence restoration; new-head CI pending push; no mechanics certification"
   }
 }
