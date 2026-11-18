@@ -1,4 +1,7 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Exact retained Legendary Weapon barter name; no new build/stacking claims."""
+import selected_recipe_preservation as selected_history
 import copy
 import hashlib
 import json
@@ -6,7 +9,7 @@ from pathlib import Path
 import unittest
 from test_lamordia_handling import Document, norm
 from wisdom_preservation import predecessor_index
-ROOT=Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 SOURCE=ROOT/'tools/fixtures/lamordia-handling/viktranium-experiment-crafting.browser-capture.json'
 URL='https://ddowiki.com/index.php?title=Viktranium_Experiment_crafting&oldid=720728'
 
@@ -45,6 +48,7 @@ def validate(source,html):
 def validate_current(source,html,data):
     """Bind the current generated Calamitous recipe to the same source fact."""
     import wisdom_loadout
+    wisdom_loadout = selected_history.historical_module('wisdom_loadout')
     from test_wisdom_loadout import current_render_contract
     validate_source_and_crafting_table(source,html)
     current_render_contract(html,data)
@@ -85,10 +89,12 @@ class DimlightNameTests(unittest.TestCase):
 
     def test_current_recipe_and_crafting_table_keep_the_same_source_bound_choice(self):
         import wisdom_loadout
+        wisdom_loadout = selected_history.historical_module('wisdom_loadout')
         validate_current(json.loads(SOURCE.read_text()),(ROOT/'index.html').read_text(),wisdom_loadout.load())
 
     def test_current_name_value_type_and_cost_regressions_are_rejected(self):
         import wisdom_loadout
+        wisdom_loadout = selected_history.historical_module('wisdom_loadout')
         source=json.loads(SOURCE.read_text());html=(ROOT/'index.html').read_text();data=wisdom_loadout.load()
         for old,new in [
             ('Legendary Miserable Dimlight (Weapon)','Heroic Miserable Dimlight (Weapon)'),

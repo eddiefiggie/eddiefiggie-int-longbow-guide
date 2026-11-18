@@ -1,9 +1,12 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Exact .4 preservation plus real-new-engine backward-compatibility checks.
 
 Historical rendering is isolated, not substituted for current qualification.
 The actual new calculator is exercised on all 76 unchanged .3 result objects
 and direct-source negative controls. These are regression checks, not DDO proof.
 """
+import selected_recipe_preservation as selected_history
 import ast
 import copy
 import json
@@ -14,16 +17,18 @@ import unittest
 from unittest.mock import patch
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
 import wisdom_preservation as wisdom
 import wisdom_recipe_proof_preservation as preservation
+preservation = selected_history.historical_preservation_module('wisdom_recipe_proof_preservation')
 import wisdom_int_evidence_preservation as int_evidence
 import wisdom_int_stacking_preservation as int_stacking
 import wisdom_fort_spot_preservation as fort_spot
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 CALCULATOR = 'tools/stacking_audit.py'
 GLABREZU = 'glabrezu-insight-int'
@@ -154,9 +159,9 @@ class RecipeProofPreservationTests(unittest.TestCase):
         names = ('stacking_audit', 'wisdom_loadout', 'build_stacking_audit')
         before = {name: sys.modules.get(name) for name in names}
         old = checkpoint_ledger()
-        calculator = preservation.historical_calculator()
-        recipe = preservation.historical_recipe_renderer()
-        renderer = preservation.historical_audit_renderer()
+        calculator = selected_history.checkpoint_module(preservation, 'stacking_audit')
+        recipe = selected_history.checkpoint_module(preservation, 'wisdom_loadout')
+        renderer = selected_history.checkpoint_module(preservation, 'build_stacking_audit')
         self.assertIsNot(calculator, audit)
         self.assertEqual(calculator.load(), old)
         self.assertEqual(renderer.detail(old), preservation.checkpoint_file_text('endgame-stacking-audit.html'))
@@ -184,7 +189,7 @@ class RecipeProofPreservationTests(unittest.TestCase):
 class RealNewEngineCompatibilityTests(unittest.TestCase):
     def setUp(self):
         self.data = checkpoint_ledger()
-        self.old = preservation.historical_calculator()
+        self.old = selected_history.checkpoint_module(preservation, 'stacking_audit')
 
     def test_real_new_engine_matches_all_76_complete_point_three_result_objects(self):
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / CALCULATOR)
@@ -208,7 +213,7 @@ class RealNewEngineCompatibilityTests(unittest.TestCase):
         self.assertEqual(json.dumps(self.data, sort_keys=True), before)
 
     def test_existing_contracts_and_historical_positive_rules_are_unchanged(self):
-        point_five = int_stacking.historical_calculator()
+        point_five = selected_history.checkpoint_module(int_stacking, 'stacking_audit')
         # Preserve the original .5-to-.3 equality, including the seven-rule
         # registry. The historical .6/.7 registry adds only its two approved
         # rules; current .8 additions have separate exact-profile tests.
@@ -218,7 +223,7 @@ class RealNewEngineCompatibilityTests(unittest.TestCase):
         for name in ('STATES', 'OBSERVATION_POINTERS', 'STAT_WORDS'):
             with self.subTest(current_contract=name):
                 self.assertEqual(getattr(audit, name), getattr(self.old, name))
-        point_seven = fort_spot.historical_calculator()
+        point_seven = selected_history.checkpoint_module(fort_spot, 'stacking_audit')
         self.assertEqual(set(point_seven.RULE_CONTRACTS), set(self.old.RULE_CONTRACTS) | {
             'int-selected-ten-pairs', 'fort-enh-insight-observed'})
         for rid, contract in self.old.RULE_CONTRACTS.items():

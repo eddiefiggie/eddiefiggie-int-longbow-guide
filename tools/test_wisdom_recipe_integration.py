@@ -1,3 +1,5 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Historical .4 recipe qualification and full-result change boundary.
 
 These tests run the real current engine on .4 inputs and strictly restored .4
@@ -6,6 +8,7 @@ separately in test_wisdom_int_stacking; historical rendering cannot certify
 its new inputs.
 Neither source qualification nor a passing suite certifies live-game DPS.
 """
+import selected_recipe_preservation as selected_history
 import copy
 from hashlib import sha256
 import json
@@ -13,12 +16,13 @@ from pathlib import Path
 import unittest
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_recipe_proof_preservation as preservation
 import wisdom_int_evidence_preservation as int_evidence
 from test_lamordia_handling import Document, norm
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 PACKET = 'evidence/wisdom-loadout/recipe-proof-sources-2026-11-15.json'
 PACKET_SHA = '32b74bbce3d952f71dae94f22845e8ea414fcc821932e915bd9821f950ac3830'
@@ -79,12 +83,12 @@ class CurrentRecipeIntegrationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.previous = json.loads(preservation.checkpoint_file_text(LEDGER))
-        cls.old_engine = preservation.historical_calculator()
+        cls.old_engine = selected_history.checkpoint_module(preservation, 'stacking_audit')
 
     def setUp(self):
         self.data = json.loads(int_evidence.checkpoint_file_text(LEDGER))
-        self.recipe = int_evidence.historical_recipe_renderer()
-        self.page = int_evidence.historical_audit_renderer()
+        self.recipe = selected_history.checkpoint_module(int_evidence, 'wisdom_loadout')
+        self.page = selected_history.checkpoint_module(int_evidence, 'build_stacking_audit')
 
     def test_only_reviewed_two_proofs_and_notes_change(self):
         self.assertTrue(current_scope_contract(self.data, self.previous))

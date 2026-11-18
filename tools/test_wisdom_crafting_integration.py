@@ -1,3 +1,5 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Historical .3 crafting qualification, separate from frozen source grades.
 
 The exact-restored .3 and fbb1 ledgers preserve this single-input integration.
@@ -6,6 +8,7 @@ historical rendering uses pinned .3 behavior. Actual-current .4 qualification
 is checked separately by test_wisdom_recipe_integration. Neither suite certifies
 a live-game craft, stacking or DPS.
 """
+import selected_recipe_preservation as selected_history
 import copy
 from hashlib import sha256
 import json
@@ -14,11 +17,12 @@ import re
 import unittest
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_crafting_integration as integration
 import wisdom_recipe_proof_preservation as recipe_proofs
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER_PATH = 'tools/fixtures/endgame-stacking/ledger.json'
 PACKET_PATH = 'evidence/wisdom-loadout/crafting-browser-2026-11-15.json'
 RECORD_PATH = 'evidence/wisdom-loadout/crafting-integration-2026-11-15.json'
@@ -125,7 +129,7 @@ class HistoricalCraftingIntegrationTests(unittest.TestCase):
 
     def setUp(self):
         self.data = json.loads(recipe_proofs.checkpoint_file_text(LEDGER_PATH))
-        self.recipe = recipe_proofs.historical_recipe_renderer()
+        self.recipe = selected_history.checkpoint_module(recipe_proofs, 'wisdom_loadout')
         self.packet = json.loads((ROOT / PACKET_PATH).read_text())
         self.record = json.loads((ROOT / RECORD_PATH).read_text())
 

@@ -1,3 +1,5 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Bind the additive browser checkpoint without promoting calculator inputs.
 
 These are source-fidelity, provenance-boundary and preservation checks, not
@@ -6,6 +8,7 @@ tooltip synthesized from several pages. The original qualification checkpoint
 is recovered by the exact outer reversal; separate tests cover the later
 integration against actual current files.
 """
+import selected_recipe_preservation as selected_history
 import copy
 from datetime import datetime
 from hashlib import sha256
@@ -16,10 +19,11 @@ import unittest
 from urllib.parse import parse_qs, urlparse
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_crafting_integration as integration
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 PACKET = ROOT / 'evidence/wisdom-loadout/crafting-browser-2026-11-15.json'
 CAPTURES = {
     'glabrezu': ('Item:Legendary_Glabrezu_Claw_Pendant', '707320',

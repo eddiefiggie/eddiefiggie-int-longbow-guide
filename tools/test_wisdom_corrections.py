@@ -1,8 +1,11 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Current correction semantics plus strict preservation of the prior draft.
 
 These are source-fidelity/structure/regression checks, not browser or live-game
 certification. Historical false statements may remain in immutable snapshots.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import json
 from pathlib import Path
@@ -10,13 +13,14 @@ import re
 import unittest
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_corrections as corrections
 import wisdom_preservation as preservation
 import wisdom_crafting_integration as crafting
 from test_lamordia_handling import Document, norm
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 RECEIPT = ROOT / 'evidence/wisdom-loadout/corrections.json'
 CLAUSES = {
     'current-doubleshot-explanation': (
@@ -149,6 +153,7 @@ class CurrentMechanicsCorrectionTests(unittest.TestCase):
 
     def test_current_resource_annotations_and_generated_audit_agree(self):
         import build_stacking_audit
+        build_stacking_audit = selected_history.historical_module('build_stacking_audit')
         data = audit.load()
         self.assertTrue(annotation_contract(data))
         actual = (ROOT / 'endgame-stacking-audit.html').read_text()
@@ -173,6 +178,7 @@ class CurrentMechanicsCorrectionTests(unittest.TestCase):
 
     def test_generated_affix_text_and_procurement_limits_are_not_stale(self):
         import wisdom_loadout
+        wisdom_loadout = selected_history.historical_module('wisdom_loadout')
         data = wisdom_loadout.load()
         recipe = wisdom_loadout.render_recipe(data)
         onepage = wisdom_loadout.render_onepage_rows(data)

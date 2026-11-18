@@ -2,6 +2,10 @@
 
 Use **direct** for a statement explicitly present in the scoped source, **derived** for arithmetic with identified inputs or an explicitly reviewed source composition, and **conditional** for a result requiring stated ranks, items or stances. A source-supported recipe derivation is labeled separately from a finished-item tooltip. Keep conflicting or unverified claims visible; missing evidence is not proof that an effect is absent.
 
+## Current Sinew–Rocard report boundary — 18 November draft
+
+The current recipe and generated audit use `tools/sinew_rocard.py` and the report-derived manifest. The old `stacking_audit.py` default ledger and bounded INT, Wisdom, Constitution and Quickblade proofs are retained for the historical Calamitous/Yeenoghu kit only. They must not be used as current-kit totals. No new positive interaction proof or source qualification is inferred from the companion report's typed model ledger. Its 100 displayed rows include contributors and overlaps; arithmetic agreement verifies transcription only. Source conflicts, actual activation and full-character effects remain unresolved.
+
 ## Retained evidence on main
 
 | Scope | What the maintained evidence supports | Limit |

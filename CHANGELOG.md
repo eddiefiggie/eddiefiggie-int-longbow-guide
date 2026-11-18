@@ -2,6 +2,13 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-18-26.1 (selected recipe review draft; not released)
+
+- Replaces the level-15 and level-20 gear recommendations with the selected balanced Wallwatch and University recipes, exact crafting, sockets, finished levels and acquisition prerequisites.
+- Uses the selected Sinew–Rocard endgame recipe through the shared generated record, with distinct rings, Rocard as sole Minor Artifact and no augment-set rewards. The companion report supplies modeled contributions; unavailable archives were not replayed.
+- Preserves the Anarchic/Lawful applicability caveat, Gem reroll-before-upgrades requirement and untested activation, unselected Gilvaenor finishing, Skull INT and Quality Deadly source conflicts, conditional Healing Amplification procurement and permanent-craft replacement implications.
+- Historical evidence and calculator results remain historical. Verification and remaining limits are recorded in `evidence/gear-recipes-2026-11-18.json` and the audit entry; this is a review artifact, not certified or published guidance.
+
 ## Build 11-16-26.1 (draft Wisdom/Constitution evidence candidate; not published)
 
 - Binds eight selected standing-gear definitions: three Wisdom inputs and five Constitution inputs. Preserves exact own-effect evidence, bounded Celestial ability membership, host/craft/socket applicability and the full-kit level-36 floor.

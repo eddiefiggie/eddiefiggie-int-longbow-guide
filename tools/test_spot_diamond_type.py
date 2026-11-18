@@ -1,4 +1,7 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Exact +22/ML36 Spot correction; relayed item evidence never qualifies a subtotal."""
+import selected_recipe_preservation as selected_history
 import copy
 import hashlib
 import json
@@ -6,11 +9,12 @@ from pathlib import Path
 import unittest
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 from wisdom_preservation import (historical_renderer, predecessor_index,
                                 predecessor_ledger, predecessor_file_text)
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 SCOPE = json.loads((ROOT/'tools/fixtures/spot-diamond-type/scope.json').read_text())
 BASELINE_SHA = '69baa7faf353d8e3164efb36689b269d8b015ca3065edf1528313080376dedc0'
 LEDGER_SHA = 'ec1a1eab6301f39b1ed22c3051d6dc5defff95ed50722d1cbef449510ada99da'

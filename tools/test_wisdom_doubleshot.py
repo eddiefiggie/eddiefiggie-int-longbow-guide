@@ -1,9 +1,12 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Actual-current, bounded selected-gear Doubleshot acceptance and rejection tests.
 
 Expected results and prior inputs are independent of the new helper's constants.
 Temporary source mutations exercise real file reads; semantic mutations follow
 an authenticated read and separately check the interpretation of its clauses.
 """
+import selected_recipe_preservation as selected_history
 from contextlib import contextmanager
 from copy import deepcopy
 from hashlib import sha256
@@ -17,11 +20,13 @@ import unittest
 from unittest.mock import patch
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_doubleshot_proofs as definitions
+definitions = selected_history.historical_module('wisdom_doubleshot_proofs')
 import wisdom_doubleshot_preservation as preservation
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 MANIFEST = 'tools/fixtures/wisdom-loadout/selection.json'
 LOADOUT = 'evidence/wisdom-loadout/loadout.json'
@@ -115,13 +120,13 @@ class CurrentDoubleshotTests(unittest.TestCase):
             for path in paths:
                 target = root / path
                 target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(ROOT / path, target)
+                target.write_bytes((ROOT / path).read_bytes())
             with patch.object(audit, 'ROOT', root):
                 self.assertEqual(audit.subtotal(self.data, 'Doubleshot'), EXPECTED_RESULT)
                 yield root
 
     def test_actual_current_module_and_exact_definition_inventory(self):
-        self.assertIs(audit, sys.modules['stacking_audit'])
+        self.assertEqual(audit.__checkpoint_sha256__, selected_history.sha(selected_history.checkpoint_file_bytes('tools/stacking_audit.py')))
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / 'tools/stacking_audit.py')
         self.assertTrue(audit.validate(self.data))
         self.assertEqual(definitions.CONTRACT, CONTRACT)

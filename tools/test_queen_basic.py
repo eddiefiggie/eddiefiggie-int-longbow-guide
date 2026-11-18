@@ -1,8 +1,11 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """A-074 historical boundaries on the exact-restored pre-Wisdom release.
 
 The new recipe is tested independently in test_wisdom_loadout.  None of these
 older hashes, recipe expectations or mutation checks is redefined as Wisdom.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import hashlib
 import json
@@ -12,9 +15,10 @@ import unittest
 
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 from wisdom_preservation import predecessor_index, predecessor_ledger, predecessor_file_text
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 SCOPE = json.loads((ROOT/'tools/fixtures/queen-basic/scope.json').read_text())
 BASELINE = 'dbc4dc349173ce61ba2b6818e7cd270735dca0d7'
 

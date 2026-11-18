@@ -1,3 +1,5 @@
+> Historical Wisdom/Calamitous selection: superseded by the 18 November Sinew–Rocard review draft. The retained source-qualified calculations below apply to their original selection and are not transferred to the new kit. See [current record](../../tools/fixtures/wisdom-loadout/selection.json).
+
 # Wisdom-priority loadout with one Minor Artifact
 
 Status: owner-authorized guide implementation, **provisional modeled recipe**.

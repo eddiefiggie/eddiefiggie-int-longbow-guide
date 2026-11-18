@@ -1,9 +1,12 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Strict .5 checkpoint reversal and literal history, not DDO certification.
 
 Actual-current source, semantic, renderer and whole-result checks are separate
 in test_wisdom_int_stacking. The .5 tests in test_wisdom_int_evidence explicitly
 use historical inputs; no historical module replaces current entrypoints.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import json
 from pathlib import Path
@@ -13,15 +16,17 @@ import unittest
 from unittest.mock import patch
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_int_evidence_preservation as preservation
 import wisdom_int_stacking_preservation as int_stacking
 import wisdom_recipe_proof_preservation as recipes
+recipes = selected_history.historical_preservation_module('wisdom_recipe_proof_preservation')
 import wisdom_crafting_integration as crafting
 import wisdom_corrections as corrections
 import wisdom_preservation as wisdom
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 
 
@@ -141,9 +146,9 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
         names = ('stacking_audit', 'wisdom_loadout', 'build_stacking_audit')
         before = {name: sys.modules.get(name) for name in names}
         old = json.loads(preservation.checkpoint_file_text(LEDGER))
-        calculator = preservation.historical_calculator()
-        recipe = preservation.historical_recipe_renderer()
-        renderer = preservation.historical_audit_renderer()
+        calculator = selected_history.checkpoint_module(preservation, 'stacking_audit')
+        recipe = selected_history.checkpoint_module(preservation, 'wisdom_loadout')
+        renderer = selected_history.checkpoint_module(preservation, 'build_stacking_audit')
         self.assertIsNot(calculator, audit)
         self.assertEqual(calculator.load(), old)
         self.assertEqual(renderer.detail(old), preservation.checkpoint_file_text('endgame-stacking-audit.html'))
@@ -178,7 +183,7 @@ class IntelligenceEvidencePreservationTests(unittest.TestCase):
 
     def test_actual_engine_preserves_all_seventy_six_complete_old_input_results(self):
         old = json.loads(preservation.checkpoint_file_text(LEDGER))
-        frozen = preservation.historical_calculator()
+        frozen = selected_history.checkpoint_module(preservation, 'stacking_audit')
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / 'tools/stacking_audit.py')
         self.assertIsNot(audit.validate, frozen.validate)
         self.assertTrue(audit.validate(old))

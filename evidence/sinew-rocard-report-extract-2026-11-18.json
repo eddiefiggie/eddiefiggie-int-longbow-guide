@@ -1,0 +1,1482 @@
+{
+  "schema": "sinew-rocard-report-extract-v1",
+  "provenance": {
+    "library_file_id": "libfile_fde3_f-d2f40cc721608191bbbf5af1157c70ac_85aae769d8788191b59fa89737b1db1d",
+    "file_id": "file_00000000d48481fdac09b33f073c9adc",
+    "version_id": "1",
+    "name": "INTiana-Endgame-Report.html",
+    "read_lines": [
+      321,
+      544
+    ],
+    "source_url": "https://chatgpt.com/library?file_id=libfile_fde3_f-d2f40cc721608191bbbf5af1157c70ac_85aae769d8788191b59fa89737b1db1d",
+    "classification": "Derived structured transcription from the rendered report via Library read. Not original solver JSON, a full source packet, a replay, or independent mechanics evidence.",
+    "extracted_at": "2026-11-18"
+  },
+  "items": [
+    {
+      "slot": "Main Hand",
+      "id": "Legendary Demogorgon's Sinew",
+      "wiki_url": "https://ddowiki.com/page/Item:Legendary_Demogorgon%27s_Sinew",
+      "levels": "35 → 36",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "Orange: A Treatise on Battle · ML32 Purple: Ruby of Combustion 166 · ML36",
+      "socket_lines": [
+        "Orange: A Treatise on Battle · ML32",
+        "Purple: Ruby of Combustion 166 · ML36"
+      ]
+    },
+    {
+      "slot": "Armor",
+      "id": "Light Armor of the Warblade's Reflection",
+      "wiki_url": "https://ddowiki.com/page/Item:Light_Armor_of_the_Warblade%27s_Reflection",
+      "levels": "33 → 36",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "Green: Sapphire of Dodge +16% · ML36 Colorless: Diamond of Disable Device +22 · ML36 Sun: Solar Gem of Critical Confirmation (Legendary) · ML30",
+      "socket_lines": [
+        "Green: Sapphire of Dodge +16% · ML36",
+        "Colorless: Diamond of Disable Device +22 · ML36",
+        "Sun: Solar Gem of Critical Confirmation (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Helmet",
+      "id": "The Skull of the Horned King",
+      "wiki_url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King",
+      "levels": "35 → 36",
+      "crafts": [
+        "Nearly Complete (own-item source sensitivity) Intelligence 16 Enhancement"
+      ],
+      "craft_text": "Nearly Complete (own-item source sensitivity) Intelligence 16 Enhancement",
+      "socket_text": "Green: Sapphire of False Life +60 · ML36 Yellow: Diamond of Festive Wisdom +2 · ML22 Sun: Solar Gem of Doubleshot (Legendary) · ML30",
+      "socket_lines": [
+        "Green: Sapphire of False Life +60 · ML36",
+        "Yellow: Diamond of Festive Wisdom +2 · ML22",
+        "Sun: Solar Gem of Doubleshot (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Goggles",
+      "id": "Legendary Goggles of the Archer",
+      "wiki_url": "https://ddowiki.com/page/Item:Legendary_Goggles_of_the_Archer",
+      "levels": "33 → 33",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "Green: Sapphire of Good Luck +3 · ML28 Colorless: Diamond of Festive Charisma +2 · ML22 Sun: Solar Gem of Intelligence (Legendary) · ML30",
+      "socket_lines": [
+        "Green: Sapphire of Good Luck +3 · ML28",
+        "Colorless: Diamond of Festive Charisma +2 · ML22",
+        "Sun: Solar Gem of Intelligence (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Necklace",
+      "id": "Legendary Cranium Sphere",
+      "wiki_url": "https://ddowiki.com/page/Item:Legendary_Cranium_Sphere",
+      "levels": "33 → 33",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "Green: Sapphire of Greater Heroism · ML28 Colorless: Diamond of Festive Constitution +2 · ML22 Moon: Lunar Gem of Constitution (Legendary) · ML30",
+      "socket_lines": [
+        "Green: Sapphire of Greater Heroism · ML28",
+        "Colorless: Diamond of Festive Constitution +2 · ML22",
+        "Moon: Lunar Gem of Constitution (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Trinket",
+      "id": "Legendary Abyssal Compass",
+      "wiki_url": "https://ddowiki.com/page/Item:Legendary_Abyssal_Compass",
+      "levels": "35 → 35",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "Colorless: Diamond of Festive Dexterity +2 · ML22 Green: Diamond of Festive Intelligence +2 · ML22 Sun: Solar Gem of Physical Resistance Rating (Legendary) · ML30",
+      "socket_lines": [
+        "Colorless: Diamond of Festive Dexterity +2 · ML22",
+        "Green: Diamond of Festive Intelligence +2 · ML22",
+        "Sun: Solar Gem of Physical Resistance Rating (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Cloak",
+      "id": "The Queen of Rot",
+      "wiki_url": "https://ddowiki.com/page/Item:The_Queen_of_Rot",
+      "levels": "35 → 36",
+      "crafts": [
+        "Insightful Ability Score Constitution 7 Insight"
+      ],
+      "craft_text": "Insightful Ability Score Constitution 7 Insight",
+      "socket_text": "Yellow: Diamond of Open Lock +22 · ML36 Green: Diamond of Search +22 · ML36 Sun: Solar Gem of Ranged Power (Legendary) · ML30",
+      "socket_lines": [
+        "Yellow: Diamond of Open Lock +22 · ML36",
+        "Green: Diamond of Search +22 · ML36",
+        "Sun: Solar Gem of Ranged Power (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Belt",
+      "id": "The Unbreakable Cord",
+      "wiki_url": "https://ddowiki.com/page/Item:The_Unbreakable_Cord",
+      "levels": "34 → 34",
+      "crafts": [
+        "Dolorous: Dolorous Quality Damage (legendary) Deadly 4 Quality",
+        "Melancholic: Melancholic Wisdom (legendary) Wisdom 15 Enhancement",
+        "Miserable: Miserable: Force Absorption Force Absorption 17 Enhancement",
+        "Woeful: Woeful: Quality Seeker Seeker 3 Quality"
+      ],
+      "craft_text": "Dolorous: Dolorous Quality Damage (legendary) Deadly 4 Quality Melancholic: Melancholic Wisdom (legendary) Wisdom 15 Enhancement Miserable: Miserable: Force Absorption Force Absorption 17 Enhancement Woeful: Woeful: Quality Seeker Seeker 3 Quality",
+      "socket_text": "Blue: Legendary Sapphire of Riposte · ML30 Green: Ravil's Book of Legendary Recipes · ML32 Moon: Lunar Gem of Intelligence (Legendary) · ML30",
+      "socket_lines": [
+        "Blue: Legendary Sapphire of Riposte · ML30",
+        "Green: Ravil's Book of Legendary Recipes · ML32",
+        "Moon: Lunar Gem of Intelligence (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Ring",
+      "id": "Bound Elemental Ring of Flames",
+      "wiki_url": "https://ddowiki.com/page/Item:Bound_Elemental_Ring_of_Flames",
+      "levels": "29 → 30",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "Yellow: Essence of the Epic Litany of the Dead · ML30 Green: Emerald of Arcane Empowerment · ML28",
+      "socket_lines": [
+        "Yellow: Essence of the Epic Litany of the Dead · ML30",
+        "Green: Emerald of Arcane Empowerment · ML28"
+      ]
+    },
+    {
+      "slot": "Ring",
+      "id": "Legendary Ring of Unnatural Accuracy",
+      "wiki_url": "https://ddowiki.com/page/Item:Legendary_Ring_of_Unnatural_Accuracy",
+      "levels": "32 → 36",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "Colorless: Diamond of Spot +22 · ML36 Green: Topaz of Ranged Power +14 · ML36",
+      "socket_lines": [
+        "Colorless: Diamond of Spot +22 · ML36",
+        "Green: Topaz of Ranged Power +14 · ML36"
+      ]
+    },
+    {
+      "slot": "Gloves",
+      "id": "Legendary Burrowing Claws",
+      "wiki_url": "https://ddowiki.com/page/Item:Legendary_Burrowing_Claws",
+      "levels": "35 → 35",
+      "crafts": [
+        "Ability Score Charisma 15 Enhancement"
+      ],
+      "craft_text": "Ability Score Charisma 15 Enhancement",
+      "socket_text": "Colorless: Globe of True Imperial Blood · ML25 Moon: Lunar Gem of Physical Protection (Legendary) · ML30 Green: 1 empty",
+      "socket_lines": [
+        "Colorless: Globe of True Imperial Blood · ML25",
+        "Moon: Lunar Gem of Physical Protection (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Boots",
+      "id": "Legendary Coldlight Runners",
+      "wiki_url": "https://ddowiki.com/page/Item:Legendary_Coldlight_Runners",
+      "levels": "34 → 34",
+      "crafts": [
+        "Dolorous: Dolorous Quality Intelligence (legendary) Intelligence 3 Quality",
+        "Melancholic: Melancholic Dexterity (legendary) Dexterity 15 Enhancement"
+      ],
+      "craft_text": "Dolorous: Dolorous Quality Intelligence (legendary) Intelligence 3 Quality Melancholic: Melancholic Dexterity (legendary) Dexterity 15 Enhancement",
+      "socket_text": "Moon: Lunar Gem of Ranged Power (Legendary) · ML30 Green: 1 empty Colorless: 1 empty",
+      "socket_lines": [
+        "Moon: Lunar Gem of Ranged Power (Legendary) · ML30"
+      ]
+    },
+    {
+      "slot": "Bracers",
+      "id": "Rocard, Champion's Cuffs",
+      "wiki_url": "https://ddowiki.com/page/Item:Rocard,_Champion%27s_Cuffs",
+      "levels": "33 → 36",
+      "crafts": [
+        "Bracers Intelligence 7 Insight"
+      ],
+      "craft_text": "Bracers Intelligence 7 Insight",
+      "socket_text": "Blue: Sapphire of Healing Amplification +63 · ML36 Moon: Lunar Gem of Weapon Damage (Legendary) · ML30 Yellow: Topaz of Blindness Immunity · ML8 Green: 1 empty",
+      "socket_lines": [
+        "Blue: Sapphire of Healing Amplification +63 · ML36",
+        "Moon: Lunar Gem of Weapon Damage (Legendary) · ML30",
+        "Yellow: Topaz of Blindness Immunity · ML8"
+      ]
+    },
+    {
+      "slot": "Quiver",
+      "id": "Epic Purifying Quiver",
+      "wiki_url": "https://ddowiki.com/page/Item:Epic_Purifying_Quiver",
+      "levels": "29 → 29",
+      "crafts": [],
+      "craft_text": "None selected",
+      "socket_text": "No modeled sockets",
+      "socket_lines": []
+    }
+  ],
+  "ledger": [
+    {
+      "stat": "Greater Marksmanship",
+      "total": null,
+      "contributing": "Present · Bool — Native item Legendary Goggles of the Archer ; Native item Legendary Ring of Unnatural Accuracy ; Native item Legendary Coldlight Runners",
+      "overlapping": "Equal Bool sources count once for this bucket.",
+      "sources": [
+        "Present · Bool — Native item Legendary Goggles of the Archer ; Native item Legendary Ring of Unnatural Accuracy ; Native item Legendary Coldlight Runners"
+      ],
+      "reported_value": "Present"
+    },
+    {
+      "stat": "Sight Beyond Sight",
+      "total": null,
+      "contributing": "Present · Bool — Native item Legendary Goggles of the Archer",
+      "overlapping": "—",
+      "sources": [
+        "Present · Bool — Native item Legendary Goggles of the Archer"
+      ],
+      "reported_value": "Present"
+    },
+    {
+      "stat": "Relentless Fury",
+      "total": null,
+      "contributing": "Present · Bool — Native item The Skull of the Horned King",
+      "overlapping": "—",
+      "sources": [
+        "Present · Bool — Native item The Skull of the Horned King"
+      ],
+      "reported_value": "Present"
+    },
+    {
+      "stat": "Bloodrage",
+      "total": null,
+      "contributing": "Present · Bool — Native item The Skull of the Horned King",
+      "overlapping": "—",
+      "sources": [
+        "Present · Bool — Native item The Skull of the Horned King"
+      ],
+      "reported_value": "Present"
+    },
+    {
+      "stat": "Alchemical Fire Attunement",
+      "total": null,
+      "contributing": "Present · Bool — Native item Bound Elemental Ring of Flames",
+      "overlapping": "—",
+      "sources": [
+        "Present · Bool — Native item Bound Elemental Ring of Flames"
+      ],
+      "reported_value": "Present"
+    },
+    {
+      "stat": "Fiery",
+      "total": null,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "Absent"
+    },
+    {
+      "stat": "Legendary Salt",
+      "total": null,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "Absent"
+    },
+    {
+      "stat": "Improved Deception",
+      "total": null,
+      "contributing": "Present · Enhancement — Native item Rocard, Champion's Cuffs",
+      "overlapping": "—",
+      "sources": [
+        "Present · Enhancement — Native item Rocard, Champion's Cuffs"
+      ],
+      "reported_value": "Present"
+    },
+    {
+      "stat": "Ranged Alacrity",
+      "total": 20,
+      "contributing": "20 Enhancement — Native item Light Armor of the Warblade's Reflection",
+      "overlapping": "—",
+      "sources": [
+        "20 Enhancement — Native item Light Armor of the Warblade's Reflection"
+      ],
+      "reported_value": "20"
+    },
+    {
+      "stat": "Doubleshot",
+      "total": 35,
+      "contributing": "3 Profane — Native item Light Armor of the Warblade's Reflection 9 Enhancement — Native item Legendary Goggles of the Archer 3 Quality — Native item Legendary Ring of Unnatural Accuracy 5 Insight — Native item Legendary Coldlight Runners 15 Artifact — Added augment Solar Gem of Doubleshot (Legendary) on The Skull of the Horned King",
+      "overlapping": "—",
+      "sources": [
+        "3 Profane — Native item Light Armor of the Warblade's Reflection",
+        "9 Enhancement — Native item Legendary Goggles of the Archer",
+        "3 Quality — Native item Legendary Ring of Unnatural Accuracy",
+        "5 Insight — Native item Legendary Coldlight Runners",
+        "15 Artifact — Added augment Solar Gem of Doubleshot (Legendary) on The Skull of the Horned King"
+      ],
+      "reported_value": "35"
+    },
+    {
+      "stat": "Ranged Power",
+      "total": 44,
+      "contributing": "15 Profane — Added augment Lunar Gem of Ranged Power (Legendary) on Legendary Coldlight Runners 15 Artifact — Added augment Solar Gem of Ranged Power (Legendary) on The Queen of Rot 14 Enhancement — Added augment Topaz of Ranged Power +14 on Legendary Ring of Unnatural Accuracy",
+      "overlapping": "—",
+      "sources": [
+        "15 Profane — Added augment Lunar Gem of Ranged Power (Legendary) on Legendary Coldlight Runners",
+        "15 Artifact — Added augment Solar Gem of Ranged Power (Legendary) on The Queen of Rot",
+        "14 Enhancement — Added augment Topaz of Ranged Power +14 on Legendary Ring of Unnatural Accuracy"
+      ],
+      "reported_value": "44"
+    },
+    {
+      "stat": "Intelligence",
+      "total": 37,
+      "contributing": "16 Enhancement — Crafted Nearly Complete (own-item source sensitivity) on The Skull of the Horned King 3 Quality — Crafted Dolorous Quality Intelligence (legendary) on Legendary Coldlight Runners 7 Insight — Crafted Bracers on Rocard, Champion's Cuffs 2 Festive — Added augment Diamond of Festive Intelligence +2 on Legendary Abyssal Compass 4 Profane — Added augment Lunar Gem of Intelligence (Legendary) on The Unbreakable Cord 1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws 4 Artifact — Added augment Solar Gem of Intelligence (Legendary) on Legendary Goggles of the Archer",
+      "overlapping": "2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames",
+      "sources": [
+        "16 Enhancement — Crafted Nearly Complete (own-item source sensitivity) on The Skull of the Horned King",
+        "3 Quality — Crafted Dolorous Quality Intelligence (legendary) on Legendary Coldlight Runners",
+        "7 Insight — Crafted Bracers on Rocard, Champion's Cuffs",
+        "2 Festive — Added augment Diamond of Festive Intelligence +2 on Legendary Abyssal Compass",
+        "4 Profane — Added augment Lunar Gem of Intelligence (Legendary) on The Unbreakable Cord",
+        "1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws",
+        "4 Artifact — Added augment Solar Gem of Intelligence (Legendary) on Legendary Goggles of the Archer"
+      ],
+      "reported_value": "37"
+    },
+    {
+      "stat": "Seeker",
+      "total": 29,
+      "contributing": "15 Enhancement — Native item Legendary Burrowing Claws 7 Insight — Native item Legendary Burrowing Claws ; Native item Rocard, Champion's Cuffs 3 Quality — Crafted Woeful: Quality Seeker on The Unbreakable Cord 4 Artifact — Added augment Solar Gem of Critical Confirmation (Legendary) on Light Armor of the Warblade's Reflection",
+      "overlapping": "Equal Insight sources count once for this bucket.",
+      "sources": [
+        "15 Enhancement — Native item Legendary Burrowing Claws",
+        "7 Insight — Native item Legendary Burrowing Claws ; Native item Rocard, Champion's Cuffs",
+        "3 Quality — Crafted Woeful: Quality Seeker on The Unbreakable Cord",
+        "4 Artifact — Added augment Solar Gem of Critical Confirmation (Legendary) on Light Armor of the Warblade's Reflection"
+      ],
+      "reported_value": "29"
+    },
+    {
+      "stat": "Armor-Piercing",
+      "total": 46,
+      "contributing": "5 Legendary — Native item Light Armor of the Warblade's Reflection 25 Enhancement — Native item The Skull of the Horned King 11 Insight — Native item Legendary Goggles of the Archer ; Native item Rocard, Champion's Cuffs 5 Quality — Native item Legendary Burrowing Claws",
+      "overlapping": "Equal Insight sources count once for this bucket.",
+      "sources": [
+        "5 Legendary — Native item Light Armor of the Warblade's Reflection",
+        "25 Enhancement — Native item The Skull of the Horned King",
+        "11 Insight — Native item Legendary Goggles of the Archer ; Native item Rocard, Champion's Cuffs",
+        "5 Quality — Native item Legendary Burrowing Claws"
+      ],
+      "reported_value": "46"
+    },
+    {
+      "stat": "Deadly",
+      "total": 20,
+      "contributing": "12 Competence — Native item Light Armor of the Warblade's Reflection 4 Quality — Crafted Dolorous Quality Damage (legendary) on The Unbreakable Cord 4 Profane — Added augment Lunar Gem of Weapon Damage (Legendary) on Rocard, Champion's Cuffs",
+      "overlapping": "—",
+      "sources": [
+        "12 Competence — Native item Light Armor of the Warblade's Reflection",
+        "4 Quality — Crafted Dolorous Quality Damage (legendary) on The Unbreakable Cord",
+        "4 Profane — Added augment Lunar Gem of Weapon Damage (Legendary) on Rocard, Champion's Cuffs"
+      ],
+      "reported_value": "20"
+    },
+    {
+      "stat": "Imbue Dice",
+      "total": 1,
+      "contributing": "1 Enhancement — Added augment Emerald of Arcane Empowerment on Bound Elemental Ring of Flames",
+      "overlapping": "—",
+      "sources": [
+        "1 Enhancement — Added augment Emerald of Arcane Empowerment on Bound Elemental Ring of Flames"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Sneak Attack Dice",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Sneak Attack Damage",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Constitution",
+      "total": 32,
+      "contributing": "15 Enhancement — Native item Legendary Cranium Sphere 3 Quality — Native item Legendary Cranium Sphere 7 Insight — Crafted Insightful Ability Score on The Queen of Rot 2 Festive — Added augment Diamond of Festive Constitution +2 on Legendary Cranium Sphere 4 Profane — Added augment Lunar Gem of Constitution (Legendary) on Legendary Cranium Sphere 1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws",
+      "overlapping": "2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames",
+      "sources": [
+        "15 Enhancement — Native item Legendary Cranium Sphere",
+        "3 Quality — Native item Legendary Cranium Sphere",
+        "7 Insight — Crafted Insightful Ability Score on The Queen of Rot",
+        "2 Festive — Added augment Diamond of Festive Constitution +2 on Legendary Cranium Sphere",
+        "4 Profane — Added augment Lunar Gem of Constitution (Legendary) on Legendary Cranium Sphere",
+        "1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws"
+      ],
+      "reported_value": "32"
+    },
+    {
+      "stat": "Physical Sheltering",
+      "total": 133,
+      "contributing": "21 Insight — Native item Legendary Abyssal Compass 11 Quality — Native item Legendary Abyssal Compass 41 Enhancement — Native item The Queen of Rot 30 Profane — Added augment Lunar Gem of Physical Protection (Legendary) on Legendary Burrowing Claws 30 Artifact — Added augment Solar Gem of Physical Resistance Rating (Legendary) on Legendary Abyssal Compass",
+      "overlapping": "—",
+      "sources": [
+        "21 Insight — Native item Legendary Abyssal Compass",
+        "11 Quality — Native item Legendary Abyssal Compass",
+        "41 Enhancement — Native item The Queen of Rot",
+        "30 Profane — Added augment Lunar Gem of Physical Protection (Legendary) on Legendary Burrowing Claws",
+        "30 Artifact — Added augment Solar Gem of Physical Resistance Rating (Legendary) on Legendary Abyssal Compass"
+      ],
+      "reported_value": "133"
+    },
+    {
+      "stat": "Magical Sheltering",
+      "total": 73,
+      "contributing": "21 Insight — Native item Legendary Abyssal Compass 11 Quality — Native item Legendary Abyssal Compass 41 Enhancement — Native item The Queen of Rot",
+      "overlapping": "—",
+      "sources": [
+        "21 Insight — Native item Legendary Abyssal Compass",
+        "11 Quality — Native item Legendary Abyssal Compass",
+        "41 Enhancement — Native item The Queen of Rot"
+      ],
+      "reported_value": "73"
+    },
+    {
+      "stat": "Fortification",
+      "total": 240,
+      "contributing": "156 Enhancement — Native item Legendary Cranium Sphere 84 Insight — Native item The Queen of Rot",
+      "overlapping": "—",
+      "sources": [
+        "156 Enhancement — Native item Legendary Cranium Sphere",
+        "84 Insight — Native item The Queen of Rot"
+      ],
+      "reported_value": "240"
+    },
+    {
+      "stat": "False Life",
+      "total": 108,
+      "contributing": "60 Enhancement — Added augment Sapphire of False Life +60 on The Skull of the Horned King 48 Vitality — Added augment Ravil's Book of Legendary Recipes on The Unbreakable Cord",
+      "overlapping": "—",
+      "sources": [
+        "60 Enhancement — Added augment Sapphire of False Life +60 on The Skull of the Horned King",
+        "48 Vitality — Added augment Ravil's Book of Legendary Recipes on The Unbreakable Cord"
+      ],
+      "reported_value": "108"
+    },
+    {
+      "stat": "Healing Amplification",
+      "total": 63,
+      "contributing": "63 Competence — Added augment Sapphire of Healing Amplification +63 on Rocard, Champion's Cuffs",
+      "overlapping": "—",
+      "sources": [
+        "63 Competence — Added augment Sapphire of Healing Amplification +63 on Rocard, Champion's Cuffs"
+      ],
+      "reported_value": "63"
+    },
+    {
+      "stat": "Dodge",
+      "total": 16,
+      "contributing": "16 Enhancement — Added augment Sapphire of Dodge +16% on Light Armor of the Warblade's Reflection",
+      "overlapping": "—",
+      "sources": [
+        "16 Enhancement — Added augment Sapphire of Dodge +16% on Light Armor of the Warblade's Reflection"
+      ],
+      "reported_value": "16"
+    },
+    {
+      "stat": "Reflex Save",
+      "total": 26,
+      "contributing": "13 Resistance — Native item The Queen of Rot 6 Insight — Added augment Legendary Sapphire of Riposte on The Unbreakable Cord 3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "13 Resistance — Native item The Queen of Rot",
+        "6 Insight — Added augment Legendary Sapphire of Riposte on The Unbreakable Cord",
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "26"
+    },
+    {
+      "stat": "Fortitude Save",
+      "total": 27,
+      "contributing": "7 Insight — Native item Legendary Abyssal Compass 13 Resistance — Native item The Queen of Rot 3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "6 Insight — Added augment Legendary Sapphire of Riposte on The Unbreakable Cord",
+      "sources": [
+        "7 Insight — Native item Legendary Abyssal Compass",
+        "13 Resistance — Native item The Queen of Rot",
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "27"
+    },
+    {
+      "stat": "Will Save",
+      "total": 26,
+      "contributing": "13 Resistance — Native item The Queen of Rot 6 Insight — Added augment Legendary Sapphire of Riposte on The Unbreakable Cord 3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "13 Resistance — Native item The Queen of Rot",
+        "6 Insight — Added augment Legendary Sapphire of Riposte on The Unbreakable Cord",
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "26"
+    },
+    {
+      "stat": "Wisdom",
+      "total": 20,
+      "contributing": "15 Enhancement — Crafted Melancholic Wisdom (legendary) on The Unbreakable Cord 2 Festive — Added augment Diamond of Festive Wisdom +2 on The Skull of the Horned King 2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames 1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws",
+      "overlapping": "—",
+      "sources": [
+        "15 Enhancement — Crafted Melancholic Wisdom (legendary) on The Unbreakable Cord",
+        "2 Festive — Added augment Diamond of Festive Wisdom +2 on The Skull of the Horned King",
+        "2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames",
+        "1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws"
+      ],
+      "reported_value": "20"
+    },
+    {
+      "stat": "Accuracy",
+      "total": 28,
+      "contributing": "24 Competence — Native item Light Armor of the Warblade's Reflection 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "24 Competence — Native item Light Armor of the Warblade's Reflection",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "28"
+    },
+    {
+      "stat": "Combustion",
+      "total": 166,
+      "contributing": "166 Equipment — Added augment Ruby of Combustion 166 on Legendary Demogorgon's Sinew",
+      "overlapping": "148 Equipment — Native item Bound Elemental Ring of Flames",
+      "sources": [
+        "166 Equipment — Added augment Ruby of Combustion 166 on Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "166"
+    },
+    {
+      "stat": "Damage to helpless enemies",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Spot",
+      "total": 29,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere 22 Competence — Added augment Diamond of Spot +22 on Legendary Ring of Unnatural Accuracy",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+        "22 Competence — Added augment Diamond of Spot +22 on Legendary Ring of Unnatural Accuracy"
+      ],
+      "reported_value": "29"
+    },
+    {
+      "stat": "Disable Device",
+      "total": 29,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere 22 Competence — Added augment Diamond of Disable Device +22 on Light Armor of the Warblade's Reflection",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+        "22 Competence — Added augment Diamond of Disable Device +22 on Light Armor of the Warblade's Reflection"
+      ],
+      "reported_value": "29"
+    },
+    {
+      "stat": "Search",
+      "total": 29,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere 22 Competence — Added augment Diamond of Search +22 on The Queen of Rot",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+        "22 Competence — Added augment Diamond of Search +22 on The Queen of Rot"
+      ],
+      "reported_value": "29"
+    },
+    {
+      "stat": "Open Lock",
+      "total": 29,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere 22 Competence — Added augment Diamond of Open Lock +22 on The Queen of Rot",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+        "22 Competence — Added augment Diamond of Open Lock +22 on The Queen of Rot"
+      ],
+      "reported_value": "29"
+    },
+    {
+      "stat": "Acid Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Anarchic",
+      "total": 1,
+      "contributing": "1 Bool — Native item Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Anarchic Burst",
+      "total": 1,
+      "contributing": "1 Bool — Native item Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Arcane Augmentation",
+      "total": null,
+      "contributing": "Tier IX · +2 caster levels — Native item Bound Elemental Ring of Flames",
+      "overlapping": "—",
+      "sources": [
+        "Tier IX · +2 caster levels — Native item Bound Elemental Ring of Flames"
+      ],
+      "reported_value": "Tier IX"
+    },
+    {
+      "stat": "Armor Class",
+      "total": 56,
+      "contributing": "50 Armor — Native item Light Armor of the Warblade's Reflection 6 Insight — Added augment Legendary Sapphire of Riposte on The Unbreakable Cord",
+      "overlapping": "—",
+      "sources": [
+        "50 Armor — Native item Light Armor of the Warblade's Reflection",
+        "6 Insight — Added augment Legendary Sapphire of Riposte on The Unbreakable Cord"
+      ],
+      "reported_value": "56"
+    },
+    {
+      "stat": "Balance",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Blindness Immunity",
+      "total": 1,
+      "contributing": "1 Bool — Added augment Topaz of Blindness Immunity on Rocard, Champion's Cuffs",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Added augment Topaz of Blindness Immunity on Rocard, Champion's Cuffs"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Bluff",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Blunted Ammunition",
+      "total": 1,
+      "contributing": "1 Bool — Native item Epic Purifying Quiver",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Epic Purifying Quiver"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Burning Ammunition - 1d8",
+      "total": 1,
+      "contributing": "1 Bool — Native item Epic Purifying Quiver",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Epic Purifying Quiver"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Charisma",
+      "total": 20,
+      "contributing": "15 Enhancement — Crafted Ability Score on Legendary Burrowing Claws 2 Festive — Added augment Diamond of Festive Charisma +2 on Legendary Goggles of the Archer 2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames 1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws",
+      "overlapping": "—",
+      "sources": [
+        "15 Enhancement — Crafted Ability Score on Legendary Burrowing Claws",
+        "2 Festive — Added augment Diamond of Festive Charisma +2 on Legendary Goggles of the Archer",
+        "2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames",
+        "1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws"
+      ],
+      "reported_value": "20"
+    },
+    {
+      "stat": "Concentration",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Corrosion",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Devotion",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Dexterity",
+      "total": 23,
+      "contributing": "3 Quality — Native item Legendary Ring of Unnatural Accuracy 15 Enhancement — Crafted Melancholic Dexterity (legendary) on Legendary Coldlight Runners 2 Festive — Added augment Diamond of Festive Dexterity +2 on Legendary Abyssal Compass 2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames 1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws",
+      "overlapping": "—",
+      "sources": [
+        "3 Quality — Native item Legendary Ring of Unnatural Accuracy",
+        "15 Enhancement — Crafted Melancholic Dexterity (legendary) on Legendary Coldlight Runners",
+        "2 Festive — Added augment Diamond of Festive Dexterity +2 on Legendary Abyssal Compass",
+        "2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames",
+        "1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws"
+      ],
+      "reported_value": "23"
+    },
+    {
+      "stat": "Diplomacy",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Distant Diversion",
+      "total": 22,
+      "contributing": "22 Enhancement — Native item Legendary Ring of Unnatural Accuracy",
+      "overlapping": "—",
+      "sources": [
+        "22 Enhancement — Native item Legendary Ring of Unnatural Accuracy"
+      ],
+      "reported_value": "22"
+    },
+    {
+      "stat": "Doublestrike",
+      "total": 21,
+      "contributing": "3 Profane — Native item Light Armor of the Warblade's Reflection 18 Enhancement — Native item The Skull of the Horned King",
+      "overlapping": "—",
+      "sources": [
+        "3 Profane — Native item Light Armor of the Warblade's Reflection",
+        "18 Enhancement — Native item The Skull of the Horned King"
+      ],
+      "reported_value": "21"
+    },
+    {
+      "stat": "Elasticity",
+      "total": 1,
+      "contributing": "1 Bool — Native item Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Enhancement Bonus (Armor)",
+      "total": 15,
+      "contributing": "15 Enhancement — Native item Light Armor of the Warblade's Reflection",
+      "overlapping": "—",
+      "sources": [
+        "15 Enhancement — Native item Light Armor of the Warblade's Reflection"
+      ],
+      "reported_value": "15"
+    },
+    {
+      "stat": "Enhancement Bonus (Weapon)",
+      "total": 16,
+      "contributing": "16 Enhancement — Native item Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "16 Enhancement — Native item Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "16"
+    },
+    {
+      "stat": "Fire Lore",
+      "total": 22,
+      "contributing": "22 Equipment — Native item Bound Elemental Ring of Flames",
+      "overlapping": "—",
+      "sources": [
+        "22 Equipment — Native item Bound Elemental Ring of Flames"
+      ],
+      "reported_value": "22"
+    },
+    {
+      "stat": "Force Absorption",
+      "total": 17,
+      "contributing": "17 Enhancement — Crafted Miserable: Force Absorption on The Unbreakable Cord",
+      "overlapping": "—",
+      "sources": [
+        "17 Enhancement — Crafted Miserable: Force Absorption on The Unbreakable Cord"
+      ],
+      "reported_value": "17"
+    },
+    {
+      "stat": "Freedom of Movement",
+      "total": 1,
+      "contributing": "1 Bool — Native item The Queen of Rot",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item The Queen of Rot"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Glaciation",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Greater Heroism",
+      "total": 1,
+      "contributing": "1 Bool — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Haggle",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Heal",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Healing Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Hide",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Ice Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Immunity to Fear",
+      "total": 1,
+      "contributing": "1 Bool — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Impulse",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Intimidate",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Jump",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Kinetic Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Legendary Demonic Shield",
+      "total": 1,
+      "contributing": "1 Bool — Native item Legendary Abyssal Compass",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Legendary Abyssal Compass"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Lightning Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Listen",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Magnetism",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Max Filigree Slots",
+      "total": 5,
+      "contributing": "5 Untyped — Native item Rocard, Champion's Cuffs",
+      "overlapping": "—",
+      "sources": [
+        "5 Untyped — Native item Rocard, Champion's Cuffs"
+      ],
+      "reported_value": "5"
+    },
+    {
+      "stat": "Melee Alacrity",
+      "total": 15,
+      "contributing": "15 Enhancement — Native item Light Armor of the Warblade's Reflection",
+      "overlapping": "—",
+      "sources": [
+        "15 Enhancement — Native item Light Armor of the Warblade's Reflection"
+      ],
+      "reported_value": "15"
+    },
+    {
+      "stat": "Move Silently",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Nightshield clicky",
+      "total": 1,
+      "contributing": "1 Bool — Native item Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Legendary Cranium Sphere"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Nullification",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Paralyzing",
+      "total": 1,
+      "contributing": "1 Bool — Native item Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Perform",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Radiance",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Radiance Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Reconstruction",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Repair",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Repair Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Resonance",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Shadow Striker",
+      "total": 1,
+      "contributing": "1 Bool — Native item Light Armor of the Warblade's Reflection",
+      "overlapping": "—",
+      "sources": [
+        "1 Bool — Native item Light Armor of the Warblade's Reflection"
+      ],
+      "reported_value": "1"
+    },
+    {
+      "stat": "Shatter",
+      "total": 11,
+      "contributing": "11 Enhancement — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "11 Enhancement — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "11"
+    },
+    {
+      "stat": "Sonic Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    },
+    {
+      "stat": "Spellcraft",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Strength",
+      "total": 3,
+      "contributing": "2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames 1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws",
+      "overlapping": "—",
+      "sources": [
+        "2 Profane — Added augment Essence of the Epic Litany of the Dead on Bound Elemental Ring of Flames",
+        "1 Exceptional — Added augment Globe of True Imperial Blood on Legendary Burrowing Claws"
+      ],
+      "reported_value": "3"
+    },
+    {
+      "stat": "Stunning",
+      "total": 11,
+      "contributing": "11 Enhancement — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "11 Enhancement — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "11"
+    },
+    {
+      "stat": "Swim",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Tumble",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Use Magic Device",
+      "total": 7,
+      "contributing": "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer 4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere",
+      "overlapping": "—",
+      "sources": [
+        "3 Luck — Added augment Sapphire of Good Luck +3 on Legendary Goggles of the Archer",
+        "4 Morale — Added augment Sapphire of Greater Heroism on Legendary Cranium Sphere"
+      ],
+      "reported_value": "7"
+    },
+    {
+      "stat": "Vertigo",
+      "total": 11,
+      "contributing": "11 Enhancement — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew",
+      "overlapping": "—",
+      "sources": [
+        "11 Enhancement — Added augment A Treatise on Battle on Legendary Demogorgon's Sinew"
+      ],
+      "reported_value": "11"
+    },
+    {
+      "stat": "Void Lore",
+      "total": 0,
+      "contributing": "No modeled source.",
+      "overlapping": "—",
+      "sources": [],
+      "reported_value": "0"
+    }
+  ],
+  "settings_summary": {
+    "query_summary": {
+      "mlCap": 36,
+      "mlFloor": 29,
+      "augCeiling": null,
+      "targets": [
+        "Greater Marksmanship",
+        "Sight Beyond Sight",
+        "Relentless Fury",
+        "Bloodrage",
+        "Alchemical Fire Attunement",
+        "Fiery",
+        "Legendary Salt",
+        "Improved Deception",
+        "Ranged Alacrity",
+        "Doubleshot",
+        "Ranged Power",
+        "Intelligence",
+        "Seeker",
+        "Armor-Piercing",
+        "Deadly",
+        "Imbue Dice",
+        "Sneak Attack Dice",
+        "Sneak Attack Damage",
+        "Constitution",
+        "Physical Sheltering",
+        "Magical Sheltering",
+        "Fortification",
+        "False Life",
+        "Healing Amplification",
+        "Dodge",
+        "Reflex Save",
+        "Fortitude Save",
+        "Will Save",
+        "Wisdom",
+        "Accuracy",
+        "Combustion",
+        "Damage to helpless enemies"
+      ],
+      "armorType": "light",
+      "armorTypes": [
+        "light"
+      ],
+      "oath": null,
+      "style": "ranged",
+      "weaponTypes": [
+        "Long Bows"
+      ],
+      "offHand": [],
+      "offHandWeapons": [],
+      "twoWeaponFighting": false,
+      "race": "Human",
+      "alignment": "Neutral",
+      "includeArtifact": true,
+      "craftingRung": "everything",
+      "ownedPacks": null,
+      "pinnedSets": [],
+      "pinnedAugments": [],
+      "excludedSets": [
+        "Frenzied Berserker"
+      ],
+      "ownedSetAugments": [],
+      "slotConstraints": {
+        "Armor": {
+          "type": "pin",
+          "variant_ids": [
+            "Light Armor of the Warblade's Reflection"
+          ]
+        },
+        "Helmet": {
+          "type": "pin",
+          "variant_ids": [
+            "The Skull of the Horned King"
+          ]
+        },
+        "Goggles": {
+          "type": "pin",
+          "variant_ids": [
+            "Legendary Goggles of the Archer"
+          ]
+        },
+        "Necklace": {
+          "type": "pin",
+          "variant_ids": [
+            "Legendary Cranium Sphere"
+          ]
+        },
+        "Trinket": {
+          "type": "pin",
+          "variant_ids": [
+            "Legendary Abyssal Compass"
+          ]
+        },
+        "Cloak": {
+          "type": "pin",
+          "variant_ids": [
+            "The Queen of Rot"
+          ]
+        },
+        "Belt": {
+          "type": "pin",
+          "variant_ids": [
+            "The Unbreakable Cord"
+          ]
+        },
+        "Ring": {
+          "type": "pin",
+          "variant_ids": [
+            "Bound Elemental Ring of Flames",
+            "Legendary Ring of Unnatural Accuracy"
+          ]
+        },
+        "Gloves": {
+          "type": "pin",
+          "variant_ids": [
+            "Legendary Burrowing Claws"
+          ]
+        },
+        "Boots": {
+          "type": "pin",
+          "variant_ids": [
+            "Legendary Coldlight Runners"
+          ]
+        },
+        "Bracers": {
+          "type": "pin",
+          "variant_ids": [
+            "Rocard, Champion's Cuffs"
+          ]
+        },
+        "Quiver": {
+          "type": "pin",
+          "variant_ids": [
+            "Epic Purifying Quiver"
+          ]
+        },
+        "Main Hand": {
+          "type": "pin",
+          "variant_ids": [
+            "Legendary Demogorgon's Sinew"
+          ]
+        }
+      },
+      "targetCaps": {
+        "Greater Marksmanship": 1,
+        "Sight Beyond Sight": 1,
+        "Relentless Fury": 1,
+        "Bloodrage": 1,
+        "Alchemical Fire Attunement": 1,
+        "Fiery": 1,
+        "Legendary Salt": 1,
+        "Ranged Alacrity": 20,
+        "Doubleshot": 35,
+        "Ranged Power": 44,
+        "Intelligence": 37,
+        "Seeker": 29,
+        "Armor-Piercing": 76,
+        "Deadly": 20,
+        "Imbue Dice": 1,
+        "Sneak Attack Dice": 3,
+        "Improved Deception": 1
+      },
+      "targetFloors": {
+        "Constitution": 32,
+        "Physical Sheltering": 133,
+        "Magical Sheltering": 73,
+        "Fortification": 200,
+        "Freedom of Movement": 1,
+        "Immunity to Fear": 1,
+        "Blindness Immunity": 1,
+        "Improved Deception": 1
+      },
+      "declaredCredits": {},
+      "excludedTypes": {
+        "Deadly||Insight": {
+          "stat": "Deadly",
+          "bonus_type": "Insight"
+        }
+      },
+      "overrides": [],
+      "analysisRingRule": "verified",
+      "analysisRequireFullSlots": true,
+      "analysisSkills": [
+        "Spot",
+        "Disable Device",
+        "Search",
+        "Open Lock",
+        "Dexterity",
+        "Force Absorption",
+        "Charisma"
+      ],
+      "analysisParalyzing": true,
+      "analysisHardFloors": true,
+      "analysisHardLevelFloor": true,
+      "analysisUnlockCraftRecipes": true,
+      "analysisCommonSkill22": true
+    },
+    "excluded_id_count": 8112,
+    "analysis_cut_count": 37,
+    "result_metadata": {
+      "name": "complete-priority",
+      "status": "optimal",
+      "optimizerCommit": "01e17c1675363458aee46f3765ed6f1b811eb8e3",
+      "guideCommit": "96e937aa57171be6a211136d50e01050b19cb744",
+      "datasetSha256": "b779480ade9e41de8f0c1eeb554a7bd09060a300c8ceb67f6a80c5abfcad08cf",
+      "sourceCorrections": [
+        {
+          "host": "The Skull of the Horned King",
+          "productionGeneric": 15,
+          "analysisValue": 16,
+          "wiki_url": "https://ddowiki.com/page/Item:The_Skull_of_the_Horned_King"
+        },
+        {
+          "host": "The Volley's Aria",
+          "productionGeneric": 15,
+          "analysisValue": 16,
+          "wiki_url": "https://ddowiki.com/page/Item:The_Volley%27s_Aria"
+        }
+      ],
+      "elapsedSeconds": 3.367,
+      "passes": 51,
+      "actualFloorShortfalls": []
+    },
+    "complete_settings": "Use Download exact settings JSON for every exclusion and policy cut."
+  }
+}

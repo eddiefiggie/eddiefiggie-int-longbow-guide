@@ -284,6 +284,11 @@ def validate_guide(html,data):
 
 
 def main():
+    chosen = load_selection()
+    if chosen.get('schema') == 'sinew-rocard-report-v1':
+        from sinew_rocard import build_audit
+        build_audit(chosen)
+        return
     data=load();validate(data)
     (ROOT/'evidence/endgame-stacking/source-excerpts.json').write_text(json.dumps({'scope':'Exact retained source contexts with origin file hashes/pointers and current versus historical/background roles. Original mixed capture files are not linked as audit payload; new model claims are not promoted to original source receipts.', 'source_roles':data['source_roles'], 'sources':data['sources']}, ensure_ascii=False, indent=2)+'\n')
     (ROOT/'endgame-stacking-audit.html').write_text(detail(data))

@@ -103,6 +103,9 @@ def aggregate(data):
 
 
 def validate(data):
+    if data.get('schema') == 'sinew-rocard-report-v1':
+        from sinew_rocard import validate as report_route
+        return report_route(data)
     """Reject drift from frozen recipe/query and invalid construction/math.
 
     A pass says the authored guide is faithful to the retained analysis; it
@@ -526,6 +529,9 @@ def render_crafting_qualification(ledger=None, *, compact=False):
 
 
 def render_recipe(data):
+    if data.get('schema') == 'sinew-rocard-report-v1':
+        from sinew_rocard import render_recipe as report_route
+        return report_route(data)
     """Render the complete physical primary recipe, model context and limits."""
     validate(data)
     p = data['provenance']['production']
@@ -614,6 +620,9 @@ def render_recipe(data):
 
 
 def render_priorities(data):
+    if data.get('schema') == 'sinew-rocard-report-v1':
+        from sinew_rocard import render_priorities as report_route
+        return report_route(data)
     """Render exact original lexicographic order, not a sorted stat wishlist."""
     validate(data)
     from stacking_audit import load as load_ledger
@@ -666,6 +675,9 @@ def render_priorities(data):
 
 
 def render_onepage_rows(data):
+    if data.get('schema') == 'sinew-rocard-report-v1':
+        from sinew_rocard import render_onepage_rows as report_route
+        return report_route(data)
     validate(data)
     from stacking_audit import load as load_ledger, subtotal
 

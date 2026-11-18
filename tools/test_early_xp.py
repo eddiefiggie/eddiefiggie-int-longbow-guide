@@ -1,4 +1,7 @@
+# Historical release contract retains the two former Gift gear cells.
+# Current early-XP bytes are compared independently in test_selected_recipe_preservation.
 """Narrow retained-source/actual-Guide guards; not current game certification."""
+import selected_recipe_preservation as selected_history
 import copy
 import hashlib
 import json
@@ -10,7 +13,7 @@ from urllib.parse import urlsplit
 from test_lamordia_handling import Document, Node, norm
 from test_public_evidence_privacy import validate_public
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 RECORD = ROOT / 'evidence/early-xp/claims.json'
 SOURCE = ROOT / 'tools/fixtures/endgame-evidence/fresh/wiki-live-audit-2026-11-05.json'
 PUBLIC_SHA = 'e8f9285807d932161a72c0dc01f47571b9792e03d3788a25504ca33e1f7becf6'

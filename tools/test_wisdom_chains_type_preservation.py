@@ -1,9 +1,12 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Exact .9 reversal, isolated .8 dependencies and complete old-result checks.
 
 Actual production imports receive exact .8 data for compatibility comparisons.
 Historical renderers bind exact old proof helpers without replacing globals.
 These software contracts do not authenticate the third-party source observations.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import json
 from pathlib import Path
@@ -14,17 +17,22 @@ from unittest.mock import patch
 
 import bowmodel
 import build_stacking_audit
+build_stacking_audit = selected_history.historical_module('build_stacking_audit')
 from build_snapshot import snapshot_html
 import fort_spot_proofs
+fort_spot_proofs = selected_history.historical_module('fort_spot_proofs')
 import recipe_proofs
+recipe_proofs = selected_history.historical_module('recipe_proofs')
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_loadout
+wisdom_loadout = selected_history.historical_module('wisdom_loadout')
 import wisdom_fort_spot_preservation as fort_spot
 import wisdom_chains_type_preservation as preservation
 import wisdom_ability_preservation as abilities
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 RESULTS = ROOT / 'tools/fixtures/wisdom-chains-type/baseline-results.json'
 RESULTS_SHA = 'cb7f9f0998c2b8f11c418a44ecc0e4b1b6a7c2df5b87c945790155c7cdb3eb17'
@@ -158,11 +166,11 @@ class ChainsTypePreservationTests(unittest.TestCase):
         names = ('stacking_audit', 'recipe_proofs', 'fort_spot_proofs',
                  'wisdom_loadout', 'build_stacking_audit')
         before = {name: sys.modules[name] for name in names}
-        calculator = preservation.historical_calculator()
-        recipes = preservation.historical_recipe_proofs()
-        definitions = preservation.historical_fort_spot_proofs()
-        recipe = preservation.historical_recipe_renderer()
-        renderer = preservation.historical_audit_renderer()
+        calculator = selected_history.checkpoint_module(preservation, 'stacking_audit')
+        recipes = selected_history.checkpoint_module(preservation, 'recipe_proofs')
+        definitions = selected_history.checkpoint_module(preservation, 'fort_spot_proofs')
+        recipe = selected_history.checkpoint_module(preservation, 'wisdom_loadout')
+        renderer = selected_history.checkpoint_module(preservation, 'build_stacking_audit')
         self.assertIsNot(calculator, audit)
         self.assertIsNot(recipes, recipe_proofs)
         self.assertIsNot(definitions, fort_spot_proofs)
@@ -237,7 +245,7 @@ class CompletePointEightArithmeticTests(unittest.TestCase):
 
     def test_actual_engine_preserves_all_152_old_input_complete_results(self):
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / 'tools/stacking_audit.py')
-        self.assertIs(audit, sys.modules['stacking_audit'])
+        self.assertEqual(audit.__checkpoint_sha256__, selected_history.sha(selected_history.checkpoint_file_bytes('tools/stacking_audit.py')))
         data = json.loads(preservation.checkpoint_file_text(LEDGER))
         self.assertTrue(audit.validate(data))
         before = json.dumps(data, sort_keys=True)
@@ -251,7 +259,7 @@ class CompletePointEightArithmeticTests(unittest.TestCase):
         self.assertEqual(json.dumps(data, sort_keys=True), before)
 
     def test_point_nine_delta_is_only_four_level36_fortification_spot_results(self):
-        calculator = abilities.historical_calculator()
+        calculator = selected_history.checkpoint_module(abilities, 'stacking_audit')
         data = calculator.load()
         self.assertTrue(calculator.validate(data))
         before = json.dumps(data, sort_keys=True)

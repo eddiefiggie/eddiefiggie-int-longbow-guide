@@ -6,6 +6,9 @@ temporary source copies; separate Chains tests exercise actual .9 production.
 Passing these checks is not a live-game or complete-character certificate.
 """
 from contextlib import contextmanager
+# Historical assertions run against the exact authenticated checkpoint.
+import selected_recipe_preservation as selected_history
+
 import copy
 import hashlib
 import json
@@ -19,11 +22,11 @@ import wisdom_fort_spot_preservation as preservation
 import wisdom_chains_type_preservation as chains_type
 
 
-audit = chains_type.historical_calculator()
-definitions = chains_type.historical_fort_spot_proofs()
+audit = selected_history.checkpoint_module(chains_type, 'stacking_audit')
+definitions = selected_history.checkpoint_module(chains_type, 'fort_spot_proofs')
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 MANIFEST = 'tools/fixtures/wisdom-loadout/selection.json'
 PACKET = 'evidence/wisdom-loadout/fort-spot-sources-2026-11-15.json'
@@ -106,7 +109,7 @@ def result_for(engine, data, case):
 
 class HistoricalPointEightFortSpotTests(unittest.TestCase):
     def setUp(self):
-        self.assertIs(audit, chains_type.historical_calculator())
+        self.assertIs(audit, selected_history.checkpoint_module(chains_type, 'stacking_audit'))
         self.data = audit.load()
 
     def assert_invalid(self, data):
@@ -136,7 +139,7 @@ class HistoricalPointEightFortSpotTests(unittest.TestCase):
             for relative in paths:
                 target = root / relative
                 target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(ROOT / relative, target)
+                target.write_bytes((ROOT / relative).read_bytes())
             with patch.object(audit, 'ROOT', root):
                 self.assertTrue(audit.validate(self.data, root=root))
                 self.assertEqual(audit.subtotal(self.data, 'Spot'), EXPECTED_RESULTS['Spot'])
@@ -564,7 +567,7 @@ class FortSpotBaselineTests(unittest.TestCase):
         cls.results = json.loads(raw)
 
     def setUp(self):
-        self.assertIs(audit, chains_type.historical_calculator())
+        self.assertIs(audit, selected_history.checkpoint_module(chains_type, 'stacking_audit'))
         self.data = audit.load()
 
     def test_exact_seven_nine_and_ten_rule_profiles_remain_distinct(self):
@@ -578,7 +581,7 @@ class FortSpotBaselineTests(unittest.TestCase):
             with self.subTest(profile_size=len(expected)):
                 self.assertEqual(audit.rule_profile(data), frozenset(expected))
                 self.assertTrue(audit.validate(data))
-        old_engine = preservation.historical_calculator()
+        old_engine = selected_history.checkpoint_module(preservation, 'stacking_audit')
         for case in self.results['ledger_cases']:
             with self.subTest(seven_rule_case=(case['level'], case['stat'], case['active'])):
                 self.assertEqual(result_for(audit, seven, case), result_for(old_engine, seven, case))

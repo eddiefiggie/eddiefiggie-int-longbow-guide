@@ -12,15 +12,15 @@ from sapphire_evidence import (FIXTURE, ROOT, load_record, validate_guide,
                                validate_source, verify_bytes)
 
 
-# Independently reviewed .7 context, deliberately literal rather than copied
-# from the HTML under test. Only the unrelated Flaming progression changed;
+# Independently reviewed 11-18-26.1 context, deliberately literal rather than
+# copied from the HTML under test. The unrelated Emerald host is now the ML30 ring;
 # all required Sapphire claims, source fields and other full contexts remain
 # the original contract. The original complete contract still runs on exact .6.
 CURRENT_ROADMAP_CONTEXT = (
     '4-5Arcane Archer: Arcane Archer, Elemental Arrows (Flaming). Deepwood: Far Shot, '
     'Stealthy 3, Favored Defense 1Cheap Shot from 5; Sapphire Sting from 7 (not at 4-5)'
     'The Flaming Arrows imbue: 1d6 now; named feat-and-tree subtotal 4d6 while Chaotic / '
-    '2d6 otherwise at 30. The selected Emerald’s later ML34-host contribution is detailed '
+    '2d6 otherwise at 30. The selected Emerald’s ML30-ring contribution is detailed '
     'separately. +1 bow enhancement; three sneak dice, the fourth at 6')
 
 
@@ -58,8 +58,8 @@ class SapphireEvidenceTests(unittest.TestCase):
         self.assertNotEqual(mutant, original)
         with self.assertRaisesRegex(ValueError, 'roadmap: context drift'):
             validate_guide(mutant, self.source, self.record)
-        mutant = self.guide.replace('The selected Emerald’s later ML34-host contribution',
-                                   'The selected Emerald’s later ML28-host contribution', 1)
+        mutant = self.guide.replace('The selected Emerald’s ML30-ring contribution',
+                                   'The selected Emerald’s ML28-ring contribution', 1)
         self.assertNotEqual(mutant, self.guide)
         with self.assertRaisesRegex(ValueError, 'roadmap: context drift'):
             validate_guide(mutant, self.source, self.current_record)
