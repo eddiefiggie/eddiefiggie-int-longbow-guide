@@ -38,7 +38,9 @@ class SelectedLevelingRecipes(unittest.TestCase):
             for name in names:
                 with self.subTest(level=level, name=name):
                     self.assertIn(name, section)
-            self.assertIn('https://chatgpt.com/c/', section)
+            self.assertIn('href="evidence/gear-recipes-2026-11-18.json"', section)
+            self.assertIn(f'level-{level} source notes', section)
+            self.assertNotIn('https://chatgpt.com/c/', section)
             self.assertIn('https://ddowiki.com/', section)
 
     def test_each_primary_table_has_fourteen_equipped_rows(self):

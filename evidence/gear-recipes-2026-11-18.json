@@ -19,14 +19,14 @@
     "rechecked_unchanged_before_editing": true
   },
   "sources": [
-    "https://chatgpt.com/c/6afd266c-7494-83e8-84c6-6187b1cc574f?messageId=a304bfac-5080-5ec9-b8f0-6d4cf251d750",
-    "https://chatgpt.com/c/6afd266c-7494-83e8-84c6-6187b1cc574f?messageId=af7ab879-d39e-5da2-b906-0d8870d5af56",
-    "https://chatgpt.com/c/6afd37f0-4c5c-83e8-b745-d841ba978038?messageId=111337bb-9f1e-52e4-9a14-c295e5794a41",
-    "https://chatgpt.com/c/6afd37f0-4c5c-83e8-b745-d841ba978038?messageId=11547d9e-b11e-521d-9835-67095cf87540",
-    "https://chatgpt.com/c/6afd1193-50d4-83e8-a9a7-d78b0ef4f2c0?messageId=36b0fb74-2841-5dda-8ae1-0ab58abca85f",
-    "https://chatgpt.com/c/6afd1193-50d4-83e8-a9a7-d78b0ef4f2c0?messageId=b69523d1-9ff3-5aa0-86b6-84f620c47350"
+    "Level 15: selected Wallwatch recipe table (owner-supplied report).",
+    "Level 15: Quiver of Alacrity minimum-level correction (owner-supplied follow-up).",
+    "Level 20: selected University/Forbidden Knowledge recipe table (owner-supplied report).",
+    "Level 20: supporting loadout analysis (owner-supplied report).",
+    "Level 36: selected Sinew\u2013Rocard recipe and socket plan (owner-supplied report).",
+    "Level 36: farming locations and crafting corrections (owner-supplied follow-up)."
   ],
-  "source_class": "Full conversation messages supplied by the parent task; reported selected recipes, not independent mechanics observations",
+  "source_class": "Owner-supplied private recipe reports and corrections. Source notes summarize their roles without publishing the conversations. They are not independent mechanics observations.",
   "library_status": "IDs resolved; supported materialization failed on the level-15 ZIP with download failed. No packet bytes verified. No retry or bypass after explicit instruction.",
   "fresh_wiki_status": "Direct opens of Demogorgon's Sinew, Quiver of Alacrity and Epic Gem of Many Facets returned inaccessible/restricted results. No fresh verification claimed.",
   "companion_report": {
