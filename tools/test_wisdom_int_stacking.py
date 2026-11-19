@@ -1,8 +1,11 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Preserved .6 source/rule contracts, full-result deltas and negative controls.
 
 The current engine is imported normally. Exact historical views are comparison
 inputs only; passing this suite does not measure live-game INT, DPS or crits.
 """
+import selected_recipe_preservation as selected_history
 import copy
 from datetime import datetime
 import hashlib
@@ -13,6 +16,7 @@ import unittest
 from unittest.mock import patch
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_int_stacking_preservation as preservation
 import wisdom_offense_preservation as offense
 import wisdom_fort_spot_preservation as fort_spot
@@ -20,7 +24,7 @@ import wisdom_chains_type_preservation as chains_type
 from test_lamordia_handling import Document, norm
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 PACKET = 'evidence/wisdom-loadout/int-stacking-sources-2026-11-15.json'
 PACKET_SHA = '765a1f9061f8aaa533553569c7496df87ba465faea9893fb331de8c87590905d'
@@ -372,7 +376,7 @@ class HistoricalInputScopedIntDeltaTests(unittest.TestCase):
     def setUp(self):
         self.data = json.loads(fort_spot.checkpoint_file_text(LEDGER))
         self.previous = json.loads(preservation.checkpoint_file_text(LEDGER))
-        self.old = preservation.historical_calculator()
+        self.old = selected_history.checkpoint_module(preservation, 'stacking_audit')
 
     def test_two_rule_profiles_are_valid_and_old_metadata_and_numeric_tuples_are_literal(self):
         self.assertTrue(audit.validate(self.previous))
@@ -437,23 +441,23 @@ class HistoricalInputScopedIntDeltaTests(unittest.TestCase):
 
 class HistoricalPointEightScopedIntPresentationTests(unittest.TestCase):
     def test_onepage_distinguishes_derived_int_from_other_modeled_values(self):
-        recipe = chains_type.historical_recipe_renderer()
+        recipe = selected_history.checkpoint_module(chains_type, 'wisdom_loadout')
         load, render_onepage_rows = recipe.load, recipe.render_onepage_rows
         text = norm(Document('<table>' + render_onepage_rows(load()) + '</table>').root.text())
         self.assertIn('Model-only gear WIS 18 / DEX 6 / CON 32 / direct Spot 27.', text)
         self.assertIn('Derived selected-gear INT +37 at level 36', text)
         self.assertNotIn('DEX 6 / INT 37', text)
-        calculator = chains_type.historical_calculator()
+        calculator = selected_history.checkpoint_module(chains_type, 'stacking_audit')
         changed = calculator.load()
         component(changed, 'solar-int')['amount'] = 999
         with patch.object(calculator, 'load', return_value=changed), self.assertRaises(ValueError):
             render_onepage_rows(load())
 
     def test_point_eight_renderers_expose_derived_int_and_preserve_remaining_limits(self):
-        renderer = chains_type.historical_audit_renderer()
+        renderer = selected_history.checkpoint_module(chains_type, 'build_stacking_audit')
         detail, summary = renderer.detail, renderer.summary
-        render_crafting_qualification = chains_type.historical_recipe_renderer().render_crafting_qualification
-        data = chains_type.historical_calculator().load()
+        render_crafting_qualification = selected_history.checkpoint_module(chains_type, 'wisdom_loadout').render_crafting_qualification
+        data = selected_history.checkpoint_module(chains_type, 'stacking_audit').load()
         for html in (summary(data), detail(data), render_crafting_qualification(data)):
             text = norm(Document(html).root.text())
             self.assertIn('Derived selected-gear INT: +37 at level 36.', text)
@@ -469,8 +473,8 @@ class HistoricalPointEightScopedIntPresentationTests(unittest.TestCase):
 
     def test_point_six_generated_outputs_and_path_rebased_snapshot_match(self):
         from build_snapshot import snapshot_html
-        renderer = offense.historical_audit_renderer()
-        recipe = offense.historical_recipe_renderer()
+        renderer = selected_history.checkpoint_module(offense, 'build_stacking_audit')
+        recipe = selected_history.checkpoint_module(offense, 'wisdom_loadout')
         current = offense.checkpoint_file_text('index.html')
         data = json.loads(offense.checkpoint_file_text(LEDGER))
         self.assertTrue(renderer.validate_guide(current, data))

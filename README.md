@@ -6,6 +6,8 @@ A complete plan for one Dungeons & Dragons Online character: an Intelligence-bas
 
 Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-only arithmetic, relayed observations and missing evidence are distinguished in the Guide and audit. Judgment calls are labelled *build decision*. Written for Update 82.0.1.
 
+The **11-18-26.4 review draft** updates the selected level-15, level-20 and Sinew–Rocard endgame recipes. Its current modeled endgame ledger is reconstructed from a companion report, not the original solver object or an archive replay. Previous source-qualified calculations below remain historical and do not certify the new selection. See the [source access and verification record](evidence/gear-recipes-2026-11-18.json).
+
 ## Layout
 
 | Path | What |
@@ -14,22 +16,23 @@ Source-backed claims name their [DDO wiki](https://ddowiki.com) pages; model-onl
 | `versions/` | Every published build, one file each, named by build number (`10-29-26.8.html`; earlier ones `v32.html` … `v44.html`) |
 | `img/` | Cover art and the six enhancement/destiny tree images (rendered on DDO BuildHub) |
 | `tools/bowmodel.py` | The preserved historical speed-adjusted bow comparison model; not calibrated DPS or a simulation of the current Wisdom loadout |
-| `tools/fixtures/wisdom-loadout/selection.json` | Shared current endgame recipe, exact optimizer priorities/constraints and model-only achieved values |
+| `tools/fixtures/wisdom-loadout/selection.json` | Shared current endgame recipe, reported query summary and model-only contributions; not a complete solver input |
 | `tools/build_wisdom_loadout.py` | Generates the current recipe, priority table and one-page rows from that record |
 | `tools/recipe_proofs.py` | Bounded, source-supported recipe proofs for the four selected Chains IDs; not a general inference or stacking engine |
 | `tools/chains_type_proofs.py` | Exact Wiki/Nexus recipe bindings for the two selected Chains type definitions, preserving missing numeric fields and source limits |
 | `tools/wisdom_ability_proofs.py` | Eight exact WIS/CON definition bindings, four named pairs and complete-family safeguards that retain the conflicting Skull |
 | `tools/wisdom_doubleshot_proofs.py` | One selected Quickblade definition, six exact native Doubleshot pairs and five-member family/applicability safeguards |
-| `tools/stacking_audit.py` | Source-gated selected-gear arithmetic with exact definition, family and positive-interaction checks; not a universal stacking default or DPS simulator |
+| `tools/stacking_audit.py` | Historical Calamitous/Yeenoghu source-gated arithmetic; its default ledger does not describe Sinew–Rocard |
+| `tools/sinew_rocard.py` | Current report-derived recipe and audit renderer; validates transcription, not mechanics or optimizer replay |
 
 ## Related
 
-- [DDO Loadout Optimizer](https://eddiefiggie.github.io/ddo-loadout-optimizer/) — the gear solver; the current exact query and practical manual refinements are retained in the [Wisdom loadout record](docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md), separate from historical bundles
+- [DDO Loadout Optimizer](https://eddiefiggie.github.io/ddo-loadout-optimizer/) — the gear solver; the previous exact query and practical manual refinements remain in the historical [Wisdom loadout record](docs/knowledge-base/WISDOM-ARTIFACT-LOADOUT.md); the current report-derived recipe, complete embedded query and 37 analysis cuts are in [selection.json](tools/fixtures/wisdom-loadout/selection.json)
 - [ddo-gear-planner](https://github.com/eddiefiggie/ddo-gear-planner) — item and crafting data
 
 ## Updating
 
-Edit `index.html` and set its displayed build to `MM-DD-YY.x` (x = iteration that day). The current Wisdom recipe, priorities and one-page summary are generated: update their shared selection record and provenance deliberately, then run `python3 tools/build_wisdom_loadout.py`; do not hand-edit those marker blocks. Reconcile the selected evidence ledger without upgrading unsupported claims, then run `python3 tools/build_stacking_audit.py`. Regenerate the print reference with `python3 tools/build_crafting_sheet.py`, then run `python3 tools/build_snapshot.py` to create the matching new file in `versions/`, with relative image, evidence and print links rebased. Do not byte-copy the index or overwrite an existing published snapshot. Run the checks before committing. GitHub Pages serves `main` from the repo root; a local update or PR is not a deployment.
+Edit `index.html` and set its displayed build to `MM-DD-YY.x` (x = iteration that day). The current selected recipe, priorities and one-page summary are generated: update their shared selection record and provenance deliberately, then run `python3 tools/build_wisdom_loadout.py`; do not hand-edit those marker blocks. Reconcile the selected evidence ledger without upgrading unsupported claims, then run `python3 tools/build_stacking_audit.py`. Regenerate the print reference with `python3 tools/build_crafting_sheet.py`, then run `python3 tools/build_snapshot.py` to create the matching new file in `versions/`, with relative image, evidence and print links rebased. Do not byte-copy the index or overwrite an existing published snapshot. Run the checks before committing. GitHub Pages serves `main` from the repo root; a local update or PR is not a deployment.
 
 ## Testing
 
@@ -49,7 +52,7 @@ Doubleshot corrections separately from preserved historical experiments. Its
 source register contains transcribed browser observations and paraphrases, not
 an exported raw DOM packet or new calculator-qualified component records.
 
-### Current draft: selected-gear Doubleshot evidence
+### Historical draft checkpoint: selected-gear Doubleshot evidence
 
 Build **11-16-26.2** qualifies one **Quickblade 15 Artifact Doubleshot**
 contribution and adds exactly six named interactions among the four native

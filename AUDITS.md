@@ -2,6 +2,84 @@
 
 This log records source checks against the named DDO wiki pages and internal consistency reviews, with the scope and evidence stated for each entry. Internal reviews do not certify game mechanics. Corrections are listed, not hidden. Found a number that does not match its page? Open an issue with the line and the page.
 
+
+## Early-gear CI repair — build 11-18-26.4
+
+Actual job135001628871 for run44360892651 at e36ae8b ran624 tests in829.333s
+and failed two early-gear tests; it did not time out. The level15/20 skill-prose
+rewrite had removed the accurate Loupe ML3–9 sentence while retaining its
+correct item rows. The mutation test also failed its prerequisite because that
+sentence was absent. The qualified early guidance is restored beside the new
+recipes. The early-gear test file, original table hash and mutation assertions
+are unchanged. All39 relevant tests and four builders passed; prior snapshots,
+startup evidence and CI configuration are preserved. Full suite, browser and
+print were not repeated locally for this sentence restoration. New-head CI
+remains separate from these local results.
+
+## Residual armor wording — build 11-18-26.3
+
+The current Reaper Dodge row still referred to two kit armors. It now names
+the single selected Reflection armor and separates reported gear Dodge16 from
+verified usable Dodge and applicable cap modifiers. A stale-wording mutation
+was added to the current-content guard. All23 targeted tests, four builders
+and diff check passed; original startup evidence and prior snapshots remain
+unchanged. Full-suite, browser and print checks were not repeated for this
+wording-only correction. No mechanics certification or CI change.
+
+## PR48 current-prose reconciliation — build 11-18-26.2
+
+Independent review identified remaining old-kit callouts. Three current
+Fortification occurrences now say modeled 240; current survivability/Doubleshot/
+synergy sections describe the selected source ledger and socket placements.
+The old scenarios remain historical, with separate anchors so navigation does
+not present them as the selected kit. Rogue-skill equipment, bow transition,
+Quickblade attribution and armor-cap assumptions were reconciled as well.
+
+Supported Library read of companion report version 1, lines 5650–5718, directly
+recovered the embedded priority query, 8,112 blocked IDs and 37 analysis cuts.
+The fixture now retains these; raw solver output and optimizer replay remain
+unavailable. This is still report fidelity, not independent game certification.
+Original startup evidence remains in the receipt; continuation began at clean
+PR48 head `da6dc632825adcb1822158981639a53d7ccfda9b` on `work` with the same remote.
+Follow-up checks passed: 39 targeted tests, 12 final source/prose/preservation
+guards and 18 preservation tests (overlapping groups). All four builders passed.
+At 1440px and 390px, all three current navigation targets are visible outside
+the historical disclosure without page overflow; mobile text was reviewed.
+The prior 621-test full result is for the prior head; full-suite and print checks
+were not repeated for this bounded follow-up. See the receipt for exact limits.
+
+## Selected recipe review draft — build 11-18-26.1 — 18 November 2026
+
+The approved scope replaces only the selected level-15, level-20 and endgame gear
+recommendations and their summaries, acquisition details and generated records.
+The initial local checkout gate is recorded as **task-reported, not independently
+corroborated** in [the receipt](evidence/gear-recipes-2026-11-18.json): repository
+`eddiefiggie/eddiefiggie-int-longbow-guide`, branch `work`, clean HEAD
+`96e937aa57171be6a211136d50e01050b19cb744`, matching the immutable approved base.
+No fetch, ref switch or base update was performed.
+
+Six complete selected-recipe messages were supplied by the parent task. The
+supported Library archive transfer failed; it was not retried or bypassed.
+Supported read-only access to the companion endgame HTML report supplied the
+selected recipe and 100-row typed contributor/overlap ledger. The new fixture
+is a report transcription, not original solver JSON or a reproduced solve.
+Fresh Wiki access was unavailable for the attempted pages; in-game behavior
+was not tested. Conflicting Skull INT and Quality Deadly values, conditional
+HA63 procurement, Gem preparation/activation and alignment restrictions remain
+visible. Prior source grades and historical proofs do not certify this new kit.
+
+The old recipe, audit, calculator and evidence are retained through historical
+snapshots and exact reversible checkpoint records. Historical test imports are
+explicitly bound to those preserved versions; current recipe tests exercise the
+new production route. Numerical assertions and source hashes remain enforced.
+All 621 discovered tests passed in four disjoint groups after the documented
+serial inventory exposed historical-binding failures, which were corrected.
+All four builders and the final diff check passed. Desktop/mobile checks found
+no page-level overflow; the 114-page print PDF was sampled, not fully reviewed.
+The unchanged 15-minute serial CI timeout remains a risk. The complete
+verification outcome is recorded in the receipt. This is a draft
+review artifact; no merge, release or deployment is authorized or performed.
+
 ## Bounded Wisdom/Constitution integration — build 11-16-26.1 — 16 November 2026
 
 The owner selected option 1 after the read-only audit: integrate eight exact

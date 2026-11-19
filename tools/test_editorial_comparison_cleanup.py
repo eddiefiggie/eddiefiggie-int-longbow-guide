@@ -1,4 +1,7 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Bound the local editorial cleanup without weakening older release contracts."""
+import selected_recipe_preservation as selected_history
 import copy
 import hashlib
 import json
@@ -6,11 +9,12 @@ from pathlib import Path
 import unittest
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 from wisdom_preservation import (historical_renderer, predecessor_index,
                                 predecessor_ledger, predecessor_file_text,
                                 predecessor_file_bytes)
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 SCOPE = json.loads((ROOT/'tools/fixtures/editorial-comparison-cleanup/scope.json').read_text())
 BASELINE_SHA = '2aef272d53307beab05f63a557397be744b360f3fcb91ca5261274a0037f5aa3'
 

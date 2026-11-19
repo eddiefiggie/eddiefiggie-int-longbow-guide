@@ -1,8 +1,11 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Adversarial checks of the real bounded recipe path and direct entrypoints.
 
 Fixtures below are in-memory candidate bindings, not rewritten Wiki receipts.
 The production integration and unchanged-engine comparisons have separate tests.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import json
 from pathlib import Path
@@ -10,12 +13,14 @@ import unittest
 from unittest.mock import patch
 
 import recipe_proofs as proofs
+proofs = selected_history.historical_module('recipe_proofs')
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_int_evidence_preservation as int_evidence
 import wisdom_chains_type_preservation as chains_type
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 SUPPORTED = ('chains-combustion', 'chains-quality-int')
 ROLES = ('host', 'recipe', 'membership')
 

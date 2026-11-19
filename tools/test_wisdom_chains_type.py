@@ -5,6 +5,9 @@ unchanged proof helper bytes are independently checked before historical access.
 """
 from copy import deepcopy
 from hashlib import sha256
+# Historical assertions run against the exact authenticated checkpoint.
+import selected_recipe_preservation as selected_history
+
 import json
 from pathlib import Path
 import tempfile
@@ -16,14 +19,17 @@ import fort_spot_proofs as fort_spot
 import recipe_proofs as recipes
 import wisdom_ability_preservation as abilities
 
-audit = abilities.historical_calculator()
-loadout = abilities.historical_recipe_renderer()
-renderer = abilities.historical_audit_renderer()
+types = selected_history.checkpoint_module(abilities, 'chains_type_proofs')
+fort_spot = selected_history.checkpoint_module(abilities, 'fort_spot_proofs')
+recipes = selected_history.checkpoint_module(abilities, 'recipe_proofs')
+audit = selected_history.checkpoint_module(abilities, 'stacking_audit')
+loadout = selected_history.checkpoint_module(abilities, 'wisdom_loadout')
+renderer = selected_history.checkpoint_module(abilities, 'build_stacking_audit')
 
 
 class ChainsTypeIntegrationTests(unittest.TestCase):
     def setUp(self):
-        self.assertIs(audit, abilities.historical_calculator())
+        self.assertIs(audit, selected_history.checkpoint_module(abilities, 'stacking_audit'))
         self.data = audit.load()
 
     def row(self, cid, data=None):

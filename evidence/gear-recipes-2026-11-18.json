@@ -1,0 +1,190 @@
+{
+  "status": "review-draft-implementation-verified-internally",
+  "date": "2026-11-18",
+  "scope": "Selected level-15, level-20 and Sinew\u2013Rocard endgame recipes",
+  "certified_mechanics": false,
+  "reproduced_optimizer": false,
+  "startup": {
+    "verification": "task-reported, not independently corroborated",
+    "repository": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide.git",
+    "checkout": "/workspace/eddiefiggie-int-longbow-guide",
+    "approved_source_ref": "main",
+    "approved_base_sha": "96e937aa57171be6a211136d50e01050b19cb744",
+    "initial_head": "96e937aa57171be6a211136d50e01050b19cb744",
+    "initial_branch": "work",
+    "initial_worktree": "clean",
+    "isolated_branch_permitted": true,
+    "method": "Bounded local directory discovery followed by git --no-optional-locks rev-parse, config remote.origin.url, symbolic-ref and status --short",
+    "gate": "PASS",
+    "rechecked_unchanged_before_editing": true
+  },
+  "sources": [
+    "https://chatgpt.com/c/6afd266c-7494-83e8-84c6-6187b1cc574f?messageId=a304bfac-5080-5ec9-b8f0-6d4cf251d750",
+    "https://chatgpt.com/c/6afd266c-7494-83e8-84c6-6187b1cc574f?messageId=af7ab879-d39e-5da2-b906-0d8870d5af56",
+    "https://chatgpt.com/c/6afd37f0-4c5c-83e8-b745-d841ba978038?messageId=111337bb-9f1e-52e4-9a14-c295e5794a41",
+    "https://chatgpt.com/c/6afd37f0-4c5c-83e8-b745-d841ba978038?messageId=11547d9e-b11e-521d-9835-67095cf87540",
+    "https://chatgpt.com/c/6afd1193-50d4-83e8-a9a7-d78b0ef4f2c0?messageId=36b0fb74-2841-5dda-8ae1-0ab58abca85f",
+    "https://chatgpt.com/c/6afd1193-50d4-83e8-a9a7-d78b0ef4f2c0?messageId=b69523d1-9ff3-5aa0-86b6-84f620c47350"
+  ],
+  "source_class": "Full conversation messages supplied by the parent task; reported selected recipes, not independent mechanics observations",
+  "library_status": "IDs resolved; supported materialization failed on the level-15 ZIP with download failed. No packet bytes verified. No retry or bypass after explicit instruction.",
+  "fresh_wiki_status": "Direct opens of Demogorgon's Sinew, Quiver of Alacrity and Epic Gem of Many Facets returned inaccessible/restricted results. No fresh verification claimed.",
+  "companion_report": {
+    "library_file_id": "libfile_fde3_f-d2f40cc721608191bbbf5af1157c70ac_85aae769d8788191b59fa89737b1db1d",
+    "version": "1",
+    "name": "INTiana-Endgame-Report.html",
+    "read_status": "Supported Library read succeeds; priority recipe and typed source/overlap ledger at lines321\u2013544",
+    "evidence_limit": "Derived fixture reconstructed from report, not original solver object or replay; no independent mechanics certification"
+  },
+  "resolved_endgame_input_blocker": {
+    "builder": "tools/build_wisdom_loadout.py",
+    "manifest": "tools/fixtures/wisdom-loadout/selection.json",
+    "reason": "The current validator binds exact native and modeled affixes, craft tuples, augment records, type buckets and source hashes to the retained Calamitous/Yeenoghu selection. Its catalog extraction has only the incumbent 14 items, without the new Sinew, Rocard, Cranium Sphere, Unbreakable Cord or Bound Elemental Ring of Flames records. Relayed aggregate totals do not supply those complete model inputs or source-qualified interaction bindings.",
+    "action": "Initially blocked. Companion HTML report read subsequently supplied typed source ledger. Historical records and proof gates remain historical; new report-based route is separately labeled.",
+    "resolution": "Supported companion report content read supplied the complete selected recipe and 100-stat typed contribution/overlap table. A separate report-derived schema renders this model; the old proof engine and ledger are preserved as historical.",
+    "implemented_caveats": [
+      "Finished level 36; distinct rings; Rocard sole Minor Artifact; no event gear or augment-set bonuses; Paralyzing retained",
+      "Skull INT +16 item-page versus +15 generic-table cases yield reported gear INT 37 versus 36",
+      "Quality Deadly +4 specific augment versus +3 generic table yields reported gear Deadly 20 versus 19 if applicable",
+      "Healing Amplification +63 procurement conditional",
+      "Armor-Piercing 46 versus normalized incumbent 76",
+      "Permanent Nearly Complete changes require replacement items; Viktranium overwrite destroys removed fills without recovery"
+    ]
+  },
+  "verification": {
+    "builders": {
+      "build_wisdom_loadout.py": "passed:14 items,1 artifact,37 sockets",
+      "build_stacking_audit.py": "passed",
+      "build_crafting_sheet.py": "passed",
+      "build_snapshot.py": "passed:versions/11-18-26.1.html"
+    },
+    "focused": "Selected recipes, preservation/negative controls and final 10 Sapphire checks passed.",
+    "inventory_suite": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools -p 'test_*.py' -v",
+      "tests": 619,
+      "seconds": 1825.585,
+      "failures": 72,
+      "errors": 2,
+      "resolution": "All historical bindings corrected. A subsequent serial run was interrupted after one failure and one error from stale Sapphire-test Emerald host wording; that test-only wording was corrected and all 10 Sapphire tests passed. Final complete discovery then passed in four disjoint groups."
+    },
+    "browser": {
+      "engine": "Headless system Chromium via Playwright, localhost",
+      "widths": [
+        1440,
+        390
+      ],
+      "sections": [
+        "gear-band-15-19",
+        "gear-band-20-29",
+        "wisdom-loadout-selection",
+        "endgame-selected-acquisition"
+      ],
+      "result": "No page-level overflow in eight viewport/section checks; table horizontal scroll retained. Final historical Calamitous boundary visually reviewed on mobile."
+    },
+    "print": {
+      "pages": 114,
+      "format": "A4",
+      "result": "PDF generated; final page78 visually sampled plus earlier samples. Full pagination not reviewed."
+    },
+    "diff_check": "passed",
+    "ci": "Not run yet; local inventory exceeded existing 15-minute CI timeout. Workflow unchanged.",
+    "final_suite": {
+      "total": 621,
+      "seconds": 617.2404831909998,
+      "groups": [
+        {
+          "shard": 0,
+          "tests_selected": 156,
+          "exit_code": 0
+        },
+        {
+          "shard": 1,
+          "tests_selected": 155,
+          "exit_code": 0
+        },
+        {
+          "shard": 2,
+          "tests_selected": 155,
+          "exit_code": 0
+        },
+        {
+          "shard": 3,
+          "tests_selected": 155,
+          "exit_code": 0
+        }
+      ],
+      "result": "PASS",
+      "method": "Every test from unittest discovery in tools/test_*.py was selected once across four disjoint groups; each group ran python3 -m unittest -v with PYTHONDONTWRITEBYTECODE=1. No tests skipped.",
+      "selection_sha256": "2172c2d4766644e835bd5059b8d496e130938083a1d3445f8ff5963c275ecfa9"
+    },
+    "interrupted_runs": "Earlier development runs were interrupted and are not passes. The completed 619-test inventory and final 621-test grouped run are reported separately.",
+    "verified_head": "da6dc632825adcb1822158981639a53d7ccfda9b"
+  },
+  "follow_up": {
+    "date": "2026-11-18",
+    "build": "11-18-26.2",
+    "reviewed_head": "da6dc632825adcb1822158981639a53d7ccfda9b",
+    "continuation_gate": {
+      "repository": "https://github.com/eddiefiggie/eddiefiggie-int-longbow-guide.git",
+      "head": "da6dc632825adcb1822158981639a53d7ccfda9b",
+      "branch": "work",
+      "worktree": "clean",
+      "method": "git read-only HEAD/remote/branch/status inspection",
+      "result": "matches delivered PR48 head; original startup evidence retained"
+    },
+    "changes": [
+      "Three current Fortification references240; current DS35/AP46/Dodge armor socket/source boundaries",
+      "Current navigation targets separate from preserved historical survivability/synergy sections",
+      "Selected rogue-skill item guidance, level35/36 bow transition and armor-cap limitations",
+      "Embedded complete priority query with8112excluded IDs and37analysis cuts directly recovered from companion HTML v1 lines5650\u20135718"
+    ],
+    "verification": {
+      "targeted_suite": "39 tests passed in11.458s: current prose/recipes, guide integrity, snapshot, navigation, Optional Mechanic, Sapphire",
+      "final_guards": "12 tests passed in1.701s: source query/cut mutants, current prose and preservation",
+      "preservation_suite": "18 tests passed in1.350s; all six reviewed paths reverse exactly to original approved base",
+      "builders": "All four passed; new11-18-26.2 snapshot; prior11-18-26.1 unchanged",
+      "browser": "1440px and390px: all three current navigation targets visible, outside historical disclosure, no page overflow; mobile synergy screenshot visually reviewed",
+      "diff": "git diff --check passed",
+      "full_suite": "Prior621-test result belongs to prior head; not rerun in full for this follow-up",
+      "print": "Not rerun for this prose-only follow-up",
+      "ci": "New-head CI pending push; prior run44359022381 observed in_progress; timeout unchanged"
+    },
+    "limits": [
+      "Historical swap scenarios not recalculated for the new kit",
+      "Report totals do not certify live mechanics, complete character totals, proc uptime or usable Dodge",
+      "Original solver output and replay unavailable; source conflicts and HA63 procurement remain conditional"
+    ]
+  },
+  "mdb_wording_follow_up": {
+    "build": "11-18-26.3",
+    "starting_head": "9536be533ac18465190a1b5d912e8c661e8b0216",
+    "continuation": "Clean working tree and same repository confirmed read-only before editing; original startup evidence retained",
+    "change": "Current Reaper Dodge row now names one selected Reflection armor, removes former two-armor MDB arithmetic, and distinguishes reported gear Dodge16 from verified usable Dodge",
+    "checks": "23 targeted tests passed in1.927s; stale-wording mutation rejected; all four builders and diff check passed; six-file exact approved-base reversal retained",
+    "history": "Prior11-18-26.1 and11-18-26.2 snapshots unchanged; new11-18-26.3 snapshot generated",
+    "limits": "Full suite, browser and print not repeated for this wording correction; no new mechanics or cap certification; no CI-timeout change"
+  },
+  "early_gear_ci_follow_up": {
+    "build": "11-18-26.4",
+    "starting_head": "e36ae8bd22f4d12297009eaa77d54af5b6e16600",
+    "continuation": "Same repository and clean delivered head confirmed by read-only git inspection before edits; original startup evidence retained",
+    "ci_observed": {
+      "run": 44360892651,
+      "job": 135001628871,
+      "head": "e36ae8bd22f4d12297009eaa77d54af5b6e16600",
+      "conclusion": "failure, not timeout",
+      "tests": 624,
+      "seconds": 829.333,
+      "failures": 2,
+      "inspection": "Actual decoded GitHub job log and run metadata inspected",
+      "failed_tests": [
+        "test_early_gear_coverage.test_repeated_instructions_and_preserved_rows",
+        "test_early_gear_coverage.test_contradictions_and_overclaim_are_rejected: Loupe timing subtest"
+      ]
+    },
+    "diagnosis": "Level15/20 skill-prose rewrite removed accurate early Loupe ML3\u20139 sentence; retained item rows still correctly list ML3 and Spot6. Mutation failed its prerequisite because the expected sentence was absent.",
+    "repair": "Restore qualified early guidance adjacent to the new selected recipes. Existing early-gear test file, table hash and all mutation expectations unchanged.",
+    "checks": "39 focused/relevant tests passed in10.083s including both CI failures and mutation controls; four builders passed; six-file exact approved-base reversal passed; diff check passed. Prior snapshots and CI workflow unchanged.",
+    "limits": "Full suite, browser and print not repeated locally for this sentence restoration; new-head CI pending push; no mechanics certification"
+  }
+}

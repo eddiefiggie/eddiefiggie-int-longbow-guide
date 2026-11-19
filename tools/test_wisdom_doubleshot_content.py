@@ -1,12 +1,18 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Current rendered gear claims must depend on the bounded Doubleshot result."""
+import selected_recipe_preservation as selected_history
 import copy
 from pathlib import Path
 import unittest
 from unittest import mock
 
 import build_stacking_audit
+build_stacking_audit = selected_history.historical_module('build_stacking_audit')
 import stacking_audit
+stacking_audit = selected_history.historical_module('stacking_audit')
 import wisdom_loadout
+wisdom_loadout = selected_history.historical_module('wisdom_loadout')
 from test_lamordia_handling import Document, norm
 
 
@@ -67,7 +73,7 @@ class CurrentDoubleshotContentTests(unittest.TestCase):
                     wisdom_loadout.render_priorities(self.selection)
 
     def test_current_guide_and_audit_keep_source_and_whole_build_boundaries(self):
-        root = Path(__file__).resolve().parents[1]
+        root = selected_history.HistoricalPath(__file__).resolve().parents[1]
         guide = Document((root / 'index.html').read_text())
         current = [n for n in guide.root.nodes('section')
                    if n.attrs.get('id') == 'selected-stacking-summary']

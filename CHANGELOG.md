@@ -2,6 +2,30 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
+## Build 11-18-26.4 (draft CI correction; not published)
+
+- Restores the Loupe’s retained ML3–9 Spot guidance beside the selected level-15/20 socket recipes. The early item rows and all existing early-gear assertions/mutation controls remain unchanged.
+- Records the actual prior CI failure (two early-gear failures, not a timeout) and generates a new snapshot.
+
+## Build 11-18-26.3 (draft wording correction; not published)
+
+- Removes the residual current-facing “both kit armors” MDB comparison. Names the selected Reflection armor and keeps reported Dodge16 separate from verified usable Dodge. Adds a regression mutation for the stale wording.
+
+## Build 11-18-26.2 (draft review corrections; not published)
+
+- Reconciles all current Fortification callouts, trap-skill guidance, bow transition and armor-cap wording with the selected recipes.
+- Gives survivability, Doubleshot and synergy navigation current report-based summaries; preserves the former scenarios with explicit historical headings and separate anchors.
+- Removes the current Quickblade attribution; describes the selected Solar gem, Dodge placement, AP46, Rocard Deception and absent Salt/weapon crafts without transferring old mechanics proofs.
+- Recovers the report’s embedded complete query (8,112 excluded IDs) and 37 analysis cuts through supported Library read. Raw solver output, replay and independent mechanics certification remain unavailable.
+- Adds current-prose and negative regression checks and a new snapshot; prior snapshots and initial startup evidence remain preserved.
+
+## Build 11-18-26.1 (selected recipe review draft; not released)
+
+- Replaces the level-15 and level-20 gear recommendations with the selected balanced Wallwatch and University recipes, exact crafting, sockets, finished levels and acquisition prerequisites.
+- Uses the selected Sinew–Rocard endgame recipe through the shared generated record, with distinct rings, Rocard as sole Minor Artifact and no augment-set rewards. The companion report supplies modeled contributions; unavailable archives were not replayed.
+- Preserves the Anarchic/Lawful applicability caveat, Gem reroll-before-upgrades requirement and untested activation, unselected Gilvaenor finishing, Skull INT and Quality Deadly source conflicts, conditional Healing Amplification procurement and permanent-craft replacement implications.
+- Historical evidence and calculator results remain historical. Verification and remaining limits are recorded in `evidence/gear-recipes-2026-11-18.json` and the audit entry; this is a review artifact, not certified or published guidance.
+
 ## Build 11-16-26.1 (draft Wisdom/Constitution evidence candidate; not published)
 
 - Binds eight selected standing-gear definitions: three Wisdom inputs and five Constitution inputs. Preserves exact own-effect evidence, bounded Celestial ability membership, host/craft/socket applicability and the full-kit level-36 floor.

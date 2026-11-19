@@ -1,9 +1,12 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Current Wisdom recipe/dataflow and exact historical preservation regressions.
 
 Model values are not upgraded to source-certified mechanics by these tests.
 Historical test modules receive only the exact-restored approved predecessor;
 the production recipe, ranking, renderer and ledger are tested here directly.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import hashlib
 import json
@@ -12,6 +15,7 @@ import re
 import unittest
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_preservation as preservation
 import wisdom_corrections as corrections
 import wisdom_crafting_integration as crafting
@@ -22,7 +26,7 @@ import wisdom_ability_preservation as abilities
 from test_lamordia_handling import Document, guide_content, guide_text, norm
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 FIXTURE = ROOT / 'tools/fixtures/wisdom-loadout'
 EXPECTED_TARGETS = [
     'Greater Marksmanship', 'Sight Beyond Sight', 'Relentless Fury', 'Bloodrage',
@@ -79,6 +83,7 @@ def record_maxima(record):
 def current_render_contract(html, data):
     """Bind the actual production renderer; historical callers use the explicit helper."""
     import wisdom_loadout as recipe
+    recipe = selected_history.historical_module('wisdom_loadout')
     return render_contract(html, data, recipe)
 
 
@@ -249,6 +254,7 @@ class CurrentWisdomManifestTests(unittest.TestCase):
 
     def setUp(self):
         import wisdom_loadout
+        wisdom_loadout = selected_history.historical_module('wisdom_loadout')
         self.recipe = wisdom_loadout
         self.data = wisdom_loadout.load()
 
@@ -426,6 +432,7 @@ class CurrentWisdomManifestTests(unittest.TestCase):
 class CurrentWisdomRenderedGuideTests(unittest.TestCase):
     def setUp(self):
         import wisdom_loadout
+        wisdom_loadout = selected_history.historical_module('wisdom_loadout')
         self.recipe = wisdom_loadout
         self.data = wisdom_loadout.load()
         self.html = (ROOT / 'index.html').read_text()
@@ -538,11 +545,12 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
     def setUp(self):
         self.data = audit.load()
         import build_stacking_audit
+        build_stacking_audit = selected_history.historical_module('build_stacking_audit')
         self.renderer = build_stacking_audit
 
     def test_point_eight_ledger_retains_old_sources_and_exactly_three_scoped_rule_additions(self):
         self.assertTrue(audit.validate(self.data))
-        data = chains_type.historical_calculator().load()
+        data = selected_history.checkpoint_module(chains_type, 'stacking_audit').load()
         old = json.loads(preservation.frozen_ledger_bytes())
         self.assertEqual(data['rules'][:len(old['rules'])], old['rules'])
         self.assertEqual([r['id'] for r in data['rules'][len(old['rules']):]],
@@ -618,7 +626,7 @@ class CurrentWisdomEvidenceGateTests(unittest.TestCase):
         self.assertNotIn('pendant-threat', rows)
 
     def test_point_eight_unproven_whole_combinations_stay_withheld(self):
-        calculator = chains_type.historical_calculator()
+        calculator = selected_history.checkpoint_module(chains_type, 'stacking_audit')
         data = calculator.load()
         for stat in ('Ranged Power', 'Doubleshot', 'Wisdom', 'Dexterity',
                      'Spot', 'Listen', 'PRR', 'MRR', 'Dodge', 'Fortification',

@@ -1,14 +1,18 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Behavioral regressions for source-bound arithmetic and evidence boundaries.
 
 These checks preserve the full pre-Wisdom evidence engine regression corpus on
 the exact-restored predecessor.  test_wisdom_loadout separately exercises the
 current production ledger and renderer.  Neither set certifies live DDO.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import json
 import unittest
 from pathlib import Path
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 from wisdom_preservation import (historical_renderer, predecessor_index,
                                 predecessor_ledger, predecessor_file_text)
 

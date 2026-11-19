@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import types
+import selected_recipe_preservation as selected_recipes
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,6 +66,10 @@ def restore_file(path, current, *, scope=None):
     assert path in BASE_FILES
     row = data['files'][path]
     raw = current if isinstance(current, bytes) else current.encode()
+    if (len(raw), sha(raw)) != (row['current_bytes'], row['current_sha256']):
+        # An explicit caller may supply the new outer release instead of .2.
+        # Only its exact independently pinned reversal may enter this old layer.
+        raw = selected_recipes.restore_file(path, raw).encode()
     assert len(raw) == row['current_bytes'] and sha(raw) == row['current_sha256'], path
     text = raw.decode()
     assert row['reviewed_replacements'], path
@@ -79,7 +84,7 @@ def restore_file(path, current, *, scope=None):
 
 def checkpoint_file_bytes(path):
     """Return exact .1 bytes while rechecking unchanged historical inputs."""
-    raw = (ROOT / path).read_bytes()
+    raw = selected_recipes.checkpoint_file_bytes(path)
     if path in REVIEWED_PATHS:
         return restore_file(path, raw).encode()
     preserved = load_scope()['preserved_files']
@@ -95,7 +100,7 @@ def checkpoint_file_text(path):
 
 def validate_preserved_files():
     for path, expected in load_scope()['preserved_files'].items():
-        raw = (ROOT / path).read_bytes()
+        raw = selected_recipes.checkpoint_file_bytes(path)
         assert (len(raw), sha(raw)) == (expected['bytes'], expected['sha256']), path
     return True
 
@@ -103,7 +108,7 @@ def validate_preserved_files():
 def validate_full_reversal():
     scope = load_scope()
     for path in REVIEWED_PATHS:
-        restore_file(path, (ROOT / path).read_bytes(), scope=scope)
+        restore_file(path, selected_recipes.checkpoint_file_bytes(path), scope=scope)
     return validate_preserved_files()
 
 
@@ -114,8 +119,12 @@ def _module(name, path, source, dependencies=None):
     module.__file__ = str(ROOT / path)
 
     def import_checkpoint(name, globals=None, locals=None, fromlist=(), level=0):
+        if level == 0 and name == 'pathlib':
+            return types.SimpleNamespace(Path=selected_recipes.HistoricalPath)
         if level == 0 and name in imports:
             return imports[name]
+        if level == 0 and name in selected_recipes.PROOF_MODULES:
+            return selected_recipes.historical_proof_module(name)
         return builtins.__import__(name, globals, locals, fromlist, level)
 
     module.__dict__['__builtins__'] = {**vars(builtins), '__import__': import_checkpoint}

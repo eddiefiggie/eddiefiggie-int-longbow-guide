@@ -4,6 +4,12 @@ The [Guide](../../index.html) is the reference for selected feats, class routes,
 
 The [A-074 Queen of Rot BASIC recipe](A-074-QUEEN-BASIC.md) remains the historical comparison baseline, preserved in build 11-09-26.5. Its relayed source limitations are not repaired merely because Queen remains in the new outfit. An owner-selected recipe is not a source-certified or globally optimal build.
 
+## Selected recipe draft — 18 November 2026
+
+The owner approved one bounded draft PR for the final level-15 Wallwatch, level-20 University and level-36 Sinew–Rocard recipes. Isolated work, delegation, commits and the draft PR are authorized; merge and deployment are not. The immutable base is `96e937aa57171be6a211136d50e01050b19cb744`.
+
+The new endgame choice replaces the previous Salt/Calamitous/Yeenoghu selection; its historical optimizer receipts and source-qualified Quickblade proof must not be applied to the new kit. The new report-based model is not a replay or mechanics certification. The exact Skull +16/+15 INT and Quality Deadly +4/+3 alternatives remain visible, as do the Armor-Piercing46 versus normalized76 trade and conditional Healing Amplification63 procurement. See the [task evidence record](../../evidence/gear-recipes-2026-11-18.json).
+
 ## Approved acquisition-evidence exception — 15 November 2026
 
 **Scope: Sapphire of Healing Amplification +63, minimum level 36, only.** The

@@ -1,8 +1,11 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Exact .7 reversal and complete retained arithmetic, not DPS certification.
 
 Current text and source boundaries are tested separately on real production
 files. The predecessor modules below never replace normal production imports.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import json
 from pathlib import Path
@@ -13,14 +16,17 @@ from unittest.mock import patch
 
 import bowmodel
 import build_stacking_audit
+build_stacking_audit = selected_history.historical_module('build_stacking_audit')
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_loadout
+wisdom_loadout = selected_history.historical_module('wisdom_loadout')
 import wisdom_int_stacking_preservation as int_stacking
 import wisdom_offense_preservation as preservation
 import wisdom_fort_spot_preservation as fort_spot
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 RESULTS = ROOT / 'tools/fixtures/wisdom-offense/baseline-results.json'
 RESULTS_SHA = 'e41e7e7dcac3a128d7a6822c7fc802c3e48218c3718b69abe33dee85b8c009e1'
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
@@ -147,9 +153,9 @@ class OffensivePreservationTests(unittest.TestCase):
     def test_isolated_point_six_renderers_match_without_global_substitution(self):
         names = ('stacking_audit', 'wisdom_loadout', 'build_stacking_audit')
         before = {name: sys.modules[name] for name in names}
-        calculator = preservation.historical_calculator()
-        recipe = preservation.historical_recipe_renderer()
-        renderer = preservation.historical_audit_renderer()
+        calculator = selected_history.checkpoint_module(preservation, 'stacking_audit')
+        recipe = selected_history.checkpoint_module(preservation, 'wisdom_loadout')
+        renderer = selected_history.checkpoint_module(preservation, 'build_stacking_audit')
         self.assertIsNot(calculator, audit)
         self.assertIsNot(recipe, wisdom_loadout)
         self.assertIsNot(renderer, build_stacking_audit)
@@ -202,7 +208,7 @@ class CompleteRetainedArithmeticTests(unittest.TestCase):
 
     def test_actual_engine_preserves_all_152_complete_ledger_results(self):
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / 'tools/stacking_audit.py')
-        self.assertIs(audit, sys.modules['stacking_audit'])
+        self.assertEqual(audit.__checkpoint_sha256__, selected_history.sha(selected_history.checkpoint_file_bytes('tools/stacking_audit.py')))
         self.assertEqual(preservation.checkpoint_file_bytes(LEDGER), fort_spot.checkpoint_file_bytes(LEDGER))
         data = json.loads(fort_spot.checkpoint_file_text(LEDGER))
         before = json.dumps(data, sort_keys=True)

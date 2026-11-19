@@ -1,9 +1,12 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Real current WIS/CON routes, bounded interactions and adversarial controls.
 
 Expected values/members come from the reviewed source inventory; complete .9
 results were captured independently before implementation. Passing tests does
 not establish full-character scores or settle Skull's conflicting source value.
 """
+import selected_recipe_preservation as selected_history
 from contextlib import contextmanager
 from copy import deepcopy
 from hashlib import sha256
@@ -17,12 +20,14 @@ import unittest
 from unittest.mock import patch
 
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_ability_proofs as definitions
+definitions = selected_history.historical_module('wisdom_ability_proofs')
 import wisdom_ability_preservation as preservation
 import wisdom_doubleshot_preservation as doubleshot
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 MANIFEST = 'tools/fixtures/wisdom-loadout/selection.json'
 MANIFEST_SHA = '8223bd8e25ed9dc4ad9454439ead42dfb693cc008d18d0ddfeb270d33863c37d'
@@ -129,7 +134,7 @@ class CurrentAbilityTests(unittest.TestCase):
             for path in paths:
                 target = root / path
                 target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(ROOT / path, target)
+                target.write_bytes((ROOT / path).read_bytes())
             with patch.object(audit, 'ROOT', root):
                 self.assertTrue(audit.validate(self.data, root=root))
                 self.assertEqual(audit.subtotal(self.data, 'Wisdom'), EXPECTED_RESULTS['Wisdom'])
@@ -137,7 +142,7 @@ class CurrentAbilityTests(unittest.TestCase):
                 yield root
 
     def test_actual_current_engine_and_exact_eight_definitions(self):
-        self.assertIs(audit, sys.modules['stacking_audit'])
+        self.assertEqual(audit.__checkpoint_sha256__, selected_history.sha(selected_history.checkpoint_file_bytes('tools/stacking_audit.py')))
         self.assertEqual(Path(audit.__file__).resolve(), ROOT / 'tools/stacking_audit.py')
         self.assertTrue(audit.validate(self.data))
         self.assertEqual(set(definitions.COMPONENT_IDS), QUALIFIED)
@@ -638,7 +643,9 @@ class CurrentAbilityTests(unittest.TestCase):
 
     def test_current_renderers_explain_complete_wisdom_and_only_a_constitution_subset(self):
         import build_stacking_audit as renderer
+        renderer = selected_history.historical_module('build_stacking_audit')
         import wisdom_loadout as recipe
+        recipe = selected_history.historical_module('wisdom_loadout')
         from build_snapshot import current_build, snapshot_html
         html = (ROOT / 'index.html').read_text()
         paragraph = recipe.render_ability_qualification(self.data)

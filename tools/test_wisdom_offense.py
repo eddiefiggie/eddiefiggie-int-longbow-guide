@@ -1,8 +1,11 @@
+# Historical .2 contract: exact approved-checkpoint bytes/modules are explicit.
+# New selected-recipe tests exercise production separately; no global imports patched.
 """Current offensive claim boundaries on actual production files.
 
 These tests distinguish source-supported conditions and safe arithmetic from
 the preserved historical model. They do not certify live-game timing or DPS.
 """
+import selected_recipe_preservation as selected_history
 import copy
 import json
 from pathlib import Path
@@ -11,8 +14,11 @@ import unittest
 
 import bowmodel
 import build_stacking_audit
+build_stacking_audit = selected_history.historical_module('build_stacking_audit')
 import stacking_audit as audit
+audit = selected_history.historical_module('stacking_audit')
 import wisdom_loadout
+wisdom_loadout = selected_history.historical_module('wisdom_loadout')
 import wisdom_offense_preservation as preservation
 import wisdom_chains_type_preservation as chains_type
 from build_snapshot import current_build, snapshot_html
@@ -23,7 +29,7 @@ from test_wisdom_corrections import hidden, visible_text
 from test_wisdom_loadout import current_render_contract
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 SOURCE_PACKET = 'evidence/wisdom-loadout/offensive-sources-2026-11-15.json'
 MECHANICS_PACKET = 'evidence/wisdom-loadout/offensive-mechanics-2026-11-15.json'
 SOURCE_SHA = '58479bff309e52e0227f92631a9ce178cfd23a38659ddbcf466b804dc77a7dcd'
@@ -377,9 +383,9 @@ class CurrentOffensiveClaimsTests(unittest.TestCase):
                                      'selected SLA arrives at 10'))
 
     def test_point_eight_combustion_language_keeps_the_separate_damage_channels(self):
-        calculator = chains_type.historical_calculator()
-        recipe = chains_type.historical_recipe_renderer()
-        renderer = chains_type.historical_audit_renderer()
+        calculator = selected_history.checkpoint_module(chains_type, 'stacking_audit')
+        recipe = selected_history.checkpoint_module(chains_type, 'wisdom_loadout')
+        renderer = selected_history.checkpoint_module(chains_type, 'build_stacking_audit')
         ledger = calculator.load()
         for html in (chains_type.checkpoint_file_text('index.html'),
                      chains_type.checkpoint_file_text('endgame-stacking-audit.html'),

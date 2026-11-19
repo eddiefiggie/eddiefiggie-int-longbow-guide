@@ -6,6 +6,9 @@ checks preserve the original .5 claims; actual .6 acceptance and direct-source
 negative controls must run separately on real production modules. Neither
 historical rendering nor source contracts certify live DDO behavior or DPS.
 """
+# Historical assertions run against the exact authenticated checkpoint.
+import selected_recipe_preservation as selected_history
+
 import copy
 from datetime import datetime
 from hashlib import sha256
@@ -20,7 +23,7 @@ import wisdom_int_evidence_preservation as preservation
 from test_lamordia_handling import Document, norm
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = selected_history.HistoricalPath(__file__).resolve().parents[1]
 LEDGER = 'tools/fixtures/endgame-stacking/ledger.json'
 PACKET = 'evidence/wisdom-loadout/int-evidence-sources-2026-11-15.json'
 PACKET_SHA = '0cdf2530b114dce4f99ad818da0d905752150768940bcc1112f2187b550b71a2'
@@ -120,7 +123,7 @@ loadout boundaries therefore have their own explicit regression contract.
             assert row['detail'] and row['detail'] != old['detail']
         else:
             assert row == old
-    int_stacking.historical_calculator().validate(current)
+    selected_history.checkpoint_module(int_stacking, 'stacking_audit').validate(current)
     return True
 
 
@@ -150,9 +153,9 @@ class HistoricalIntEvidenceTests(unittest.TestCase):
         cls.previous = json.loads(preservation.checkpoint_file_text(LEDGER))
 
     def setUp(self):
-        self.audit = int_stacking.historical_calculator()
-        self.recipe = int_stacking.historical_recipe_renderer()
-        self.page = int_stacking.historical_audit_renderer()
+        self.audit = selected_history.checkpoint_module(int_stacking, 'stacking_audit')
+        self.recipe = selected_history.checkpoint_module(int_stacking, 'wisdom_loadout')
+        self.page = selected_history.checkpoint_module(int_stacking, 'build_stacking_audit')
         self.data = self.audit.load()
 
     def test_scope_qualifies_exactly_seven_inputs_without_new_rules_or_model_changes(self):
