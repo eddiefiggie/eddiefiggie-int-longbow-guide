@@ -2,7 +2,12 @@
 
 Build numbers are MM-DD-YY.x, x being the build iteration for that date. Draft and published status are stated separately. Earlier entries used v-numbers; v44 was 10-29-26.7.
 
-## Build 11-18-26.4 (draft CI correction; not published)
+## Build 11-18-26.5 (release wording and source notes)
+
+- Clarifies that the level-15, level-20 and level-36 gear recipes were published in build 11-18-26.4. Publication did not certify mechanics or reproduce an optimizer run.
+- Replaces private conversation links in the current guide and evidence register with public-safe source notes. Historical snapshots are unchanged.
+
+## Build 11-18-26.4 (published with evidence caveats)
 
 - Restores the Loupe’s retained ML3–9 Spot guidance beside the selected level-15/20 socket recipes. The early item rows and all existing early-gear assertions/mutation controls remain unchanged.
 - Records the actual prior CI failure (two early-gear failures, not a timeout) and generates a new snapshot.
